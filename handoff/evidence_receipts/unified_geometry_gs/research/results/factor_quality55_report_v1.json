@@ -1,0 +1,66 @@
+{
+  "checked_utc": "2026-10-12T13:39:34.480041+00:00",
+  "run": "C:\\Users\\Someone\\Desktop\\SuGaR-main\\unified_geometry_gs\\research\\experiments\\factor_quality55_v1",
+  "actual_sources_models_GT_and_metrics_verified": true,
+  "source_count": 475,
+  "source_archive_sha256": "d05b665c409331717a36a89becf74d605904b8724dc9581ce144f4bb2bfb349e",
+  "paired_results_sha256": "24a9ef3920e05ec9c7d18a69af80b89ebde34b441ca224beda49f5843180b633",
+  "complete_initial_state_verified": true,
+  "fixed_preselected_control_verified": true,
+  "mesh_mean_mm": {
+    "legacy64": {
+      "overall": 0.3150258776794399,
+      "mean_d2s": 0.22846029475359356,
+      "mean_s2d": 0.40159146060528633
+    },
+    "factor64": {
+      "overall": 0.3131298587104121,
+      "mean_d2s": 0.22762689005013792,
+      "mean_s2d": 0.3986328273706863
+    }
+  },
+  "mean_delta_factor_minus_legacy_mm": {
+    "overall": -0.0018960189690278018,
+    "mean_d2s": -0.0008334047034556369,
+    "mean_s2d": -0.00295863323460005
+  },
+  "mean_overall_ratio": 0.9939813865991126,
+  "relative_overall_improvement_percent": 0.6018613400887385,
+  "train_psnr_delta_db": 0.5320531884018251,
+  "pilot_gate_pass": false,
+  "individual_gates": {
+    "overall_at_least_one_percent": false,
+    "s2d_not_increased": true,
+    "train_psnr_drop_at_most_point2_db": true
+  },
+  "images": {
+    "legacy64": {
+      "camera_count": 49,
+      "split": "train",
+      "mean": {
+        "psnr_global_rgb_db": 34.68795021212831,
+        "psnr_repository_channel_mean_db": 34.8884598478979,
+        "ssim_repository": 0.9612670443495925
+      },
+      "gaussian_count": 943641
+    },
+    "factor64": {
+      "camera_count": 49,
+      "split": "train",
+      "mean": {
+        "psnr_global_rgb_db": 35.22000340053013,
+        "psnr_repository_channel_mean_db": 35.424722710434274,
+        "ssim_repository": 0.9643955437504516
+      },
+      "gaussian_count": 967292
+    }
+  },
+  "limits": [
+    "One scan55 pair from one fixed state; no independent training replications or significance claim.",
+    "Evaluator seeds are mesh-sampling repetitions, not training repetitions.",
+    "49 TRAIN views do not establish novel-view quality.",
+    "Combined intervention; feature-level attribution requires ablation.",
+    "Wall clock is sequential resource accounting, not a speed comparison.",
+    "Gram forward was a separate 20-update smoke and is absent from this quality candidate."
+  ]
+}

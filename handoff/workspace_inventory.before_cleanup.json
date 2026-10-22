@@ -1,0 +1,112 @@
+{
+  "snapshot_date": "2026-10-22",
+  "metadata_only": true,
+  "top_level": {
+    "(root files)": {
+      "files": 19,
+      "bytes": 147136
+    },
+    "blender": {
+      "files": 6,
+      "bytes": 25863
+    },
+    "configs": {
+      "files": 1,
+      "bytes": 1020
+    },
+    "dtu": {
+      "files": 3201,
+      "bytes": 4208397810
+    },
+    "gsplat_wrapper": {
+      "files": 4,
+      "bytes": 21517
+    },
+    "handoff": {
+      "files": 1,
+      "bytes": 6242
+    },
+    "sugar_extractors": {
+      "files": 3,
+      "bytes": 63963
+    },
+    "sugar_scene": {
+      "files": 6,
+      "bytes": 208037
+    },
+    "sugar_trainers": {
+      "files": 4,
+      "bytes": 185134
+    },
+    "sugar_utils": {
+      "files": 6,
+      "bytes": 22819
+    },
+    "sugar_viewer": {
+      "files": 118,
+      "bytes": 2719183
+    },
+    "tools": {
+      "files": 18,
+      "bytes": 438169
+    },
+    "unified_geometry_gs": {
+      "files": 20019,
+      "bytes": 137359742390
+    }
+  },
+  "large_file_threshold_MiB": 50,
+  "large_files": 615,
+  "total_scanned_files": 23406,
+  "total_scanned_bytes": 141571979283,
+  "nested_git_paths": [
+    "tools/guizang-ppt-skill/.git"
+  ],
+  "skipped_directories": [
+    "sugar_extractors/__pycache__",
+    "sugar_scene/__pycache__",
+    "sugar_trainers/__pycache__",
+    "sugar_utils/__pycache__",
+    "unified_geometry_gs/__pycache__",
+    "unified_geometry_gs/arguments/__pycache__",
+    "unified_geometry_gs/gaussian_renderer/__pycache__",
+    "unified_geometry_gs/losses/__pycache__",
+    "unified_geometry_gs/research/__pycache__",
+    "unified_geometry_gs/research/sources/tgs_real_checkpoint_v1/source/utils/__pycache__",
+    "unified_geometry_gs/scene/__pycache__",
+    "unified_geometry_gs/utils/__pycache__"
+  ],
+  "filename_only_sensitive_candidates": [],
+  "errors": [
+    {
+      "path": "C:\\Users\\Someone\\Desktop\\SuGaR-main\\unified_geometry_gs\\research\\experiments\\solver_cli_scan37_v1\\point_cloud",
+      "error": "OSError"
+    },
+    {
+      "path": "C:\\Users\\Someone\\Desktop\\SuGaR-main\\unified_geometry_gs\\research\\experiments\\solver_mesh_v1\\scan37\\five\\point_cloud",
+      "error": "OSError"
+    },
+    {
+      "path": "C:\\Users\\Someone\\Desktop\\SuGaR-main\\unified_geometry_gs\\research\\experiments\\solver_mesh_v1\\scan37\\four\\point_cloud",
+      "error": "OSError"
+    },
+    {
+      "path": "C:\\Users\\Someone\\Desktop\\SuGaR-main\\unified_geometry_gs\\research\\experiments\\solver_mesh_v1\\scan55\\five\\point_cloud",
+      "error": "OSError"
+    },
+    {
+      "path": "C:\\Users\\Someone\\Desktop\\SuGaR-main\\unified_geometry_gs\\research\\experiments\\solver_mesh_v1\\scan55\\four\\point_cloud",
+      "error": "OSError"
+    },
+    {
+      "path": "C:\\Users\\Someone\\Desktop\\SuGaR-main\\unified_geometry_gs\\research\\experiments\\solver_mesh_v1\\scan63\\five\\point_cloud",
+      "error": "OSError"
+    },
+    {
+      "path": "C:\\Users\\Someone\\Desktop\\SuGaR-main\\unified_geometry_gs\\research\\experiments\\solver_mesh_v1\\scan63\\four\\point_cloud",
+      "error": "OSError"
+    }
+  ],
+  "not_a_secret_or_license_audit": true,
+  "gitignore_effect_not_simulated": true
+}

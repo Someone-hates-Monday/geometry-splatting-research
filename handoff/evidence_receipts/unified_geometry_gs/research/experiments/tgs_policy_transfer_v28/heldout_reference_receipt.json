@@ -1,0 +1,197 @@
+{
+  "all_passed": true,
+  "rows": [
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "parent_id": 25166,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "143ed52826302386daa2bc4b353d91bcbdb081cab2864cafe362a6cc7d109516",
+      "patch_sha256": "055ec7632dc596d7d99a43c795fdec0094dc135d37b4dea92d48011ace99cee2",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "parent_id": 168865,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "c0f2be59f52e11525201b1ea27eb5557791179539384462caef1bb9ff67d08b9",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "parent_id": 320962,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "c0f2be59f52e11525201b1ea27eb5557791179539384462caef1bb9ff67d08b9",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "parent_id": 753152,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "c0f2be59f52e11525201b1ea27eb5557791179539384462caef1bb9ff67d08b9",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "parent_id": 837888,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "c0f2be59f52e11525201b1ea27eb5557791179539384462caef1bb9ff67d08b9",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "parent_id": 25166,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "361478d8756ee4bc27cc40a046a43ff885037cb78cf26f6a233791cd62d1e780",
+      "patch_sha256": "559e3640ecf091f0ac162c3dd1d5a5894649aeeb2845aa0d348479261c64a2bc",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "parent_id": 168865,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "361478d8756ee4bc27cc40a046a43ff885037cb78cf26f6a233791cd62d1e780",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "parent_id": 320962,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "361478d8756ee4bc27cc40a046a43ff885037cb78cf26f6a233791cd62d1e780",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "parent_id": 753152,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "740cc7c2dc14ee96106345ea03b35414d96e43ff9b6085073460d86c091236b7",
+      "patch_sha256": "5bc27c26cd778cecd95bc2fe369c9016f0a22a56f24a069053d4629fdc2315fb",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "parent_id": 837888,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "361478d8756ee4bc27cc40a046a43ff885037cb78cf26f6a233791cd62d1e780",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "heldout_0",
+      "parent_id": 42674,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "73fe9bf4d16bc99b52395a6c33e02924de03e74d7d7b9cfe4065ae455da55d08",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "heldout_0",
+      "parent_id": 605829,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "73fe9bf4d16bc99b52395a6c33e02924de03e74d7d7b9cfe4065ae455da55d08",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "heldout_0",
+      "parent_id": 642168,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "00034c6be3d4e0c8064a4bd45c1f0b1d1eaadc94f1edae133d4d63361a332988",
+      "patch_sha256": "1a40fee52bcc241c360a45c3e6a12454ccfe708b3476c92aae0d67e6b1c99e93",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "heldout_0",
+      "parent_id": 684536,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "880181c1d2cef9e2ae389eb7e1b90f7587498d949bc087d2e2cca00f9fbc901b",
+      "patch_sha256": "34aa864d1a0a953ae05e2ea69708fa1979248c60f48423a69ac76b0c16f137ff",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "heldout_1",
+      "parent_id": 42674,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "dd128f98a7b586bd166e5bfc9a9dc3ba3808f347f0a7c4908ab48d538acac5c4",
+      "patch_sha256": "b35744c65d1b46906e67a6e5f7e2e6032adb3a1d2ecae88d81c9f4ed3678b35a",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "heldout_1",
+      "parent_id": 605829,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "482b41f66d0f957a52452084d5d9c5135f063a5cfd31dd092816a50c67dcb23e",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "heldout_1",
+      "parent_id": 642168,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "482b41f66d0f957a52452084d5d9c5135f063a5cfd31dd092816a50c67dcb23e",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "heldout_1",
+      "parent_id": 684536,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "482b41f66d0f957a52452084d5d9c5135f063a5cfd31dd092816a50c67dcb23e",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    }
+  ],
+  "choices_sha256": "c596200ae0385310b7bc66890ae09a2895e635f209dc19780e3451bea7aad696",
+  "new_native_forwards": 18,
+  "new_r1_calls": 18,
+  "reused_full_native_references": 0,
+  "original_attempt_exit": 1,
+  "original_attempt_native_calls": 11,
+  "diagnostic_native_calls": 4,
+  "prior_failed_calls_counted": false,
+  "numerical_contract": "fixed_external_FP32_colors_child_only_SH",
+  "r1_plan_sha256": "0d91bf06caecba35d84e72209129fabcccafffd4c8ddab98d48c5054eebc87d4",
+  "training": false,
+  "model_inputs_unchanged": true
+}

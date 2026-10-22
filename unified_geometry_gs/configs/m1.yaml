@@ -1,0 +1,18 @@
+# M1: unified occupancy (L_occ) + depth–occupancy coupling (L_depth_occ).
+# Wired in train.py; flags match OptimizationParams in arguments/__init__.py.
+# This file is reference only — train.py uses CLI. Example:
+#   python train.py -s <scan> -m <out> --lambda_occ 0.02 --lambda_depth_occ 0.06 \
+#     --regularization_from_iter 7000
+
+milestone: 1
+lambda_occ: 0.02
+# Multi-scan conservative candidate (see docs/EXPERIMENT_LOG_M1.md)
+lambda_depth_occ: 0.06
+regularization_from_iter: 7000
+occ_entropy_weight: 1.0
+occ_sparsity_weight: 0.05
+depth_occ_min_alpha: 0.05
+# Structured M1 (occlusion ranking); default off in train.py — set via CLI e.g. --lambda_depth_occ_rank 0.04
+lambda_depth_occ_rank: 0.0
+occ_rank_margin: 0.02
+occ_rank_alpha_soft: 0.08

@@ -1,0 +1,44 @@
+# Optional additions, reviewed and merged by the receiving maintainer.
+# NOT an active .gitignore; does not prove safe publication.
+# Keep source, research top-level notes/protocols/code and handoff/evidence_receipts.
+/dtu/
+/data/
+/datasets/
+/unified_geometry_gs/dtu/
+/unified_geometry_gs/dtu_eval/
+/unified_geometry_gs/data/
+/unified_geometry_gs/datasets/
+/unified_geometry_gs/output*/
+/unified_geometry_gs/research/experiments/
+/unified_geometry_gs/research/sources/
+/unified_geometry_gs/research/snapshots/
+/unified_geometry_gs/research/results/
+# These exclusions require a separate, hashed research-asset delivery.
+# Required source versions from research/sources must be provided independently.
+/tools/guizang-ppt-skill/
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.o
+*.obj
+*.pt
+*.pth
+*.ply
+*.zip
+*.tar
+*.tar.gz
+*.npz
+*.npy
+*.aux
+*.log
+*.synctex.gz
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Local datasets/credentials/configuration can have other names. Audit staged files.

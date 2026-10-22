@@ -1,0 +1,18 @@
+{
+  "inputs": {
+    "diagnose_tgs_sh_observability_v29.py": "de3c98dfff18cfd644af41bb2c57353f776cc157f2218410f09d79aacb000def",
+    "sources/tgs_real_checkpoint_v1/source/utils/sh_utils.py": "7d1ff267546390635e6d1f68c4f88c4a8b052482d5c9be1d32f06bc69e9a96e7",
+    "experiments/tgs_joint_policy_v29/choices.json": "e801090fca4e51a90cdafcd13f4776adc1f9688cf8e9ae66ca6fef382aaa0513",
+    "experiments/tgs_joint_policy_v29/input_plan.json": "41aeb16c50627edb6ca814f796790e5ed248651986fb70d709f61bbd2b1afadf",
+    "experiments/tgs_joint_policy_v29/execution_plan.json": "ab9c2095485b8e00859f856c10e15b7f655a4a84d30d448169c8ae77ff238252",
+    "TGS_SH_OBSERVABILITY_NOTE_V29.md": "08c7d521cf6c590a4d73287f41a1b36142aac01e7384621ee8a5ed0c4ad95297",
+    "sources/tgs_cross_scene_v10/flowers/point_cloud/iteration_7000/point_cloud_state_dict.pt": "5a0da55c0b48ecbe49be66d879e9ba3068a69769cfddffbb4d75cd8a6ad34cb3",
+    "sources/tgs_cross_scene_v10/room/point_cloud/iteration_7000/point_cloud_state_dict.pt": "dd2839744ac31ad531e9e7c9e698854d52f181fb8c5c45694c6049221903dcac"
+  },
+  "post_selection": true,
+  "new_native_forwards": 0,
+  "fitting": false,
+  "GT_used": false,
+  "ideal_float64_field_not_native_bits": true,
+  "svd_tolerance": "max(shape)*float64eps*largest_singular_value"
+}

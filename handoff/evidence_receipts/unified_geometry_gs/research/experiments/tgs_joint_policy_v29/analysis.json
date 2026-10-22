@@ -1,0 +1,1229 @@
+{
+  "all_verified": true,
+  "scenes": [
+    {
+      "scene": "flowers",
+      "eligible_count": 177122,
+      "policies": [
+        {
+          "policy": "signed_mixed",
+          "parents": [
+            2152,
+            124366,
+            126605,
+            128638,
+            252774,
+            272669,
+            337296,
+            512218
+          ],
+          "added_triangles": 24,
+          "exact_value_opacity_mean_coefficient": 4.2144543351294056e-06,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                -1.0896450659310815e-06,
+                -3.118178750392102e-06,
+                3.1475429283454114e-05
+              ],
+              [
+                -4.954341894997956e-07,
+                -1.421509663346357e-06,
+                2.733438848807282e-06
+              ]
+            ],
+            "mean_score": [
+              -7.925396277154385e-07,
+              -2.2698442068692294e-06,
+              1.71044340661307e-05
+            ],
+            "per_view_mixed": [
+              -8.789628857004505e-06,
+              -1.6838955004385419e-06
+            ],
+            "mean_mixed": -5.236762178721523e-06,
+            "per_view_raw_PSNR_change_dB": [
+              0.0004757337108934643,
+              0.00016869241929016717
+            ],
+            "mean_raw_PSNR_change_dB": 0.00032221306509181574,
+            "per_view_RGB_changed_pixels": [
+              4887,
+              27079
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 1.2425718164913342
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                1.5043954725689026e-08,
+                8.00250934000206e-08,
+                -1.0586650811147029e-06
+              ],
+              [
+                7.489144083285597e-07,
+                3.5442784806137914e-06,
+                -1.4306507839639639e-05
+              ]
+            ],
+            "mean_score": [
+              3.819791815271244e-07,
+              1.812151787006906e-06,
+              -7.68258646037717e-06
+            ],
+            "per_view_mixed": [
+              2.7575309094295705e-07,
+              5.6967243524189606e-06
+            ],
+            "mean_mixed": 2.9862387216809586e-06,
+            "per_view_raw_PSNR_change_dB": [
+              -5.462333809917468e-06,
+              -0.0002855685440355021
+            ],
+            "mean_raw_PSNR_change_dB": -0.00014551543892270976,
+            "per_view_RGB_changed_pixels": [
+              144,
+              4417
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          }
+        },
+        {
+          "policy": "signed_MSE",
+          "parents": [
+            2152,
+            19779,
+            70211,
+            124366,
+            126605,
+            128638,
+            252774,
+            337296
+          ],
+          "added_triangles": 24,
+          "exact_value_opacity_mean_coefficient": 4.477944637147298e-06,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                -1.1452702762618425e-06,
+                -2.9432514743016193e-06,
+                2.7382538389482698e-05
+              ],
+              [
+                -4.954341894997956e-07,
+                -1.421509663346357e-06,
+                2.733438848807282e-06
+              ]
+            ],
+            "mean_score": [
+              -8.20352232880819e-07,
+              -2.182380568823988e-06,
+              1.505798861914499e-05
+            ],
+            "per_view_mixed": [
+              -7.831108857337835e-06,
+              -1.6838955004385419e-06
+            ],
+            "mean_mixed": -4.757502178888188e-06,
+            "per_view_raw_PSNR_change_dB": [
+              0.0005000208040018901,
+              0.00016869241929016717
+            ],
+            "mean_raw_PSNR_change_dB": 0.00033435661164602865,
+            "per_view_RGB_changed_pixels": [
+              4301,
+              27079
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 1.0624298789721045
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                -2.9453978480957553e-09,
+                2.08495940463228e-08,
+                -7.494890170711332e-07
+              ],
+              [
+                9.252494172926867e-07,
+                4.2605627408356084e-06,
+                -1.9538445592023574e-05
+              ]
+            ],
+            "mean_score": [
+              4.6115200972229544e-07,
+              2.1407061674409655e-06,
+              -1.0143967304547353e-05
+            ],
+            "per_view_mixed": [
+              1.665774786512849e-07,
+              7.316139311073202e-06
+            ],
+            "mean_mixed": 3.7413583948622435e-06,
+            "per_view_raw_PSNR_change_dB": [
+              1.0694500641035767e-06,
+              -0.0003528041131610071
+            ],
+            "mean_raw_PSNR_change_dB": -0.00017586733154845177,
+            "per_view_RGB_changed_pixels": [
+              141,
+              4010
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          }
+        },
+        {
+          "policy": "perturbation",
+          "parents": [
+            358326,
+            365788,
+            377809,
+            540588,
+            588632,
+            650356,
+            668089,
+            694221
+          ],
+          "added_triangles": 24,
+          "exact_value_opacity_mean_coefficient": -1.3690297892454925e-06,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                -2.4543956344639263e-11,
+                -3.025100442562739e-11,
+                6.835773420851511e-10
+              ],
+              [
+                1.1407191516713478e-11,
+                7.999590655217417e-11,
+                -2.0086778904817252e-09
+              ]
+            ],
+            "mean_score": [
+              -6.5683824139628924e-12,
+              2.4872451063273388e-11,
+              -6.625502741982871e-10
+            ],
+            "per_view_mixed": [
+              -1.6091627195753215e-10,
+              4.657323033380844e-10
+            ],
+            "mean_mixed": 1.524080156902761e-10,
+            "per_view_raw_PSNR_change_dB": [
+              1.0715184928292095e-08,
+              -3.884006306060426e-09
+            ],
+            "mean_raw_PSNR_change_dB": 3.415589311115834e-09,
+            "per_view_RGB_changed_pixels": [
+              170,
+              82
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 0.00011132556565790441
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                6.5647717635357424e-09,
+                1.8357846659841255e-08,
+                9.782150132064241e-08
+              ],
+              [
+                -7.906419194776534e-09,
+                -3.528859227478586e-08,
+                6.17106876888944e-07
+              ]
+            ],
+            "mean_score": [
+              -6.708237156203959e-10,
+              -8.465372807472303e-09,
+              3.574641891047932e-07
+            ],
+            "per_view_mixed": [
+              -4.878022936255478e-09,
+              -1.516522491976175e-07
+            ],
+            "mean_mixed": -7.826513606693648e-08,
+            "per_view_raw_PSNR_change_dB": [
+              -2.383614423149343e-06,
+              3.0148967751103946e-06
+            ],
+            "mean_raw_PSNR_change_dB": 3.156411759805257e-07,
+            "per_view_RGB_changed_pixels": [
+              613,
+              1817
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          }
+        },
+        {
+          "policy": "largest_min_area",
+          "parents": [
+            4180,
+            7019,
+            14982,
+            18783,
+            101807,
+            117261,
+            154550,
+            548152
+          ],
+          "added_triangles": 24,
+          "exact_value_opacity_mean_coefficient": 2.5139940755755735e-06,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                8.535563852702013e-08,
+                5.835881848495413e-07,
+                -1.958504275892806e-06
+              ],
+              [
+                6.906593079263826e-07,
+                2.740708571468822e-06,
+                -2.2679375223471232e-05
+              ]
+            ],
+            "mean_score": [
+              3.8800747322670136e-07,
+              1.6621483781591815e-06,
+              -1.2318939749682019e-05
+            ],
+            "per_view_mixed": [
+              8.585714030581943e-07,
+              6.728441901869304e-06
+            ],
+            "mean_mixed": 3.793506652463749e-06,
+            "per_view_raw_PSNR_change_dB": [
+              -3.726365378844012e-05,
+              -0.0002351544869313737
+            ],
+            "mean_raw_PSNR_change_dB": -0.0001362090703599069,
+            "per_view_RGB_changed_pixels": [
+              9456,
+              2814
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                -6.395671354137781e-08,
+                1.9983671442403813e-07,
+                -3.252381740961932e-06
+              ],
+              [
+                -2.537511609521239e-07,
+                -9.814643932249416e-07,
+                1.5714811591096284e-06
+              ]
+            ],
+            "mean_score": [
+              -1.5885393724675085e-07,
+              -3.9081383940045176e-07,
+              -8.404502909261518e-07
+            ],
+            "per_view_mixed": [
+              8.103457197316169e-07,
+              -1.099467746401879e-06
+            ],
+            "mean_mixed": -1.44561013335131e-07,
+            "per_view_raw_PSNR_change_dB": [
+              2.3222223067307412e-05,
+              9.676211127391535e-05
+            ],
+            "mean_raw_PSNR_change_dB": 5.999216717061138e-05,
+            "per_view_RGB_changed_pixels": [
+              5687,
+              7753
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 0.05750252744809436
+          }
+        },
+        {
+          "policy": "hash",
+          "parents": [
+            3328,
+            113521,
+            196023,
+            362030,
+            396134,
+            574901,
+            756888,
+            901452
+          ],
+          "added_triangles": 24,
+          "exact_value_opacity_mean_coefficient": -3.079569722373265e-06,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                1.863945356623845e-08,
+                3.3031304918997426e-08,
+                -6.662379724844213e-07
+              ],
+              [
+                1.7128278668586282e-08,
+                -4.476150282996146e-09,
+                -3.9578162459119864e-07
+              ]
+            ],
+            "mean_score": [
+              1.7883866117412366e-08,
+              1.4277577318000641e-08,
+              -5.3100979853781e-07
+            ],
+            "per_view_mixed": [
+              1.596726384320822e-07,
+              7.557540469184282e-08
+            ],
+            "mean_mixed": 1.176240215619625e-07,
+            "per_view_raw_PSNR_change_dB": [
+              -8.137441012211572e-06,
+              -5.831960676925681e-06
+            ],
+            "mean_raw_PSNR_change_dB": -6.984700844568626e-06,
+            "per_view_RGB_changed_pixels": [
+              1138,
+              2591
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 0.03819495324538902
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                2.870847093505749e-08,
+                -9.862733286247207e-08,
+                8.149628616976008e-07
+              ],
+              [
+                8.526522062450543e-08,
+                1.0002152958442646e-07,
+                -8.023070567629344e-07
+              ]
+            ],
+            "mean_score": [
+              5.698684577978146e-08,
+              6.970983609771933e-10,
+              6.327902467333161e-09
+            ],
+            "per_view_mixed": [
+              -2.418944386294978e-07,
+              2.4047863502012806e-07
+            ],
+            "mean_mixed": -7.07901804684867e-10,
+            "per_view_raw_PSNR_change_dB": [
+              -1.0423799107495922e-05,
+              -3.2513427491074114e-05
+            ],
+            "mean_raw_PSNR_change_dB": -2.146861329928502e-05,
+            "per_view_RGB_changed_pixels": [
+              1123,
+              999
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          }
+        },
+        {
+          "policy": "guarded_signed_mixed",
+          "parents": [
+            2152,
+            124366,
+            126605,
+            128638,
+            252774,
+            272669,
+            337296,
+            512218
+          ],
+          "added_triangles": 24,
+          "exact_value_opacity_mean_coefficient": 4.2144543351294056e-06,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                -1.0896450659310815e-06,
+                -3.118178750392102e-06,
+                3.1475429283454114e-05
+              ],
+              [
+                -4.954341894997956e-07,
+                -1.421509663346357e-06,
+                2.733438848807282e-06
+              ]
+            ],
+            "mean_score": [
+              -7.925396277154385e-07,
+              -2.2698442068692294e-06,
+              1.71044340661307e-05
+            ],
+            "per_view_mixed": [
+              -8.789628857004505e-06,
+              -1.6838955004385419e-06
+            ],
+            "mean_mixed": -5.236762178721523e-06,
+            "per_view_raw_PSNR_change_dB": [
+              0.0004757337108934643,
+              0.00016869241929016717
+            ],
+            "mean_raw_PSNR_change_dB": 0.00032221306509181574,
+            "per_view_RGB_changed_pixels": [
+              4887,
+              27079
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 1.2425718164913342
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                1.5043954725689026e-08,
+                8.00250934000206e-08,
+                -1.0586650811147029e-06
+              ],
+              [
+                7.489144083285597e-07,
+                3.5442784806137914e-06,
+                -1.4306507839639639e-05
+              ]
+            ],
+            "mean_score": [
+              3.819791815271244e-07,
+              1.812151787006906e-06,
+              -7.68258646037717e-06
+            ],
+            "per_view_mixed": [
+              2.7575309094295705e-07,
+              5.6967243524189606e-06
+            ],
+            "mean_mixed": 2.9862387216809586e-06,
+            "per_view_raw_PSNR_change_dB": [
+              -5.462333809917468e-06,
+              -0.0002855685440355021
+            ],
+            "mean_raw_PSNR_change_dB": -0.00014551543892270976,
+            "per_view_RGB_changed_pixels": [
+              144,
+              4417
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          }
+        },
+        {
+          "policy": "no_edit",
+          "parents": [],
+          "added_triangles": 0,
+          "exact_value_opacity_mean_coefficient": 0.0,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "mean_score": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "per_view_mixed": [
+              0.0,
+              0.0
+            ],
+            "mean_mixed": 0.0,
+            "per_view_raw_PSNR_change_dB": [
+              0.0,
+              0.0
+            ],
+            "mean_raw_PSNR_change_dB": 0.0,
+            "per_view_RGB_changed_pixels": [
+              0,
+              0
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "mean_score": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "per_view_mixed": [
+              0.0,
+              0.0
+            ],
+            "mean_mixed": 0.0,
+            "per_view_raw_PSNR_change_dB": [
+              0.0,
+              0.0
+            ],
+            "mean_raw_PSNR_change_dB": 0.0,
+            "per_view_RGB_changed_pixels": [
+              0,
+              0
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          }
+        }
+      ],
+      "primary_comparisons": {
+        "signed_MSE": {
+          "primary_minus_comparator_heldout_mean_mixed": -7.551196731812848e-07,
+          "primary_lower_beyond_atol": true
+        },
+        "perturbation": {
+          "primary_minus_comparator_heldout_mean_mixed": 3.0645038577478953e-06,
+          "primary_lower_beyond_atol": false
+        },
+        "largest_min_area": {
+          "primary_minus_comparator_heldout_mean_mixed": 3.1307997350160895e-06,
+          "primary_lower_beyond_atol": false
+        },
+        "hash": {
+          "primary_minus_comparator_heldout_mean_mixed": 2.9869466234856434e-06,
+          "primary_lower_beyond_atol": false
+        }
+      },
+      "independent_scene": false
+    },
+    {
+      "scene": "room",
+      "eligible_count": 47620,
+      "policies": [
+        {
+          "policy": "signed_mixed",
+          "parents": [
+            10413,
+            24228,
+            121237,
+            313661,
+            360852,
+            1672580,
+            1687306,
+            2033381
+          ],
+          "added_triangles": 24,
+          "exact_value_opacity_mean_coefficient": 6.92870359015881e-08,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                -6.809068260364356e-08,
+                -1.8467675410799294e-06,
+                4.268900472369094e-06
+              ],
+              [
+                -4.5643355358513006e-08,
+                -3.927087707217498e-08,
+                1.6657211916299887e-06
+              ]
+            ],
+            "mean_score": [
+              -5.686701898107828e-08,
+              -9.430192090760521e-07,
+              2.967310831999541e-06
+            ],
+            "per_view_mixed": [
+              -2.3311941273377622e-06,
+              -3.6456093998373776e-07
+            ],
+            "mean_mixed": -1.34787753366075e-06,
+            "per_view_raw_PSNR_change_dB": [
+              0.0003197020609257769,
+              0.00013989144939901345
+            ],
+            "mean_raw_PSNR_change_dB": 0.00022979675516239517,
+            "per_view_RGB_changed_pixels": [
+              21970,
+              8674
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 19.453531474130443
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                1.976729254526941e-09,
+                2.057348773172677e-08,
+                -3.4695775916004767e-07
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "mean_score": [
+              9.883646272634705e-10,
+              1.0286743865863385e-08,
+              -1.7347887958002384e-07
+            ],
+            "per_view_mixed": [
+              8.585034201739095e-08,
+              0.0
+            ],
+            "mean_mixed": 4.2925171008695475e-08,
+            "per_view_raw_PSNR_change_dB": [
+              -6.868711229737474e-06,
+              -0.0
+            ],
+            "mean_raw_PSNR_change_dB": -3.434355614868737e-06,
+            "per_view_RGB_changed_pixels": [
+              378,
+              0
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          }
+        },
+        {
+          "policy": "signed_MSE",
+          "parents": [
+            10413,
+            24228,
+            62148,
+            303093,
+            330258,
+            978163,
+            1691129,
+            2033381
+          ],
+          "added_triangles": 24,
+          "exact_value_opacity_mean_coefficient": 2.7109289051815316e-07,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                -6.160727304699036e-08,
+                -1.4830995062200686e-06,
+                1.740253023929821e-08
+              ],
+              [
+                -1.0321204113338078e-07,
+                -4.875845547000415e-07,
+                2.6071392153647485e-06
+              ]
+            ],
+            "mean_score": [
+              -8.240965709018556e-08,
+              -9.85342030460055e-07,
+              1.3122708728020234e-06
+            ],
+            "per_view_mixed": [
+              -1.1899601110239146e-06,
+              -9.11495486832983e-07
+            ],
+            "mean_mixed": -1.0507277989284487e-06,
+            "per_view_raw_PSNR_change_dB": [
+              0.0002892598866508313,
+              0.0003163390426485487
+            ],
+            "mean_raw_PSNR_change_dB": 0.00030279946464969,
+            "per_view_RGB_changed_pixels": [
+              12351,
+              5480
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 3.8758958116538618
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                -7.85611352086181e-10,
+                -1.2368929124379943e-08,
+                1.7898877350112117e-07
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "mean_score": [
+              -3.928056760430905e-10,
+              -6.1844645621899714e-09,
+              8.949438675056058e-08
+            ],
+            "per_view_mixed": [
+              -4.569289799972819e-08,
+              0.0
+            ],
+            "mean_mixed": -2.2846448999864097e-08,
+            "per_view_raw_PSNR_change_dB": [
+              2.7298343801753166e-06,
+              -0.0
+            ],
+            "mean_raw_PSNR_change_dB": 1.3649171900876583e-06,
+            "per_view_RGB_changed_pixels": [
+              542,
+              0
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 0.0842753528364265
+          }
+        },
+        {
+          "policy": "perturbation",
+          "parents": [
+            631595,
+            673473,
+            1049130,
+            1420043,
+            1578773,
+            1656901,
+            1678961,
+            1761745
+          ],
+          "added_triangles": 24,
+          "exact_value_opacity_mean_coefficient": -8.216225426764165e-07,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                -5.136742217308966e-12,
+                -2.2607017250502406e-10,
+                2.230933795424502e-09
+              ],
+              [
+                1.856764976898732e-11,
+                5.145835998775005e-11,
+                -5.054568364043923e-09
+              ]
+            ],
+            "mean_score": [
+              6.715453775839177e-12,
+              -8.7305906258637e-11,
+              -1.4118172843097105e-09
+            ],
+            "per_view_mixed": [
+              -6.270428970889196e-10,
+              1.0520803607989846e-09
+            ],
+            "mean_mixed": 2.1251873185503249e-10,
+            "per_view_raw_PSNR_change_dB": [
+              2.4117347359565223e-08,
+              -5.690671850446694e-08
+            ],
+            "mean_raw_PSNR_change_dB": -1.6394685572450857e-08,
+            "per_view_RGB_changed_pixels": [
+              645,
+              1039
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 0.00025865737710014335
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                -1.1726999343098119e-11,
+                -6.345129772699126e-10,
+                8.956668714821011e-09
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "mean_score": [
+              -5.8634996715490595e-12,
+              -3.172564886349563e-10,
+              4.4783343574105055e-09
+            ],
+            "per_view_mixed": [
+              -2.2989441247801325e-09,
+              0.0
+            ],
+            "mean_mixed": -1.1494720623900662e-09,
+            "per_view_raw_PSNR_change_dB": [
+              4.07488463061439e-08,
+              -0.0
+            ],
+            "mean_raw_PSNR_change_dB": 2.037442315307195e-08,
+            "per_view_RGB_changed_pixels": [
+              145,
+              0
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          }
+        },
+        {
+          "policy": "largest_min_area",
+          "parents": [
+            10413,
+            62148,
+            121237,
+            139730,
+            238956,
+            241633,
+            295639,
+            1489058
+          ],
+          "added_triangles": 24,
+          "exact_value_opacity_mean_coefficient": 2.4457981460607664e-06,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                -5.163114197576195e-08,
+                -1.353707153663975e-06,
+                1.956559028657656e-06
+              ],
+              [
+                -3.725268140272716e-08,
+                1.6763653924127583e-07,
+                -1.2656885559163223e-06
+              ]
+            ],
+            "mean_score": [
+              -4.4441911689244556e-08,
+              -5.930353072113496e-07,
+              3.4543523637066684e-07
+            ],
+            "per_view_mixed": [
+              -1.4742775286627112e-06,
+              3.872469425762851e-07
+            ],
+            "mean_mixed": -5.43515293043213e-07,
+            "per_view_raw_PSNR_change_dB": [
+              0.0002424184190780689,
+              0.00011417469476435908
+            ],
+            "mean_raw_PSNR_change_dB": 0.000178296556921214,
+            "per_view_RGB_changed_pixels": [
+              31371,
+              14605
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 0.22222410051238517
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                -2.2112602342113907e-08,
+                1.1026152167771202e-08,
+                -6.040128579858077e-07
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "mean_score": [
+              -1.1056301171056954e-08,
+              5.513076083885601e-09,
+              -3.0200642899290383e-07
+            ],
+            "per_view_mixed": [
+              1.296234933313785e-07,
+              0.0
+            ],
+            "mean_mixed": 6.481174666568924e-08,
+            "per_view_raw_PSNR_change_dB": [
+              7.683730253542925e-05,
+              -0.0
+            ],
+            "mean_raw_PSNR_change_dB": 3.841865126771463e-05,
+            "per_view_RGB_changed_pixels": [
+              2602,
+              0
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          }
+        },
+        {
+          "policy": "hash",
+          "parents": [
+            112190,
+            345281,
+            378531,
+            572318,
+            627740,
+            942423,
+            1151202,
+            1805617
+          ],
+          "added_triangles": 24,
+          "exact_value_opacity_mean_coefficient": -2.90690450265168e-07,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                8.962624214957389e-10,
+                4.100231409690289e-08,
+                7.307465902273953e-08
+              ],
+              [
+                3.74387136616585e-09,
+                8.062939737009162e-08,
+                -5.02610570868095e-07
+              ]
+            ],
+            "mean_score": [
+              2.3200668938307944e-09,
+              6.081585573349726e-08,
+              -2.1476795592267776e-07
+            ],
+            "per_view_mixed": [
+              1.8186919472974403e-08,
+              1.650256320696923e-07
+            ],
+            "mean_mixed": 9.160627577133336e-08,
+            "per_view_raw_PSNR_change_dB": [
+              -4.2080097771273815e-06,
+              -1.1474319992860108e-05
+            ],
+            "mean_raw_PSNR_change_dB": -7.841164884993745e-06,
+            "per_view_RGB_changed_pixels": [
+              3236,
+              1780
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 0.3151334200616844
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                4.2597941244060335e-10,
+                5.803061158807066e-10,
+                1.7126097031950412e-08
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "mean_score": [
+              2.1298970622030167e-10,
+              2.901530579403533e-10,
+              8.563048515975206e-09
+            ],
+            "per_view_mixed": [
+              -2.9609745136855173e-09,
+              0.0
+            ],
+            "mean_mixed": -1.4804872568427586e-09,
+            "per_view_raw_PSNR_change_dB": [
+              -1.4801882358919075e-06,
+              -0.0
+            ],
+            "mean_raw_PSNR_change_dB": -7.400941179459538e-07,
+            "per_view_RGB_changed_pixels": [
+              331,
+              0
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          }
+        },
+        {
+          "policy": "guarded_signed_mixed",
+          "parents": [
+            10413,
+            24228,
+            121237,
+            313661,
+            360852,
+            1672580,
+            1687306,
+            2033381
+          ],
+          "added_triangles": 24,
+          "exact_value_opacity_mean_coefficient": 6.92870359015881e-08,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                -6.809068260364356e-08,
+                -1.8467675410799294e-06,
+                4.268900472369094e-06
+              ],
+              [
+                -4.5643355358513006e-08,
+                -3.927087707217498e-08,
+                1.6657211916299887e-06
+              ]
+            ],
+            "mean_score": [
+              -5.686701898107828e-08,
+              -9.430192090760521e-07,
+              2.967310831999541e-06
+            ],
+            "per_view_mixed": [
+              -2.3311941273377622e-06,
+              -3.6456093998373776e-07
+            ],
+            "mean_mixed": -1.34787753366075e-06,
+            "per_view_raw_PSNR_change_dB": [
+              0.0003197020609257769,
+              0.00013989144939901345
+            ],
+            "mean_raw_PSNR_change_dB": 0.00022979675516239517,
+            "per_view_RGB_changed_pixels": [
+              21970,
+              8674
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": 19.453531474130443
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                1.976729254526941e-09,
+                2.057348773172677e-08,
+                -3.4695775916004767e-07
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "mean_score": [
+              9.883646272634705e-10,
+              1.0286743865863385e-08,
+              -1.7347887958002384e-07
+            ],
+            "per_view_mixed": [
+              8.585034201739095e-08,
+              0.0
+            ],
+            "mean_mixed": 4.2925171008695475e-08,
+            "per_view_raw_PSNR_change_dB": [
+              -6.868711229737474e-06,
+              -0.0
+            ],
+            "mean_raw_PSNR_change_dB": -3.434355614868737e-06,
+            "per_view_RGB_changed_pixels": [
+              378,
+              0
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          }
+        },
+        {
+          "policy": "no_edit",
+          "parents": [],
+          "added_triangles": 0,
+          "exact_value_opacity_mean_coefficient": 0.0,
+          "coefficient_excludes_unknown_lambda": true,
+          "calibration": {
+            "per_view_score": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "mean_score": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "per_view_mixed": [
+              0.0,
+              0.0
+            ],
+            "mean_mixed": 0.0,
+            "per_view_raw_PSNR_change_dB": [
+              0.0,
+              0.0
+            ],
+            "mean_raw_PSNR_change_dB": 0.0,
+            "per_view_RGB_changed_pixels": [
+              0,
+              0
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          },
+          "heldout": {
+            "per_view_score": [
+              [
+                0.0,
+                0.0,
+                0.0
+              ],
+              [
+                0.0,
+                0.0,
+                0.0
+              ]
+            ],
+            "mean_score": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "per_view_mixed": [
+              0.0,
+              0.0
+            ],
+            "mean_mixed": 0.0,
+            "per_view_raw_PSNR_change_dB": [
+              0.0,
+              0.0
+            ],
+            "mean_raw_PSNR_change_dB": 0.0,
+            "per_view_RGB_changed_pixels": [
+              0,
+              0
+            ],
+            "illustrative_image_plus_mean_opacity_break_even_lambda": null
+          }
+        }
+      ],
+      "primary_comparisons": {
+        "signed_MSE": {
+          "primary_minus_comparator_heldout_mean_mixed": 6.577162000855957e-08,
+          "primary_lower_beyond_atol": false
+        },
+        "perturbation": {
+          "primary_minus_comparator_heldout_mean_mixed": 4.4074643071085544e-08,
+          "primary_lower_beyond_atol": false
+        },
+        "largest_min_area": {
+          "primary_minus_comparator_heldout_mean_mixed": -2.188657565699377e-08,
+          "primary_lower_beyond_atol": true
+        },
+        "hash": {
+          "primary_minus_comparator_heldout_mean_mixed": 4.4405658265538236e-08,
+          "primary_lower_beyond_atol": false
+        }
+      },
+      "independent_scene": false
+    }
+  ],
+  "native_forwards": 52,
+  "joint_references": 40,
+  "maximum_CPU_GPU_error": 3.978301995016635e-18,
+  "maximum_calibration_additivity_error": 3.978301995016635e-18,
+  "inputs": {
+    "analyze_tgs_joint_policy_v29.py": "969b5348bd77f826efec3ad0dbad8352597fdededf20e9e3530bee08e5a9fd01",
+    "experiments/tgs_joint_policy_v29/choices.json": "e801090fca4e51a90cdafcd13f4776adc1f9688cf8e9ae66ca6fef382aaa0513",
+    "experiments/tgs_joint_policy_v29/independent_audit.json": "9619ca5ac9d9fc08f66c297dc72364cd9808670df5fed8bfe26ae6ad0b0b6508",
+    "experiments/tgs_joint_policy_v29/global_reg_results.json": "f712124da26ec6e8c34c3d3ceae7f1f6a5eebe60bfee0a39d1fb33a39e6ab45f"
+  },
+  "supplemental_reg_did_not_change_choices": true,
+  "full_training_objective_measured": false,
+  "training": false,
+  "geometry_measured": false,
+  "final_quality_or_novelty_established": false,
+  "goal_complete": false
+}

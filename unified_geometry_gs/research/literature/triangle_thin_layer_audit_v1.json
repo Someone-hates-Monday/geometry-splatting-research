@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "status": "targeted_audit_complete_with_explicit_gaps",
+  "review_type": "primary_paper_and_official_source_static_audit",
+  "not_systematic": true,
+  "not_novelty_proof": true,
+  "scope_stop": "Parent requested save actually verified work after service interruption; no further search after stop.",
+  "triangle_identity": {
+    "title": "Triangle Splatting for Real-Time Radiance Field Rendering",
+    "arxiv_id": "2505.19175",
+    "paper_read_version": "v1",
+    "paper_read_date": "2025-05-25",
+    "url": "https://arxiv.org/html/2505.19175v1",
+    "official_project": "https://trianglesplatting.github.io/",
+    "official_repo": "https://github.com/trianglesplatting/triangle-splatting",
+    "observed_repo_label": "3DV2026",
+    "formula_location": "Section3.1 Eq1",
+    "window": "I(pixel)=ReLU(phi(pixel)/phi(incenter))^sigma; phi=max of three oriented screen edge functions",
+    "important_distinction": "Triangle sigma changes screen-space edge sharpness; it is not GGGS ray thickness epsilon."
+  },
+  "official_implementation": {
+    "main_commit": "685ff270a8273afc3a2b094ae3148dd0b98e31e9",
+    "pinned_submodule_commit": "6d61f4c0a571c635e37ffb740250706fa30a5541",
+    "observed_raster_main_commit": "6d61f4c0a571c635e37ffb740250706fa30a5541",
+    "submodule_url": "https://github.com/trianglesplatting/diff-triangle-rasterization.git",
+    "commit_verification": "Read-only GitHub API succeeded after sandbox network permission escalation.",
+    "cached_main_discrepancy": "Web-cached main wrapper/forward/backward had151/708/819 lines; fixed-commit bytes had170/743/852 lines. Use fixed-commit links and recorded actual line positions.",
+    "files": [
+      {"path": "triangle_renderer/__init__.py", "url": "https://raw.githubusercontent.com/trianglesplatting/triangle-splatting/685ff270a8273afc3a2b094ae3148dd0b98e31e9/triangle_renderer/__init__.py", "sha256": "0a7fe6635b0dcc28acf353dbce1c9439895ab359e9f6049eeac232fbbc843287", "lines": 170, "verified_locations": [{"lines": [132], "fact": "Median depth channel read"}, {"lines": [136,137,138], "fact": "Expected depth normalization and nonfinite cleanup"}, {"lines": [148], "fact": "depth_ratio mixes expected and median depth"}]},
+      {"path": "cuda_rasterizer/forward.cu", "url": "https://raw.githubusercontent.com/trianglesplatting/diff-triangle-rasterization/6d61f4c0a571c635e37ffb740250706fa30a5541/cuda_rasterizer/forward.cu", "sha256": "677c1bb03f7d3c9cb774c5a3d69f10aa40686aff256cfd96a9925bdf2ae5b89b", "lines": 743, "verified_locations": [{"lines": [141,145], "fact": "opacity preprocess stopping_influence0.01"}, {"lines": [418], "fact": "Per-primitive depth is p_view_triangle.z"}, {"lines": [562], "fact": "Power window evaluation"}, {"lines": [566], "fact": "alpha below1/255 skipped"}, {"lines": [569], "fact": "test_T below1e-4 early stop"}, {"lines": [588,589,590], "fact": "T before current-layer update greater than0.5 selects current primitive depth/contributor"}, {"lines": [622], "fact": "Median depth output"}]},
+      {"path": "cuda_rasterizer/backward.cu", "url": "https://raw.githubusercontent.com/trianglesplatting/diff-triangle-rasterization/6d61f4c0a571c635e37ffb740250706fa30a5541/cuda_rasterizer/backward.cu", "sha256": "f7041aed6e7754d9272e50218250d7198622054216570d0d3ffe6b2f0ddcb302", "lines": 852, "verified_locations": [{"lines": [285,286,287], "fact": "Preprocess depth upstream divided equally among3 vertices"}, {"lines": [528,539], "fact": "Saved median contributor and median channel upstream read"}, {"lines": [659,660], "fact": "Only selected contributor receives direct median-depth upstream"}]},
+      {"path": "cuda_rasterizer/rasterizer_impl.cu", "url": "https://raw.githubusercontent.com/trianglesplatting/diff-triangle-rasterization/6d61f4c0a571c635e37ffb740250706fa30a5541/cuda_rasterizer/rasterizer_impl.cu", "sha256": "26f09ae13efa88e8f603d966b6b5cb6b2f7a4d95128f7e9c6770edfec4923e48", "lines": 505, "verified_locations": [{"lines": [115], "fact": "Preprocess depth bit pattern included in tile sorting key"}]}
+    ],
+    "static_only": true,
+    "compiled_or_run": false,
+    "default_training_depth_ratio_checked": false,
+    "complete_backward_correctness_claim": false
+  },
+  "primary_theory_sources": [
+    {"id": "implicit_reparameterization", "title": "Implicit Reparameterization Gradients", "url": "https://arxiv.org/html/1805.08498", "locations": ["Section3 Eq6 and univariate CDF expression", "Section4 mixture example", "AppendixB Eq11"], "confirmed_overlap": "Implicit quantile gradient divided by density and log-density implementation are prior work.", "not_established": "Identical GGGS two-margin thin-limit counterexample or uniform epsilon stability theorem."},
+    {"id": "wsc2017_sensitivity", "authors": ["Yijie Peng", "Michael C. Fu", "Peter W. Glynn", "Jianqiang Hu"], "title": "On the Asymptotic Analysis of Quantile Sensitivity Estimation by Monte Carlo Simulation", "url": "https://www.informs-sim.org/wsc17papers/includes/files/191.pdf", "locations": ["Section2 A0", "Section2 Eq1"], "confirmed_overlap": "Continuous positive density at target quantile and implicit sensitivity ratio are established.", "scope_difference": "Sample-size Monte Carlo asymptotics, not the fixed-ray Gaussian thickness limit."},
+    {"id": "discontinuous_quantile", "authors": ["Silvana M. Pesenti", "Pietro Millossovich", "Andreas Tsanakas"], "title": "Differential Quantile-Based Sensitivity in Discontinuous Models", "url": "https://arxiv.org/html/2310.06151", "locations": ["Sections2-4", "AppendixB.1 LemmaB.1"], "confirmed_overlap": "Quantile-based sensitivity of discontinuous/discrete-input models and generalized-function weak-limit methods already exist.", "scope_difference": "Input stress through step functions differs from the GGGS continuous-product ray thickness family; no exact theorem equivalence verified."},
+    {"id": "gggs", "url": "https://arxiv.org/html/2601.17835v2", "locations": ["Eq10-13", "Section4.2.1 Discussion"], "confirmed_overlap": "Continuous median, implicit gradient and conditional near-side vacancy equivalence are prior work."},
+    {"id": "2dgs", "url": "https://arxiv.org/html/2403.17888", "locations": ["AppendixB Eq19"], "confirmed_overlap": "Largest-visible discrete median and low-opacity convention are established."}
+  ],
+  "queries_actually_executed": [
+    "\"Triangle Splatting for Real-Time Radiance Field Rendering\" arxiv github",
+    "Gaussian Splatting continuous median thin limit implicit gradients quantile singular perturbation",
+    "\"quantile\" \"small noise\" \"derivative\" mixture atoms",
+    "\"quantile\" \"weak convergence\" \"differentiability\" atom paper",
+    "\"quantile sensitivity\" \"density\" implicit derivative Hong 2009",
+    "\"Gaussian\" \"median\" \"zero temperature\" \"gradient\" mixture",
+    "\"Differential quantile-based sensitivity in discontinuous models\" arxiv",
+    "\"quantile\" \"vanishing\" \"density\" \"smoothing\" derivative mixture arxiv",
+    "\"thin\" \"quantile\" \"Gaussian\" splatting gradients",
+    "\"mixture\" \"quantile\" \"zero density\" differentiable",
+    "\"Gaussian mixture\" \"quantile\" \"sensitivity\" small variance",
+    "\"quantile\" \"derivative\" \"vanishing density\"",
+    "\"Quantile sensitivity\" \"vanishing\" paper",
+    "\"Estimating Quantile Sensitivities\" Hong pdf HKUST",
+    "\"quantile\" \"convergence\" \"atoms\" \"inverse\" theorem generalized inverses paper"
+  ],
+  "unretrieved_or_not_fully_audited_primary_leads": [
+    {"title": "Estimating Quantile Sensitivities", "author": "L. Jeff Hong", "year": 2009, "doi": "10.1287/opre.1080.0531", "author_publication_page": "https://jeffhonglab.github.io/publication", "status": "Search discovery only; original full text not read this audit"},
+    {"title": "Kernel estimation of quantile sensitivities", "authors": ["Guangwu Liu", "Liu Jeff Hong"], "year": 2009, "doi": "10.1002/nav.20358", "status": "Search discovery only; full proof not read"},
+    {"title": "On Continuity of the Pearson Statistic and Sample Quantiles", "url": "https://www.ism.ac.jp/editsec/aism/pdf/058_3_0527.pdf", "status": "Search discovery only; not opened or used for a theorem claim"}
+  ],
+  "failed_retrievals": ["Web GitHub recursive tree API returned Internal Error", "Web commits pages returned Internal Error", "Native sandbox GitHub API socket access denied; approved read-only retry succeeded"],
+  "local_theory_comparison": {
+    "document": "research/THIN_QUANTILE_LIMIT.md",
+    "candidate_specific_content": ["Strict cumulative plateau margin yields selected-peak depth limit", "Additional noncritical peak probability margin yields location Jacobian one-hot limit", "Finite-thickness regular three-layer root with location weights(1/2,0,1/2) and exponentially growing opacity derivative", "Plateau equality counterexample with root between layers"],
+    "standard_content": ["Implicit function differentiation", "Inverse-density conditioning", "Need assumptions for exchanging limits and derivatives"],
+    "novelty": "unverified",
+    "practical_relevance": "unverified",
+    "recommendation": "Worth one bounded mechanism validation; insufficient evidence for sole main contribution yet."
+  },
+  "one_finite_validation_proposal": {
+    "status": "proposal_only_not_started_not_preregistered",
+    "name": "frozen_original_ray_margins_vs_fp32_ulp_sensitivity",
+    "population": "Existing3072 predetermined rays across3 models at original width and opacity",
+    "independent_reference_subset": "96 fixed uniform-index rays,32 per scene, selected without observing margins or gradients",
+    "measurements": ["All valid and invalid counts", "Strict crossing layer and both margins", "Root slope and full opacity Jacobian", "High-precision root/VJP replay on fixed subset", "Adjacent representable FP32 opacity perturbations", "Production floor/truncation gradient differences", "GT visibility where available"],
+    "main_question": "Do the two margins add explanatory value for material nonconcentration or production-gradient error after controlling root slope?",
+    "stop_condition": "No material effect above independent numerical error, or all effects explained by the established slope condition number: retain theory supplement and do not initiate training on this rationale.",
+    "forbidden_inference": "No real quality or training-instability causal claim from synthetic asymptotics alone."
+  },
+  "remaining_gaps": ["Final conference revision versus arXivv1 differences", "Triangle default training depth_ratio", "Complete Triangle CUDA forward/backward and degeneracy runtime validation", "Broader generalized-inverse and singular-perturbation primary literature", "Measure or width of near-critical parameter neighborhoods", "Real production gradient and quality consequences", "Independent novelty audit"],
+  "training_started": false,
+  "latex_modified": false,
+  "old_audit_modified": false
+}

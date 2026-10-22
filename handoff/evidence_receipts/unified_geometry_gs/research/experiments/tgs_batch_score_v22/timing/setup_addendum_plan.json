@@ -1,0 +1,15 @@
+{
+  "inputs": {
+    "measure_tgs_batch_setup_addendum_v22.py": "8bf66be08b8eaf56b9f6d4b92b0fcf69cec17ee8f7cb831e260b89d3b7103eb1",
+    "experiments/tgs_batch_score_v22/timing/results_recovered.json": "867924eafd58621b276f15df9b441ff30ada6c53a501722661d45e47764825dd",
+    "experiments/tgs_batch_score_v22/timing/recovery_plan.json": "6bbe6df1cc6a374ed25c8b0d32d0204220e572ec9add8c2282b0171162078be6",
+    "experiments/tgs_batch_score_v22/plan.json": "6f36dd0ba47d73ed48c659f4164ecc24a83ae5085fbeec2baa4131560e8669eb",
+    "experiments/tgs_batch_score_v22/build_receipt.json": "000cd24359ef989489ab9a98f9d1c94cef650656964eba50d0f76dcb95ecb603",
+    "benchmark_tgs_local_split_v19.py": "44de641135f719b2a460f3ad084667393dcd284955cae24f7da0cd7848cf5ff3"
+  },
+  "two_new_forwards": true,
+  "no_repeats": true,
+  "separate_process_from_main_timing": true,
+  "not_reconstruction_of_original_setup": true,
+  "training": false
+}

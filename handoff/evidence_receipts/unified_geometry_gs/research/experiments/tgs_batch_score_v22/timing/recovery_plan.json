@@ -1,0 +1,22 @@
+{
+  "inputs": {
+    "experiments/tgs_batch_score_v22/timing/plan.json": "a22fbead526c564aa4e5189397a8ac82f405003d8e823c0308ad6506b5e23e36",
+    "experiments/tgs_batch_score_v22/timing/run_failure.txt": "c028ba1ea17cbe0c3dd1fadc9b3d99ed500be26207e5d06d5caf586fbc351b75",
+    "benchmark_tgs_batch_score_v22.py": "19b2158857e81af1ffa5e59fc769714276793829fe09384b3e65a31eab73b197",
+    "recover_tgs_batch_timing_v22.py": "1ce8d7a617489b737db73febdc064532c7382d3675b5ec4d2a43d2f554a0da82",
+    "experiments/tgs_batch_score_v22/timing/flowers_K1.json": "53ce30387f36905475aaaef92a138abe768febb25df46826a3939949c718f769",
+    "experiments/tgs_batch_score_v22/timing/flowers_K2.json": "dabe8cb796e1f25a1d5e728303af53e77e8ae10f14ffaf3ba3605a629005e4e3",
+    "experiments/tgs_batch_score_v22/timing/flowers_K4.json": "e126507dcbe56a514d9c5837bf6772f7abc0be11b3c717118bc8be0e043ae5ac",
+    "experiments/tgs_batch_score_v22/timing/flowers_K8.json": "7668a2857d1e32aac5bae6cadbac83956f8e068844e2c5c49798a06f366d7c22",
+    "experiments/tgs_batch_score_v22/timing/room_K1.json": "ff9b455bdecc94673df4bcca23c8e2c5d2a16ffad7b00ece466ac13bb8a2066c",
+    "experiments/tgs_batch_score_v22/timing/room_K2.json": "0216dcbfc6060fa671dbf82e0467a4d3b872ba18d3dba12081d114299f4453ba",
+    "experiments/tgs_batch_score_v22/timing/room_K4.json": "0bd8a789782ec01d593d82c60dc40d5106d7cb0ff57d3b3c3bb91f765f31d746",
+    "experiments/tgs_batch_score_v22/timing/room_K8.json": "a9f0baa066c04e8ba77998bc91c93ba0c27198be817e05635ee394c0dc596cc2"
+  },
+  "original_run_exit_code": 1,
+  "failure_stage": "Final expected-call-count assertion after all cells and input hash checks",
+  "planned_forwards": 954,
+  "derived_actual_forwards": 982,
+  "excess_over_written_count": 28,
+  "no_GPU_rerun": true
+}

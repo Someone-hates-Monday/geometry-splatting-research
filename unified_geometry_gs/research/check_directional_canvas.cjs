@@ -1,0 +1,14 @@
+const fs = require('fs');
+const ts = require('C:/Users/Someone/AppData/Local/Programs/Microsoft VS Code/110a328ea5/resources/app/extensions/node_modules/typescript/lib/typescript.js');
+const path = require('path');
+const input = process.argv[2] || 'canvas_directional_stage.tsx';
+const output = process.argv[3] || 'results/canvas_directional_syntax_v1.json';
+const source = fs.readFileSync(path.join(__dirname,input),'utf8');
+const result = ts.transpileModule(source,{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,target:ts.ScriptTarget.ES2020,module:ts.ModuleKind.ESNext},fileName:'GGGS-research-audit.canvas.tsx',reportDiagnostics:true});
+const diagnostics = (result.diagnostics||[]).map(d=>({category:d.category,code:d.code,message:ts.flattenDiagnosticMessageText(d.messageText,'\n')}));
+const errors = diagnostics.filter(d=>d.category===ts.DiagnosticCategory.Error);
+const record = {checked_utc:new Date().toISOString(),errors,diagnostics,scope:'TypeScript transpile syntax only; does not establish SDK typing or app rendering.',rows:24};
+if(fs.existsSync(path.join(__dirname,output)))throw new Error('Fresh syntax output required');
+fs.writeFileSync(path.join(__dirname,output),JSON.stringify(record,null,2)+'\n');
+console.log(JSON.stringify(record));
+if(errors.length)process.exitCode=1;

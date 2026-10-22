@@ -1,0 +1,7 @@
+{
+  "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/tgs_batch_score_v22/build/tgs_batch_score_v22.so",
+  "sha256": "f7733eb2473cb12868a1b316a10a8886191ef652d95adf17951dabf623d7572a",
+  "source_sha256": "5b80bb52bb55d509d80f57816b9adddf448269a6616e43c9d60c4d47e5293c9d",
+  "torch": "2.12.0.dev20260314+cu128",
+  "cuda": "12.8"
+}

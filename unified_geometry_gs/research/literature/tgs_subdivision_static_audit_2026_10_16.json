@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "status": "bounded_static_source_audit_and_conditional_analytic_derivation",
+  "user_constraint": "Strategy and analysis first; no experiments or training.",
+  "previous_turn_classification": "progress: primary-source review narrowed the candidate and identified relevant TGS+/MeshSplatting prior work",
+  "review_method": "Single-reviewer targeted primary-paper and pinned official source reading; not systematic or exhaustive",
+  "scope": "TGS subdivision and cloning, ideal window integral, implemented selection/appearance/depth/optimizer confounders",
+  "sources": [
+    {
+      "id": "tgs_v1",
+      "url": "https://arxiv.org/html/2505.19175v1",
+      "sections_read": ["3.1 window", "3.2 splitting", "3.3 loss", "Appendix A.1 sorting and tile assignment"],
+      "claim_boundary": "Midpoint area preservation and normalized compact window are existing definitions; actual CUDA changes require separate attribution."
+    },
+    {
+      "id": "tgs_plus_v1",
+      "url": "https://arxiv.org/html/2509.25122v1",
+      "sections_read": ["3.1-3.4"],
+      "claim_boundary": "Vertex sharing, opacity scheduling and subdivision are prior work; implementation not pinned or run."
+    },
+    {
+      "id": "mesh_splatting_v1",
+      "url": "https://arxiv.org/html/2512.06818v1",
+      "sections_read": ["3.2-3.5"],
+      "claim_boundary": "Related author/method lineage to TGS+; not independent replication; implementation not pinned or run."
+    },
+    {
+      "id": "3dgs_mcmc_v3",
+      "url": "https://arxiv.org/html/2404.09591v3",
+      "retrieved_via": "https://arxiv.org/html/2404.09591",
+      "sections_read": ["3.4 incl implementation and Adam", "Appendix A Eq11-14"],
+      "claim_boundary": "Peak correction and central 1D slice integral matching, approximate relocation; not exact image invariance or a proof about TGS transitions."
+    },
+    {
+      "id": "confidence_aware_densification",
+      "url": "https://arxiv.org/abs/2610.13541",
+      "sections_read": ["abstract and metadata only"],
+      "claim_boundary": "Prior-work lead for error/confidence-based allocation; full methods and claims not audited."
+    },
+    {
+      "id": "scientific_agent_skills",
+      "url": "https://arxiv.org/abs/2609.00065",
+      "doi": "10.48550/arXiv.2609.00065",
+      "observed_version": "v2",
+      "authors": ["Timothy Kassis", "Vinayak Agarwal", "Yuhuan He", "Darshil Patel", "Aubrey M. Brueckner"],
+      "role": "Workflow attribution, not scientific support for proposed conclusions"
+    }
+  ],
+  "discovery_queries_in_strategy_turn": [
+    "Triangle Splatting Plus subdivision opacity conservation arxiv",
+    "MeshSplatting triangle densification subdivision arxiv",
+    "3D Gaussian Splatting Markov Chain Monte Carlo densification opacity conservation paper"
+  ],
+  "current_audit_actions": [
+    "Re-read local triangle_thin_layer_audit_v1.json and recover prior fixed commits",
+    "GitHub official main commit query, fixed commit/tree and raw blob retrieval",
+    "Direct primary-source opens and within-paper finds for opacity, integral, approximation, midpoint, depth and metadata",
+    "Read exact local source lines; derive the ideal continuous triangle-window integral by homothety"
+  ],
+  "code_archive_manifest": "research/sources/tgs_subdivision_static_v1/manifest.json",
+  "main_commit": "685ff270a8273afc3a2b094ae3148dd0b98e31e9",
+  "native_gitlink": "6d61f4c0a571c635e37ffb740250706fa30a5541",
+  "analytical_observation": {
+    "type": "conditional derivation, no numerical experiment",
+    "identity": "integral_K opacity*u^sigma = 2*opacity*area(K)/((sigma+1)*(sigma+2))",
+    "domain": "Nondegenerate screen triangle; u=min interior signed edge distance/inradius; sigma>0; complete continuous area",
+    "consequence": "Copied opacity and sigma already preserve integrated alpha under any disjoint triangulation; pointwise response changes",
+    "exclusions": ["Discrete sampling", "Size or visibility culling", "Partial viewport clipping", "Spatially varying occlusion", "Changed SH directions", "Changed depth ordering", "Optimizer dynamics"],
+    "novelty": "not established",
+    "real_scene_relevance": "not measured"
+  },
+  "strategy_change": "Do not presume missing total alpha or start opacity compensation. Attribute spatial redistribution and discrete/state effects before designing a method.",
+  "known_limits": [
+    "No full independent mathematical review",
+    "No complete latest-conference revision audit",
+    "No full TGS+/MeshSplatting CUDA audit",
+    "No CUDA or renderer execution",
+    "No new geometry, image, timing, or training evidence",
+    "No novelty or general quality claim"
+  ],
+  "experiments_started": false,
+  "training_started": false,
+  "production_code_changed": false,
+  "latex_changed": false
+}

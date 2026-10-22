@@ -1,0 +1,324 @@
+{
+  "scene": "flowers",
+  "K": 4,
+  "proposals": [
+    {
+      "parent_id": 1436,
+      "appearance": "hold",
+      "coverage": 0.23003784731837904
+    },
+    {
+      "parent_id": 1436,
+      "appearance": "moved",
+      "coverage": 0.23003784731837904
+    },
+    {
+      "parent_id": 1387,
+      "appearance": "hold",
+      "coverage": 0.13218868272869935
+    },
+    {
+      "parent_id": 1387,
+      "appearance": "moved",
+      "coverage": 0.13218868272869935
+    }
+  ],
+  "blocks": [
+    {
+      "repeat": 0,
+      "order": [
+        "C_sequential_scalar",
+        "D_batch_scalar",
+        "B_cached_image_score",
+        "A_full_score"
+      ],
+      "measurements": {
+        "C_sequential_scalar": {
+          "wall_ms": 7.273714,
+          "cuda_bracket_ms": 7.25494384765625,
+          "peak_increment_bytes": 100349440
+        },
+        "D_batch_scalar": {
+          "wall_ms": 3.32303,
+          "cuda_bracket_ms": 3.299072027206421,
+          "peak_increment_bytes": 71335424
+        },
+        "B_cached_image_score": {
+          "wall_ms": 7.267065,
+          "cuda_bracket_ms": 7.236544132232666,
+          "peak_increment_bytes": 100348928
+        },
+        "A_full_score": {
+          "wall_ms": 7.992342,
+          "cuda_bracket_ms": 7.967648029327393,
+          "peak_increment_bytes": 320088576
+        }
+      },
+      "ratios": {
+        "full_over_batch": 2.4051368780901767,
+        "cached_image_over_sequential_scalar": 0.999085886522346,
+        "sequential_scalar_over_batch": 2.1888800281670644,
+        "cached_image_over_batch": 2.1868791434323493
+      }
+    },
+    {
+      "repeat": 1,
+      "order": [
+        "A_full_score",
+        "B_cached_image_score",
+        "D_batch_scalar",
+        "C_sequential_scalar"
+      ],
+      "measurements": {
+        "A_full_score": {
+          "wall_ms": 8.126178,
+          "cuda_bracket_ms": 8.096192359924316,
+          "peak_increment_bytes": 320088576
+        },
+        "B_cached_image_score": {
+          "wall_ms": 7.62323,
+          "cuda_bracket_ms": 7.603744029998779,
+          "peak_increment_bytes": 100348928
+        },
+        "D_batch_scalar": {
+          "wall_ms": 3.412533,
+          "cuda_bracket_ms": 3.387648105621338,
+          "peak_increment_bytes": 71335424
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 7.464922,
+          "cuda_bracket_ms": 7.399392127990723,
+          "peak_increment_bytes": 100349440
+        }
+      },
+      "ratios": {
+        "full_over_batch": 2.381274554707603,
+        "cached_image_over_sequential_scalar": 1.021206919509675,
+        "sequential_scalar_over_batch": 2.1875017765395968,
+        "cached_image_over_batch": 2.233891950641943
+      }
+    },
+    {
+      "repeat": 2,
+      "order": [
+        "D_batch_scalar",
+        "A_full_score",
+        "C_sequential_scalar",
+        "B_cached_image_score"
+      ],
+      "measurements": {
+        "D_batch_scalar": {
+          "wall_ms": 3.40449,
+          "cuda_bracket_ms": 3.3841280937194824,
+          "peak_increment_bytes": 71335424
+        },
+        "A_full_score": {
+          "wall_ms": 8.19133,
+          "cuda_bracket_ms": 8.148256301879883,
+          "peak_increment_bytes": 320088576
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 7.390521,
+          "cuda_bracket_ms": 7.369887828826904,
+          "peak_increment_bytes": 100349440
+        },
+        "B_cached_image_score": {
+          "wall_ms": 7.437179,
+          "cuda_bracket_ms": 7.418943881988525,
+          "peak_increment_bytes": 100348928
+        }
+      },
+      "ratios": {
+        "full_over_batch": 2.406037321302163,
+        "cached_image_over_sequential_scalar": 1.006313222031302,
+        "sequential_scalar_over_batch": 2.170815893129367,
+        "cached_image_over_batch": 2.1845207358517724
+      }
+    },
+    {
+      "repeat": 3,
+      "order": [
+        "A_full_score",
+        "B_cached_image_score",
+        "D_batch_scalar",
+        "C_sequential_scalar"
+      ],
+      "measurements": {
+        "A_full_score": {
+          "wall_ms": 8.021069,
+          "cuda_bracket_ms": 7.986752033233643,
+          "peak_increment_bytes": 320088576
+        },
+        "B_cached_image_score": {
+          "wall_ms": 7.494637,
+          "cuda_bracket_ms": 7.4739837646484375,
+          "peak_increment_bytes": 100348928
+        },
+        "D_batch_scalar": {
+          "wall_ms": 3.352042,
+          "cuda_bracket_ms": 3.319999933242798,
+          "peak_increment_bytes": 71335424
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 7.471121,
+          "cuda_bracket_ms": 7.454495906829834,
+          "peak_increment_bytes": 100349440
+        }
+      },
+      "ratios": {
+        "full_over_batch": 2.3928903635455643,
+        "cached_image_over_sequential_scalar": 1.0031475865536108,
+        "sequential_scalar_over_batch": 2.228826786776538,
+        "cached_image_over_batch": 2.235842212000924
+      }
+    },
+    {
+      "repeat": 4,
+      "order": [
+        "B_cached_image_score",
+        "C_sequential_scalar",
+        "A_full_score",
+        "D_batch_scalar"
+      ],
+      "measurements": {
+        "B_cached_image_score": {
+          "wall_ms": 7.329207,
+          "cuda_bracket_ms": 7.312831878662109,
+          "peak_increment_bytes": 100348928
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 7.34642,
+          "cuda_bracket_ms": 7.335391998291016,
+          "peak_increment_bytes": 100349440
+        },
+        "A_full_score": {
+          "wall_ms": 8.080465,
+          "cuda_bracket_ms": 8.03990364074707,
+          "peak_increment_bytes": 320088576
+        },
+        "D_batch_scalar": {
+          "wall_ms": 3.366127,
+          "cuda_bracket_ms": 3.3427200317382812,
+          "peak_increment_bytes": 71335424
+        }
+      },
+      "ratios": {
+        "full_over_batch": 2.4005229155049705,
+        "cached_image_over_sequential_scalar": 0.9976569539993629,
+        "sequential_scalar_over_batch": 2.1824547915155903,
+        "cached_image_over_batch": 2.1773411995447587
+      }
+    },
+    {
+      "repeat": 5,
+      "order": [
+        "C_sequential_scalar",
+        "D_batch_scalar",
+        "B_cached_image_score",
+        "A_full_score"
+      ],
+      "measurements": {
+        "C_sequential_scalar": {
+          "wall_ms": 7.278047,
+          "cuda_bracket_ms": 7.24403190612793,
+          "peak_increment_bytes": 100349440
+        },
+        "D_batch_scalar": {
+          "wall_ms": 3.367617,
+          "cuda_bracket_ms": 3.34224009513855,
+          "peak_increment_bytes": 71335424
+        },
+        "B_cached_image_score": {
+          "wall_ms": 7.825269,
+          "cuda_bracket_ms": 7.792640209197998,
+          "peak_increment_bytes": 100348928
+        },
+        "A_full_score": {
+          "wall_ms": 8.157772,
+          "cuda_bracket_ms": 8.129376411437988,
+          "peak_increment_bytes": 320088576
+        }
+      },
+      "ratios": {
+        "full_over_batch": 2.4224168009604417,
+        "cached_image_over_sequential_scalar": 1.0751880277772319,
+        "sequential_scalar_over_batch": 2.1611860849971953,
+        "cached_image_over_batch": 2.3236814043877314
+      }
+    },
+    {
+      "repeat": 6,
+      "order": [
+        "D_batch_scalar",
+        "A_full_score",
+        "C_sequential_scalar",
+        "B_cached_image_score"
+      ],
+      "measurements": {
+        "D_batch_scalar": {
+          "wall_ms": 3.407686,
+          "cuda_bracket_ms": 3.3650879859924316,
+          "peak_increment_bytes": 71335424
+        },
+        "A_full_score": {
+          "wall_ms": 8.224539,
+          "cuda_bracket_ms": 8.165535926818848,
+          "peak_increment_bytes": 320088576
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 7.931282,
+          "cuda_bracket_ms": 7.9036478996276855,
+          "peak_increment_bytes": 100349440
+        },
+        "B_cached_image_score": {
+          "wall_ms": 7.333753,
+          "cuda_bracket_ms": 7.311967849731445,
+          "peak_increment_bytes": 100348928
+        }
+      },
+      "ratios": {
+        "full_over_batch": 2.4135260701836967,
+        "cached_image_over_sequential_scalar": 0.9246617381654062,
+        "sequential_scalar_over_batch": 2.327468551973392,
+        "cached_image_over_batch": 2.1521211167930376
+      }
+    },
+    {
+      "repeat": 7,
+      "order": [
+        "B_cached_image_score",
+        "C_sequential_scalar",
+        "A_full_score",
+        "D_batch_scalar"
+      ],
+      "measurements": {
+        "B_cached_image_score": {
+          "wall_ms": 7.918072,
+          "cuda_bracket_ms": 7.845759868621826,
+          "peak_increment_bytes": 100348928
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 8.887699,
+          "cuda_bracket_ms": 8.865056037902832,
+          "peak_increment_bytes": 100349440
+        },
+        "A_full_score": {
+          "wall_ms": 8.113289,
+          "cuda_bracket_ms": 8.095135688781738,
+          "peak_increment_bytes": 320088576
+        },
+        "D_batch_scalar": {
+          "wall_ms": 3.427446,
+          "cuda_bracket_ms": 3.402559995651245,
+          "peak_increment_bytes": 71335424
+        }
+      },
+      "ratios": {
+        "full_over_batch": 2.367152976297803,
+        "cached_image_over_sequential_scalar": 0.8909023584169536,
+        "sequential_scalar_over_batch": 2.5930967256668667,
+        "cached_image_over_batch": 2.310195988499892
+      }
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "all_identities_passed": true,
+  "scenes": [
+    {
+      "scene": "flowers",
+      "N": 938101,
+      "S_exact": "27072285488221915/137438953472",
+      "mean_opacity_exact": "27072285488221915/128931619691036672",
+      "mean_opacity_float64": 0.20997398119325714,
+      "observed_base_FP32_mean": 0.2099739909172058,
+      "effective_opacity_sha256": "ef61f67f78f3d2775961994bf0c87ee7dd56cdc93371a79f411f1ff6b7651d26",
+      "rows": [
+        {
+          "policy": "signed_mixed",
+          "parents": [
+            2152,
+            124366,
+            126605,
+            128638,
+            252774,
+            272669,
+            337296,
+            512218
+          ],
+          "exact_joint_coefficient": "63719375916934383/15119246965331722240000",
+          "joint_coefficient": 4.2144543351294056e-06,
+          "fixed_budget_unary_sum_exact": true,
+          "sum_true_single_coefficients": 4.214548678124465e-06,
+          "single_sum_vs_joint_difference": -9.434299505994805e-11,
+          "observed_FP32_mean_delta": 4.187226295471191e-06,
+          "FP32_delta_minus_exact": -2.7228039658214156e-08,
+          "per_candidate_fixed_budget_coefficients": [
+            1.0915725403939057e-06,
+            8.545429838043535e-07,
+            -5.681078016608743e-07,
+            5.799188994740176e-07,
+            5.692977568165998e-07,
+            2.3465995162252024e-07,
+            1.2550280613185952e-06,
+            1.9754194336028752e-07
+          ]
+        },
+        {
+          "policy": "signed_MSE",
+          "parents": [
+            2152,
+            19779,
+            70211,
+            124366,
+            126605,
+            128638,
+            252774,
+            337296
+          ],
+          "exact_joint_coefficient": "67703150866112751/15119246965331722240000",
+          "joint_coefficient": 4.477944637147298e-06,
+          "fixed_budget_unary_sum_exact": true,
+          "sum_true_single_coefficients": 4.478044878524992e-06,
+          "single_sum_vs_joint_difference": -1.002413776938306e-10,
+          "observed_FP32_mean_delta": 4.470348358154297e-06,
+          "FP32_delta_minus_exact": -7.596278993001275e-09,
+          "per_candidate_fixed_budget_coefficients": [
+            1.0915725403939057e-06,
+            -7.99205829445243e-09,
+            7.036842552951532e-07,
+            8.545429838043535e-07,
+            -5.681078016608743e-07,
+            5.799188994740176e-07,
+            5.692977568165998e-07,
+            1.2550280613185952e-06
+          ]
+        },
+        {
+          "policy": "perturbation",
+          "parents": [
+            358326,
+            365788,
+            377809,
+            540588,
+            588632,
+            650356,
+            668089,
+            694221
+          ],
+          "exact_joint_coefficient": "-20698699486498641/15119246965331722240000",
+          "joint_coefficient": -1.3690297892454925e-06,
+          "fixed_budget_unary_sum_exact": true,
+          "sum_true_single_coefficients": -1.3690604357682387e-06,
+          "single_sum_vs_joint_difference": 3.0646522746044516e-11,
+          "observed_FP32_mean_delta": -1.385807991027832e-06,
+          "FP32_delta_minus_exact": -1.6778201782339543e-08,
+          "per_candidate_fixed_budget_coefficients": [
+            -3.6349774744907037e-07,
+            -1.4450626389668277e-07,
+            -1.688389209857637e-07,
+            -6.035420343021415e-07,
+            -3.2493700498760345e-07,
+            -6.060977750474266e-07,
+            9.395618736972569e-07,
+            -9.717191627406107e-08
+          ]
+        },
+        {
+          "policy": "largest_min_area",
+          "parents": [
+            4180,
+            7019,
+            14982,
+            18783,
+            101807,
+            117261,
+            154550,
+            548152
+          ],
+          "exact_joint_coefficient": "38009697298007919/15119246965331722240000",
+          "joint_coefficient": 2.5139940755755735e-06,
+          "fixed_budget_unary_sum_exact": true,
+          "sum_true_single_coefficients": 2.514050352785336e-06,
+          "single_sum_vs_joint_difference": -5.627720976254983e-11,
+          "observed_FP32_mean_delta": 2.4884939193725586e-06,
+          "FP32_delta_minus_exact": -2.550015620301489e-08,
+          "per_candidate_fixed_budget_coefficients": [
+            4.1451746360671826e-07,
+            2.0073819836752077e-06,
+            2.955432252307235e-07,
+            2.1946927307748777e-07,
+            -6.308033087205206e-08,
+            -3.8602487223392244e-07,
+            -1.541940001995154e-07,
+            1.803813332909262e-07
+          ]
+        },
+        {
+          "policy": "hash",
+          "parents": [
+            3328,
+            113521,
+            196023,
+            362030,
+            396134,
+            574901,
+            756888,
+            901452
+          ],
+          "exact_joint_coefficient": "-46560775179519441/15119246965331722240000",
+          "joint_coefficient": -3.079569722373265e-06,
+          "fixed_budget_unary_sum_exact": true,
+          "sum_true_single_coefficients": -3.0796386603206246e-06,
+          "single_sum_vs_joint_difference": 6.893794735960892e-11,
+          "observed_FP32_mean_delta": -3.11434268951416e-06,
+          "FP32_delta_minus_exact": -3.4772967140894986e-08,
+          "per_candidate_fixed_budget_coefficients": [
+            -4.0982506645767075e-07,
+            -2.2493279261894898e-07,
+            -3.682371148788405e-07,
+            -3.1378490050121045e-07,
+            -4.75460585434552e-07,
+            -5.55387745569271e-07,
+            -2.1735227310221569e-07,
+            -5.145892438105557e-07
+          ]
+        }
+      ],
+      "model_inputs_unchanged": true
+    },
+    {
+      "scene": "room",
+      "N": 2100000,
+      "S_exact": "17800156365817161/68719476736",
+      "mean_opacity_exact": "847626493610341/6871947673600000",
+      "mean_opacity_float64": 0.12334588880335519,
+      "observed_base_FP32_mean": 0.12334589660167694,
+      "effective_opacity_sha256": "222510f83d8a74243e5d9998436de07e43dcf6067e33f3afd293a6d451e5da3d",
+      "rows": [
+        {
+          "policy": "signed_mixed",
+          "parents": [
+            10413,
+            24228,
+            121237,
+            313661,
+            360852,
+            1672580,
+            1687306,
+            2033381
+          ],
+          "exact_joint_coefficient": "41662453589659/601302293387673600000",
+          "joint_coefficient": 6.92870359015881e-08,
+          "fixed_budget_unary_sum_exact": true,
+          "sum_true_single_coefficients": 6.92877287709573e-08,
+          "single_sum_vs_joint_difference": -6.928693692024964e-13,
+          "observed_FP32_mean_delta": 5.960464477539063e-08,
+          "FP32_delta_minus_exact": -9.682391126197476e-09,
+          "per_candidate_fixed_budget_coefficients": [
+            -9.692253239977574e-09,
+            -1.0930600003369283e-07,
+            9.649497521756303e-08,
+            1.3488737826319098e-07,
+            4.087140072028461e-09,
+            4.422872786477311e-08,
+            2.077011918305681e-08,
+            -1.1218305142535389e-07
+          ]
+        },
+        {
+          "policy": "signed_MSE",
+          "parents": [
+            10413,
+            24228,
+            62148,
+            303093,
+            330258,
+            978163,
+            1691129,
+            2033381
+          ],
+          "exact_joint_coefficient": "163008776789659/601302293387673600000",
+          "joint_coefficient": 2.7109289051815316e-07,
+          "fixed_budget_unary_sum_exact": true,
+          "sum_true_single_coefficients": 2.710956014431856e-07,
+          "single_sum_vs_joint_difference": -2.710925032431485e-12,
+          "observed_FP32_mean_delta": 2.60770320892334e-07,
+          "FP32_delta_minus_exact": -1.032256962581918e-08,
+          "per_candidate_fixed_budget_coefficients": [
+            -9.692253239977574e-09,
+            -1.0930600003369283e-07,
+            2.3252149776950053e-09,
+            -6.859910589880049e-08,
+            -3.7902900526993825e-09,
+            5.245754100181742e-07,
+            4.776296617280808e-08,
+            -1.1218305142535389e-07
+          ]
+        },
+        {
+          "policy": "perturbation",
+          "parents": [
+            631595,
+            673473,
+            1049130,
+            1420043,
+            1578773,
+            1656901,
+            1678961,
+            1761745
+          ],
+          "exact_joint_coefficient": "-494043519210341/601302293387673600000",
+          "joint_coefficient": -8.216225426764165e-07,
+          "fixed_budget_unary_sum_exact": true,
+          "sum_true_single_coefficients": -8.216307588901058e-07,
+          "single_sum_vs_joint_difference": 8.216213689316039e-12,
+          "observed_FP32_mean_delta": -8.270144462585449e-07,
+          "FP32_delta_minus_exact": -5.391903582128414e-09,
+          "per_candidate_fixed_budget_coefficients": [
+            -1.1302996520832142e-07,
+            -1.5303177106288908e-07,
+            -1.337898740549553e-07,
+            -1.557651183626978e-07,
+            -7.388427449860006e-08,
+            -1.3329429104574851e-07,
+            -7.508487926585073e-08,
+            1.625763082264634e-08
+          ]
+        },
+        {
+          "policy": "largest_min_area",
+          "parents": [
+            10413,
+            62148,
+            121237,
+            139730,
+            238956,
+            241633,
+            295639,
+            1489058
+          ],
+          "exact_joint_coefficient": "490221344796553/200434097795891200000",
+          "joint_coefficient": 2.4457981460607664e-06,
+          "fixed_budget_unary_sum_exact": true,
+          "sum_true_single_coefficients": 2.445822604007287e-06,
+          "single_sum_vs_joint_difference": -2.445794652068406e-11,
+          "observed_FP32_mean_delta": 2.436339855194092e-06,
+          "FP32_delta_minus_exact": -9.458290866674554e-09,
+          "per_candidate_fixed_budget_coefficients": [
+            -9.692253239977574e-09,
+            2.3252149776950053e-09,
+            9.649497521756303e-08,
+            2.747043550559215e-07,
+            5.547208383648335e-07,
+            4.197676727236005e-07,
+            4.5220904574764006e-07,
+            6.552682972134902e-07
+          ]
+        },
+        {
+          "policy": "hash",
+          "parents": [
+            112190,
+            345281,
+            378531,
+            572318,
+            627740,
+            942423,
+            1151202,
+            1805617
+          ],
+          "exact_joint_coefficient": "-174792834410341/601302293387673600000",
+          "joint_coefficient": -2.90690450265168e-07,
+          "fixed_budget_unary_sum_exact": true,
+          "sum_true_single_coefficients": -2.9069335716551793e-07,
+          "single_sum_vs_joint_difference": 2.9069003499368946e-12,
+          "observed_FP32_mean_delta": -2.980232238769531e-07,
+          "FP32_delta_minus_exact": -7.332773611785111e-09,
+          "per_candidate_fixed_budget_coefficients": [
+            -1.3642395414647897e-07,
+            5.327788676510659e-08,
+            7.954090450786201e-08,
+            -4.264913668765717e-08,
+            -8.606837836875867e-08,
+            5.160910350744312e-08,
+            -8.928766294705973e-08,
+            -1.206892128956252e-07
+          ]
+        }
+      ],
+      "model_inputs_unchanged": true
+    }
+  ],
+  "sympy": "1.14.0",
+  "torch": "2.12.0.dev20260314+cu128",
+  "plan_sha256": "d656f10cf50c05bf15633d4b89bd1964f77c7ec2052cab209614674baba681c5",
+  "new_native_forwards": 0,
+  "training": false,
+  "lambda_unknown": true,
+  "full_training_objective_measured": false,
+  "choices_unchanged": true
+}

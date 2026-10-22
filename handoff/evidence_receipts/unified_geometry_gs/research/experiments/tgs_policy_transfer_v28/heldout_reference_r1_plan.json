@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "reference_tgs_policy_v28_r1.py": "78b42ca971ff82efca6ec43b130d49bc41fefdacd8f8d88a47f2863cd294f0f2",
+    "TGS_POLICY_REFERENCE_ADDENDUM_V28_R1.md": "a7154004412ad279b69ea754385f5e1705f74ef93714da1e17721e7db15245a5",
+    "experiments/tgs_policy_transfer_v28/choices.json": "c596200ae0385310b7bc66890ae09a2895e635f209dc19780e3451bea7aad696",
+    "experiments/tgs_policy_transfer_v28/execution_plan.json": "9d1abf29dee27a334746ca7549609f719e6099ad054da6be38d501834fb90778",
+    "experiments/tgs_policy_transfer_v28/reference_calibration_failure.txt": "acf9dcdd4def1b0e7c89f0ee28ba6e6a46b7dc0a106e0aa2d272c26c4ba0d9b8",
+    "experiments/tgs_policy_transfer_v28/reference_mismatch_probe/plan.json": "94505554119096e4196166b8cbe1297627d8d9a6479cbc3ff944f5838e6d1267",
+    "experiments/tgs_policy_transfer_v28/reference_mismatch_probe/results.json": "8e616c2f4ad16c0454bc80f33282094f0321a16ea29dc9febe6132258fde2010",
+    "experiments/tgs_policy_transfer_v28/reference_mismatch_probe/inherited_color_full_rgb.npy": "14eafc5bac327be774dc1122599dbac4439591ddb456ba850142ee8f7ed63181"
+  },
+  "cohort": "heldout",
+  "original_full_recompute_gate_failed": true,
+  "external_FP32_colors_fixed": true,
+  "calibration_scores_reused_without_retuning": true,
+  "training": false
+}

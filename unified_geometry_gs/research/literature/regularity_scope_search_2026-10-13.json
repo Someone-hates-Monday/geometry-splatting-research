@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-13 Asia/Shanghai",
+  "type": "Targeted primary-source scoping; not systematic review",
+  "queries": [
+    "Gaussian splatting quaternion normalization covariance precision gradient numerical stability anisotropic",
+    "\"Gaussian splatting\" \"Gram\" determinant stability",
+    "\"Geometry-Grounded Gaussian Splatting\" median depth gradient",
+    "\"Triangle Splatting\" Gaussian geometry primitive"
+  ],
+  "primary_sources": [
+    "https://arxiv.org/html/2601.17835v2",
+    "https://arxiv.org/html/2602.09999v1",
+    "https://arxiv.org/html/2403.17888",
+    "https://trianglesplatting.github.io/"
+  ],
+  "find_patterns": {
+    "GGGS": [
+      "thin",
+      "limit",
+      "smooth"
+    ],
+    "FasterGS": [
+      "numerical",
+      "quaternion"
+    ],
+    "TwoDGS": [
+      "median"
+    ]
+  },
+  "limits": [
+    "Web discovery returned secondary and irrelevant hits as well; only primary sources support technical claims.",
+    "No exact screened-study count or exhaustive coverage asserted.",
+    "Text search absence is not evidence that a mathematical result is novel.",
+    "2DGS paper has an explicit visibility-depth convention and fallback; a thin-limit correspondence requires checking the strict-crossing convention, not equating all algorithms."
+  ],
+  "primary_find_assessment": [
+    {
+      "source": "https://arxiv.org/html/2601.17835v2",
+      "assessment": "GGGS contrasts discrete median selection and continuous stochastic-solid depth and derives an implicit gradient. Regular-root conditions still matter."
+    },
+    {
+      "source": "https://arxiv.org/html/2602.09999v1",
+      "assessment": "Faster-GS already discusses numerical stability, covariance quaternions and degeneracy handling. A generic stability motivation is not novel."
+    },
+    {
+      "source": "https://arxiv.org/html/2403.17888",
+      "assessment": "2DGS specifies a largest-visible depth and a low-opacity fallback. Thin limits must state cumulative-transmittance and boundary conventions."
+    }
+  ]
+}

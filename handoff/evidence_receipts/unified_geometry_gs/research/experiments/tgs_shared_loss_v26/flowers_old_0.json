@@ -1,0 +1,676 @@
+{
+  "rows": [
+    {
+      "event": 0,
+      "ROI": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_gpu_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        0.0,
+        0.0
+      ],
+      "reference_blends": [
+        0.0,
+        0.0
+      ],
+      "blend_absolute_error": [
+        0.0,
+        0.0
+      ],
+      "ambiguous_blend_signs": [
+        true,
+        true
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "local_map_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_map_hash": "5f8f258dc3a341f1bc6742c4f5c332d58d62b4c5127e73ee2b4d67d88c93a484",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 1436,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 1,
+      "ROI": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_gpu_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        0.0,
+        0.0
+      ],
+      "reference_blends": [
+        0.0,
+        0.0
+      ],
+      "blend_absolute_error": [
+        0.0,
+        0.0
+      ],
+      "ambiguous_blend_signs": [
+        true,
+        true
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "local_map_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_map_hash": "5f8f258dc3a341f1bc6742c4f5c332d58d62b4c5127e73ee2b4d67d88c93a484",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 1436,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 2,
+      "ROI": [
+        656,
+        224,
+        944,
+        528
+      ],
+      "score": [
+        -1.1401971944837482e-08,
+        1.3958335544584585e-06,
+        3.628881872149835e-08
+      ],
+      "expected": [
+        -1.1401971944837459e-08,
+        1.3958335544584585e-06,
+        3.628881872013645e-08
+      ],
+      "full_gpu_score": [
+        -1.1401971944837472e-08,
+        1.3958335544584585e-06,
+        3.628881872149832e-08
+      ],
+      "absolute_error": [
+        2.3161057151484775e-23,
+        0.0,
+        1.3619032477318069e-18
+      ],
+      "full_absolute_error": [
+        1.3234889800848443e-23,
+        0.0,
+        1.3618701605073048e-18
+      ],
+      "local_full_scalar_error": [
+        9.926167350636332e-24,
+        0.0,
+        3.3087224502121107e-23
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        1.1094090798224672e-06,
+        -1.6379341300169657e-08
+      ],
+      "reference_blends": [
+        1.1094090798227395e-06,
+        -1.637934129989726e-08
+      ],
+      "blend_absolute_error": [
+        2.7232109254225756e-19,
+        2.7239719315861244e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "1677b6cc89b28062f48ccb0083f1032d908f430c3ff96d4963d355983fdd2736",
+      "local_map_hash": "495cfd1a202383b6510ceb4be09a8ab0f3b9ea0504df5e8e6fc0c6c46419148f",
+      "full_map_hash": "a5d7adf6a3213867956a82fd41b5e060293b719dd9221ccd3407cf164c232844",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 1387,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 3,
+      "ROI": [
+        656,
+        224,
+        944,
+        528
+      ],
+      "score": [
+        -6.723250521584389e-09,
+        1.4753601548809824e-06,
+        3.369308382123072e-08
+      ],
+      "expected": [
+        -6.723250521584382e-09,
+        1.4753601548809824e-06,
+        3.369308381703776e-08
+      ],
+      "full_gpu_score": [
+        -6.723250521584373e-09,
+        1.4753601548809824e-06,
+        3.369308382123075e-08
+      ],
+      "absolute_error": [
+        7.444625512977249e-24,
+        0.0,
+        4.192958672696596e-18
+      ],
+      "full_absolute_error": [
+        9.098986738083304e-24,
+        0.0,
+        4.192985142476198e-18
+      ],
+      "local_full_scalar_error": [
+        1.6543612251060553e-23,
+        0.0,
+        2.6469779601696886e-23
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        1.17354950714054e-06,
+        -1.2117217181513656e-08
+      ],
+      "reference_blends": [
+        1.1735495071413785e-06,
+        -1.2117217180675059e-08
+      ],
+      "blend_absolute_error": [
+        8.385626177817573e-19,
+        8.385973593674846e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "80b0120c8c3dd8483e74bf3bd8a4f308f853ec8f60404d5f9591c689bd8ffe8b",
+      "local_map_hash": "3528a2119631fa474d30364e622ff3024f9dc7531bb04dd32699fab36e684d4c",
+      "full_map_hash": "9bd40ccaff2f36fbb8bc05796ff55298c956b106af32c65b05fb70c5da7cd65d",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 1387,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 4,
+      "ROI": [
+        432,
+        336,
+        544,
+        432
+      ],
+      "score": [
+        -7.759443848202401e-10,
+        -1.5875526523842453e-09,
+        1.867555980587106e-08
+      ],
+      "expected": [
+        -7.759443848202401e-10,
+        -1.5875526523842453e-09,
+        1.8675559805802318e-08
+      ],
+      "full_gpu_score": [
+        -7.7594438482024e-10,
+        -1.5875526523842453e-09,
+        1.867555980587106e-08
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        6.874201762560681e-20
+      ],
+      "full_absolute_error": [
+        1.0339757656912846e-25,
+        0.0,
+        6.874201762560681e-20
+      ],
+      "local_full_scalar_error": [
+        1.0339757656912846e-25,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -5.005154083081608e-09,
+        -4.355867469030404e-09
+      ],
+      "reference_blends": [
+        -5.0051540830678605e-09,
+        -4.355867469016657e-09
+      ],
+      "blend_absolute_error": [
+        1.374774178063132e-20,
+        1.374774178063132e-20
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "3cd7e47232db88edf4868f09c15e4190cfe4e8fde9844e3afd9b11231c139128",
+      "local_map_hash": "1c5bfe652db3b672fdbf341fd9653653b38d38b69be8391164d25620584b0c71",
+      "full_map_hash": "f9e9de863fa6e38421e62e3a2cd1406b0c1c0be6cd37562b323e4c62af5768fc",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 2773,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 5,
+      "ROI": [
+        432,
+        336,
+        544,
+        432
+      ],
+      "score": [
+        -7.726211985521442e-10,
+        -1.5753638916509985e-09,
+        1.8629856674781593e-08
+      ],
+      "expected": [
+        -7.72621198552144e-10,
+        -1.5753638916509985e-09,
+        1.86298566740996e-08
+      ],
+      "full_gpu_score": [
+        -7.72621198552144e-10,
+        -1.5753638916509985e-09,
+        1.8629856674781593e-08
+      ],
+      "absolute_error": [
+        2.0679515313825692e-25,
+        0.0,
+        6.819938714377203e-19
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        6.819938714377203e-19
+      ],
+      "local_full_scalar_error": [
+        2.0679515313825692e-25,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -4.986262448277118e-09,
+        -4.344068293798034e-09
+      ],
+      "reference_blends": [
+        -4.986262448140719e-09,
+        -4.344068293661635e-09
+      ],
+      "blend_absolute_error": [
+        1.3639877428754405e-19,
+        1.3639877428754405e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "53b9688d52c324f71afe1243ec81c79de2a69ab72048263f7a13fca355caa193",
+      "local_map_hash": "891172cd3a66ac6940e7806ac6793ee257a004f9be4f6b4dcafd086a38eae789",
+      "full_map_hash": "19086ead2dc47ed5b5dc81aa86745c2aaac66e79212e61c646fcae27b193716f",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 2773,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 6,
+      "ROI": [
+        304,
+        448,
+        368,
+        512
+      ],
+      "score": [
+        2.5851950801573353e-06,
+        5.589837168837262e-06,
+        -2.4442696883490504e-05
+      ],
+      "expected": [
+        2.585195080157335e-06,
+        5.589837168837262e-06,
+        -2.4442696883490778e-05
+      ],
+      "full_gpu_score": [
+        2.5851950801573353e-06,
+        5.589837168837262e-06,
+        -2.4442696883490504e-05
+      ],
+      "absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        2.744386749103933e-19
+      ],
+      "full_absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        2.744386749103933e-19
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        9.36040911176791e-06,
+        6.956695440823969e-06
+      ],
+      "reference_blends": [
+        9.360409111767967e-06,
+        6.956695440824024e-06
+      ],
+      "blend_absolute_error": [
+        5.590417451878382e-20,
+        5.505714157152952e-20
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "3b94817f3d383af870b2c9229b42c72343d65e7274d329571bf791ebe01a5b6f",
+      "local_map_hash": "cf6a4e5d72d174b44071fbd6ca03908430e30878c08e2ab3aa19ec9f0370b432",
+      "full_map_hash": "35dfc7d4ef34884a435fc97767f7b4f0acefd38f2ef6e25070a09939d0ce863e",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 110,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 7,
+      "ROI": [
+        304,
+        448,
+        368,
+        512
+      ],
+      "score": [
+        2.586203865700924e-06,
+        5.591597472814623e-06,
+        -2.4442103947539525e-05
+      ],
+      "expected": [
+        2.5862038657009234e-06,
+        5.591597472814623e-06,
+        -2.444210394753996e-05
+      ],
+      "full_gpu_score": [
+        2.586203865700924e-06,
+        5.591597472814623e-06,
+        -2.444210394753953e-05
+      ],
+      "absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        4.37069000783219e-19
+      ],
+      "full_absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        4.3029273720518457e-19
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        6.776263578034403e-21
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        9.361698767759605e-06,
+        6.957383882068645e-06
+      ],
+      "reference_blends": [
+        9.361698767759691e-06,
+        6.957383882068731e-06
+      ],
+      "blend_absolute_error": [
+        8.639736061993863e-20,
+        8.639736061993863e-20
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "275557b0c28847c6e5f9c94e37bdaa1cf275f67b8252c70c1c57fedfd1e203cb",
+      "local_map_hash": "1d0bc1434c8ab09c6c28f2505e1ffd2dce840a08a94680faf4e598b0e29600a5",
+      "full_map_hash": "40883b394641bfea0a44041f1bb62e962a5776df45b0e959ebdb394c5fe235a5",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 110,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    }
+  ],
+  "layout_boxes": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      656,
+      224,
+      944,
+      528,
+      651,
+      219,
+      949,
+      533,
+      646,
+      954
+    ],
+    [
+      656,
+      224,
+      944,
+      528,
+      651,
+      219,
+      949,
+      533,
+      646,
+      954
+    ],
+    [
+      432,
+      336,
+      544,
+      432,
+      427,
+      331,
+      549,
+      437,
+      422,
+      554
+    ],
+    [
+      432,
+      336,
+      544,
+      432,
+      427,
+      331,
+      549,
+      437,
+      422,
+      554
+    ],
+    [
+      304,
+      448,
+      368,
+      512,
+      299,
+      443,
+      373,
+      517,
+      294,
+      378
+    ],
+    [
+      304,
+      448,
+      368,
+      512,
+      299,
+      443,
+      373,
+      517,
+      294,
+      378
+    ]
+  ],
+  "layout_totals": [
+    614400,
+    701520,
+    2742,
+    671880,
+    2628
+  ],
+  "temporary_vertical_bytes": 16836480,
+  "temporary_partial_bytes": 63072,
+  "timing": false,
+  "calls": [
+    {
+      "debug": true,
+      "scores_literal_unshared": true,
+      "maps_literal_unshared": true
+    },
+    {
+      "debug": false,
+      "scores_literal_unshared": true,
+      "maps_literal_unshared": true
+    },
+    {
+      "debug": true,
+      "scores_literal_unshared": true,
+      "maps_literal_unshared": true
+    }
+  ],
+  "cache_bytes": 74877696,
+  "cache_preps": 1,
+  "unshared_vertical_bytes": 44897280
+}

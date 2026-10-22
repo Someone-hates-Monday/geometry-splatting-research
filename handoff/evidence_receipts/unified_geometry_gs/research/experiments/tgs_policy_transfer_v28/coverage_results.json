@@ -1,0 +1,4014 @@
+{
+  "scenes": [
+    {
+      "scene": "flowers",
+      "rows": [
+        {
+          "parent_id": 658085,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  224,
+                  704,
+                  240,
+                  736
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  592,
+                  320,
+                  624,
+                  368
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  688,
+                  672,
+                  736,
+                  736
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 880910,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  592,
+                  560,
+                  624,
+                  592
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 162563,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1056,
+                  0,
+                  1088,
+                  16
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 456196,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  592,
+                  480,
+                  608,
+                  496
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 820238,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  656,
+                  480,
+                  688,
+                  512
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 861207,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  144,
+                  160,
+                  160,
+                  192
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 809898,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  576,
+                  240,
+                  592,
+                  288
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  688,
+                  416,
+                  704,
+                  464
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  640,
+                  192,
+                  672,
+                  240
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  656,
+                  256,
+                  688,
+                  304
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 223451,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  896,
+                  272,
+                  912,
+                  320
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 318289,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  704,
+                  304,
+                  736,
+                  336
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 824464,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  720,
+                  112,
+                  752,
+                  144
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 625258,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  992,
+                  576,
+                  1024,
+                  608
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 760477,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  240,
+                  448,
+                  272,
+                  480
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  1008,
+                  608,
+                  1024,
+                  640
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1024,
+                  400,
+                  1040,
+                  432
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  416,
+                  368,
+                  448,
+                  400
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 559768,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  928,
+                  400,
+                  960,
+                  432
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  240,
+                  384,
+                  272,
+                  416
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 649123,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  704,
+                  464,
+                  736,
+                  496
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  672,
+                  576,
+                  688,
+                  608
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  896,
+                  256,
+                  928,
+                  288
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  304,
+                  368,
+                  336,
+                  384
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 753152,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1040,
+                  464,
+                  1072,
+                  496
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  416,
+                  592,
+                  432,
+                  608
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  480,
+                  432,
+                  496,
+                  464
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 837888,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  784,
+                  192,
+                  832,
+                  224
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 25166,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  48,
+                  464,
+                  80,
+                  528
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1104,
+                  544,
+                  1168,
+                  640
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  448,
+                  384,
+                  496,
+                  432
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 548410,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  960,
+                  688,
+                  1008,
+                  736
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  592,
+                  640,
+                  624,
+                  672
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  64,
+                  480,
+                  96,
+                  512
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 94108,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  160,
+                  384,
+                  208,
+                  416
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  1248,
+                  624,
+                  1256,
+                  656
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  816,
+                  544,
+                  848,
+                  608
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  592,
+                  384,
+                  624,
+                  416
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 168865,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  1184,
+                  688,
+                  1232,
+                  720
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 818386,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  416,
+                  336,
+                  448,
+                  352
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  928,
+                  560,
+                  976,
+                  592
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  400,
+                  448,
+                  432,
+                  496
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  800,
+                  384,
+                  816,
+                  400
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 62177,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  992,
+                  368,
+                  1024,
+                  400
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  592,
+                  32,
+                  640
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  336,
+                  288,
+                  368,
+                  336
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1136,
+                  496,
+                  1216,
+                  560
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 479080,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  992,
+                  48,
+                  1024,
+                  96
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 223984,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  320,
+                  512,
+                  352,
+                  560
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 785260,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  672,
+                  0,
+                  720,
+                  48
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 691101,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  736,
+                  368,
+                  768,
+                  400
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  304,
+                  592,
+                  352,
+                  656
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  368,
+                  352,
+                  400,
+                  384
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  928,
+                  432,
+                  960,
+                  480
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 903071,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  752,
+                  416,
+                  800,
+                  464
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 404492,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  752,
+                  336,
+                  784,
+                  368
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  176,
+                  576,
+                  240,
+                  640
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  272,
+                  352,
+                  288,
+                  400
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1024,
+                  432,
+                  1056,
+                  480
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 177418,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  352,
+                  320,
+                  400,
+                  352
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1088,
+                  560,
+                  1152,
+                  624
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  336,
+                  528,
+                  368,
+                  560
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  800,
+                  384,
+                  832,
+                  416
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 166052,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  512,
+                  544,
+                  560,
+                  608
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": false,
+                "ROI": [
+                  784,
+                  608,
+                  800,
+                  640
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  224,
+                  384,
+                  240,
+                  416
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 770904,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  720,
+                  352,
+                  752,
+                  384
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  0,
+                  656,
+                  32,
+                  752
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  112,
+                  416,
+                  144,
+                  464
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1136,
+                  480,
+                  1168,
+                  528
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 320962,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  832,
+                  752,
+                  912,
+                  816
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        }
+      ],
+      "RGB_changed_view_count_matrix_calibration_by_heldout": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          13,
+          6,
+          5
+        ],
+        [
+          0,
+          3,
+          2
+        ]
+      ],
+      "primary": {
+        "parent_id": 837888,
+        "area_bin": 1,
+        "calibration": {
+          "views": [
+            {
+              "view": "calibration_0",
+              "structural_ROI_empty": false,
+              "RGB_changed": true,
+              "ROI": [
+                784,
+                192,
+                832,
+                224
+              ]
+            },
+            {
+              "view": "calibration_1",
+              "structural_ROI_empty": true,
+              "RGB_changed": false,
+              "ROI": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "RGB_changed_views": 1,
+          "nonempty_structural_views": 1
+        },
+        "heldout": {
+          "views": [
+            {
+              "view": "heldout_0",
+              "structural_ROI_empty": true,
+              "RGB_changed": false,
+              "ROI": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "view": "heldout_1",
+              "structural_ROI_empty": true,
+              "RGB_changed": false,
+              "ROI": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "RGB_changed_views": 0,
+          "nonempty_structural_views": 0
+        }
+      }
+    },
+    {
+      "scene": "room",
+      "rows": [
+        {
+          "parent_id": 295241,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1056,
+                  224,
+                  1104,
+                  240
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  960,
+                  816,
+                  1008,
+                  832
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 1717129,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  176,
+                  704,
+                  208,
+                  720
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  288,
+                  16,
+                  304,
+                  48
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 28990,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  784,
+                  512,
+                  800,
+                  576
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 1924069,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  528,
+                  736,
+                  560,
+                  752
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  608,
+                  96,
+                  640,
+                  128
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 1320597,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  304,
+                  832,
+                  352,
+                  864
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  400,
+                  176,
+                  448,
+                  192
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 463281,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  528,
+                  704,
+                  560,
+                  736
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  624,
+                  80,
+                  656,
+                  112
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 483612,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  768,
+                  560,
+                  784,
+                  592
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  960,
+                  624,
+                  992,
+                  640
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 1687679,
+          "area_bin": 0,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  0,
+                  976,
+                  16,
+                  1008
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  112,
+                  272,
+                  160,
+                  304
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 1758862,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  912,
+                  672,
+                  944,
+                  704
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1040,
+                  96,
+                  1056,
+                  144
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 689384,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1312,
+                  352,
+                  1344,
+                  384
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1216,
+                  848,
+                  1248,
+                  880
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 1937447,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  784,
+                  192,
+                  816,
+                  224
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  720,
+                  880,
+                  752,
+                  912
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 739375,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1120,
+                  448,
+                  1152,
+                  480
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1168,
+                  992,
+                  1216,
+                  1024
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1136,
+                  992,
+                  1168,
+                  1024
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 1738225,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  928,
+                  80,
+                  960,
+                  112
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  800,
+                  736,
+                  832,
+                  768
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 115329,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1536,
+                  880,
+                  1557,
+                  928
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 605829,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1360,
+                  400,
+                  1392,
+                  448
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 454950,
+          "area_bin": 1,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  704,
+                  176,
+                  736,
+                  224
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 642168,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  448,
+                  624,
+                  496,
+                  672
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  944,
+                  528,
+                  992,
+                  560
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 1149016,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  176,
+                  960,
+                  224,
+                  1008
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  736,
+                  432,
+                  768,
+                  464
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 1154518,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1040,
+                  128,
+                  1088,
+                  176
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  896,
+                  752,
+                  944,
+                  784
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 1934456,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  576,
+                  272,
+                  608,
+                  320
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 1584750,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1152,
+                  0,
+                  1200,
+                  32
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  960,
+                  608,
+                  992,
+                  640
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 1056369,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  144,
+                  496,
+                  192,
+                  544
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 76192,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  976,
+                  400,
+                  1040,
+                  464
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1232,
+                  896,
+                  1296,
+                  944
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  992,
+                  976,
+                  1056,
+                  1038
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          }
+        },
+        {
+          "parent_id": 261120,
+          "area_bin": 2,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  528,
+                  592,
+                  576,
+                  640
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  960,
+                  560,
+                  1008,
+                  592
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 571712,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  368,
+                  368,
+                  496,
+                  448
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  960,
+                  928,
+                  1008,
+                  1008
+                ]
+              }
+            ],
+            "RGB_changed_views": 2,
+            "nonempty_structural_views": 2
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1008,
+                  352,
+                  1040,
+                  416
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 83741,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1424,
+                  624,
+                  1488,
+                  672
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 832821,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  0,
+                  272,
+                  48,
+                  336
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 0,
+            "nonempty_structural_views": 0
+          }
+        },
+        {
+          "parent_id": 42674,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  784,
+                  192,
+                  848,
+                  240
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  736,
+                  880,
+                  800,
+                  912
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 1613169,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  624,
+                  704,
+                  704,
+                  816
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  800,
+                  592,
+                  896,
+                  640
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 11457,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1216,
+                  240,
+                  1296,
+                  352
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1104,
+                  784,
+                  1200,
+                  864
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 684536,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1072,
+                  928,
+                  1264,
+                  1038
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  416,
+                  560,
+                  528,
+                  640
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        },
+        {
+          "parent_id": 288976,
+          "area_bin": 3,
+          "calibration": {
+            "views": [
+              {
+                "view": "calibration_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  480,
+                  416,
+                  592,
+                  464
+                ]
+              },
+              {
+                "view": "calibration_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          },
+          "heldout": {
+            "views": [
+              {
+                "view": "heldout_0",
+                "structural_ROI_empty": false,
+                "RGB_changed": true,
+                "ROI": [
+                  1184,
+                  576,
+                  1232,
+                  640
+                ]
+              },
+              {
+                "view": "heldout_1",
+                "structural_ROI_empty": true,
+                "RGB_changed": false,
+                "ROI": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "RGB_changed_views": 1,
+            "nonempty_structural_views": 1
+          }
+        }
+      ],
+      "RGB_changed_view_count_matrix_calibration_by_heldout": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          21,
+          2
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "primary": {
+        "parent_id": 42674,
+        "area_bin": 3,
+        "calibration": {
+          "views": [
+            {
+              "view": "calibration_0",
+              "structural_ROI_empty": false,
+              "RGB_changed": true,
+              "ROI": [
+                784,
+                192,
+                848,
+                240
+              ]
+            },
+            {
+              "view": "calibration_1",
+              "structural_ROI_empty": true,
+              "RGB_changed": false,
+              "ROI": [
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "RGB_changed_views": 1,
+          "nonempty_structural_views": 1
+        },
+        "heldout": {
+          "views": [
+            {
+              "view": "heldout_0",
+              "structural_ROI_empty": true,
+              "RGB_changed": false,
+              "ROI": [
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "view": "heldout_1",
+              "structural_ROI_empty": false,
+              "RGB_changed": true,
+              "ROI": [
+                736,
+                880,
+                800,
+                912
+              ]
+            }
+          ],
+          "RGB_changed_views": 1,
+          "nonempty_structural_views": 1
+        }
+      }
+    }
+  ],
+  "plan_sha256": "ca1fb11ae6a3f3fd9132738d7bfc0b8e4a21a98802d5b69ead227f0b112c9a4d",
+  "posthoc_descriptive": true,
+  "causal_explanation_established": false,
+  "selection_unchanged": true,
+  "new_native_forwards": 0,
+  "training": false
+}

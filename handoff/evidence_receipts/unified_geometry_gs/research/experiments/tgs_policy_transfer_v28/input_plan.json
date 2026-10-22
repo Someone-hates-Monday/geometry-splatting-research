@@ -1,0 +1,534 @@
+{
+  "rows": [
+    {
+      "scene": "flowers",
+      "cohort": "calibration",
+      "view": "calibration_0",
+      "camera": {
+        "id": 149,
+        "img_name": "_DSC9186",
+        "width": 5025,
+        "height": 3312,
+        "position": [
+          -2.9796363625425797,
+          -1.1130069929042499,
+          -2.056235759268615
+        ],
+        "rotation": [
+          [
+            0.607385115110948,
+            -0.18150286396696189,
+            0.7733951333655072
+          ],
+          [
+            -0.2665246296950648,
+            0.870564048910878,
+            0.4136216368975476
+          ],
+          [
+            -0.7483635104062522,
+            -0.45735647706760274,
+            0.48039266145179843
+          ]
+        ],
+        "fy": 4285.457130435278,
+        "fx": 4328.590804346088
+      },
+      "split": "train",
+      "split_index": 127,
+      "archive": {
+        "url": "https://storage.googleapis.com/gresearch/refraw360/360_extra_scenes.zip",
+        "folder": "sources/tgs_gt_identity_v11/dataset_0",
+        "listing_sha256": "a4a0c7e9f9d79f79c434c7504aac1591500789fc3f8e6f9406e33e4d3ee087a2",
+        "size": 4488140217,
+        "entries": 1278,
+        "new_range_bytes": 145197
+      },
+      "original": {
+        "path": "flowers/images_4/_DSC9186.JPG",
+        "bytes": 1064584,
+        "compressed": 1064372,
+        "CRC": 1105462813,
+        "method": 8,
+        "offset": 2482406706,
+        "flags": 0
+      },
+      "published_gt": null,
+      "excluded_prior_camera_names": [
+        "_DSC9128",
+        "_DSC9136",
+        "_DSC9169"
+      ]
+    },
+    {
+      "scene": "flowers",
+      "cohort": "calibration",
+      "view": "calibration_1",
+      "camera": {
+        "id": 26,
+        "img_name": "_DSC9045",
+        "width": 5025,
+        "height": 3312,
+        "position": [
+          2.006163932838629,
+          1.3799735557958885,
+          2.301553644827394
+        ],
+        "rotation": [
+          [
+            -0.8104927170577994,
+            -0.13544418218979512,
+            -0.5698740467043597
+          ],
+          [
+            0.16468623343037156,
+            0.8809621307635069,
+            -0.4436036166208961
+          ],
+          [
+            0.5621209835211477,
+            -0.4533879108132012,
+            -0.6917075987826485
+          ]
+        ],
+        "fy": 4285.457130435278,
+        "fx": 4328.590804346088
+      },
+      "split": "train",
+      "split_index": 4,
+      "archive": {
+        "url": "https://storage.googleapis.com/gresearch/refraw360/360_extra_scenes.zip",
+        "folder": "sources/tgs_gt_identity_v11/dataset_0",
+        "listing_sha256": "a4a0c7e9f9d79f79c434c7504aac1591500789fc3f8e6f9406e33e4d3ee087a2",
+        "size": 4488140217,
+        "entries": 1278,
+        "new_range_bytes": 145197
+      },
+      "original": {
+        "path": "flowers/images_4/_DSC9045.JPG",
+        "bytes": 973079,
+        "compressed": 971698,
+        "CRC": 2643326755,
+        "method": 8,
+        "offset": 2341750729,
+        "flags": 0
+      },
+      "published_gt": null,
+      "excluded_prior_camera_names": [
+        "_DSC9128",
+        "_DSC9136",
+        "_DSC9169"
+      ]
+    },
+    {
+      "scene": "flowers",
+      "cohort": "heldout",
+      "view": "heldout_0",
+      "camera": {
+        "id": 15,
+        "img_name": "_DSC9160",
+        "width": 5025,
+        "height": 3312,
+        "position": [
+          -0.9372787672820659,
+          0.6425455773983495,
+          3.547802138611758
+        ],
+        "rotation": [
+          [
+            -0.963023473726989,
+            -0.039680916261500866,
+            0.26647929363357864
+          ],
+          [
+            -0.03826290338535587,
+            0.9992123997168553,
+            0.010513347545211509
+          ],
+          [
+            -0.26668659373003023,
+            -7.16709930107986e-05,
+            -0.9637833032315628
+          ]
+        ],
+        "fy": 4285.457130435278,
+        "fx": 4328.590804346088
+      },
+      "split": "test",
+      "split_index": 15,
+      "archive": {
+        "url": "https://storage.googleapis.com/gresearch/refraw360/360_extra_scenes.zip",
+        "folder": "sources/tgs_gt_identity_v11/dataset_0",
+        "listing_sha256": "a4a0c7e9f9d79f79c434c7504aac1591500789fc3f8e6f9406e33e4d3ee087a2",
+        "size": 4488140217,
+        "entries": 1278,
+        "new_range_bytes": 145197
+      },
+      "original": {
+        "path": "flowers/images_4/_DSC9160.JPG",
+        "bytes": 1089698,
+        "compressed": 1089698,
+        "CRC": 48007362,
+        "method": 0,
+        "offset": 2457053130,
+        "flags": 0
+      },
+      "published_gt": {
+        "path": "gpfs/home/acad/ulg-intelsig/jheld/triangle-splatting/full_eval/flowers/test/ours_30000/gt/00015.png",
+        "bytes": 2284034,
+        "compressed": 2277198,
+        "method": 8,
+        "CRC": 2829208559,
+        "offset": 10662319392,
+        "flags": 0
+      },
+      "excluded_prior_camera_names": [
+        "_DSC9128",
+        "_DSC9136",
+        "_DSC9169"
+      ]
+    },
+    {
+      "scene": "flowers",
+      "cohort": "heldout",
+      "view": "heldout_1",
+      "camera": {
+        "id": 7,
+        "img_name": "_DSC9096",
+        "width": 5025,
+        "height": 3312,
+        "position": [
+          1.246236703405009,
+          -1.1323496581358594,
+          -3.7059907414477067
+        ],
+        "rotation": [
+          [
+            0.9367533369775963,
+            0.09660138138884286,
+            -0.3363946473639333
+          ],
+          [
+            0.045489306264570394,
+            0.919396170401203,
+            0.3906934922252611
+          ],
+          [
+            0.3470214815784548,
+            -0.381285791717144,
+            0.856853100804172
+          ]
+        ],
+        "fy": 4285.457130435278,
+        "fx": 4328.590804346088
+      },
+      "split": "test",
+      "split_index": 7,
+      "archive": {
+        "url": "https://storage.googleapis.com/gresearch/refraw360/360_extra_scenes.zip",
+        "folder": "sources/tgs_gt_identity_v11/dataset_0",
+        "listing_sha256": "a4a0c7e9f9d79f79c434c7504aac1591500789fc3f8e6f9406e33e4d3ee087a2",
+        "size": 4488140217,
+        "entries": 1278,
+        "new_range_bytes": 145197
+      },
+      "original": {
+        "path": "flowers/images_4/_DSC9096.JPG",
+        "bytes": 1037423,
+        "compressed": 1036772,
+        "CRC": 85601631,
+        "method": 8,
+        "offset": 2391625594,
+        "flags": 0
+      },
+      "published_gt": {
+        "path": "gpfs/home/acad/ulg-intelsig/jheld/triangle-splatting/full_eval/flowers/test/ours_30000/gt/00007.png",
+        "bytes": 2207974,
+        "compressed": 2200664,
+        "method": 8,
+        "CRC": 3528106305,
+        "offset": 10625234460,
+        "flags": 0
+      },
+      "excluded_prior_camera_names": [
+        "_DSC9128",
+        "_DSC9136",
+        "_DSC9169"
+      ]
+    },
+    {
+      "scene": "room",
+      "cohort": "calibration",
+      "view": "calibration_0",
+      "camera": {
+        "id": 290,
+        "img_name": "DSCF4954",
+        "width": 3114,
+        "height": 2075,
+        "position": [
+          -0.2746550349965761,
+          -1.1572144067557668,
+          3.341702513911343
+        ],
+        "rotation": [
+          [
+            -0.7566571652791289,
+            -0.4863734478579361,
+            0.4369334084852468
+          ],
+          [
+            0.2152952971553508,
+            0.44566219462686074,
+            0.8689264314676812
+          ],
+          [
+            -0.6173474461391586,
+            0.7515491184873768,
+            -0.23249957687338862
+          ]
+        ],
+        "fy": 3173.9530257001675,
+        "fx": 3172.5294374200544
+      },
+      "split": "train",
+      "split_index": 251,
+      "archive": {
+        "url": "https://storage.googleapis.com/gresearch/refraw360/360_v2.zip",
+        "folder": "sources/tgs_gt_identity_v11/dataset_1",
+        "listing_sha256": "fe8e6486fa72e40705048a6cb7522f7d5e58edf67c5265f292f7ea2843df0426",
+        "size": 12535427936,
+        "entries": 6583,
+        "new_range_bytes": 773976
+      },
+      "original": {
+        "path": "room/images_2/DSCF4954.JPG",
+        "bytes": 795611,
+        "compressed": 795611,
+        "CRC": 2781538513,
+        "method": 0,
+        "offset": 10847212558,
+        "flags": 0
+      },
+      "published_gt": null,
+      "excluded_prior_camera_names": [
+        "DSCF4697",
+        "DSCF4755",
+        "DSCF4915"
+      ]
+    },
+    {
+      "scene": "room",
+      "cohort": "calibration",
+      "view": "calibration_1",
+      "camera": {
+        "id": 219,
+        "img_name": "DSCF4873",
+        "width": 3114,
+        "height": 2075,
+        "position": [
+          -1.6574146083259438,
+          0.5721945185545452,
+          -1.0473290181314368
+        ],
+        "rotation": [
+          [
+            0.7261577766470056,
+            -0.19239899292587095,
+            0.6600587177942491
+          ],
+          [
+            0.34027536264668395,
+            0.9347914366218235,
+            -0.10187073963692803
+          ],
+          [
+            -0.5974174093468865,
+            0.2985759493656809,
+            0.7442747083366712
+          ]
+        ],
+        "fy": 3173.9530257001675,
+        "fx": 3172.5294374200544
+      },
+      "split": "train",
+      "split_index": 180,
+      "archive": {
+        "url": "https://storage.googleapis.com/gresearch/refraw360/360_v2.zip",
+        "folder": "sources/tgs_gt_identity_v11/dataset_1",
+        "listing_sha256": "fe8e6486fa72e40705048a6cb7522f7d5e58edf67c5265f292f7ea2843df0426",
+        "size": 12535427936,
+        "entries": 6583,
+        "new_range_bytes": 773976
+      },
+      "original": {
+        "path": "room/images_2/DSCF4873.JPG",
+        "bytes": 807375,
+        "compressed": 807375,
+        "CRC": 2372102321,
+        "method": 0,
+        "offset": 10780886897,
+        "flags": 0
+      },
+      "published_gt": null,
+      "excluded_prior_camera_names": [
+        "DSCF4697",
+        "DSCF4755",
+        "DSCF4915"
+      ]
+    },
+    {
+      "scene": "room",
+      "cohort": "heldout",
+      "view": "heldout_0",
+      "camera": {
+        "id": 27,
+        "img_name": "DSCF4883",
+        "width": 3114,
+        "height": 2075,
+        "position": [
+          -1.37990397727998,
+          0.9070885829083046,
+          -1.2590805063551749
+        ],
+        "rotation": [
+          [
+            0.8280425590024962,
+            -0.2813472653019641,
+            0.4849631293074801
+          ],
+          [
+            0.21530500095666522,
+            0.9582234031714078,
+            0.1882861284791214
+          ],
+          [
+            -0.5176768075195641,
+            -0.05149394063103006,
+            0.8540252320831279
+          ]
+        ],
+        "fy": 3173.9530257001675,
+        "fx": 3172.5294374200544
+      },
+      "split": "test",
+      "split_index": 27,
+      "archive": {
+        "url": "https://storage.googleapis.com/gresearch/refraw360/360_v2.zip",
+        "folder": "sources/tgs_gt_identity_v11/dataset_1",
+        "listing_sha256": "fe8e6486fa72e40705048a6cb7522f7d5e58edf67c5265f292f7ea2843df0426",
+        "size": 12535427936,
+        "entries": 6583,
+        "new_range_bytes": 773976
+      },
+      "original": {
+        "path": "room/images_2/DSCF4883.JPG",
+        "bytes": 861111,
+        "compressed": 861027,
+        "CRC": 3694588363,
+        "method": 8,
+        "offset": 10789131789,
+        "flags": 0
+      },
+      "published_gt": {
+        "path": "gpfs/home/acad/ulg-intelsig/jheld/triangle-splatting/full_eval/room/test/ours_30000/gt/00027.png",
+        "bytes": 1767322,
+        "compressed": 1767209,
+        "method": 8,
+        "CRC": 2593910788,
+        "offset": 2884135588,
+        "flags": 0
+      },
+      "excluded_prior_camera_names": [
+        "DSCF4697",
+        "DSCF4755",
+        "DSCF4915"
+      ]
+    },
+    {
+      "scene": "room",
+      "cohort": "heldout",
+      "view": "heldout_1",
+      "camera": {
+        "id": 17,
+        "img_name": "DSCF4803",
+        "width": 3114,
+        "height": 2075,
+        "position": [
+          0.29610889819377145,
+          -1.995577287459899,
+          3.7861637665478773
+        ],
+        "rotation": [
+          [
+            -0.9282510668741403,
+            -0.03265175053424882,
+            0.37051831268382557
+          ],
+          [
+            0.25651401483576797,
+            0.6651622700384402,
+            0.7012558126034639
+          ],
+          [
+            -0.2693520318094063,
+            0.7459845961575602,
+            -0.6090619551866508
+          ]
+        ],
+        "fy": 3173.9530257001675,
+        "fx": 3172.5294374200544
+      },
+      "split": "test",
+      "split_index": 17,
+      "archive": {
+        "url": "https://storage.googleapis.com/gresearch/refraw360/360_v2.zip",
+        "folder": "sources/tgs_gt_identity_v11/dataset_1",
+        "listing_sha256": "fe8e6486fa72e40705048a6cb7522f7d5e58edf67c5265f292f7ea2843df0426",
+        "size": 12535427936,
+        "entries": 6583,
+        "new_range_bytes": 773976
+      },
+      "original": {
+        "path": "room/images_2/DSCF4803.JPG",
+        "bytes": 790059,
+        "compressed": 790059,
+        "CRC": 3280073366,
+        "method": 0,
+        "offset": 10715557597,
+        "flags": 0
+      },
+      "published_gt": {
+        "path": "gpfs/home/acad/ulg-intelsig/jheld/triangle-splatting/full_eval/room/test/ours_30000/gt/00017.png",
+        "bytes": 1673230,
+        "compressed": 1673449,
+        "method": 8,
+        "CRC": 4085300889,
+        "offset": 2855965074,
+        "flags": 0
+      },
+      "excluded_prior_camera_names": [
+        "DSCF4697",
+        "DSCF4755",
+        "DSCF4915"
+      ]
+    }
+  ],
+  "inputs": {
+    "TGS_POLICY_TRANSFER_PROTOCOL_V28.md": "77160d4e46ab424a77fb8ecc179ea00dd4d02f289efaeab74b3f75b0b30f3744",
+    "experiments/tgs_cross_scene_v10/input_audit.json": "27ac0c88823493d1518ea35f08d2b9b6146a43d55ddc2d11168e05ebc2425087",
+    "experiments/tgs_sh_isolation_v12/input_plan.json": "973c08d29e6eebc04c9ecb88c18fd1caeb95925cd790f27f4298946fd79ee333",
+    "extract_tgs_gt_identity_v11.py": "ca9e22b0397af33bed7808f0c503511245afbcbdd4494094846d05d202a97081",
+    "prepare_tgs_policy_data_v28.py": "e8ec501d22710fe3f6f0e235f1059f745387957603601d067aa37688f62a9ace",
+    "remote_public_zip_v11.py": "7626d846377a62d1f548fca04ab2ab3f37817d2ef7c76ac22d78735a4c535426",
+    "remote_tgs_zip.py": "784d02496c9c4e1f50eb4ef8d015fc2a2bce0e63d73583fc71604da7c095c4ab",
+    "sources/tgs_cross_scene_v10/flowers/cameras.json": "a4f870e63b6f615b937ffa7ff490d7348e977ca701496b667e29dd95d2af30ca",
+    "sources/tgs_cross_scene_v10/room/cameras.json": "c0cf58b68146866b559d7bc90042efc0642e5c364b2ab286ddc3e1fe2208a0fa",
+    "sources/tgs_gt_identity_v11/catalogue.json": "3a3fad95edbe31de25da1bd15397362255d307f0b4d39936b2068ebd15eaf3a7",
+    "sources/tgs_gt_identity_v11/dataset_0/entries.json": "a4a0c7e9f9d79f79c434c7504aac1591500789fc3f8e6f9406e33e4d3ee087a2",
+    "sources/tgs_gt_identity_v11/dataset_1/entries.json": "fe8e6486fa72e40705048a6cb7522f7d5e58edf67c5265f292f7ea2843df0426",
+    "sources/tgs_pretrained_listing_v1/zip_entries.json": "cf30f35cc790f3cacd2fa1cd21568d2aaa4d477cb9cde782a84e3beb2d12ed37"
+  },
+  "new_payload_budget": 100663296,
+  "training": false,
+  "test_payloads_seen": false
+}

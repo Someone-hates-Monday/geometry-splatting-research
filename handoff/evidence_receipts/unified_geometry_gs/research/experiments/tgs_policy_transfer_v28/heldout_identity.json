@@ -1,0 +1,64 @@
+{
+  "all_passed": true,
+  "rows": [
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "camera": "_DSC9160",
+      "shape": [
+        828,
+        1256,
+        3
+      ],
+      "decoded_RGB_sha256": "de07ddd06bdadbe1e7bade3f4bcc0ae93cac13e3e27ef9d1b6d0d4c902aabac0",
+      "original_published_exact": true,
+      "source_JPEG_calibration_only": false,
+      "resized": false
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "camera": "_DSC9096",
+      "shape": [
+        828,
+        1256,
+        3
+      ],
+      "decoded_RGB_sha256": "67f20d490801ffeb19bf1b7542ba47d07d25c51c3df1e2651d6fb69ecb8b1d53",
+      "original_published_exact": true,
+      "source_JPEG_calibration_only": false,
+      "resized": false
+    },
+    {
+      "scene": "room",
+      "view": "heldout_0",
+      "camera": "DSCF4883",
+      "shape": [
+        1038,
+        1557,
+        3
+      ],
+      "decoded_RGB_sha256": "97fcbbe82b753e1e2df6e58af807c7294fcb9e02d05755f8325fd0abe164f3ef",
+      "original_published_exact": true,
+      "source_JPEG_calibration_only": false,
+      "resized": false
+    },
+    {
+      "scene": "room",
+      "view": "heldout_1",
+      "camera": "DSCF4803",
+      "shape": [
+        1038,
+        1557,
+        3
+      ],
+      "decoded_RGB_sha256": "55e368e4731c28b14427778a10db5ac336d11aea0cbd3f6bc07f33db5d760ec9",
+      "original_published_exact": true,
+      "source_JPEG_calibration_only": false,
+      "resized": false
+    }
+  ],
+  "manifest_sha256": "798e8c4e5bc330485e224872564397b45198904f55676f5b6306151cb5c7ff2f",
+  "input_plan_sha256": "f0b5c7695acd2d6603e9eed10f65dad2976647ea402c9d38ded7ed9aaa37ae72",
+  "training": false
+}

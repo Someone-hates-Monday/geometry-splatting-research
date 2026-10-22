@@ -1,0 +1,71 @@
+{
+  "checked_utc": "2026-10-12 12:59:27 UTC",
+  "evidence": {
+    "thread_status": {
+      "type": "active",
+      "activeFlags": []
+    },
+    "page": {
+      "order": "newest_first",
+      "limit": 4,
+      "nextCursor": "{\"requestedThreadId\":\"01a12c14-2cc2-7da3-ae06-231597d1f7e1\",\"rolloutOrdinal\":2345,\"includeAnchor\":false,\"scope\":{\"kind\":\"turns\"}}",
+      "hasMore": true
+    },
+    "turns": [
+      {
+        "id": "01a13009-bd0f-7fa1-90de-af482fac3fb8",
+        "status": "inProgress",
+        "error": null,
+        "durationMs": null,
+        "startedAt": 1791807307,
+        "completedAt": null,
+        "item_count": 108,
+        "commands": 33,
+        "finals": []
+      },
+      {
+        "id": "01a12fdd-c648-7a43-9c4c-1ba82a0f82d6",
+        "status": "completed",
+        "error": null,
+        "durationMs": 2881204,
+        "startedAt": 1791804425,
+        "completedAt": 1791807307,
+        "item_count": 149,
+        "commands": 53,
+        "finals": []
+      },
+      {
+        "id": "01a12fa5-54a8-7000-b7a3-0c673de0dc23",
+        "status": "completed",
+        "error": null,
+        "durationMs": 3699083,
+        "startedAt": 1791800726,
+        "completedAt": 1791804425,
+        "item_count": 210,
+        "commands": 76,
+        "finals": []
+      },
+      {
+        "id": "01a12eb0-de68-77c3-a4f1-5351f697c1b4",
+        "status": "interrupted",
+        "error": null,
+        "durationMs": 16000239,
+        "startedAt": 1791784705,
+        "completedAt": 1791800705,
+        "item_count": 173,
+        "commands": 42,
+        "finals": []
+      }
+    ]
+  },
+  "confirmed_cause_current_queue": "The previous parent PID 405 had deliberately been stopped after the extreme-axis derivative gate failed. Its control child PID 425 completed and became a zombie, while the old stage manifest still said running.",
+  "action": "Verified child completion and 30k model; retained original manifest; retired held parent; recorded protocol deviation; new factor runner advances stages and records exit status without waiting for a chat response.",
+  "new_run": "research/experiments/factor_quality55_v1",
+  "new_exec_session": 86385,
+  "limits": [
+    "The app turn summaries show two prior completed turns with no reported error and one interrupted turn with no exposed reason; they do not identify a desktop/service failure cause.",
+    "No evidence that training completion itself causes a CUDA deadlock.",
+    "Source/log snapshots are now summarized rather than printing complete long histories; this reduces avoidable context volume but does not prove context length caused the reported stall."
+  ],
+  "goal_status": "active"
+}

@@ -1,0 +1,38 @@
+{
+  "repeat": 6,
+  "order": [
+    "B_cached_image",
+    "A_full_score",
+    "D_batch_packed",
+    "C_sequential_packed"
+  ],
+  "measurements": {
+    "B_cached_image": {
+      "wall_ms": 32.949639,
+      "cuda_bracket_ms": 32.914878845214844,
+      "peak_increment_bytes": 172168192
+    },
+    "A_full_score": {
+      "wall_ms": 35.447196,
+      "cuda_bracket_ms": 35.41657638549805,
+      "peak_increment_bytes": 395884544
+    },
+    "D_batch_packed": {
+      "wall_ms": 5.769735,
+      "cuda_bracket_ms": 5.738207817077637,
+      "peak_increment_bytes": 145461248
+    },
+    "C_sequential_packed": {
+      "wall_ms": 16.086831,
+      "cuda_bracket_ms": 16.048160552978516,
+      "peak_increment_bytes": 100349952
+    }
+  },
+  "ratios": {
+    "full_over_batch": 6.143643685541884,
+    "cached_image_over_sequential": 2.048236784485397,
+    "sequential_over_batch": 2.788140356532839,
+    "cached_image_over_batch": 5.71077163855879
+  },
+  "cumulative_native_forwards": 226
+}

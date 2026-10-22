@@ -1,0 +1,29 @@
+{
+  "baseline": {
+    "path": "./output_compare/ggs_ablate_no_dn/scan24",
+    "mesh_metrics": {
+      "mean_d2s": 0.3339684592046908,
+      "mean_s2d": 0.40226961213397056,
+      "overall": 0.3681190356693307
+    }
+  },
+  "optimized": {
+    "path": "./output_compare/ggs_ex_v004/scan24",
+    "mesh_metrics": {
+      "mean_d2s": 0.3737417280065844,
+      "mean_s2d": 0.4370755633469311,
+      "overall": 0.4054086456767577
+    }
+  },
+  "delta_optimized_minus_baseline": {
+    "mean_d2s": 0.03977326880189358,
+    "mean_s2d": 0.03480595121296054,
+    "overall": 0.03728961000742703
+  },
+  "image_metrics_note": "Skipped (--mesh_only).",
+  "mesh_quality_compared": true,
+  "metrics_description": {
+    "image_metrics": "L1 (\u2193), PSNR (\u2191), SSIM (\u2191) on training views.",
+    "mesh_metrics": "mean_d2s, mean_s2d, overall (Chamfer to GT, \u2193 = better). \u7f51\u683c\u8d28\u91cf\u5bf9\u6bd4\u9700 DTU \u5b98\u65b9\u6570\u636e."
+  }
+}

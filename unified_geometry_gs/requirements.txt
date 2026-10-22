@@ -1,0 +1,9 @@
+# 与父项目 SuGaR 一致；PyTorch/CUDA 建议用 conda 安装（见 environment_uggs.yml），避免 pip 拉取 nvidia-cudnn 时 SSL 失败
+open3d
+trimesh
+scikit-image
+opencv-python
+plyfile
+tqdm
+configargparse
+scipy

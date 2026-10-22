@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/benchmark_tgs_batch_score_v22.py", line 97, in <module>
+    try:globals()[args.action]()
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/benchmark_tgs_batch_score_v22.py", line 91, in run
+    assert forwards==954 and len(rows)==8
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

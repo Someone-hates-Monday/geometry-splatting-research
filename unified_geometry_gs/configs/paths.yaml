@@ -1,0 +1,13 @@
+# Paths for shared folders (optional: share data/output with parent repo)
+# Use absolute paths or env vars (e.g. UGGS_DATA_ROOT) if you prefer.
+
+data_root: "../data"
+output_root: "../output"
+output_subdir: "uggs"
+
+# DTU dataset: after running scripts/download_dtu.sh, data lives here and
+# UGGS_DTU_ROOT is written to configs/dtu_path.env for scripts to source.
+dtu_root: "data/dtu"
+
+# Resolved at runtime: outputs go to output_root/output_subdir/
+# e.g. ../output/uggs/baseline/, ../output/uggs/m1/, ...

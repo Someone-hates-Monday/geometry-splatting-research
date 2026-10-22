@@ -1,0 +1,12 @@
+{
+  "inputs": {
+    "sources/tgs_subdivision_static_v1/triangle-splatting/train.py": "2effbbef424b5250f5db272be9fe4e801fc443a566cae424cf47f27bd8c992cf",
+    "sources/tgs_subdivision_static_v1/triangle-splatting/utils/loss_utils.py": "4a1c06f43cc05f931daf34bbc2eb2531ff1588deb8b04a46b13cf523810bc1ce",
+    "TGS_JOINT_GLOBAL_REG_ADDENDUM_V27.md": "9ddd15fe754e7a623c7618ab89799f5c9f117e09223cf1f9b4ba25dcabaf39dd",
+    "verify_tgs_joint_global_reg_v27.py": "3d39cc7c2ad77935ce8ec8ecf263518d4805dc271545d0aa1c1c719084a2c300"
+  },
+  "exact_symbolic": true,
+  "data_informed_source_scope_addendum": true,
+  "training": false,
+  "new_native_forwards": 0
+}

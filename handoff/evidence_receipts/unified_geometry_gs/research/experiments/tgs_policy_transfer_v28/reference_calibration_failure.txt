@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/run_tgs_policy_transfer_v28.py", line 141, in <module>
+    if a.action.startswith('reference_'):reference(a.action.split('_',1)[1])
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/run_tgs_policy_transfer_v28.py", line 129, in reference
+    ref=next(t for t in table['rows'] if t['parent_id']==parent);trial=split(state,parent);tc=colors(helper,trial,cam);out=call(ctrl,trial,cam,tc);torch.cuda.synchronize();calls+=1;rgb=out[1].cpu().numpy();assert ahash(rgb)==ref['rgb_sha256']
+                                                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

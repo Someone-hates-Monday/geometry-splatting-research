@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "i": 0,
+      "j": 3,
+      "observed_RGB_change_overlap_pixels": 0,
+      "actual_joint_equals_observed_piecewise_mosaic": true,
+      "computed_RGB_interaction_peak": 0.0,
+      "computed_RGB_interaction_nonzero_channels": 0,
+      "observed_CPU_SSIM_change_overlap_channels": 0,
+      "computed_CPU_SSIM_interaction_peak": 0.0,
+      "computed_CPU_SSIM_interaction_nonzero_channels": 0
+    },
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "i": 1,
+      "j": 2,
+      "observed_RGB_change_overlap_pixels": 0,
+      "actual_joint_equals_observed_piecewise_mosaic": true,
+      "computed_RGB_interaction_peak": 0.0,
+      "computed_RGB_interaction_nonzero_channels": 0,
+      "observed_CPU_SSIM_change_overlap_channels": 0,
+      "computed_CPU_SSIM_interaction_peak": 0.0,
+      "computed_CPU_SSIM_interaction_nonzero_channels": 0
+    }
+  ],
+  "data_informed_post_hoc": true,
+  "CPU_maps_not_new_GPU_maps": true,
+  "new_native_forwards": 0,
+  "training": false,
+  "observed_support_not_a_structural_guarantee": true,
+  "plan_sha256": "fd2269f897557e58963cbaa4295ae8fef50e94de7bbe1f96f7df5918557afbe4"
+}

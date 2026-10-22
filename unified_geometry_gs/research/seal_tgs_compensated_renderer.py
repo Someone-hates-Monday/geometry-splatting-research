@@ -1,0 +1,18 @@
+"""Seal the FAILED v8 renderer attempt and the separate successful dispatch probe."""
+import datetime,hashlib,json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parent;V8=ROOT/'experiments/tgs_compensated_renderer_v8';POWER=ROOT/'experiments/tgs_standard_pow_dispatch_v1'
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+def seal(folder,names,metadata):
+    target=folder/'evidence_manifest.json';assert not target.exists();files=[ROOT/n for n in names]+[p for p in folder.rglob('*') if p.is_file()];entries=[dict(path=p.relative_to(ROOT).as_posix(),size=p.stat().st_size,sha256=sha(p)) for p in sorted(files)];target.write_text(json.dumps(dict(created_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),files=entries,**metadata),indent=2)+'\n');return dict(files=len(entries),bytes=sum(e['size'] for e in entries),manifest_sha256=sha(target))
+def main():
+    case=json.loads((V8/'case_results.json').read_text());real=json.loads((V8/'real_results.json').read_text());audit=json.loads((V8/'precision_diagnostic_audit.json').read_text());trace=json.loads((V8/'depth_trace/independent_audit.json').read_text());base=json.loads((V8/'baseline_cache_diagnostic_audit.json').read_text());power=json.loads((POWER/'independent_audit.json').read_text())
+    assert case['all_gates'] and not real['all_gates'] and not audit['all_gates'] and not audit['performance_measurement_allowed'];assert base['all_gates'] and not base['guard_renderer_gate'];assert trace['all_exact_decompositions'] and trace['all_native_endpoints_bitwise'] and trace['mode_summary']['guard']['depth_bad']==14
+    assert audit['script_sha256']==sha(ROOT/'audit_tgs_compensated_precision_diagnostic.py');assert base['script_sha256']==sha(ROOT/'audit_tgs_compensated_baseline_diagnostic.py');assert trace['script_sha256']==sha(ROOT/'audit_tgs_compensated_depth_trace.py');assert power['script_sha256']==sha(ROOT/'audit_tgs_standard_pow_dispatch.py')
+    for e in json.loads((V8/'input_plan.json').read_text())['sources'].items():assert sha(ROOT/e[0])==e[1]
+    (V8/'promotion_decision.json').write_text(json.dumps(dict(selected_case_gate=True,real_full_gate=False,failing_camera='_DSC9213',depth_bad_pixels=14,threshold=3e-5,observed_max=3.0517578125e-5,baseline_cache_gate=True,native_trace_exact=True,conditional_power_only=True,performance_measurement_allowed=False,production_promotion=False,training=False),indent=2)+'\n')
+    names=['TGS_COMPENSATED_RENDERER_PROTOCOL_V8.md','TGS_COMPENSATED_RENDERER_RESULT_2026_10_20.md','TGS_COMPENSATED_DEPTH_TRACE_PROTOCOL.md','tgs_compensated_window_v8.cuh','tgs_compensated_common.py','prepare_tgs_compensated_renderer.py','tgs_compensated_renderer_backend.py','probe_tgs_compensated_cases.py','probe_tgs_compensated_real.py','probe_tgs_compensated_fd.py','audit_tgs_compensated_binary.py','audit_tgs_compensated_baseline.py','audit_tgs_compensated_baseline_diagnostic.py','prepare_tgs_compensated_precision_audit.py','audit_tgs_compensated_precision.py','audit_tgs_compensated_precision_diagnostic.py','diagnose_tgs_compensated_depth.py','trace_tgs_compensated_depth.py','audit_tgs_compensated_depth_trace.py','seal_tgs_compensated_renderer.py']
+    a=seal(V8,names,dict(renderer_gate=False,prior_hash_checks=audit['prior_sealed_hash_checks'],original_source_checks=audit['source_files_checked']))
+    b=seal(POWER,['TGS_STANDARD_POW_DISPATCH_RESULT_2026_10_20.md','probe_tgs_standard_pow_dispatch.py','audit_tgs_standard_pow_dispatch.py'],dict(renderer_fix_proved=False,v8_manifest_sha256=a['manifest_sha256']))
+    print(json.dumps(dict(v8=a,power=b,goal_active=True)),flush=True)
+if __name__=='__main__':main()

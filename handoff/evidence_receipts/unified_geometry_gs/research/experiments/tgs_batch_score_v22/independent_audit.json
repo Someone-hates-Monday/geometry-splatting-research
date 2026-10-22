@@ -1,0 +1,123 @@
+{
+  "all_passed": true,
+  "rows": [
+    {
+      "scene": "flowers",
+      "event": 0,
+      "delta_SSE": 1553284,
+      "exact": true,
+      "PNG8_MSE_delta": 7.65648219533146e-06
+    },
+    {
+      "scene": "flowers",
+      "event": 1,
+      "delta_SSE": 1540410,
+      "exact": true,
+      "PNG8_MSE_delta": 7.593023386908341e-06
+    },
+    {
+      "scene": "flowers",
+      "event": 2,
+      "delta_SSE": -160029,
+      "exact": true,
+      "PNG8_MSE_delta": -7.888185220711076e-07
+    },
+    {
+      "scene": "flowers",
+      "event": 3,
+      "delta_SSE": -174081,
+      "exact": true,
+      "PNG8_MSE_delta": -8.580839544123908e-07
+    },
+    {
+      "scene": "flowers",
+      "event": 4,
+      "delta_SSE": 423,
+      "exact": true,
+      "PNG8_MSE_delta": 2.085061050410104e-09
+    },
+    {
+      "scene": "flowers",
+      "event": 5,
+      "delta_SSE": 261,
+      "exact": true,
+      "PNG8_MSE_delta": 1.2865270311041067e-09
+    },
+    {
+      "scene": "flowers",
+      "event": 6,
+      "delta_SSE": 83138,
+      "exact": true,
+      "PNG8_MSE_delta": 4.0980568701890124e-07
+    },
+    {
+      "scene": "flowers",
+      "event": 7,
+      "delta_SSE": 83058,
+      "exact": true,
+      "PNG8_MSE_delta": 4.0941134923158964e-07
+    },
+    {
+      "scene": "room",
+      "event": 0,
+      "delta_SSE": 868448,
+      "exact": true,
+      "PNG8_MSE_delta": 2.754585377091432e-06
+    },
+    {
+      "scene": "room",
+      "event": 1,
+      "delta_SSE": 861661,
+      "exact": true,
+      "PNG8_MSE_delta": 2.733058042174063e-06
+    },
+    {
+      "scene": "room",
+      "event": 2,
+      "delta_SSE": 91,
+      "exact": true,
+      "PNG8_MSE_delta": 2.886382020746439e-10
+    },
+    {
+      "scene": "room",
+      "event": 3,
+      "delta_SSE": 122,
+      "exact": true,
+      "PNG8_MSE_delta": 3.8696550168248963e-10
+    },
+    {
+      "scene": "room",
+      "event": 4,
+      "delta_SSE": -877,
+      "exact": true,
+      "PNG8_MSE_delta": -2.7817110243896998e-09
+    },
+    {
+      "scene": "room",
+      "event": 5,
+      "delta_SSE": 66,
+      "exact": true,
+      "PNG8_MSE_delta": 2.0934199271347798e-10
+    },
+    {
+      "scene": "room",
+      "event": 6,
+      "delta_SSE": 1281,
+      "exact": true,
+      "PNG8_MSE_delta": 4.063137767666141e-09
+    },
+    {
+      "scene": "room",
+      "event": 7,
+      "delta_SSE": 1297,
+      "exact": true,
+      "PNG8_MSE_delta": 4.113887341657287e-09
+    }
+  ],
+  "negative_scores": 3,
+  "positive_scores": 13,
+  "zero_scores": 0,
+  "training": false,
+  "score_validation_not_policy_evaluation": true,
+  "source_sha256": "09182ae6cff8b546dfa47d8e1793f6ee2d5346f233dc3a42d376f6fcd295cb43"
+}

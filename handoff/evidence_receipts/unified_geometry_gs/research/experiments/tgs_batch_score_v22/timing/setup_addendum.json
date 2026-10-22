@@ -1,0 +1,33 @@
+{
+  "rows": [
+    {
+      "scene": "flowers",
+      "setup_wall_ms": 14.427377,
+      "retained_cache_and_PNG_bytes": 332260755,
+      "GT_bytes_excluded": true,
+      "separate_process": true,
+      "original_setup_not_reconstructed": true
+    },
+    {
+      "scene": "room",
+      "setup_wall_ms": 14.626452,
+      "retained_cache_and_PNG_bytes": 685058193,
+      "GT_bytes_excluded": true,
+      "separate_process": true,
+      "original_setup_not_reconstructed": true
+    }
+  ],
+  "native_forwards": 2,
+  "telemetry_before": {
+    "exit_code": 0,
+    "stdout": "NVIDIA GeForce RTX 5090 Laptop GPU, 616.92, 47, 2115, 17.89",
+    "stderr": ""
+  },
+  "telemetry_after": {
+    "exit_code": 0,
+    "stdout": "NVIDIA GeForce RTX 5090 Laptop GPU, 616.92, 47, 1515, 22.10",
+    "stderr": ""
+  },
+  "training": false,
+  "scope": "New one-shot observed setup for illustrative cost estimates, not original-run setup"
+}

@@ -1,0 +1,473 @@
+{
+  "all_gates_passed": true,
+  "rows": [
+    {
+      "scene": "flowers",
+      "event": 0,
+      "parent_index": 0,
+      "parent_id": 1436,
+      "appearance": "hold",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 1553284,
+      "baseline_SSE": 2062604923,
+      "batch_score": 1553284,
+      "full_gpu_score": 1553284,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "93d0bd22c4350ebf45fc6e9881d1f7bc55f0d031040c37a59d7430f0deadf605",
+        "alpha": "ece35880f616413d23a6cf94c712b9a2888f0e8b29a8019b3926bd521590981f",
+        "paths": "578e4e11773391ffa2b140337e053285f931ba88bed256acf99acd508089cf60"
+      },
+      "reference_hashes": {
+        "rgb": "93d0bd22c4350ebf45fc6e9881d1f7bc55f0d031040c37a59d7430f0deadf605",
+        "alpha": "ece35880f616413d23a6cf94c712b9a2888f0e8b29a8019b3926bd521590981f",
+        "paths": "578e4e11773391ffa2b140337e053285f931ba88bed256acf99acd508089cf60"
+      },
+      "native_forwards": 3
+    },
+    {
+      "scene": "flowers",
+      "event": 1,
+      "parent_index": 0,
+      "parent_id": 1436,
+      "appearance": "moved",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 1540410,
+      "baseline_SSE": 2062604923,
+      "batch_score": 1540410,
+      "full_gpu_score": 1540410,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "e5c662aff8a060354ad0cf418a2a58199a285dc99538ca7cd00525b4f680b9ca",
+        "alpha": "ece35880f616413d23a6cf94c712b9a2888f0e8b29a8019b3926bd521590981f",
+        "paths": "578e4e11773391ffa2b140337e053285f931ba88bed256acf99acd508089cf60"
+      },
+      "reference_hashes": {
+        "rgb": "e5c662aff8a060354ad0cf418a2a58199a285dc99538ca7cd00525b4f680b9ca",
+        "alpha": "ece35880f616413d23a6cf94c712b9a2888f0e8b29a8019b3926bd521590981f",
+        "paths": "578e4e11773391ffa2b140337e053285f931ba88bed256acf99acd508089cf60"
+      },
+      "native_forwards": 4
+    },
+    {
+      "scene": "flowers",
+      "event": 2,
+      "parent_index": 1,
+      "parent_id": 1387,
+      "appearance": "hold",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": -160029,
+      "baseline_SSE": 2062604923,
+      "batch_score": -160029,
+      "full_gpu_score": -160029,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "86e78cef8b35b7b54b3af43bad29584f935e128c963bf34b9e712a0cbfe14366",
+        "alpha": "665a1dfdfef152376cb8bc557a2328d34b59db3888eacba11a97453b14c9f9be",
+        "paths": "4ff8fb1373aff09201ba7f951473c2e72e18ed2c91dfd2983b720bec178468b9"
+      },
+      "reference_hashes": {
+        "rgb": "86e78cef8b35b7b54b3af43bad29584f935e128c963bf34b9e712a0cbfe14366",
+        "alpha": "665a1dfdfef152376cb8bc557a2328d34b59db3888eacba11a97453b14c9f9be",
+        "paths": "4ff8fb1373aff09201ba7f951473c2e72e18ed2c91dfd2983b720bec178468b9"
+      },
+      "native_forwards": 5
+    },
+    {
+      "scene": "flowers",
+      "event": 3,
+      "parent_index": 1,
+      "parent_id": 1387,
+      "appearance": "moved",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": -174081,
+      "baseline_SSE": 2062604923,
+      "batch_score": -174081,
+      "full_gpu_score": -174081,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "b8ae83e6cd4a966144d3aa41e64078e735e776a5e09f84a465218c2ffbf2d97c",
+        "alpha": "665a1dfdfef152376cb8bc557a2328d34b59db3888eacba11a97453b14c9f9be",
+        "paths": "4ff8fb1373aff09201ba7f951473c2e72e18ed2c91dfd2983b720bec178468b9"
+      },
+      "reference_hashes": {
+        "rgb": "b8ae83e6cd4a966144d3aa41e64078e735e776a5e09f84a465218c2ffbf2d97c",
+        "alpha": "665a1dfdfef152376cb8bc557a2328d34b59db3888eacba11a97453b14c9f9be",
+        "paths": "4ff8fb1373aff09201ba7f951473c2e72e18ed2c91dfd2983b720bec178468b9"
+      },
+      "native_forwards": 6
+    },
+    {
+      "scene": "flowers",
+      "event": 4,
+      "parent_index": 2,
+      "parent_id": 2773,
+      "appearance": "hold",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 423,
+      "baseline_SSE": 2062604923,
+      "batch_score": 423,
+      "full_gpu_score": 423,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "62328a07335da41440644b16b1e0b95c74997276f59b7534f2b7cdc5958adc8e",
+        "alpha": "5ca4664e4a91dd47741ea14cd260b174fa324b181a38fb5b92a446b10f8928b2",
+        "paths": "ebbf85a39e458f950813330187c8c559ba1cb51c42b445c2ff9fc884f486b382"
+      },
+      "reference_hashes": {
+        "rgb": "62328a07335da41440644b16b1e0b95c74997276f59b7534f2b7cdc5958adc8e",
+        "alpha": "5ca4664e4a91dd47741ea14cd260b174fa324b181a38fb5b92a446b10f8928b2",
+        "paths": "ebbf85a39e458f950813330187c8c559ba1cb51c42b445c2ff9fc884f486b382"
+      },
+      "native_forwards": 7
+    },
+    {
+      "scene": "flowers",
+      "event": 5,
+      "parent_index": 2,
+      "parent_id": 2773,
+      "appearance": "moved",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 261,
+      "baseline_SSE": 2062604923,
+      "batch_score": 261,
+      "full_gpu_score": 261,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "d35cefdbb93fe94e9519f2b72a67e2b820746671ab882216efd9983c5c024799",
+        "alpha": "5ca4664e4a91dd47741ea14cd260b174fa324b181a38fb5b92a446b10f8928b2",
+        "paths": "ebbf85a39e458f950813330187c8c559ba1cb51c42b445c2ff9fc884f486b382"
+      },
+      "reference_hashes": {
+        "rgb": "d35cefdbb93fe94e9519f2b72a67e2b820746671ab882216efd9983c5c024799",
+        "alpha": "5ca4664e4a91dd47741ea14cd260b174fa324b181a38fb5b92a446b10f8928b2",
+        "paths": "ebbf85a39e458f950813330187c8c559ba1cb51c42b445c2ff9fc884f486b382"
+      },
+      "native_forwards": 8
+    },
+    {
+      "scene": "flowers",
+      "event": 6,
+      "parent_index": 3,
+      "parent_id": 110,
+      "appearance": "hold",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 83138,
+      "baseline_SSE": 2062604923,
+      "batch_score": 83138,
+      "full_gpu_score": 83138,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "e33722d745c58b9579657568d1e6253705ac052a95fe0789fd6ae35e3b49d1c3",
+        "alpha": "ff13b31f15aa490257779ef0ead9fb9d090e0acd2f2b1c8411a8d798a3b8d3a4",
+        "paths": "d112c3809a9b94b0ee2dcc47156b396d017b2aa690a44afff7bac10c5b77d920"
+      },
+      "reference_hashes": {
+        "rgb": "e33722d745c58b9579657568d1e6253705ac052a95fe0789fd6ae35e3b49d1c3",
+        "alpha": "ff13b31f15aa490257779ef0ead9fb9d090e0acd2f2b1c8411a8d798a3b8d3a4",
+        "paths": "d112c3809a9b94b0ee2dcc47156b396d017b2aa690a44afff7bac10c5b77d920"
+      },
+      "native_forwards": 9
+    },
+    {
+      "scene": "flowers",
+      "event": 7,
+      "parent_index": 3,
+      "parent_id": 110,
+      "appearance": "moved",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 83058,
+      "baseline_SSE": 2062604923,
+      "batch_score": 83058,
+      "full_gpu_score": 83058,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "ecd3cb99d914c8b8e7cf072d2705382b933a17e4121d1a1bd6ca5dbb0d18e8b1",
+        "alpha": "ff13b31f15aa490257779ef0ead9fb9d090e0acd2f2b1c8411a8d798a3b8d3a4",
+        "paths": "d112c3809a9b94b0ee2dcc47156b396d017b2aa690a44afff7bac10c5b77d920"
+      },
+      "reference_hashes": {
+        "rgb": "ecd3cb99d914c8b8e7cf072d2705382b933a17e4121d1a1bd6ca5dbb0d18e8b1",
+        "alpha": "ff13b31f15aa490257779ef0ead9fb9d090e0acd2f2b1c8411a8d798a3b8d3a4",
+        "paths": "d112c3809a9b94b0ee2dcc47156b396d017b2aa690a44afff7bac10c5b77d920"
+      },
+      "native_forwards": 10
+    },
+    {
+      "scene": "room",
+      "event": 0,
+      "parent_index": 0,
+      "parent_id": 171415,
+      "appearance": "hold",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 868448,
+      "baseline_SSE": 346439963,
+      "batch_score": 868448,
+      "full_gpu_score": 868448,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "a9fb314310d6337eeb2a51703d93b0dadd3d3e2f22edd782a54d43fc35799513",
+        "alpha": "1062c12eb83d41a99eed9b08afb67031a6c39391f9e0d2fc138aa2e0de1d20ab",
+        "paths": "7bbd00c42a5b410bd8011c4017783a2bfe46e2184c7fdd04750b9162cd488fe2"
+      },
+      "reference_hashes": {
+        "rgb": "a9fb314310d6337eeb2a51703d93b0dadd3d3e2f22edd782a54d43fc35799513",
+        "alpha": "1062c12eb83d41a99eed9b08afb67031a6c39391f9e0d2fc138aa2e0de1d20ab",
+        "paths": "7bbd00c42a5b410bd8011c4017783a2bfe46e2184c7fdd04750b9162cd488fe2"
+      },
+      "native_forwards": 13
+    },
+    {
+      "scene": "room",
+      "event": 1,
+      "parent_index": 0,
+      "parent_id": 171415,
+      "appearance": "moved",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 861661,
+      "baseline_SSE": 346439963,
+      "batch_score": 861661,
+      "full_gpu_score": 861661,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "bcbb0f166d82432ef862c4538ca2c3542a7c68d768c1686c2906d8d9040113ba",
+        "alpha": "1062c12eb83d41a99eed9b08afb67031a6c39391f9e0d2fc138aa2e0de1d20ab",
+        "paths": "7bbd00c42a5b410bd8011c4017783a2bfe46e2184c7fdd04750b9162cd488fe2"
+      },
+      "reference_hashes": {
+        "rgb": "bcbb0f166d82432ef862c4538ca2c3542a7c68d768c1686c2906d8d9040113ba",
+        "alpha": "1062c12eb83d41a99eed9b08afb67031a6c39391f9e0d2fc138aa2e0de1d20ab",
+        "paths": "7bbd00c42a5b410bd8011c4017783a2bfe46e2184c7fdd04750b9162cd488fe2"
+      },
+      "native_forwards": 14
+    },
+    {
+      "scene": "room",
+      "event": 2,
+      "parent_index": 1,
+      "parent_id": 156483,
+      "appearance": "hold",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 91,
+      "baseline_SSE": 346439963,
+      "batch_score": 91,
+      "full_gpu_score": 91,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "a37bb346ce9571aa2f219430d9291920487263a1a4a2eb99af487fd97f8a915f",
+        "alpha": "dcae32ff3df05af628d2ad16719a86dd9081d83c2a3ad33867980f061ad1a605",
+        "paths": "5b77d4f54dc68f27316f1fb5ae7dd8cc72b76f254f5d9689968ee6d782ff1555"
+      },
+      "reference_hashes": {
+        "rgb": "a37bb346ce9571aa2f219430d9291920487263a1a4a2eb99af487fd97f8a915f",
+        "alpha": "dcae32ff3df05af628d2ad16719a86dd9081d83c2a3ad33867980f061ad1a605",
+        "paths": "5b77d4f54dc68f27316f1fb5ae7dd8cc72b76f254f5d9689968ee6d782ff1555"
+      },
+      "native_forwards": 15
+    },
+    {
+      "scene": "room",
+      "event": 3,
+      "parent_index": 1,
+      "parent_id": 156483,
+      "appearance": "moved",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 122,
+      "baseline_SSE": 346439963,
+      "batch_score": 122,
+      "full_gpu_score": 122,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "299398ef763b92fcfa0ae0433daa6b074d1a0f1aab6b6fd41bd4652473f5bf61",
+        "alpha": "dcae32ff3df05af628d2ad16719a86dd9081d83c2a3ad33867980f061ad1a605",
+        "paths": "5b77d4f54dc68f27316f1fb5ae7dd8cc72b76f254f5d9689968ee6d782ff1555"
+      },
+      "reference_hashes": {
+        "rgb": "299398ef763b92fcfa0ae0433daa6b074d1a0f1aab6b6fd41bd4652473f5bf61",
+        "alpha": "dcae32ff3df05af628d2ad16719a86dd9081d83c2a3ad33867980f061ad1a605",
+        "paths": "5b77d4f54dc68f27316f1fb5ae7dd8cc72b76f254f5d9689968ee6d782ff1555"
+      },
+      "native_forwards": 16
+    },
+    {
+      "scene": "room",
+      "event": 4,
+      "parent_index": 2,
+      "parent_id": 58,
+      "appearance": "hold",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": -877,
+      "baseline_SSE": 346439963,
+      "batch_score": -877,
+      "full_gpu_score": -877,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "f71534aa2e0ba0c845f43682546d1312d77b8e0d6d70c323037aa36c38c88592",
+        "alpha": "78ce6afdd59281f35116d99dc3ff6e90c7172a58b798e1a267a5ffa9288a446c",
+        "paths": "093cbe8c383a446fd05f67546c5378bc01d7eff61ef2243cc12ff024644ef870"
+      },
+      "reference_hashes": {
+        "rgb": "f71534aa2e0ba0c845f43682546d1312d77b8e0d6d70c323037aa36c38c88592",
+        "alpha": "78ce6afdd59281f35116d99dc3ff6e90c7172a58b798e1a267a5ffa9288a446c",
+        "paths": "093cbe8c383a446fd05f67546c5378bc01d7eff61ef2243cc12ff024644ef870"
+      },
+      "native_forwards": 17
+    },
+    {
+      "scene": "room",
+      "event": 5,
+      "parent_index": 2,
+      "parent_id": 58,
+      "appearance": "moved",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 66,
+      "baseline_SSE": 346439963,
+      "batch_score": 66,
+      "full_gpu_score": 66,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "214d6f95e73fdf9f47416dd86c81acc3b19b64fa2f771283c0106b85d8fd026b",
+        "alpha": "78ce6afdd59281f35116d99dc3ff6e90c7172a58b798e1a267a5ffa9288a446c",
+        "paths": "093cbe8c383a446fd05f67546c5378bc01d7eff61ef2243cc12ff024644ef870"
+      },
+      "reference_hashes": {
+        "rgb": "214d6f95e73fdf9f47416dd86c81acc3b19b64fa2f771283c0106b85d8fd026b",
+        "alpha": "78ce6afdd59281f35116d99dc3ff6e90c7172a58b798e1a267a5ffa9288a446c",
+        "paths": "093cbe8c383a446fd05f67546c5378bc01d7eff61ef2243cc12ff024644ef870"
+      },
+      "native_forwards": 18
+    },
+    {
+      "scene": "room",
+      "event": 6,
+      "parent_index": 3,
+      "parent_id": 2628,
+      "appearance": "hold",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 1281,
+      "baseline_SSE": 346439963,
+      "batch_score": 1281,
+      "full_gpu_score": 1281,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "1a299561a284f22301f8b79bdb8d9f7f6208ea081cdf3c2f70c5df3c41726ef1",
+        "alpha": "66926ac6234637b9c36e0db335b05753f973d8a1a2ca45ba59b7ba476a8d9695",
+        "paths": "34a5167989ae1909920426ed2cafedb2bc94bb619ba5c9075e3b6b695e7f5091"
+      },
+      "reference_hashes": {
+        "rgb": "1a299561a284f22301f8b79bdb8d9f7f6208ea081cdf3c2f70c5df3c41726ef1",
+        "alpha": "66926ac6234637b9c36e0db335b05753f973d8a1a2ca45ba59b7ba476a8d9695",
+        "paths": "34a5167989ae1909920426ed2cafedb2bc94bb619ba5c9075e3b6b695e7f5091"
+      },
+      "native_forwards": 19
+    },
+    {
+      "scene": "room",
+      "event": 7,
+      "parent_index": 3,
+      "parent_id": 2628,
+      "appearance": "moved",
+      "checks": {
+        "rgb": true,
+        "alpha": true,
+        "paths": true
+      },
+      "delta_SSE": 1297,
+      "baseline_SSE": 346439963,
+      "batch_score": 1297,
+      "full_gpu_score": 1297,
+      "all_tile_lists_literal": true,
+      "visible_cache_fields_literal": true,
+      "debug_hashes": {
+        "rgb": "064d0ed418ffd246363ed9e84e6bc265ef0b6b1c15975a9dccf638f70d560f08",
+        "alpha": "66926ac6234637b9c36e0db335b05753f973d8a1a2ca45ba59b7ba476a8d9695",
+        "paths": "34a5167989ae1909920426ed2cafedb2bc94bb619ba5c9075e3b6b695e7f5091"
+      },
+      "reference_hashes": {
+        "rgb": "064d0ed418ffd246363ed9e84e6bc265ef0b6b1c15975a9dccf638f70d560f08",
+        "alpha": "66926ac6234637b9c36e0db335b05753f973d8a1a2ca45ba59b7ba476a8d9695",
+        "paths": "34a5167989ae1909920426ed2cafedb2bc94bb619ba5c9075e3b6b695e7f5091"
+      },
+      "native_forwards": 20
+    }
+  ],
+  "full_forwards": 20,
+  "training": false,
+  "accepted_mutations": 0,
+  "GT_based_selection": false
+}

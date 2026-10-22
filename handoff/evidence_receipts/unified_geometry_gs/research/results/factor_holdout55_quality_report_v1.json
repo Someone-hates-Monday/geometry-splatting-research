@@ -1,0 +1,367 @@
+{
+  "checked_utc": "2026-10-12T16:32:34.668907+00:00",
+  "run": "C:\\Users\\Someone\\Desktop\\SuGaR-main\\unified_geometry_gs\\research\\experiments\\factor_holdout55_v2",
+  "actual_sources_models_GT_inputs_and_metrics_verified": true,
+  "source_count": 484,
+  "generated_files_verified": 32,
+  "source_archive_sha256": "c5210d7b05c8e7fa333847ab4bdd65e7ac6831d4689ca3b50facbf0d8264222d",
+  "paired_quality_sha256": "7dabba5639ce905d8fb2ee0fc6a2abc89f2aa89e29ba52cc055704f14ea11174",
+  "stage_count": 19,
+  "complete_initial_state_verified": true,
+  "fresh_eval_true_warmup_verified": true,
+  "runtime_camera_counts": {
+    "legacy64": {
+      "train_render_calls": 23006,
+      "ncc_calls": 23000,
+      "filter_calls": 229,
+      "final_test_report_render_calls": 7
+    },
+    "factor64": {
+      "train_render_calls": 23006,
+      "ncc_calls": 22999,
+      "filter_calls": 229,
+      "final_test_report_render_calls": 7
+    }
+  },
+  "matched_ID_alignment_verified": true,
+  "mesh_mean_mm": {
+    "legacy64": {
+      "overall": 0.3322697083642103,
+      "mean_d2s": 0.23525406111134664,
+      "mean_s2d": 0.4292853556170741
+    },
+    "factor64": {
+      "overall": 0.33123851850083436,
+      "mean_d2s": 0.234667527141233,
+      "mean_s2d": 0.42780950986043564
+    }
+  },
+  "mean_mesh_delta_factor_minus_legacy_mm": {
+    "overall": -0.0010311898633759697,
+    "mean_d2s": -0.0005865339701136285,
+    "mean_s2d": -0.0014758457566384497
+  },
+  "mean_overall_ratio": 0.9968965276177217,
+  "gaussian_count_ratio": 1.0307518788091423,
+  "image_mean_deltas": {
+    "train": {
+      "psnr_global_rgb_db": 0.4217076528640007,
+      "psnr_repository_channel_mean_db": 0.42223726000104733,
+      "ssim_repository": 0.0030304051580882785
+    },
+    "test": {
+      "psnr_global_rgb_db": 0.09007535661969968,
+      "psnr_repository_channel_mean_db": 0.0852083478655139,
+      "ssim_repository": -0.0003045712198530559
+    }
+  },
+  "images": {
+    "legacy64": {
+      "train": {
+        "mean": {
+          "psnr_global_rgb_db": 35.52827453613281,
+          "psnr_repository_channel_mean_db": 35.71604787735712,
+          "ssim_repository": 0.9643232283138093
+        },
+        "camera_count": 42,
+        "gaussian_count": 929179
+      },
+      "test": {
+        "mean": {
+          "psnr_global_rgb_db": 28.032108851841517,
+          "psnr_repository_channel_mean_db": 28.37850543430873,
+          "ssim_repository": 0.8990529435021537
+        },
+        "camera_count": 7,
+        "gaussian_count": 929179
+      }
+    },
+    "factor64": {
+      "train": {
+        "mean": {
+          "psnr_global_rgb_db": 35.94998218899681,
+          "psnr_repository_channel_mean_db": 36.13828513735817,
+          "ssim_repository": 0.9673536334718976
+        },
+        "camera_count": 42,
+        "gaussian_count": 957753
+      },
+      "test": {
+        "mean": {
+          "psnr_global_rgb_db": 28.122184208461217,
+          "psnr_repository_channel_mean_db": 28.463713782174246,
+          "ssim_repository": 0.8987483722823006
+        },
+        "camera_count": 7,
+        "gaussian_count": 957753
+      }
+    }
+  },
+  "per_view_deltas": {
+    "train": [
+      {
+        "camera": "0001",
+        "psnr_delta_db": 0.5047225952148438,
+        "ssim_delta": 0.0047536492347717285
+      },
+      {
+        "camera": "0002",
+        "psnr_delta_db": -0.3406410217285156,
+        "ssim_delta": 0.004668891429901123
+      },
+      {
+        "camera": "0003",
+        "psnr_delta_db": 0.3097419738769531,
+        "ssim_delta": 0.004805326461791992
+      },
+      {
+        "camera": "0004",
+        "psnr_delta_db": 1.1089706420898438,
+        "ssim_delta": 0.004114747047424316
+      },
+      {
+        "camera": "0005",
+        "psnr_delta_db": 0.9981689453125,
+        "ssim_delta": 0.004571497440338135
+      },
+      {
+        "camera": "0006",
+        "psnr_delta_db": 0.25313568115234375,
+        "ssim_delta": 0.0035056471824645996
+      },
+      {
+        "camera": "0007",
+        "psnr_delta_db": 0.6884841918945312,
+        "ssim_delta": 0.004654526710510254
+      },
+      {
+        "camera": "0009",
+        "psnr_delta_db": 0.034206390380859375,
+        "ssim_delta": 0.003949880599975586
+      },
+      {
+        "camera": "0010",
+        "psnr_delta_db": 0.8350639343261719,
+        "ssim_delta": 0.0038657188415527344
+      },
+      {
+        "camera": "0011",
+        "psnr_delta_db": 0.1554718017578125,
+        "ssim_delta": 0.00419086217880249
+      },
+      {
+        "camera": "0012",
+        "psnr_delta_db": 0.496002197265625,
+        "ssim_delta": 0.0032778382301330566
+      },
+      {
+        "camera": "0013",
+        "psnr_delta_db": 0.4569549560546875,
+        "ssim_delta": 0.0035271644592285156
+      },
+      {
+        "camera": "0014",
+        "psnr_delta_db": 0.3959922790527344,
+        "ssim_delta": 0.004102051258087158
+      },
+      {
+        "camera": "0015",
+        "psnr_delta_db": 0.013936996459960938,
+        "ssim_delta": 0.004436075687408447
+      },
+      {
+        "camera": "0017",
+        "psnr_delta_db": -1.2301959991455078,
+        "ssim_delta": 0.0023568272590637207
+      },
+      {
+        "camera": "0018",
+        "psnr_delta_db": -0.6086082458496094,
+        "ssim_delta": 0.002443075180053711
+      },
+      {
+        "camera": "0019",
+        "psnr_delta_db": -0.38233184814453125,
+        "ssim_delta": 0.0028824806213378906
+      },
+      {
+        "camera": "0020",
+        "psnr_delta_db": 0.5084342956542969,
+        "ssim_delta": 0.002284109592437744
+      },
+      {
+        "camera": "0021",
+        "psnr_delta_db": 0.7659797668457031,
+        "ssim_delta": 0.0027614235877990723
+      },
+      {
+        "camera": "0022",
+        "psnr_delta_db": 0.7335033416748047,
+        "ssim_delta": 0.0032633543014526367
+      },
+      {
+        "camera": "0023",
+        "psnr_delta_db": 0.5798225402832031,
+        "ssim_delta": 0.0030875205993652344
+      },
+      {
+        "camera": "0025",
+        "psnr_delta_db": 0.2855873107910156,
+        "ssim_delta": 0.002899467945098877
+      },
+      {
+        "camera": "0026",
+        "psnr_delta_db": 0.5821037292480469,
+        "ssim_delta": 0.0026437044143676758
+      },
+      {
+        "camera": "0027",
+        "psnr_delta_db": 0.8778610229492188,
+        "ssim_delta": 0.002637147903442383
+      },
+      {
+        "camera": "0028",
+        "psnr_delta_db": 0.1420745849609375,
+        "ssim_delta": 0.0021852850914001465
+      },
+      {
+        "camera": "0029",
+        "psnr_delta_db": 0.7819633483886719,
+        "ssim_delta": 0.001783132553100586
+      },
+      {
+        "camera": "0030",
+        "psnr_delta_db": 0.9189338684082031,
+        "ssim_delta": 0.0018871426582336426
+      },
+      {
+        "camera": "0031",
+        "psnr_delta_db": 0.7058601379394531,
+        "ssim_delta": 0.00226747989654541
+      },
+      {
+        "camera": "0033",
+        "psnr_delta_db": 0.17201614379882812,
+        "ssim_delta": 0.002315819263458252
+      },
+      {
+        "camera": "0034",
+        "psnr_delta_db": 0.5414657592773438,
+        "ssim_delta": 0.0013325214385986328
+      },
+      {
+        "camera": "0035",
+        "psnr_delta_db": 0.6115150451660156,
+        "ssim_delta": 0.002593398094177246
+      },
+      {
+        "camera": "0036",
+        "psnr_delta_db": 0.7263069152832031,
+        "ssim_delta": 0.002721548080444336
+      },
+      {
+        "camera": "0037",
+        "psnr_delta_db": 1.1022567749023438,
+        "ssim_delta": 0.003265857696533203
+      },
+      {
+        "camera": "0038",
+        "psnr_delta_db": -0.8184547424316406,
+        "ssim_delta": 0.0015780329704284668
+      },
+      {
+        "camera": "0039",
+        "psnr_delta_db": 1.4071998596191406,
+        "ssim_delta": 0.003249943256378174
+      },
+      {
+        "camera": "0041",
+        "psnr_delta_db": 1.1992378234863281,
+        "ssim_delta": 0.0028476715087890625
+      },
+      {
+        "camera": "0042",
+        "psnr_delta_db": 0.21907806396484375,
+        "ssim_delta": 0.0016478896141052246
+      },
+      {
+        "camera": "0043",
+        "psnr_delta_db": 0.3272438049316406,
+        "ssim_delta": 0.0028818249702453613
+      },
+      {
+        "camera": "0044",
+        "psnr_delta_db": 0.5987625122070312,
+        "ssim_delta": 0.0025443434715270996
+      },
+      {
+        "camera": "0045",
+        "psnr_delta_db": 0.7422256469726562,
+        "ssim_delta": 0.0022702813148498535
+      },
+      {
+        "camera": "0046",
+        "psnr_delta_db": 0.309234619140625,
+        "ssim_delta": 0.0022435784339904785
+      },
+      {
+        "camera": "0047",
+        "psnr_delta_db": 0.00243377685546875,
+        "ssim_delta": 0.001978278160095215
+      }
+    ],
+    "test": [
+      {
+        "camera": "0000",
+        "psnr_delta_db": -0.0074787139892578125,
+        "ssim_delta": -0.0023965835571289062
+      },
+      {
+        "camera": "0008",
+        "psnr_delta_db": 0.11137962341308594,
+        "ssim_delta": 0.0003771781921386719
+      },
+      {
+        "camera": "0016",
+        "psnr_delta_db": -0.42951202392578125,
+        "ssim_delta": -0.00297391414642334
+      },
+      {
+        "camera": "0024",
+        "psnr_delta_db": 0.39215087890625,
+        "ssim_delta": -0.0014950037002563477
+      },
+      {
+        "camera": "0032",
+        "psnr_delta_db": 0.22134017944335938,
+        "ssim_delta": 0.00042068958282470703
+      },
+      {
+        "camera": "0040",
+        "psnr_delta_db": 0.26657867431640625,
+        "ssim_delta": 0.002179086208343506
+      },
+      {
+        "camera": "0048",
+        "psnr_delta_db": 0.07606887817382812,
+        "ssim_delta": 0.0017565488815307617
+      }
+    ]
+  },
+  "individual_gates": {
+    "test_psnr": false,
+    "test_ssim": false,
+    "mesh_noninferiority": true,
+    "capacity": true
+  },
+  "pilot_gate_pass": false,
+  "old_pilot_geometry_gate_pass": false,
+  "limits": [
+    "New exploratory RGB question; the prior geometry pilot remains failed.",
+    "scan55 and all49 views were used in earlier research; not an untouched confirmatory dataset.",
+    "SfM initialization may use all views; RGB training exclusion is enforced in this new run.",
+    "One matched pair, no independent training repetitions, significance or speed claim.",
+    "Combined intervention and adaptive capacity, not single-factor or equal-capacity attribution.",
+    "Gram forward is absent from both quality branches."
+  ]
+}

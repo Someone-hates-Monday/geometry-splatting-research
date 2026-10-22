@@ -1,0 +1,218 @@
+{
+  "all_verified": true,
+  "rows": [
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "K": 8,
+      "ratios": {
+        "full_over_batch": 6.204260394201862,
+        "cached_image_over_sequential": 2.009899118586655,
+        "sequential_over_batch": 2.8446682220797275,
+        "cached_image_over_batch": 5.6870709872727705
+      },
+      "methods": {
+        "A_full_score": {
+          "wall_ms": 35.5184775,
+          "cuda_bracket_ms": 35.48142433166504,
+          "peak_increment_bytes": 395884544.0
+        },
+        "B_cached_image": {
+          "wall_ms": 32.2650855,
+          "cuda_bracket_ms": 32.23478317260742,
+          "peak_increment_bytes": 172168192.0
+        },
+        "C_sequential_packed": {
+          "wall_ms": 16.299729999999997,
+          "cuda_bracket_ms": 16.259727478027344,
+          "peak_increment_bytes": 100349952.0
+        },
+        "D_batch_packed": {
+          "wall_ms": 5.744308,
+          "cuda_bracket_ms": 5.712159872055054,
+          "peak_increment_bytes": 145461248.0
+        }
+      },
+      "slower_full_over_batch_blocks": 0,
+      "setup": {
+        "scene": "flowers",
+        "view": "fresh",
+        "setup_wall_ms": 17.812448,
+        "setup_render_ms": 11.490821,
+        "setup_loss_ms": 6.321627,
+        "retained_cache_bytes_GT_excluded": 329140851,
+        "shared_loss_cache_bytes": 74877696,
+        "GT_bytes": 3119904,
+        "model_proposal_loading_excluded": true,
+        "cache_flags_zero": true
+      },
+      "estimate_given_original_RGB_no_caches": 1.7761403352821588,
+      "estimate_original_render_required_by_both": 2.263933348887258,
+      "estimate_given_original_RGB_and_loss_cache_no_geometry": 2.06081877890209,
+      "setup_estimate_scope": "Same-process S_R and S_L; supplied RGB contract charges S_L to full too; arithmetic only, not measured cold batch"
+    },
+    {
+      "scene": "flowers",
+      "view": "old_0",
+      "K": 8,
+      "ratios": {
+        "full_over_batch": 11.960178418000623,
+        "cached_image_over_sequential": 2.6252165769426017,
+        "sequential_over_batch": 3.838236306843909,
+        "cached_image_over_batch": 9.837755375069191
+      },
+      "methods": {
+        "A_full_score": {
+          "wall_ms": 34.769822500000004,
+          "cuda_bracket_ms": 34.73155212402344,
+          "peak_increment_bytes": 391584768.0
+        },
+        "B_cached_image": {
+          "wall_ms": 28.2946515,
+          "cuda_bracket_ms": 28.260080337524414,
+          "peak_increment_bytes": 172155904.0
+        },
+        "C_sequential_packed": {
+          "wall_ms": 10.971211499999999,
+          "cuda_bracket_ms": 10.943583965301514,
+          "peak_increment_bytes": 100338688.0
+        },
+        "D_batch_packed": {
+          "wall_ms": 2.9016855,
+          "cuda_bracket_ms": 2.870911955833435,
+          "peak_increment_bytes": 90595328.0
+        }
+      },
+      "slower_full_over_batch_blocks": 0,
+      "setup": {
+        "scene": "flowers",
+        "view": "old_0",
+        "setup_wall_ms": 13.328432,
+        "setup_render_ms": 7.193551,
+        "setup_loss_ms": 6.134881,
+        "retained_cache_bytes_GT_excluded": 324746099,
+        "shared_loss_cache_bytes": 74877696,
+        "GT_bytes": 3119904,
+        "model_proposal_loading_excluded": true,
+        "cache_flags_zero": true
+      },
+      "estimate_given_original_RGB_no_caches": 2.5202962024150475,
+      "estimate_original_render_required_by_both": 2.9635185635593833,
+      "estimate_given_original_RGB_and_loss_cache_no_geometry": 3.444181074905972,
+      "setup_estimate_scope": "Same-process S_R and S_L; supplied RGB contract charges S_L to full too; arithmetic only, not measured cold batch"
+    },
+    {
+      "scene": "room",
+      "view": "fresh",
+      "K": 8,
+      "ratios": {
+        "full_over_batch": 12.448345808507703,
+        "cached_image_over_sequential": 3.0689184267091116,
+        "sequential_over_batch": 2.567734245714713,
+        "cached_image_over_batch": 7.834667225413933
+      },
+      "methods": {
+        "A_full_score": {
+          "wall_ms": 67.3385205,
+          "cuda_bracket_ms": 67.3087043762207,
+          "peak_increment_bytes": 774343680.0
+        },
+        "B_cached_image": {
+          "wall_ms": 42.055747499999995,
+          "cuda_bracket_ms": 42.01401710510254,
+          "peak_increment_bytes": 267327488.0
+        },
+        "C_sequential_packed": {
+          "wall_ms": 13.7039075,
+          "cuda_bracket_ms": 13.6802396774292,
+          "peak_increment_bytes": 156948480.0
+        },
+        "D_batch_packed": {
+          "wall_ms": 5.4172385,
+          "cuda_bracket_ms": 5.378463983535767,
+          "peak_increment_bytes": 171829248.0
+        }
+      },
+      "slower_full_over_batch_blocks": 0,
+      "setup": {
+        "scene": "room",
+        "view": "fresh",
+        "setup_wall_ms": 24.869701,
+        "setup_render_ms": 14.894681,
+        "setup_loss_ms": 9.97502,
+        "retained_cache_bytes_GT_excluded": 680209695,
+        "shared_loss_cache_bytes": 116363952,
+        "GT_bytes": 4848498,
+        "model_proposal_loading_excluded": true,
+        "cache_flags_zero": true
+      },
+      "estimate_given_original_RGB_no_caches": 2.552702312493476,
+      "estimate_original_render_required_by_both": 3.044487921930838,
+      "estimate_given_original_RGB_and_loss_cache_no_geometry": 3.315221907018684,
+      "setup_estimate_scope": "Same-process S_R and S_L; supplied RGB contract charges S_L to full too; arithmetic only, not measured cold batch"
+    },
+    {
+      "scene": "room",
+      "view": "old_0",
+      "K": 8,
+      "ratios": {
+        "full_over_batch": 21.47406696398957,
+        "cached_image_over_sequential": 3.5140980598738043,
+        "sequential_over_batch": 3.5159113428192548,
+        "cached_image_over_batch": 12.791888552327908
+      },
+      "methods": {
+        "A_full_score": {
+          "wall_ms": 62.3028515,
+          "cuda_bracket_ms": 62.24934387207031,
+          "peak_increment_bytes": 757877760.0
+        },
+        "B_cached_image": {
+          "wall_ms": 37.2801605,
+          "cuda_bracket_ms": 37.24470520019531,
+          "peak_increment_bytes": 267317248.0
+        },
+        "C_sequential_packed": {
+          "wall_ms": 10.619384499999999,
+          "cuda_bracket_ms": 10.590960025787354,
+          "peak_increment_bytes": 156939776.0
+        },
+        "D_batch_packed": {
+          "wall_ms": 2.907447,
+          "cuda_bracket_ms": 2.8738399744033813,
+          "peak_increment_bytes": 147271168.0
+        }
+      },
+      "slower_full_over_batch_blocks": 0,
+      "setup": {
+        "scene": "room",
+        "view": "old_0",
+        "setup_wall_ms": 25.909498,
+        "setup_render_ms": 15.29156,
+        "setup_loss_ms": 10.617938,
+        "retained_cache_bytes_GT_excluded": 664477215,
+        "shared_loss_cache_bytes": 116363952,
+        "GT_bytes": 4848498,
+        "model_proposal_loading_excluded": true,
+        "cache_flags_zero": true
+      },
+      "estimate_given_original_RGB_no_caches": 2.530483002275224,
+      "estimate_original_render_required_by_both": 3.061127732311666,
+      "estimate_given_original_RGB_and_loss_cache_no_geometry": 3.423420382221953,
+      "setup_estimate_scope": "Same-process S_R and S_L; supplied RGB contract charges S_L to full too; arithmetic only, not measured cold batch"
+    }
+  ],
+  "blocks": 32,
+  "measured_endpoints": 128,
+  "native_forwards": 1004,
+  "all_block_full_over_batch_median": 12.322333944847742,
+  "slower_full_over_batch_blocks": 0,
+  "training": false,
+  "FP64_oracle_not_FP32_training": true,
+  "policy_quality_or_novelty_established": false,
+  "inputs": {
+    "experiments/tgs_shared_loss_v26/timing/plan.json": "c89d48368481e742c70ecb8a5c19da177c299c4689e9644057441dc14b39f124",
+    "experiments/tgs_shared_loss_v26/timing/results.json": "5a0f18140e84599488a952a3dc1dd53c317fefcaf2e6d0ed27b7eb663e4e198c",
+    "analyze_tgs_shared_loss_v26.py": "cad7aa359462a1f1be919eeb8e49b8ee8443a0b71686d928c6848937ff0e6cd6"
+  }
+}

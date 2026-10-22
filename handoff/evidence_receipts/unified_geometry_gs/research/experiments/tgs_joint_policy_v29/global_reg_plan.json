@@ -1,0 +1,15 @@
+{
+  "inputs": {
+    "verify_tgs_fixed_budget_reg_v29.py": "1e26b8353a89f577a5b9cbbb9cbbed765e71a8ca893cd7c15b580ba88f1dcdab",
+    "TGS_FIXED_BUDGET_REG_NOTE_V29.md": "cd12bb51176263a3fdabd863ed3ce5df97057fa93d0aa6d16a0c68b254259d94",
+    "experiments/tgs_joint_policy_v29/choices.json": "e801090fca4e51a90cdafcd13f4776adc1f9688cf8e9ae66ca6fef382aaa0513",
+    "experiments/tgs_joint_policy_v29/execution_plan.json": "ab9c2095485b8e00859f856c10e15b7f655a4a84d30d448169c8ae77ff238252",
+    "tgs_cross_scene_common_v10.py": "cf17243bbfaa0e406b8e3c3a482b2481194a57b99b6c7b9e3ca433e2073916fd"
+  },
+  "supplement_after_calibration_selection": true,
+  "choices_changed": false,
+  "new_native_forwards": 0,
+  "training": false,
+  "exact_effective_binary32_values": true,
+  "lambda_not_assumed": true
+}

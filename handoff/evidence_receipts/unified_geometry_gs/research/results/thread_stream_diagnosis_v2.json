@@ -1,0 +1,55 @@
+{
+  "checked_utc": "2026-10-12T18:43:52.790Z",
+  "thread_status": {
+    "type": "active",
+    "activeFlags": []
+  },
+  "turns": [
+    {
+      "id": "01a13157-3637-7332-851b-0204c9a97829",
+      "status": "inProgress",
+      "error": null,
+      "durationMs": null,
+      "startedAt": 1791829161,
+      "completedAt": null,
+      "item_count": 85,
+      "commands": 22
+    },
+    {
+      "id": "01a13113-e62d-7333-97cf-7d5740d9e870",
+      "status": "completed",
+      "error": null,
+      "durationMs": 4411369,
+      "startedAt": 1791824750,
+      "completedAt": 1791829161,
+      "item_count": 226,
+      "commands": 71
+    },
+    {
+      "id": "01a130ef-7ea0-7341-b4ec-769523129418",
+      "status": "failed",
+      "error": {
+        "message": "stream disconnected before completion: An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID 0714de78-f7a1-4d85-8da5-b39f4e1f2d6d in your message.",
+        "additionalDetails": null
+      },
+      "durationMs": 827513,
+      "startedAt": 1791822364,
+      "completedAt": 1791823191,
+      "item_count": 22,
+      "commands": 8
+    },
+    {
+      "id": "01a130ed-fb2d-78f3-8853-5803d40f0ea5",
+      "status": "failed",
+      "error": {
+        "message": "stream disconnected before completion: An error occurred while processing your request. You can retry your request, or contact us through our help center at help.openai.com if the error persists. Please include the request ID e9954270-f1df-45b6-9612-346b7a3389fd in your message.",
+        "additionalDetails": null
+      },
+      "durationMs": 87852,
+      "startedAt": 1791822265,
+      "completedAt": 1791822353,
+      "item_count": 4,
+      "commands": 2
+    }
+  ]
+}

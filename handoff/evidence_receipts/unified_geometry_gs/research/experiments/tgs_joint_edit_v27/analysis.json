@@ -1,0 +1,84 @@
+{
+  "all_verified": true,
+  "new_native_forwards": 32,
+  "joint_cases": 24,
+  "views": [
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "pairs": 6,
+      "structural_ssim_disjoint": 4,
+      "all_PNG8_interactions_zero": true,
+      "maximum_blend_interactions": [
+        1.3552527156068805e-20,
+        3.3881317890172014e-21
+      ],
+      "unary_sum_joint_blend_sign_disagreements": 0
+    },
+    {
+      "scene": "flowers",
+      "view": "old_0",
+      "pairs": 6,
+      "structural_ssim_disjoint": 6,
+      "all_PNG8_interactions_zero": true,
+      "maximum_blend_interactions": [
+        2.117582368135751e-22,
+        1.6940658945086007e-21
+      ],
+      "unary_sum_joint_blend_sign_disagreements": 0
+    },
+    {
+      "scene": "room",
+      "view": "fresh",
+      "pairs": 6,
+      "structural_ssim_disjoint": 6,
+      "all_PNG8_interactions_zero": true,
+      "maximum_blend_interactions": [
+        6.776263578034403e-21,
+        3.3881317890172014e-21
+      ],
+      "unary_sum_joint_blend_sign_disagreements": 0
+    },
+    {
+      "scene": "room",
+      "view": "old_0",
+      "pairs": 6,
+      "structural_ssim_disjoint": 6,
+      "all_PNG8_interactions_zero": true,
+      "maximum_blend_interactions": [
+        2.117582368135751e-22,
+        2.117582368135751e-22
+      ],
+      "unary_sum_joint_blend_sign_disagreements": 0
+    }
+  ],
+  "metrics": [
+    "raw_MSE",
+    "raw_L1",
+    "raw_SSIM"
+  ],
+  "maximum_GPU_interaction_abs": [
+    5.293955920339377e-22,
+    2.400147265383865e-20,
+    1.7787691892340307e-20
+  ],
+  "maximum_CPU_GPU_joint_score_error": 1.4230153513872246e-17,
+  "all_aggregate_residuals_within_roundoff_reference": true,
+  "structural_disjoint_pairs": 22,
+  "nontrivial_structural_disjoint_pairs": 19,
+  "overlapping_box_pairs": 2,
+  "overlapping_box_actual_RGB_and_CPU_SSIM_effects_separated": true,
+  "substantive_real_interaction_demonstrated": false,
+  "global_mean_opacity_interaction_symbolically_nonadditive": true,
+  "full_training_objective_measured": false,
+  "training": false,
+  "accepted_mutations": 0,
+  "independent_scene_or_quality_gain": false,
+  "inputs": {
+    "experiments/tgs_joint_edit_v27/results.json": "0041ba436ca753c7c479452390f8647875fe3d475a5ae26886033affa8fa4fb5",
+    "experiments/tgs_joint_edit_v27/independent_audit.json": "07ea886e189899d7674da8b156e525ec75b71ea3ffd7d53b0f5cbc6bde59194e",
+    "experiments/tgs_joint_edit_v27/support_diagnostic_results.json": "58e4224efd4923b675e87a0babc846a4ed77c827a064a1142eb21390fa85b3c0",
+    "experiments/tgs_joint_edit_v27/global_reg_results.json": "273e0e9724fe0742adfbd1e91b01b4555bf134266e39972f0359a26de496adb3",
+    "analyze_tgs_joint_edit_v27.py": "219b8f3fa803384a42e20af7b7bd676e9f3ea34c0a37dffb55d16d14b3074458"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "all_passed": true,
+  "software_only": true,
+  "simultaneous_parent_order": true,
+  "rows": [
+    {
+      "case": "separated",
+      "point_disjoint": true,
+      "ssim_disjoint": true,
+      "interactions": [
+        2.710505431213761e-20,
+        0.0,
+        0.0
+      ],
+      "bounds": [
+        2.9620399822793563e-15,
+        5.332539965167245e-15,
+        5.302730974936904e-14
+      ]
+    },
+    {
+      "case": "halo_overlap",
+      "point_disjoint": true,
+      "ssim_disjoint": false,
+      "interactions": [
+        0.0,
+        0.0,
+        0.00030424047785622
+      ],
+      "bounds": [
+        1.0229820089898174e-16,
+        3.3328374782295283e-16,
+        1.1837667800815916e-14
+      ]
+    },
+    {
+      "case": "pixel_overlap",
+      "point_disjoint": false,
+      "ssim_disjoint": false,
+      "interactions": [
+        7.62939453125e-06,
+        0.0,
+        -0.0004782455307492236
+      ],
+      "bounds": [
+        1.232911845874921e-16,
+        3.3328374782295283e-16,
+        1.3827935383546994e-14
+      ]
+    }
+  ],
+  "rational_zero_observed_support_counterexample": {
+    "original": "2499/2500",
+    "single_i": "2499/2500",
+    "single_j": "2499/2500",
+    "joint": "49/50",
+    "generic_deletion_not_real_triangle_split": true
+  }
+}

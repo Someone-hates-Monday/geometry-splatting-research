@@ -1,0 +1,13 @@
+{
+  "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/tgs_shared_loss_v26/build/tgs_shared_image_loss_v26.so",
+  "sha256": "813308e7fd4492c01ca37f95da6022a4427c201e8615bd164d04821684dfc51d",
+  "source_sha256": "4eb1c477a50bf121171c66e69ced0f54945563ffcfb97888c84fbc2d254f05e1",
+  "flags": [
+    "-O3",
+    "--fmad=false",
+    "sm_120"
+  ],
+  "torch": "2.12.0.dev20260314+cu128",
+  "cuda": "12.8",
+  "training": false
+}

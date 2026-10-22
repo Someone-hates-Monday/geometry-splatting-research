@@ -1,0 +1,14 @@
+{
+  "all_identities_passed": true,
+  "sympy": "1.14.0",
+  "pair_interaction": "-9*lambda*(Oi + Oj - 2*S/N)/((N + 3)*(N + 6))",
+  "k_edit_change": "3*lambda*(Z - S*k/N)/(N + 3*k)",
+  "k_edit_interaction": "-9*lambda*(Z - S*k/N)*(k - 1)/((N + 3)*(N + 3*k))",
+  "toy_pair_interaction_exact": "-63/20800",
+  "toy_not_real_model": true,
+  "assumptions": "N>0;denominators nonzero;area A>0 when used;distinct inherited-opacity edits;bound additionally0<=opacity<=1,k<=N",
+  "not_FP32_training_reduction_proof": true,
+  "training": false,
+  "new_native_forwards": 0,
+  "plan_sha256": "36efcabb84663149fed50b18861a4df28e17e2349834ca9fff49c593b4a3731c"
+}

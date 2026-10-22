@@ -1,0 +1,59 @@
+{
+  "date_local": "2026-10-12",
+  "timezone": "Asia/Shanghai",
+  "search_queries": [
+    "\"Gaussian splatting\" \"inverse quadratic\" \"depth\"",
+    "\"Gaussian splatting\" \"median depth\" \"interpolation\" \"quadratic\"",
+    "\"Gaussian-Splatting-with-Stochastic-Solids\" \"interpolation\"",
+    "site:dlmf.nist.gov Halley method root cubic",
+    "\"Gaussian splatting\" \"median depth\" \"Newton\"",
+    "\"Gaussian splatting\" \"implicit differentiation\" \"solver\"",
+    "\"Gaussian splatting\" \"Halley\"",
+    "Diff3R Feed-forward 3D Gaussian Splatting Uncertainty-aware Differentiable Optimization arxiv"
+  ],
+  "primary_sources_verified": [
+    {
+      "title": "Geometry-Grounded Gaussian Splatting",
+      "url": "https://arxiv.org/html/2601.17835",
+      "scope": "Existing implicit depth differentiation, subdivision and adaptive bracketing overlap; previously read."
+    },
+    {
+      "title": "scipy.optimize.brentq",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.brentq.html",
+      "scope": "IQI is a classical component of Brent root finding."
+    },
+    {
+      "title": "One-step differentiation of iterative algorithms",
+      "authors": [
+        "Jerome Bolte",
+        "Edouard Pauwels",
+        "Samuel Vaiter"
+      ],
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2305.13768",
+      "full_paper": "https://proceedings.neurips.cc/paper_files/paper/2023/file/f3716db40060004d0629d4051b2c57ab-Paper-Conference.pdf",
+      "scope": "Existing general Jacobian approximation analysis; abstract and PDF introduction/methods read."
+    },
+    {
+      "title": "NIST DLMF 3.8.12",
+      "url": "https://dlmf.nist.gov/3.8.E12",
+      "scope": "Classical Halley formula."
+    },
+    {
+      "title": "Diff3R: Feed-forward 3D Gaussian Splatting with Uncertainty-aware Differentiable Optimization",
+      "url": "https://arxiv.org/abs/2604.01030",
+      "scope": "Search metadata and author project abstract only; differentiable scene optimization differs from a one-ray median solver."
+    },
+    {
+      "title": "Scientific Agent Skills: A Library of Procedural Knowledge for Research Agents",
+      "url": "https://arxiv.org/abs/2609.00065",
+      "scope": "Verified authors/date for tool provenance; not mathematical evidence."
+    }
+  ],
+  "limitations": [
+    "Targeted web searches, not a systematic or exhaustive review.",
+    "Low-relevance search hits excluded; failure to locate a direct hit is not proof of novelty.",
+    "IQI, Newton, Halley and implicit differentiation are not claimed as original.",
+    "GGGS-specific traversal reuse still requires broader literature and code review."
+  ]
+}

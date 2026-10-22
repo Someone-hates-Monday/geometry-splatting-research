@@ -1,0 +1,31 @@
+# 与 SuGaR 父项目一致：用 conda 安装 PyTorch/CUDA/cudnn，避免 pip 从 PyPI 拉取 nvidia-cudnn（易 SSL 失败）
+# 用法: conda env create -f environment_uggs.yml && conda activate uggs
+# 若 conda 下载中断（IncompleteRead），删除环境后重试： conda env remove -n uggs && conda env create -f environment_uggs.yml
+# 然后: pip install -r requirements.txt && ./scripts/install_submodules.sh [或 install_submodules_blackwell.sh 用于 RTX 5090]
+name: uggs
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pytorch=2.5.*
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - pip
+  - ninja
+  - pyyaml
+  - pip:
+    - open3d
+    - trimesh
+    - scikit-image
+    - opencv-python
+    - plyfile
+    - tqdm
+    - configargparse
+    - scipy
+    - matplotlib
+    - pandas
+    - addict

@@ -1,0 +1,15 @@
+{
+  "inputs": {
+    "run_tgs_joint_policy_heldout_v29.py": "4b429101e6db6e1481c05b5c1bc561a56a4e02afbd551c059170b4b156fd8a6a",
+    "run_tgs_joint_policy_v29.py": "61904214567a498c153ce1001dfa4f85988f7e2b3edbe5770f47fdee5f792bd3",
+    "experiments/tgs_joint_policy_v29/execution_plan.json": "ab9c2095485b8e00859f856c10e15b7f655a4a84d30d448169c8ae77ff238252",
+    "experiments/tgs_joint_policy_v29/choices.json": "e801090fca4e51a90cdafcd13f4776adc1f9688cf8e9ae66ca6fef382aaa0513",
+    "experiments/tgs_joint_policy_v29/heldout_identity.json": "4129963690dfaba311e85bf65191f1ddb26340bf378e77f2049bb0a1542c0680",
+    "sources/tgs_joint_policy_v29/manifest.json": "c9d20de6a37bee01c62d87bd82491e445ffd7686af36a0dc4e5f052496179279"
+  },
+  "reason": "source review before execution: original baseline helper assumes new directory, but identity stage creates GT directory; use same full native baseline without that mkdir",
+  "previous_heldout_entry_executed": false,
+  "view_or_policy_changes": false,
+  "native_forward_cap": 24,
+  "training": false
+}

@@ -1,0 +1,640 @@
+{
+  "all_passed": true,
+  "software_only": true,
+  "batch": {
+    "rows": [
+      {
+        "event": 0,
+        "ROI": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "score": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "expected": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "full_gpu_score": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "absolute_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "full_absolute_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_full_scalar_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_CPU_map_error": 6.942363350859182e-15,
+        "local_full_maps_literal": true,
+        "full_map_change_outside_A_literal_zero": true,
+        "normal_debug_scalars_literal": true,
+        "blends": [
+          0.0,
+          0.0
+        ],
+        "reference_blends": [
+          0.0,
+          0.0
+        ],
+        "blend_absolute_error": [
+          0.0,
+          0.0
+        ],
+        "ambiguous_blend_signs": [
+          true,
+          true
+        ],
+        "base_hash": "4454353355f7a380574b476ea6e2a7d0033d5a6f97ced9742bc4ab5a555c50ce",
+        "trial_hash": "4454353355f7a380574b476ea6e2a7d0033d5a6f97ced9742bc4ab5a555c50ce",
+        "local_map_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "full_map_hash": "3ed3e1f4ea61cd1f248d0f7728539cd51956d4fd8bbe96db38f06ebb254d3401"
+      },
+      {
+        "event": 1,
+        "ROI": [
+          0,
+          0,
+          1,
+          1
+        ],
+        "score": [
+          4.6594808681245227e-05,
+          2.2941986639329135e-05,
+          -6.495954573393904e-05
+        ],
+        "expected": [
+          4.6594808681245227e-05,
+          2.2941986639329135e-05,
+          -6.495954573394706e-05
+        ],
+        "full_gpu_score": [
+          4.6594808681245227e-05,
+          2.2941986639329135e-05,
+          -6.495954573393904e-05
+        ],
+        "absolute_error": [
+          0.0,
+          0.0,
+          8.023096076392733e-18
+        ],
+        "full_absolute_error": [
+          0.0,
+          0.0,
+          8.023096076392733e-18
+        ],
+        "local_full_scalar_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_CPU_map_error": 6.942363350859182e-15,
+        "local_full_maps_literal": true,
+        "full_map_change_outside_A_literal_zero": true,
+        "normal_debug_scalars_literal": true,
+        "blends": [
+          3.1345498458251114e-05,
+          5.026775609178399e-05
+        ],
+        "reference_blends": [
+          3.134549845825272e-05,
+          5.0267756091785594e-05
+        ],
+        "blend_absolute_error": [
+          1.6059744679941534e-18,
+          1.6059744679941534e-18
+        ],
+        "ambiguous_blend_signs": [
+          false,
+          false
+        ],
+        "base_hash": "4454353355f7a380574b476ea6e2a7d0033d5a6f97ced9742bc4ab5a555c50ce",
+        "trial_hash": "fa4ec8131c0fc79d925b8d1d2e7bb28bbd9af4435930cd18ec797b55561c5b5a",
+        "local_map_hash": "a680e5e6e6fa700c9fe4700e3d07d40dc9dd957d625f886ec99add8c28e7c806",
+        "full_map_hash": "bed7705590d9d374f628262ca6046b8a62f3be12898f1544cd0d9efc3671bbde"
+      },
+      {
+        "event": 2,
+        "ROI": [
+          18,
+          12,
+          19,
+          13
+        ],
+        "score": [
+          -1.5914637468338634e-05,
+          -2.2942036913152326e-05,
+          7.520220807978326e-05
+        ],
+        "expected": [
+          -1.5914637468338638e-05,
+          -2.2942036913152326e-05,
+          7.520220807977618e-05
+        ],
+        "full_gpu_score": [
+          -1.5914637468338634e-05,
+          -2.2942036913152326e-05,
+          7.520220807978326e-05
+        ],
+        "absolute_error": [
+          3.3881317890172014e-21,
+          0.0,
+          7.087971702623985e-18
+        ],
+        "full_absolute_error": [
+          3.3881317890172014e-21,
+          0.0,
+          7.087971702623985e-18
+        ],
+        "local_full_scalar_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_CPU_map_error": 6.942363350859182e-15,
+        "local_full_maps_literal": true,
+        "full_map_change_outside_A_literal_zero": true,
+        "normal_debug_scalars_literal": true,
+        "blends": [
+          -3.339407114647851e-05,
+          -2.777215159062756e-05
+        ],
+        "reference_blends": [
+          -3.3394071146477096e-05,
+          -2.7772151590626144e-05
+        ],
+        "blend_absolute_error": [
+          1.4162390878091902e-18,
+          1.4162390878091902e-18
+        ],
+        "ambiguous_blend_signs": [
+          false,
+          false
+        ],
+        "base_hash": "4454353355f7a380574b476ea6e2a7d0033d5a6f97ced9742bc4ab5a555c50ce",
+        "trial_hash": "0bbfd0254375259978ac1e9b0e48269f21bcc3a4a63837c20ac21c816f96506e",
+        "local_map_hash": "82e39d3008c06cf285bb7e05ee588f2de3733ba29a13016671fdcdf5d34907d4",
+        "full_map_hash": "4ac04ef69ffebec72ea5bb3e1738b0e658dd916dd33aa384fb9804c0aa59bd76"
+      },
+      {
+        "event": 3,
+        "ROI": [
+          0,
+          0,
+          19,
+          13
+        ],
+        "score": [
+          0.002545272693475865,
+          0.001988047473212211,
+          0.0021910886548795324
+        ],
+        "expected": [
+          0.0025452726934758656,
+          0.001988047473212211,
+          0.0021910886548796174
+        ],
+        "full_gpu_score": [
+          0.002545272693475865,
+          0.001988047473212211,
+          0.0021910886548795324
+        ],
+        "absolute_error": [
+          4.336808689942018e-19,
+          0.0,
+          8.500145032286355e-17
+        ],
+        "full_absolute_error": [
+          4.336808689942018e-19,
+          0.0,
+          8.500145032286355e-17
+        ],
+        "local_full_scalar_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_CPU_map_error": 9.01362318117549e-15,
+        "local_full_maps_literal": true,
+        "full_map_change_outside_A_literal_zero": true,
+        "normal_debug_scalars_literal": true,
+        "blends": [
+          0.0011522202475938623,
+          0.001598000423804786
+        ],
+        "reference_blends": [
+          0.0011522202475938452,
+          0.0015980004238047689
+        ],
+        "blend_absolute_error": [
+          1.713039432527097e-17,
+          1.713039432527097e-17
+        ],
+        "ambiguous_blend_signs": [
+          false,
+          false
+        ],
+        "base_hash": "4454353355f7a380574b476ea6e2a7d0033d5a6f97ced9742bc4ab5a555c50ce",
+        "trial_hash": "fcd99d738daf977e3bb780f6e9f82639b2317be82399798b2b0c599141d6175f",
+        "local_map_hash": "4b00b9abd447969d4d302cd7cb3f76f24fc06c2b4e9ac997c18a85c8fbec5a08",
+        "full_map_hash": "4b00b9abd447969d4d302cd7cb3f76f24fc06c2b4e9ac997c18a85c8fbec5a08"
+      },
+      {
+        "event": 4,
+        "ROI": [
+          0,
+          12,
+          19,
+          13
+        ],
+        "score": [
+          -6.680659506106902e-05,
+          -0.00011753710333054541,
+          0.0024034264514478437
+        ],
+        "expected": [
+          -6.680659506106905e-05,
+          -0.00011753710333054541,
+          0.0024034264514478172
+        ],
+        "full_gpu_score": [
+          -6.680659506106898e-05,
+          -0.00011753710333054541,
+          0.0024034264514478437
+        ],
+        "absolute_error": [
+          2.710505431213761e-20,
+          0.0,
+          2.6454533008646308e-17
+        ],
+        "full_absolute_error": [
+          6.776263578034403e-20,
+          0.0,
+          2.6454533008646308e-17
+        ],
+        "local_full_scalar_error": [
+          4.0657581468206416e-20,
+          0.0,
+          0.0
+        ],
+        "max_CPU_map_error": 8.854028621385623e-15,
+        "local_full_maps_literal": true,
+        "full_map_change_outside_A_literal_zero": true,
+        "normal_debug_scalars_literal": true,
+        "blends": [
+          -0.0005747149729540051,
+          -0.0005341305663384239
+        ],
+        "reference_blends": [
+          -0.0005747149729539997,
+          -0.0005341305663384187
+        ],
+        "blend_absolute_error": [
+          5.312590645178972e-18,
+          5.204170427930421e-18
+        ],
+        "ambiguous_blend_signs": [
+          false,
+          false
+        ],
+        "base_hash": "4454353355f7a380574b476ea6e2a7d0033d5a6f97ced9742bc4ab5a555c50ce",
+        "trial_hash": "bd635c67c10fe19685d6e108a5ef58bdd7b6946ad93e5add3beacf06e92b54ae",
+        "local_map_hash": "80fc1a73d34095e4889006549bfb3947624f15de08cdff546878f3ef89bce455",
+        "full_map_hash": "0215d3195bba4c7c0f75f34d4855f4f13a28593d77f35be82704898771ca0651"
+      },
+      {
+        "event": 5,
+        "ROI": [
+          0,
+          0,
+          1,
+          13
+        ],
+        "score": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "expected": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "full_gpu_score": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "absolute_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "full_absolute_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "local_full_scalar_error": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_CPU_map_error": 6.942363350859182e-15,
+        "local_full_maps_literal": true,
+        "full_map_change_outside_A_literal_zero": true,
+        "normal_debug_scalars_literal": true,
+        "blends": [
+          0.0,
+          0.0
+        ],
+        "reference_blends": [
+          0.0,
+          0.0
+        ],
+        "blend_absolute_error": [
+          0.0,
+          0.0
+        ],
+        "ambiguous_blend_signs": [
+          true,
+          true
+        ],
+        "base_hash": "4454353355f7a380574b476ea6e2a7d0033d5a6f97ced9742bc4ab5a555c50ce",
+        "trial_hash": "4454353355f7a380574b476ea6e2a7d0033d5a6f97ced9742bc4ab5a555c50ce",
+        "local_map_hash": "5c2320376e0a05c9952130e300775122f97d852e47b6737a5eab312d7e3efd6e",
+        "full_map_hash": "3ed3e1f4ea61cd1f248d0f7728539cd51956d4fd8bbe96db38f06ebb254d3401"
+      },
+      {
+        "event": 6,
+        "ROI": [
+          2,
+          3,
+          7,
+          9
+        ],
+        "score": [
+          -0.00032245233003390985,
+          -0.00045883961118677285,
+          0.0031533643150657193
+        ],
+        "expected": [
+          -0.0003224523300339099,
+          -0.00045883961118677285,
+          0.003153364315065722
+        ],
+        "full_gpu_score": [
+          -0.0003224523300339098,
+          -0.00045883961118677285,
+          0.0031533643150657193
+        ],
+        "absolute_error": [
+          5.421010862427522e-20,
+          0.0,
+          2.6020852139652106e-18
+        ],
+        "full_absolute_error": [
+          1.0842021724855044e-19,
+          0.0,
+          2.6020852139652106e-18
+        ],
+        "local_full_scalar_error": [
+          5.421010862427522e-20,
+          0.0,
+          0.0
+        ],
+        "max_CPU_map_error": 7.570333249162786e-15,
+        "local_full_maps_literal": true,
+        "full_map_change_outside_A_literal_zero": true,
+        "normal_debug_scalars_literal": true,
+        "blends": [
+          -0.000997744551962562,
+          -0.0008886347270402719
+        ],
+        "reference_blends": [
+          -0.0009977445519625627,
+          -0.0008886347270402723
+        ],
+        "blend_absolute_error": [
+          6.505213034913027e-19,
+          4.336808689942018e-19
+        ],
+        "ambiguous_blend_signs": [
+          false,
+          false
+        ],
+        "base_hash": "4454353355f7a380574b476ea6e2a7d0033d5a6f97ced9742bc4ab5a555c50ce",
+        "trial_hash": "e7cbd5258be263245fe050f1b2baae8c909758fbfece31112c77a397b46101f2",
+        "local_map_hash": "fa7bf7a02415ef8675a2810594e024ddb1f996e28b9ce233cdf628edd216f0ce",
+        "full_map_hash": "4bf71a9981d721a47739c2d0cd05e42cda3546e890e4069d4e3ba0b95b462488"
+      },
+      {
+        "event": 7,
+        "ROI": [
+          2,
+          3,
+          7,
+          9
+        ],
+        "score": [
+          -0.00032245233003390985,
+          -0.00045883961118677285,
+          0.0031533643150657193
+        ],
+        "expected": [
+          -0.0003224523300339099,
+          -0.00045883961118677285,
+          0.003153364315065722
+        ],
+        "full_gpu_score": [
+          -0.0003224523300339098,
+          -0.00045883961118677285,
+          0.0031533643150657193
+        ],
+        "absolute_error": [
+          5.421010862427522e-20,
+          0.0,
+          2.6020852139652106e-18
+        ],
+        "full_absolute_error": [
+          1.0842021724855044e-19,
+          0.0,
+          2.6020852139652106e-18
+        ],
+        "local_full_scalar_error": [
+          5.421010862427522e-20,
+          0.0,
+          0.0
+        ],
+        "max_CPU_map_error": 7.570333249162786e-15,
+        "local_full_maps_literal": true,
+        "full_map_change_outside_A_literal_zero": true,
+        "normal_debug_scalars_literal": true,
+        "blends": [
+          -0.000997744551962562,
+          -0.0008886347270402719
+        ],
+        "reference_blends": [
+          -0.0009977445519625627,
+          -0.0008886347270402723
+        ],
+        "blend_absolute_error": [
+          6.505213034913027e-19,
+          4.336808689942018e-19
+        ],
+        "ambiguous_blend_signs": [
+          false,
+          false
+        ],
+        "base_hash": "4454353355f7a380574b476ea6e2a7d0033d5a6f97ced9742bc4ab5a555c50ce",
+        "trial_hash": "e7cbd5258be263245fe050f1b2baae8c909758fbfece31112c77a397b46101f2",
+        "local_map_hash": "fa7bf7a02415ef8675a2810594e024ddb1f996e28b9ce233cdf628edd216f0ce",
+        "full_map_hash": "4bf71a9981d721a47739c2d0cd05e42cda3546e890e4069d4e3ba0b95b462488"
+      }
+    ],
+    "layout_boxes": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        6,
+        6,
+        0,
+        11
+      ],
+      [
+        18,
+        12,
+        19,
+        13,
+        13,
+        7,
+        19,
+        13,
+        8,
+        19
+      ],
+      [
+        0,
+        0,
+        19,
+        13,
+        0,
+        0,
+        19,
+        13,
+        0,
+        19
+      ],
+      [
+        0,
+        12,
+        19,
+        13,
+        0,
+        7,
+        19,
+        13,
+        0,
+        19
+      ],
+      [
+        0,
+        0,
+        1,
+        13,
+        0,
+        0,
+        6,
+        13,
+        0,
+        11
+      ],
+      [
+        2,
+        3,
+        7,
+        9,
+        0,
+        0,
+        12,
+        13,
+        0,
+        17
+      ],
+      [
+        2,
+        3,
+        7,
+        9,
+        0,
+        0,
+        12,
+        13,
+        0,
+        17
+      ]
+    ],
+    "layout_totals": [
+      1023,
+      3234,
+      15,
+      2469,
+      12
+    ],
+    "temporary_vertical_bytes": 77616,
+    "temporary_partial_bytes": 288,
+    "timing": false,
+    "calls": [
+      {
+        "debug": true,
+        "scores_literal_unshared": true,
+        "maps_literal_unshared": true
+      },
+      {
+        "debug": false,
+        "scores_literal_unshared": true,
+        "maps_literal_unshared": true
+      },
+      {
+        "debug": true,
+        "scores_literal_unshared": true,
+        "maps_literal_unshared": true
+      }
+    ],
+    "cache_bytes": 17784,
+    "cache_preps": 1,
+    "unshared_vertical_bytes": 206976
+  }
+}

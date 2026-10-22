@@ -1,0 +1,3 @@
+from pathlib import Path
+import hashlib,json
+R=Path(__file__).resolve().parent;g=json.loads((R/'results/canvas_frozen_certified_guard_v1.json').read_text(encoding='utf-8'));s=json.loads((R/'results/canvas_frozen_certified_syntax_v1.json').read_text(encoding='utf-8'));assert not s['errors'];p=R/'canvas_frozen_certified_stage_v1.tsx';t=Path(g['destination']);assert hashlib.sha256(p.read_bytes()).hexdigest()==g['staged_sha256'] and hashlib.sha256(t.read_bytes()).hexdigest()==g['previous_sha256'];t.write_bytes(p.read_bytes());assert hashlib.sha256(t.read_bytes()).hexdigest()==g['staged_sha256'];print(json.dumps(dict(status='updated_existing',sha256=g['staged_sha256'],new_tabs_opened=0)))

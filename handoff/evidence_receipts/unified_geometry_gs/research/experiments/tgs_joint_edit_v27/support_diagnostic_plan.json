@@ -1,0 +1,26 @@
+{
+  "inputs": {
+    "experiments/tgs_joint_edit_v27/plan.json": "3a42f9b1adb5bd0eaf768010acb31fe12af3bb692b682bbb71fa26ca3dd9c186",
+    "experiments/tgs_joint_edit_v27/results.json": "0041ba436ca753c7c479452390f8647875fe3d475a5ae26886033affa8fa4fb5",
+    "experiments/tgs_joint_edit_v27/independent_audit.json": "07ea886e189899d7674da8b156e525ec75b71ea3ffd7d53b0f5cbc6bde59194e",
+    "diagnose_tgs_joint_support_v27.py": "9a0c4fd39162edad99b79c47b165b5f5cbda24416b1a8e387a0a40036136dd72"
+  },
+  "data_informed_post_hoc": true,
+  "purpose": "Distinguish actual separation from per-pixel cancellation in the two overlapping-box aggregate-null cases",
+  "selected_cases": [
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "i": 0,
+      "j": 3
+    },
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "i": 1,
+      "j": 2
+    }
+  ],
+  "new_native_forwards": 0,
+  "training": false
+}

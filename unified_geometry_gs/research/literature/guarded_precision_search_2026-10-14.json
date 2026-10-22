@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-14",
+  "status": "directed_non_exhaustive",
+  "queries": [
+    "Gaussian splatting median depth uncertainty opacity quantile confidence geometry",
+    "adaptive mixed precision Gaussian splatting rendering numerical stability",
+    "Gaussian geometry splatting transmittance median depth GGGS"
+  ],
+  "primary_fulltext_read": [
+    {
+      "url": "https://arxiv.org/html/2603.01158v1",
+      "version": "2603.01158v1",
+      "section": "IV-C",
+      "finding": "Mixed FP16/FP8 contribution testing; generic 3DGS mixed precision is established prior work.",
+      "boundary": "Does not by itself establish or exclude a physical-median interval certification contribution."
+    }
+  ],
+  "access_failures": [
+    "VarSplat CVPR2026 PDF open returned internal error; no full-text inference used.",
+    "Gaussian Wrapping project PDF open returned internal error in this search; earlier separate review retained."
+  ],
+  "novelty": "unverified",
+  "limitations": [
+    "Directed web retrieval, no exhaustive citation or mathematical numerical-analysis search.",
+    "No unpublished workspace data transmitted in search queries."
+  ]
+}

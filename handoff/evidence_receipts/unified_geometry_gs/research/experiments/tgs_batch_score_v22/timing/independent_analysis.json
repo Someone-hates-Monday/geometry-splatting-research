@@ -1,0 +1,460 @@
+{
+  "all_verified": true,
+  "rows": [
+    {
+      "scene": "flowers",
+      "K": 1,
+      "proposals": [
+        {
+          "parent_id": 1436,
+          "appearance": "hold",
+          "coverage": 0.23003784731837904
+        }
+      ],
+      "ratios": {
+        "full_over_batch": 1.046032642440089,
+        "cached_image_over_sequential_scalar": 0.9935720097716114,
+        "sequential_scalar_over_batch": 0.9748606566704048,
+        "cached_image_over_batch": 0.9671979758982749
+      },
+      "methods": {
+        "A_full_score": {
+          "wall_ms": 2.0866095,
+          "cuda_bracket_ms": 2.052351951599121,
+          "peak_increment_bytes": 320088064.0
+        },
+        "B_cached_image_score": {
+          "wall_ms": 1.9442045000000001,
+          "cuda_bracket_ms": 1.9082719683647156,
+          "peak_increment_bytes": 96377344.0
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 1.9500199999999999,
+          "cuda_bracket_ms": 1.9189279675483704,
+          "peak_increment_bytes": 71231488.0
+        },
+        "D_batch_scalar": {
+          "wall_ms": 1.9883125,
+          "cuda_bracket_ms": 1.9623680114746094,
+          "peak_increment_bytes": 71231488.0
+        }
+      },
+      "slower_full_over_batch_blocks": 1
+    },
+    {
+      "scene": "flowers",
+      "K": 2,
+      "proposals": [
+        {
+          "parent_id": 1436,
+          "appearance": "hold",
+          "coverage": 0.23003784731837904
+        },
+        {
+          "parent_id": 1436,
+          "appearance": "moved",
+          "coverage": 0.23003784731837904
+        }
+      ],
+      "ratios": {
+        "full_over_batch": 1.8427072159390627,
+        "cached_image_over_sequential_scalar": 0.9829391963261116,
+        "sequential_scalar_over_batch": 1.731443075139477,
+        "cached_image_over_batch": 1.6959931398822066
+      },
+      "methods": {
+        "A_full_score": {
+          "wall_ms": 4.109133,
+          "cuda_bracket_ms": 4.074959993362427,
+          "peak_increment_bytes": 320088576.0
+        },
+        "B_cached_image_score": {
+          "wall_ms": 3.810588,
+          "cuda_bracket_ms": 3.786847949028015,
+          "peak_increment_bytes": 100348928.0
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 3.8745895,
+          "cuda_bracket_ms": 3.853935956954956,
+          "peak_increment_bytes": 100349440.0
+        },
+        "D_batch_scalar": {
+          "wall_ms": 2.225633,
+          "cuda_bracket_ms": 2.197983980178833,
+          "peak_increment_bytes": 71254528.0
+        }
+      },
+      "slower_full_over_batch_blocks": 0
+    },
+    {
+      "scene": "flowers",
+      "K": 4,
+      "proposals": [
+        {
+          "parent_id": 1436,
+          "appearance": "hold",
+          "coverage": 0.23003784731837904
+        },
+        {
+          "parent_id": 1436,
+          "appearance": "moved",
+          "coverage": 0.23003784731837904
+        },
+        {
+          "parent_id": 1387,
+          "appearance": "hold",
+          "coverage": 0.13218868272869935
+        },
+        {
+          "parent_id": 1387,
+          "appearance": "moved",
+          "coverage": 0.13218868272869935
+        }
+      ],
+      "ratios": {
+        "full_over_batch": 2.4028298967975736,
+        "cached_image_over_sequential_scalar": 1.0011167365379783,
+        "sequential_scalar_over_batch": 2.1881909023533304,
+        "cached_image_over_batch": 2.210385547037146
+      },
+      "methods": {
+        "A_full_score": {
+          "wall_ms": 8.119733499999999,
+          "cuda_bracket_ms": 8.095664024353027,
+          "peak_increment_bytes": 320088576.0
+        },
+        "B_cached_image_score": {
+          "wall_ms": 7.465908000000001,
+          "cuda_bracket_ms": 7.4464638233184814,
+          "peak_increment_bytes": 100348928.0
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 7.4277215,
+          "cuda_bracket_ms": 7.3846399784088135,
+          "peak_increment_bytes": 100349440.0
+        },
+        "D_batch_scalar": {
+          "wall_ms": 3.3860535,
+          "cuda_bracket_ms": 3.3539040088653564,
+          "peak_increment_bytes": 71335424.0
+        }
+      },
+      "slower_full_over_batch_blocks": 0
+    },
+    {
+      "scene": "flowers",
+      "K": 8,
+      "proposals": [
+        {
+          "parent_id": 1436,
+          "appearance": "hold",
+          "coverage": 0.23003784731837904
+        },
+        {
+          "parent_id": 1436,
+          "appearance": "moved",
+          "coverage": 0.23003784731837904
+        },
+        {
+          "parent_id": 1387,
+          "appearance": "hold",
+          "coverage": 0.13218868272869935
+        },
+        {
+          "parent_id": 1387,
+          "appearance": "moved",
+          "coverage": 0.13218868272869935
+        },
+        {
+          "parent_id": 2773,
+          "appearance": "hold",
+          "coverage": 0.021662204990922796
+        },
+        {
+          "parent_id": 2773,
+          "appearance": "moved",
+          "coverage": 0.021662204990922796
+        },
+        {
+          "parent_id": 110,
+          "appearance": "hold",
+          "coverage": 0.002215452783162559
+        },
+        {
+          "parent_id": 110,
+          "appearance": "moved",
+          "coverage": 0.002215452783162559
+        }
+      ],
+      "ratios": {
+        "full_over_batch": 4.68682637302384,
+        "cached_image_over_sequential_scalar": 0.9860584680887823,
+        "sequential_scalar_over_batch": 3.68964876403213,
+        "cached_image_over_batch": 3.681390829937552
+      },
+      "methods": {
+        "A_full_score": {
+          "wall_ms": 16.280284,
+          "cuda_bracket_ms": 16.244912147521973,
+          "peak_increment_bytes": 320090112.0
+        },
+        "B_cached_image_score": {
+          "wall_ms": 12.82938,
+          "cuda_bracket_ms": 12.81220817565918,
+          "peak_increment_bytes": 100348928.0
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 13.1856925,
+          "cuda_bracket_ms": 13.162975788116455,
+          "peak_increment_bytes": 100349440.0
+        },
+        "D_batch_scalar": {
+          "wall_ms": 3.4522825,
+          "cuda_bracket_ms": 3.4257280826568604,
+          "peak_increment_bytes": 71348224.0
+        }
+      },
+      "slower_full_over_batch_blocks": 0,
+      "separate_setup_ms": 14.427377,
+      "estimate_given_original_PNG_no_geometry_cache": 0.9105477651853494,
+      "estimate_original_render_required_by_both": 1.7174634114257044,
+      "setup_estimate_caveat": "Separate two-forward addendum; original setup/telemetry not persisted; arithmetic only"
+    },
+    {
+      "scene": "room",
+      "K": 1,
+      "proposals": [
+        {
+          "parent_id": 171415,
+          "appearance": "hold",
+          "coverage": 0.11293889365325097
+        }
+      ],
+      "ratios": {
+        "full_over_batch": 2.169998662031894,
+        "cached_image_over_sequential_scalar": 0.9632619624887651,
+        "sequential_scalar_over_batch": 1.00186121962075,
+        "cached_image_over_batch": 0.9722282644300266
+      },
+      "methods": {
+        "A_full_score": {
+          "wall_ms": 4.4490265,
+          "cuda_bracket_ms": 4.430768013000488,
+          "peak_increment_bytes": 657517056.0
+        },
+        "B_cached_image_score": {
+          "wall_ms": 1.9901255,
+          "cuda_bracket_ms": 1.9580479860305786,
+          "peak_increment_bytes": 150508032.0
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 2.047092,
+          "cuda_bracket_ms": 2.0182079076766968,
+          "peak_increment_bytes": 111696384.0
+        },
+        "D_batch_scalar": {
+          "wall_ms": 2.0394550000000002,
+          "cuda_bracket_ms": 2.0126720666885376,
+          "peak_increment_bytes": 111696384.0
+        }
+      },
+      "slower_full_over_batch_blocks": 0
+    },
+    {
+      "scene": "room",
+      "K": 2,
+      "proposals": [
+        {
+          "parent_id": 171415,
+          "appearance": "hold",
+          "coverage": 0.11293889365325097
+        },
+        {
+          "parent_id": 171415,
+          "appearance": "moved",
+          "coverage": 0.11293889365325097
+        }
+      ],
+      "ratios": {
+        "full_over_batch": 3.438381053835678,
+        "cached_image_over_sequential_scalar": 0.959721141080619,
+        "sequential_scalar_over_batch": 1.6016950766295988,
+        "cached_image_over_batch": 1.5377118049441565
+      },
+      "methods": {
+        "A_full_score": {
+          "wall_ms": 8.966823,
+          "cuda_bracket_ms": 8.917200088500977,
+          "peak_increment_bytes": 657517568.0
+        },
+        "B_cached_image_score": {
+          "wall_ms": 4.006403,
+          "cuda_bracket_ms": 3.986400008201599,
+          "peak_increment_bytes": 156947456.0
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 4.1632225,
+          "cuda_bracket_ms": 4.138463973999023,
+          "peak_increment_bytes": 156947968.0
+        },
+        "D_batch_scalar": {
+          "wall_ms": 2.5980395,
+          "cuda_bracket_ms": 2.5601439476013184,
+          "peak_increment_bytes": 111715840.0
+        }
+      },
+      "slower_full_over_batch_blocks": 0
+    },
+    {
+      "scene": "room",
+      "K": 4,
+      "proposals": [
+        {
+          "parent_id": 171415,
+          "appearance": "hold",
+          "coverage": 0.11293889365325097
+        },
+        {
+          "parent_id": 171415,
+          "appearance": "moved",
+          "coverage": 0.11293889365325097
+        },
+        {
+          "parent_id": 156483,
+          "appearance": "hold",
+          "coverage": 0.0687454135280658
+        },
+        {
+          "parent_id": 156483,
+          "appearance": "moved",
+          "coverage": 0.0687454135280658
+        }
+      ],
+      "ratios": {
+        "full_over_batch": 5.477563257306739,
+        "cached_image_over_sequential_scalar": 0.9945719622332556,
+        "sequential_scalar_over_batch": 2.045262245266259,
+        "cached_image_over_batch": 2.0659579777938677
+      },
+      "methods": {
+        "A_full_score": {
+          "wall_ms": 18.022646,
+          "cuda_bracket_ms": 17.991504669189453,
+          "peak_increment_bytes": 657518592.0
+        },
+        "B_cached_image_score": {
+          "wall_ms": 6.8276525,
+          "cuda_bracket_ms": 6.79417610168457,
+          "peak_increment_bytes": 156947456.0
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 6.7558925,
+          "cuda_bracket_ms": 6.731904029846191,
+          "peak_increment_bytes": 156947968.0
+        },
+        "D_batch_scalar": {
+          "wall_ms": 3.32357,
+          "cuda_bracket_ms": 3.271984100341797,
+          "peak_increment_bytes": 111785472.0
+        }
+      },
+      "slower_full_over_batch_blocks": 0
+    },
+    {
+      "scene": "room",
+      "K": 8,
+      "proposals": [
+        {
+          "parent_id": 171415,
+          "appearance": "hold",
+          "coverage": 0.11293889365325097
+        },
+        {
+          "parent_id": 171415,
+          "appearance": "moved",
+          "coverage": 0.11293889365325097
+        },
+        {
+          "parent_id": 156483,
+          "appearance": "hold",
+          "coverage": 0.0687454135280658
+        },
+        {
+          "parent_id": 156483,
+          "appearance": "moved",
+          "coverage": 0.0687454135280658
+        },
+        {
+          "parent_id": 58,
+          "appearance": "hold",
+          "coverage": 0.013850062431705654
+        },
+        {
+          "parent_id": 58,
+          "appearance": "moved",
+          "coverage": 0.013850062431705654
+        },
+        {
+          "parent_id": 2628,
+          "appearance": "hold",
+          "coverage": 0.0011087969923881582
+        },
+        {
+          "parent_id": 2628,
+          "appearance": "moved",
+          "coverage": 0.0011087969923881582
+        }
+      ],
+      "ratios": {
+        "full_over_batch": 10.220155644745585,
+        "cached_image_over_sequential_scalar": 1.0183547426608457,
+        "sequential_scalar_over_batch": 3.09615559254108,
+        "cached_image_over_batch": 3.271609266538645
+      },
+      "methods": {
+        "A_full_score": {
+          "wall_ms": 36.380773000000005,
+          "cuda_bracket_ms": 36.3407039642334,
+          "peak_increment_bytes": 657520640.0
+        },
+        "B_cached_image_score": {
+          "wall_ms": 11.597221000000001,
+          "cuda_bracket_ms": 11.566688060760498,
+          "peak_increment_bytes": 156947456.0
+        },
+        "C_sequential_scalar": {
+          "wall_ms": 11.131947499999999,
+          "cuda_bracket_ms": 11.106192111968994,
+          "peak_increment_bytes": 156947968.0
+        },
+        "D_batch_scalar": {
+          "wall_ms": 3.550386,
+          "cuda_bracket_ms": 3.5170719623565674,
+          "peak_increment_bytes": 111796224.0
+        }
+      },
+      "slower_full_over_batch_blocks": 0,
+      "separate_setup_ms": 14.626452,
+      "estimate_given_original_PNG_no_geometry_cache": 2.0014907433295055,
+      "estimate_original_render_required_by_both": 2.8061660119323286,
+      "setup_estimate_caveat": "Separate two-forward addendum; original setup/telemetry not persisted; arithmetic only"
+    }
+  ],
+  "blocks": 64,
+  "measured_endpoints": 256,
+  "original_run_exit_code": 1,
+  "recovery_complete_raw_cells": true,
+  "original_setup_and_final_telemetry_missing": true,
+  "setup_addendum_separate_process": true,
+  "actual_timing_forwards": 982,
+  "training": false,
+  "inputs": {
+    "experiments/tgs_batch_score_v22/timing/results_recovered.json": "867924eafd58621b276f15df9b441ff30ada6c53a501722661d45e47764825dd",
+    "experiments/tgs_batch_score_v22/timing/plan.json": "a22fbead526c564aa4e5189397a8ac82f405003d8e823c0308ad6506b5e23e36",
+    "experiments/tgs_batch_score_v22/timing/recovery_plan.json": "6bbe6df1cc6a374ed25c8b0d32d0204220e572ec9add8c2282b0171162078be6",
+    "experiments/tgs_batch_score_v22/timing/setup_addendum.json": "75ede65226dfbaaebe4e8d75c3f813c0993956669ebb78a997059bfd69e53ac1",
+    "analyze_tgs_batch_score_v22.py": "63d7e18b4010238077be4e475815945306948e6dff71a09682649b70f1d7b7d0"
+  },
+  "no_GPU_timing_rerun": true,
+  "GT_policy_or_quality_improvement_established": false
+}

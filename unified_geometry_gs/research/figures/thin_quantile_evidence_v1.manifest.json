@@ -1,0 +1,40 @@
+{
+  "created_utc": "2026-10-12T17:50:57.043508+00:00",
+  "script_sha256": "1dadf4aef5662e975e8b835d47afe6c09cd723d835ca629d00021e22205dcb58",
+  "source_sha256": {
+    "research/results/thin_quantile_limit_v2.json": "18d7d49bf5684116f4df393d48a5b7387621ac960644cb5f46f9374e50d9fb1e",
+    "research/results/quantile_band_v2.json": "37d618285255d6ba96e6b36fe4db88e974486185d871d9001f566220c4a7f307"
+  },
+  "output_sha256": {
+    "research/figures/thin_quantile_evidence_v1.png": "64e6640d9979bb20ff983f0a7e3a1a176533fd8bf8274e3affcb0ce947cdfca4",
+    "research/figures/thin_quantile_evidence_v1.svg": "fcd948aea9d589e125c6455b1be7a49e60753e97ce511fddc553cfce550ad549"
+  },
+  "matplotlib_version": "3.10.8",
+  "raster_metadata": {
+    "pixels": [
+      2125,
+      1771
+    ],
+    "dpi": [
+      299.9994,
+      299.9994
+    ],
+    "mode": "RGBA",
+    "alpha_fully_opaque": true
+  },
+  "intended_size_mm": [
+    180,
+    150
+  ],
+  "publisher_requirements": "Unspecified; provisional general scientific figure, not a compliance claim.",
+  "transformations": [
+    "Panel a: log10 of absolute saved middle-opacity derivatives; all seven epsilon values.",
+    "Panel b: last prescribed epsilon, all three position derivatives for both functions.",
+    "Panel c: all 12 plateau/band cases; dotted reference limits from theorem; peaks at -1,+1.",
+    "Panel d: all 20 included regular cases and all five epsilon values; nine analytic-domain exclusions retained in source JSON."
+  ],
+  "replication": "Deterministic synthetic families, not statistical replicates; no uncertainty bands or significance tests.",
+  "line_semantics": "Segments connect calculated samples to guide reading; uncomputed intermediate values are not observations.",
+  "caption": "Continuous median depths can converge without Jacobian convergence. A finite quantile band has bounded conditional gradients but can mix surfaces. Ideal fixed-ray model, not real-scene reconstruction or runtime evidence. Read protocol erratum for corrected +1/3 prediction.",
+  "alt_text": "Four panels show an exponentially growing single-median opacity derivative versus a finite band derivative; median position weights on the two outer peaks versus band weight on the middle peak; band depths between two surfaces; and selected-layer weights approaching one in twenty regular cases."
+}

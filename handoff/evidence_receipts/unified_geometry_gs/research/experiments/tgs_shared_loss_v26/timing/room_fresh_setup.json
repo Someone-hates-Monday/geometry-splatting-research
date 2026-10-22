@@ -1,0 +1,12 @@
+{
+  "scene": "room",
+  "view": "fresh",
+  "setup_wall_ms": 24.869701,
+  "setup_render_ms": 14.894681,
+  "setup_loss_ms": 9.97502,
+  "retained_cache_bytes_GT_excluded": 680209695,
+  "shared_loss_cache_bytes": 116363952,
+  "GT_bytes": 4848498,
+  "model_proposal_loading_excluded": true,
+  "cache_flags_zero": true
+}

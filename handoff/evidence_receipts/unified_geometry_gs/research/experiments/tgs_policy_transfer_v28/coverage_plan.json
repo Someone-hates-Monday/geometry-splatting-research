@@ -1,0 +1,19 @@
+{
+  "inputs": {
+    "diagnose_tgs_policy_coverage_v28.py": "5078607875ff115e92988d5ef4a513ee328d80af15c4ebd3b82cdeda2e57521d",
+    "experiments/tgs_policy_transfer_v28/analysis.json": "0f16f1ffd88bf77d69929f1eecee20c5ed1a2e5acf645e06be08aed3a282cd08",
+    "experiments/tgs_policy_transfer_v28/choices.json": "c596200ae0385310b7bc66890ae09a2895e635f209dc19780e3451bea7aad696",
+    "experiments/tgs_policy_transfer_v28/flowers/calibration_0/scores.json": "9198aa5528feffa99b252172ca649c066d32900b8496e08fac7f637319027c77",
+    "experiments/tgs_policy_transfer_v28/flowers/calibration_1/scores.json": "557b9069cf0a006e637b1a9e0f8f02574d771beef68fa3bc2181eec33b2ad955",
+    "experiments/tgs_policy_transfer_v28/flowers/heldout_0/scores.json": "2ee2d448a1ca4ed19ead7b51e6c4c1b5bac3cc0aabad332e96c4aa8f3797da7c",
+    "experiments/tgs_policy_transfer_v28/flowers/heldout_1/scores.json": "62010bfdaedbec2378d939f6b339022663f4a82f492a71579451f5bf1ce4a083",
+    "experiments/tgs_policy_transfer_v28/room/calibration_0/scores.json": "bd659c4b29eb624cd81d1d36efabb345b393cc9235609650b981b2bc75d874fc",
+    "experiments/tgs_policy_transfer_v28/room/calibration_1/scores.json": "5b06bea469bb40e1d34dfac782cddfe061b1079327dc26cd53754b75d424954d",
+    "experiments/tgs_policy_transfer_v28/room/heldout_0/scores.json": "9203d1153cb0283f0f760fe701b8e76e4eed303b647b882e05986df561a30d4e",
+    "experiments/tgs_policy_transfer_v28/room/heldout_1/scores.json": "97dc5196678e1a173a1725e103f8ea987e7beaf7446174b75007ec94797a78f2"
+  },
+  "posthoc_after_transfer_aggregate": true,
+  "new_native_forwards": 0,
+  "changes_selection": false,
+  "observed_RGB_support_not_general_guarantee": true
+}

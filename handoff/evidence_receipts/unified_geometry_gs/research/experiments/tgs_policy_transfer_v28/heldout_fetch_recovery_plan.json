@@ -1,0 +1,24 @@
+{
+  "inputs": {
+    "recover_tgs_policy_heldout_fetch_v28.py": "1f821817ca40eac9271b243bb619bff16cfc32c8f52f8aef877a06e00cc73141",
+    "experiments/tgs_policy_transfer_v28/input_plan.json": "f0b5c7695acd2d6603e9eed10f65dad2976647ea402c9d38ded7ed9aaa37ae72",
+    "experiments/tgs_policy_transfer_v28/choices.json": "c596200ae0385310b7bc66890ae09a2895e635f209dc19780e3451bea7aad696",
+    "experiments/tgs_policy_transfer_v28/fetch_heldout_failure.txt": "8965ca36bba0fe6e91fa0a655061064be087a3dcf351360b7ca7c95d2dc5f530",
+    "sources/tgs_policy_transfer_v28/flowers/heldout_0/original.JPG": "e7e5b02893af03da81b297be26505702fabb8ec7ceabc89c9ceb3adf95b11ad6",
+    "sources/tgs_policy_transfer_v28/flowers/heldout_0/original.JPG.receipt.json": "dad9dfae9f2b27a9eb2e3f063d27062bb38d26cf67e3b424b0cbd9f16d463860",
+    "sources/tgs_policy_transfer_v28/flowers/heldout_1/original.JPG": "dea29edfc872bc89ce7e3219839e18ee3b819aee3a95801f7208a1b5c3993b17",
+    "sources/tgs_policy_transfer_v28/flowers/heldout_1/original.JPG.receipt.json": "8235f7d8441c4d533b6ed1590023f4ecafa1a673537cf41af3cd12a2fd7b1636",
+    "sources/tgs_policy_transfer_v28/room/heldout_0/original.JPG": "c8155dc4802ed97e8cb0196f7a1dd68d08233ec17120f8070815fad446d88825",
+    "sources/tgs_policy_transfer_v28/room/heldout_0/original.JPG.receipt.json": "11c86ba09a177ccf419b56f3691dc8a6e9d8c2608a79822930d840fdddf5189a",
+    "sources/tgs_policy_transfer_v28/room/heldout_1/original.JPG": "7fea30e8ecdb2dcc3c9fb8cc152d29233cffd99f19f77ba3db56a34ed6f434a0",
+    "sources/tgs_policy_transfer_v28/room/heldout_1/original.JPG.receipt.json": "75729ff9976b1e907c52de1d83dbac39a7b1aa3c9dbca319bcf5089432bf7c51"
+  },
+  "same_four_preselected_test_views": true,
+  "replace_or_resample": false,
+  "retry_attempts": 1,
+  "borrow_verified_cached_ranges": true,
+  "maximum_total_new_cached_payload": 100663296,
+  "test_scoring_started": false,
+  "original_fetch_exit": 1,
+  "training": false
+}

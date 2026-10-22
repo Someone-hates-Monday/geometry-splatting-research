@@ -1,0 +1,17 @@
+{
+  "inputs": {
+    "experiments/tgs_shared_loss_v26/timing/independent_analysis.json": "fe1a550fdd1bb10d6a899fcc55adfdee4b603e325b3c22cc5f0ce4900c8f510c",
+    "experiments/tgs_shared_loss_v26/timing/results.json": "5a0f18140e84599488a952a3dc1dd53c317fefcaf2e6d0ed27b7eb663e4e198c",
+    "plot_tgs_shared_loss_v26.py": "d4ee3e1913a2c484ba1727c2f879ec626ca4f22742c1caeff7a293ac38440f47"
+  },
+  "raw_endpoint_samples": 128,
+  "plotted_metrics": [
+    "wall_ms",
+    "peak_increment_bytes"
+  ],
+  "medians": true,
+  "no_intervals": true,
+  "palette": "Okabe-Ito-derived plus hatching and positional labels",
+  "publisher_requirements": "unspecified; provisional research figure",
+  "alt_text": "Whole-batch score time and extra allocation for four arms sharing the same baseline moments. Batch packed is faster in this measured study; its allocation exceeds sequential packed in the two fresh views but is smaller in the two old views. Resident loss cache is excluded from the allocation bars."
+}

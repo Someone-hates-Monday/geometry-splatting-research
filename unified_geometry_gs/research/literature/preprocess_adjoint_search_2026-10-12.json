@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-12",
+  "scope": "Targeted primary-source implementation and overlap check, not a systematic literature review or a novelty certificate.",
+  "queries": [
+    "\"Gaussian splatting\" \"non-conservative\" gradient",
+    "\"Geometry-Grounded Gaussian Splatting\" gradient normal derivative",
+    "\"Gaussian splatting\" \"gradient\" \"opacity compensation\""
+  ],
+  "primary_sources_inspected": [
+    {
+      "url": "https://raw.githubusercontent.com/HKUST-SAIL/Geometry-Grounded-Gaussian-Splatting/main/submodules/diff-gaussian-rasterization/cuda_rasterizer/render_backward.cu",
+      "use": "Confirmed the same normal-length, ray-precision and opacity-coefficient backward source patterns. Main is mutable, upstream history and author intent were not inspected."
+    },
+    {
+      "url": "https://raw.githubusercontent.com/HKUST-SAIL/Geometry-Grounded-Gaussian-Splatting/main/submodules/diff-gaussian-rasterization/cuda_rasterizer/render_forward.cu",
+      "use": "Confirmed the corresponding forward normalization, ray precision and compensation definitions."
+    },
+    {
+      "url": "https://arxiv.org/html/2601.17835v2",
+      "use": "GGGS method and supplementary context. Diagnosing shader chain rules does not invalidate its high-level implicit median-depth identity."
+    },
+    {
+      "url": "https://docs.gsplat.studio/main/apis/rasterization.html",
+      "use": "Opacity compensation is established antialiasing functionality; no new compensation formulation is claimed here."
+    }
+  ],
+  "retrieval_limits": [
+    "An attempted direct open of the splax documentation returned an internal error; search snippets alone were not used as evidence for a derivative claim.",
+    "Dynamic-scene papers with non-conservative mechanical forces were returned by search. That meaning differs from integrability of an optimization VJP; they were not treated as direct prior art for this diagnosis.",
+    "No result absence implies novelty. Broader issue, commit-history, mathematical differentiation and related-renderer review remains outstanding."
+  ],
+  "claim_boundary": "Exact calculus and independent local CUDA checks support implementation inconsistency relative to forward. Quality and academic novelty require separate evidence."
+}

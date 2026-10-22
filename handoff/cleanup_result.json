@@ -1,0 +1,11 @@
+{
+  "deleted_files": 60,
+  "plan_sha256": "a932ee9429829f90cacf7fa66f5944554c21ddf8cc0bcf8d38a89b66f594c7a6",
+  "protected_files": 33,
+  "protected_hashes_verified_before_and_after": true,
+  "note": "Logical file sizes, not a measurement of physical disk free-space delta. No backup of intermediate optimizer states was made.",
+  "completed_utc": "2026-10-22T08:14:30.1659521Z",
+  "failure": null,
+  "removed_logical_bytes": 15622688680,
+  "removed_GiB": 14.549762643873692
+}

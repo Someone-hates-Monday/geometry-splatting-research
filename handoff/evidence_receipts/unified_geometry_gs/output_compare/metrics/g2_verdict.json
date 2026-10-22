@@ -1,0 +1,122 @@
+{
+  "protocol": "RESEARCH_PROTOCOL \u00a75 G2",
+  "verdict": "M2-emp",
+  "reason": "\u03c3_z vs t* unstructured: ['scan24', 'scan122', 'scan105'] \u2192 [0.004, 0.008, 0.004]",
+  "voxel": 0.002,
+  "significant": 0.0005,
+  "mean_overall_range_across_t": 0.053905519440407036,
+  "m_star": {
+    "scan24": 2,
+    "scan105": 2,
+    "scan122": 4
+  },
+  "t_star": {
+    "scan24": 0.004,
+    "scan105": 0.004,
+    "scan122": 0.008
+  },
+  "sigma_z": {
+    "scan24": 0.000150582218170166,
+    "scan105": 0.0002822532892227173,
+    "scan122": 0.00023258943557739257
+  },
+  "table": {
+    "scan24": {
+      "sigma_z": 0.000150582218170166,
+      "m_star": 2,
+      "t_star": 0.004,
+      "rows": {
+        "2": {
+          "t": 0.004,
+          "overall": 0.35119099668967696,
+          "path": "output_compare/ggs_ex_m2/scan24"
+        },
+        "4": {
+          "t": 0.008,
+          "overall": 0.35496639222779447,
+          "path": "output_compare/ggs_ex_trunc4/scan24"
+        },
+        "6": {
+          "t": 0.012,
+          "overall": 0.3617424813431111,
+          "path": "output_compare/ggs_ex_m6/scan24"
+        },
+        "8": {
+          "t": 0.016,
+          "overall": 0.3680510687901304,
+          "path": "output_compare/ggs_ablate_no_dn/scan24"
+        },
+        "12": {
+          "t": 0.024,
+          "overall": 0.38089861036284967,
+          "path": "output_compare/ggs_ex_trunc12/scan24"
+        }
+      }
+    },
+    "scan105": {
+      "sigma_z": 0.0002822532892227173,
+      "m_star": 2,
+      "t_star": 0.004,
+      "rows": {
+        "2": {
+          "t": 0.004,
+          "overall": 0.4534785957155692,
+          "path": "output_compare/ggs_ex_m2/scan105"
+        },
+        "4": {
+          "t": 0.008,
+          "overall": 0.47048834938509165,
+          "path": "output_compare/ggs_ex_trunc4/scan105"
+        },
+        "6": {
+          "t": 0.012,
+          "overall": 0.4919161009907082,
+          "path": "output_compare/ggs_ex_m6/scan105"
+        },
+        "8": {
+          "t": 0.016,
+          "overall": 0.5109589363268661,
+          "path": "output_compare/ggs_ablate_no_dn/scan105"
+        },
+        "12": {
+          "t": 0.024,
+          "overall": 0.54674108973139,
+          "path": "output_compare/ggs_ex_trunc12/scan105"
+        }
+      }
+    },
+    "scan122": {
+      "sigma_z": 0.00023258943557739257,
+      "m_star": 4,
+      "t_star": 0.008,
+      "rows": {
+        "2": {
+          "t": 0.004,
+          "overall": 0.3630239345812575,
+          "path": "output_compare/ggs_ex_m2/scan122"
+        },
+        "4": {
+          "t": 0.008,
+          "overall": 0.3242774839490299,
+          "path": "output_compare/ggs_ex_trunc4/scan122"
+        },
+        "6": {
+          "t": 0.012,
+          "overall": 0.326272405438019,
+          "path": "output_compare/ggs_ex_m6/scan122"
+        },
+        "8": {
+          "t": 0.016,
+          "overall": 0.33183110004999755,
+          "path": "output_compare/ggs_ablate_no_dn/scan122"
+        },
+        "12": {
+          "t": 0.024,
+          "overall": 0.34583756194069215,
+          "path": "output_compare/ggs_ex_trunc12/scan122"
+        }
+      }
+    }
+  },
+  "next": "keep trunc4 as empirical default; demote M2 formula; still P3"
+}

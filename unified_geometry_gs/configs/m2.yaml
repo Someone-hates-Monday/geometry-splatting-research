@@ -1,0 +1,7 @@
+# M2: Confidence + semantic weighting (placeholder for milestone 2)
+# Use after integrating w_geo and w_sem into train.py
+
+milestone: 2
+use_geo_weight: true
+use_semantic_weight: true
+# Path to 2D segmentation (optional): null or path to mask dir

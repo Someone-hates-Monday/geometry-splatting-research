@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-13",
+  "timezone": "Asia/Shanghai",
+  "review_type": "targeted_primary_source_scope_audit",
+  "status": "bounded_audit_complete_not_systematic_not_novelty_proof",
+  "reason_for_scope_limit": "Parent conveyed user request to finish current steps and report briefly; no expanded search performed.",
+  "method": {
+    "databases_searched": [],
+    "search_queries": [],
+    "actions_performed": [
+      {"action": "open", "urls": ["https://arxiv.org/html/2601.17835v2", "https://arxiv.org/html/2403.17888", "https://arxiv.org/html/2410.08129v2", "https://arxiv.org/html/2412.12507v2", "https://trianglesplatting.github.io/"]},
+      {"action": "find", "patterns": [{"url": "https://arxiv.org/html/2410.08129v2", "pattern": "Plücker"}, {"url": "https://arxiv.org/html/2412.12507v2", "pattern": "(11)"}, {"url": "https://arxiv.org/html/2403.17888", "pattern": "median"}, {"url": "https://trianglesplatting.github.io/", "pattern": "arxiv"}]}
+    ],
+    "limitations": ["Single reviewer", "Targeted known-source retrieval rather than database search", "No exhaustive coverage claim", "No novelty inference from absent results", "No new experiment or complete raw-artifact verification"]
+  },
+  "sources": [
+    {"id": "gggs_v2", "url": "https://arxiv.org/html/2601.17835v2", "retrieval": "html_retrieved_relevant_sections_read", "locations": ["4.2.1 Eq10-12 and Discussion", "4.2.2 Eq13"], "assessment": "Continuous transmittance median, bisection, implicit derivative and conditional near-side isosurface equivalence predate current work.", "unproven": "Identical two-margin thin-limit theorem and critical regular-root counterexample were not established as novel by this limited reading."},
+    {"id": "2dgs_v3", "url": "https://arxiv.org/html/2403.17888", "observed_version": "v3 2025-02-22", "retrieval": "html_retrieved_relevant_sections_read", "locations": ["Appendix B Eq19", "Appendix C affine versus perspective ablation"], "assessment": "Discrete visible-layer median, low-opacity fallback and benefits of perspective-correct planar splats are established; thin-rule correspondence does not unify whole renderers."},
+    {"id": "htgs_v2", "url": "https://arxiv.org/html/2410.08129v2", "retrieval": "html_retrieved_relevant_sections_read", "locations": ["Section3.2 Eq10-15"], "assessment": "Plucker exact-perspective Gaussian response and setup/per-pixel cost tradeoff are prior work; generic exact ray evaluation is not novel."},
+    {"id": "3dgut_v2", "url": "https://arxiv.org/html/2412.12507v2", "retrieval": "html_retrieved_relevant_sections_read", "locations": ["Section4.2 Eq11", "Section4.3", "Section4.4"], "assessment": "Exact peak in precision and factor coordinates is existing; selection, sorting and optimization remain separate requirements."},
+    {"id": "triangle_project", "url": "https://trianglesplatting.github.io/", "retrieval": "official_project_page_only", "title": "Triangle Splatting for Real-Time Radiance Field Rendering", "assessment": "Triangle representation and paper identity observed; original paper and implementation technical details not retrieved this audit.", "technical_formula_verification": false}
+  ],
+  "local_documents_read": [
+    {"path": "research/CONTINUATION.md", "sha256": "8520d06a005b244148462e87d5d69f087e21cdac22efef0c803c28cd67b16ad2"},
+    {"path": "research/DIRECTIONAL_FIELD_THEORY.md", "sha256": "32ec2991f12380e930b5f46cead9ef4154fe3ee46a2b6b47af01b767a88a5887"},
+    {"path": "research/CLIPPED_PACKET_THEORY.md", "sha256": "88dd9ca9660171ff41621ea380b7b5e46c28f39ce2b40d29d8b755a99fdb4bbd"},
+    {"path": "research/PERSPECTIVE_REPARAM_RESULT.md", "sha256": "a53b6e80499d82a88e8baa51883efbde6fc07008115db150808640241f75214c"},
+    {"path": "research/THIN_QUANTILE_LIMIT.md", "sha256": "0f0383003b15c5cf4101d8632aa6231b93844c92280322f4923c372f7793dddc"}
+  ],
+  "claim_classification": {
+    "standard_or_existing": ["Schur/LDL SPD block recovery", "Gram determinant nonnegative decomposition", "General exact-perspective Gaussian evaluation", "Continuous transmittance median and implicit derivative", "Basic collinearity argument and matrix variational tools"],
+    "candidate_novelty_unverified": ["Two distinct thin-limit margins and finite-thickness-regular critical counterexample in this GGGS model", "Model-specific single-normal quantitative bound and sparse certificate", "Existing-packet exact-ray implementation if demonstrable quality/cost advantages against strong direct-factor baseline"],
+    "not_proven": ["Publication-level novelty", "Significant real quality gain", "End-to-end efficiency gain", "General FP32/CUDA stability", "Equivalence to full Triangle Splatting or 2DGS"]
+  },
+  "one_priority_experiment": {
+    "name": "frozen_full_pipeline_exact_packet_vs_affine_and_direct_factor",
+    "execution_status": "proposal_only_not_started_not_preregistered",
+    "primary_question": "Does exact packet deliver complete GT geometry or end-to-end cost improvement against a strong existing direct-factor exact baseline?",
+    "prerequisite": "Actual production FP32/CUDA forward and VJP development gates, retaining all prior failures.",
+    "arms": ["A original affine", "B exact packet", "C optimized direct-factor Eq11 exact evaluation"],
+    "selection_controls": ["Matched original ID list for factor isolation", "Matched conservative exact-support list for B/C full quality and cost", "Explicitly report support-list and prefix differences"],
+    "data": "Existing frozen scan37/55/63 are development only; independent unused scenes required for confirmation.",
+    "metrics": ["GT overall and s2d after identical depth fusion", "Coverage and invalid rays", "Depth/normal cross-view consistency", "Full forward and loss backward time", "Peak memory"],
+    "existing_geometry_gate": "At least 1% overall improvement and no s2d increase",
+    "proposed_new_gates_not_yet_registered": ["No individual scene overall regression above1%", "No coverage decrease above0.1 percentage points", "Accuracy route at most10% full-loss time overhead", "Efficiency route at least10% end-to-end gain versus C at matched output tolerance and coverage"],
+    "stop_conditions": ["Actual numerical/VJP gate failure", "B fails reliable C parity", "Neither original geometry gate nor separately registered efficiency gate passes"],
+    "on_failure": "Preserve negative results and stop automatic training expansion; consider strengthening thin-limit theory with broader primary-source and real-mechanism validation."
+  },
+  "incomplete": ["Triangle original paper and official code", "Independent broader zonotope and singular-perturbation literature audit", "HTGS/3DGUT official CUDA cost baseline", "Actual production FP32 validation", "Complete GT quality/cost experiment", "Untouched-scene confirmation"],
+  "experiments_started": false,
+  "existing_sources_modified": false
+}

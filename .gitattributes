@@ -1,0 +1,3 @@
+# Preserve recorded hashes of code and curated evidence across clones.
+# Do not normalize the existing mixed line endings during this initial import.
+* -text

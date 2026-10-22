@@ -1,0 +1,27 @@
+{
+  "checked_date": "2026-10-13",
+  "scope": "Targeted primary-source scope and overlap check; not a systematic novelty review.",
+  "sources": [
+    {"url": "https://arxiv.org/html/2601.17835v2", "evidence": "World Gaussian vacancy, absolute directional attenuation, and explicitly conditional near-side transmittance-vacancy equivalence."},
+    {"url": "https://arxiv.org/html/2604.07337v1", "evidence": "Already discusses non-oriented multi-view inconsistency and introduces oriented wrapping; the general issue is prior work."},
+    {"url": "https://arxiv.org/html/2312.15406v2", "evidence": "General distributions of normals, including mixtures; the single-normal limitation does not refute the general stochastic geometry framework."},
+    {"url": "https://arxiv.org/html/2307.15285v2", "evidence": "Eq1.1 defines centered zonotopes; Eq1.7/1.8 give absolute-projection support functions and their uniform approximation. The general representation and approximation problem are established."},
+    {"url": "https://arxiv.org/html/2407.13125v1", "evidence": "Hausdorff optimization of zonotopes approximating polytopes; related general convex-geometry optimization precedes this audit."},
+    {"url": "https://raw.githubusercontent.com/mpmath/mpmath/1.3.0/docs/contexts.rst", "evidence": "iv directed enclosures and exact binary floats; warns interval support is experimental and some functions incomplete."},
+    {"url": "https://raw.githubusercontent.com/mpmath/mpmath/1.3.0/mpmath/ctx_iv.py", "evidence": "Version-specific interval endpoint, float conversion and arithmetic implementation inspected; not a complete implementation audit."}
+  ],
+  "queries": [
+    "Gaussian vacancy collinear attenuation",
+    "zonotope rank one approximation support function",
+    "Gaussian splatting directional integrability",
+    "zonotope Hausdorff approximation segment support function",
+    "zonoid rank one approximation width line segment",
+    "Gaussian splatting directional attenuation vacancy anisotropy consistency"
+  ],
+  "limits": [
+    "Searches restricted to primary sources; no matching hit on narrow queries is not evidence of novelty.",
+    "The exact spectral lower bound and its Gaussian application were not exhaustively screened.",
+    "No claim that noncollinearity rules out every scalar stochastic object or general normal distribution.",
+    "No causal link from the measured obstruction to reconstruction or image errors is established."
+  ]
+}

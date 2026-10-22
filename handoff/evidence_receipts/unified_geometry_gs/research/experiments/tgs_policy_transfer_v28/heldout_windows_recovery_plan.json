@@ -1,0 +1,27 @@
+{
+  "inputs": {
+    "recover_tgs_policy_heldout_windows_v28.py": "b3b35564891fcff044cbf93ae623c6c65cea68dfaf05b73b667dc0772bc5a92a",
+    "experiments/tgs_policy_transfer_v28/input_plan.json": "f0b5c7695acd2d6603e9eed10f65dad2976647ea402c9d38ded7ed9aaa37ae72",
+    "experiments/tgs_policy_transfer_v28/choices.json": "c596200ae0385310b7bc66890ae09a2895e635f209dc19780e3451bea7aad696",
+    "experiments/tgs_policy_transfer_v28/heldout_fetch_recovery_failure.txt": "38c5dacd8b3a188e85dce24adfa2157c44ac208743ba2eb35fdb03b1752bbc5c",
+    "experiments/tgs_policy_transfer_v28/heldout_fetch_recovery_plan.json": "a51d6d4dd6e5dd4dc88fa708d28fd6cbc22f2a81826b7d822a2ecf9280d455f0",
+    "sources/tgs_policy_transfer_v28/flowers/heldout_0/original.JPG": "e7e5b02893af03da81b297be26505702fabb8ec7ceabc89c9ceb3adf95b11ad6",
+    "sources/tgs_policy_transfer_v28/flowers/heldout_0/original.JPG.receipt.json": "dad9dfae9f2b27a9eb2e3f063d27062bb38d26cf67e3b424b0cbd9f16d463860",
+    "sources/tgs_policy_transfer_v28/flowers/heldout_1/original.JPG": "dea29edfc872bc89ce7e3219839e18ee3b819aee3a95801f7208a1b5c3993b17",
+    "sources/tgs_policy_transfer_v28/flowers/heldout_1/original.JPG.receipt.json": "8235f7d8441c4d533b6ed1590023f4ecafa1a673537cf41af3cd12a2fd7b1636",
+    "sources/tgs_policy_transfer_v28/room/heldout_0/original.JPG": "c8155dc4802ed97e8cb0196f7a1dd68d08233ec17120f8070815fad446d88825",
+    "sources/tgs_policy_transfer_v28/room/heldout_0/original.JPG.receipt.json": "11c86ba09a177ccf419b56f3691dc8a6e9d8c2608a79822930d840fdddf5189a",
+    "sources/tgs_policy_transfer_v28/room/heldout_1/original.JPG": "7fea30e8ecdb2dcc3c9fb8cc152d29233cffd99f19f77ba3db56a34ed6f434a0",
+    "sources/tgs_policy_transfer_v28/room/heldout_1/original.JPG.receipt.json": "75729ff9976b1e907c52de1d83dbac39a7b1aa3c9dbca319bcf5089432bf7c51"
+  },
+  "same_member_selection": true,
+  "attempts_per_member": 1,
+  "timeout_seconds": 30,
+  "maximum_total_range_bytes": 100663296,
+  "whole_archive": false,
+  "TLS_verification_enabled": true,
+  "original_WSL_attempts_failed": true,
+  "windows_native_TLS": true,
+  "quality_outcomes_unseen": true,
+  "training": false
+}

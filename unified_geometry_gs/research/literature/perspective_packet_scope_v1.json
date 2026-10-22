@@ -1,0 +1,23 @@
+{
+  "checked_date": "2026-10-13",
+  "scope": "Targeted primary-source overlap check, not a complete novelty review.",
+  "sources": [
+    {"url": "https://arxiv.org/html/2410.08129v2", "evidence": "HTGS section3.2/3.3 evaluates perspective-correct Gaussian response and maximum-contribution depth using an inversion-free Plucker formulation. General exact-perspective splat evaluation is established."},
+    {"url": "https://arxiv.org/html/2412.12507v2", "evidence": "3DGUT Eq11 gives exact maximum response distance and factor-space expression. It treats projected conics as an acceleration structure and evaluates response in 3D."},
+    {"url": "https://arxiv.org/abs/2403.17888", "evidence": "2DGS uses perspective-correct ray-splat intersection for planar primitives; distinct representation and not an unexamined new baseline."},
+    {"url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/03cd3cf3f74d4f9ce5958de269960884-Paper-Conference.pdf", "evidence": "DU-Shapley Eq4 describes the standard permutation-average marginal contribution used for the three-factor diagnostic; it is not a new allocation method."}
+  ],
+  "queries": [
+    "Gaussian splatting exact perspective ray peak covariance affine correction",
+    "perspective accurate Gaussian splatting ray space maximum Gaussian ray tracing",
+    "Gaussian splatting perspective correction ray peak opacity rational",
+    "3DGUT Gaussian unscented transform perspective exact ray",
+    "Gaussian splatting perspective-correct 3D",
+    "Hybrid Transparency Gaussian"
+  ],
+  "limits": [
+    "Searches did not establish uniqueness or novelty of the specific affine-packet expression.",
+    "No claim that absence of a matching narrow search result proves novelty.",
+    "Alternative exact formulations and their timing/backward costs must be compared before method claims."
+  ]
+}

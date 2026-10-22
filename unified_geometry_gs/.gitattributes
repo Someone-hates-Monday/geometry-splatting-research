@@ -1,0 +1,3 @@
+# Preserve the bytes referenced by historical source hashes on initial import.
+# Existing shell scripts use LF; new scripts should also use LF before commit.
+*.sh -text

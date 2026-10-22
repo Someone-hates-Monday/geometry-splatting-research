@@ -1,0 +1,1454 @@
+{
+  "all_passed": true,
+  "rows": [
+    {
+      "scene": "flowers",
+      "view": "calibration_0",
+      "joint": 0,
+      "parents": [
+        2152,
+        19779,
+        70211,
+        124366,
+        126605,
+        128638,
+        252774,
+        337296
+      ],
+      "policies": [
+        "signed_MSE"
+      ],
+      "CPU_score": [
+        -1.1452702762618425e-06,
+        -2.9432514743016193e-06,
+        2.7382538389482698e-05
+      ],
+      "CPU_mixed": -7.831108857337835e-06,
+      "cached_GPU_score": [
+        -1.1452702762618427e-06,
+        -2.9432514743016193e-06,
+        2.7382538389481858e-05
+      ],
+      "max_error": 8.402566836762659e-19,
+      "raw_PSNR_change_dB": 0.0005000208040018901,
+      "RGB_changed_pixels": 4301,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_0",
+      "joint": 1,
+      "parents": [
+        2152,
+        124366,
+        126605,
+        128638,
+        252774,
+        272669,
+        337296,
+        512218
+      ],
+      "policies": [
+        "signed_mixed"
+      ],
+      "CPU_score": [
+        -1.0896450659310815e-06,
+        -3.118178750392102e-06,
+        3.1475429283454114e-05
+      ],
+      "CPU_mixed": -8.789628857004505e-06,
+      "cached_GPU_score": [
+        -1.0896450659310815e-06,
+        -3.1181787503921024e-06,
+        3.1475429283453084e-05
+      ],
+      "max_error": 1.0299920638612292e-18,
+      "raw_PSNR_change_dB": 0.0004757337108934643,
+      "RGB_changed_pixels": 4887,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_0",
+      "joint": 2,
+      "parents": [
+        3328,
+        113521,
+        196023,
+        362030,
+        396134,
+        574901,
+        756888,
+        901452
+      ],
+      "policies": [
+        "hash"
+      ],
+      "CPU_score": [
+        1.863945356623845e-08,
+        3.3031304918997426e-08,
+        -6.662379724844213e-07
+      ],
+      "CPU_mixed": 1.596726384320822e-07,
+      "cached_GPU_score": [
+        1.8639453566238443e-08,
+        3.3031304918997426e-08,
+        -6.662379724853793e-07
+      ],
+      "max_error": 9.579942633446137e-19,
+      "raw_PSNR_change_dB": -8.137441012211572e-06,
+      "RGB_changed_pixels": 1138,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_0",
+      "joint": 3,
+      "parents": [
+        4180,
+        7019,
+        14982,
+        18783,
+        101807,
+        117261,
+        154550,
+        548152
+      ],
+      "policies": [
+        "largest_min_area"
+      ],
+      "CPU_score": [
+        8.535563852702013e-08,
+        5.835881848495413e-07,
+        -1.958504275892806e-06
+      ],
+      "CPU_mixed": 8.585714030581943e-07,
+      "cached_GPU_score": [
+        8.53556385270201e-08,
+        5.835881848495414e-07,
+        -1.9585042758923754e-06
+      ],
+      "max_error": 4.307162536788117e-19,
+      "raw_PSNR_change_dB": -3.726365378844012e-05,
+      "RGB_changed_pixels": 9456,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_0",
+      "joint": 4,
+      "parents": [
+        358326,
+        365788,
+        377809,
+        540588,
+        588632,
+        650356,
+        668089,
+        694221
+      ],
+      "policies": [
+        "perturbation"
+      ],
+      "CPU_score": [
+        -2.4543956344639263e-11,
+        -3.025100442562739e-11,
+        6.835773420851511e-10
+      ],
+      "CPU_mixed": -1.6091627195753215e-10,
+      "cached_GPU_score": [
+        -2.4543956344639263e-11,
+        -3.025100442562739e-11,
+        6.835773419973265e-10
+      ],
+      "max_error": 8.782455736932231e-20,
+      "raw_PSNR_change_dB": 1.0715184928292095e-08,
+      "RGB_changed_pixels": 170,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_1",
+      "joint": 0,
+      "parents": [
+        2152,
+        19779,
+        70211,
+        124366,
+        126605,
+        128638,
+        252774,
+        337296
+      ],
+      "policies": [
+        "signed_MSE"
+      ],
+      "CPU_score": [
+        -4.954341894997956e-07,
+        -1.421509663346357e-06,
+        2.733438848807282e-06
+      ],
+      "CPU_mixed": -1.6838955004385419e-06,
+      "cached_GPU_score": [
+        -4.954341894997956e-07,
+        -1.421509663346357e-06,
+        2.7334388488039637e-06
+      ],
+      "max_error": 3.3182515708687216e-18,
+      "raw_PSNR_change_dB": 0.00016869241929016717,
+      "RGB_changed_pixels": 27079,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_1",
+      "joint": 1,
+      "parents": [
+        2152,
+        124366,
+        126605,
+        128638,
+        252774,
+        272669,
+        337296,
+        512218
+      ],
+      "policies": [
+        "signed_mixed"
+      ],
+      "CPU_score": [
+        -4.954341894997956e-07,
+        -1.421509663346357e-06,
+        2.733438848807282e-06
+      ],
+      "CPU_mixed": -1.6838955004385419e-06,
+      "cached_GPU_score": [
+        -4.954341894997956e-07,
+        -1.421509663346357e-06,
+        2.7334388488039637e-06
+      ],
+      "max_error": 3.3182515708687216e-18,
+      "raw_PSNR_change_dB": 0.00016869241929016717,
+      "RGB_changed_pixels": 27079,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_1",
+      "joint": 2,
+      "parents": [
+        3328,
+        113521,
+        196023,
+        362030,
+        396134,
+        574901,
+        756888,
+        901452
+      ],
+      "policies": [
+        "hash"
+      ],
+      "CPU_score": [
+        1.7128278668586282e-08,
+        -4.476150282996146e-09,
+        -3.9578162459119864e-07
+      ],
+      "CPU_mixed": 7.557540469184282e-08,
+      "cached_GPU_score": [
+        1.712827866858629e-08,
+        -4.476150282996142e-09,
+        -3.957816245911917e-07
+      ],
+      "max_error": 6.935082255644584e-21,
+      "raw_PSNR_change_dB": -5.831960676925681e-06,
+      "RGB_changed_pixels": 2591,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_1",
+      "joint": 3,
+      "parents": [
+        4180,
+        7019,
+        14982,
+        18783,
+        101807,
+        117261,
+        154550,
+        548152
+      ],
+      "policies": [
+        "largest_min_area"
+      ],
+      "CPU_score": [
+        6.906593079263826e-07,
+        2.740708571468822e-06,
+        -2.2679375223471232e-05
+      ],
+      "CPU_mixed": 6.728441901869304e-06,
+      "cached_GPU_score": [
+        6.906593079263826e-07,
+        2.7407085714688227e-06,
+        -2.267937522347079e-05
+      ],
+      "max_error": 4.404571325722362e-19,
+      "raw_PSNR_change_dB": -0.0002351544869313737,
+      "RGB_changed_pixels": 2814,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_1",
+      "joint": 4,
+      "parents": [
+        358326,
+        365788,
+        377809,
+        540588,
+        588632,
+        650356,
+        668089,
+        694221
+      ],
+      "policies": [
+        "perturbation"
+      ],
+      "CPU_score": [
+        1.1407191516713478e-11,
+        7.999590655217417e-11,
+        -2.0086778904817252e-09
+      ],
+      "CPU_mixed": 4.657323033380844e-10,
+      "cached_GPU_score": [
+        1.1407191516713478e-11,
+        7.999590655217417e-11,
+        -2.008677890615707e-09
+      ],
+      "max_error": 1.339817525376641e-19,
+      "raw_PSNR_change_dB": -3.884006306060426e-09,
+      "RGB_changed_pixels": 82,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "joint": 0,
+      "parents": [
+        2152,
+        19779,
+        70211,
+        124366,
+        126605,
+        128638,
+        252774,
+        337296
+      ],
+      "policies": [
+        "signed_MSE"
+      ],
+      "CPU_score": [
+        -2.9453978480957553e-09,
+        2.08495940463228e-08,
+        -7.494890170711332e-07
+      ],
+      "CPU_mixed": 1.665774786512849e-07,
+      "cached_GPU_score": [
+        -2.945397848095748e-09,
+        2.08495940463228e-08,
+        -7.494890170710803e-07
+      ],
+      "max_error": 5.293955920339377e-20,
+      "raw_PSNR_change_dB": 1.0694500641035767e-06,
+      "RGB_changed_pixels": 141,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "joint": 1,
+      "parents": [
+        2152,
+        124366,
+        126605,
+        128638,
+        252774,
+        272669,
+        337296,
+        512218
+      ],
+      "policies": [
+        "signed_mixed"
+      ],
+      "CPU_score": [
+        1.5043954725689026e-08,
+        8.00250934000206e-08,
+        -1.0586650811147029e-06
+      ],
+      "CPU_mixed": 2.7575309094295705e-07,
+      "cached_GPU_score": [
+        1.5043954725689023e-08,
+        8.00250934000206e-08,
+        -1.0586650811140384e-06
+      ],
+      "max_error": 6.644973471209986e-19,
+      "raw_PSNR_change_dB": -5.462333809917468e-06,
+      "RGB_changed_pixels": 144,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "joint": 2,
+      "parents": [
+        3328,
+        113521,
+        196023,
+        362030,
+        396134,
+        574901,
+        756888,
+        901452
+      ],
+      "policies": [
+        "hash"
+      ],
+      "CPU_score": [
+        2.870847093505749e-08,
+        -9.862733286247207e-08,
+        8.149628616976008e-07
+      ],
+      "CPU_mixed": -2.418944386294978e-07,
+      "cached_GPU_score": [
+        2.8708470935057477e-08,
+        -9.862733286247208e-08,
+        8.149628616977209e-07
+      ],
+      "max_error": 1.2017279939170386e-19,
+      "raw_PSNR_change_dB": -1.0423799107495922e-05,
+      "RGB_changed_pixels": 1123,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "joint": 3,
+      "parents": [
+        4180,
+        7019,
+        14982,
+        18783,
+        101807,
+        117261,
+        154550,
+        548152
+      ],
+      "policies": [
+        "largest_min_area"
+      ],
+      "CPU_score": [
+        -6.395671354137781e-08,
+        1.9983671442403813e-07,
+        -3.252381740961932e-06
+      ],
+      "CPU_mixed": 8.103457197316169e-07,
+      "cached_GPU_score": [
+        -6.39567135413778e-08,
+        1.9983671442403805e-07,
+        -3.2523817409619607e-06
+      ],
+      "max_error": 2.879912020664621e-20,
+      "raw_PSNR_change_dB": 2.3222223067307412e-05,
+      "RGB_changed_pixels": 5687,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "joint": 4,
+      "parents": [
+        358326,
+        365788,
+        377809,
+        540588,
+        588632,
+        650356,
+        668089,
+        694221
+      ],
+      "policies": [
+        "perturbation"
+      ],
+      "CPU_score": [
+        6.5647717635357424e-09,
+        1.8357846659841255e-08,
+        9.782150132064241e-08
+      ],
+      "CPU_mixed": -4.878022936255478e-09,
+      "cached_GPU_score": [
+        6.56477176353574e-09,
+        1.8357846659841255e-08,
+        9.782150132068035e-08
+      ],
+      "max_error": 3.7944429059032486e-20,
+      "raw_PSNR_change_dB": -2.383614423149343e-06,
+      "RGB_changed_pixels": 613,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "joint": 0,
+      "parents": [
+        2152,
+        19779,
+        70211,
+        124366,
+        126605,
+        128638,
+        252774,
+        337296
+      ],
+      "policies": [
+        "signed_MSE"
+      ],
+      "CPU_score": [
+        9.252494172926867e-07,
+        4.2605627408356084e-06,
+        -1.9538445592023574e-05
+      ],
+      "CPU_mixed": 7.316139311073202e-06,
+      "cached_GPU_score": [
+        9.252494172926867e-07,
+        4.2605627408356084e-06,
+        -1.9538445592024187e-05
+      ],
+      "max_error": 6.132518538121134e-19,
+      "raw_PSNR_change_dB": -0.0003528041131610071,
+      "RGB_changed_pixels": 4010,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "joint": 1,
+      "parents": [
+        2152,
+        124366,
+        126605,
+        128638,
+        252774,
+        272669,
+        337296,
+        512218
+      ],
+      "policies": [
+        "signed_mixed"
+      ],
+      "CPU_score": [
+        7.489144083285597e-07,
+        3.5442784806137914e-06,
+        -1.4306507839639639e-05
+      ],
+      "CPU_mixed": 5.6967243524189606e-06,
+      "cached_GPU_score": [
+        7.489144083285597e-07,
+        3.544278480613791e-06,
+        -1.4306507839640515e-05
+      ],
+      "max_error": 8.758320674609466e-19,
+      "raw_PSNR_change_dB": -0.0002855685440355021,
+      "RGB_changed_pixels": 4417,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "joint": 2,
+      "parents": [
+        3328,
+        113521,
+        196023,
+        362030,
+        396134,
+        574901,
+        756888,
+        901452
+      ],
+      "policies": [
+        "hash"
+      ],
+      "CPU_score": [
+        8.526522062450543e-08,
+        1.0002152958442646e-07,
+        -8.023070567629344e-07
+      ],
+      "CPU_mixed": 2.4047863502012806e-07,
+      "cached_GPU_score": [
+        8.526522062450541e-08,
+        1.0002152958442646e-07,
+        -8.023070567627339e-07
+      ],
+      "max_error": 2.005350502624556e-19,
+      "raw_PSNR_change_dB": -3.2513427491074114e-05,
+      "RGB_changed_pixels": 999,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "joint": 3,
+      "parents": [
+        4180,
+        7019,
+        14982,
+        18783,
+        101807,
+        117261,
+        154550,
+        548152
+      ],
+      "policies": [
+        "largest_min_area"
+      ],
+      "CPU_score": [
+        -2.537511609521239e-07,
+        -9.814643932249416e-07,
+        1.5714811591096284e-06
+      ],
+      "CPU_mixed": -1.099467746401879e-06,
+      "cached_GPU_score": [
+        -2.5375116095212393e-07,
+        -9.814643932249418e-07,
+        1.5714811591081156e-06
+      ],
+      "max_error": 1.5128008437961804e-18,
+      "raw_PSNR_change_dB": 9.676211127391535e-05,
+      "RGB_changed_pixels": 7753,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "joint": 4,
+      "parents": [
+        358326,
+        365788,
+        377809,
+        540588,
+        588632,
+        650356,
+        668089,
+        694221
+      ],
+      "policies": [
+        "perturbation"
+      ],
+      "CPU_score": [
+        -7.906419194776534e-09,
+        -3.528859227478586e-08,
+        6.17106876888944e-07
+      ],
+      "CPU_mixed": -1.516522491976175e-07,
+      "cached_GPU_score": [
+        -7.906419194776531e-09,
+        -3.528859227478586e-08,
+        6.171068768886581e-07
+      ],
+      "max_error": 2.8587361969832636e-19,
+      "raw_PSNR_change_dB": 3.0148967751103946e-06,
+      "RGB_changed_pixels": 1817,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "room",
+      "view": "calibration_0",
+      "joint": 0,
+      "parents": [
+        10413,
+        24228,
+        62148,
+        303093,
+        330258,
+        978163,
+        1691129,
+        2033381
+      ],
+      "policies": [
+        "signed_MSE"
+      ],
+      "CPU_score": [
+        -6.160727304699036e-08,
+        -1.4830995062200686e-06,
+        1.740253023929821e-08
+      ],
+      "CPU_mixed": -1.1899601110239146e-06,
+      "cached_GPU_score": [
+        -6.160727304699035e-08,
+        -1.4830995062200686e-06,
+        1.740253023637719e-08
+      ],
+      "max_error": 2.9210195883860564e-18,
+      "raw_PSNR_change_dB": 0.0002892598866508313,
+      "RGB_changed_pixels": 12351,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "room",
+      "view": "calibration_0",
+      "joint": 1,
+      "parents": [
+        10413,
+        24228,
+        121237,
+        313661,
+        360852,
+        1672580,
+        1687306,
+        2033381
+      ],
+      "policies": [
+        "signed_mixed"
+      ],
+      "CPU_score": [
+        -6.809068260364356e-08,
+        -1.8467675410799294e-06,
+        4.268900472369094e-06
+      ],
+      "CPU_mixed": -2.3311941273377622e-06,
+      "cached_GPU_score": [
+        -6.809068260364356e-08,
+        -1.8467675410799296e-06,
+        4.2689004723667965e-06
+      ],
+      "max_error": 2.2971533529536625e-18,
+      "raw_PSNR_change_dB": 0.0003197020609257769,
+      "RGB_changed_pixels": 21970,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "room",
+      "view": "calibration_0",
+      "joint": 2,
+      "parents": [
+        10413,
+        62148,
+        121237,
+        139730,
+        238956,
+        241633,
+        295639,
+        1489058
+      ],
+      "policies": [
+        "largest_min_area"
+      ],
+      "CPU_score": [
+        -5.163114197576195e-08,
+        -1.353707153663975e-06,
+        1.956559028657656e-06
+      ],
+      "CPU_mixed": -1.4742775286627112e-06,
+      "cached_GPU_score": [
+        -5.163114197576195e-08,
+        -1.353707153663975e-06,
+        1.95655902865468e-06
+      ],
+      "max_error": 2.9760502601779842e-18,
+      "raw_PSNR_change_dB": 0.0002424184190780689,
+      "RGB_changed_pixels": 31371,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "room",
+      "view": "calibration_0",
+      "joint": 3,
+      "parents": [
+        112190,
+        345281,
+        378531,
+        572318,
+        627740,
+        942423,
+        1151202,
+        1805617
+      ],
+      "policies": [
+        "hash"
+      ],
+      "CPU_score": [
+        8.962624214957389e-10,
+        4.100231409690289e-08,
+        7.307465902273953e-08
+      ],
+      "CPU_mixed": 1.8186919472974403e-08,
+      "cached_GPU_score": [
+        8.962624214957389e-10,
+        4.100231409690289e-08,
+        7.307465902268156e-08
+      ],
+      "max_error": 5.796881732771618e-20,
+      "raw_PSNR_change_dB": -4.2080097771273815e-06,
+      "RGB_changed_pixels": 3236,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "room",
+      "view": "calibration_0",
+      "joint": 4,
+      "parents": [
+        631595,
+        673473,
+        1049130,
+        1420043,
+        1578773,
+        1656901,
+        1678961,
+        1761745
+      ],
+      "policies": [
+        "perturbation"
+      ],
+      "CPU_score": [
+        -5.136742217308966e-12,
+        -2.2607017250502406e-10,
+        2.230933795424502e-09
+      ],
+      "CPU_mixed": -6.270428970889196e-10,
+      "cached_GPU_score": [
+        -5.136742217308966e-12,
+        -2.2607017250502406e-10,
+        2.2309337954438282e-09
+      ],
+      "max_error": 1.932624783168894e-20,
+      "raw_PSNR_change_dB": 2.4117347359565223e-08,
+      "RGB_changed_pixels": 645,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "room",
+      "view": "calibration_1",
+      "joint": 0,
+      "parents": [
+        10413,
+        24228,
+        62148,
+        303093,
+        330258,
+        978163,
+        1691129,
+        2033381
+      ],
+      "policies": [
+        "signed_MSE"
+      ],
+      "CPU_score": [
+        -1.0321204113338078e-07,
+        -4.875845547000415e-07,
+        2.6071392153647485e-06
+      ],
+      "CPU_mixed": -9.11495486832983e-07,
+      "cached_GPU_score": [
+        -1.0321204113338078e-07,
+        -4.875845547000414e-07,
+        2.607139215368147e-06
+      ],
+      "max_error": 3.398296184384253e-18,
+      "raw_PSNR_change_dB": 0.0003163390426485487,
+      "RGB_changed_pixels": 5480,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "room",
+      "view": "calibration_1",
+      "joint": 1,
+      "parents": [
+        10413,
+        24228,
+        121237,
+        313661,
+        360852,
+        1672580,
+        1687306,
+        2033381
+      ],
+      "policies": [
+        "signed_mixed"
+      ],
+      "CPU_score": [
+        -4.5643355358513006e-08,
+        -3.927087707217498e-08,
+        1.6657211916299887e-06
+      ],
+      "CPU_mixed": -3.6456093998373776e-07,
+      "cached_GPU_score": [
+        -4.564335535851299e-08,
+        -3.9270877072174975e-08,
+        1.665721191626132e-06
+      ],
+      "max_error": 3.856752767085643e-18,
+      "raw_PSNR_change_dB": 0.00013989144939901345,
+      "RGB_changed_pixels": 8674,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "room",
+      "view": "calibration_1",
+      "joint": 2,
+      "parents": [
+        10413,
+        62148,
+        121237,
+        139730,
+        238956,
+        241633,
+        295639,
+        1489058
+      ],
+      "policies": [
+        "largest_min_area"
+      ],
+      "CPU_score": [
+        -3.725268140272716e-08,
+        1.6763653924127583e-07,
+        -1.2656885559163223e-06
+      ],
+      "CPU_mixed": 3.872469425762851e-07,
+      "cached_GPU_score": [
+        -3.725268140272715e-08,
+        1.6763653924127593e-07,
+        -1.265688555912344e-06
+      ],
+      "max_error": 3.978301995016635e-18,
+      "raw_PSNR_change_dB": 0.00011417469476435908,
+      "RGB_changed_pixels": 14605,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "room",
+      "view": "calibration_1",
+      "joint": 3,
+      "parents": [
+        112190,
+        345281,
+        378531,
+        572318,
+        627740,
+        942423,
+        1151202,
+        1805617
+      ],
+      "policies": [
+        "hash"
+      ],
+      "CPU_score": [
+        3.74387136616585e-09,
+        8.062939737009162e-08,
+        -5.02610570868095e-07
+      ],
+      "CPU_mixed": 1.650256320696923e-07,
+      "cached_GPU_score": [
+        3.743871366165852e-09,
+        8.062939737009162e-08,
+        -5.026105708681022e-07
+      ],
+      "max_error": 7.199780051661553e-21,
+      "raw_PSNR_change_dB": -1.1474319992860108e-05,
+      "RGB_changed_pixels": 1780,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "room",
+      "view": "calibration_1",
+      "joint": 4,
+      "parents": [
+        631595,
+        673473,
+        1049130,
+        1420043,
+        1578773,
+        1656901,
+        1678961,
+        1761745
+      ],
+      "policies": [
+        "perturbation"
+      ],
+      "CPU_score": [
+        1.856764976898732e-11,
+        5.145835998775005e-11,
+        -5.054568364043923e-09
+      ],
+      "CPU_mixed": 1.0520803607989846e-09,
+      "cached_GPU_score": [
+        1.8567649768987322e-11,
+        5.145835998775005e-11,
+        -5.054568364086131e-09
+      ],
+      "max_error": 4.220771793613079e-20,
+      "raw_PSNR_change_dB": -5.690671850446694e-08,
+      "RGB_changed_pixels": 1039,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": true
+    },
+    {
+      "scene": "room",
+      "view": "heldout_0",
+      "joint": 0,
+      "parents": [
+        10413,
+        24228,
+        62148,
+        303093,
+        330258,
+        978163,
+        1691129,
+        2033381
+      ],
+      "policies": [
+        "signed_MSE"
+      ],
+      "CPU_score": [
+        -7.85611352086181e-10,
+        -1.2368929124379943e-08,
+        1.7898877350112117e-07
+      ],
+      "CPU_mixed": -4.569289799972819e-08,
+      "cached_GPU_score": [
+        -7.856113520861812e-10,
+        -1.2368929124379943e-08,
+        1.7898877350290957e-07
+      ],
+      "max_error": 1.7884041890090484e-18,
+      "raw_PSNR_change_dB": 2.7298343801753166e-06,
+      "RGB_changed_pixels": 542,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "room",
+      "view": "heldout_0",
+      "joint": 1,
+      "parents": [
+        10413,
+        24228,
+        121237,
+        313661,
+        360852,
+        1672580,
+        1687306,
+        2033381
+      ],
+      "policies": [
+        "signed_mixed"
+      ],
+      "CPU_score": [
+        1.976729254526941e-09,
+        2.057348773172677e-08,
+        -3.4695775916004767e-07
+      ],
+      "CPU_mixed": 8.585034201739095e-08,
+      "cached_GPU_score": [
+        1.976729254526941e-09,
+        2.057348773172677e-08,
+        -3.469577591614129e-07
+      ],
+      "max_error": 1.3652053527371186e-18,
+      "raw_PSNR_change_dB": -6.868711229737474e-06,
+      "RGB_changed_pixels": 378,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "room",
+      "view": "heldout_0",
+      "joint": 2,
+      "parents": [
+        10413,
+        62148,
+        121237,
+        139730,
+        238956,
+        241633,
+        295639,
+        1489058
+      ],
+      "policies": [
+        "largest_min_area"
+      ],
+      "CPU_score": [
+        -2.2112602342113907e-08,
+        1.1026152167771202e-08,
+        -6.040128579858077e-07
+      ],
+      "CPU_mixed": 1.296234933313785e-07,
+      "cached_GPU_score": [
+        -2.2112602342113907e-08,
+        1.1026152167771202e-08,
+        -6.040128579837889e-07
+      ],
+      "max_error": 2.018797150662218e-18,
+      "raw_PSNR_change_dB": 7.683730253542925e-05,
+      "RGB_changed_pixels": 2602,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "room",
+      "view": "heldout_0",
+      "joint": 3,
+      "parents": [
+        112190,
+        345281,
+        378531,
+        572318,
+        627740,
+        942423,
+        1151202,
+        1805617
+      ],
+      "policies": [
+        "hash"
+      ],
+      "CPU_score": [
+        4.2597941244060335e-10,
+        5.803061158807066e-10,
+        1.7126097031950412e-08
+      ],
+      "CPU_mixed": -2.9609745136855173e-09,
+      "cached_GPU_score": [
+        4.2597941244060335e-10,
+        5.803061158807066e-10,
+        1.7126097031763393e-08
+      ],
+      "max_error": 1.8701891905333913e-19,
+      "raw_PSNR_change_dB": -1.4801882358919075e-06,
+      "RGB_changed_pixels": 331,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "room",
+      "view": "heldout_0",
+      "joint": 4,
+      "parents": [
+        631595,
+        673473,
+        1049130,
+        1420043,
+        1578773,
+        1656901,
+        1678961,
+        1761745
+      ],
+      "policies": [
+        "perturbation"
+      ],
+      "CPU_score": [
+        -1.1726999343098119e-11,
+        -6.345129772699126e-10,
+        8.956668714821011e-09
+      ],
+      "CPU_mixed": -2.2989441247801325e-09,
+      "cached_GPU_score": [
+        -1.1726999343098119e-11,
+        -6.345129772699126e-10,
+        8.956668714817393e-09
+      ],
+      "max_error": 3.618087999306943e-21,
+      "raw_PSNR_change_dB": 4.07488463061439e-08,
+      "RGB_changed_pixels": 145,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "room",
+      "view": "heldout_1",
+      "joint": 0,
+      "parents": [
+        10413,
+        24228,
+        62148,
+        303093,
+        330258,
+        978163,
+        1691129,
+        2033381
+      ],
+      "policies": [
+        "signed_MSE"
+      ],
+      "CPU_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "CPU_mixed": 0.0,
+      "cached_GPU_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_error": 0.0,
+      "raw_PSNR_change_dB": -0.0,
+      "RGB_changed_pixels": 0,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "room",
+      "view": "heldout_1",
+      "joint": 1,
+      "parents": [
+        10413,
+        24228,
+        121237,
+        313661,
+        360852,
+        1672580,
+        1687306,
+        2033381
+      ],
+      "policies": [
+        "signed_mixed"
+      ],
+      "CPU_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "CPU_mixed": 0.0,
+      "cached_GPU_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_error": 0.0,
+      "raw_PSNR_change_dB": -0.0,
+      "RGB_changed_pixels": 0,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "room",
+      "view": "heldout_1",
+      "joint": 2,
+      "parents": [
+        10413,
+        62148,
+        121237,
+        139730,
+        238956,
+        241633,
+        295639,
+        1489058
+      ],
+      "policies": [
+        "largest_min_area"
+      ],
+      "CPU_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "CPU_mixed": 0.0,
+      "cached_GPU_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_error": 0.0,
+      "raw_PSNR_change_dB": -0.0,
+      "RGB_changed_pixels": 0,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "room",
+      "view": "heldout_1",
+      "joint": 3,
+      "parents": [
+        112190,
+        345281,
+        378531,
+        572318,
+        627740,
+        942423,
+        1151202,
+        1805617
+      ],
+      "policies": [
+        "hash"
+      ],
+      "CPU_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "CPU_mixed": 0.0,
+      "cached_GPU_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_error": 0.0,
+      "raw_PSNR_change_dB": -0.0,
+      "RGB_changed_pixels": 0,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    },
+    {
+      "scene": "room",
+      "view": "heldout_1",
+      "joint": 4,
+      "parents": [
+        631595,
+        673473,
+        1049130,
+        1420043,
+        1578773,
+        1656901,
+        1678961,
+        1761745
+      ],
+      "policies": [
+        "perturbation"
+      ],
+      "CPU_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "CPU_mixed": 0.0,
+      "cached_GPU_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_error": 0.0,
+      "raw_PSNR_change_dB": -0.0,
+      "RGB_changed_pixels": 0,
+      "full_RGB_hash_verified": true,
+      "calibration_mosaic_literal": null
+    }
+  ],
+  "baselines": [
+    {
+      "scene": "flowers",
+      "view": "calibration_0",
+      "MSE": 0.009947849985146754,
+      "L1": 0.06883832180698911,
+      "SSIM": 0.49206506510744485,
+      "raw_PSNR_dB": 20.02270772569191
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_1",
+      "MSE": 0.012755078999895763,
+      "L1": 0.06949755847197715,
+      "SSIM": 0.48629482348129427,
+      "raw_PSNR_dB": 18.94316847198248
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "MSE": 0.011961009052554377,
+      "L1": 0.0762589901697582,
+      "SSIM": 0.44701070368079376,
+      "raw_PSNR_dB": 19.222321809269538
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "MSE": 0.011389164126962004,
+      "L1": 0.0743347523750082,
+      "SSIM": 0.4379868542355517,
+      "raw_PSNR_dB": 19.435081484730365
+    },
+    {
+      "scene": "room",
+      "view": "calibration_0",
+      "MSE": 0.0009250017371831519,
+      "L1": 0.02268675660762997,
+      "SSIM": 0.9120459513952965,
+      "raw_PSNR_dB": 30.33857451641131
+    },
+    {
+      "scene": "room",
+      "view": "calibration_1",
+      "MSE": 0.001417025608810173,
+      "L1": 0.02391834246605087,
+      "SSIM": 0.9099828631276683,
+      "raw_PSNR_dB": 28.486223010126327
+    },
+    {
+      "scene": "room",
+      "view": "heldout_0",
+      "MSE": 0.0012498442572405342,
+      "L1": 0.02467276001802683,
+      "SSIM": 0.8121756539847038,
+      "raw_PSNR_dB": 29.03144100939982
+    },
+    {
+      "scene": "room",
+      "view": "heldout_1",
+      "MSE": 0.0010605008256705261,
+      "L1": 0.02200253114434468,
+      "SSIM": 0.8799471043168248,
+      "raw_PSNR_dB": 29.74488989020108
+    }
+  ],
+  "selection_checks": [
+    {
+      "scene": "flowers",
+      "all_five_greedy_selections_reproduced": true,
+      "all_budgets_eight": true,
+      "all_calibration_SSIM_supports_disjoint": true,
+      "pool_hash_sampling_reproduced": true
+    },
+    {
+      "scene": "room",
+      "all_five_greedy_selections_reproduced": true,
+      "all_budgets_eight": true,
+      "all_calibration_SSIM_supports_disjoint": true,
+      "pool_hash_sampling_reproduced": true
+    }
+  ],
+  "maximum_CPU_GPU_score_error": 3.978301995016635e-18,
+  "maximum_calibration_unary_sum_CPU_error": 3.978301995016635e-18,
+  "total_native_forwards": 52,
+  "audited_joint_references": 40,
+  "new_native_forwards": 0,
+  "training": false,
+  "accepted_mutations": 0
+}

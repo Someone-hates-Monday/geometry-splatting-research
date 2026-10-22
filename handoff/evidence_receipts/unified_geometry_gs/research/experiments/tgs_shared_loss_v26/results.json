@@ -1,0 +1,2216 @@
+{
+  "all_passed": true,
+  "rows": [
+    {
+      "event": 0,
+      "ROI": [
+        816,
+        0,
+        1256,
+        576
+      ],
+      "score": [
+        7.627127185005164e-06,
+        9.217356523534507e-05,
+        -0.0001009488975637114
+      ],
+      "expected": [
+        7.6271271850051636e-06,
+        9.217356523534507e-05,
+        -0.0001009488975637187
+      ],
+      "full_gpu_score": [
+        7.627127185005164e-06,
+        9.217356523534507e-05,
+        -0.0001009488975637114
+      ],
+      "absolute_error": [
+        8.470329472543003e-22,
+        0.0,
+        7.304812137121086e-18
+      ],
+      "full_absolute_error": [
+        8.470329472543003e-22,
+        0.0,
+        7.304812137121086e-18
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.964428619771752e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        9.392863170101834e-05,
+        2.6291481260746413e-05
+      ],
+      "reference_blends": [
+        9.39286317010198e-05,
+        2.6291481260747873e-05
+      ],
+      "blend_absolute_error": [
+        1.4501204056993622e-18,
+        1.4602848010664138e-18
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "9b843c4733d9109a234301b8435173ca09923400615e2ae1faf90eb4d58f5523",
+      "trial_hash": "93d0bd22c4350ebf45fc6e9881d1f7bc55f0d031040c37a59d7430f0deadf605",
+      "local_map_hash": "27f97fae64700391e8e23e55c5ecb53d62f3169d6b06647c636043b10507372d",
+      "full_map_hash": "cd9207178e15a4409d3e437237afa655ac51c6f390bf77cd5d4b4ac07e3ef780",
+      "scene": "flowers",
+      "view": "fresh",
+      "parent_id": 1436,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 1,
+      "ROI": [
+        816,
+        0,
+        1256,
+        576
+      ],
+      "score": [
+        7.567382574359368e-06,
+        9.176928103280468e-05,
+        -0.00010108446806637136
+      ],
+      "expected": [
+        7.567382574359368e-06,
+        9.176928103280468e-05,
+        -0.00010108446806636946
+      ],
+      "full_gpu_score": [
+        7.567382574359368e-06,
+        9.176928103280468e-05,
+        -0.00010108446806637136
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        1.8973538018496328e-18
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        1.8973538018496328e-18
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.964428619771752e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        9.363231843951803e-05,
+        2.627079967276177e-05
+      ],
+      "reference_blends": [
+        9.363231843951765e-05,
+        2.627079967276139e-05
+      ],
+      "blend_absolute_error": [
+        3.7947076036992655e-19,
+        3.7947076036992655e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "9b843c4733d9109a234301b8435173ca09923400615e2ae1faf90eb4d58f5523",
+      "trial_hash": "e5c662aff8a060354ad0cf418a2a58199a285dc99538ca7cd00525b4f680b9ca",
+      "local_map_hash": "6fcde36c4699024216deb79210046fd1c605b3330699137a733b9ddf33ab3f80",
+      "full_map_hash": "372408503ec5f7c294a1de21e72b99e7129bc62f618120fca6d471e407a494b1",
+      "scene": "flowers",
+      "view": "fresh",
+      "parent_id": 1436,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 2,
+      "ROI": [
+        32,
+        224,
+        432,
+        576
+      ],
+      "score": [
+        -7.948921764411065e-07,
+        -9.28307948102158e-06,
+        7.057463675320525e-06
+      ],
+      "expected": [
+        -7.948921764411065e-07,
+        -9.283079481021583e-06,
+        7.057463675323834e-06
+      ],
+      "full_gpu_score": [
+        -7.948921764411065e-07,
+        -9.283079481021581e-06,
+        7.057463675320525e-06
+      ],
+      "absolute_error": [
+        0.0,
+        3.3881317890172014e-21,
+        3.308510691975297e-18
+      ],
+      "full_absolute_error": [
+        0.0,
+        1.6940658945086007e-21,
+        3.308510691975297e-18
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        1.6940658945086007e-21,
+        0.0
+      ],
+      "max_CPU_map_error": 1.964428619771752e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -8.83795631988137e-06,
+        -2.0474064762169902e-06
+      ],
+      "reference_blends": [
+        -8.837956319882034e-06,
+        -2.047406476217652e-06
+      ],
+      "blend_absolute_error": [
+        6.640738306473715e-19,
+        6.619562482792357e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "9b843c4733d9109a234301b8435173ca09923400615e2ae1faf90eb4d58f5523",
+      "trial_hash": "86e78cef8b35b7b54b3af43bad29584f935e128c963bf34b9e712a0cbfe14366",
+      "local_map_hash": "04086109c682e751796d580534037b61384b63da26b02134b3d68efde02d0558",
+      "full_map_hash": "453ab66345efa5d205a314eeae7adf5f79863a8d6b77dd98d8326f41ccd93274",
+      "scene": "flowers",
+      "view": "fresh",
+      "parent_id": 1387,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 3,
+      "ROI": [
+        32,
+        224,
+        432,
+        576
+      ],
+      "score": [
+        -8.585834429454879e-07,
+        -1.0058606893353537e-05,
+        7.2361566482894055e-06
+      ],
+      "expected": [
+        -8.585834429454878e-07,
+        -1.0058606893353537e-05,
+        7.236156648296032e-06
+      ],
+      "full_gpu_score": [
+        -8.585834429454879e-07,
+        -1.0058606893353537e-05,
+        7.2361566482894055e-06
+      ],
+      "absolute_error": [
+        1.0587911840678754e-22,
+        0.0,
+        6.6263387463703916e-18
+      ],
+      "full_absolute_error": [
+        1.0587911840678754e-22,
+        0.0,
+        6.6263387463703916e-18
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.964428619771752e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -9.49411684434071e-06,
+        -2.1340980840142715e-06
+      ],
+      "reference_blends": [
+        -9.494116844342035e-06,
+        -2.1340980840155967e-06
+      ],
+      "blend_absolute_error": [
+        1.3247595295057257e-18,
+        1.3251830459793529e-18
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "9b843c4733d9109a234301b8435173ca09923400615e2ae1faf90eb4d58f5523",
+      "trial_hash": "b8ae83e6cd4a966144d3aa41e64078e735e776a5e09f84a465218c2ffbf2d97c",
+      "local_map_hash": "43e33d6f0785b703eb3b0a6b112bfd798eed8a6fa1fc3bdeb27febbbaf22dee0",
+      "full_map_hash": "62417ff906fb8399e85dff31e7fa799a22ac98b504f99c919a97071ebc581ba2",
+      "scene": "flowers",
+      "view": "fresh",
+      "parent_id": 1387,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 4,
+      "ROI": [
+        0,
+        416,
+        128,
+        592
+      ],
+      "score": [
+        2.702384511653152e-10,
+        9.423427810393405e-09,
+        4.547344332133991e-08
+      ],
+      "expected": [
+        2.7023845116531546e-10,
+        9.423427810393405e-09,
+        4.547344332119579e-08
+      ],
+      "full_gpu_score": [
+        2.702384511653158e-10,
+        9.423427810393405e-09,
+        4.54734433213399e-08
+      ],
+      "absolute_error": [
+        2.5849394142282115e-25,
+        0.0,
+        1.441147150414387e-19
+      ],
+      "full_absolute_error": [
+        3.618915179919496e-25,
+        0.0,
+        1.4410809759653827e-19
+      ],
+      "local_full_scalar_error": [
+        6.203854594147708e-25,
+        0.0,
+        6.617444900424222e-24
+      ],
+      "max_CPU_map_error": 1.964428619771752e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -1.5559464159532587e-09,
+        -8.87849790333573e-09
+      ],
+      "reference_blends": [
+        -1.5559464159244348e-09,
+        -8.878497903306906e-09
+      ],
+      "blend_absolute_error": [
+        2.88239356250228e-20,
+        2.88239356250228e-20
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "9b843c4733d9109a234301b8435173ca09923400615e2ae1faf90eb4d58f5523",
+      "trial_hash": "62328a07335da41440644b16b1e0b95c74997276f59b7534f2b7cdc5958adc8e",
+      "local_map_hash": "5f6ffa91178b1f55f423e6d635a6c0b40b37a2243ebd700914dd9aa80307480c",
+      "full_map_hash": "8f3b91f4b6dcf3b78f661aaf82fbcf1b6e22ec1cf7e59210a7c7f699867fe471",
+      "scene": "flowers",
+      "view": "fresh",
+      "parent_id": 2773,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 5,
+      "ROI": [
+        0,
+        416,
+        128,
+        592
+      ],
+      "score": [
+        1.1378991561522406e-10,
+        9.293934168003065e-09,
+        4.93403168528503e-08
+      ],
+      "expected": [
+        1.1378991561522377e-10,
+        9.293934168003065e-09,
+        4.9340316852719674e-08
+      ],
+      "full_gpu_score": [
+        1.1378991561522412e-10,
+        9.293934168003065e-09,
+        4.9340316852850315e-08
+      ],
+      "absolute_error": [
+        2.8434333556510326e-25,
+        0.0,
+        1.3062836233437413e-19
+      ],
+      "full_absolute_error": [
+        3.4896682092080855e-25,
+        0.0,
+        1.3064159722417498e-19
+      ],
+      "local_full_scalar_error": [
+        6.462348535570529e-26,
+        0.0,
+        1.3234889800848443e-23
+      ],
+      "max_CPU_map_error": 1.964428619771752e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -2.4329160361676094e-09,
+        -9.777031438077882e-09
+      ],
+      "reference_blends": [
+        -2.4329160361414837e-09,
+        -9.777031438051756e-09
+      ],
+      "blend_absolute_error": [
+        2.6125672466874826e-20,
+        2.6125672466874826e-20
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "9b843c4733d9109a234301b8435173ca09923400615e2ae1faf90eb4d58f5523",
+      "trial_hash": "d35cefdbb93fe94e9519f2b72a67e2b820746671ab882216efd9983c5c024799",
+      "local_map_hash": "03babd9d5297931b2bc693e3b2e7157ed7932f9bcd5c11d0a3621655969675dd",
+      "full_map_hash": "07e36c346e3b6756e00ab6b65f9fafcacc4fd1a48caf83c83ea12b15d7435518",
+      "scene": "flowers",
+      "view": "fresh",
+      "parent_id": 2773,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 6,
+      "ROI": [
+        1104,
+        416,
+        1152,
+        464
+      ],
+      "score": [
+        4.1628557203994513e-07,
+        1.4706448827844608e-06,
+        -7.1105248041981495e-06
+      ],
+      "expected": [
+        4.1628557203994524e-07,
+        1.4706448827844608e-06,
+        -7.1105248041981825e-06
+      ],
+      "full_gpu_score": [
+        4.1628557203994524e-07,
+        1.4706448827844608e-06,
+        -7.110524804198148e-06
+      ],
+      "absolute_error": [
+        1.0587911840678754e-22,
+        0.0,
+        3.3034284942917713e-20
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        3.4728350837426314e-20
+      ],
+      "local_full_scalar_error": [
+        1.0587911840678754e-22,
+        0.0,
+        1.6940658945086007e-21
+      ],
+      "max_CPU_map_error": 1.964428619771752e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        2.598620867067199e-06,
+        1.755133418471586e-06
+      ],
+      "reference_blends": [
+        2.5986208670672053e-06,
+        1.7551334184715928e-06
+      ],
+      "blend_absolute_error": [
+        6.3527471044072525e-21,
+        6.776263578034403e-21
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "9b843c4733d9109a234301b8435173ca09923400615e2ae1faf90eb4d58f5523",
+      "trial_hash": "e33722d745c58b9579657568d1e6253705ac052a95fe0789fd6ae35e3b49d1c3",
+      "local_map_hash": "145d9fb975a1ccd015da6db5e91cc0eaaae5ac8d4abdf18fa6ab83a0bfcd041a",
+      "full_map_hash": "56b164417b2d41a9f11507d8b8b1571a742d6daa72b59209800a05764e09fb25",
+      "scene": "flowers",
+      "view": "fresh",
+      "parent_id": 110,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 7,
+      "ROI": [
+        1104,
+        416,
+        1152,
+        464
+      ],
+      "score": [
+        4.1615020540381775e-07,
+        1.4703441566360252e-06,
+        -7.110036884302755e-06
+      ],
+      "expected": [
+        4.1615020540381775e-07,
+        1.4703441566360252e-06,
+        -7.110036884302741e-06
+      ],
+      "full_gpu_score": [
+        4.161502054038178e-07,
+        1.4703441566360252e-06,
+        -7.110036884302755e-06
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        1.4399560103323106e-20
+      ],
+      "full_absolute_error": [
+        5.293955920339377e-23,
+        0.0,
+        1.4399560103323106e-20
+      ],
+      "local_full_scalar_error": [
+        5.293955920339377e-23,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.964428619771752e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        2.5982827021693713e-06,
+        1.7549275411836054e-06
+      ],
+      "reference_blends": [
+        2.5982827021693684e-06,
+        1.7549275411836024e-06
+      ],
+      "blend_absolute_error": [
+        2.964615315390051e-21,
+        2.964615315390051e-21
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "9b843c4733d9109a234301b8435173ca09923400615e2ae1faf90eb4d58f5523",
+      "trial_hash": "ecd3cb99d914c8b8e7cf072d2705382b933a17e4121d1a1bd6ca5dbb0d18e8b1",
+      "local_map_hash": "99209dc1fa6e396824733b14fb6a9c0e680113d12db1f04a683f81b27b54c7d3",
+      "full_map_hash": "b716d7583ee3adc5170e90181320244ce63afec7576a514eeda6dddb9dcd41ea",
+      "scene": "flowers",
+      "view": "fresh",
+      "parent_id": 110,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 0,
+      "ROI": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_gpu_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        0.0,
+        0.0
+      ],
+      "reference_blends": [
+        0.0,
+        0.0
+      ],
+      "blend_absolute_error": [
+        0.0,
+        0.0
+      ],
+      "ambiguous_blend_signs": [
+        true,
+        true
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "local_map_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_map_hash": "5f8f258dc3a341f1bc6742c4f5c332d58d62b4c5127e73ee2b4d67d88c93a484",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 1436,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 1,
+      "ROI": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "expected": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_gpu_score": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        0.0,
+        0.0
+      ],
+      "reference_blends": [
+        0.0,
+        0.0
+      ],
+      "blend_absolute_error": [
+        0.0,
+        0.0
+      ],
+      "ambiguous_blend_signs": [
+        true,
+        true
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "local_map_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "full_map_hash": "5f8f258dc3a341f1bc6742c4f5c332d58d62b4c5127e73ee2b4d67d88c93a484",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 1436,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 2,
+      "ROI": [
+        656,
+        224,
+        944,
+        528
+      ],
+      "score": [
+        -1.1401971944837482e-08,
+        1.3958335544584585e-06,
+        3.628881872149835e-08
+      ],
+      "expected": [
+        -1.1401971944837459e-08,
+        1.3958335544584585e-06,
+        3.628881872013645e-08
+      ],
+      "full_gpu_score": [
+        -1.1401971944837472e-08,
+        1.3958335544584585e-06,
+        3.628881872149832e-08
+      ],
+      "absolute_error": [
+        2.3161057151484775e-23,
+        0.0,
+        1.3619032477318069e-18
+      ],
+      "full_absolute_error": [
+        1.3234889800848443e-23,
+        0.0,
+        1.3618701605073048e-18
+      ],
+      "local_full_scalar_error": [
+        9.926167350636332e-24,
+        0.0,
+        3.3087224502121107e-23
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        1.1094090798224672e-06,
+        -1.6379341300169657e-08
+      ],
+      "reference_blends": [
+        1.1094090798227395e-06,
+        -1.637934129989726e-08
+      ],
+      "blend_absolute_error": [
+        2.7232109254225756e-19,
+        2.7239719315861244e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "1677b6cc89b28062f48ccb0083f1032d908f430c3ff96d4963d355983fdd2736",
+      "local_map_hash": "495cfd1a202383b6510ceb4be09a8ab0f3b9ea0504df5e8e6fc0c6c46419148f",
+      "full_map_hash": "a5d7adf6a3213867956a82fd41b5e060293b719dd9221ccd3407cf164c232844",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 1387,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 3,
+      "ROI": [
+        656,
+        224,
+        944,
+        528
+      ],
+      "score": [
+        -6.723250521584389e-09,
+        1.4753601548809824e-06,
+        3.369308382123072e-08
+      ],
+      "expected": [
+        -6.723250521584382e-09,
+        1.4753601548809824e-06,
+        3.369308381703776e-08
+      ],
+      "full_gpu_score": [
+        -6.723250521584373e-09,
+        1.4753601548809824e-06,
+        3.369308382123075e-08
+      ],
+      "absolute_error": [
+        7.444625512977249e-24,
+        0.0,
+        4.192958672696596e-18
+      ],
+      "full_absolute_error": [
+        9.098986738083304e-24,
+        0.0,
+        4.192985142476198e-18
+      ],
+      "local_full_scalar_error": [
+        1.6543612251060553e-23,
+        0.0,
+        2.6469779601696886e-23
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        1.17354950714054e-06,
+        -1.2117217181513656e-08
+      ],
+      "reference_blends": [
+        1.1735495071413785e-06,
+        -1.2117217180675059e-08
+      ],
+      "blend_absolute_error": [
+        8.385626177817573e-19,
+        8.385973593674846e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "80b0120c8c3dd8483e74bf3bd8a4f308f853ec8f60404d5f9591c689bd8ffe8b",
+      "local_map_hash": "3528a2119631fa474d30364e622ff3024f9dc7531bb04dd32699fab36e684d4c",
+      "full_map_hash": "9bd40ccaff2f36fbb8bc05796ff55298c956b106af32c65b05fb70c5da7cd65d",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 1387,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 4,
+      "ROI": [
+        432,
+        336,
+        544,
+        432
+      ],
+      "score": [
+        -7.759443848202401e-10,
+        -1.5875526523842453e-09,
+        1.867555980587106e-08
+      ],
+      "expected": [
+        -7.759443848202401e-10,
+        -1.5875526523842453e-09,
+        1.8675559805802318e-08
+      ],
+      "full_gpu_score": [
+        -7.7594438482024e-10,
+        -1.5875526523842453e-09,
+        1.867555980587106e-08
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        6.874201762560681e-20
+      ],
+      "full_absolute_error": [
+        1.0339757656912846e-25,
+        0.0,
+        6.874201762560681e-20
+      ],
+      "local_full_scalar_error": [
+        1.0339757656912846e-25,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -5.005154083081608e-09,
+        -4.355867469030404e-09
+      ],
+      "reference_blends": [
+        -5.0051540830678605e-09,
+        -4.355867469016657e-09
+      ],
+      "blend_absolute_error": [
+        1.374774178063132e-20,
+        1.374774178063132e-20
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "3cd7e47232db88edf4868f09c15e4190cfe4e8fde9844e3afd9b11231c139128",
+      "local_map_hash": "1c5bfe652db3b672fdbf341fd9653653b38d38b69be8391164d25620584b0c71",
+      "full_map_hash": "f9e9de863fa6e38421e62e3a2cd1406b0c1c0be6cd37562b323e4c62af5768fc",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 2773,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 5,
+      "ROI": [
+        432,
+        336,
+        544,
+        432
+      ],
+      "score": [
+        -7.726211985521442e-10,
+        -1.5753638916509985e-09,
+        1.8629856674781593e-08
+      ],
+      "expected": [
+        -7.72621198552144e-10,
+        -1.5753638916509985e-09,
+        1.86298566740996e-08
+      ],
+      "full_gpu_score": [
+        -7.72621198552144e-10,
+        -1.5753638916509985e-09,
+        1.8629856674781593e-08
+      ],
+      "absolute_error": [
+        2.0679515313825692e-25,
+        0.0,
+        6.819938714377203e-19
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        6.819938714377203e-19
+      ],
+      "local_full_scalar_error": [
+        2.0679515313825692e-25,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -4.986262448277118e-09,
+        -4.344068293798034e-09
+      ],
+      "reference_blends": [
+        -4.986262448140719e-09,
+        -4.344068293661635e-09
+      ],
+      "blend_absolute_error": [
+        1.3639877428754405e-19,
+        1.3639877428754405e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "53b9688d52c324f71afe1243ec81c79de2a69ab72048263f7a13fca355caa193",
+      "local_map_hash": "891172cd3a66ac6940e7806ac6793ee257a004f9be4f6b4dcafd086a38eae789",
+      "full_map_hash": "19086ead2dc47ed5b5dc81aa86745c2aaac66e79212e61c646fcae27b193716f",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 2773,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 6,
+      "ROI": [
+        304,
+        448,
+        368,
+        512
+      ],
+      "score": [
+        2.5851950801573353e-06,
+        5.589837168837262e-06,
+        -2.4442696883490504e-05
+      ],
+      "expected": [
+        2.585195080157335e-06,
+        5.589837168837262e-06,
+        -2.4442696883490778e-05
+      ],
+      "full_gpu_score": [
+        2.5851950801573353e-06,
+        5.589837168837262e-06,
+        -2.4442696883490504e-05
+      ],
+      "absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        2.744386749103933e-19
+      ],
+      "full_absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        2.744386749103933e-19
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        9.36040911176791e-06,
+        6.956695440823969e-06
+      ],
+      "reference_blends": [
+        9.360409111767967e-06,
+        6.956695440824024e-06
+      ],
+      "blend_absolute_error": [
+        5.590417451878382e-20,
+        5.505714157152952e-20
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "3b94817f3d383af870b2c9229b42c72343d65e7274d329571bf791ebe01a5b6f",
+      "local_map_hash": "cf6a4e5d72d174b44071fbd6ca03908430e30878c08e2ab3aa19ec9f0370b432",
+      "full_map_hash": "35dfc7d4ef34884a435fc97767f7b4f0acefd38f2ef6e25070a09939d0ce863e",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 110,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 7,
+      "ROI": [
+        304,
+        448,
+        368,
+        512
+      ],
+      "score": [
+        2.586203865700924e-06,
+        5.591597472814623e-06,
+        -2.4442103947539525e-05
+      ],
+      "expected": [
+        2.5862038657009234e-06,
+        5.591597472814623e-06,
+        -2.444210394753996e-05
+      ],
+      "full_gpu_score": [
+        2.586203865700924e-06,
+        5.591597472814623e-06,
+        -2.444210394753953e-05
+      ],
+      "absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        4.37069000783219e-19
+      ],
+      "full_absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        4.3029273720518457e-19
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        6.776263578034403e-21
+      ],
+      "max_CPU_map_error": 9.134915046615788e-13,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        9.361698767759605e-06,
+        6.957383882068645e-06
+      ],
+      "reference_blends": [
+        9.361698767759691e-06,
+        6.957383882068731e-06
+      ],
+      "blend_absolute_error": [
+        8.639736061993863e-20,
+        8.639736061993863e-20
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "de22d08b871a0bffd54830026f6ccbd72cee0c37377e2c2c8e0214190540685c",
+      "trial_hash": "275557b0c28847c6e5f9c94e37bdaa1cf275f67b8252c70c1c57fedfd1e203cb",
+      "local_map_hash": "1d0bc1434c8ab09c6c28f2505e1ffd2dce840a08a94680faf4e598b0e29600a5",
+      "full_map_hash": "40883b394641bfea0a44041f1bb62e962a5776df45b0e959ebdb394c5fe235a5",
+      "scene": "flowers",
+      "view": "old_0",
+      "parent_id": 110,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 0,
+      "ROI": [
+        1040,
+        0,
+        1536,
+        368
+      ],
+      "score": [
+        2.7557968803738677e-06,
+        2.676396573376587e-05,
+        -8.211403346084767e-05
+      ],
+      "expected": [
+        2.755796880373868e-06,
+        2.676396573376587e-05,
+        -8.211403346086055e-05
+      ],
+      "full_gpu_score": [
+        2.7557968803738677e-06,
+        2.676396573376587e-05,
+        -8.211403346084767e-05
+      ],
+      "absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        1.2888453325421434e-17
+      ],
+      "full_absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        1.2888453325421434e-17
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.1723955140041653e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        3.783397927918223e-05,
+        1.862744419646863e-05
+      ],
+      "reference_blends": [
+        3.7833979279184804e-05,
+        1.8627444196471204e-05
+      ],
+      "blend_absolute_error": [
+        2.574980159653073e-18,
+        2.574980159653073e-18
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "58c47e438fa76f278e85112d74f4c3b9b0cdffad306c465d35ef4b3206f6c89a",
+      "trial_hash": "a9fb314310d6337eeb2a51703d93b0dadd3d3e2f22edd782a54d43fc35799513",
+      "local_map_hash": "b0286f5e10f145a03ceb0a716be9418a9bc495fc4613604f6882552661dce457",
+      "full_map_hash": "f15d4248d1ee3103aa5e3666b6f5af022434b20dd44cd0bbb59fea3aede4bfbd",
+      "scene": "room",
+      "view": "fresh",
+      "parent_id": 171415,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 1,
+      "ROI": [
+        1040,
+        0,
+        1536,
+        368
+      ],
+      "score": [
+        2.730785718468368e-06,
+        2.6435660423818067e-05,
+        -8.095718288075659e-05
+      ],
+      "expected": [
+        2.7307857184683684e-06,
+        2.6435660423818067e-05,
+        -8.095718288076975e-05
+      ],
+      "full_gpu_score": [
+        2.7307857184683684e-06,
+        2.6435660423818067e-05,
+        -8.095718288075659e-05
+      ],
+      "absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        1.315950386854281e-17
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        1.315950386854281e-17
+      ],
+      "local_full_scalar_error": [
+        4.235164736271502e-22,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.1723955140041653e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        3.733996491520578e-05,
+        1.8376065150926014e-05
+      ],
+      "reference_blends": [
+        3.7339964915208406e-05,
+        1.8376065150928643e-05
+      ],
+      "blend_absolute_error": [
+        2.6291902682773483e-18,
+        2.6291902682773483e-18
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "58c47e438fa76f278e85112d74f4c3b9b0cdffad306c465d35ef4b3206f6c89a",
+      "trial_hash": "bcbb0f166d82432ef862c4538ca2c3542a7c68d768c1686c2906d8d9040113ba",
+      "local_map_hash": "d5fb8b18af83e84d858ca63af7db392180c9a5888652a01529d8728cf97ca569",
+      "full_map_hash": "d8e000e627aa61c6a829aad4f22ce819c9776f227172396f12a69394e15920d8",
+      "scene": "room",
+      "view": "fresh",
+      "parent_id": 171415,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 2,
+      "ROI": [
+        432,
+        480,
+        720,
+        896
+      ],
+      "score": [
+        2.5978447066584835e-10,
+        1.0535483406826338e-07,
+        -5.627868105025065e-07
+      ],
+      "expected": [
+        2.597844706658481e-10,
+        1.0535483406826338e-07,
+        -5.627868105025012e-07
+      ],
+      "full_gpu_score": [
+        2.5978447066584846e-10,
+        1.0535483406826338e-07,
+        -5.627868105025065e-07
+      ],
+      "absolute_error": [
+        2.5849394142282115e-25,
+        0.0,
+        5.293955920339377e-21
+      ],
+      "full_absolute_error": [
+        3.618915179919496e-25,
+        0.0,
+        5.293955920339377e-21
+      ],
+      "local_full_scalar_error": [
+        1.0339757656912846e-25,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.1723955140041653e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        1.9684122935511202e-07,
+        1.1276518967703398e-07
+      ],
+      "reference_blends": [
+        1.9684122935511096e-07,
+        1.1276518967703292e-07
+      ],
+      "blend_absolute_error": [
+        1.0587911840678754e-21,
+        1.0587911840678754e-21
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "58c47e438fa76f278e85112d74f4c3b9b0cdffad306c465d35ef4b3206f6c89a",
+      "trial_hash": "a37bb346ce9571aa2f219430d9291920487263a1a4a2eb99af487fd97f8a915f",
+      "local_map_hash": "1b2756a0e5268a448688413c6def00dd6a04a74beb7d568bc5fa892aab0f5ef2",
+      "full_map_hash": "600cb897f83f595de352f91d79be537675fcf0654c5d67e8bed81d39eed3c332",
+      "scene": "room",
+      "view": "fresh",
+      "parent_id": 156483,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 3,
+      "ROI": [
+        432,
+        480,
+        720,
+        896
+      ],
+      "score": [
+        3.3396738576064915e-10,
+        1.0682205373694005e-07,
+        -5.744996803456401e-07
+      ],
+      "expected": [
+        3.339673857606485e-10,
+        1.0682205373694006e-07,
+        -5.744996803463352e-07
+      ],
+      "full_gpu_score": [
+        3.339673857606493e-10,
+        1.0682205373694005e-07,
+        -5.744996803456401e-07
+      ],
+      "absolute_error": [
+        6.72084247699335e-25,
+        1.3234889800848443e-23,
+        6.950964123405602e-19
+      ],
+      "full_absolute_error": [
+        8.271806125530277e-25,
+        1.3234889800848443e-23,
+        6.950964123405602e-19
+      ],
+      "local_full_scalar_error": [
+        1.550963648536927e-25,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.1723955140041653e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        2.003575790586801e-07,
+        1.1516710997773655e-07
+      ],
+      "reference_blends": [
+        2.0035757905881911e-07,
+        1.1516710997787557e-07
+      ],
+      "blend_absolute_error": [
+        1.3901928246811204e-19,
+        1.3901928246811204e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "58c47e438fa76f278e85112d74f4c3b9b0cdffad306c465d35ef4b3206f6c89a",
+      "trial_hash": "299398ef763b92fcfa0ae0433daa6b074d1a0f1aab6b6fd41bd4652473f5bf61",
+      "local_map_hash": "1e55b3b75363094e88f2e0dc5e1f603c413e635214cc2e1a857e4cdc67432e8b",
+      "full_map_hash": "98d2c0592823fd31a07d5f9b424220f057155b4d98fe87533c6a071bc2aaed6c",
+      "scene": "room",
+      "view": "fresh",
+      "parent_id": 156483,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 4,
+      "ROI": [
+        1392,
+        784,
+        1557,
+        960
+      ],
+      "score": [
+        -1.1315813909135752e-09,
+        -3.839037520375043e-08,
+        1.3145221916503606e-07
+      ],
+      "expected": [
+        -1.1315813909135752e-09,
+        -3.839037520375043e-08,
+        1.314522191698655e-07
+      ],
+      "full_gpu_score": [
+        -1.1315813909135752e-09,
+        -3.839037520375043e-08,
+        1.3145221916503606e-07
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        4.8294377581091985e-18
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        4.8294377581091985e-18
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.1723955140041653e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -5.700274399600756e-08,
+        -2.7195708945738074e-08
+      ],
+      "reference_blends": [
+        -5.700274399697345e-08,
+        -2.719570894670396e-08
+      ],
+      "blend_absolute_error": [
+        9.658888751108198e-19,
+        9.658855663883696e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "58c47e438fa76f278e85112d74f4c3b9b0cdffad306c465d35ef4b3206f6c89a",
+      "trial_hash": "f71534aa2e0ba0c845f43682546d1312d77b8e0d6d70c323037aa36c38c88592",
+      "local_map_hash": "e8731decd247337d1632913a530c64a81249f9b859349a4cfff2a04f5a749313",
+      "full_map_hash": "487ddc02bb1015ff5c2f3cd112787a7cfa238f6eea0571214c9beb16b1265ab7",
+      "scene": "room",
+      "view": "fresh",
+      "parent_id": 58,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 5,
+      "ROI": [
+        1392,
+        784,
+        1557,
+        960
+      ],
+      "score": [
+        1.1373244371850437e-09,
+        -1.0416691005186852e-08,
+        1.279987020389691e-07
+      ],
+      "expected": [
+        1.1373244371850445e-09,
+        -1.0416691005186852e-08,
+        1.2799870204135475e-07
+      ],
+      "full_gpu_score": [
+        1.137324437185044e-09,
+        -1.0416691005186852e-08,
+        1.279987020389691e-07
+      ],
+      "absolute_error": [
+        8.271806125530277e-25,
+        0.0,
+        2.3856418261621352e-18
+      ],
+      "full_absolute_error": [
+        4.1359030627651384e-25,
+        0.0,
+        2.3856418261621352e-18
+      ],
+      "local_full_scalar_error": [
+        4.1359030627651384e-25,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.1723955140041653e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -3.3933093211943304e-08,
+        -2.4689880858045788e-08
+      ],
+      "reference_blends": [
+        -3.3933093212420435e-08,
+        -2.468988085852292e-08
+      ],
+      "blend_absolute_error": [
+        4.771310122103872e-19,
+        4.771310122103872e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "58c47e438fa76f278e85112d74f4c3b9b0cdffad306c465d35ef4b3206f6c89a",
+      "trial_hash": "214d6f95e73fdf9f47416dd86c81acc3b19b64fa2f771283c0106b85d8fd026b",
+      "local_map_hash": "c097ec839e3a8266ed46201e9dc98fc01e5b4517c01fb648292f0b07d4606f53",
+      "full_map_hash": "2ea802bff79280d8e368918dcc649ef4f752dbd2ad7d8b8c08aa99622d8a5b1f",
+      "scene": "room",
+      "view": "fresh",
+      "parent_id": 58,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 6,
+      "ROI": [
+        1216,
+        816,
+        1328,
+        832
+      ],
+      "score": [
+        4.174388051560867e-09,
+        1.234033227854992e-07,
+        -1.9171254276464812e-06
+      ],
+      "expected": [
+        4.174388051560867e-09,
+        1.234033227854992e-07,
+        -1.917125427649238e-06
+      ],
+      "full_gpu_score": [
+        4.174388051560868e-09,
+        1.234033227854992e-07,
+        -1.9171254276464812e-06
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        2.7566687268391205e-18
+      ],
+      "full_absolute_error": [
+        8.271806125530277e-25,
+        0.0,
+        2.7566687268391205e-18
+      ],
+      "local_full_scalar_error": [
+        8.271806125530277e-25,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.1723955140041653e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        4.821477437576956e-07,
+        3.8676459597054496e-07
+      ],
+      "reference_blends": [
+        4.821477437582469e-07,
+        3.8676459597109627e-07
+      ],
+      "blend_absolute_error": [
+        5.513125695441427e-19,
+        5.513125695441427e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "58c47e438fa76f278e85112d74f4c3b9b0cdffad306c465d35ef4b3206f6c89a",
+      "trial_hash": "1a299561a284f22301f8b79bdb8d9f7f6208ea081cdf3c2f70c5df3c41726ef1",
+      "local_map_hash": "2e0e659720b0bebfd610a86a087140fe3b192b8dbc3ae52eb00733d7d4bae8a6",
+      "full_map_hash": "7410a359c54ab2f693fb96d27323bfa3fbd70a8685148d6f61a3800cdb299b8f",
+      "scene": "room",
+      "view": "fresh",
+      "parent_id": 2628,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 7,
+      "ROI": [
+        1216,
+        816,
+        1328,
+        832
+      ],
+      "score": [
+        4.192565062264858e-09,
+        1.2391863855951722e-07,
+        -1.9196689203814163e-06
+      ],
+      "expected": [
+        4.192565062264857e-09,
+        1.2391863855951722e-07,
+        -1.9196689203825022e-06
+      ],
+      "full_gpu_score": [
+        4.192565062264858e-09,
+        1.2391863855951722e-07,
+        -1.9196689203814163e-06
+      ],
+      "absolute_error": [
+        8.271806125530277e-25,
+        0.0,
+        1.085896238380013e-18
+      ],
+      "full_absolute_error": [
+        8.271806125530277e-25,
+        0.0,
+        1.085896238380013e-18
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.1723955140041653e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        4.830686949238971e-07,
+        3.872878361260952e-07
+      ],
+      "reference_blends": [
+        4.830686949241142e-07,
+        3.8728783612631237e-07
+      ],
+      "blend_absolute_error": [
+        2.1715807185232125e-19,
+        2.1715807185232125e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "58c47e438fa76f278e85112d74f4c3b9b0cdffad306c465d35ef4b3206f6c89a",
+      "trial_hash": "064d0ed418ffd246363ed9e84e6bc265ef0b6b1c15975a9dccf638f70d560f08",
+      "local_map_hash": "4cfdfd0e77621b30a3f4f0ba77c6ad69654d2891c88e9d4770162f7e0a56972f",
+      "full_map_hash": "cd1e352cacf604aba3685a7aca0b57d4a4bc56809af37e5ba7efc1960d35bfdf",
+      "scene": "room",
+      "view": "fresh",
+      "parent_id": 2628,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 0,
+      "ROI": [
+        288,
+        0,
+        848,
+        48
+      ],
+      "score": [
+        2.0472076971852676e-12,
+        2.2786630907444942e-11,
+        -6.711353232975521e-11
+      ],
+      "expected": [
+        2.0472076971852676e-12,
+        2.2786630907444942e-11,
+        -6.711353213450152e-11
+      ],
+      "full_gpu_score": [
+        2.0472076971852676e-12,
+        2.2786630907444942e-11,
+        -6.711353232975521e-11
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        1.952536959217606e-19
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        1.952536959217606e-19
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.1963763313360687e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        3.1652011191907e-11,
+        1.5060472623699257e-11
+      ],
+      "reference_blends": [
+        3.165201115285626e-11,
+        1.506047258464852e-11
+      ],
+      "blend_absolute_error": [
+        3.905073789188241e-20,
+        3.905073789188241e-20
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "0ef32cef5c1ef456cb317226449b42264ac6c21d0f5ba7485b4db56b6eb2f93f",
+      "trial_hash": "d1d7312ed0d41f433f1617e7659b916155d6bde13b9c428de0d8754b45f82927",
+      "local_map_hash": "084c4de9f51e8df3e14e769ffc97bfc47df4ccdbf84ccdc23179608e213cf034",
+      "full_map_hash": "94ad2699d5dfce769505e368e4297855c7305c7c4b86d7fa2ad6fb71f48c3c1c",
+      "scene": "room",
+      "view": "old_0",
+      "parent_id": 171415,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 1,
+      "ROI": [
+        288,
+        0,
+        848,
+        48
+      ],
+      "score": [
+        2.1144129276498845e-12,
+        2.396372631663015e-11,
+        -7.13761819273019e-11
+      ],
+      "expected": [
+        2.1144129276498845e-12,
+        2.396372631663015e-11,
+        -7.137618181521479e-11
+      ],
+      "full_gpu_score": [
+        2.1144129276498845e-12,
+        2.396372631663015e-11,
+        -7.13761819273019e-11
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        1.1208710890399802e-19
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        1.1208710890399802e-19
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.1963763313360687e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        3.34462174387645e-11,
+        1.5966766727580288e-11
+      ],
+      "reference_blends": [
+        3.344621741634708e-11,
+        1.5966766705162866e-11
+      ],
+      "blend_absolute_error": [
+        2.2417421780799603e-20,
+        2.2417421780799603e-20
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "0ef32cef5c1ef456cb317226449b42264ac6c21d0f5ba7485b4db56b6eb2f93f",
+      "trial_hash": "94e246f99245175ae20db52a0e744add7c27f35caf4a2a2c469ec88e364efdc1",
+      "local_map_hash": "dd4fed08c1e4a37ad2c65d504fd75db6b42dce4408a29fd4e13fae2aa2c32dc5",
+      "full_map_hash": "342cc1c9ad00087055b2a6a39f73f018950798d15d87b31122bd31b06db46ad8",
+      "scene": "room",
+      "view": "old_0",
+      "parent_id": 171415,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 2,
+      "ROI": [
+        0,
+        448,
+        176,
+        1038
+      ],
+      "score": [
+        -5.035208249301694e-09,
+        -3.792331988935655e-08,
+        -3.106129277743677e-07
+      ],
+      "expected": [
+        -5.035208249301694e-09,
+        -3.792331988935655e-08,
+        -3.1061292776923125e-07
+      ],
+      "full_gpu_score": [
+        -5.035208249301694e-09,
+        -3.792331988935655e-08,
+        -3.106129277743677e-07
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        5.136460731709281e-18
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        5.136460731709281e-18
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.1963763313360687e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        3.17839296433883e-08,
+        5.809441895543219e-08
+      ],
+      "reference_blends": [
+        3.178392964236101e-08,
+        5.80944189544049e-08
+      ],
+      "blend_absolute_error": [
+        1.0272921463418561e-18,
+        1.0272921463418561e-18
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "0ef32cef5c1ef456cb317226449b42264ac6c21d0f5ba7485b4db56b6eb2f93f",
+      "trial_hash": "5ef0ddb401598dfe754d80ca2bf8952f18ca281097c472f0f6120f6b79975eab",
+      "local_map_hash": "e72b77cd219417a938b1df8e3a4b5e719d8309643a369cc900fc9e11c28073fc",
+      "full_map_hash": "858d0e70373fbeb8bb28a9ef2c86fee034e9bccf3d366e461bbb57c9f3ff350e",
+      "scene": "room",
+      "view": "old_0",
+      "parent_id": 156483,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 3,
+      "ROI": [
+        0,
+        448,
+        176,
+        1038
+      ],
+      "score": [
+        -4.987835554239882e-09,
+        -3.699701764202803e-08,
+        -3.104132450445681e-07
+      ],
+      "expected": [
+        -4.987835554239883e-09,
+        -3.699701764202803e-08,
+        -3.1041324503740143e-07
+      ],
+      "full_gpu_score": [
+        -4.987835554239882e-09,
+        -3.699701764202803e-08,
+        -3.104132450445682e-07
+      ],
+      "absolute_error": [
+        8.271806125530277e-25,
+        0.0,
+        7.166692827159432e-18
+      ],
+      "full_absolute_error": [
+        8.271806125530277e-25,
+        0.0,
+        7.166745766718635e-18
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        5.293955920339377e-23
+      ],
+      "max_CPU_map_error": 1.1963763313360687e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        3.24850348952912e-08,
+        5.809238056552172e-08
+      ],
+      "reference_blends": [
+        3.248503489385786e-08,
+        5.8092380564088384e-08
+      ],
+      "blend_absolute_error": [
+        1.4333385654318864e-18,
+        1.4333385654318864e-18
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "0ef32cef5c1ef456cb317226449b42264ac6c21d0f5ba7485b4db56b6eb2f93f",
+      "trial_hash": "7819c2848b9b46e38b45ce47c87fd3a75607e6a9389d8e0a3ef609cd36b176a9",
+      "local_map_hash": "559dc8c7cb19e6681c091b91ec13c21f031508ca03c583a8186a77522c4f6597",
+      "full_map_hash": "4ca5ba6f1ab3b7ce7437fc43900b81ed7bf06177f66e56984268ce60dbde751e",
+      "scene": "room",
+      "view": "old_0",
+      "parent_id": 156483,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 4,
+      "ROI": [
+        1216,
+        704,
+        1557,
+        880
+      ],
+      "score": [
+        -6.536052517103704e-08,
+        -8.838716362912267e-07,
+        2.9149542851545133e-06
+      ],
+      "expected": [
+        -6.536052517103703e-08,
+        -8.838716362912267e-07,
+        2.914954285156939e-06
+      ],
+      "full_gpu_score": [
+        -6.536052517103703e-08,
+        -8.838716362912267e-07,
+        2.9149542851545133e-06
+      ],
+      "absolute_error": [
+        1.3234889800848443e-23,
+        0.0,
+        2.425478844462689e-18
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        2.425478844462689e-18
+      ],
+      "local_full_scalar_error": [
+        1.3234889800848443e-23,
+        0.0,
+        0.0
+      ],
+      "max_CPU_map_error": 1.1963763313360687e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -1.290088166063884e-06,
+        -6.352792771677323e-07
+      ],
+      "reference_blends": [
+        -1.2900881660643692e-06,
+        -6.352792771682174e-07
+      ],
+      "blend_absolute_error": [
+        4.851381205399005e-19,
+        4.851381205399005e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "0ef32cef5c1ef456cb317226449b42264ac6c21d0f5ba7485b4db56b6eb2f93f",
+      "trial_hash": "30be8e511dd096d1c7d05721f44a3d9764a79230c6916898022cc92afdc5aef7",
+      "local_map_hash": "a49c2200341e0d5d05008a4bfee798949d447864162c74ab1737e0a3189119f4",
+      "full_map_hash": "3a6906cc3166809a91150f7f2e61115fa2819b921444db26abac3d540d204685",
+      "scene": "room",
+      "view": "old_0",
+      "parent_id": 58,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 5,
+      "ROI": [
+        1216,
+        704,
+        1557,
+        880
+      ],
+      "score": [
+        -6.450525269498976e-08,
+        -8.76469218632306e-07,
+        2.8928895026105245e-06
+      ],
+      "expected": [
+        -6.450525269498976e-08,
+        -8.76469218632306e-07,
+        2.8928895026093963e-06
+      ],
+      "full_gpu_score": [
+        -6.450525269498976e-08,
+        -8.76469218632306e-07,
+        2.892889502610524e-06
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        1.128247885742728e-18
+      ],
+      "full_absolute_error": [
+        0.0,
+        0.0,
+        1.1278243692691009e-18
+      ],
+      "local_full_scalar_error": [
+        0.0,
+        0.0,
+        4.235164736271502e-22
+      ],
+      "max_CPU_map_error": 1.1963763313360687e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -1.2797532754279499e-06,
+        -6.301821026780967e-07
+      ],
+      "reference_blends": [
+        -1.2797532754277241e-06,
+        -6.30182102677871e-07
+      ],
+      "blend_absolute_error": [
+        2.2573428044327104e-19,
+        2.2562840132486425e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "0ef32cef5c1ef456cb317226449b42264ac6c21d0f5ba7485b4db56b6eb2f93f",
+      "trial_hash": "e8c6cec528ab645eef7d2abb5ddc22c2f2472b73fea0ae2eb0071736af3ec02c",
+      "local_map_hash": "34b6a6aa337fbf5a9f59cb5614779e99951d5a1202ce7aa77bf1c22e441cc27a",
+      "full_map_hash": "57456211c5cfe3403b9da39725dc6280ae01f5f47d027d6461d05a46ab4e9468",
+      "scene": "room",
+      "view": "old_0",
+      "parent_id": 58,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 6,
+      "ROI": [
+        960,
+        784,
+        1104,
+        816
+      ],
+      "score": [
+        -2.682711193814277e-09,
+        7.06615627765054e-08,
+        1.1101207622166212e-06
+      ],
+      "expected": [
+        -2.682711193814277e-09,
+        7.06615627765054e-08,
+        1.1101207622166677e-06
+      ],
+      "full_gpu_score": [
+        -2.6827111938142773e-09,
+        7.06615627765054e-08,
+        1.1101207622166207e-06
+      ],
+      "absolute_error": [
+        0.0,
+        0.0,
+        4.658681209898652e-20
+      ],
+      "full_absolute_error": [
+        4.1359030627651384e-25,
+        0.0,
+        4.701032857261367e-20
+      ],
+      "local_full_scalar_error": [
+        4.1359030627651384e-25,
+        0.0,
+        4.235164736271502e-22
+      ],
+      "max_CPU_map_error": 1.1963763313360687e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -1.6549490222211991e-07,
+        -2.2417032139837566e-07
+      ],
+      "reference_blends": [
+        -1.6549490222212923e-07,
+        -2.2417032139838498e-07
+      ],
+      "blend_absolute_error": [
+        9.317362419797304e-21,
+        9.317362419797304e-21
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "0ef32cef5c1ef456cb317226449b42264ac6c21d0f5ba7485b4db56b6eb2f93f",
+      "trial_hash": "b4ac300eb40a65095b2ab8628e03c57212078c96040b125e8fa21655ce5e8721",
+      "local_map_hash": "c39f2e4f2c98a5b9fbbc273237b16d04f5d4001b92990fbeb4a063db1f6bb278",
+      "full_map_hash": "a2c3c52c452d7d215e852df4994fe6ca9e3e6437678f8d58a212ccb95bbca124",
+      "scene": "room",
+      "view": "old_0",
+      "parent_id": 2628,
+      "appearance": "hold",
+      "cached_unshared_scores_and_maps_literal": true
+    },
+    {
+      "event": 7,
+      "ROI": [
+        960,
+        784,
+        1104,
+        816
+      ],
+      "score": [
+        -2.682661474089886e-09,
+        7.08259381573536e-08,
+        1.1130627074633335e-06
+      ],
+      "expected": [
+        -2.682661474089884e-09,
+        7.08259381573536e-08,
+        1.1130627074674581e-06
+      ],
+      "full_gpu_score": [
+        -2.682661474089885e-09,
+        7.08259381573536e-08,
+        1.1130627074633333e-06
+      ],
+      "absolute_error": [
+        1.6543612251060553e-24,
+        0.0,
+        4.1246269366548155e-18
+      ],
+      "full_absolute_error": [
+        8.271806125530277e-25,
+        0.0,
+        4.124838694891629e-18
+      ],
+      "local_full_scalar_error": [
+        8.271806125530277e-25,
+        0.0,
+        2.117582368135751e-22
+      ],
+      "max_CPU_map_error": 1.1963763313360687e-12,
+      "local_full_maps_literal": true,
+      "full_map_change_outside_A_literal_zero": true,
+      "normal_debug_scalars_literal": true,
+      "blends": [
+        -1.6595179096678383e-07,
+        -2.2475867067193864e-07
+      ],
+      "reference_blends": [
+        -1.6595179096760873e-07,
+        -2.2475867067276354e-07
+      ],
+      "blend_absolute_error": [
+        8.249042115072817e-19,
+        8.249042115072817e-19
+      ],
+      "ambiguous_blend_signs": [
+        false,
+        false
+      ],
+      "base_hash": "0ef32cef5c1ef456cb317226449b42264ac6c21d0f5ba7485b4db56b6eb2f93f",
+      "trial_hash": "6833b784251487371a210b4ba7a3570365eac912c9175667d7b9e3f8930a1512",
+      "local_map_hash": "7d9e77b8bca1afc4d27d2ed0a959996e21321886911df3c5f9e7af1b03488ff2",
+      "full_map_hash": "fe3a221073a77cc4c923d47c09731786a3cf6c583b606d57c84adad5d6f90479",
+      "scene": "room",
+      "view": "old_0",
+      "parent_id": 2628,
+      "appearance": "moved",
+      "cached_unshared_scores_and_maps_literal": true
+    }
+  ],
+  "batches": [
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "cache_bytes": 74877696,
+      "cache_preps": 1,
+      "cached_GPU_calls": 3
+    },
+    {
+      "scene": "flowers",
+      "view": "old_0",
+      "cache_bytes": 74877696,
+      "cache_preps": 1,
+      "cached_GPU_calls": 3
+    },
+    {
+      "scene": "room",
+      "view": "fresh",
+      "cache_bytes": 116363952,
+      "cache_preps": 1,
+      "cached_GPU_calls": 3
+    },
+    {
+      "scene": "room",
+      "view": "old_0",
+      "cache_bytes": 116363952,
+      "cache_preps": 1,
+      "cached_GPU_calls": 3
+    }
+  ],
+  "new_native_forwards": 0,
+  "training": false,
+  "cache_invalidated_by_caller": true,
+  "source_sha256": "45d69d78671d8cf4b1701b24ed43b538bfdc92b377d25601606c11e2c3aa987d",
+  "timing": false
+}

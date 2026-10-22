@@ -1,0 +1,136 @@
+{
+  "protocol": "RESEARCH_PROTOCOL \u00a75 P5",
+  "verdict": "CLAIM_HOLDS",
+  "reason": "10/11 better, 1 worse; mean \u0394=-2.956540e-02",
+  "next": "Pipeline* + M1 U-curve + M2-emp trunc4 ready for write-up",
+  "n_paired": 11,
+  "n_better": 10,
+  "n_worse": 1,
+  "frac_worse": 0.09090909090909091,
+  "mean_delta_overall": -0.029565401068770515,
+  "rows": [
+    {
+      "scan": "scan24",
+      "source": "pilot_trunc4",
+      "pipeline_overall": 0.35496639222779447,
+      "baseline_overall": 0.37471081055584676,
+      "delta_pipeline_minus_baseline": -0.019744418328052293,
+      "sign": "better"
+    },
+    {
+      "scan": "scan37",
+      "source": "ggs_pipeline",
+      "pipeline_overall": 0.46060380411458407,
+      "baseline_overall": 0.4974867462446998,
+      "delta_pipeline_minus_baseline": -0.036882942130115726,
+      "sign": "better"
+    },
+    {
+      "scan": "scan40",
+      "source": "ggs_pipeline",
+      "pipeline_overall": 0.255886934662544,
+      "baseline_overall": 0.2678304471594116,
+      "delta_pipeline_minus_baseline": -0.011943512496867648,
+      "sign": "better"
+    },
+    {
+      "scan": "scan55",
+      "source": "ggs_pipeline",
+      "pipeline_overall": 0.31385630225617916,
+      "baseline_overall": 0.31026299711902827,
+      "delta_pipeline_minus_baseline": 0.003593305137150893,
+      "sign": "worse"
+    },
+    {
+      "scan": "scan63",
+      "source": "ggs_pipeline",
+      "pipeline_overall": 0.7368805734267211,
+      "baseline_overall": 0.8054308179226686,
+      "delta_pipeline_minus_baseline": -0.06855024449594749,
+      "sign": "better"
+    },
+    {
+      "scan": "scan65",
+      "source": "ggs_pipeline",
+      "pipeline_overall": 0.4335832319227257,
+      "baseline_overall": 0.4345847071093466,
+      "delta_pipeline_minus_baseline": -0.0010014751866209148,
+      "sign": "better"
+    },
+    {
+      "scan": "scan69",
+      "source": "ggs_pipeline",
+      "pipeline_overall": 0.42975489096438646,
+      "baseline_overall": null,
+      "delta_pipeline_minus_baseline": null,
+      "sign": "n/a"
+    },
+    {
+      "scan": "scan83",
+      "source": "ggs_pipeline",
+      "pipeline_overall": 0.9572175846029736,
+      "baseline_overall": 1.0420576934127577,
+      "delta_pipeline_minus_baseline": -0.0848401088097841,
+      "sign": "better"
+    },
+    {
+      "scan": "scan97",
+      "source": "ggs_pipeline",
+      "pipeline_overall": 0.6139492274434251,
+      "baseline_overall": 0.6416662599024338,
+      "delta_pipeline_minus_baseline": -0.027717032459008695,
+      "sign": "better"
+    },
+    {
+      "scan": "scan105",
+      "source": "pilot_trunc4",
+      "pipeline_overall": 0.47048834938509165,
+      "baseline_overall": 0.5163422423069416,
+      "delta_pipeline_minus_baseline": -0.04585389292184994,
+      "sign": "better"
+    },
+    {
+      "scan": "scan106",
+      "source": "ggs_pipeline",
+      "pipeline_overall": 0.31665437904989946,
+      "baseline_overall": null,
+      "delta_pipeline_minus_baseline": null,
+      "sign": "n/a"
+    },
+    {
+      "scan": "scan110",
+      "source": "ggs_pipeline",
+      "pipeline_overall": 0.5471360840745509,
+      "baseline_overall": 0.5729140180426471,
+      "delta_pipeline_minus_baseline": -0.025777933968096134,
+      "sign": "better"
+    },
+    {
+      "scan": "scan114",
+      "source": "ggs_pipeline",
+      "pipeline_overall": 0.3090563626278009,
+      "baseline_overall": null,
+      "delta_pipeline_minus_baseline": null,
+      "sign": "n/a"
+    },
+    {
+      "scan": "scan118",
+      "source": "ggs_pipeline",
+      "pipeline_overall": 0.31459152830149545,
+      "baseline_overall": null,
+      "delta_pipeline_minus_baseline": null,
+      "sign": "n/a"
+    },
+    {
+      "scan": "scan122",
+      "source": "pilot_trunc4",
+      "pipeline_overall": 0.3242774839490299,
+      "baseline_overall": 0.3307786400463135,
+      "delta_pipeline_minus_baseline": -0.0065011560972836335,
+      "sign": "better"
+    }
+  ],
+  "recipe": "Train(no_dn,\u03c4=0.9) \u2192 Extract(trunc_voxel_multiplier=4)",
+  "g1": "M1_ok \u03c4*=0.9",
+  "g2": "M2-emp"
+}

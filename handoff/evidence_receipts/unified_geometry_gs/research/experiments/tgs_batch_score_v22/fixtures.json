@@ -1,0 +1,26 @@
+{
+  "all_passed": true,
+  "quantization_values": 769,
+  "rows": [
+    {
+      "case": "multi_ties_empty",
+      "passed": true,
+      "proposals": 4,
+      "scores": [
+        -11304,
+        -11882,
+        -24768,
+        0
+      ]
+    },
+    {
+      "case": "all257",
+      "passed": true,
+      "proposals": 1,
+      "scores": [
+        0
+      ]
+    }
+  ],
+  "software_only": true
+}

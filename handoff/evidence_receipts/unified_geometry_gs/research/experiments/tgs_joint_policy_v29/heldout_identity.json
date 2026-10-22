@@ -1,0 +1,51 @@
+{
+  "all_passed": true,
+  "rows": [
+    {
+      "scene": "flowers",
+      "view": "heldout_0",
+      "original_published_RGB_literal": true,
+      "shape": [
+        828,
+        1256,
+        3
+      ],
+      "GT_sha256": "cd1053363f936c85ac251666c80be284cebb2ec5bf52bae9bec0553c6017924d"
+    },
+    {
+      "scene": "flowers",
+      "view": "heldout_1",
+      "original_published_RGB_literal": true,
+      "shape": [
+        828,
+        1256,
+        3
+      ],
+      "GT_sha256": "008bd66917bb4117b1e526c64f797cff127142e7c687bab45d5a7f8df049dae6"
+    },
+    {
+      "scene": "room",
+      "view": "heldout_0",
+      "original_published_RGB_literal": true,
+      "shape": [
+        1038,
+        1557,
+        3
+      ],
+      "GT_sha256": "bf75b831f484d017641bb10287aefb3c0ef8dfd493262ad14475b25ec6cf2144"
+    },
+    {
+      "scene": "room",
+      "view": "heldout_1",
+      "original_published_RGB_literal": true,
+      "shape": [
+        1038,
+        1557,
+        3
+      ],
+      "GT_sha256": "55d57ce43b8aa29724fd97eb4ba72586bfb432ce5c8d6c3026ad6f001ea62eb9"
+    }
+  ],
+  "manifest_sha256": "c9d20de6a37bee01c62d87bd82491e445ffd7686af36a0dc4e5f052496179279",
+  "training": false
+}

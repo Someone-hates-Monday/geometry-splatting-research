@@ -1,0 +1,43 @@
+{
+  "baseline": {
+    "path": "./output_compare/ggs_baseline/scan105",
+    "image_metrics": {
+      "num_views": 16.0,
+      "l1": 0.02114988799439743,
+      "psnr": 31.599172115325928,
+      "ssim": 0.929865088313818
+    },
+    "mesh_metrics": {
+      "mean_d2s": 0.4680819217888796,
+      "mean_s2d": 0.5647789785695247,
+      "overall": 0.5164304501792022
+    }
+  },
+  "optimized": {
+    "path": "./output_compare/m1_vd09/scan105",
+    "image_metrics": {
+      "num_views": 16.0,
+      "l1": 0.021072440955322236,
+      "psnr": 31.50134527683258,
+      "ssim": 0.9294084943830967
+    },
+    "mesh_metrics": {
+      "mean_d2s": 0.4690078343178002,
+      "mean_s2d": 0.5646462113826933,
+      "overall": 0.5168270228502467
+    }
+  },
+  "delta_optimized_minus_baseline": {
+    "l1": -7.744703907519579e-05,
+    "psnr": -0.09782683849334717,
+    "ssim": -0.00045659393072128296,
+    "mean_d2s": 0.0009259125289206027,
+    "mean_s2d": -0.0001327671868314173,
+    "overall": 0.0003965726710445372
+  },
+  "mesh_quality_compared": true,
+  "metrics_description": {
+    "image_metrics": "L1 (\u2193), PSNR (\u2191), SSIM (\u2191) on training views.",
+    "mesh_metrics": "mean_d2s, mean_s2d, overall (Chamfer to GT, \u2193 = better). \u7f51\u683c\u8d28\u91cf\u5bf9\u6bd4\u9700 DTU \u5b98\u65b9\u6570\u636e."
+  }
+}

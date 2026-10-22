@@ -1,0 +1,8 @@
+{
+  "all_passed": true,
+  "choices_sha256": "c596200ae0385310b7bc66890ae09a2895e635f209dc19780e3451bea7aad696",
+  "identity_sha256": "db8290be6d8f80e6d5c3bc15d9655522f661e60a16b23c1030e33374b1b9c251",
+  "new_native_forwards": 8,
+  "model_inputs_unchanged": true,
+  "training": false
+}

@@ -1,0 +1,31 @@
+{
+  "date": "2026-10-13 Asia/Shanghai",
+  "type": "Targeted primary-source scoping, not systematic review",
+  "queries": [
+    "\"Gaussian splatting\" \"thin\" \"gradient\" quantile",
+    "\"stochastic solids\" \"gradient\" median",
+    "\"Gaussian\" \"median depth\" \"singular\"",
+    "\"Gaussian splatting\" \"quantile\" \"mean\"",
+    "\"volume rendering\" \"trimmed\" depth",
+    "\"GGGS\" \"median\" \"gradient\"",
+    "range value at risk average quantiles Cont Deguest Scandolo robustness risk measurement pdf",
+    "\"On the elicitability of range value at risk\" arxiv"
+  ],
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/html/2601.17835v2",
+      "assessment": "Continuous median depth and implicit gradient are already part of GGGS; this work only supplements singular limits and conditional derivatives."
+    },
+    {
+      "url": "https://arxiv.org/html/1902.04489v3",
+      "assessment": "Fissler and Ziegel, Evaluating Range Value at Risk Forecasts; arXiv v3 2020, published 2021 as On the elicitability of range value at risk. Section 2.1 supplies interval-quantile functional precedent. Do not claim a new statistic."
+    }
+  ],
+  "access_limits": [
+    "Cont author-hosted RobustRisk.pdf fetch timed out; no full-text reliance on that failed fetch.",
+    "Publisher HTML returned HTTP 405; arXiv v3 primary full text used instead.",
+    "Broad Gaussian searches returned many unrelated or partially related hits; no exact screened-study count or exhaustive coverage asserted.",
+    "No hit for a targeted phrase is not evidence of novelty.",
+    "Financial statistical robustness and fixed-ray parameter C1 regularity are distinct claims."
+  ]
+}

@@ -1,0 +1,61 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/recover_tgs_policy_heldout_fetch_v28.py", line 33, in <module>
+    try:main()
+        ^^^^^^
+  File "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/recover_tgs_policy_heldout_fetch_v28.py", line 28, in main
+    q=extract_member(z,row['published_gt'],SOURCE/row['scene']/row['view']/'published_gt.png',row['scene'],'published_gt');records.append(dict(q,view=row['view']))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/extract_tgs_gt_identity_v11.py", line 40, in extract_member
+    raw=z.read(info);assert len(raw)==entry['bytes'];target.write_bytes(raw);q=dict(scene=scene,kind=kind,archive_member=entry['path'],local=target.relative_to(ROOT).as_posix(),bytes=len(raw),sha256=hashlib.sha256(raw).hexdigest(),CRC32=info.CRC,zip_crc_checked=True);receipt.write_text(json.dumps(q,indent=2)+'\n');print(json.dumps(dict(scene=scene,kind=kind,bytes=len(raw))),flush=True);return q
+        ^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/zipfile/__init__.py", line 1584, in read
+    with self.open(name, "r", pwd) as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/zipfile/__init__.py", line 1637, in open
+    fheader = zef_file.read(sizeFileHeader)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/zipfile/__init__.py", line 827, in read
+    data = self._file.read(n)
+           ^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/recover_tgs_policy_heldout_fetch_v28.py", line 18, in read
+    return super().read(n)
+           ^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/remote_tgs_zip.py", line 62, in read
+    with urlopen(Request(self.url,headers={'User-Agent':'TGS-research-input-audit',
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/urllib/request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/http/client.py", line 1430, in getresponse
+    response.begin()
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/someone/miniconda3/envs/uggs/lib/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out

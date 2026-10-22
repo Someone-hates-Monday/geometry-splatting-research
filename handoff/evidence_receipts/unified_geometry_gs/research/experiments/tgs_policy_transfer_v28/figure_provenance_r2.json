@@ -1,0 +1,16 @@
+{
+  "inputs": {
+    "experiments/tgs_policy_transfer_v28/analysis.json": "0f16f1ffd88bf77d69929f1eecee20c5ed1a2e5acf645e06be08aed3a282cd08",
+    "plot_tgs_policy_transfer_v28_r2.py": "5fbf5b0c241ee0a3bb5f453a8a427b6addd47d94a23bdb3ae8fca4a4a966b795",
+    "experiments/tgs_policy_transfer_v28/figure_data_r2.csv": "f9d34abb810826edb7d6b84a01ff87c92980b0e9aa10d8ee55ff2844643cfdac"
+  },
+  "all_forced_policies": true,
+  "per_view_rows": 40,
+  "scale": "symlog, linear threshold1e-10; presentation only, not selection threshold",
+  "axis_padding": "two times each signed extreme; visual-QA fix, initial figure preserved",
+  "means": "two calibration or two heldout views, equal weights",
+  "uncertainty": "none; dependent views displayed separately",
+  "fixed_external_FP32_color_contract": true,
+  "publisher_requirements": "unspecified; provisional research figure",
+  "alt_text": "Two scene panels compare calibration means, heldout means, and both individual heldout observations for five frozen one-edit rules. Negative changes improve the fixed image objective. Zero is no edit; this is not a training or final-quality result."
+}

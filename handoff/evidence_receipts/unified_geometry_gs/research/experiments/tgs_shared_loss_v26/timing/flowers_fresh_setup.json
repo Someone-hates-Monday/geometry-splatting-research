@@ -1,0 +1,12 @@
+{
+  "scene": "flowers",
+  "view": "fresh",
+  "setup_wall_ms": 17.812448,
+  "setup_render_ms": 11.490821,
+  "setup_loss_ms": 6.321627,
+  "retained_cache_bytes_GT_excluded": 329140851,
+  "shared_loss_cache_bytes": 74877696,
+  "GT_bytes": 3119904,
+  "model_proposal_loading_excluded": true,
+  "cache_flags_zero": true
+}

@@ -1,0 +1,37 @@
+{
+  "checked_date": "2026-10-12",
+  "search_type": "targeted narrative search, not systematic or exhaustive",
+  "queries": [
+    "Gaussian splatting inverse covariance gradient numerical stability quaternion",
+    "Gaussian splatting precision matrix parameterization stable gradients",
+    "Gaussian splatting analytical derivatives covariance inversion numerical errors",
+    "Faster-GS quaternion covariance",
+    "Faster-GS anti-aliasing gradients compensation"
+  ],
+  "primary_sources_read": [
+    {
+      "title": "Faster-GS: Analyzing and Improving Gaussian Splatting Optimization",
+      "url": "https://arxiv.org/html/2602.09999v1",
+      "sections": ["3.1 Basis Implementation", "B.1 Testbed Basis", "C.2 Efficient Anti-Aliasing"],
+      "paraphrase": "Prior work already analyzes numerical stability and non-analytical opacity-compensation gradients, including detached and optional analytical variants.",
+      "relevance": "A local formula discrepancy alone is not a novelty or optimization-benefit certificate.",
+      "limit": "This targeted reading does not establish absence of the specific quaternion-defect precision-factor diagnosis elsewhere."
+    },
+    {
+      "title": "Faster-GS official code repository",
+      "url": "https://github.com/nerficg-project/faster-gaussian-splatting",
+      "scope": "README branch and testbed descriptions only; no pinned source-code audit in this search."
+    }
+  ],
+  "access_failures": [
+    {"url": "https://arxiv.org/html/2602.09999v2", "status": "404; read available v1 instead"},
+    {"url": "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Hahlbohm_Faster-GS_Analyzing_and_CVPR_2026_supplemental.pdf", "status": "403; search excerpt not used as sole full-document evidence"}
+  ],
+  "novelty_status": "unestablished",
+  "experimental_protocol_changed": false,
+  "limits": [
+    "Search ranking is not evidence that no earlier method exists.",
+    "Standard direct factor derivatives and matrix conditioning bounds are not claimed as new algebra.",
+    "Real quality, ablations, other scenes and independent training repeats remain required."
+  ]
+}

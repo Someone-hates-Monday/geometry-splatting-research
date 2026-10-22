@@ -1,0 +1,50 @@
+{
+  "all_verified": true,
+  "real_cases": 32,
+  "cached_GPU_calls": 12,
+  "reference_GPU_calls": 12,
+  "cache_preps": 4,
+  "new_native_forwards": 0,
+  "max_CPU_score_error": 1.315950386854281e-17,
+  "max_CPU_map_error": 1.964428619771752e-12,
+  "cached_unshared_scores_literal": true,
+  "cached_unshared_maps_runtime_gate_passed": true,
+  "independent_map_GPU_rerun": false,
+  "training": false,
+  "batches": [
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "shared_cache_bytes": 74877696,
+      "trial_vertical_bytes": 63806688,
+      "unshared_trial_vertical_bytes": 170151168
+    },
+    {
+      "scene": "flowers",
+      "view": "old_0",
+      "shared_cache_bytes": 74877696,
+      "trial_vertical_bytes": 16836480,
+      "unshared_trial_vertical_bytes": 44897280
+    },
+    {
+      "scene": "room",
+      "view": "fresh",
+      "shared_cache_bytes": 116363952,
+      "trial_vertical_bytes": 51790752,
+      "unshared_trial_vertical_bytes": 138108672
+    },
+    {
+      "scene": "room",
+      "view": "old_0",
+      "shared_cache_bytes": 116363952,
+      "trial_vertical_bytes": 30756096,
+      "unshared_trial_vertical_bytes": 82016256
+    }
+  ],
+  "inputs": {
+    "experiments/tgs_shared_loss_v26/plan.json": "1e5824dcdecac643af10bc5eb92002435d5b4876753a18981f0e7cbe9426ac52",
+    "experiments/tgs_shared_loss_v26/results.json": "77b0338cd89c8de392bbe2ee2521214714b6254c3ec55b485aca250f776c0c03",
+    "experiments/tgs_local_image_loss_v24/results.json": "631745d71c283f48c5827911c818384a5388d745f29c996ab1a1a69155bddc04",
+    "audit_tgs_shared_loss_v26.py": "2d58ffcd60b67d17ed99143384329d7efde010301678a0141d8c225f546b1723"
+  }
+}

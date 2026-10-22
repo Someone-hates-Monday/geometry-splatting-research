@@ -1,0 +1,904 @@
+{
+  "all_passed": true,
+  "rows": [
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "i": 0,
+      "j": 1,
+      "classification": {
+        "i": 0,
+        "j": 1,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        6.70879913141388e-06,
+        8.171067413945115e-05,
+        -9.384831141807342e-05
+      ],
+      "CPU_interactions": [
+        -4.235164736271502e-22,
+        8.470329472543003e-21,
+        1.1011428314305904e-20
+      ],
+      "CPU_roundoff_bounds": [
+        4.528347202591812e-14,
+        5.928500404603233e-13,
+        3.9329475347795005e-13
+      ],
+      "joint_score_absolute_error": [
+        8.470329472543003e-22,
+        1.3552527156068805e-20,
+        8.551644635479416e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "i": 0,
+      "j": 2,
+      "classification": {
+        "i": 0,
+        "j": 2,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        7.567496364274983e-06,
+        9.177857496697269e-05,
+        -0.00010103512774951672
+      ],
+      "CPU_interactions": [
+        -4.0191930482127346e-22,
+        1.0448945497769846e-20,
+        2.124199813036175e-20
+      ],
+      "CPU_roundoff_bounds": [
+        4.3263528171452606e-14,
+        5.681206771993203e-13,
+        3.570524967992703e-13
+      ],
+      "joint_score_absolute_error": [
+        0.0,
+        1.3552527156068805e-20,
+        1.7889335846010823e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "i": 0,
+      "j": 3,
+      "classification": {
+        "i": 0,
+        "j": 3,
+        "point_disjoint": false,
+        "ssim_disjoint": false
+      },
+      "CPU_joint_score": [
+        7.983532779763186e-06,
+        9.32396251894407e-05,
+        -0.00010819450495067219
+      ],
+      "CPU_interactions": [
+        1.5881867761018131e-22,
+        -3.5998900258307764e-21,
+        8.470329472543003e-21
+      ],
+      "CPU_roundoff_bounds": [
+        4.464353381589515e-14,
+        5.738468156492571e-13,
+        3.7458453571296085e-13
+      ],
+      "joint_score_absolute_error": [
+        0.0,
+        0.0,
+        1.938011383317839e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": false,
+      "SSIM_mosaic_checked": false,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "i": 1,
+      "j": 2,
+      "classification": {
+        "i": 1,
+        "j": 2,
+        "point_disjoint": false,
+        "ssim_disjoint": false
+      },
+      "CPU_joint_score": [
+        -8.584696530298726e-07,
+        -1.0049312959185534e-05,
+        7.2854969651487515e-06
+      ],
+      "CPU_interactions": [
+        2.1597168805876707e-23,
+        2.845501307182415e-22,
+        6.617444900424221e-23
+      ],
+      "CPU_roundoff_bounds": [
+        2.095431748445099e-15,
+        2.5122563618925887e-14,
+        3.7316181508809224e-14
+      ],
+      "joint_score_absolute_error": [
+        2.117582368135751e-22,
+        0.0,
+        6.495895672493229e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": false,
+      "SSIM_mosaic_checked": false,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "i": 1,
+      "j": 3,
+      "classification": {
+        "i": 1,
+        "j": 3,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        -4.4243323754167e-07,
+        -8.58826273671751e-06,
+        1.2611976399329087e-07
+      ],
+      "CPU_interactions": [
+        5.293955920339377e-23,
+        1.4823076576950256e-21,
+        -2.6469779601696886e-22
+      ],
+      "CPU_roundoff_bounds": [
+        3.4754373928876384e-15,
+        3.0848702068862675e-14,
+        5.484822042249976e-14
+      ],
+      "joint_score_absolute_error": [
+        1.5881867761018131e-22,
+        1.6940658945086007e-21,
+        6.641241232286147e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "i": 2,
+      "j": 3,
+      "classification": {
+        "i": 2,
+        "j": 3,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        4.16263995319433e-07,
+        1.4796380908040281e-06,
+        -7.060696567450021e-06
+      ],
+      "CPU_interactions": [
+        2.1597168805876707e-23,
+        -1.3896634290890865e-22,
+        6.617444900424221e-23
+      ],
+      "CPU_roundoff_bounds": [
+        1.455493538422134e-15,
+        6.119338807859683e-15,
+        1.8605963743819993e-14
+      ],
+      "joint_score_absolute_error": [
+        5.293955920339377e-23,
+        2.117582368135751e-22,
+        1.1604351377383915e-19
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "flowers",
+      "view": "old_0",
+      "i": 0,
+      "j": 1,
+      "classification": {
+        "i": 0,
+        "j": 1,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        -6.723250521584382e-09,
+        1.4753601548809824e-06,
+        3.369308381703776e-08
+      ],
+      "CPU_interactions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "CPU_roundoff_bounds": [
+        1.1672574114821172e-15,
+        1.6717574021448947e-14,
+        2.2028526842725778e-14
+      ],
+      "joint_score_absolute_error": [
+        9.098986738083304e-24,
+        0.0,
+        4.192985142476198e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": false
+    },
+    {
+      "scene": "flowers",
+      "view": "old_0",
+      "i": 0,
+      "j": 2,
+      "classification": {
+        "i": 0,
+        "j": 2,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        -7.72621198552144e-10,
+        -1.5753638916509985e-09,
+        1.86298566740996e-08
+      ],
+      "CPU_interactions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "CPU_roundoff_bounds": [
+        1.450378658479784e-17,
+        6.217839968269036e-17,
+        1.54254386009722e-16
+      ],
+      "joint_score_absolute_error": [
+        0.0,
+        0.0,
+        6.819938714377203e-19
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": false
+    },
+    {
+      "scene": "flowers",
+      "view": "old_0",
+      "i": 0,
+      "j": 3,
+      "classification": {
+        "i": 0,
+        "j": 3,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        2.5862038657009234e-06,
+        5.591597472814623e-06,
+        -2.444210394753996e-05
+      ],
+      "CPU_interactions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "CPU_roundoff_bounds": [
+        1.2933106240530783e-14,
+        3.609907494379462e-14,
+        7.420329569074555e-14
+      ],
+      "joint_score_absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        4.3029273720518457e-19
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": false
+    },
+    {
+      "scene": "flowers",
+      "view": "old_0",
+      "i": 1,
+      "j": 2,
+      "classification": {
+        "i": 1,
+        "j": 2,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        -7.495871720136526e-09,
+        1.4737847909893314e-06,
+        5.232294049113737e-08
+      ],
+      "CPU_interactions": [
+        -1.0339757656912846e-25,
+        -5.025122221259643e-23,
+        6.617444900424222e-24
+      ],
+      "CPU_roundoff_bounds": [
+        1.181761198066915e-15,
+        1.6779752421131636e-14,
+        2.21827812287355e-14
+      ],
+      "joint_score_absolute_error": [
+        1.1580528575742387e-23,
+        0.0,
+        4.874866517350611e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "flowers",
+      "view": "old_0",
+      "i": 1,
+      "j": 3,
+      "classification": {
+        "i": 1,
+        "j": 3,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        2.579480615179339e-06,
+        7.066957627695604e-06,
+        -2.4408410863722924e-05
+      ],
+      "CPU_interactions": [
+        -1.1580528575742387e-23,
+        -1.6940658945086007e-21,
+        -1.6543612251060553e-22
+      ],
+      "CPU_roundoff_bounds": [
+        1.4100363652012899e-14,
+        5.2816648965243565e-14,
+        9.623182253347132e-14
+      ],
+      "joint_score_absolute_error": [
+        8.470329472543003e-22,
+        1.6940658945086007e-21,
+        4.628188023797497e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "flowers",
+      "view": "old_0",
+      "i": 2,
+      "j": 3,
+      "classification": {
+        "i": 2,
+        "j": 3,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        2.585431244502371e-06,
+        5.590022108922972e-06,
+        -2.442347409086586e-05
+      ],
+      "CPU_interactions": [
+        -1.6553952008717466e-22,
+        -5.025122221259643e-23,
+        3.110199103199384e-21
+      ],
+      "CPU_roundoff_bounds": [
+        1.294761002711558e-14,
+        3.616125334347731e-14,
+        7.435755007675527e-14
+      ],
+      "joint_score_absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        1.1146953585866592e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "room",
+      "view": "fresh",
+      "i": 0,
+      "j": 1,
+      "classification": {
+        "i": 0,
+        "j": 1,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        2.7311196858541287e-06,
+        2.654248247755501e-05,
+        -8.153168256111607e-05
+      ],
+      "CPU_interactions": [
+        -3.5651484401035493e-22,
+        2.991085094991748e-21,
+        1.5775988642611344e-20
+      ],
+      "CPU_roundoff_bounds": [
+        1.003154361720117e-14,
+        1.2996791142862532e-13,
+        2.6770162049283717e-13
+      ],
+      "joint_score_absolute_error": [
+        4.235164736271502e-22,
+        6.776263578034403e-21,
+        1.383713022634625e-17
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "room",
+      "view": "fresh",
+      "i": 0,
+      "j": 2,
+      "classification": {
+        "i": 0,
+        "j": 2,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        2.7319230429055536e-06,
+        2.6425243732812882e-05,
+        -8.082918417872839e-05
+      ],
+      "CPU_interactions": [
+        1.6150701460097865e-22,
+        1.7155725904349794e-21,
+        6.749793798432706e-21
+      ],
+      "CPU_roundoff_bounds": [
+        1.0133572002129158e-14,
+        1.3061961117912202e-13,
+        2.689443433430375e-13
+      ],
+      "joint_score_absolute_error": [
+        4.235164736271502e-22,
+        3.3881317890172014e-21,
+        1.07742590890747e-17
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "room",
+      "view": "fresh",
+      "i": 0,
+      "j": 3,
+      "classification": {
+        "i": 0,
+        "j": 3,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        2.7349782835306333e-06,
+        2.6559579062377585e-05,
+        -8.287685180115225e-05
+      ],
+      "CPU_interactions": [
+        3.226004388956808e-23,
+        3.970466940254533e-22,
+        4.658681209898652e-21
+      ],
+      "CPU_roundoff_bounds": [
+        1.0029395807863246e-14,
+        1.3071372611310744e-13,
+        2.745323776053682e-13
+      ],
+      "joint_score_absolute_error": [
+        4.235164736271502e-22,
+        0.0,
+        1.4230153513872246e-17
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "room",
+      "view": "fresh",
+      "i": 1,
+      "j": 2,
+      "classification": {
+        "i": 1,
+        "j": 2,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        1.471291822945693e-09,
+        9.640536273175322e-08,
+        -4.465009783049805e-07
+      ],
+      "CPU_interactions": [
+        0.0,
+        8.271806125530277e-24,
+        -2.6469779601696886e-23
+      ],
+      "CPU_roundoff_bounds": [
+        1.8475633919647219e-16,
+        2.4906946448947042e-15,
+        7.57258243020999e-15
+      ],
+      "joint_score_absolute_error": [
+        1.0339757656912846e-24,
+        2.6469779601696886e-23,
+        1.6905189440419733e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "room",
+      "view": "fresh",
+      "i": 1,
+      "j": 3,
+      "classification": {
+        "i": 1,
+        "j": 3,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        4.526532448025505e-09,
+        2.3074069229645728e-07,
+        -2.4941686007288373e-06
+      ],
+      "CPU_interactions": [
+        -8.271806125530277e-25,
+        0.0,
+        1.0587911840678754e-22
+      ],
+      "CPU_roundoff_bounds": [
+        8.058014493055986e-17,
+        2.5848095788801322e-15,
+        1.3160616692540708e-14
+      ],
+      "joint_score_absolute_error": [
+        1.6543612251060553e-24,
+        5.293955920339377e-23,
+        1.7808867716021665e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "room",
+      "view": "fresh",
+      "i": 2,
+      "j": 3,
+      "classification": {
+        "i": 2,
+        "j": 3,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        5.329889499449901e-09,
+        1.1350194755433036e-07,
+        -1.791670218341147e-06
+      ],
+      "CPU_interactions": [
+        -6.203854594147708e-25,
+        -4.963083675318166e-24,
+        3.970466940254533e-22
+      ],
+      "CPU_roundoff_bounds": [
+        1.8260852985854848e-16,
+        3.23650932937684e-15,
+        1.4403339542741063e-14
+      ],
+      "joint_score_absolute_error": [
+        8.271806125530277e-25,
+        0.0,
+        1.300195574035351e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "room",
+      "view": "old_0",
+      "i": 0,
+      "j": 1,
+      "classification": {
+        "i": 0,
+        "j": 1,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        -4.985721141312233e-09,
+        -3.69730539157114e-08,
+        -3.104846212192166e-07
+      ],
+      "CPU_interactions": [
+        7.916376956073898e-26,
+        -6.3007898221812655e-25,
+        2.7568378852743875e-23
+      ],
+      "CPU_roundoff_bounds": [
+        4.388608075923119e-17,
+        9.456612308832637e-16,
+        1.790832066081235e-15
+      ],
+      "joint_score_absolute_error": [
+        0.0,
+        0.0,
+        7.278871753111423e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "room",
+      "view": "old_0",
+      "i": 0,
+      "j": 2,
+      "classification": {
+        "i": 0,
+        "j": 2,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        -6.450313828206212e-08,
+        -8.764452549059894e-07,
+        2.892818126427581e-06
+      ],
+      "CPU_interactions": [
+        -9.019822968522565e-24,
+        -6.680452798646034e-23,
+        -1.3125029875743744e-22
+      ],
+      "CPU_roundoff_bounds": [
+        3.9387414045720305e-16,
+        6.7332280126140984e-15,
+        2.3731309329188076e-14
+      ],
+      "joint_score_absolute_error": [
+        1.3234889800848443e-23,
+        0.0,
+        1.0160160202315333e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "room",
+      "view": "old_0",
+      "i": 0,
+      "j": 3,
+      "classification": {
+        "i": 0,
+        "j": 3,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        -2.680547061162234e-09,
+        7.084990188367023e-08,
+        1.112991331285643e-06
+      ],
+      "CPU_interactions": [
+        7.916376956073898e-26,
+        -6.3007898221812655e-25,
+        8.050793805613765e-23
+      ],
+      "CPU_roundoff_bounds": [
+        1.2250985190884975e-16,
+        3.2169604136326166e-15,
+        2.901683294710686e-14
+      ],
+      "joint_score_absolute_error": [
+        1.2407709188295415e-24,
+        0.0,
+        4.237070560402824e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "room",
+      "view": "old_0",
+      "i": 1,
+      "j": 2,
+      "classification": {
+        "i": 1,
+        "j": 2,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        -6.949308824922965e-08,
+        -9.134662362743339e-07,
+        2.5824762575719946e-06
+      ],
+      "CPU_interactions": [
+        -7.444625512977249e-24,
+        1.3234889800848443e-22,
+        -2.6469779601696886e-22
+      ],
+      "CPU_roundoff_bounds": [
+        4.3771933443870176e-16,
+        7.678456365933213e-15,
+        2.552056720587108e-14
+      ],
+      "joint_score_absolute_error": [
+        0.0,
+        2.117582368135751e-22,
+        6.03807436450228e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "room",
+      "view": "old_0",
+      "i": 1,
+      "j": 3,
+      "classification": {
+        "i": 1,
+        "j": 3,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        -7.67049702832977e-09,
+        3.382892051532557e-08,
+        8.026494624300563e-07
+      ],
+      "CPU_interactions": [
+        -2.0679515313825692e-24,
+        0.0,
+        -3.705769144237564e-22
+      ],
+      "CPU_roundoff_bounds": [
+        1.6635504589034844e-16,
+        4.16218876695173e-15,
+        3.0806090823789855e-14
+      ],
+      "joint_score_absolute_error": [
+        1.6543612251060553e-24,
+        0.0,
+        1.1291266824255044e-17
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    },
+    {
+      "scene": "room",
+      "view": "old_0",
+      "i": 2,
+      "j": 3,
+      "classification": {
+        "i": 2,
+        "j": 3,
+        "point_disjoint": true,
+        "ssim_disjoint": true
+      },
+      "CPU_joint_score": [
+        -6.718791416907965e-08,
+        -8.056432804749524e-07,
+        4.005952210076854e-06
+      ],
+      "CPU_interactions": [
+        -1.2407709188295415e-24,
+        1.3234889800848443e-23,
+        -2.117582368135751e-22
+      ],
+      "CPU_roundoff_bounds": [
+        5.163431055883203e-16,
+        9.949755548682565e-15,
+        5.274656808689669e-14
+      ],
+      "joint_score_absolute_error": [
+        1.3234889800848443e-23,
+        1.0587911840678754e-22,
+        2.9959555344384603e-18
+      ],
+      "PNG8_interaction": 0,
+      "point_mosaic_checked": true,
+      "SSIM_mosaic_checked": true,
+      "unchanged_outside_structural_union": true,
+      "both_single_RGB_effects_nonzero": true
+    }
+  ],
+  "max_CPU_GPU_joint_score_error": 1.4230153513872246e-17,
+  "training": false,
+  "new_native_forwards": 0,
+  "point_disjoint_pairs": 22,
+  "ssim_disjoint_pairs": 22,
+  "nontrivial_ssim_disjoint_pairs": 19,
+  "inputs": {
+    "experiments/tgs_joint_edit_v27/plan.json": "3a42f9b1adb5bd0eaf768010acb31fe12af3bb692b682bbb71fa26ca3dd9c186",
+    "experiments/tgs_joint_edit_v27/results.json": "0041ba436ca753c7c479452390f8647875fe3d475a5ae26886033affa8fa4fb5",
+    "audit_tgs_joint_edit_v27.py": "9419ebd847492d837971c551e1f0d9e15318ac1fd82da3dde6cea084ae5b68fd"
+  }
+}

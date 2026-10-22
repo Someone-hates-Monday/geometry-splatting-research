@@ -1,0 +1,109 @@
+{
+  "epoch": 1792081330.8077853,
+  "source_checks": 290,
+  "input_checks": 319,
+  "streams": {
+    "control": {
+      "updates": 23000,
+      "last_iteration": 29999,
+      "camera_sequence_sha256": "0a18f53767bdbc3328dd0fcd6a5e958e66f80a98c02d79fc1648d35651c714f4",
+      "native_status_counts": {},
+      "empty_samples": 0,
+      "node_count": 0,
+      "gradient_absent_at_optimizer": {
+        "xyz:0": 80,
+        "f_dc:0": 80,
+        "f_rest:0": 80,
+        "opacity:0": 80,
+        "scaling:0": 80,
+        "rotation:0": 80,
+        "sg_axis:0": 80,
+        "sg_sharpness:0": 80,
+        "sg_color:0": 80
+      },
+      "final_gaussians": 928975,
+      "interval_wall_ms_median": 98.30560799997556,
+      "timing_scope": "Intervals after first include original forward/NCC/topology, capture, backward, Adam and checks; excludes separate JSONL/progress write and next clock reset. Not a speed benchmark.",
+      "stream_sha256": "006b02b48066ef30b57bfe39fc36da7d8fc8fdbc4675936abcc40b970c19d260",
+      "zero_NCC_geo_iterations": [
+        9001
+      ],
+      "actual_warp_NCC_calls": 23000,
+      "final_state": {
+        "state_sha256": "ec31416a043685a7fa6b731b1fd0f522052f58e0048ed2bd7228e2204e7ce6fc",
+        "checkpoint_sha256": "cdc459da4c909aab4a3106e35567ff6e7470d7794c8a5f908b36e594e8aad546",
+        "sidecar_sha256": "d76cae179f086077ed906498a57effbe0574928c6f936eb3ff9338ee17fff65a",
+        "gaussians": 928975
+      }
+    },
+    "history_gap": {
+      "updates": 23000,
+      "last_iteration": 29999,
+      "camera_sequence_sha256": "0a18f53767bdbc3328dd0fcd6a5e958e66f80a98c02d79fc1648d35651c714f4",
+      "native_status_counts": {
+        "1": 2498332,
+        "2": 682,
+        "3": 129
+      },
+      "empty_samples": 444857,
+      "node_count": 248076916,
+      "gradient_absent_at_optimizer": {
+        "xyz:0": 80,
+        "f_dc:0": 80,
+        "f_rest:0": 80,
+        "opacity:0": 80,
+        "scaling:0": 80,
+        "rotation:0": 80,
+        "sg_axis:0": 80,
+        "sg_sharpness:0": 80,
+        "sg_color:0": 80
+      },
+      "final_gaussians": 931140,
+      "interval_wall_ms_median": 132.5191190003352,
+      "timing_scope": "Intervals after first include original forward/NCC/topology, capture, backward, Adam and checks; excludes separate JSONL/progress write and next clock reset. Not a speed benchmark.",
+      "stream_sha256": "7f217e19466ccaa0d6de0881264c2f2955dc1f156576328c172667c1c971e3e8",
+      "zero_NCC_geo_iterations": [
+        9001
+      ],
+      "actual_warp_NCC_calls": 23000,
+      "final_state": {
+        "state_sha256": "94a4e10d113da16d5f0099f70a1ea8b327303346e920b5444d2d7d729c054057",
+        "checkpoint_sha256": "413582b5aa2b4a200067007a94fbbe135d419c8a487ed3ff953197f34a29d62c",
+        "sidecar_sha256": "562b0f3017a70c68a850d7285c797a5a5f6fef0b2ddb0b6580130f74ad660a0f",
+        "gaussians": 931140
+      }
+    }
+  },
+  "verifier_sha256": "cf1f073a5e65b4f2bdf737b4f62a48ce5946dcd0fb7bd09e212705241395a5fd",
+  "run_manifest_observed_sha256": "8fa79bf2873efd278176a92f23663478ebb46c9b552a0b06e6a69bd48a8c37ac",
+  "scope": "Actual source/archive/input hashes and serialized scalar/ID records. Does not independently replay all floating-point training updates.",
+  "status": "complete",
+  "audit_gate_pass": true,
+  "pilot_gate_pass": false,
+  "gates": {
+    "geometry": false,
+    "d2s": false,
+    "s2d": false,
+    "test_psnr": true,
+    "test_ssim": true,
+    "capacity": true,
+    "resource_cost": true
+  },
+  "mesh_ratios": {
+    "overall": 1.0026433071966288,
+    "mean_d2s": 1.0020975548891913,
+    "mean_s2d": 1.002944544167404
+  },
+  "test_deltas": {
+    "psnr_global_rgb_db": 0.004528045654296875,
+    "ssim_repository": 0.0008505242211478414
+  },
+  "gaussian_count_ratio": 1.0023305255792674,
+  "training_wall_ratio": 1.3197561499742236,
+  "quality_audited": true,
+  "limitations": [
+    "Exploratory scan55, prior research exposure and transductive SfM.",
+    "One shared warmup pair; evaluator seeds are not independent training replicates.",
+    "Sequential resource accounting including checks and CSR; not a speed benchmark."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-22T08:22:39.454534+00:00",
+  "scope": "Handoff integrity only; no new research experiment, training, CUDA compilation or full historical dependency verification.",
+  "copied_receipts_verified": 286,
+  "copied_receipts_bytes": 2974181,
+  "deleted_paths_absent": 60,
+  "protected_file_hashes_verified": 33,
+  "phase_manifest_hashes_verified": {
+    "tgs_shared_loss_v26": "e0b6f942acc75cd33bc60db31774b40ed00f6020e791508c00c27d39c3acb40a",
+    "tgs_policy_transfer_v28": "b59e5ca48840896b9c5b11b608d71437ac0f47b851fe4f0e8416ebb535564f3a",
+    "tgs_joint_policy_v29": "cfae10b954bf971a9b3e3c18acadeff10e5764bdefaf4226451d0c64933d63c2"
+  },
+  "latex": {
+    "bytes": 161263,
+    "sha256": "88b4d2511bd6d85796d5d3e543865c757e1e7b4dad32711a272a74c5cea24cd0",
+    "note": "Untouched by this handoff; size matches initial observation. No compilation requested or performed."
+  },
+  "links": {
+    "checked_local_links": 986,
+    "missing": []
+  }
+}

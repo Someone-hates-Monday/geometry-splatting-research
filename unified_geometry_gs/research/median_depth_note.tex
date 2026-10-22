@@ -1,0 +1,3050 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=26mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\sgn}{\operatorname{sgn}}
+\newcommand{\ind}{\mathbf{1}}
+\title{Gaussian Geometry and Continuous Median Depths:\\
+Regularity, Adjoint Consistency, and Numerical Stability}
+\author{Working technical note}
+\date{16 October 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+We audit a finite one-dimensional Gaussian stochastic-solid ray model.
+We characterize finite quantile roots and their singular parameter configurations,
+derive a square-root normal form for coincident-peak mixtures, distinguish
+differentiability of a median from that of its interface slope, and construct
+weighted-quantile root brackets with an explicit certificate.
+An exact identity separates ray transmittance from the associated vacancy product.
+We also distinguish depth and Jacobian convergence in a thin-layer limit,
+including regular finite-thickness counterexamples to naive gradient convergence.
+An interval-quantile mean has a slope-free, continuously differentiable spatial
+integral and bounded conditional gradients, at the cost of mixing surfaces
+when its quantile band spans a transmittance plateau.
+These are mathematical supplements and implementation diagnostics.
+For an ideal world-space Gaussian model, we characterize when summed
+absolute directional attenuation admits a single-normal representation,
+and give a sharp spectral lower bound with raw-parameter interval witnesses.
+Matched-primitive contrasts motivate a conditional reparameterization
+recovering exact pinhole ray coefficients from existing affine quantities.
+We also give conditional local Jacobian error bounds for adjoint refinement.
+Separate preprocessing audits diagnose chain-rule discrepancies, a
+quaternion orthogonality defect with sharp quadratic axis-ratio order,
+a tight conditional scale-VJP defect formula with a quartic relative-error
+counterexample, and cancellation in projected covariance determinants.
+Novelty, reconstruction improvements, and end-to-end acceleration have not been established.
+\end{abstract}
+
+\section{Scope and model}
+Geometry-Grounded Gaussian Splatting (GGGS) uses continuous transmittance and
+implicit median-depth differentiation~\cite{gggs}. This note analyzes its
+one-dimensional branch model with a fixed, finite contributor list.
+Let $N\geq1$, $0<\alpha_i<1$, $\sigma_i>0$, $p_i\in\R$, and define
+\begin{align}
+ g_i(t)&=\alpha_i\exp\!\left(-\frac{(t-p_i)^2}{2\sigma_i^2}\right),&
+ v_i(t)&=\sqrt{1-g_i(t)},\\
+ T_i(t)&=\begin{cases}
+ v_i(t),&t\leq p_i,\\
+ (1-\alpha_i)/v_i(t),&t>p_i,
+ \end{cases}&
+ T(t)&=\prod_{i=1}^N T_i(t),\qquad V(t)=\prod_{i=1}^N v_i(t).
+\end{align}
+The ray origin is $-\infty$. Here $\alpha_i$ is an effective ray amplitude,
+not necessarily a learnable three-dimensional center opacity.
+Write
+\[
+ H(t)=-\log T(t),\quad a_i=-\log(1-\alpha_i),\quad
+ A=\sum_i a_i,\quad h=-\log q,\qquad 0<q<1.
+\]
+Screen-space affine projection, contributor changes, opacity clipping, early
+termination, finite precision, and the degenerate plane branch are outside the
+continuous theorems below. A per-view affine vacancy product need not be the
+restriction of one common scalar field in space.
+
+\section{Root existence and regularity}
+\begin{theorem}[Finite roots and the complete critical configuration]
+\label{thm:root}
+$H$ is continuously differentiable and strictly increasing on $\R$, with limits
+$0$ and $A$. The equation $T(t)=q$ has a unique finite root if and only if $A>h$.
+At a finite root $t^*$, $H_t(t^*)=0$ if and only if all peaks equal $t^*$.
+Equivalently, a critical root exists precisely when
+\[
+ p_1=\cdots=p_N=p,\qquad A=2h
+ \quad\left(\prod_i(1-\alpha_i)=q^2\right).
+\]
+At every noncritical root, the root is locally $C^1$ in the continuous
+parameters while the contributor list is fixed.
+\end{theorem}
+\begin{proof}
+Direct differentiation of either branch, including their common limiting
+derivative at $p_i$, gives
+\[
+ H_t(t)=\sum_i
+ \frac{g_i(t)|t-p_i|}{2\sigma_i^2(1-g_i(t))}.
+\]
+Each term is nonnegative and vanishes only at its own peak. Every nonempty
+interval therefore has a strictly positive integral of $H_t$, proving strict
+monotonicity. The limits follow from the branch definitions, so the intermediate
+value theorem proves the root criterion. The sum vanishes precisely when every
+peak equals $t$; at such a point $H(p)=A/2$. The branch values and first
+parameter derivatives match at a peak. The implicit function theorem then
+applies wherever $H_t>0$.
+\end{proof}
+
+\begin{proposition}[Square-root normal form]
+At a critical configuration of Theorem~\ref{thm:root}, let
+\[
+ K=\sum_i\frac{\alpha_i}{4\sigma_i^2(1-\alpha_i)}>0.
+\]
+Perturb only $\alpha_j$ to $\alpha_j+\epsilon$. For sufficiently small
+nonzero $\epsilon$, the finite root satisfies
+\[
+ t^*(\epsilon)-p=
+ -\sgn(\epsilon)\sqrt{\frac{|\epsilon|}{2(1-\alpha_j)K}}
+ +O(|\epsilon|^{3/2}).
+\]
+In particular, the parameter-to-root map is not locally Lipschitz there.
+\end{proposition}
+\begin{proof}
+Taylor expansion on the two sides of the common peak yields
+\[
+ H(p+x)=A/2+Kx|x|+O(x^4).
+\]
+Under the perturbation,
+$A(\epsilon)/2-h=\epsilon/[2(1-\alpha_j)]+O(\epsilon^2)$ and
+$K(\epsilon)=K+O(\epsilon)$. Strict monotonicity determines the sign of the
+root displacement. Substitution in $H(p+x)=h$ first gives
+$x^2=|\epsilon|/[2(1-\alpha_j)K]+O(\epsilon^2)$ and then the stated expansion.
+The square-root leading term excludes a local Lipschitz bound.
+\end{proof}
+
+For one primitive and $q=1/2$, the critical amplitude is $\alpha=3/4$ and the
+leading coefficient is $\sigma\sqrt{8/3}$. This is a singular but admissible
+finite root, not evidence that such configurations explain a reconstruction
+failure. Distinct peaks ensure regularity but do not provide a uniform
+conditioning bound as their separation tends to zero.
+
+\section{Thin layers: depth convergence does not imply gradient convergence}
+Fix distinct ordered peaks $p_1<\cdots<p_N$, fixed $0<\alpha_i<1$,
+and widths $\sigma_i=\varepsilon s_i$ with $s_i>0$ and $\varepsilon\downarrow0$.
+Write $\beta_i=1-\alpha_i$, $C_0=1$, $C_i=\prod_{k\le i}\beta_k$.
+All per-ray opacities, peak order and projections are held fixed.
+Away from the peaks the transmittance tends to the discrete plateau
+$C_i$ between $p_i$ and $p_{i+1}$.
+This is a ray-level comparison with discrete median selection,
+not an equivalence of full GGGS, 2DGS~\cite{twodgs}, or triangle renderers.
+
+\begin{theorem}[Strict-crossing thin-layer limit]
+Suppose $C_j<q<C_{j-1}$, and put $r=q/C_{j-1}$, $\beta=\beta_j$.
+Define
+\[
+ z_0=\begin{cases}
+ -\sqrt{-2\log((1-r^2)/\alpha_j)},&\sqrt\beta\le r<1,\\
+ +\sqrt{-2\log((1-(\beta/r)^2)/\alpha_j)},&\beta<r\le\sqrt\beta.
+ \end{cases}
+\]
+Then $(t_\varepsilon-p_j)/(\varepsilon s_j)\to z_0$, hence
+$t_\varepsilon\to p_j$.
+If also $q\ne C_{j-1}\sqrt{\beta_j}$, then $z_0\ne0$ and, for $N\ge2$,
+\[
+ t_\varepsilon=p_j+\varepsilon s_jz_0+
+ O(\varepsilon e^{-c/\varepsilon^2}),\qquad
+ \frac{\partial t_\varepsilon}{\partial p_i}
+ =\begin{cases}
+ 1+O(\varepsilon^{-1}e^{-c/\varepsilon^2}),&i=j,\\
+ O(\varepsilon^{-1}e^{-c/\varepsilon^2}),&i\ne j,
+ \end{cases}
+\]
+where one may take $c=\Delta^2/(8s_{\max}^2)>0$ with minimum peak
+separation $\Delta$ and $s_{\max}=\max_i s_i$.
+For $N=1$ the isolated-root expression and position derivative one are exact.
+Constants depend on the fixed input; the claim is not uniform as the
+plateau or internal peak margin vanishes.
+\end{theorem}
+\begin{proof}
+In a bounded scaled window $t=p_j+\varepsilon s_jz$, every other peak
+is at distance at least $\Delta/2$ for sufficiently small $\varepsilon$.
+Its Gaussian tail is $O(e^{-c/\varepsilon^2})$.
+Previous layers therefore contribute $\beta_i$ and later layers one,
+up to this error, uniformly in that window. Thus
+$T_\varepsilon(t)=C_{j-1}\psi_{\alpha_j}(z)
+[1+O(e^{-c/\varepsilon^2})]$, where $\psi$ is the isolated-layer
+transmittance. Its strict monotonicity and $\beta<r<1$ bracket a unique
+finite $z_0$ and prove scaled-root convergence.
+When $z_0\ne0$, $\psi'(z_0)\ne0$, so its local inverse is Lipschitz
+and the scaled-root error is $O(e^{-c/\varepsilon^2})$.
+For $F=-\log T$, each layer has nonnegative slope
+\[
+ f_i'(t)=\frac{|t-p_i|\alpha_i
+ e^{-(t-p_i)^2/(2\varepsilon^2s_i^2)}}
+ {2\varepsilon^2s_i^2[1-\alpha_i e^{-(t-p_i)^2/(2\varepsilon^2s_i^2)}]}.
+\]
+The exact position derivative is $f_i'/\sum_k f_k'$ and these
+weights sum to one. The selected slope is bounded below by a
+positive constant times $\varepsilon^{-1}$; other slopes are
+$O(\varepsilon^{-2}e^{-c/\varepsilon^2})$. Their ratios give the claim.
+\end{proof}
+
+The plateau margin $\min(C_{j-1}-q,q-C_j)>0$ therefore controls layer
+selection, while the separate margin
+$|q-C_{j-1}\sqrt{\beta_j}|>0$ controls this Jacobian limit.
+The following counterexample has a positive finite-thickness slope,
+so the discrepancy is not caused by applying IFT at an undefined derivative.
+
+\begin{proposition}[Regular roots with a nonlocal Jacobian limit]
+Let $p=(-1,0,1)$, $\alpha=(1/5,39/64,1/5)$, $s=(1,1,1)$ and $q=1/2$.
+For every $\varepsilon>0$, the unique root is $t_\varepsilon=0$ and
+\[
+ \left(\frac{\partial t_\varepsilon}{\partial p_1},
+ \frac{\partial t_\varepsilon}{\partial p_2},
+ \frac{\partial t_\varepsilon}{\partial p_3}\right)=(1/2,0,1/2),
+ \qquad
+ \frac{\partial t_\varepsilon}{\partial\alpha_2}
+ =-\frac{32}{5}\varepsilon^2
+ \left[e^{1/(2\varepsilon^2)}-\frac15\right].
+\]
+Thus depth converges to the middle peak but its position Jacobian
+never becomes the middle-layer selector, and opacity sensitivity diverges.
+\end{proposition}
+\begin{proof}
+Put $E=e^{-1/(2\varepsilon^2)}$. At zero the outer vacancy factors
+cancel, giving $T(0)=(4/5)(5/8)=1/2$.
+The cumulative plateaus obey $C_2=5/16<q<C_1=4/5$, while
+$C_1\sqrt{\beta_2}=q$. The middle slope is zero, the outer slopes equal,
+and $F'(0)=E/[5\varepsilon^2(1-E/5)]>0$.
+The position weights follow. Since $F_{\alpha_2}(0)=1/(2\beta_2)=32/25$,
+the regular-root IFT gives the stated opacity derivative.
+\end{proof}
+
+If the plateau margin itself vanishes, even layer-valued depth
+convergence can fail. With two layers of opacity $1/2$, $q=1/2$,
+and $p_1<p_2$, the root for every $\varepsilon>0$ is
+\[
+ t_\varepsilon=\frac{s_1p_2+s_2p_1}{s_1+s_2}.
+\]
+Indeed, between the peaks $T=q$ is equivalent to equal squared
+normalized distances to the two peaks. The root remains strictly
+between them. A discrete rule's equality convention cannot be
+inferred by simply taking zero thickness.
+
+Exact symbolic checks, seven 200-digit critical cases, six plateau
+cases and twenty strict noncritical cases are recorded in
+\texttt{thin\_quantile\_limit\_v2.json}. Independent product-$T$
+re-solving verifies opacity finite differences to $2.954\times10^{-8}$
+relative error; steps shrink with the squared Gaussian tail to remain
+inside the shrinking linear neighborhood. Nine input exclusions based
+only on predeclared analytic margins are retained. These tests concern
+an ideal finite-ray model; masks, finite subdivisions, float32 rounding,
+gradient floors, full three-dimensional thinning and quality are outside
+the theorem. Novelty has not been established.
+
+\section{A quantile interval: regularity and the cost of averaging}
+Interval-quantile means are established statistical functionals; see, for
+example, range value at risk~\cite{rvar}. We claim no new statistic or
+statistical robustness theorem. The following result concerns parameter
+regularity in the present finite-ray model.
+
+\begin{theorem}[A continuously differentiable interval depth]
+Fix $C_N<q_l<q_u<1$, $h=q_u-q_l$, and define
+$M=h^{-1}\int_{q_l}^{q_u}t(q)\,dq$.
+In a parameter neighborhood with common fixed finite bracket $[a,b]$
+such that $T(a)>q_u$ and $T(b)<q_l$, one has
+\[
+ M=a+\int_a^b\operatorname{clip}\left(\frac{T(t)-q_l}{h},0,1\right)dt,
+ \qquad
+ M_\theta=\frac1h\int_{\{q_l<T(t)<q_u\}}T_\theta(t)\,dt.
+\]
+The map $M$ is $C^1$ in the internal continuous parameters, even if an
+individual quantile inside the band is critical. For the fixed peak and
+opacity parameterization,
+\[
+ 0\le M_{p_i}\le1,\qquad \sum_i M_{p_i}=1,\qquad
+ -\frac{b-a}{h(1-\alpha_i)}\le M_{\alpha_i}\le0.
+\]
+These bounds require no positive lower bound on the root slope.
+\end{theorem}
+\begin{proof}
+For fixed $q$, $t(q)-a$ is the length of
+$\{t\in[a,b]:q<T(t)\}$. Fubini's theorem gives the clipped integral.
+On a common compact parameter neighborhood, $T$ and its parameter
+partials are continuous and bounded on $[a,b]$. The clip map is
+Lipschitz, and its exceptional levels $T=q_l,q_u$ each contain only one
+point by strict monotonicity. Dominated convergence therefore permits
+parameter differentiation and proves continuity of the integral gradient.
+This argument does not differentiate a critical individual root.
+Since $T_{p_i}=Tf_i'\ge0$ and $\sum_iT_{p_i}=-T_t$, integration from
+$t(q_u)$ to $t(q_l)$ gives the position identities.
+For $e=\exp(-(t-p_i)^2/(2\sigma_i^2))$, the two opacity log-partials are
+\[
+ -\frac{e}{2(1-\alpha_i e)},\qquad
+ -\frac1{1-\alpha_i}+\frac{e}{2(1-\alpha_i e)}.
+\]
+Both are nonpositive with magnitude at most $(1-\alpha_i)^{-1}$.
+Use $T\le1$ and integrate to obtain the opacity bound.
+\end{proof}
+
+The bound is local in a common bracket and depends on band width and
+distance from $\alpha_i=1$. It is not uniform as $h\downarrow0$ or
+over unbounded depth ranges, and is not a bound on all world parameters.
+
+\begin{proposition}[Thin interval depths can mix surfaces]
+Under the fixed, distinct-peak thin-layer assumptions above, put
+$\ell_i=|[q_l,q_u]\cap[C_i,C_{i-1}]|$. Then
+\[
+ M_\varepsilon\longrightarrow\frac1h\sum_i p_i\ell_i,
+ \qquad (M_\varepsilon)_{p_i}\longrightarrow\frac{\ell_i}{h}.
+\]
+If no internal plateau $C_i$, $i<N$, equals either band endpoint, then
+\[
+ (M_\varepsilon)_{\alpha_l}\longrightarrow
+ -\frac1{h(1-\alpha_l)}
+ \sum_{\substack{l\le i<N\\q_l<C_i<q_u}}
+ (p_{i+1}-p_i)C_i.
+\]
+\end{proposition}
+\begin{proof}
+The quantile roots have a common finite bracket for
+$0<\varepsilon\le\varepsilon_0$: Gaussian tails outside a sufficiently
+large interval are uniformly small. Almost every $q$ in the fixed band
+has a strict crossing and a noncritical isolated-layer root, so the
+previous depth and position-weight limits apply. Depths are uniformly
+bounded and the position weights lie in $[0,1]$; dominated convergence
+over $q$ gives the first two limits. At the finitely many exceptional
+levels no individual IFT derivative is needed. The spatial and quantile
+gradient integrals agree by the monotone change of variables away from
+those levels. For the opacity limit use the spatial formula instead:
+between $p_i$ and $p_{i+1}$, $T_\varepsilon\to C_i$ and
+$(T_\varepsilon)_{\alpha_l}\to-C_i/(1-\alpha_l)$ for $i\ge l$, otherwise
+zero. Endpoint exclusion ensures convergence of the band indicator;
+the common bracket and opacity bound permit dominated convergence.
+\end{proof}
+
+An interval entirely inside one layer crossing preserves that layer in
+the thin limit, whereas an interval spanning a plateau mixes depths.
+For $p=(-1,1)$ and $\alpha=(1/2,1/2)$, bands $[.45,.55]$ and
+$[.40,.55]$ tend to depths $0$ and $+1/3$, respectively; neither is a
+surface point. The protocol initially wrote $-1/3$ for the latter by
+a sign error. The unchanged protocol, observed $+1/3$ and dated erratum
+are preserved; no result-based parameter selection was made.
+
+Seven prescribed critical-family cases, a singular single-layer median,
+and twelve plateau/band cases are recorded in
+\texttt{quantile\_band\_v2.json}. For the three-layer family at
+$\varepsilon=.075$, the band $[.45,.55]$ has middle-opacity derivative
+$-0.532260208$ versus approximately $-1.44629\times10^{37}$ for the
+single median; the functions are different.
+Spatial and independently re-solved quantile integrals agree in the
+prescribed forward cases. The first double-precision small-component
+finite difference failed; its source and log are archived.
+Re-integrating at 60 digits with the same $10^{-6}$ step passes the
+original $10^{-5}$ scaled gate (floor $10^{-8}$), with maximum error
+$2.651\times10^{-11}$. This prototype establishes no CUDA speed,
+reconstruction gain, or method novelty, and averaging must be tested
+for surface bias before any training claim.
+
+A subsequent predeclared frozen-ray development check reuses all 3072
+uniformly sampled rays from three saved DTU models. Of these, 2621 have
+a finite median and 2614 have the entire $[.45,.55]$ band finite.
+All 2614 spatial-integral checks and 24 prescribed independent
+forward/finite-difference checks pass. However, 2051/2614 (78.4621\%)
+exceed the predeclared hypothetical thin-mixing threshold, so the
+universal replacement development gate fails and no training is started.
+This proxy is a fixed-parameter thinning calculation, not a measured
+surface error. The band-to-median opacity-gradient norm ratio has
+median $1.01412$ and maximum $267.366$; averaging does not reduce every
+ray's sensitivity. Width-normalized depth shifts exceed $.1$ on
+204/2614 rays, with maximum $145.987$.
+All coefficients are saved as ragged NPZ arrays with model/source hashes.
+These are correlated, frozen affine-reference rays, not independent
+training repeats, full CUDA derivatives, or reconstruction evidence.
+Two subsequently selected extreme rays pass independent product-$T$
+full forward finite differences (maximum relative position/opacity
+errors $6.50\times10^{-8}$/$1.60\times10^{-10}$).
+A separate $q$-space full-VJP quadrature did not converge; its failed
+source and log are preserved. The forward-difference check does not
+repair that quadrature or reverse the failed development gate.
+
+\section{Summed directional attenuation and a single-normal field}
+
+This section concerns ideal world-space Gaussians, separately from the
+per-view affine ray model used elsewhere in this note. Let
+\[
+ G_i(x)=a_i\exp\!\left(-\tfrac12(x-\mu_i)^TP_i(x-\mu_i)\right),
+ \qquad 0<a_i<1,\quad P_i\succ0,
+\]
+and define
+\begin{equation}\label{eq:directional-world}
+ v_i=\sqrt{1-G_i},\qquad
+ b_i=\nabla\log v_i=\frac{G_i}{2(1-G_i)}P_i(x-\mu_i),\qquad
+ K_x(w)=\sum_i|w^Tb_i|.
+\end{equation}
+Fix $x$ throughout the following statements. The question is whether
+$K_x(w)$ equals $|w^Tb|$ for some single vector $b$ and every unit $w$.
+This is the single-normal absolute-gradient form. It is more restrictive
+than the general normal distributions allowed by Objects as
+Volumes~\cite{oav}. GGGS already states a near-side equivalence
+condition~\cite{gggs}, and Gaussian Wrapping already discusses
+multi-view limitations of non-oriented attenuation~\cite{wrapping}.
+We do not claim the general issue as a new observation.
+
+\begin{theorem}[Pointwise compatibility]\label{thm:directional-rank}
+There exists $b\in\R^3$ such that $K_x(w)=|w^Tb|$ for every unit $w$
+if and only if all nonzero $b_i$ are collinear. If the candidate is
+prescribed to be the product-vacancy gradient
+$b=\nabla\log\prod_i v_i=\sum_i b_i$, equality holds if and only if
+all nonzero $b_i$ lie on the same half-line.
+\end{theorem}
+\begin{proof}
+If $b=0$, the sum of nonnegative terms vanishes for every $w$, so
+every $b_i=0$. Otherwise, for every unit $w\perp b$, equality implies
+$\sum_i|w^Tb_i|=0$. Each $b_i$ is therefore perpendicular to the
+entire plane $b^\perp$, hence parallel to $b$. Conversely write
+$b_i=c_i u$ with $\|u\|=1$ and choose $b=(\sum_i|c_i|)u$.
+For the prescribed product gradient the remaining condition is
+$\sum_i|c_i|=|\sum_i c_i|$, precisely the common-sign condition.
+The all-zero case satisfies both statements vacuously.
+\end{proof}
+
+The evenness $K_x(-w)=K_x(w)$ always holds, but does not imply this
+single-normal representation. Pointwise existence of $b$ also does
+not by itself establish a globally integrable gradient field.
+For context, $K_x$ is the support function of the centered zonotope
+$\sum_i[-b_i,b_i]$, whereas $|w^Tb|$ is that of the segment $[-b,b]$.
+These support-function representations and the broader zonotope
+approximation problem are established convex geometry~\cite{siegel,torres}.
+
+\begin{theorem}[Sharp spectral obstruction]\label{thm:directional-bound}
+Let $S=\sum_i b_i b_i^T$ have eigenvalues
+$\lambda_1\ge\lambda_2\ge\lambda_3\ge0$. Then
+\begin{equation}\label{eq:directional-error}
+ E_x:=\inf_{b\in\R^3}\sup_{\|w\|=1}
+       \bigl|K_x(w)-|w^Tb|\bigr|\ \ge\ \sqrt{\lambda_2(S)}.
+\end{equation}
+The constant in this universal inequality is attainable by valid Gaussians.
+\end{theorem}
+\begin{proof}
+For any nonzero candidate $b$, the two-dimensional plane $b^\perp$
+intersects the span of two orthonormal eigenvectors for the largest
+two eigenvalues in a nonzero vector. Choose a unit $w$ in that
+intersection. Then $w^Tb=0$ and
+\[
+ \bigl|K_x(w)-|w^Tb|\bigr|=K_x(w)
+ \ge\sqrt{\sum_i(w^Tb_i)^2}
+ =\sqrt{w^TSw}\ge\sqrt{\lambda_2(S)}.
+\]
+For $b=0$ choose an eigenvector for $\lambda_1$ instead. Taking the
+infimum proves the bound. For sharpness, take $b_1=e_1,b_2=e_2$;
+then $\lambda_2=1$, and the candidate $b=e_1$ has uniform error
+$\sup_{\|w\|=1}|w_2|=1$. To realize these vectors by Gaussians, put
+\[
+ a_1=a_2=\tfrac12,\quad
+ s=\frac{e^{-1/2}}{4-2e^{-1/2}}>0,\quad
+ P_1=P_2=s^{-2}I,\quad \mu_1=-s e_1,\quad \mu_2=-s e_2.
+\]
+Equation~\eqref{eq:directional-world} gives $b_1=e_1,b_2=e_2$ at
+$x=0$. Replacing $\mu_2$ by $+s e_1$ instead gives $b_1=-b_2=e_1$:
+a single-vector representation exists, but the product gradient is zero.
+\end{proof}
+
+The argument uses the standard matrix variational principle and
+$\ell_1\ge\ell_2$, not a new matrix inequality. It supplies a simple
+quantitative certificate for this particular attenuation model.
+
+\begin{proposition}[A two-term certificate]\label{prop:directional-pair}
+For any two terms let $d=\|b_1\times b_2\|^2$ and
+$r=\|b_1\|^2+\|b_2\|^2>0$. Then $E_x\ge\sqrt{d/r}$,
+even after adding any other Gaussian terms.
+\end{proposition}
+\begin{proof}
+The two potentially nonzero eigenvalues of
+$S_{12}=b_1b_1^T+b_2b_2^T$ have product $d$ and sum $r$.
+Thus $\lambda_2(S_{12})=d/\lambda_1(S_{12})\ge d/r$.
+Since $S-S_{12}\succeq0$, eigenvalue monotonicity and
+Theorem~\ref{thm:directional-bound} give the claim.
+\end{proof}
+
+For strictly positive interval bounds $d_-$ and $r_+$, a saved
+rational $L>0$ satisfying $L^2r_+\le d_-$ is a conservative
+absolute error bound, conditional on the validity of the input
+enclosures. The double-precision full-model spectrum and any
+normalization by $\sum_i\|b_i\|$ are separate nominal measurements.
+A subset denominator cannot certify a full-model relative bound.
+
+\paragraph{Real-parameter audit.}
+We fixed 24 query points: for each of eight saved cameras in each of
+scans 37, 55 and 63, the first saved finite affine-median ray was
+backprojected using the saved calibration. These are neither GT
+surface samples nor certified world-model median roots. Each original
+PLY hash matched; all 1,010,226, 1,052,385 and 510,660 primitives,
+respectively, entered the nominal world-field evaluation. Underflow
+counts are retained. For each point two original raw-parameter
+primitives give a strictly positive 80-digit interval certificate;
+the smallest is only $3.4193\times10^{-10}$ in inverse world-coordinate
+units, so positivity alone does not establish a visible effect.
+Across these fixed points the nominal ratio
+$\sqrt{\lambda_2(S)}/\sum_i\|b_i\|$ has minimum $0.00900015$,
+median $0.06790113$ and maximum $0.21308058$. These are not
+interval-certified relative bounds, surface prevalence estimates,
+pixel errors or predicted quality improvements.
+
+An independent replay verified 13 source files and their actual archive
+bytes, 26 artifacts, the three PLY hashes, every query backprojection
+and all 48 raw primitive records. Exact rational arithmetic verifies
+all 24 saved lower-bound inequalities. Independent 120-digit scalar
+differentiation of $\log v_i$ places all 144 spatial derivative
+components inside both 80- and 100-digit interval enclosures.
+The latter are nested inside the former. Symbolic identities and
+64 predeclared numerical direction witnesses also pass.
+Files \texttt{directional\_field\_theory\_v1.json} and
+\texttt{directional\_field\_world\_report\_v1.json} record these checks.
+The mpmath interval implementation is explicitly experimental~\cite{mpmathiv};
+this is reproducible numerical evidence, not proof-assistant certification.
+No production affine-renderer, reconstruction or training conclusion
+follows from this world-model audit. A universal single-normal penalty
+could also suppress legitimate edges or multiple layers. Novelty and
+the relevance of this obstruction to measured reconstruction errors
+remain unresolved.
+
+\paragraph{Same-ray world/affine comparison.}
+An additional exploratory check keeps exactly these 24 saved rays and
+restricts every world Gaussian to each ray without the affine
+contributor selection. For finite camera origin $o$, it uses
+$T_{\mathrm{cam}}(t)=T_{-\infty}(t)/T_{-\infty}(0)$, not an
+unconditional identification of the two start points. All 24 camera
+medians are finite. The world-ray and separate pointwise evaluations
+agree in $\log V$ within $1.98\times10^{-13}$ and in attenuation
+within a scaled $8.47\times10^{-13}$. The largest root log-residual
+is $3.04\times10^{-11}$; this is not an interval-certified root error.
+The absolute world/affine median displacement divided by saved affine
+depth has median $0.0126254\%$ over the 24 rays, with per-scan medians
+$0.0087655\%$, $0.0115090\%$ and $0.0526133\%$.
+The largest case is $2.69459\%$, scan37/camera0041, where depth
+changes from $6.089402428$ to $6.253487084$ in world-coordinate units.
+All cases, including this tail, are retained. Archive and arithmetic
+replay verifies 40 sources, 26 artifacts, three PLYs and all rows;
+it does not independently re-solve every full-model root.
+This comparison jointly changes affine shapes, clipping, primitive
+selection and opacity clamping. It isolates neither a perspective
+effect nor a causal reconstruction defect. In particular, a large
+directional-attenuation difference need not imply a large median-depth
+shift. Without GT or cross-view error comparisons, neither result is
+shown more accurate. See \texttt{world\_affine\_rays\_report\_v1.json}.
+
+\section{Matched ray factors and a perspective reparameterization}
+
+\paragraph{Fixed-input mechanism check.}
+For the same 24 saved rays, an ID-carrying CPU projection reproduces
+every old projection array and every selected ray parameter bitwise.
+On the identical selected primitive set, we evaluate all eight
+combinations of affine/world peak, width and peak amplitude. All
+192 roots are finite; independent re-solving with the original
+\texttt{log\_fields} function agrees within $2.69\times10^{-13}$.
+We average marginal increments over all six factor-addition orders
+(a standard Shapley-style allocation), then follow a fixed path
+removing opacity capping, prefix stopping, eligibility, pixel-tile,
+projection-validity and near-plane restrictions, and finally changing
+the origin convention. All intermediate roots are finite. The
+decomposed signed increments sum to the full world-camera/affine
+contrast within $4.34\times10^{-19}$.
+
+The medians of absolute increments divided by old depth are
+$0.00209194\%$ for peak, $0.0000389273\%$ for width,
+$0.000826298\%$ for amplitude and $0.0115894\%$ for removing
+affine power/opacity eligibility. The median cancellation fraction
+$1-|\sum_j\Delta_j|/\sum_j|\Delta_j|$ is $0.291519$.
+In the largest tail case, the peak allocation is $+0.204732767$
+world units, while removing eligibility contributes $-0.041186829$;
+the final net is $+0.164084657$. Neither a net difference nor this
+order-dependent allocation identifies a unique physical cause or GT
+error. All 69 source/archive entries, 50 artifacts, three PLYs and
+24 packed membership records are verified; the large selection-stage
+roots are not independently re-solved by that replay.
+
+\paragraph{Exact-real setting.}
+Place the pinhole camera at the origin. Let a Gaussian have mean
+$\mu=zq_0$, $q_0=(u_0,v_0,1)^T$, $z>0$, precision $P\succ0$
+and covariance $\Sigma=P^{-1}$. For a pixel let
+$q=q_0+\delta$, $\delta=(\delta_u,\delta_v,0)^T$, and
+$d=q/\|q\|$. Define
+\[
+ r=q_0^Tq_0,\quad b=q_0^TPq_0,\quad
+ t_0=z\sqrt r,\quad s_0=\sqrt{r/b},\quad
+ J=\frac1z\begin{pmatrix}1&0&-u_0\\0&1&-v_0\end{pmatrix}.
+\]
+The center projection is unclipped and the screen covariance has no
+extra kernel. World-space filtering can already be included in $\Sigma$.
+Let $C=J\Sigma J^T$, $E_A=\delta_{xy}^TC^{-1}\delta_{xy}$, and
+let the affine peak shift be the linear Taylor term
+\begin{equation}\label{eq:affine-peak-shift}
+ \Delta_A=z\left(\frac{q_0^T\delta}{\sqrt r}
+       -\frac{\sqrt r\,\delta^TPq_0}{b}\right).
+\end{equation}
+Pixel focal-length scaling can equivalently be absorbed into $C$ and
+$\delta_{xy}$. $E_A$ is computed from the conic, before opacity capping.
+
+\begin{theorem}[Conditional affine-packet identity]\label{thm:packet}
+Set
+\[
+ g=\frac{q_0^T\delta}{r},\quad k=\frac{\delta^T\delta}{r},\quad
+ f=1+2g+k,\quad \ell=g-\frac{\Delta_A}{t_0},\quad
+ \chi=E_A\left(\frac{s_0}{t_0}\right)^2,\quad
+ D=(1+\ell)^2+\chi.
+\]
+Then $f,D>0$, and the exact one-dimensional restriction of the world
+Gaussian to the unit ray $td$ has peak $p$, width $s$ and peak
+amplitude $a$ given by
+\begin{equation}\label{eq:packet-exact}
+ p=\frac{t_0\sqrt f(1+\ell)}{D},\qquad
+ s=\frac{s_0\sqrt f}{\sqrt D},\qquad
+ a=a_0\exp\!\left(-\frac{E_A}{2D}\right),
+\end{equation}
+where $a_0$ is the Gaussian's uncapped world amplitude.
+\end{theorem}
+\begin{proof}
+Use the basis $M=[e_1,e_2,q_0]$, with $\det M=1$ and
+$JM=z^{-1}[I_2,0]$. The block inverse identity for $M^TPM$
+gives the Schur complement
+\[
+ C^{-1}=z^2\left(P_{xy,xy}
+       -\frac{(Pq_0)_{xy}(Pq_0)_{xy}^T}{b}\right),\qquad
+ E_A=z^2\left(\delta^TP\delta
+       -\frac{(\delta^TPq_0)^2}{b}\right).
+\]
+Equation~\eqref{eq:affine-peak-shift} yields
+$\ell=\delta^TPq_0/b$ and
+$\chi=\delta^TP\delta/b-\ell^2\ge0$.
+Consequently $D=q^TPq/b>0$ and $f=\|q\|^2/r>0$.
+Completing the ray quadratic gives
+\[
+ p=\frac{z\|q\|q^TPq_0}{q^TPq},\quad
+ s^2=\frac{\|q\|^2}{q^TPq},\quad
+ E_W=z^2\left(b-\frac{(q^TPq_0)^2}{q^TPq}\right)=\frac{E_A}{D}.
+\]
+Substitution proves all three identities.
+\end{proof}
+
+This is an algebraic expression of the same exact ray model, not a
+second-order truncation. Exact perspective-correct Gaussian evaluation
+already exists in HTGS~\cite{htgs} and 3DGUT~\cite{threedgut}; the
+general concept is not claimed as new. Reusing an affine packet also
+does not establish lower bandwidth, a speedup or a cheaper backward pass.
+The exact-real identity can inherit conic roundoff or a finite-precision
+covariance/precision mismatch. The linear term should be evaluated
+directly as the plane-offset dot product rather than by subtracting
+two already-added depths.
+
+\paragraph{Verified domain and exclusions.}
+Nine symbolic identities, including a general symmetric $3\times3$
+Schur identity and the Taylor derivative, pass. All 64 predeclared
+SPD cases pass the $10^{-8}$ scaled-error criterion with floor
+$10^{-12}$. The real 24-ray selected sets contain 1,992 primitive--ray
+inputs. Exactly 1,946 lie in the unclipped domain and all pass;
+46 clipped-center inputs are retained separately and are not counted
+as passes. An independent 80-digit factor-space calculation from every
+applicable original PLY record gives maximum scaled errors for
+$(p,s,a)$ of $(4.99\times10^{-15},1.66\times10^{-15},
+2.64\times10^{-12})$. It verifies 124 actual source/archive entries,
+50 artifacts, three PLY hashes and all domain classifications.
+Saved binary world directions are used without silently re-normalizing
+camera calibration. High precision is numerical cross-checking, not
+interval or proof-assistant certification.
+
+Files \texttt{perspective\_reparam\_theory\_v1.json} and
+\texttt{perspective\_reparam\_report\_v1.json} record the checks.
+The unclipped expression alone does not cover the 46 excluded inputs;
+a separate clipped-reference expression follows below. Neither identity
+repairs contributor selection or establishes global geometry consistency,
+a full-domain renderer or a quality improvement.
+
+\subsection{Recovering the quadratic form with a clipped projection center}
+
+Retain $\Sigma=P^{-1}$, $P\succ0$, $z>0$ and zero screen kernel.
+Let $\bar q=(\bar u,\bar v,1)^T$ be an arbitrary projection reference,
+possibly clipped, while $\mu=zq_0$. Put $\bar r=\|\bar q\|^2$,
+$\bar b=\bar q^TP\bar q$ and $\bar s^2=\bar r/\bar b$.
+The cached radial depth is $t_0=z\|q_0\|$; write $S_2$ for the screen
+conic, $h$ for the two plane coefficients, and $F$ for the focal matrix.
+The existing quantities recover
+\begin{equation}\label{eq:clipped-schur-recovery}
+ z=\frac{t_0}{\|q_0\|},\quad \bar b=\frac{\bar r}{\bar s^2},\quad
+ c=\frac{Fh\sqrt{\bar r}/z+\bar q_{xy}}{\bar r},\quad
+ K=\frac{FS_2F}{z^2\bar b}.
+\end{equation}
+$q_0$ is obtained from the cached 2D center and calibration, without
+reading the original 3D mean to help the candidate.
+
+\begin{theorem}[Clipped-reference packet identity]\label{thm:clipped-packet}
+For the zero-kernel packet evaluated at $\bar q$, $K\succ0$ and
+\begin{equation}\label{eq:clipped-metric}
+ \bar M^TP\bar M=\bar b
+ \begin{pmatrix}K+cc^T&c\\c^T&1\end{pmatrix},\qquad
+ \bar M=[e_1,e_2,\bar q].
+\end{equation}
+Thus $(\bar b,c,K)$ uniquely determines the six degrees of freedom of $P$.
+For $q=(u,v,1)^T$, define
+\[
+ a=q_{xy}-\bar q_{xy},\quad m=q_{0,xy}-\bar q_{xy},\quad
+ A=1+c^Ta,\quad B=1+c^Tm,\quad D=A^2+a^TKa,\quad C=AB+a^TKm,
+\]
+and
+\begin{equation}\label{eq:clipped-gram}
+ v=Am-Ba,\qquad
+ \Gamma=\det(K)(a_1m_2-a_2m_1)^2+v^TKv\ge0.
+\end{equation}
+Then the exact unit-ray coefficients are
+\[
+ p=z\|q\|\frac{C}{D},\qquad s=\frac{\|q\|}{\sqrt{\bar bD}},\qquad
+ \alpha=a_0\exp\!\left(-\frac{z^2\bar b\Gamma}{2D}\right).
+\]
+\end{theorem}
+\begin{proof}
+The block inverse identity in the basis $\bar M$ gives
+$K=(P_{xy,xy}-\bar bcc^T)/\bar b$ with $c=(P\bar q)_{xy}/\bar b$.
+The implementation's plane encoding is
+$Fh=z(\bar r c-\bar q_{xy})/\sqrt{\bar r}$, yielding
+\eqref{eq:clipped-schur-recovery} and \eqref{eq:clipped-metric}.
+Conversely multiply by $\bar M^{-T}$ and $\bar M^{-1}$ to recover $P$.
+This is the standard Schur/LDL block parameterization, not a new decomposition.
+
+The coordinates of $q,q_0$ in this basis are $(a,1)$ and $(m,1)$.
+Hence $q^TPq=\bar bD>0$, $q^TPq_0=\bar bC$ and
+$q_0^TPq_0=\bar b(B^2+m^TKm)$. Expanding gives
+\[
+ D(B^2+m^TKm)-C^2
+ =\det(K)(a_1m_2-a_2m_1)^2+(Am-Ba)^TK(Am-Ba)=\Gamma.
+\]
+Completing the ray quadratic proves the formulas. The nonnegative
+expression avoids directly subtracting two large energy terms,
+but determinants and cross terms retain floating-point sensitivity.
+\end{proof}
+
+The exact composite ray mapping is independent of $\bar q$.
+An intermediate clipping operation therefore does not by itself
+establish nonsmoothness of the exact final mapping. No boundary
+derivative or universal FP32 guarantee follows from this observation.
+
+\paragraph{Coverage and precision failure.}
+Six general symbolic identities and 128 fixed SPD cases pass, with
+112 clipped cases. All 1,992 original selected primitive--ray inputs
+pass, including the 46 previously excluded, without fallback or
+reselection. Independent 80-digit original-PLY evaluation covers all
+1,992 inputs, with maximum scaled errors
+$(4.72\times10^{-15},1.52\times10^{-15},2.61\times10^{-12})$.
+Replay verifies 180 source/archive entries and 50 artifacts.
+This covers the selected CPU scope, not every primitive/pixel pair
+or nonzero screen kernels.
+
+A subsequent predeclared precision screen preserves a negative result.
+All 1,992 real packets pass after input rounding to FP32, which does
+not include actual FP32 preprocessing. Raw FP64 packet and direct-world
+AD graphs agree for all 71,712 components from 12 parameters and three
+outputs; the largest scaled discrepancy is $4.19\times10^{-7}$ against
+a $10^{-4}$ gate with floor $10^{-8}$. They share the raw transform
+and Torch AD library; shared-primitive atomic accumulation and CUDA
+backward are not tested. All sampled raw centers are away from clip boundaries.
+
+One of 128 FP32 synthetic cases fails the $10^{-5}$ relative peak gate,
+with error $5.29059\times10^{-5}$; the overall development gate stays
+failed. In a post hoc 80-digit calculation, decoding the already-rounded
+packet still gives peak error $1.71395\times10^{-5}$, so raising
+evaluation precision alone does not repair this case. Its peak is about
+$-0.02839818$ and amplitude $2.3005\times10^{-5712}$, zero by double
+underflow. That limits physical relevance but is not used to reclassify
+the failed gate. All inputs are retained. Precision replay verifies
+233 source/archive entries, 51 artifacts and stored gradient arithmetic.
+See \texttt{clipped\_packet\_report\_v1.json} and
+\texttt{clipped\_packet\_precision\_report\_v1.json}.
+An exploratory input-protection screen exhausts 64 combinations on
+the same 1,992 real and 128 synthetic inputs. Two inclusion-minimal
+combinations pass: protecting only $q_0$, or protecting the plane,
+conic and camera geometry. Neither survives a locked, separately
+specified test on 4,096 new same-distribution cases (seed 13017):
+they fail on 13 and 11 cases, respectively, while all-double passes
+all cases. The float32 baseline fails 21; rounded inputs with double
+evaluation fail 11. An independent 80-digit factor oracle preserves
+all classifications on the union of 24 failed cases. The two
+candidates are rejected; these are synthetic numerical inputs,
+not independent real-scene quality evidence.
+
+Finite perturbation analysis explains the distinction between
+absolute and relative peak sensitivity. Write $d=A^2+a^TKa$,
+$C=AB+a^TKm$, $q=C/d$, and suppose
+$|\Delta C|\leq e_C$, $|\Delta d|\leq e_d<d$ and
+$|\Delta(z\|q_{\rm ray}\|)|\leq e_s$. Then
+\[
+ |\Delta q|\leq e_q:=\frac{e_C+|q|e_d}{d-e_d},\qquad
+ |\Delta p|\leq |z\|q_{\rm ray}\||e_q+e_s(|q|+e_q).
+\]
+This follows directly from the difference of two quotients and
+the product rule for finite differences. Relative sensitivity may
+be large when $C$ is close to zero. Explicit bounds for the packet
+variables and conditional log-transmittance/root error are recorded
+in \texttt{PACKET\_CONDITIONING\_THEORY.md}; they require positive
+denominator and slope margins and do not establish full-scene quality.
+
+A two-point witness gives a limited representation obstruction.
+Two legal clipped/SPD packets have identical binary32 input bytes
+but their $10^{-5}$ relative peak acceptance intervals are disjoint.
+A 100-digit interval check gives a separation lower bound about
+$4.92775\times10^{-7}$. Any deterministic decoder receiving only
+those same bytes returns the same value, so cannot satisfy both
+intervals. This concerns the eight-input prototype that directly
+rounds $q_0$; it excludes neither additional metadata nor all
+production UV/intrinsic layouts. The interval library remains a
+trusted experimental dependency, not proof-assistant certification.
+
+A diagnostic extension also launches the copied production CUDA
+preprocessing functions on all 1,992 inputs, including 46 clipped
+ones, with zero culled inputs. Production-UV recovery followed by
+Torch CUDA float32 decoding passes the same local gates; the largest
+peak/width relative and amplitude absolute errors are
+$5.53900\times10^{-7}$, $1.29782\times10^{-6}$ and
+$1.18168\times10^{-5}$. All 5,976 outputs replay bitwise, and
+actual CUDA denominator/determinant/energy checks report no invalid
+inputs. This is a separately compiled diagnostic extension and
+elementwise Torch decoder, not the installed renderer binary or a
+full backward check. It does not reverse the synthetic failures.
+These local checks do not establish GT quality or novelty.
+
+The subsequent inference integration preserves legacy affine selection,
+RGB/normal accumulation, prefix, initialization and subdivision rules,
+and explicitly rejects backward, sampled NCC and integration calls.
+Its one-image smoke passes. However, the predeclared complete-image
+comparison on all 24 development views (10,834,488 pixels) rejects
+the first packet implementation. All saved arrays are finite,
+RGB/alpha/normal remain bitwise identical, and the packet/factor
+valid-depth masks agree. Although each view's common-valid depth
+error at percentile 99 is at most $1.90735\times10^{-6}$, eight
+views fail the $10^{-3}$ maximum absolute-error gate: nine pixels
+exceed it, with maximum $0.17964053$ in model length units.
+The sparse tail is retained rather than excused by the percentile.
+
+Both exact arms use FP64 scalar coefficient evaluation with FP32
+metadata and the legacy FP32 solver. Counterbalanced complete-render
+timing gives packet/factor GPU ratio geometric mean $2.6001822$
+(maximum $2.6573840$); synchronized wall ratio is $2.5999135$.
+This also fails the efficiency gate, and is not a training-throughput
+comparison. No GT-quality or training expansion follows this version.
+See \texttt{FROZEN\_EXACT\_RENDER\_RESULT.md}.
+
+A subsequent, explicitly posthoc analysis retains all nine outliers.
+It captures 17,581 tile candidates and 772 accepted terms from eight
+affected views. An accidental CUDA architecture change rebuilt the
+cached binaries, and restoring the old environment did not recover
+their historical byte identity. The diagnostic therefore pins new
+binary hashes and first requires all eight affected views' depth,
+secant slope, RGB, alpha and normal outputs to replay the old saved
+FP32 bit patterns. All pass. This is output equivalence, not recovery
+of historical hidden buffers or instruction identity. The captured
+prefix is an actual buffer; coefficients and initialization are
+obtained from a separately compiled expression probe.
+
+For both saved coefficient representations on each ray, the exact
+binary-rational product $\prod_i(1-\alpha_i)$ is strictly below
+$1/2$. All 18 models therefore have finite roots; the hypothesized
+false-finite explanation is excluded for these samples. Independent
+120-digit stable log-transmittance roots have strict bracket endpoint
+signs rechecked at 180 digits. These are numerical brackets, not
+outward-rounded interval certificates. At the largest outlier, in
+ray-length units,
+\[
+ \underbrace{-0.1820801374}_{\text{observed packet minus factor}}
+ =\underbrace{-0.1820989237}_{\text{represented mathematical roots}}
+  +\underbrace{0.00001878635}_{\text{remaining numerical/conversion path}}.
+\]
+Across all nine, the absolute remainder is at most
+$8.965\times10^{-5}$ ray-length units and its ratio to the absolute
+observed difference is at most $2.713\%$. The remainder includes
+finite subdivision, arithmetic, interpolation, probe context and
+ray-to-$z$ conversion; it is not attributed solely to product rounding.
+Neither FP32 representation has yet been established as the raw-world
+reference. The true $-T_t$ values at the 18 roots range from
+$3.1154\times10^{-4}$ to $1.9702\times10^{-2}$; these differ from
+the stored secant slopes and do not supply a uniform derivative bound.
+
+A controlled CUDA replay with the same saved coefficients and initial
+bracket, eight subdivisions and five rounds matches all 18 original
+depth and secant-slope bit patterns. It uses the actual initial gate
+$T\leq0.45$ and search radius $0.4$. Replacing the product with FP64
+stable log-transmittance leaves the large packet/factor gap present.
+Thus improving the solver arithmetic alone does not eliminate the
+observed representation discrepancy. The earlier replay's mistaken
+$0.5$ gate is retained as an implementation erratum; all nine initial
+$T$ values are below $0.393823$, so the two gates happened to agree
+on these inputs. No frequency, training-quality, causal or novelty
+claim follows from these selected failure cases.
+See \texttt{EXACT\_OUTLIER\_RESULT.md} and
+\texttt{exact\_outlier\_root\_v1.json}.
+
+The fixed coefficient-factorial follow-up evaluates all eight choices
+of packet/factor amplitude, peak and reciprocal width on each ray.
+All 72 models have finite roots, with 120-digit roots and 180-digit
+endpoint sign checks. Replacing only effective ray amplitude reproduces
+the full replacement within $9.58250\times10^{-7}$ camera-ray units
+on all nine. Replacing peak and reciprocal width together changes
+the factor root by at most $9.58099\times10^{-7}$. Effective amplitude
+includes off-ray energy attenuation; this does not isolate the learned
+opacity parameter. The six replacement-order average is an algebraic
+allocation, not a causal contribution or a jointly realizable 3D model.
+
+\begin{proposition}[A sufficient peak-free gap bound]
+Let $a<b$ and suppose no peak lies in $(a,b)$. Set
+$L=\{i:p_i\leq a\}$, $R=\{i:p_i\geq b\}$,
+$M_L=-\sum_{i\in L}\log(1-\alpha_i)$ and
+$u_i(t)=-\tfrac12\log(1-g_i(t))$. Then, for $a\leq t\leq b$,
+\[
+ M_L-\sum_{i\in L}u_i(a)\ \leq\ H(t)\ \leq\
+ M_L+\sum_{i\in R}u_i(b),\qquad H=-\log T.
+\]
+If the left bound exceeds $\log2$, a finite median root lies to
+the left of $a$; if the right bound is below $\log2$, it lies to
+the right of $b$.
+\end{proposition}
+\begin{proof}
+On this interval, $H=M_L-\sum_Lu_i+\sum_Ru_i$.
+Each left tail is nonnegative and decreasing, and each right tail
+is nonnegative and increasing. Dropping the opposite nonnegative
+tail yields the two bounds. Monotonicity of $H$ gives localization.
+This uses ordinary real-arithmetic monotonicity, without a derivative
+lower bound or a claim of general novelty.
+\end{proof}
+
+Taking the central 60\% of each pair's root gap, all 18 models have
+no interior peak. The sufficient bounds place both models on opposite
+sides in cases 1, 2 and 5; six other single-arm bounds remain
+inconclusive and are retained. Independent 180-digit direct-$H$
+evaluation checks 126 points. At the largest two gap midpoints,
+$H_t$ is approximately $5.584\times10^{-13}$ and
+$6.4\times10^{-161}$, despite regular root-local slopes.
+These are high-precision numerical checks, not directed interval
+certificates; a root-local derivative is not a bound across the gap.
+
+An original-PLY reference also verifies all 772 accepted raw parameter
+rows. Two unrounded high-precision objects are distinguished: a true
+covariance inverse of saved FP32 activated parameters, retaining the
+nonunit quaternion polynomial, and a physical covariance obtained by
+high-precision activation and quaternion normalization of the raw PLY.
+The saved FP32 camera affine map is inverted exactly, so $t$ denotes
+unit camera-ray parameter rather than assumed unit world arclength.
+Explicit covariance inversion at 80 digits and inverse-factor residual
+evaluation at 140 digits agree; all 36 lower-precision root brackets
+retain strict signs at higher precision. Both references find factor
+closer on eight of these nine selected rays, and packet closer on
+case 0. This is a reference-dependent descriptive comparison, not
+GT geometry, significance or a generic precision ranking. Factor
+still has about $1.20971\times10^{-3}$ ray error on case 0.
+
+The actual common preprocessing opacity differs at the last bits
+from the saved activated opacity on 96 of 772 accepted terms, with
+maximum absolute difference $5.96046\times10^{-8}$. Both exact arms
+share the same preprocessing opacity. A third reference holds the
+activated covariance fixed and uses that common opacity; the closer
+counts remain eight versus one. Thus this common amplitude difference
+does not account for the large between-arm contrast. No complete
+backward, quality gain, speed improvement or novelty follows from
+this posthoc analysis. See
+\texttt{EXACT\_OUTLIER\_COEFFICIENT\_RESULT.md}.
+
+\subsection{A coherent factor does not remove the coefficient-precision boundary}
+A fixed CPU follow-up constructs a true inverse factor and writes its
+upper-triangular QR factor as six entries plus camera mean. For the
+standard quaternion polynomial, with $v=(x,y,z)$,
+$k=\lVert q\rVert^2-1$ and $D=1+4k\lVert v\rVert^2\ne0$,
+\[
+ R^{-1}=\frac{R^{\mathsf T}+4kvv^{\mathsf T}}{D}.
+\]
+Indeed, $Rv=v$ and
+$R^{\mathsf T}R=I+4k(\lVert v\rVert^2I-vv^{\mathsf T})$ imply
+$(R^{\mathsf T}+4kvv^{\mathsf T})R=DI$.
+Nine symbolic polynomial components vanish exactly. The identity and
+QR norm preservation are standard algebra, used here to avoid assuming
+that an activated FP32 quaternion matrix is exactly orthogonal.
+
+The preselected cache uses six FP32 triangular entries and three FP64
+camera-mean entries (48 bytes per primitive). All 7,010 fixed coefficient
+inputs are retained. The nine real outlier roots pass the $10^{-3}$
+rule, with maximum error $4.99316\times10^{-5}$ camera-ray units.
+However, 12 of the existing 4,096 geometric constructions fail the
+local coefficient rules, and five of nine critical double-layer roots
+fail. Thus the candidate is rejected. The 72-byte all-FP64 cache is
+only a control: it still rounds the ray coefficients to FP32, and four
+critical roots fail. No full-image timing or training follows.
+
+\begin{proposition}[A finite FP32 ray-coefficient interface limitation]
+There are two legal positive-definite Gaussian worlds with FP32 centers,
+scales and activated amplitudes, whose correctly rounded FP32 arrays
+$(p_i,\rho_i,\alpha_i)_{i=1}^2$ are identical, while their unrounded
+GGGS median roots satisfy $r_A<64/125$ and $r_B>186/125$.
+Consequently, every method producing the same scalar from only these
+identical arrays has worst-case absolute error strictly larger than
+$61/125=0.488$ in camera-ray units on the two worlds.
+\end{proposition}
+\begin{proof}
+Use identity camera and rotation, query $(0,0,1)$, common isotropic
+scale $\varepsilon=8589935/2^{32}$, peak coordinates $1/2$ and $3/2$,
+and activated amplitudes $3/4$ and $1/2$. The second center has zero
+transverse displacement. For the first center take respectively
+\[
+ y_A=7735379/2^{32},\qquad y_B=15470759/2^{33}.
+\]
+All values are binary32, and $y_B-y_A=2^{-33}$. The exact effective
+first-layer amplitudes are
+$\alpha_X=(3/4)\exp[-y_X^2/(2\varepsilon^2)]$.
+Directed interval checks give
+\[
+ \alpha_A\simeq0.5000000205022779>1/2,\qquad
+ \alpha_B\simeq0.4999999942937956<1/2.
+\]
+Both are strictly inside the binary32 nearest-rounding cell
+$(1/2-2^{-26},1/2+2^{-25})$, so both round to $1/2$.
+Peaks are exactly $1/2,3/2$, and both widths have reciprocal
+$1/\varepsilon$; its correctly rounded bits are checked by exact
+rational midpoint comparisons. Thus all six coefficients agree.
+The represented symmetric model has exact root $1$, since the near
+and far vacancy factors cancel there; finite uniqueness follows from
+the positive widths and terminal transmittance $1/4<1/2$.
+
+For the unrounded worlds, 60-digit and 120-digit directed interval
+checks yield $T_A(64/125)<1/2$ and $T_B(186/125)>1/2$.
+Strict monotonicity therefore gives the asserted root localization,
+so $r_B-r_A>122/125$. For any common output $z$, the triangle
+inequality implies
+$\max(|z-r_A|,|z-r_B|)\geq|r_B-r_A|/2>61/125$.
+The concrete sign/rounding certificate trusts the outward interval
+implementation of mpmath; it has not been checked by a proof assistant.
+\end{proof}
+
+This existential witness was selected after observing the fixed critical
+fixtures. It is not a frequency estimate or a claim about all metadata
+layouts: original world parameters and higher-precision ray values
+retain additional information. Complete-renderer eligibility, the
+initial bracket, CUDA instructions, backward and GT geometry were not
+tested by this witness. The failure is relative to the unrounded world
+functional; solving the represented symmetric functional exactly still
+returns its correct root $1$. The candidate result and certificate are
+saved in \texttt{COHERENT\_FACTOR\_RESULT.md} and
+\texttt{coherent\_factor\_audit\_v1.json}; general quantile instability
+and academic novelty remain distinct questions.
+
+\subsection{A conditional precision certificate from the original parameters}
+
+The coefficient-alias construction motivates retaining the source geometry.
+Here a cached factor can propose a root; a separate enclosure must certify it.
+Let $F=\operatorname{diag}(1/s)R^{-1}A^{-1}$ be the exact saved-activated
+precision factor, and let $\widehat Q,U$ be the nominal QR orthogonal and
+cached triangular factors. Directed interval preprocessing supplies
+$\delta_Q\geq\|\widehat Q^\top\widehat Q-I\|_2$, with $\delta_Q<1$.
+The polar factor $Q$ of $\widehat Q$ is orthogonal and satisfies
+\[
+ \|\widehat Q-Q\|_2\leq
+ \frac{\delta_Q}{1+\sqrt{1-\delta_Q}}.
+\]
+Indeed, the singular values of $\widehat Q$ lie between
+$\sqrt{1-\delta_Q}$ and $\sqrt{1+\delta_Q}$; the largest distance to one
+is bounded by the displayed expression. Thus a computable upper bound
+\[
+ \eta\geq\|F-\widehat Q U\|_F+
+ \frac{\delta_Q\|U\|_F}{1+\sqrt{1-\delta_Q}}
+\]
+also bounds $\|Q^\top F-U\|_2$. No reference median is used to form it.
+Let $m_*$ be the exact camera mean and let the cached mean satisfy
+$\|m_*-m\|\leq\nu$. Put $M_*=Q^\top F$ and take a unit camera ray $d$.
+
+\begin{proposition}[A residual-based coefficient enclosure]
+Define $u=Ud$, $v=Um$, $\rho=\|u\|$, $p=u^\top v/\rho^2$,
+$r=v-pu$, $e=\|r\|^2$, and $x=m-pd$.
+Suppose $\rho>\eta$, and put
+\[
+ \zeta=\eta\|x\|+(\|U\|_F+\eta)\nu,
+ \qquad
+ D_p=\frac{\eta\sqrt e+(\rho+\eta)\zeta}{(\rho-\eta)^2},
+ \qquad D_r=\zeta+D_p(\rho+\eta).
+\]
+The original model satisfies
+\[
+ |p_*-p|\leq D_p,\qquad |\rho_*-\rho|\leq\eta,
+ \qquad |e_*-e|\leq2\sqrt e\,D_r+D_r^2.
+\]
+\end{proposition}
+\begin{proof}
+Write $u_*=M_*d$ and $w_*=M_*(m_*-pd)$. Then
+$\|u_*-u\|\leq\eta$ and $\|w_*-r\|\leq\zeta$.
+Since $u^\top r=0$,
+\[
+ p_*-p=\frac{u_*^\top w_*}{\|u_*\|^2},\qquad
+ |u_*^\top w_*|\leq\eta\|r\|+(\rho+\eta)\zeta.
+\]
+The denominator is at least $(\rho-\eta)^2$.
+The true perpendicular residual is $r_*=w_*-(p_*-p)u_*$, so
+$\|r_*-r\|\leq D_r$. The squared-norm perturbation and reverse triangle
+inequality give the remaining bounds.
+\end{proof}
+
+Nominal quantities are themselves evaluated with directed intervals.
+Their coefficient enclosures give intervals for
+$\alpha=\min\{\alpha_{\rm cap},o\exp(-e/2)\}$ and for the monotone
+log-transmittance residual. If certified signs satisfy
+$R(l)<0<R(h)$ and $h-l\leq2\tau$, the unique median lies in $[l,h]$.
+The implementation chooses endpoints within $\tau=10^{-3}$ of its
+candidate, so the candidate has that error bound as well.
+An uncertified low-precision candidate triggers source-preserving
+double reconstruction; failure to certify that result remains unresolved.
+
+Stable evaluation retains amplitude and energy separately. For an uncapped
+layer of amplitude $o<1$,
+\[
+ 1-o e^{-e/2}=(1-o)\left[1+\frac{o}{1-o}
+       \bigl(-\operatorname{expm1}(-e/2)\bigr)\right].
+\]
+This permits a small prefix-mass difference to be evaluated with
+\texttt{log1p}, even when the effective alpha would round to $1/2$.
+Exact binary source offsets are formed before projecting through $U$,
+avoiding subtraction of large collinear vectors. Exact source collinearity
+gives $e=0$; two layers with effective alpha $1/2$ have the analytic root
+$(\rho_1p_1+\rho_2p_2)/(\rho_1+\rho_2)$.
+
+The fixed CPU experiment preserves all 7010 earlier coefficient inputs.
+It additionally locks seed 13019 and 92 models before evaluation:
+64 ordinary, 16 near-threshold, four exactly critical two-layer,
+four tiny-offset two-layer, and four without a finite root.
+All 106 finite old/new models receive certified brackets containing the
+independent reference, and all four no-root classifications pass.
+Seventy-six finite models and four no-root models certify on the low path;
+30 finite models require fallback. The maximum observed root error is
+$1.361841855\times10^{-5}$ in camera-ray units. This selected test set
+does not estimate a real-pixel fallback rate.
+
+An independent world-covariance MP240 check passes 106 endpoint pairs,
+4408 used coefficient enclosures, and all four no-root classifications.
+An exact rational width audit exposed 81 first-version brackets wider
+than $2\times10^{-3}$ by at most $6.680\times10^{-16}$; the archived
+first version is retained. Version two rounds the endpoints inward and
+passes the unchanged width requirement on the identical inputs.
+The cache would contain six F32 factor entries, three F64 means, and two
+F32 budgets, nominally 56 bytes before untested device alignment.
+
+These certificates trust experimental \texttt{mpmath.iv} arithmetic
+with a 53-bit significand and unbounded exponent~\cite{mpmathiv}.
+They are not IEEE FP64 GPU, complete renderer, backward, latency, GT,
+or training-quality evidence. Exact source offsets and exponential-tail
+signs still require a verified device implementation. Mixed precision
+already appears in 3DGS contribution testing~\cite{flicker}; neither
+mixed precision nor generic interval bracketing is claimed as new.
+The particular median certificate's novelty remains unverified.
+
+\paragraph{A device arithmetic component with a signed tail enclosure.}
+The CUDA 12.8 documentation describes its standard mathematical function
+error bounds as results of extensive, non-exhaustive tests, rather than
+guaranteed bounds~\cite{cudamath}. Thus a guessed ULP expansion of those
+functions does not by itself supply a rigorous enclosure. A shared
+host/device reference core instead uses basic directed IEEE operations,
+range reduction, and explicit series remainders. This uses standard
+numerical-analysis ideas, not a claim of new elementary functions.
+
+For $g=\exp(\ell)$ and $b=-\log(1-g)/2$, when $\ell<-40$,
+\[
+ \log b\in
+ [\ell-\log2,\;\ell-\log2+2^{-56}].
+\]
+Indeed, $57\log2<40$ implies $g<2^{-57}$, while
+$1\leq-\log(1-g)/g\leq1/(1-g)$. The additive log correction is bounded
+by $-\log(1-g)\leq g/(1-g)<2^{-56}$.
+The residual's positive and negative terms can therefore be summed after
+a common log scaling, retaining the signs of tails that a binary64
+unscaled value cannot represent. Scaled values below $\exp(-700)$ are
+enclosed by $[0,2^{-1009}]$, since $1009\log2<700$; they are not deleted.
+The required binary64 bounds on $\log2$ are independently checked by
+exact rational atanh series and a geometric remainder.
+
+The native Windows host core passes 774 locked scalar checks and all
+212 bracket endpoints of the 106 finite models. A separately compiled
+CUDA core passes those same 212 endpoints on an RTX 5090 Laptop GPU.
+Its five-batch median event time is $222.9916504$ ms, including output
+allocation/fill and the endpoint kernel. This is a reference-component
+measurement on CPU-provided coefficient intervals and CPU-chosen
+brackets; device preprocessing budgets, mass classification, selection,
+complete root solving, backward, and full-renderer costs are absent.
+The device does not separately test all 774 scalar inputs. These results
+support the checked arithmetic component and do not establish rendering
+efficiency or GT quality. Compiler and IEEE intrinsic semantics remain
+trusted. Sources and all inputs are archived in
+\texttt{strict\_interval\_host\_v1} and
+\texttt{strict\_interval\_cuda\_v1}.
+
+\paragraph{Device source budgets and independently certified root candidates.}
+The subsequent device prototype constructs the interval precision factor
+from source means, scales, quaternion or rotation, and camera affine map.
+A two-pass modified Gram--Schmidt nominal factor supplies $\widehat Q,U$;
+the polar and factor-residual budgets above bound its error without
+assuming an exactly unit rounded quaternion or camera rotation.
+Both low and high caches enclose all 7322 fixed layer inputs in
+58,576 peak/rho/energy/alpha checks. Device terminal-mass classification
+passes all 110 models on both paths.
+
+The device then generates its own root candidates and global brackets.
+It receives only source parameters and model start/count, with no CPU
+candidate, bracket, or MP-root input. Standard mathematical functions
+are permitted in candidate generation; every returned finite value
+still needs the separate strict residual certificate. Low nominal
+coefficients are rounded to F32; a failed certificate triggers a new
+source-amplitude/energy F64 candidate. The tolerance is a binary64
+number strictly below $10^{-3}$, with endpoints rounded inward.
+
+All 106 finite models pass, with 76 low and 30 high certificates, and all
+four no-root classifications are correct. The largest observed root
+error is $1.361838888\times10^{-5}$ camera-ray units. A separate MP240
+world-covariance inverse check verifies 106 newly device-generated
+endpoint pairs, 4408 used coefficient enclosures, exact rational widths,
+and the four mass classifications. The fixed seed was already observed
+in prior CPU/component development, so this is fixed device development,
+not independent unobserved confirmation.
+
+On this diagnostic workload, median CUDA events are $0.441504$ ms for
+7322 dual-path source budgets, $705.173584$ ms for the 110-model root
+and certificate batch, and $705.568237$ ms combined. Output allocation
+and fill are included; host transfers and the full renderer are absent.
+This cost has no end-to-end efficiency adoption result. The prototype
+does not verify renderer selection, its five-step initial range policy,
+world backward, or GT quality. Correct root values do not repair the
+unbounded opacity derivatives of the retained thin critical examples.
+Cheap sufficient certificates and full rendering costs remain next steps.
+
+\paragraph{Exact reciprocal caching: an isolated local efficiency result.}
+A fixed implementation optimization replaces six positive-integer reciprocal
+calls in the strict series core by a constant-memory table for $k=1,\ldots,51$.
+For each entry, exact rational arithmetic verifies adjacent binary64 bounds
+$\ell_k\leq 1/k\leq u_k$ (or equality at a representable reciprocal).
+These are the same directed IEEE endpoints used by the original division;
+the interval multiplication, all other divisions, series degrees, remainders,
+candidate solver, tolerances and inputs remain unchanged.
+The separately rebuilt control and variant produce bitwise-identical complete
+budget and root arrays, including NaN bit patterns, on the same 7322 layer
+inputs and 110 models. The control also matches the archived original outputs.
+An independent CPU audit checks the actual compiled table literals, the six
+isolated source replacements, archive hashes, output bits, exact widths and
+strict residual signs. This inherits the earlier MP240 reference checks
+through output identity; it is not a new unobserved-cohort confirmation.
+
+Five alternating paired CUDA-event batches give combined medians of
+$705.739014$ ms for control and $385.180573$ ms for the variant, and a
+geometric mean paired ratio $0.545837$. The local diagnostic time decreases
+by $45.4163\%$ (speed ratio $1.83205$), passing the preset ratio $\leq0.95$
+and bitwise-equivalence gates. Output allocation and fill are included;
+host transfer, full rendering, backward and training are excluded.
+The first generator run failed a substitution-count assertion before CUDA
+comparison; its source and failure remain archived, and the correction changes
+no gate or input. The successful run is
+\texttt{reciprocal\_root\_v2}. Integer reciprocal caching is an implementation
+optimization, not an established novel mathematical method. The remaining
+strict diagnostic cost does not establish production or GT adoption.
+
+\paragraph{Short sufficient certificates with a retained strict fallback.}
+A single fixed short layer keeps the same source budgets, candidate solver,
+mass classification, tolerance and input cohort. Its normalized-log expansion
+has nine terms and positive remainder at most
+$2z^{19}/[19(1-z^2)]$. Its range-reduced exponential uses degree 12 with
+absolute remainder at most $3r^{13}/13!$ for radius $r\leq1$.
+For radius $r<1/8$, degree-eight log1p and expm1 use the respective bounds
+$r^9/[9(1-r)]$ and $r^9/[9!(1-r)]$. Directed basic operations evaluate
+all these bounds. Short certificates use the same strict opposite endpoint
+signs; failure invokes the original long certificate at the same candidate,
+followed, if necessary, by the existing high path. Standard library ULP
+assumptions are not used for either certificate.
+
+All 774 saved scalar inputs pass independent Decimal240 and MP240 elementary
+checks. All 106 finite models finally use short certificates; 76 use the low
+path and 30 use high. There are nevertheless 30 strict calls on failed low
+attempts; this is not a zero-fallback result. Four no-root classifications
+remain correct. A separate MP240 world inverse check passes all 106 new
+endpoint pairs, 4408 used coefficient checks, scaled enclosures and rational
+widths. On five alternating paired batches against the reciprocal-table
+control, combined CUDA-event medians are $385.132538$ and $245.741669$ ms,
+with geometric mean ratio $0.638155$, a local time reduction of $36.1845\%$.
+This passes the fixed local gate, not full-render or training adoption.
+
+A separate fixed flat family tests successful strict fallback and unresolved
+behavior without altering that cohort or its timing. Eight isotropic single
+primitives have peak 1, amplitude $3/4$, and scale $10^j$, $j=0,\ldots,7$;
+their exact median is 1. The control certifies four. The hybrid certifies
+three through short and one through strict, and retains four unresolved
+cases. All returned certificates pass the independent MP240 single-primitive
+formula and exact width checks. The family supplies no real-pixel prevalence
+estimate or uniform certification guarantee. These are standard series
+implementation bounds; academic novelty, scalable full rendering, world
+backward and GT quality remain unverified.
+
+\paragraph{Actual complete-image contributor capacity.}
+Before moving the local solver into the renderer, an isolated counter is
+inserted at the actual RGB acceptance and first median-iteration acceptance
+sites of the original affine CUDA forward. The same-source control and
+instrumented versions preserve all original RGB, alpha, normal, depth,
+slope and radii bits on all 24 fixed development views, comprising
+10,834,488 pixels. Counting has no list truncation or sampling. Its generated
+source changes only integer counters and additional output channels.
+All initially eligible pixels have equal RGB and first-median acceptance
+counts; original invalid depth values remain unchanged.
+
+There are 9,165,957 initially eligible and 9,145,921 finally valid pixels.
+Accepted-list lengths have median 88, 90th percentile 155, 99th percentile
+234 and maximum 461 in both populations. A capacity of 192 misses 334,083
+initially eligible pixels and 334,072 finally valid pixels, or 3.652688\%
+of the latter. Capacity 256 still misses 41,536 initial pixels. Although 512
+covers this observed cohort, it supplies no universal capacity guarantee.
+The local 192-layer solver therefore cannot be used as a complete-image
+implementation. Dynamic lists must preserve every accepted contributor.
+
+A separate CPU audit recomputes the saved complete depth/slope bit checks,
+counts and histograms and checks 669 sources, 50 artifacts, both generated
+source trees, binaries and vendor identities. RGB/alpha/normal/radii are
+fully compared at runtime but not retained for a second offline bit audit.
+Five alternating native-render pairs per view give a geometric mean
+counting-overhead ratio of 1.025855. This measures the counter, not certified
+rendering or training. Native forward excludes appearance postprocessing;
+all views were already observed in development. The initial UTF8-source
+audit failed under the Windows default GBK decoder; an explicit UTF8 read
+repairs that verifier without changing any experiment data or gate.
+
+\paragraph{Dynamic lists preserve the complete accepted topology.}
+A subsequent private native-forward diagnostic first reads the frozen
+acceptance counts and allocates int64 prefix offsets and int32 ID/position
+pairs. The original first-iteration acceptance site writes each actual
+primitive ID and its position in the original tile point-list. No fixed
+192/256/512 list cap is used. Each write checks both its pixel span and
+the total allocation; an overrun attempt sets bit 1, and an actual/expected
+count mismatch sets bit 2. Nonzero status is a failure, not a certificate.
+
+All 24 views retain 870,178,922 associations, exactly matching the prior
+complete initial-count total. Original native image outputs and counters
+remain bitwise identical. Every slot is filled and every write/checker
+status is zero. An independent GPU checker verifies increasing positions,
+the actual contributor prefix and tile bounds, and the matching point-list
+ID. A separate CPU audit rechecks every saved association with bounded
+memory, including all offsets, counts, ID ranges, within-pixel ordering and
+point-list provenance, with no sampling. It also checks 36 sources, 54
+artifacts, 18 generated sources, binaries, vendor headers and the archive.
+Complete median/counter arrays are audited offline; the original runtime
+RGB/alpha/normal/radii comparisons are not a second saved-array bit audit.
+
+Two separately stored wrong-allocation probes remove or add one slot at
+the first nonzero pixel. They respectively return status 3 and status 2
+only at that pixel; over-allocation leaves exactly one sentinel, and all
+original image bits remain unchanged. These failed inputs do not count
+as successful captured lists.
+
+Per-view records occupy 157--383 MB. Five alternating capture/count pairs
+with allocated lists reused give a geometric mean ratio 1.074844.
+A separate complete workflow, including both forward passes, scan,
+allocation and checker, takes 23.680--50.505 ms in one CUDA-event observation
+per view. Host gaps and synchronization are included; transfer/storage is
+separate. This is a correct topology interface, not a rendering speedup,
+certified full-image root solver, backward or GT result. Shared source
+parameter caches and ray-parallel certification remain to be implemented.
+
+\paragraph{Shared query-independent geometry budgets.}
+The frozen preprocessing is next split at the query boundary: source
+inverse, nominal QR, polar/residual errors and mean budgets are cached per
+primitive and camera; the original query-dependent statements are retained
+verbatim. The diagnostic cache has 28 doubles (224 bytes), including both
+statuses, both upward-F32 factor budgets, the upward-F32 mean budget,
+nominal and interval means, both six-entry factors and padding. It is not
+the proposed 56-byte production layout. True mean intervals are retained
+for the original proven-zero-energy alignment branch.
+
+On all 7322 source rows, complete two-mode budget arrays and all 106 finite
+plus four no-root outputs remain bitwise identical to the frozen reference,
+including NaN payloads. Eight repeated query sets (58,576 rows) also match.
+Five alternating original-repeat versus build-once/cache-decode pairs give
+geometric mean CUDA-event ratio 0.830169, a local time reduction of
+16.9831\%, passing the fixed bitwise and timing gates. Allocation/fill and
+the query ID-range checks are included; host input transfer and full
+rendering/training are absent. Earlier MP240 evidence is inherited through
+output identity, not rerun as a new unobserved cohort.
+
+All primitives in each of the 24 real development cameras also receive
+finite, status-zero caches. Source/model/camera identities match the prior
+CSR inputs; no primitive is dropped by visibility. Per-view cache memory
+is approximately 114--236 MB, with a separate 288-byte source row per
+primitive in this diagnostic. The real cache hashes, error-budget
+statistics and five build event/wall observations are recorded at runtime;
+the real arrays are not retained for a second offline full MP audit.
+The independent audit checks the saved local arrays, unchanged query
+body, 25 sources, 28 artifacts, 12 generated files and real build metadata.
+This does not yet decode all real CSR associations or certify complete
+images, world backward, GT or training performance.
+
+\paragraph{Actual complete CSR coefficient decoding.}
+The next private forward adds only two output channels for the actual
+kernel pixnf coordinates, retaining all original image and counter bits.
+The amplitude is read from the actual conic-opacity buffer, not assumed
+equal to the input opacity. The query bits match all nine earlier anomalous
+ray captures. Source/model/camera identities and every accepted-count map
+match the saved CSR topology.
+
+All 870,178,922 associations in the 24 views are decoded in batches of
+65,536 using int64 offset upper-bound lookup and the frozen shared-cache
+query body. Both modes return status zero and finite valid outputs for
+every association. The maximum temporary double output is 27,262,976 bytes;
+cache, CSR and query/amplitude residency are additional. Batch coverage,
+status counts, output hashes and event/wall costs are saved, but the full
+approximately 362 GB double streams are not retained to recompute every
+hash offline.
+
+Predeclared 48 evenly spaced records per view plus all earlier anomalous-ray
+associations yield 1924 probes. Complete probe arrays are bitwise identical
+to direct preprocessing. Independent MP80/140 world-covariance inverse
+calculations agree and pass 15,392 two-mode peak/rho/uncapped-energy/capped-
+alpha interval checks. The audit checks 39 sources, 74 artifacts, generated
+query/strict sources, binaries and archives. These fixed probes do not
+constitute individual MP checks of all 870 million records or image root
+certificates.
+
+The diagnostic dual-mode decode costs 597.529--2164.430 ms per view in
+summed CUDA events, before CPU transfer, hashing and statistics. This is
+too costly for direct method adoption. In each mode, 21,577 nominal
+double amplitude-times-exponential calculations underflow to zero while
+the strict source intervals remain valid. These records are retained;
+nominal zero does not prove mathematical zero or valid gradients. The
+measurement precedes conversion of candidate alpha to F32. Cheap sufficient
+tests, selective strict fallback and ray-parallel roots remain next steps;
+world backward, GT and training gains are unverified.
+
+\paragraph{Direct F32 product sufficient conditions.}
+The next isolated diagnostic retains the low-mode directed double geometry
+and replaces the alpha exponential and endpoint transmittance product with
+outward F32 intervals. A warp processes each complete CSR ray; no 192-node
+cap or contributor pruning is introduced. For $x\leq0$, range reduction
+$x=k\log2+r$, with $|r|\leq1$, uses the degree-eight exponential polynomial
+and the absolute remainder $3|r|^9/9!$, since $e^{|r|}<3$. The adjacent F32
+enclosure of $\log2$ and the reciprocal coefficient enclosures are verified
+using exact rational arithmetic. For $x<-80$, the enclosure is
+$[0,2^{-115}]$, justified by $115(\log2)_{\rm upper}<80$;
+underflow is not identified with an exact mathematical zero. Multiplication,
+division and square root use CUDA directed intrinsics with FTZ disabled;
+no empirical standard-exponential ULP assumption enters the certificate.
+An uncertain peak-side decision uses the hull of both branch intervals.
+
+\begin{proposition}[Including public-depth rounding in the certificate]
+Let $z$ be the reported finite positive F32 camera depth, promoted exactly,
+and let $q=(q_x,q_y,1)$ contain the actual F32 kernel query coordinates.
+Suppose directed arithmetic encloses $c=z\|q\|$ in $[c_-,c_+]$.
+Choose $0<\tau<10^{-3}$ and form
+\[
+ \ell=\operatorname{round}_{+\infty}(c_+-\tau),\qquad
+ u=\operatorname{round}_{-\infty}(c_-+\tau).
+\]
+For the fixed physical Gaussian contributor list, if $\ell<u$ and valid
+transmittance enclosures satisfy
+$T(\ell)_{\rm lower}>1/2>T(u)_{\rm upper}$, a unique median root $t^*$ exists
+and $|t^*-c|<\tau$.
+\end{proposition}
+\begin{proof}
+The strict inequalities imply that at least one layer has positive
+effective amplitude. Each valid positive-amplitude Gaussian layer is
+strictly decreasing in transmittance over every nonempty interval, even
+if its derivative vanishes at its peak. The full product is continuous and
+strictly decreasing, hence has a unique root between $\ell$ and $u$.
+Directed rounding gives $\ell\geq c_+-\tau\geq c-\tau$ and
+$u\leq c_-+\tau\leq c+\tau$, proving the claimed strict error bound.
+\end{proof}
+The implementation uses the previously rationally verified tolerance
+strictly below $1/1000$. Invalid original depths are separate ``no original
+candidate'' states, not mathematical no-root classifications; a failed
+sufficient test remains unresolved.
+
+All 10,834,488 pixels and their 870,178,922 associations are accounted for
+in 24 frozen development views. Of 9,145,921 valid original depths,
+8,583,586 (93.8515\%) are certified and 562,335 remain unresolved.
+All rays retain their original contributors; no bad-input flag is observed.
+Complete compact outputs are saved. The independent audit checks 25 sources,
+76 artifacts and 4104 scalar enclosures. Predeclared 64 evenly spaced
+eligible pixels per view plus the nine prior anomalies yield 1545 complete
+rays, 145,859 source associations and 583,436 coefficient checks against
+independent MP80/140 world-covariance inverse calculations. All sampled
+coefficient and endpoint bounds pass, including 1410 certified probe rays.
+This is not individual MP verification of all 870 million associations.
+
+An explicitly exploratory follow-up analyzes all 132 unresolved rays within
+that fixed probe set. At the exact public-depth center plus/minus $1/1000$,
+independent MP80/140 signs locate 18 roots before and 114 roots after the
+error band; none is an interval-width-only failure in this subset. All nine
+previous anomalous rays are included. This conditional subset cannot
+estimate the population error rate or reconstruction quality.
+
+The median of three repeated diagnostic events per view ranges from
+57.714 to 134.755 ms, including compact output allocation/fill and kernel.
+Cache construction and existing CSR/query residency are additional.
+The diagnostic is substantially cheaper than the preceding full double
+output audit but remains slower than the original renderer; it is not an
+end-to-end speed result. A dynamic strict root correction for unresolved
+pixels, world VJP, full GT comparisons, training and novelty remain open.
+Reproducible sources and results are recorded in
+\texttt{FLOAT\_PRODUCT\_PROTOCOL.md} and
+\texttt{float\_product\_audit\_v1.json}.
+
+\paragraph{Dynamic correction of all unresolved original-valid rays.}
+The next isolated implementation decodes all 562,335 previously unresolved
+original-valid rays, comprising 28,196,963 source associations. Dynamic
+int64 segments retain all contributors: 320 rays exceed the previous
+192-layer solver cap, and the selected maximum is 372. A warp uses the
+stable nominal source-amplitude/energy prefix shift and scaled tails to
+propose a double root. A rounded numerical zero can only propose a value.
+The public output is then rounded to F32 camera depth and certified around
+its real query-norm center by the preceding proposition. F32 products,
+short bounded scaled-log series and the strict bounded series are tried
+in sequence; a failed low geometry mode is redecoded in the high mode.
+The search uses global peak/reach brackets, rather than claiming identity
+with the legacy initial numerical search interval. The fixed contributor
+list and physical target transmittance are preserved.
+
+The full selected set yields 562,079 certified corrected depths, 256
+certified no-finite-root classifications, and zero remaining unresolved
+states. Of the finite results, 562,050 use low geometry and 29 use high
+geometry; 562,053 finish with F32 product certificates and 26 with short
+scaled-log certificates. Strict fallback is executed, even though no final
+accepted result requires that last certificate. Every certified public
+depth is positive. The original 8,583,586 certified values are not touched;
+the 1,688,567 originally ineligible/no-candidate pixels are not filled.
+Thus this does not claim a valid median for every image pixel.
+
+An independent audit checks 30 sources, 74 artifacts, generated headers,
+actual binaries, source archives and full output/CSR accounting. The
+predeclared union of the earlier 132 unresolved probes and 32 evenly
+spaced unresolved pixels per view contains 891 complete rays and 51,524
+source associations. Independent MP80/140 world-covariance inverses pass
+206,096 coefficient bounds; MP240 stable scaled-log arithmetic verifies
+the saved public F32 endpoint signs and depth bands. All nine earlier
+anomalous rays are corrected and certified. This fixed probe set contains
+no no-root case, so its success alone does not validate that rare branch.
+
+A separately declared exploratory conditional audit therefore checks the
+entire union of all 256 no-root classifications, all 29 high-mode finite
+results and all 26 short-certificate results: 299 rays, 5920 associations
+and 23,680 coefficient checks. All pass, including the finite public
+endpoint tests. Every no-root case has true final transmittance above
+$1/2$, with minimum excess approximately $4.51860\times10^{-5}$.
+This is existence in the fixed physical Gaussian model, not absence of
+a real-world surface. A separate source/artifact audit checks the entire
+conditional selection, query/amplitude/CSR mappings and unchanged saved
+root bits. Conditional rare-branch checks are not random holdout evidence.
+
+The per-view sum of low/high root-event medians over three observations
+ranges from 5.822 to 204.906 ms; single decode-event sums range from
+1.625 to 3258.099 ms. The first-view 3258.099 ms observation is retained
+without attributing it to an unverified loading hypothesis. These selected
+ray diagnostics omit additional cache construction, CPU compaction,
+original-candidate certification and contributor capture/full-renderer
+costs, and are not an end-to-end speed result. Added peak GPU allocation
+is about 774 MB, on top of existing residency. Source world VJP, full GT
+reconstruction, training quality and novelty remain unverified.
+
+\paragraph{World parameter chain and the point used by the adjoint.}
+For a fixed camera ray $o+td$, let $v=\mu-o$, $P=\Sigma^{-1}$,
+$a=d^\top Pd$, $p=d^\top Pv/a$, $\rho=\sqrt a$, and $w=v-pd$.
+With the ray held fixed, exact matrix calculus gives
+\[
+ \delta p=\frac{d^\top P\delta\mu+d^\top\delta P\,w}{a},\quad
+ \delta\rho=\frac{d^\top\delta P\,d}{2\rho},\quad
+ \delta E=2(Pw)^\top\delta\mu+w^\top\delta P\,w.
+\]
+The last identity uses $d^\top Pw=0$, so the variation of the projected
+peak does not enter the energy variation separately. If layer partials
+are denoted by $h_p,h_\rho,h_E$, their precision upstream is
+\[
+ G_P=\frac{h_p}{2a}(dw^\top+wd^\top)
+       +\frac{h_\rho}{2\rho}dd^\top+h_Eww^\top.
+\]
+For the actual invertible quaternion-polynomial matrix $R$, not an assumed
+exact orthogonal rotation, write $F=S^{-1}R^{-1}$ and $P=F^\top F$.
+The corresponding parameter partials are
+\[
+ h_{\log s_j}=-2f_j^\top G_P f_j,\qquad
+ G_R=-2PG_PR^{-\top},
+\]
+where $f_j^\top$ is row $j$ of $F$. These standard chain identities are
+bookkeeping for the implementation, not a novelty claim. The root VJP is
+$-H_\theta/H_t$, and its public camera-depth counterpart additionally
+divides by the fixed actual query norm.
+
+The next CPU audit uses all earlier 891 corrected-ray probes and 51,524
+source nodes. It defines a continuous local extension through the actual
+captured F32 mean, filtered scales, quaternion and amplitude. Filtered
+scales use the ratio of the raw exponential/filter activation to its base
+value; quaternion values add the change in normalized raw quaternion;
+amplitudes multiply the sigmoid, 3D-filter and screen-compensation base
+ratios. Thus the base physical curve is retained while position, raw
+log-scale, quaternion and opacity-logit chains are differentiated. This
+is neither a derivative of the literal discrete IEEE program nor a
+silent replacement by the earlier unrounded raw-physical model.
+The contributor set, filter, camera and query are held fixed.
+
+MP140 world-covariance inverses and analytic parameter chains, followed
+by MP240 stable residual/IFT arithmetic, supply an independent reference.
+The Torch implementation receives only existing certified endpoints and
+source parameters; it polishes its own roots. All 891 references are
+regular and all stored gradient arrays are finite. The predeclared
+relative-L2 $10^{-5}$ and per-block $10^{-4}$ gates pass for 858 rays when
+the adjoint is evaluated at the existing GPU internal candidate, for 345
+at the public F32 depth center, and for all 891 after further root polishing
+in either inverse-factor or dense-inverse arithmetic. The maximum complete
+ray relative-L2 errors are respectively $4.47157\times10^{-3}$,
+$4.48923\times10^{-3}$, $1.86370\times10^{-7}$ and
+$9.86379\times10^{-7}$. Both polished branches pass; no general superiority
+or training improvement follows. Public-center errors include the earlier
+candidate error as well as output rounding.
+
+An independent source/array audit checks 13 sources, 51 artifacts,
+all base/root mappings and every saved per-ray/block statistic. All actual
+views in this batch have screen kernel zero, so they do not empirically
+validate a nonzero screen-compensation derivative. A general-helper V2
+fixes the frozen compensation baseline for gradient-disabled perturbed
+forward calls; all 891 real polished gradients remain bitwise unchanged.
+Three explicitly synthetic kernel-zero/nonzero cases then pass complete
+root central differences, with final relative errors below
+$5.74\times10^{-10}$. These examples are not real reconstruction evidence.
+Retaining and refining an internal root is therefore supported by this
+development audit, but full CUDA backward, topology-changing derivatives,
+GT reconstruction and training quality remain open. A separate fixed-model
+49-view reconstruction protocol is recorded before its results exist.
+
+\paragraph{Full frozen-model reconstruction: quality gate fails.}
+The preregistered follow-up now evaluates the original scan37/55/63
+checkpoints on all 49 training views each, rather than only the earlier
+24 development views. All 147 original RGB/alpha/normal/radii/depth/slope
+outputs match bitwise. The workflow accounts for 66,361,239 pixels and
+5,346,733,664 accepted associations. Among 56,594,143 originally valid
+pixels, 52,932,318 retain their sufficient certificates; the remaining
+3,661,825 yield 3,659,782 certified corrections, 2043 mathematical no-root
+classifications and zero unresolved results. Both branches retain the
+same 24,152,107 valid pixels after the identical ground-truth mask.
+Thus the no-root invalidations do not reduce masked coverage in this test.
+
+The branches use identical RGB, masks, camera intrinsics/extrinsics,
+view order, voxel size $0.002$, depth scale $1$, depth maximum $8$,
+truncation multiplier $4$, block count $50,000$ and largest-component
+postprocessing. Names 0000--0048 are mapped to their actual official
+camera indices; both meshes share one camera-center alignment transform.
+Three fixed official evaluator seeds per branch and scene give 18 runs.
+They are evaluation-sampling repeats, not independent training repeats
+or a statistical confidence statement.
+
+The three-seed mean overall errors, in official DTU millimetres, are
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Scene & Original & Certified correction\\
+\midrule
+scan37 & 0.4605930275 & 0.4605502386\\
+scan55 & 0.3139134531 & 0.3138697150\\
+scan63 & 0.7369190101 & 0.7369960982\\
+\bottomrule
+\end{tabular}
+\end{center}
+The ratio of three-scene mean errors is $0.9999937549$, approximately
+$0.0006245\%$ lower, which fails the preregistered $1\%$ improvement
+threshold. The scene-wise mean surface-to-data error differences are
+$+0.000023823$, $+0.000033254$ and $+0.000505426$ mm; all also fail the
+nonpositive-difference gate. These small changes are not claimed as
+significant reconstruction improvements.
+
+An independent audit checks 97 sources, actual binaries, every saved
+image/root/mask and certificate-accounting array, six mesh outputs and
+all 18 evaluation sources/results. This accounting is not individual MP
+verification of all 5.35 billion associations. Scene wall costs are
+approximately 516, 299 and 370 seconds including storage, CPU TSDF,
+extraction and evaluation waits; complete per-stage costs are retained.
+The numerical correction remains a diagnostic reference, and is rejected
+as a demonstrated frozen-model quality optimization. Source/model files
+and earlier results remain unchanged. A subsequent candidate objective
+must be assessed separately, not credited with results from this failure.
+
+\section{Vacancy and transmittance are conditionally equal}
+\begin{proposition}[Exact history gap]
+For every finite $t$,
+\[
+ \Delta(t):=\log\frac{V(t)}{T(t)}
+ =\sum_{i:p_i<t}\log\frac{1-g_i(t)}{1-\alpha_i}\geq0.
+\]
+Under the strict amplitude assumptions, equality holds if and only if no peak
+has been passed. Consequently, $T(t^*)=q$ implies
+$V(t^*)=q\exp(\Delta(t^*))$, which need not equal $q$.
+\end{proposition}
+\begin{proof}
+Before a peak, $v_i/T_i=1$. After it,
+$v_i/T_i=(1-g_i)/(1-\alpha_i)>1$ because $g_i(t)<\alpha_i$.
+Taking the logarithm of the product proves the identity and equality criterion.
+\end{proof}
+This makes explicit the near-side condition in the GGGS depth discussion.
+It does not contradict the equivalence within that condition.
+For example, two primitives with $\alpha_i=0.4$, peaks $0,1$, and widths
+$0.03$ have final transmittance $0.36$, hence a median root. Yet
+$V(t)>0.5$ everywhere: indeed each $v_i(t)\geq\sqrt{0.6}$, so
+$V(t)\geq0.6>0.5$. A more precise numerical evaluation is unnecessary for
+this counterexample. Reversing a ray can therefore change its median without
+producing a common $V=0.5$ surface.
+Indeed symmetry gives $T(1/2)=0.6$ exactly, so the forward median lies after
+the midpoint, while the reversed world-space median lies before it.
+
+\subsection{A squared history gap removes the median singularity}
+Fix the number of layers and use independent coefficient coordinates
+$\theta=(\alpha_i,p_i,\rho_i)_{i=1}^N$, with $\rho_i=1/\sigma_i$.
+Consider the open domain
+\[
+ \mathcal D=\{0<\alpha_i<1,\ \rho_i>0,\
+ \Omega:=-\textstyle\sum_i\log(1-\alpha_i)>\log2\}.
+\]
+Write $t_*(\theta)$ for the unique finite median,
+$\ell=\log V$, $D(\theta)=\ell(t_*,\theta)+\log2$, and $L=D^2$.
+The preceding identity gives $0\leq D<\log2$.
+
+\begin{theorem}[Continuous first derivatives despite a singular median]
+On $\mathcal D$, $D$ is locally Lipschitz and $L$ is continuously
+differentiable. The singular median set is exactly
+\[
+ \mathcal S=\{p_1=\cdots=p_N,\ \Omega=\log4\}.
+\]
+On $\mathcal S$, $D=L=0$ and $\nabla L=0$. Outside $\mathcal S$,
+\[
+ \nabla D=\ell_\theta-rH_\theta,\qquad
+ r=\frac{\ell_t}{H_t}\in[-1,1],\qquad
+ \nabla L=2D(\ell_\theta-rH_\theta),
+\]
+where partial derivatives on the right hold $t$ fixed at $t_*$.
+No global bound is asserted as $\alpha_i\to1$ or $\rho_i\to\infty$.
+\end{theorem}
+\begin{proof}
+Each layer attenuation is continuously differentiable, strictly increasing
+apart from a zero derivative at its peak, with limits zero and
+$-\log(1-\alpha_i)$. Hence $H(t,\theta)=\log2$ has a unique finite root.
+Given any parameter point, choose two finite strict bracketing endpoints.
+Joint continuity preserves their strict signs nearby. Applying the same
+argument at endpoints arbitrarily close to the unique root proves that
+$t_*$ is continuous.
+
+Let $x_i=(t-p_i)\rho_i$, $u_i=\alpha_i e^{-x_i^2/2}$ and
+$b_i=u_i/[2(1-u_i)]>0$. Direct differentiation yields
+\[
+ \ell_t=\sum_i b_i x_i\rho_i,\qquad
+ H_t=\sum_i b_i|x_i|\rho_i.
+\]
+Thus $H_t=0$ if and only if all peaks coincide with $t$.
+At that point $H=\Omega/2$; the median equation gives
+$\Omega=\log4$. Conversely these conditions give a singular median.
+Also $\ell=-\Omega/2=-\log2$ there, so $D=0$.
+At a regular median, the implicit function theorem gives
+$\nabla t_*=-H_\theta/H_t$ and the stated formula. The triangle
+inequality gives $|r|\leq1$.
+
+Choose a closed Euclidean ball contained in $\mathcal D$. Continuity
+bounds $t_*$ on this ball. All fixed-$t$ first derivatives of $H$ and
+$\ell$ are continuous, including where $t=p_i$: the two layer branches
+have the same value and first derivatives there. On the compact set of
+these parameters and bounded root depths, these derivatives are uniformly
+bounded. Therefore $\|\nabla D\|$ has a uniform bound away from
+$\mathcal S$ within the ball, independently of how small $H_t$ becomes.
+
+For completeness this bound extends across $\mathcal S$, rather than
+merely holding on its complement. A line segment in the ball either has
+at most one point with all peaks equal, or has equal peaks throughout.
+In the latter case, along its affine opacity coordinates,
+\[
+ \frac{d^2\Omega}{ds^2}
+ =\sum_i\frac{(\alpha_i')^2}{(1-\alpha_i(s))^2}.
+\]
+If any opacity direction is nonzero, strict convexity gives at most two
+intersections with $\Omega=\log4$. Otherwise the segment either misses
+$\mathcal S$ or lies entirely in it. Integration of the bounded regular
+derivative along the finitely many complementary subsegments, and
+continuity at their endpoints, bounds the change of $D$ by a constant
+times segment length. If the segment lies in $\mathcal S$, $D$ is zero.
+This proves local Lipschitz continuity.
+
+At $\theta_s\in\mathcal S$, this bound gives
+$L(\theta_s+v)=O(\|v\|^2)$, so $L$ is differentiable there with
+zero derivative. On approaching $\mathcal S$ from its complement,
+$\nabla L=2D\nabla D\to0$, by continuity of $D$ and the same local
+bound. Away from $\mathcal S$, all terms are continuous with $H_t>0$.
+This proves continuous differentiability everywhere in $\mathcal D$.
+\end{proof}
+
+For coefficient implementation let $s_i=1$ before the peak and $s_i=-1$
+after it, and $c_i=b_i(1+rs_i)$. At a regular root,
+\[
+ D_{\alpha_i}=-\frac{c_i}{\alpha_i}
+       -\frac{r\ind[t_*>p_i]}{1-\alpha_i},\quad
+ D_{p_i}=-c_i x_i\rho_i,\quad
+ D_{\rho_i}=\frac{c_i x_i^2}{\rho_i}.
+\]
+Normalize the log densities to form $r$; separately computing a large
+$1/H_t$ is unnecessary. If $A$ and $B$ are the respective sums of
+after-peak and before-peak nonnegative densities, compute
+$1+rs_i$ as $2A/(A+B)$ before a peak and $2B/(A+B)$ after it.
+This avoids cancellation when $r$ rounds to $1$ or $-1$. Also evaluate
+$b_i/\alpha_i=e^{-x_i^2/2}/[2(1-u_i)]$ without division by a tiny
+$\alpha_i$. Real source cases include positive effective amplitudes
+which round to zero in Float64. The audited CPU implementation therefore
+retains a separate log-amplitude input for density normalization; this
+is not an amplitude-only interface guarantee.
+
+\begin{remark}[Smoothness does not establish useful optimization]
+When all peaks coincide, the exact identity is
+$D=[\log4-\Omega]_+$. Thus $L$ is a squared hinge and generally not
+twice differentiable: for one layer at $\alpha=3/4$ its second opacity
+derivatives from below and above are $32$ and $0$.
+More adversely, take two layers with $\alpha_1=\alpha_2=1/2$,
+$p_1=-1$, $p_2=1$, and $\rho_1=\rho_2=\rho$.
+Their exact median is zero, $r=0$, and
+\[
+ D=\log(2-e^{-\rho^2/2}),\qquad
+ L\longrightarrow(\log2)^2,
+ \qquad \|\nabla_\theta L\|=O(\rho^2e^{-\rho^2/2})\longrightarrow0.
+\]
+The loss can therefore remain large with exponentially vanishing
+gradients. It is not a guaranteed remedy for separated surfaces.
+This theorem concerns continuous independent layer coefficients; cap,
+visibility changes and the discrete floating-point input program are
+outside its differentiability claim. Neither novelty nor improved
+training or reconstruction follows from the theorem.
+\end{remark}
+
+The fixed numerical audit passes all eight symbolic identities and
+16 regular synthetic cases: whole-root-composed finite differences
+at steps $10^{-30}$ and $10^{-35}$ have maximum relative error
+$5.41\times10^{-47}$. Four adverse thin-gap cases use 420-digit
+arithmetic and tail-dependent steps down to $10^{-147}$, with two
+step sizes; they confirm, rather than remove, the vanishing-gradient
+counterexample. At $\rho=20$, $L\simeq0.480453$ while the coefficient
+gradient norm is $2.72\times10^{-85}$.
+
+The real-source CPU check retains all 891 fixed development rays,
+51,524 nodes and nine previous anomalies. It rederives coefficients
+by a 140-digit world covariance inverse, refines the reference median
+at 240 digits, and checks the independent history identity. All 891
+Float64 coefficient gradients pass both the whole-ray $10^{-5}$ and
+per-block $10^{-4}$ relative L2 gates; maximum errors are respectively
+$5.70\times10^{-12}$ and $1.16\times10^{-11}$. Five positive
+amplitudes round to zero in Float64. In contrast, evaluation at the
+existing public Float32 depth center passes only 264 of 891 rays,
+with maximum whole-ray relative error $0.004158$.
+An initial implementation stopped on a zero-rounded-amplitude NaN;
+its corrected successor was finite but failed 108 block gates through
+$1-r$ cancellation. Both failures and their original sources remain
+saved. The final artifact audit checks all stored arrays, 55 sources
+and 53 artifacts. These checks establish neither a population error
+rate nor a complete raw-parameter/CUDA training derivative or an
+improvement over ground truth. The squared history gap remains a
+mathematical supplement and a candidate objective with a serious
+optimization limitation.
+
+\subsection{A continuation when no finite median exists}
+The coefficient domain can be enlarged without altering any finite-root
+loss. Define, on $0<\alpha_i<1$ and $\rho_i>0$ with fixed finite $N$,
+\[
+ \overline L(\theta)=
+ \begin{cases}
+  L(\theta),&\Omega>\log2,\\
+  (\log4-\Omega)^2,&\Omega\leq\log2.
+ \end{cases}
+\]
+The second branch penalizes insufficient attenuation; it does not assign
+zero loss to a missing root.
+\begin{theorem}[Continuous first derivatives through the mass boundary]
+The extended loss $\overline L$ is continuously differentiable on this
+entire open coefficient domain. It agrees exactly with the original
+loss wherever a finite median exists. On the insufficient-mass branch,
+\[
+ \overline L_{\alpha_i}=-\frac{2(\log4-\Omega)}{1-\alpha_i},
+ \qquad \overline L_{p_i}=\overline L_{\rho_i}=0.
+\]
+\end{theorem}
+\begin{proof}
+Only $\Omega=\log2$ needs an additional argument. Fix any parameter
+point on that boundary and put $p_{\max}=\max_i p_i$. At every finite
+depth, each positive Gaussian layer has strictly less attenuation than
+its asymptotic total. Consequently
+$H(p_{\max},\theta)<\Omega=\log2$.
+The maximum of finitely many continuous peak coordinates is continuous,
+so this strict inequality persists in an open neighborhood of the point.
+Whenever a finite median exists in this neighborhood, monotonicity places
+it strictly beyond every peak. On that part of the neighborhood,
+$H=\Omega+\ell$, whence the median equation gives
+$D=\ell+\log2=\log4-\Omega$. Thus on both sides of the boundary
+$\overline L$ equals the same smooth formula on an entire neighborhood,
+not merely in a limiting-value sense. Below the boundary that formula is
+smooth; above it the preceding theorem applies. Differentiating the
+smooth formula proves the derivative statement.
+\end{proof}
+
+The extension audit checks 16 fixed random models on both sides of the
+mass boundary against independent root-composed or product-mass finite
+differences at 240 digits; maximum relative error is
+$3.34\times10^{-56}$. Sixteen two-sided seam cases and the exact
+single-layer $\alpha=1/2$ boundary agree with the tail-region formula.
+The two previously missing full/geometry updates are the same real ray,
+with independently computed $\log2-\Omega$ approximately $0.0025415$
+and $0.0025419$. The extended losses are respectively $0.48398274$
+and $0.48398332$, with Float64 value discrepancies below
+$6.0\times10^{-15}$. Their raw directional derivatives agree with
+independent 240-digit composed differences within $2.4\times10^{-14}$
+relative error. These two updates validate this diagnostic extension;
+their original undefined branch means are not overwritten, and no
+full-branch MP or training benefit is inferred.
+
+For fixed geometry, if an earliest peak has effective amplitude at least
+$3/4$, its own attenuation at that peak is at least $\log2$.
+The median therefore lies no later than any peak and $L=0$.
+This sufficient condition needs no coincident peaks. It shows that a
+zero history gap alone does not identify aligned geometry. Whether a
+raw opacity can attain that effective amplitude depends on transverse
+energy, filtering and the amplitude cap; this coefficient-level
+observation is not a claim about every source ray.
+
+\subsection{Raw-parameter and shared-primitive diagnostics}
+The subsequent fixed-source CPU audit includes all 891 rays and 51,524
+nodes. It chains the coefficient adjoint through positions, filtered
+log-scales, normalized raw quaternions, opacity logits and active
+amplitude caps. Source cameras, filters, contributor IDs and visibility
+are fixed, using the previously documented continuous extension through
+captured inputs. The factor implementation passes all 891 comparisons
+against an independent 140/240-digit world-inverse analytic chain:
+maximum whole-ray relative L2 is $4.54\times10^{-11}$, and maximum
+parameter-block error is $2.54\times10^{-10}$. A dense Float64 covariance
+implementation passes only 890 rays, with maximum whole-ray error
+$2.61\times10^{-5}$; the original combined gate remains failed.
+
+Of 42 prespecified re-solved directional checks on 21 rays, 35 pass at
+the prescribed final step $10^{-5}$. A separate follow-up retains all
+seven failures and uses an independent 240-digit composed raw forward:
+all seven agree at micro steps, with last relative errors below
+$6.0\times10^{-17}$. These selected diagnostic checks do not replace
+the original failed finite-step verdict. Three additional nonzero-screen
+kernel cases are synthetic and kept separate. In this real development
+set, 561 rays have loss at least $0.25$, none of which meet the
+prespecified weak scaled-gradient threshold $10^{-8}$. Three zero-loss
+rays have zero gradient. This does not remove the thin-gap counterexample
+or estimate its population frequency.
+
+A common update then links actual primitive IDs across the rays:
+24,007 unique primitives, of which 6,278 repeat, with maximum
+multiplicity 137. Identical raw inputs and scaling for repeated IDs are
+verified; zero-step losses match bit for bit. At equal normalized
+coordinate step $10^{-3}$, the mean loss changes from $0.2891820143$
+to $0.2889393258$ for the full direction and $0.2889393275$ for the
+geometry-only direction. The opacity-only direction gives
+$0.2891811147$. These are fixed-ray loss changes, not ground-truth
+geometry gains. Under the declared parameter scaling, about $99.14\%$
+of aggregate squared gradient energy is in quaternion coordinates;
+this is not an optimizer-independent attribution of training effects.
+At step $10^{-2}$, both full and geometry-only updates lose one finite
+root. Their original branch means are left undefined, preserving all
+891 rays in the accounting.
+
+The original shared central-difference gate has relative error $5.35\%$
+at step $10^{-5}$, dominated by one retained old anomaly. Follow-up
+evaluation of all 891 rays at $10^{-9}$ yields relative error
+$8.58\times10^{-6}$, whereas $10^{-11}$ worsens to
+$2.23\times10^{-4}$. At the dominant point, independent 240-digit
+forward differences give relative errors approximately $5.00\times10^{-12}$
+and $4.67\times10^{-16}$ at these latter two steps. Thus both truncation
+and Float64 resolution limit the finite-difference diagnostic; the
+original gate is not relabeled as passed. None of these local updates
+establishes CUDA correctness, full-visibility training behavior,
+photometric or reconstruction improvements, or novelty.
+
+\subsection{A GPU implementation of the extended loss}
+Loss evaluation can avoid solving two classes of roots. Monotonicity
+and the exact history identity imply
+\[
+ H(p_{\min})\geq\log2\ \Longrightarrow\ \overline L=0,
+ \qquad
+ H(p_{\max})\leq\log2\ \Longrightarrow\
+ \overline L=(\log4-\Omega)^2.
+\]
+The second implication includes the insufficient-mass domain; when
+the median exists it is beyond all peaks, giving the same formula.
+Otherwise the median lies between the extreme peaks. The diagnostic
+CUDA implementation evaluates these branches, independently bisects
+the interior interval, and returns coefficient seeds for
+$(p,\rho,E,A)$; a Float64 factor graph chains these through the full
+captured-source raw model. It receives neither MP roots nor CPU adjoints.
+Separate before/after log-density normalization forms the bounded ratio
+without first computing a large median Jacobian. Compensated prefix
+products and sums stabilize the scaled signed residual. These ordinary
+Float64 branch signs are not interval certificates.
+
+One numerical correction uses a standard linear-algebra identity.
+For invertible $F=S^{-1}R^{-1}$, world displacement $v$ and direction $d$,
+\[
+ E=\frac{\|Fv\mathbin{\times}Fd\|^2}{\|Fd\|^2}
+  =\frac{\|SR^T(v\mathbin{\times}d)\|^2}
+   {(\det S\det R)^2\|Fd\|^2}.
+\]
+This follows from
+$(Fx)\times(Fy)=\det(F)F^{-T}(x\times y)$ and
+$F^{-T}=SR^T$; it does not assume that captured $R$ is orthogonal.
+In the aligned synthetic fixtures this form retains an exact zero
+transverse vector, while subtracting a projected residual introduces
+tiny nonzero derivatives. Screen compensation and its derivatives are
+also identically zero for kernel zero, and are evaluated by that exact
+branch. Neither identity is claimed as new.
+
+The first GPU version passes all 891 real development rays, but only
+28 of 32 subsequent synthetic raw models pass the unchanged per-block
+rules: four mathematically zero geometry blocks reveal roundoff.
+The corrected graph passes all 891 real rays, the original 32 regression
+models and another fixed 32 synthetic models from seed 13019, with
+nonzero screen kernels kept in the synthetic group. The real maximum
+whole-ray relative L2 error against the prior independent MP raw chain
+is $9.15\times10^{-11}$; maximum block error is
+$1.73\times10^{-10}$. All 64 synthetic comparisons pass, with maximum
+whole-ray relative L2 $4.59\times10^{-14}$. The two retained real
+insufficient-mass updates also pass value/directional checks. Ten
+separate coefficient tests include the singular median, mass boundary,
+strict amplitude cap and separated thin gaps; invalid input is explicitly
+rejected. The known vanishing-gradient example remains unchanged.
+
+The real batch takes three numerical branches: 877 interior solves,
+11 tail formulas and three zero losses. No ray is dropped. On the
+RTX 5090 Laptop GPU, the corrected 891-ray geometry/loss/raw-backward
+batch has warm observed times $79.164$, $79.067$, $79.066$ ms;
+the first cold observation is $1045.543$ ms and process peak allocated
+memory is 153,932,288 bytes. These event timings exclude preparation,
+host transfer and compilation. The initial version's separate stage
+probe gives warm medians $5.54$ ms for fields, $72.70$ ms for loss/seeds
+and $10.98$ ms for raw backward, identifying the serial-per-ray kernel
+as a current cost. It is not a full-training acceleration claim.
+Independent source/binary/archive and all-array audits pass. Earlier
+confirmation serialization failures and the original 28/32 numerical
+failure remain recoverable. Training, new real scenes, held-out images,
+ground-truth improvements and novelty are still unverified.
+
+\subsection{Warp-parallel evaluation of the same loss}
+A separate CUDA version distributes each ray over a 32-lane warp, with
+strided contributors, compensated local sums, double-double prefix
+products and a fixed warp reduction tree. It retains the same loss,
+independent root solve, caps and coefficient seeds, and uses the same
+corrected raw graph. It has no silent serial fallback in its numerical
+or timing results. The serial source and binary remain unchanged.
+
+Against the previously saved independent MP raw references, both versions
+pass all 891 real development rays, all 64 synthetic raw fixtures, the
+two retained insufficient-mass updates, and the ten special coefficient
+cases. Two additional rays have 513 and 1025 contributors. In each,
+the prefix without the last primitive has final transmittance above
+$1/2$, while the complete list has final transmittance below $1/2$;
+an independent exact-rational check confirms these inequalities.
+Both long rays pass the full-list MP coefficient comparison and report
+the complete node count. Invalid zero-width input is explicitly rejected.
+The maximum real whole-ray and parameter-block relative errors are
+$9.15\times10^{-11}$ and $1.73\times10^{-10}$, respectively.
+
+In one process on the same device and graph, the two versions alternate
+execution order for ten paired rounds. The first two rounds per version
+are retained as warmups; all eight later observations contribute to the
+reported medians. Complete geometry/loss/raw-backward GPU event medians
+are $79.1189$ ms for serial and $11.9931$ ms for warp, a ratio of
+$0.151583$ (component speedup $6.60$). Loss/seed-only medians are
+$72.7598$ and $5.9131$ ms. Allocation is included; setup, transfer and
+compilation are separate. This is acceleration of this loss implementation
+relative to its serial reference, not of the original renderer or an
+entire training step. The observations are not confidence intervals or
+independent training repetitions. The original correctness gates and
+prespecified full-batch ratio threshold $0.95$ are both met.
+
+An independent audit checks 111 sources, 17 saved artifacts, the actual
+binary, all loss/gradient arrays, the frozen MP reference mapping, exact
+long-ray mass witnesses and all alternating timing observations. An
+earlier runner compiled the same warp kernel and finished timings but
+failed while constructing a summary dictionary; its sources and failed
+terminal state are retained. The corrected runner reuses that binary
+and repeats the same fixed measurement protocol. Its field named
+\texttt{compile\_wall\_seconds} records binary loading time in this
+recovery run, and is not reported as compilation speed.
+The warp version is adopted for the next research adapter. Live sampling,
+full renderer visibility, zero-weight controls, optimizer updates,
+held-out images and ground-truth quality remain to be validated.
+
+\subsection{Live shared-parameter integration smoke}
+The next diagnostic loads the actual 30k PLY models for scans 37, 55,
+63, and uses camera 0000 in each. The original public renderer and the
+private query/CSR captures agree bit for bit on RGB, alpha, normals,
+depth, slope and radii. Actual query coordinates, amplitudes, accepted
+IDs, source coefficients and raw values match the saved probe inputs.
+Only sampled rows are packed to Float64 on GPU; their gradients scatter
+back to the original shared Float32 GaussianModel parameters. The
+corresponding independent MP loss gradients, summed by actual primitive
+ID, agree within whole-array relative L2 errors $4.69\times10^{-8}$,
+$2.57\times10^{-8}$ and $3.85\times10^{-8}$; all raw blocks pass.
+No unintended appearance/color/SG regularizer gradient is observed.
+
+Input compatibility requires an explicit qualification. The original
+PLYs already contain 3431, 1908 and 2443 positive-infinity opacity logits,
+respectively, with no opacity NaN or negative infinity. The initial
+blanket finite-parameter check fails before any optimizer update. The
+amended smoke preserves these exact entries as fixed opaque coordinates,
+with sigmoid value one and exactly zero gradient; their masks and values
+must remain unchanged. It does not clamp or repair the original files.
+All remaining parameters, every gradient and all Adam states must be
+finite. This is not a differentiability claim at an infinite logit, nor
+evidence about the historical cause of those values or prior regressions.
+An unrelated first scatter comparison also used a median-depth reference
+instead of the history-loss reference; that oracle-selection failure is
+retained and corrected by verifying the exact loss-reference mapping.
+
+The sampled smoke batches contain 164, 162 and 167 rays, respectively,
+all nonempty in these observations. Empty-list behavior is explicit:
+the extended objective at $\Omega=0$ is $(\log4)^2=1.9218120557$,
+with zero derivative for the fixed empty contributor graph. A real
+empty ray is tested in scan37. A separate replay fixture combining its
+36 saved nonempty probe rays and one empty ray preserves the denominator:
+the mixed loss matches $(36L+(\log4)^2)/37$ within
+$5.56\times10^{-17}$, its shared gradient has the expected $36/37$
+factor within relative error $8.29\times10^{-8}$, and the all-empty
+gradient is exactly zero. This fixture is not a new native-capture scene.
+
+With original parameters restored between arms, two disabled repeats,
+a computed zero-weight arm and a weight $0.01$ arm each take three
+fresh-Adam RGB-only steps: 36 updates in total, without topology or
+filter changes. The objective uses L1 and SSIM; the full NCC/normal
+training recipe and resumed optimizer are not exercised. Zero-control
+gradient differences pass the prespecified repeat-noise engineering
+bound, not a bitwise or statistical equivalence claim. For example,
+scan37's largest zero-control group difference is $1.0542\%$, versus
+$0.6782\%$ in its disabled repeat. Maximum three-step zero-control
+parameter relative differences are $2.79\times10^{-6}$,
+$8.43\times10^{-6}$ and $4.27\times10^{-6}$. Optimizer bindings,
+finite-state conditions and RNG preservation pass, and original
+parameters and PLY hashes are restored/verified.
+
+Across the positive arm's three pre-update observations, regularizer
+losses change from $0.163931$ to $0.138692$, $0.244935$ to $0.224625$,
+and $0.123730$ to $0.104279$. At the same final observations, the RGB
+mixed losses are slightly higher than the disabled controls. This
+supports an operative regularizer with a local tradeoff, not improved
+image or reconstruction quality. Warm disabled-repeat synchronized
+update-wall medians are $70.71$, $47.25$, $31.30$ ms; positive-arm
+medians are $111.31$, $85.66$, $64.38$ ms. Positive capture alone takes
+approximately $42.32$, $30.51$, $24.20$ ms and packing/preparation/loss
+another $6.36$, $5.37$, $5.92$ ms. These smoke costs include finite and
+binding checks and synchronization, but exclude artifact transfers/writes
+and initial-state restoration. The isolated 12 ms loss result is not
+the full adapter overhead. An independent audit checks all saved replay,
+scatter, sample normalization, opaque masks, controls, inputs and step
+statistics. Full training, held-out scenes/images and GT remain open.
+
+\subsection{Original full-recipe integration diagnostic}
+A separate scan55 diagnostic restores the strictly 42-view-trained
+iteration6999 checkpoint and its runtime sidecar, including optimizer,
+filter, densification statistics, camera queue and RNG. The canonical
+complete-state digest agrees in four separate processes. The initial
+676277 primitives include 752 existing positive-infinite opacity logits,
+handled as the fixed opaque coordinates described above. The original
+NCC and geometric losses have weights $0.6$ and $0.02$; the declared
+depth-normal weight is zero. Actual train/test camera guards enforce
+the 42/7 split for rendering, NCC neighbors and filter updates.
+
+Two disabled repeats, computed zero weight, and weight $0.01$ each
+complete six Adam calls, iterations7000--7005: 24 updates in total.
+Original densification and filtering remain active; all arms have
+677291 primitives after the first densification. Full gradients saved
+immediately after the first backward precede that topology change.
+For position, opacity, scale and rotation, zero-versus-disabled relative
+gradient differences are respectively $1.58\times10^{-7}$,
+$1.51\times10^{-7}$, $4.63\times10^{-5}$ and $3.01\times10^{-4}$.
+Disabled-repeat differences are $1.79\times10^{-7}$,
+$1.36\times10^{-7}$, $6.98\times10^{-5}$ and $2.48\times10^{-4}$.
+All parameter groups pass the prespecified bound
+$\max(10^{-5},5\,\text{repeat difference})$; this is an engineering
+control, not statistical equivalence. Positive-weight first-gradient
+changes in those four geometry groups are approximately $32.89\%$,
+$15.25\%$, $14.83\%$ and $22.72\%$. Thus the regularizer contributes
+to the real full-loss backward. This does not imply every contribution
+survives original parameter replacement during densification.
+
+Each weighted step samples128 uniform image pixels with a separate
+generator; camera/sample sequences agree between weighted controls and
+training RNG is unchanged. Finite-state and optimizer-binding checks
+pass throughout, with the current opacity mask checked around each
+ordinary Adam call. Independent artifact and gradient recomputation
+passes. These camera-varying six-step losses do not establish a quality
+trend. A fixed full-budget paired pilot subsequently tests official DTU
+geometry, seven excluded images, capacity and complete resource cost;
+its quality outcome is pending. No new quality or acceleration claim
+is made from this diagnostic.
+
+\subsection{Fixed-budget full pilot: a negative result}
+Both scan55 branches subsequently restart from the identical common6999
+state and run to30000, each with23000 further Adam calls. Final30000
+includes backward, reporting and saving but no Adam. The control disables
+the new term, and the candidate uses weight0.01. All16 orchestration
+stages finish normally, including official-style mesh evaluation at
+three sampling seeds and all42 TRAIN/seven TEST images. An independent
+audit recomputes the serialized step records, actual final checkpoint
+and runtime-sidecar digests, per-view means and fixed gates.
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Metric & Control & Weight0.01\\
+\midrule
+Mean DTU overall (mm; lower better) & 0.3307163221 & 0.3315905070\\
+TEST global RGB PSNR (dB) & 28.07059016 & 28.07511820\\
+TEST SSIM & 0.899857896 & 0.900708420\\
+TRAIN global RGB PSNR (dB) & 35.54241317 & 35.46370216\\
+Gaussian count & 928975 & 931140\\
+Full training process wall (s) & 2387.70 & 3151.18\\
+\bottomrule
+\end{tabular}
+\end{center}
+Overall worsens by0.26433\%; both directed-distance ratios also exceed1
+(1.00209755 and1.00294454). Thus the prespecified geometry gates fail,
+including the required overall ratio at most0.99. TEST PSNR changes by
+only0.004528dB. Image noninferiority, capacity and resource guards pass,
+but all gates were required. The observed full-process cost increases
+by31.98\%, including full CSR and checks; this is resource accounting,
+not a controlled speed benchmark. One exploratory shared-warmup pair
+and correlated views do not establish significance or general harm.
+The three evaluator seeds are not independent training repetitions.
+
+A declared post-hoc, read-only matched-query diagnostic samples512
+pixels on each of the42 training cameras for both final models. Among
+18344 common nonempty rays, mean implemented loss decreases from
+0.1776675410 to0.0931691978 (47.5598\%). Full-sample means decrease
+from0.4284622530 to0.3498538008; their empty-ray constant contributions
+are0.2746339494 and0.2689142706. All84 saved camera arrays and sample
+identities are independently recomputed. This supports a loss/task
+mismatch in this fitted pair, not a causal explanation or a replacement
+quality criterion. Automatic weight search and expansion of this
+regularizer are stopped; the mathematical and numerical results remain.
+
+\paragraph{Relation to established objectives.}
+Depth concentration already appears in2DGS, with its implemented squared
+NDC-depth distortion detailed in AppendixA~\cite{twodgs}. Triangle
+Splatting also uses distortion/normal terms and a compact triangular
+window~\cite{trianglesplat}; the present Gaussian coefficient theorem
+does not automatically cover that representation. Gaussian Wrapping
+changes the attenuation/normal model and densification to address field
+consistency~\cite{wrapping}. This targeted comparison is not an exhaustive
+novelty search and establishes no superiority of the current loss.
+
+\section{Certified quantile brackets}
+Define the strictly increasing normalized component functions
+$F_i(t)=-\log T_i(t)/a_i$. For $k>0$, set $r=\tfrac12 e^{-k^2/2}$ and
+\[
+ C_+(t)=\sum_i a_i\ind[p_i-k\sigma_i\leq t],
+ \qquad
+ C_-(t)=\sum_i a_i\ind[p_i+k\sigma_i\leq t].
+\]
+For weights $a_i>0$, let
+$Q_b(z)=\inf\{t:\sum_i a_i\ind[z_i\leq t]\geq b\}$.
+\begin{theorem}[Weighted-quantile certificate]
+Suppose $A>h$ and choose
+$0<r<\min\{h/A,1-h/A\}$. With $k=\sqrt{-2\log(2r)}$, the finite values
+\[
+ L=Q_{(h-rA)/(1-r)}(p-k\sigma),\qquad
+ U=Q_{h/(1-r)}(p+k\sigma)
+\]
+satisfy $L\leq t^*\leq U$.
+\end{theorem}
+\begin{proof}
+Convexity and the zero endpoint of $-\log(1-\alpha z)$ give
+$-\log(1-\alpha z)\leq z[-\log(1-\alpha)]$ for $0\leq z\leq1$.
+Thus $F_i(p_i-k\sigma_i)\leq r$ and, by branch symmetry,
+$F_i(p_i+k\sigma_i)\geq1-r$. Splitting contributors according to the two
+thresholds gives
+\[
+ (1-r)C_-(t)\leq H(t)\leq rA+(1-r)C_+(t).
+\]
+For $t<L$, the upper bound is strictly below $h$; continuity implies
+$H(L)\leq h$. At $U$, the lower bound is at least $h$.
+Strict monotonicity proves the result. The condition on $r$ places both
+quantile levels strictly between $0$ and $A$, so both endpoints are finite.
+\end{proof}
+Once a numerical method preserves $H(\ell)\leq h\leq H(u)$, its midpoint
+has absolute root error at most $(u-\ell)/2$. Floating-point endpoint checks
+are still necessary. The current CPU choice
+$r=\tfrac14\min\{h/A,1-h/A\}$ is conservative, with no optimality proof.
+GGGS already identifies adaptive bracketing as a future direction; the present
+certificate alone does not establish a new rendering algorithm.
+
+\section{Differentiating the interface slope}
+Let $S(\theta)=-T_t(t^*(\theta),\theta)=qH_t(t^*(\theta),\theta)$.
+Where $H_t>0$ and the indicated second derivatives exist, the chain rule gives
+\[
+ \frac{dS}{d\theta}
+ =q\left(H_{t\theta}-\frac{H_{tt}H_\theta}{H_t}\right).
+\]
+The root-motion term cannot in general be dropped. Moreover, $H_t>0$ alone
+does not ensure that these second derivatives exist.
+
+\begin{proposition}[A regular root with a slope cusp]
+There are admissible two-primitive configurations for which $t^*(\theta)$ is
+$C^1$ but $S(\theta)$ is not differentiable.
+\end{proposition}
+\begin{proof}
+Take $q=1/2$, $p=(0,0.4)$, $\sigma=(0.1,0.4)$, $\alpha_2=0.8$,
+$b=0.8e^{-1/2}$, and $\alpha_1=1-0.25/(1-b)$.
+Then $T(0)=1/2$ and $H_t(0)>0$ due to the second component.
+Vary only $p_1=\epsilon$. At $\epsilon=0$, $H_{p_1}=0$, so
+$dt^*/d\epsilon=0$ and $t^*(\epsilon)=o(\epsilon)$.
+The first component of $qH_t$ contributes
+\[
+ \frac{q\alpha_1}{2\sigma_1^2(1-\alpha_1)}
+ |\epsilon|+o(|\epsilon|).
+\]
+The second component is smooth near $t=0$ and changes by $o(\epsilon)$.
+The two one-sided derivatives of $S$ are therefore opposite nonzero values.
+\end{proof}
+Away from all contributor peaks, the displayed full derivative is valid.
+At the cusp a chosen subgradient is an additional optimization convention,
+not a classical derivative. Translating all one-dimensional peaks by the
+same constant always translates the root and preserves its slope; this
+provides a useful directional invariance check even where individual
+partial derivatives do not exist.
+
+\section{Local adjoint refinement and its domain of validity}
+We next consider an approximate root $t_0$ and the continuous implicit
+Jacobian $J_*=-H_\theta(t^*)/H_t(t^*)$. This is a Jacobian of the
+underlying continuous root, not the exact derivative of a finite
+subdivision program. Classical inverse quadratic interpolation and
+Halley's rule are established numerical tools~\cite{brentdocs,dlmf}.
+Approximation analyses of one-step differentiation also precede this
+note~\cite{onestep}. The following bounds specialize standard local
+arguments to the quantities needed by this implementation.
+
+\begin{proposition}[Newton with a linearized implicit denominator]
+Let $I$ be an interval containing $t_0,t_1,t^*$ and no contributor peak,
+where $t_1=t_0+d_N$ and
+\[
+ d_N=\frac{T(t_0)-q}{T(t_0)H_t(t_0)},\qquad
+ \widehat D=H_t(t_0)+H_{tt}(t_0)d_N.
+\]
+Assume on $I$ that $|T'|\geq m_F>0$, $|T''|\leq M_F$,
+$H_t\geq m_H>0$, $|H_{tt}|\leq M_H$, $|H_{ttt}|\leq L_H$,
+$\|H_\theta\|\leq B$, and $\|\partial_tH_\theta\|\leq N$.
+Suppose also that $\widehat D\geq m_H/2$. Put $e=|t_0-t^*|$
+and $e_1=|t_1-t^*|$. Then
+\[
+ e_1\leq\frac{M_F}{2m_F}e^2,
+\]
+and the refined estimate $\widehat J=-H_\theta(t_1)/\widehat D$ satisfies
+\[
+ \|\widehat J-J_*\|\leq
+ \frac{2Ne_1}{m_H}+\frac{2B}{m_H^2}
+ \left\{\frac{L_H(e+e_1)^2}{2}+M_He_1\right\}.
+\]
+\end{proposition}
+\begin{proof}
+Taylor expansion of $F=T-q$ between $t_0$ and $t^*$, divided by
+$F'(t_0)$, proves the Newton bound. The denominator remainder obeys
+$|\widehat D-H_t(t_1)|\leq L_Hd_N^2/2$ and
+$|H_t(t_1)-H_t(t^*)|\leq M_He_1$. The numerator difference is at
+most $Ne_1$. Subtract the two ratios, use both denominator lower bounds,
+and note that $|d_N|\leq e+e_1$.
+\end{proof}
+
+For $q=1/2$, write $z_i=(t-p_i)/\sigma_i$ and $R=qH_t$.
+On either smooth branch, direct differentiation yields
+\begin{align}
+ R'&=\frac14\sum_i\frac{g_i\sgn(z_i)}{\sigma_i^2}
+       \frac{1-g_i-z_i^2}{(1-g_i)^2},\\
+ R''&=\frac14\sum_i\frac{g_i|z_i|}{\sigma_i^3}
+       \frac{(1+g_i)z_i^2-3(1-g_i)}{(1-g_i)^3}.
+\end{align}
+With $\rho=(T(t_0)-q)/T(t_0)$, the classical Halley step is
+\[
+ d_H=\frac{\rho}{H_t(t_0)\{1-\tfrac12\rho
+             [1-H_{tt}(t_0)/H_t(t_0)^2]\}},\qquad
+ \widehat R=R+R'd_H+\tfrac12R''d_H^2.
+\]
+
+\begin{proposition}[Conditional cubic Jacobian accuracy]
+Fix an admissible parameter configuration and a simple root $t^*$
+away from every contributor peak. Suppose $T$ is $C^3$, $H$ is $C^4$,
+$H_\theta$ is Lipschitz in $t$, and these derivatives are bounded on
+a neighborhood with $|T'|,H_t$ bounded below by positive constants.
+For $t_0$ sufficiently close to $t^*$, let $t_H=t_0+d_H$ and define
+$\widehat J_H=-qH_\theta(t_H)/\widehat R$. Then
+\[
+ |t_H-t^*|=O(|t_0-t^*|^3),\qquad
+ \|\widehat J_H-J_*\|=O(|t_0-t^*|^3).
+\]
+The constants and neighborhood depend on the fixed configuration.
+\end{proposition}
+\begin{proof}
+Write $f_1=F'(t^*)\ne0$, $a=F''(t^*)/(2f_1)$ and
+$b=F'''(t^*)/(6f_1)$. For signed $u=t_0-t^*$,
+$F(t_0)/f_1=u+au^2+bu^3+o(u^3)$,
+$F'(t_0)/f_1=1+2au+3bu^2+o(u^2)$ and
+$F''(t_0)/f_1=2a+6bu+o(u)$. Substitution into
+$t_H=t_0-2FF'/(2(F')^2-FF'')$ gives
+$t_H-t^*=(a^2-b)u^3+o(u^3)$. The denominator is nonzero
+for $u$ sufficiently small. Since $R=qH_t$ is $C^3$,
+$\widehat R-R(t_H)=O(|d_H|^3)=O(|u|^3)$.
+The true denominator at $t_H$ differs from that at $t^*$ by
+$O(|u|^3)$, as does the numerator by its Lipschitz condition.
+A ratio difference with positive denominator lower bounds proves the claim.
+\end{proof}
+
+\begin{remark}[Loss gradients and finite precision]
+If the forward loss is still evaluated at $t_0$, its upstream factor
+is $\ell'(t_0)$. Even with a quadratically or cubically accurate
+implicit Jacobian, $\ell'(t_0)-\ell'(t^*)$ is generally $O(e)$.
+The complete loss gradient therefore need not have the same higher order.
+For example, a single regular primitive with $\alpha=0.9$, $p=1$,
+$\sigma=0.1$, $q=1/2$ has
+$t^*=p-\sigma\sqrt{-2\log[(1-q^2)/\alpha]}$ and $dt^*/dp=1$.
+For $\ell(t)=t^2/2$, a high-order Jacobian multiplied by the coarse
+upstream $t_0=t^*+e$ still has leading loss-gradient error $e$.
+\texttt{verify\_adjoint\_loss\_limit.py} independently confirms this order.
+Neither proposition supplies uniform constants as $H_t\to0$,
+$\alpha_i\to1$, $\sigma_i\to0$, or a peak is approached.
+A CUDA step guard such as $|d_H|<\tfrac12\min_i|t_0-p_i|$
+keeps its accepted segment away from peaks, but does not certify the
+true root, the lower denominator bounds, or floating-point roundoff.
+\end{remark}
+
+The engineering prototype accumulates $T,R',R''$ in the existing
+backward denominator traversal and evaluates numerators at the refined
+local root in its existing second traversal. Thus it introduces arithmetic
+and registers but no additional traversal. Whether this saves time or
+preserves a training trajectory requires measurement.
+
+\section{A local normal-normalization derivative discrepancy}
+The Gaussian preprocessing forward normalizes an unnormalized camera
+normal $c$ to $n=c/\|c\|$. The inspected local and official upstream
+backward sources~\cite{gggscode} instead compute the reciprocal length
+from the already normalized vector. For nonzero $c$ and upstream $g$,
+the correct local VJP is
+\[
+ \nabla_c L=\frac{g-n(n^\top g)}{\|c\|}.
+\]
+This follows directly from $dn=(I-nn^\top)dc/\|c\|$.
+Replacing the denominator by $\|n\|=1$ generally changes the derivative.
+For a nondegenerate example take camera coordinates $(0,0,1)$ and
+$P=\left(\begin{smallmatrix}2&0&x\\0&1&0\\x&0&1\end{smallmatrix}\right)$,
+which is positive definite near $x=1$. The affine preprocessing gives
+$c=(-x,0,-1)$. For $L=n_x$ the true derivative is
+$-(1+x^2)^{-3/2}$, whereas the inspected local expression gives
+$-(1+x^2)^{-1}$; at $x=1$ these are $-1/(2\sqrt2)$ and $-1/2$.
+Symbolic, float64 autograd and directional finite-difference checks agree.
+This is a local discrepancy, not a complete world-gradient audit or
+a reconstruction improvement. A geometry-only loss has zero upstream
+normal gradient, so this factor cannot explain its numerical variability.
+
+On the positive-definite affine branch this normal has a simpler form.
+Let $d$ be the unit center-view direction and $P$ the camera precision.
+Writing $r=(u,v,1)$, $\rho^2=1+u^2+v^2$, $h=Pr$, $b=r^\top h$,
+the two plane components in the implementation are
+$\eta_i=\rho^2h_i/b-r_i$ for $i=1,2$.
+Substitution into its camera transformation, with factor $z/\rho$,
+gives $c=-\rho h/b$. Since $d=r/\rho$, it follows that
+\[
+ c=-\frac{Pd}{d^\top Pd},\qquad
+ n=-\frac{Pd}{\|Pd\|},\qquad
+ \|c\|=\frac{1}{|n^\top d|}\ge1.
+\]
+The last inequality follows from Cauchy--Schwarz and $\|d\|=1$;
+positive definiteness makes $d^\top Pd>0$.
+Thus the omitted inverse length is exactly the absolute incidence
+cosine within this affine primitive model. Its direct differential is
+\[
+ dn=-\frac{(I-nn^\top)(dP\,d+P\,dd)}{\|Pd\|}.
+\]
+Any active FoV clipping must also be differentiated.
+Uniform positive scaling of $P$ leaves $n$ invariant; consequently
+the sum of the three log-scale derivatives of a normal-only loss
+vanishes. This invariant does not apply to the complete RGB or
+geometry loss. Three symbolic component identities and 64 independent
+float64 world-VJP computational-graph comparisons pass. These algebra
+checks alone supply no CUDA derivative, runtime or reconstruction-quality
+guarantee; the subsequent isolated CUDA audit is reported below.
+
+\section{Two further preprocessing chain rules}
+These statements concern the positive-scale branch of the actual
+affine primitive preprocessing, separately from implicit differentiation
+of the median root. They establish derivatives relative to the implemented
+forward model, not a new surface representation.
+
+\paragraph{Ray precision and its center derivative.}
+Let $P$ be the symmetric positive-definite camera precision matrix,
+$r=(u,v,1)^\top$, $L=r^\top r$, $h=Pr$, $B=r^\top Pr$, and let
+$\kappa=\sqrt{B/L}$, named \texttt{rsigmat} in the shader.
+On this smooth positive branch,
+\[
+ \frac{\partial\kappa}{\partial u}
+ =\frac{h_1}{\kappa L}-\frac{\kappa u}{L},\qquad
+ \frac{\partial\kappa}{\partial v}
+ =\frac{h_2}{\kappa L}-\frac{\kappa v}{L}.
+\]
+Indeed $\partial_u B=2h_1$ and $\partial_u L=2u$;
+the quotient and square-root rules give the first identity, and the
+second follows identically. The existing local backward includes
+the second term of each identity but omits the numerator term. Its
+precision-matrix derivative elsewhere does not provide the missing
+center/viewport derivative. For $P=I$, $\kappa=1$ is constant, whereas
+the existing rule gives $-2/5$ at $(u,v)=(1/2,0)$ in the $u$ direction.
+This is a non-singular positive-definite counterexample. The clamp
+and world-to-camera transformations must still be chained for world
+centers; the proposed correction retains those existing transformations.
+
+\paragraph{Opacity filtering coefficient.}
+Let $D_0,D_1>0$ be the unclamped projected-covariance determinants
+before and after adding the image-space filtering kernel, and
+$\eta=\sqrt{D_0/D_1}$. Direct differentiation yields
+\[
+ \partial_{D_0}\eta=\frac{1}{2\eta D_1},\qquad
+ \partial_{D_1}\eta=-\frac{\eta}{2D_1}
+ =-(\partial_{D_0}\eta)\eta^2.
+\]
+The existing backward multiplies the first derivative by $-\eta$
+instead of $-\eta^2$. The opt-in correction changes that factor;
+it retains the existing coefficient epsilon and determinant floors,
+so it is not a claim of exact differentiation at every stabilized
+or clamped branch. With filtering kernel zero, $D_0=D_1$ and
+$\eta=1$; this particular factor correction has no effect in ideal
+arithmetic. All three real models audited here use kernel zero;
+the nonzero-kernel discrepancy is demonstrated by separate synthetic
+cases. The same source patterns were observed in official main on
+2026-10-12~\cite{gggscode}; upstream history and author intent were not audited.
+
+\paragraph{Artificial angular term and non-integrability.}
+Fix $P$, set the upstream of $\kappa$ to one and all other output
+upstreams to zero, and work inside the FoV clamp. The existing viewport
+field is $g=(-\kappa u/L,-\kappa v/L)$. Differentiating it and using the
+preceding exact identities gives
+\[
+ \partial_u g_v-\partial_v g_u
+ =\frac{u h_2-v h_1}{\kappa L^2}.
+\]
+The derivatives of $1/L$ cancel; the remaining numerator is
+$u\partial_v\kappa-v\partial_u\kappa$, divided by $L$.
+For $P=\operatorname{diag}(1,2,3)$ and $u=v=1/2$, this curl is
+$\sqrt{10}/45\ne0$. Consequently this component of the existing
+backward cannot be the gradient of any $C^2$ local scalar potential
+in a neighborhood of that point, by equality of mixed partials.
+This statement concerns a fixed-upstream component, not a proposed
+surrogate for the complete image or reconstruction loss.
+
+For the separate isotropic case $P=\lambda I$, $\kappa=\sqrt\lambda$
+is independent of the center direction, but the existing center field
+in camera coordinates $t=(x,y,z)$, $z>0$, equals
+\[
+ g_t=\kappa\left(\frac{e_z}{z}-\frac{t}{\|t\|^2}\right)
+ =\nabla_t[\kappa\log\cos\theta],\qquad
+ \|g_t\|=\frac{\kappa\tan\theta}{\|t\|},
+\]
+where $\theta$ is the angle from the positive camera axis. Indeed
+$\log\cos\theta=\log z-\log\|t\|$; direct differentiation gives
+the vector and its squared norm. Thus a spurious angular term appears
+in this isolated derivative although the true directional derivative
+of $\kappa$ vanishes. Its effect in an actual loss depends on the
+upstream sign and magnitude. No conclusion about the complete center
+gradient vanishing, scene rotation invariance, or reconstruction bias
+follows without additional analysis.
+An independent script verifies the symbolic curl and angular identities,
+64 float64 AD cases, and closed-loop quadrature: counterclockwise
+circulation per unit area tends to $0.0702728369$ for the stated
+anisotropic example, while the corrected field's observed absolute
+circulation is below $3.5\times10^{-18}$. These are standard calculus
+checks supporting the implementation diagnosis, not a novelty claim.
+
+\paragraph{Independent isolated CUDA world VJPs.}
+A thin probe calls the actual forward and backward preprocessing
+functions with fixed normal, ray-plane and conic upstreams. A separate
+float64 PyTorch graph uses camera covariance/precision matrices and
+the simplified normal $-Pr/\|Pr\|$, with three directional finite-difference
+step sizes checking that graph. Packed-conic off-diagonal upstreams
+respect the shader's factor-of-two convention. Scale activation and
+quaternion normalization are included in the pullback.
+The error rule is $\|g_{\rm CUDA}-g_{\rm AD}\|_2/
+\max(\|g_{\rm AD}\|_2,10^{-5})\le10^{-3}$ per parameter block.
+Forty-eight synthetic primitives cover interior and active FoV-clamp
+domains and a nonzero image-space kernel. A second audit selects 72
+projected in-FoV primitives across frozen scan37/55/63, including
+24 with filtered axis ratio above 10. Projection membership is not
+visibility. The combined FP64 correction passes all 1344 synthetic
+and 1440 real parameter-block checks, including structural zeros;
+the largest errors are about $6.30\times10^{-6}$ and
+$1.20\times10^{-4}$, respectively. The real first-order reference
+also agrees with the smallest finite-difference step within
+$1.18\times10^{-6}$ on the stated scaled rule.
+The combined FP32 version fails the same rule. In particular, some
+zero-reference opacity-coefficient checks use the absolute floor;
+their scaled errors must not be described as relative errors of a
+nonzero true gradient. These tests do not certify extreme anisotropy,
+the eigendecomposition fallback, complete rasterization, hard masks,
+optimization trajectories, quality or novelty. Full-backend function
+bytes are checked against the audited probe before training.
+
+\section{A direct inverse-covariance factor VJP}
+This separate numerical-stability diagnostic does not change the median
+root model. Let $S=\operatorname{diag}(s_1,s_2,s_3)$ with $s_i>0$,
+let $R$ be orthogonal, and write
+$\Sigma=R^\top S^2R$, $P=\Sigma^{-1}=N^\top N$, $N=S^{-1}R$.
+For the local scalar loss $L=\langle G,P\rangle_F$ with fixed upstream
+matrix $G$, the Frobenius differential gives
+\[
+ G_N=N(G+G^\top),\qquad
+ \frac{\partial L}{\partial s_i}
+ =-s_i^{-2}\langle R_{i,:},(G_N)_{i,:}\rangle,\qquad
+ G_R=S^{-1}G_N.
+\]
+Indeed $dP=dN^\top N+N^\top dN$ and
+$dN=-S^{-1}(dS)S^{-1}R+S^{-1}dR$; substituting these two identities
+proves the displayed formula. On the orthogonal-rotation manifold it
+agrees with the inverse-matrix chain $G_\Sigma=-PGP$ followed by
+differentiation of $\Sigma$. For a normalized quaternion one must
+also differentiate its normalization; an arbitrary nonorthogonal
+matrix $R$ does not satisfy the inverse identity.
+The factor form removes an unnecessary inverse-to-covariance round
+trip but provides no uniform conditioning or floating-point guarantee.
+Synthetic symbolic and float64 autograd checks pass; a real-model
+GPU diagnostic still exhibits substantial full-loss world-parameter
+gradient variability after this local change. It is therefore not
+adopted as a verified stability or quality improvement. These are
+standard matrix-calculus identities, not a novelty claim.
+In a separate precision diagnostic, FP64 intermediates in the local
+world-parameter backward preprocessing substantially reduce repeat
+variation on two selected development cameras. An expanded 18-camera,
+162-group complete-loss check then passes the original 0.1\% rule,
+with maximum drift $3.3312\times10^{-5}$ between FP64 sampling
+batches 1 and 2. A selective-precision variant with filtered axis
+ratio above 10 also passes, with maximum drift $1.0293\times10^{-4}$.
+However, both variants fail to improve the six-camera frozen complete
+loss/backward latency relative to the original float32 control.
+The FP64 reference shares the analytic formulas and float32 contributor
+accumulation; repeatability is not an independent correctness oracle,
+and none of these checks establishes reconstruction quality.
+
+\section{Orthogonality defects and anisotropic covariance round trips}
+Here $R$ denotes the conventional column-vector rotation matrix; it is
+the transpose of the preceding section's row-factor convention. Define
+$D=\operatorname{diag}(s_1,s_2,s_3)$, $s_i>0$, and
+\[
+ \Sigma=RD^2R^\top,\qquad P=RD^{-2}R^\top,\qquad
+ Q=R^\top R-I,\qquad \delta=\|Q\|_2,\quad
+ a=s_{\max}/s_{\min}.
+\]
+Neither definition requires $R$ to be exactly orthogonal. Direct
+multiplication gives the exact identity
+\[
+ P\Sigma-I=(RR^\top-I)+RD^{-2}QD^2R^\top.
+\]
+For square $R$, $R^\top R$ and $RR^\top$ have the same eigenvalues,
+so $\|RR^\top-I\|_2=\delta$ and $\|R\|_2^2\le1+\delta$.
+Submultiplicativity therefore proves
+\begin{equation}\label{eq:roundtrip-defect}
+ \|P\Sigma-I\|_2\le
+ \delta\bigl[1+(1+\delta)a^2\bigr].
+\end{equation}
+This sufficient upper bound identifies a quadratic dependence on axis
+ratio. It is not a lower bound, a prediction that every anisotropic
+primitive fails, or a bound on the full renderer's gradient error.
+
+For the standard quaternion polynomial, let $q=(w,v)$,
+$K=[v]_\times$, and $R(q)=I+2wK+2K^2$. Without assuming unit norm,
+\[
+ R^\top R-I=4(\|q\|^2-1)(\|v\|^2I-vv^\top),\qquad
+ \delta=4|\|q\|^2-1|\,\|v\|^2.
+\]
+To verify this, use $K^\top=-K$, $K^2=vv^\top-\|v\|^2I$ and
+$K^4=-\|v\|^2K^2$ in $(I-2wK+2K^2)(I+2wK+2K^2)$.
+All nine polynomial components are also checked exactly with SymPy.
+A quaternion normalized in float32 need not have exactly unit norm
+when its stored components are subsequently interpreted in float64.
+Increasing arithmetic precision after that node does not restore
+the missing orthogonality identity. Applying a covariance inverse
+round trip to differentiate the factor-defined $P$ can consequently
+amplify this discrepancy. This statement concerns the actual stored
+node values, rather than an error in exact unit-quaternion algebra.
+
+\paragraph{The quadratic axis-ratio order cannot be removed.}
+For fixed $\varepsilon>0$, take
+$q=(0,\sqrt{(1+\varepsilon)/2},\sqrt{(1+\varepsilon)/2},0)$ and
+$D=\operatorname{diag}(1,a,1)$, $a\ge1$. Its rotation polynomial is
+\[
+ R=\begin{pmatrix}
+ -\varepsilon&1+\varepsilon&0\\
+ 1+\varepsilon&-\varepsilon&0\\
+ 0&0&-1-2\varepsilon
+ \end{pmatrix},\qquad \delta=4\varepsilon(1+\varepsilon).
+\]
+Writing $r_i=R_{:,i}$, the exact defect identity implies
+$(P\Sigma-I)/(\delta a^2)\to-r_1r_2^\top/2$.
+The norm of a rank-one matrix is the product of the vector norms;
+continuity therefore gives
+\[
+ \lim_{a\to\infty}\frac{\|P\Sigma-I\|_2}{\delta a^2}
+ =\frac{\|r_1\|_2\|r_2\|_2}{2}
+ =\tfrac12+\varepsilon+\varepsilon^2>0.
+\]
+Thus no finite axis-ratio-independent constant $C$ can bound this
+residual by $C\delta$ over the stated family. This proves sharpness
+of the quadratic order, not sharpness of the upper-bound constant
+or a corresponding claim for loss gradients. The family is an exact
+off-unit-quaternion counterexample; it is not asserted that each
+member is produced by a float32 normalization kernel. A separate
+symbolic limit check passes, with float64 corroboration at
+$\varepsilon=2^{-24}$ and six axis ratios from 10 to $10^6$.
+
+For any real $R$ and positive scales, differentiating the factor
+definition itself avoids this orthogonality assumption. With
+$G_s=(G+G^\top)/2$ and $\ell_i=\log s_i$, the differential of
+$\langle G,RD^{-2}R^\top\rangle_F$ gives
+\[
+ G_R=2G_sRD^{-2},\qquad
+ \frac{\partial L}{\partial\ell_i}
+ =-2s_i^{-2}(R^\top G_sR)_{ii}.
+\]
+The external raw-quaternion normalization must still be pulled back.
+These are standard matrix-calculus identities, with no novelty claim
+or guarantee of uniform floating-point conditioning.
+
+\paragraph{Stress failure, replacement and scope.}
+A pre-quality extension selects 44 extreme-axis primitives across
+the same three models, including both in-FoV and front-facing cases
+outside FoV. The largest axis ratio is about 34819. The formula-fixed
+FP64 covariance-round-trip branch fails 12 normal, 3 plane-slope and
+28 ray-precision parameter blocks out of 176 per output. The worst
+ray-precision error is 47.294 on the original scaled rule, with
+nonzero reference norm 0.364575. Four extreme forward components
+also fail their original gate; those failures remain recorded.
+The observed largest $\|P\Sigma-I\|_2$ is 28.0014. The bound in
+\eqref{eq:roundtrip-defect} is checked on all 164 saved primitives
+within a stated $10^{-5}$ numerical matrix-product margin; the proof
+above is in exact arithmetic. Sixty-four independent nonorthogonal
+factor-graph AD examples agree within $1.43\times10^{-15}$.
+
+Combining the direct factor VJP, the three formula corrections and
+FP64 local intermediates passes all 880 stress checks and all 2784
+regular real/synthetic checks without excluding inputs. The maximum
+scaled errors are $1.68\times10^{-5}$ and $1.20\times10^{-4}$,
+respectively. This combined branch does not change forward rendering,
+and therefore does not repair the four retained forward failures.
+It does not supersede the earlier negative float32 full-loss diagnostic.
+The unstarted covariance-round-trip candidate was withdrawn; its
+completed, preselected FP64 control is retained. A separate replacement
+protocol preserves the original quality gates and requires a new
+20-update full-backend smoke, which passes with the same initial state,
+first camera and first forward losses. The replacement 30k pilot has
+completed with the original forward unchanged. Its mean overall improves
+by $0.001896019$ mm, or about $0.60186\%$, and mean s2d improves by
+$0.002958633$ mm. The preregistered $1\%$ overall-improvement requirement
+is not met; the geometric adoption verdict remains failure.
+Mean TRAIN-view PSNR rises by $0.532053$ dB and SSIM by $0.00312850$,
+while the Gaussian count rises from 943641 to 967292 ($2.50636\%$).
+Thirty-five of 49 training views improve in PSNR; 14 worsen.
+Capacity may mediate part of the change. One trajectory pair, correlated
+training images and three mesh-evaluator seeds do not establish
+significance, held-out quality, feature-level causation or novelty.
+The three evaluator seeds repeat mesh sampling rather than training.
+
+\paragraph{Related implementation analyses.}
+A subsequent excluded-RGB pilot uses a fresh 42-train/7-test warmup,
+not the earlier all-view checkpoint. Both branches complete all 19
+training/evaluation stages. TEST PSNR changes from $28.032109$ to
+$28.122184$ dB ($+0.090075$), below the predeclared $+0.30$ dB gate;
+TEST SSIM changes by $-0.000304571$, also failing its gate.
+Mean overall changes from $0.332269708$ to $0.331238519$ mm, while the
+Gaussian count grows from $929179$ to $957753$ ($3.07519\%$).
+The new RGB pilot therefore fails, independently of the preserved
+failure of the original geometry pilot. TRAIN PSNR improves by
+$0.421708$ dB; it must not be substituted for the excluded-view result.
+Actual camera-pool guards exclude test RGB from training, NCC targets
+and filter lists. Alignment now matches noncontiguous training image
+IDs to their corresponding official calibration centers; a first-$N$
+mapping would be invalid after holding out cameras. Existing SfM
+initialization may use all views, and the scene was previously used
+for research, so this is not an untouched confirmatory dataset.
+There is no independent training replication or significance claim.
+
+Faster-GS~\cite{fastergs} already studies numerical stability and
+gradient approximations in Gaussian splatting. Its Appendix C.2
+discusses non-analytical opacity-compensation gradients and offers
+both a detached and an optional analytical derivative. Therefore
+discovering a formula discrepancy alone establishes neither novelty
+nor improved optimization. Our present quaternion/precision-factor
+diagnosis needs its own source comparison and real-scene validation;
+a targeted literature search is not a novelty certificate.
+
+\section{A tight conditional log-scale VJP defect}
+The round-trip residual alone is not a bound on a loss gradient.
+We can, however, characterize a particular parameter block exactly.
+Hold $R\in\R^{3\times3}$, a common symmetric precision upstream $H$,
+and any filter fixed. Let $D=\operatorname{diag}(d_1,d_2,d_3)>0$,
+$\ell_i=\log d_i$, $\Sigma=RD^2R^\top$, and $P=RD^{-2}R^\top$.
+If $r_i$ is column $i$ of $R$, the actual factor graph has
+\[
+ g_i=-2d_i^{-2}r_i^\top H r_i.
+\]
+Using the inverse-chain surrogate $-PHP$ as a covariance upstream instead
+gives $\widehat g_i=-2d_i^2(Pr_i)^\top H(Pr_i)$.
+This comparison conditions on an identical $H$; it does not encompass
+other chain-rule discrepancies or complete-renderer upstream changes.
+
+\begin{proposition}[Exact defect and tight upstream norm]
+Define $u_i=r_i/d_i$, $v_i=d_iPr_i$, $B_i=v_iv_i^\top-u_iu_i^\top$,
+and $M_{ij}=\langle B_i,B_j\rangle_F$. Then
+\[
+ \widehat g_i-g_i=-2\langle H,B_i\rangle_F,
+ \qquad
+ \sup_{H=H^\top,\,\|H\|_F\le1}
+ \|\widehat g-g\|_2=2\sqrt{\lambda_{\max}(M)}.
+\]
+For $Q=R^\top R-I$, the difference $w_i=v_i-u_i$ equals
+$d_iRD^{-2}Qe_i$, and
+$B_i=u_iw_i^\top+w_iu_i^\top+w_iw_i^\top$.
+\end{proposition}
+\begin{proof}
+Differentiate $P$ directly with respect to $\ell_i$ to obtain
+$-2d_i^{-2}r_ir_i^\top$. Differentiating $\Sigma$ gives
+$2d_i^2r_ir_i^\top$, which paired with $-PHP$ yields the surrogate.
+Their difference is the stated Frobenius inner product. The formula
+for $w_i$ follows by substituting $R^\top R=I+Q$.
+Let $K$ have rows $\operatorname{vec}(B_i)^\top$. Then $M=KK^\top$
+and the error map is $-2K\operatorname{vec}(H)$.
+If $\lambda=\lambda_{\max}(M)>0$ with unit eigenvector $z$, the symmetric
+matrix $H_*=(\sum_i z_iB_i)/\sqrt\lambda$ has Frobenius norm one and
+attains error norm $2\sqrt\lambda$. If $M=0$, the error vanishes.
+\end{proof}
+For fixed filtered scales $d_i^2=\exp(2\theta_i)+f_i^2$, the additional
+raw-log-scale pullback is diagonal, $J_{ii}=\exp(2\theta_i)/d_i^2$.
+The corresponding tight conditional norm is $2\sqrt{\lambda_{\max}(JMJ)}$.
+This treats $f_i$ as fixed and excludes its potential separate dependence.
+
+The non-unit quaternion family in the preceding section also illustrates
+why an inverse residual and a relative VJP error are distinct. Set
+\[
+ R=\begin{pmatrix}-\varepsilon&1+\varepsilon&0\\
+ 1+\varepsilon&-\varepsilon&0\\0&0&-1-2\varepsilon\end{pmatrix},
+ \quad D=\operatorname{diag}(1,a,1),\quad H=I,
+\]
+with fixed $\varepsilon>0$, $a\ge1$,
+$\delta=4\varepsilon(1+\varepsilon)$ and $m=1+2\varepsilon+2\varepsilon^2$.
+Direct expansion gives
+\[
+ \frac{\widehat g_2}{g_2}
+ =m^2+\frac{\delta^2a^2}{2}+\frac{\delta^2a^4}{4},
+ \qquad
+ \lim_{a\to\infty}
+ \frac{\widehat g_2/g_2-1}{\delta^2a^4}=\frac14.
+\]
+Here $g_2=-2m/a^2\ne0$. Replacing $H$ by $I/\sqrt3$ normalizes the
+upstream without changing this ratio. Thus a relative component error
+can grow quartically in this fixed-defect family. This is neither a
+claim that all family members arise from float32 normalization nor a
+lower bound on any complete training gradient.
+
+Exact symbolic identities and the limit are checked in
+\texttt{precision\_scale\_vjp\_defect\_v4.json}. Sixty-four independent
+float64 automatic-differentiation cases verify both factor and surrogate
+graphs, with maximum scaled discrepancy $9.285\times10^{-15}$;
+constructed unit-norm upstreams attain the bound to $5.492\times10^{-16}$.
+All 164 saved inputs were also retained. Under the particular trace
+upstream $H=I$, their maximum whole-vector relative error is only
+$7.045\times10^{-7}$, although one component ratio reaches $785.0793$.
+The aggregate and component quantities therefore must not be conflated.
+The trace upstream is not asserted to match the real training upstream.
+Initial symbolic-development failures are archived separately.
+
+\section{Projected Gram determinants and forward cancellation}
+The four retained extreme forward failures all concern the conic block.
+Let $a,b\in\R^3$ be the two projected columns of the scaled rotation
+factor, and let $C_0=[a\ b]^\top[a\ b]$. Lagrange's identity gives
+\[
+ \det C_0=\|a\times b\|_2^2,
+ \qquad
+ \det(C_0+kI)=\|a\times b\|_2^2+
+ k(\|a\|_2^2+\|b\|_2^2)+k^2,\quad k\ge0.
+\]
+The first equality follows by expanding
+$(a^\top a)(b^\top b)-(a^\top b)^2$; the second follows by
+expanding the two-by-two determinant after adding $kI$.
+For $c=a\times b$, its untruncated derivatives are
+$\nabla_a\det(C_0+kI)=2b\times c+2ka$ and
+$\nabla_b\det(C_0+kI)=2c\times a+2kb$.
+Thus the exact differentiable map is unchanged away from existing
+floor and mask boundaries. The factor expression avoids the final
+subtraction of two nearly equal covariance products, but can still
+have cancellation within cross products, input-rounding sensitivity,
+underflow or overflow. No uniform stability theorem is claimed.
+
+A separate float32 forward-only probe replays all 44 stress and 120
+regular real/synthetic inputs. On the original $10^{-4}$ forward
+scaled rule with denominator floor $10^{-5}$, the conic failures
+fall from four to zero and the largest error falls from
+$2.90671\times10^{-3}$ to $2.76635\times10^{-5}$.
+All six recorded output blocks pass on all 164 cases, and the ray
+and normal outputs remain bitwise identical. A symbolic expansion
+checks the Gram identity exactly. This experiment is independent of
+the running factor64 quality candidate, whose original forward is
+retained. The null-scale covariance fallback, complete-renderer
+derivative correctness, training quality and latency are outside
+this forward-only check. These are standard Cauchy--Binet/Lagrange
+identities used as a numerical implementation diagnostic, not new
+algebra.
+
+\section{Numerical checks and limitations}
+Independent scripts accompany the derivations. They are error-detection
+checks, not substitutes for the proofs or real reconstruction experiments.
+\begin{itemize}
+\item \texttt{verify\_median\_solver.py}: 296 finite-root mixtures pass the
+bracket checks against an independent Brent solver; maximum root error is
+approximately $9.93\times10^{-10}$.
+\item \texttt{verify\_root\_regularity.py}: a product-form transmittance and
+Brent solver confirm the coincident-mixture expansion for 12 perturbations.
+At step $10^{-7}$ the slope-cusp one-sided differences are
+$-26.47748$ and $+26.47749$, versus the analytic magnitude $26.47755$.
+\item \texttt{audit\_field\_slope.py}: moving-root implicit derivatives agree
+with re-solved finite differences within $5.04\times10^{-6}$ in four
+regular synthetic cases. The existing, explicitly documented field-occupancy
+STE fails the one-dimensional common-peak translation check. This does not
+establish the cause of past quality regressions.
+\end{itemize}
+The original hybrid Newton prototype uses a median of 33 log-transmittance evaluations
+versus 32 for bisection, excluding sorting; this supplies no acceleration
+evidence. A revised variant verifies a small local bracket near Newton convergence,
+rather than continuing to shrink a distant opposite endpoint. In the same 296
+random mixtures, it uses a median of 12 ordinary field evaluations, with 91
+additional 80-digit checks across the family for ambiguous residual signs.
+All 305 test cases pass, including additional near-threshold cases checked
+against high-precision single-primitive formulas. The first float64-only
+variant failed a flat-root endpoint check; that failure is retained.
+These counts exclude sorting and unequal precision costs and are not a speed claim.
+Sampled CPU/CUDA forward checks now pass on three frozen models with
+1024 rays each, within the declared depth/alpha tolerances and with no
+validity disagreements. Simple four-round subdivision lowers frozen
+forward latency by about 14\% and preserves extracted meshes within
+the preset engineering tolerance, but fails the 0.1\% parameter-gradient
+drift rule. Inverse quadratic interpolation improves typical depths but
+increases the maximum observed gradient drift to about 4.63\%.
+The first local Newton adjoint refinement passes 21 of 24 parameter
+groups; the Halley/quadratic-denominator variant passes all 24, with
+maximum relative L2 drift $8.062\times10^{-4}$.
+On six frozen development cameras its full-image RGB-plus-depth forward
+and backward latency falls by about 6.5--8.7\%, excluding optimizer and
+NCC work. These measurements do not establish full-training performance,
+independent world-parameter derivative correctness, or novelty.
+The scan55 shared-state 30k training pilot has now completed. Across
+fixed evaluator seeds 0, 1, 2, the mean overall difference is
+$+0.000424087$ mm and the mean s2d difference is $+0.000908171$ mm;
+both are worse. Training-view PSNR increases by $0.066834$ dB.
+The preset geometric adoption criteria are not met. Subsequent CUDA
+training remains nondeterministic despite identical initial state;
+one same-state control repeat has also completed. Its mean overall
+difference from the original control is $+0.001001144$ mm, larger
+than the original candidate contrast. A single paired trajectory
+therefore cannot isolate the method effect. This repeat is not an
+independent-seed or significance experiment, and does not replace
+the original control or reverse the failed adoption verdict.
+
+An independent product-form CPU float64 autograd oracle agrees with
+the analytic effective-ray Jacobian within $4.12\times10^{-16}$
+relative L2 on 123 previously used development rays. Re-solved
+directional finite differences on 12 fixed rays also pass.
+The local high-order guard accepts 122 rays, whose largest idealized
+refined Jacobian error is $3.18\times10^{-5}$. It rejects one
+peak-crossing ray; its coarse-root fallback retains relative error
+$4.66\times10^{-3}$. Aggregated world-gradient agreement therefore
+does not establish a bound for every ray. Float32 projection differences
+also limit direct comparison to this CPU oracle. Independent multi-scene
+training and held-out image evaluation remain necessary.
+A peak-containing-cell variant restores subdivision five selectively.
+It passes the 24 frozen gradient-group checks, but its six-camera
+forward/backward latency is about 0.42--1.15\% worse than control;
+the current implementation is rejected as an efficiency improvement.
+
+The theoretical overlap with oriented Gaussian occupancy and surface
+extraction~\cite{wrapping} also requires a broader novelty review.
+Neither implicit differentiation nor adaptive bracketing is claimed as new.
+The research workflow used Scientific Agent Skills~\cite{skills}; this
+software citation is not evidence for the mathematical claims.
+
+\begin{thebibliography}{99}
+\bibitem{htgs}
+F. Hahlbohm et al. \emph{Efficient Perspective-Correct 3D Gaussian
+Splatting Using Hybrid Transparency}. 2024.
+\url{https://arxiv.org/abs/2410.08129v2}.
+\bibitem{threedgut}
+Q. Wu, J. Martinez Esturo, A. Mirzaei, N. Moenne-Loccoz, and Z. Gojcic.
+\emph{3DGUT: Enabling Distorted Cameras and Secondary Rays in Gaussian
+Splatting}. 2024. \url{https://arxiv.org/abs/2412.12507v2}.
+\bibitem{oav}
+B. Miller, H. Chen, A. Lai, and I. Gkioulekas.
+\emph{Objects as volumes: A stochastic geometry view of opaque solids}.
+2024. \url{https://arxiv.org/abs/2312.15406v2}.
+\bibitem{siegel}
+J. W. Siegel. \emph{Optimal Approximation of Zonoids and Uniform
+Approximation by Shallow Neural Networks}.
+2023. \url{https://arxiv.org/abs/2307.15285v2}.
+\bibitem{torres}
+G. D. Torres. \emph{On Finding the Closest Zonotope to a Polytope in
+Hausdorff Distance}. 2024. \url{https://arxiv.org/abs/2407.13125v1}.
+\bibitem{mpmathiv}
+mpmath developers. \emph{Contexts}, mpmath 1.3.0 documentation,
+section on experimental interval arithmetic.
+\url{https://raw.githubusercontent.com/mpmath/mpmath/1.3.0/docs/contexts.rst}.
+\bibitem{flicker}
+W. Ou, Z. Wu, Y. Zhang, D. Wu, F. Z. Hong, and C. P. Yue.
+\emph{FLICKER: A Fine-Grained Contribution-Aware Accelerator for
+Real-Time 3D Gaussian Splatting}. 2026, Section IV-C.
+\url{https://arxiv.org/abs/2603.01158v1}.
+\bibitem{cudamath}
+NVIDIA. \emph{CUDA C++ Programming Guide}, version 12.8,
+Section 13.1 (Mathematical Functions) and double-precision intrinsic table.
+\url{https://docs.nvidia.com/cuda/archive/12.8.1/cuda-c-programming-guide/index.html}.
+\bibitem{rvar}
+T. Fissler and J. F. Ziegel.
+\emph{On the elicitability of range value at risk}.
+Statistics \& Risk Modeling, 38(1--2):25--46, 2021.
+Preprint: \emph{Evaluating Range Value at Risk Forecasts},
+\url{https://arxiv.org/abs/1902.04489v3}.
+\bibitem{twodgs}
+Binbin Huang et al.
+\emph{2D Gaussian Splatting for Geometrically Accurate Radiance Fields}.
+ACM Transactions on Graphics, 2024.
+\url{https://arxiv.org/abs/2403.17888}.
+
+\bibitem{gggs}
+B. Zhang, C. Jiang, H. Li, S. Shen, and P. Tan.
+\emph{Geometry-Grounded Gaussian Splatting}. 2026.
+\url{https://arxiv.org/abs/2601.17835}.
+\bibitem{trianglesplat}
+J. Held et al.
+\emph{Triangle Splatting for Real-Time Radiance Field Rendering}.
+2025. \url{https://arxiv.org/abs/2505.19175v1}.
+\bibitem{wrapping}
+D. Gomez, A. Guedon, N. Maruani, B. Gong, and M. Ovsjanikov.
+\emph{From Blobs to Spokes: High-Fidelity Surface Reconstruction via Oriented
+Gaussians}. 2026. \url{https://arxiv.org/abs/2604.07337}.
+\bibitem{onestep}
+J. Bolte, E. Pauwels, and S. Vaiter.
+\emph{One-step differentiation of iterative algorithms}. NeurIPS, 2023.
+\url{https://arxiv.org/abs/2305.13768}.
+\bibitem{brentdocs}
+SciPy developers. \emph{scipy.optimize.brentq}, official documentation.
+\url{https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.brentq.html}.
+\bibitem{dlmf}
+NIST Digital Library of Mathematical Functions. Section 3.8, Equation 3.8.12.
+\url{https://dlmf.nist.gov/3.8.E12}.
+\bibitem{skills}
+T. Kassis, V. Agarwal, Y. He, D. Patel, and A. M. Brueckner.
+\emph{Scientific Agent Skills: A Library of Procedural Knowledge for Research
+Agents}. 2026. \url{https://doi.org/10.48550/arXiv.2609.00065}.
+\bibitem{gggscode}
+HKUST-SAIL. \emph{Geometry-Grounded-Gaussian-Splatting}, official source,
+\texttt{cuda\_rasterizer/render\_forward.cu} and
+\texttt{cuda\_rasterizer/render\_backward.cu}, main branch inspected
+2026-10-12; not a pinned upstream commit.
+\url{https://github.com/HKUST-SAIL/Geometry-Grounded-Gaussian-Splatting}.
+\bibitem{fastergs}
+F. Hahlbohm, L. Franke, M. Eisemann, and M. Magnor.
+\emph{Faster-GS: Analyzing and Improving Gaussian Splatting Optimization}.
+2026. Appendix C.2. \url{https://arxiv.org/abs/2602.09999}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,448 @@
+{
+  "dataset_scan_count": 15,
+  "paired_scan_count": 11,
+  "missing_baseline": [
+    "scan106",
+    "scan114",
+    "scan118",
+    "scan69"
+  ],
+  "missing_pipeline": [],
+  "mean_delta_paired": {
+    "overall": -0.029565401068770515,
+    "mean_d2s": -0.05179936074441591,
+    "mean_s2d": -0.007331441393125138
+  },
+  "n_better": 10,
+  "heldout_paired_scan_count": 8,
+  "mean_delta_heldout": {
+    "overall": -0.031639993051161226,
+    "mean_d2s": -0.05665069470296376,
+    "mean_s2d": -0.006629291399358729
+  },
+  "rows": [
+    {
+      "scan": "scan105",
+      "pipeline": {
+        "mean_d2s": 0.40596672034836795,
+        "mean_s2d": 0.5350099784218154,
+        "overall": 0.47048834938509165
+      },
+      "baseline": {
+        "mean_d2s": 0.46791590088903773,
+        "mean_s2d": 0.5647685837248455,
+        "overall": 0.5163422423069416
+      },
+      "delta": {
+        "overall": -0.04585389292184994,
+        "mean_d2s": -0.06194918054066978,
+        "mean_s2d": -0.029758605303030095
+      },
+      "pilot_used_for_selection": true
+    },
+    {
+      "scan": "scan106",
+      "pipeline": {
+        "mean_d2s": 0.24992162613568014,
+        "mean_s2d": 0.3833871319641187,
+        "overall": 0.31665437904989946
+      },
+      "baseline": null,
+      "delta": null,
+      "pilot_used_for_selection": false
+    },
+    {
+      "scan": "scan110",
+      "pipeline": {
+        "mean_d2s": 0.6226265640247208,
+        "mean_s2d": 0.47164560412438095,
+        "overall": 0.5471360840745509
+      },
+      "baseline": {
+        "mean_d2s": 0.6794632057989747,
+        "mean_s2d": 0.46636483028631953,
+        "overall": 0.5729140180426471
+      },
+      "delta": {
+        "overall": -0.025777933968096134,
+        "mean_d2s": -0.05683664177425385,
+        "mean_s2d": 0.005280773838061414
+      },
+      "pilot_used_for_selection": false
+    },
+    {
+      "scan": "scan114",
+      "pipeline": {
+        "mean_d2s": 0.2505392716345691,
+        "mean_s2d": 0.3675734536210326,
+        "overall": 0.3090563626278009
+      },
+      "baseline": null,
+      "delta": null,
+      "pilot_used_for_selection": false
+    },
+    {
+      "scan": "scan118",
+      "pipeline": {
+        "mean_d2s": 0.24805643953371814,
+        "mean_s2d": 0.38112661706927276,
+        "overall": 0.31459152830149545
+      },
+      "baseline": null,
+      "delta": null,
+      "pilot_used_for_selection": false
+    },
+    {
+      "scan": "scan122",
+      "pipeline": {
+        "mean_d2s": 0.26597839692922526,
+        "mean_s2d": 0.38257657096883446,
+        "overall": 0.3242774839490299
+      },
+      "baseline": {
+        "mean_d2s": 0.28833468107073057,
+        "mean_s2d": 0.3732225990218964,
+        "overall": 0.3307786400463135
+      },
+      "delta": {
+        "overall": -0.0065011560972836335,
+        "mean_d2s": -0.02235628414150531,
+        "mean_s2d": 0.009353971946938044
+      },
+      "pilot_used_for_selection": true
+    },
+    {
+      "scan": "scan24",
+      "pipeline": {
+        "mean_d2s": 0.3040602600370223,
+        "mean_s2d": 0.4058725244185667,
+        "overall": 0.35496639222779447
+      },
+      "baseline": {
+        "mean_d2s": 0.33634220591971214,
+        "mean_s2d": 0.4130794151919813,
+        "overall": 0.37471081055584676
+      },
+      "delta": {
+        "overall": -0.019744418328052293,
+        "mean_d2s": -0.032281945882689844,
+        "mean_s2d": -0.0072068907734146315
+      },
+      "pilot_used_for_selection": true
+    },
+    {
+      "scan": "scan37",
+      "pipeline": {
+        "mean_d2s": 0.4503187771289682,
+        "mean_s2d": 0.47088883110019997,
+        "overall": 0.46060380411458407
+      },
+      "baseline": {
+        "mean_d2s": 0.5318193365802628,
+        "mean_s2d": 0.4631541559091368,
+        "overall": 0.4974867462446998
+      },
+      "delta": {
+        "overall": -0.036882942130115726,
+        "mean_d2s": -0.08150055945129464,
+        "mean_s2d": 0.0077346751910631895
+      },
+      "pilot_used_for_selection": false
+    },
+    {
+      "scan": "scan40",
+      "pipeline": {
+        "mean_d2s": 0.21354527082852479,
+        "mean_s2d": 0.29822859849656314,
+        "overall": 0.255886934662544
+      },
+      "baseline": {
+        "mean_d2s": 0.23381260125404707,
+        "mean_s2d": 0.3018482930647762,
+        "overall": 0.2678304471594116
+      },
+      "delta": {
+        "overall": -0.011943512496867648,
+        "mean_d2s": -0.020267330425522284,
+        "mean_s2d": -0.003619694568213039
+      },
+      "pilot_used_for_selection": false
+    },
+    {
+      "scan": "scan55",
+      "pipeline": {
+        "mean_d2s": 0.22773267338624456,
+        "mean_s2d": 0.3999799311261138,
+        "overall": 0.31385630225617916
+      },
+      "baseline": {
+        "mean_d2s": 0.23175067493834992,
+        "mean_s2d": 0.3887753192997066,
+        "overall": 0.31026299711902827
+      },
+      "delta": {
+        "overall": 0.003593305137150893,
+        "mean_d2s": -0.004018001552105355,
+        "mean_s2d": 0.011204611826407196
+      },
+      "pilot_used_for_selection": false
+    },
+    {
+      "scan": "scan63",
+      "pipeline": {
+        "mean_d2s": 1.098656728830995,
+        "mean_s2d": 0.3751044180224472,
+        "overall": 0.7368805734267211
+      },
+      "baseline": {
+        "mean_d2s": 1.2414647311617963,
+        "mean_s2d": 0.36939690468354075,
+        "overall": 0.8054308179226686
+      },
+      "delta": {
+        "overall": -0.06855024449594749,
+        "mean_d2s": -0.14280800233080138,
+        "mean_s2d": 0.005707513338906456
+      },
+      "pilot_used_for_selection": false
+    },
+    {
+      "scan": "scan65",
+      "pipeline": {
+        "mean_d2s": 0.3332556175334902,
+        "mean_s2d": 0.5339108463119612,
+        "overall": 0.4335832319227257
+      },
+      "baseline": {
+        "mean_d2s": 0.36080617388589226,
+        "mean_s2d": 0.508363240332801,
+        "overall": 0.4345847071093466
+      },
+      "delta": {
+        "overall": -0.0010014751866209148,
+        "mean_d2s": -0.027550556352402056,
+        "mean_s2d": 0.02554760597916017
+      },
+      "pilot_used_for_selection": false
+    },
+    {
+      "scan": "scan69",
+      "pipeline": {
+        "mean_d2s": 0.40975667419890865,
+        "mean_s2d": 0.4497531077298642,
+        "overall": 0.42975489096438646
+      },
+      "baseline": null,
+      "delta": null,
+      "pilot_used_for_selection": false
+    },
+    {
+      "scan": "scan83",
+      "pipeline": {
+        "mean_d2s": 0.662921008813336,
+        "mean_s2d": 1.251514160392611,
+        "overall": 0.9572175846029736
+      },
+      "baseline": {
+        "mean_d2s": 0.7514312011332712,
+        "mean_s2d": 1.332684185692244,
+        "overall": 1.0420576934127577
+      },
+      "delta": {
+        "overall": -0.0848401088097841,
+        "mean_d2s": -0.08851019231993518,
+        "mean_s2d": -0.08117002529963302
+      },
+      "pilot_used_for_selection": false
+    },
+    {
+      "scan": "scan97",
+      "pipeline": {
+        "mean_d2s": 0.6319638272081894,
+        "mean_s2d": 0.5959346276786606,
+        "overall": 0.6139492274434251
+      },
+      "baseline": {
+        "mean_d2s": 0.6636781006255847,
+        "mean_s2d": 0.6196544191792828,
+        "overall": 0.6416662599024338
+      },
+      "delta": {
+        "overall": -0.027717032459008695,
+        "mean_d2s": -0.0317142734173953,
+        "mean_s2d": -0.0237197915006222
+      },
+      "pilot_used_for_selection": false
+    }
+  ],
+  "training_no_dn_vs_baseline": {
+    "rows": [
+      {
+        "scan": "scan24",
+        "source": "output_compare\\metrics\\scan24_baseline_vs_ggs_ablate_no_dn.json",
+        "delta": {
+          "l1": 0.0012490601220633835,
+          "psnr": -0.07333850860595703,
+          "ssim": 0.000836789608001709,
+          "mean_d2s": -0.002491227223450354,
+          "mean_s2d": -0.01078815205022654,
+          "overall": -0.0066396896368384195
+        }
+      },
+      {
+        "scan": "scan105",
+        "source": "output_compare\\metrics\\scan105_baseline_vs_ggs_ablate_no_dn.json",
+        "delta": {
+          "l1": -0.001134315854869783,
+          "psnr": 0.4649960994720459,
+          "ssim": 0.0027716755867004395,
+          "mean_d2s": -0.006249115187174636,
+          "mean_s2d": -0.004895941766165146,
+          "overall": -0.005572528476669891
+        }
+      },
+      {
+        "scan": "scan122",
+        "source": "output_compare\\metrics\\scan122_baseline_vs_ggs_ablate_no_dn.json",
+        "delta": {
+          "l1": 0.00012267305282875896,
+          "psnr": -0.2686338424682617,
+          "ssim": -0.0004111044108867645,
+          "mean_d2s": 0.002963668961539212,
+          "mean_s2d": -0.0012080546541986537,
+          "overall": 0.0008778071536703069
+        }
+      }
+    ],
+    "mean_delta": {
+      "overall": -0.003778136986612668,
+      "mean_d2s": -0.0019255578163619262,
+      "mean_s2d": -0.005630716156863447,
+      "psnr": 0.04100791613260905
+    },
+    "gate_components": {
+      "three_scans_present": true,
+      "mean_overall_pass": true,
+      "mean_s2d_pass": true,
+      "mean_training_psnr_pass": true
+    },
+    "scope": "Existing comparison JSONs, with their original evaluation runs; no new evaluation."
+  },
+  "extraction_trunc4_vs_no_dn": {
+    "rows": [
+      {
+        "scan": "scan24",
+        "source": "output_compare\\metrics\\scan24_no_dn_vs_ex_trunc4.json",
+        "delta": {
+          "mean_d2s": -0.029889339363382117,
+          "mean_s2d": 0.003579918786920655,
+          "overall": -0.013154710288230786
+        }
+      },
+      {
+        "scan": "scan105",
+        "source": "output_compare\\metrics\\scan105_no_dn_vs_ex_trunc4.json",
+        "delta": {
+          "mean_d2s": -0.05595491598734198,
+          "mean_s2d": -0.024851208946931602,
+          "overall": -0.040403062467136874
+        }
+      },
+      {
+        "scan": "scan122",
+        "source": "output_compare\\metrics\\scan122_no_dn_vs_ex_trunc4.json",
+        "delta": {
+          "mean_d2s": -0.02543758547399355,
+          "mean_s2d": 0.010532627891281066,
+          "overall": -0.007452478791356243
+        }
+      }
+    ],
+    "mean_delta": {
+      "overall": -0.020336750515574636,
+      "mean_d2s": -0.03709394694157255,
+      "mean_s2d": -0.0035795540895766273
+    },
+    "gate_components": {
+      "three_scans_present": true,
+      "mean_overall_pass": true,
+      "mean_s2d_pass": true,
+      "mean_training_psnr_pass": null
+    },
+    "scope": "Existing comparison JSONs, with their original evaluation runs; no new evaluation."
+  },
+  "tau_curve": {
+    "protocol": "RESEARCH_PROTOCOL §5 G1",
+    "verdict": "M1_ok",
+    "reason": "U-shape τ*=0.9; C_lo=0.400161 C*=0.383244 C_hi=0.384119",
+    "next": "Pipeline* stays τ=0.9+trunc4; M1 claim OK; consider P5 full DTU",
+    "tau_star": 0.9,
+    "C_tau": {
+      "0.3": 0.40016061258497415,
+      "0.5": 0.3834533202188463,
+      "0.9": 0.38324407518730536,
+      "1.2": 0.38411853453025674
+    },
+    "table": {
+      "scan24": {
+        "0.3": 0.4095709458423671,
+        "0.5": 0.35941871810545933,
+        "0.9": 0.35496639222779447,
+        "1.2": 0.35460102519585945
+      },
+      "scan105": {
+        "0.3": 0.4623821917115894,
+        "0.5": 0.46569344407880675,
+        "0.9": 0.47048834938509165,
+        "1.2": 0.47164045064957894
+      },
+      "scan122": {
+        "0.3": 0.32852870020096603,
+        "0.5": 0.3252477984722728,
+        "0.9": 0.3242774839490299,
+        "1.2": 0.32611412774533194
+      }
+    },
+    "significant": 0.0005,
+    "psnr_note": "PSNR gate not re-checked here (extract-fixed trains); run compare_models if replacing τ default",
+    "g2_note": "M2-emp; trunc4 empirical"
+  },
+  "limitations": [
+    "15-scene full-DTU claim requires all paired baselines; incomplete coverage must be stated.",
+    "Pipeline contrast changes training and extraction together; cannot identify either contribution alone.",
+    "Existing image metrics measure training views, not novel-view generalization.",
+    "Saved cfg_args contain model parameters but not the complete optimization recipe or training seed.",
+    "The 5e-4 protocol margin is an adoption threshold, not a statistical significance test.",
+    "Tau=1.2 is the no-correlation-filter endpoint for finite nonnegative squared-NCC scores.",
+    "A U-shaped four-point mean does not prove monotone bias/variance or an underlying population law.",
+    "Existing stochastic mesh evaluation draws differ between comparison JSONs and current results.json."
+  ],
+  "source_sha256": {
+    "output_compare\\ggs_ex_trunc4\\scan105\\vis\\results.json": "df81244cbbe91468da85297846db87bd300ee8aa9dd442328f0a679a4b449260",
+    "output_compare\\ggs_baseline\\scan105\\vis\\results.json": "fc042a6e99d53cde4f7c8b03d022e273b4ead471577ab8592e02b591553e7a99",
+    "output_compare\\ggs_pipeline\\scan106\\vis\\results.json": "1ec9457a0d4d05e04c1a4e0ed105629cdd5fa15fc8b3c9cdb704fce61d0ac3e7",
+    "output_compare\\ggs_pipeline\\scan110\\vis\\results.json": "81445f539762bb43918657771e8768b18bc40a2799c706cd205e14459743a14d",
+    "output_compare\\ggs_baseline\\scan110\\vis\\results.json": "01c9a7e3881ef2796654f429a89ad60968cb69386171d1f74295df9d2a7e4820",
+    "output_compare\\ggs_pipeline\\scan114\\vis\\results.json": "15607caf8234fd041e25cdc6c77dc4ada8ad454b690c402d9cab6eee463ab67f",
+    "output_compare\\ggs_pipeline\\scan118\\vis\\results.json": "95dd92c63ed49cca5bd90bc8e95e7512cc33c1d72b48f7b3924de9d5586881f4",
+    "output_compare\\ggs_ex_trunc4\\scan122\\vis\\results.json": "70039e504a7d566f8ff5ff7a52d3246cb3c16d772c8124591de0284186071386",
+    "output_compare\\ggs_baseline\\scan122\\vis\\results.json": "9e4d593ef33250aa1af35f0197bc4a81d5ac03bc63a9e64f89ac332e71404805",
+    "output_compare\\ggs_ex_trunc4\\scan24\\vis\\results.json": "23965a2f732becba0f5c991772cec28a940b048646bcb5aaf9810f82273a3461",
+    "output_compare\\ggs_baseline\\scan24\\vis\\results.json": "940961234934207c08139f634c248221238139a4a6ea33c7b575a4ed74772e27",
+    "output_compare\\ggs_pipeline\\scan37\\vis\\results.json": "eb65cdd1cb9993590013e9faad18dc2ac138b9c93df49054f9fdeb51294c5e02",
+    "output_compare\\ggs_baseline\\scan37\\vis\\results.json": "dc32fbd11e585357acfbbc7e2ed56ad75afbfc4e0af36e3a05b50b40017cb658",
+    "output_compare\\ggs_pipeline\\scan40\\vis\\results.json": "e16c9b5a2791738bb9d69b20e9f02c782e4698b0f7b6180d1b1865312216c1ed",
+    "output_compare\\ggs_baseline\\scan40\\vis\\results.json": "8b4c533ea5c72aae1e2fd2186ec2f3cb042997a943cbc2df45585641b623da39",
+    "output_compare\\ggs_pipeline\\scan55\\vis\\results.json": "d04e43957a67ec59c14c86168190c422916e8bc3b0cc41bd5246f83f29ea2fe9",
+    "output_compare\\ggs_baseline\\scan55\\vis\\results.json": "ad2b1c0baf8cf82bbe954d9929812c1092fe832ec884c190e851b6a5e827d3d5",
+    "output_compare\\ggs_pipeline\\scan63\\vis\\results.json": "46e207a6ee27362a23b6417fc2dbe1d7078e846a18fca66ead73169dc0ac14a3",
+    "output_compare\\ggs_baseline\\scan63\\vis\\results.json": "20f2447be42e949a9509c1226fa2d47a90df3833b0859ed97ae13c5c275d0cde",
+    "output_compare\\ggs_pipeline\\scan65\\vis\\results.json": "59982bd013f6a30df63f1cafe2ef9cea826d19aa9fc0355dd33995044ca2ea36",
+    "output_compare\\ggs_baseline\\scan65\\vis\\results.json": "33d7c915d7b1257aaaaaae86877c6cd3f92aa23c7423170dd4c4bd3e8f2aede9",
+    "output_compare\\ggs_pipeline\\scan69\\vis\\results.json": "df86af2b67eb57bf35371204723814f5b3666e7b341cd62ce2c2e2a96a094297",
+    "output_compare\\ggs_pipeline\\scan83\\vis\\results.json": "4acc7735553608093cf7d32700799bda2ce9fc209050d2a42d82eeee1224f528",
+    "output_compare\\ggs_baseline\\scan83\\vis\\results.json": "9656dcb01e95434876c0c8e047b62d3487171c1da0e953cf36c3ce1aacc67f3c",
+    "output_compare\\ggs_pipeline\\scan97\\vis\\results.json": "b3b1e0107301ecf68300b34ec04c7b1d93d77a1e4e98373e33188d1312d481e5",
+    "output_compare\\ggs_baseline\\scan97\\vis\\results.json": "f85e7de5fe0616d745c11de6862f9d259220ebee25d6c4f43516f06ca74b93ec"
+  }
+}

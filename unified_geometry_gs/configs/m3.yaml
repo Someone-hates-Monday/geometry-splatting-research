@@ -1,0 +1,5 @@
+# M3: Full pipeline + mesh from unified field (placeholder for milestone 3)
+
+milestone: 3
+mesh_from_unified_occupancy: false  # set true when implemented
+run_post_refine: false              # optional: SuGaR bind+refine on output mesh

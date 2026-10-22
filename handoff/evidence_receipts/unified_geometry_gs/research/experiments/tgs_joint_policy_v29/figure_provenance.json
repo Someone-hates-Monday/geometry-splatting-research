@@ -1,0 +1,16 @@
+{
+  "inputs": {
+    "experiments/tgs_joint_policy_v29/analysis.json": "9affdc817f33b5e1e81f62b45a791a440694ac97f257da10cc6a69421b7b609c",
+    "plot_tgs_joint_policy_v29.py": "d99ac3c0f80c0ca4c03f7a32f3eaebe2c88033460edb73a4057f263aaa41fb7d",
+    "experiments/tgs_joint_policy_v29/figure_data.csv": "15bcc8f55d9c8a5ba0af299dd3b772f0c99590ebdf4d61a15f0097888f26a9c1"
+  },
+  "all_forced_policies": true,
+  "per_view_rows": 40,
+  "scale": "symlog, linear threshold1e-10; presentation only, not selection threshold",
+  "axis_padding": "two times each signed extreme",
+  "means": "two calibration or two heldout views, equal weights",
+  "uncertainty": "none; dependent views displayed separately",
+  "fixed_external_FP32_color_contract": true,
+  "publisher_requirements": "unspecified; provisional research figure",
+  "alt_text": "Two scene panels compare calibration means, heldout means, and both individual heldout observations for five frozen eight-edit rules. The signed mixed primary rule improves calibration but worsens heldout means in both scenes. Negative changes improve the image objective. This is not a training or final-quality result."
+}

@@ -1,0 +1,587 @@
+{
+  "created_utc": "2026-10-22T08:12:56.098408+00:00",
+  "workspace": "C:\\Users\\Someone\\Desktop\\SuGaR-main",
+  "scope": "Only the60 intermediate 10000..29000 step checkpoints of historical tau0.3/0.5/1.2 scan105 runs. No directory, data, PLY, final30000 or research artifact deletion.",
+  "reason": "Completed tau sweep uses final point clouds and vis/results.json; intermediate optimizer states are not needed for the retained final evaluation. Exact intermediate resume capability will be lost. scripts/cleanup_outputs.sh previously prescribed broader pruning; this plan is narrower.",
+  "candidates": [
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt10000.pth",
+      "bytes": 236529126,
+      "mtime_ns": 1791698524416905500,
+      "sha256": "7e7d2bea7ec10f68881a3c6eea0a72536bff06b26382244997ed48a4d28ab562"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt11000.pth",
+      "bytes": 242830566,
+      "mtime_ns": 1791698578829990700,
+      "sha256": "828643c24da5583e831a2f401591b28823a65f65e313eb012bd1ddf4bde2e74e"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt12000.pth",
+      "bytes": 247624102,
+      "mtime_ns": 1791698633723452500,
+      "sha256": "acba967b7a5e52c2a8f592178d83fe100ff64c89d0fb177702c8736df38f156a"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt13000.pth",
+      "bytes": 237920806,
+      "mtime_ns": 1791698690153255500,
+      "sha256": "651837440d268062607e3eeb317569af6d8f18895b96f965634a0a9601826ddf"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt14000.pth",
+      "bytes": 242170342,
+      "mtime_ns": 1791698746885630400,
+      "sha256": "fa63007d9f86b80b746cc00b88ff2674f0a5037af219024320968df50475f536"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt15000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791698803565104800,
+      "sha256": "e821fb8ce59fb7cdc57bc47fad61939330f125085773d05d6006289b0701194b"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt16000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791698859033696500,
+      "sha256": "8344bd39982d2dad92ba763f93f4ac62afa731d5969da618258f9d2fd249514a"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt17000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791698914407877700,
+      "sha256": "14fae96479cd4c743f6c22cc4e11609a56e6df2022ea6a6fd1687e06bd67bcad"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt18000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791698969744384400,
+      "sha256": "4ba5fc1b087ac5acc925dea73e5659feebcdb8bad346c615d016b92987c6aeae"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt19000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791699024867000800,
+      "sha256": "882889db190c803ffed1e526f146bde87dc1b0cd313f13516caef3f90d353b5a"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt20000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791699080076010600,
+      "sha256": "cb835f21167363216ed46e51b6ab7efdee79ee918532d0a6a5ebd99601db7822"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt21000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791699135131072600,
+      "sha256": "cfad8085d1d9f8e704bd3335647cd4fdfccbf958dfd295a20ff91fc349167be1"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt22000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791699190180097300,
+      "sha256": "98ed00fd6e01c88bb7b51f54f64d788098d456a6e391ef6c1753a99e68bdf9b0"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt23000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791699245451301800,
+      "sha256": "3aba227a715d4291609bfa621832a0f8a2c704c90d7d53a6588f1fba42c7b126"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt24000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791699300613962400,
+      "sha256": "3937023d2279caf414ffd9fbdc5dfdbb662968a55a2355efae7b792a5399d086"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt25000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791699355824539900,
+      "sha256": "e35081e8efd52d0e11422f35b7c6cfc9525b4b495545253bce86ad13184bf19d"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt26000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791699410978406500,
+      "sha256": "3b7717e5d299a28f5fbd4aed6abbc90ddde2fb9e379cf1b3989bff7552f279c8"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt27000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791699466113918500,
+      "sha256": "745af197ac796dba552341da6d22efae3e3038fe370c6a03effd4302ef729677"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt28000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791699521370581000,
+      "sha256": "9979c76671fd1c43434339b6816d68b0e83e1d2ae0e62cf3a14bc1d2730cc6c6"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt29000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791699576703019000,
+      "sha256": "95cf603c1089754780facd99a87257af9ba2a3889175688246981c85b55e1423"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt10000.pth",
+      "bytes": 260097958,
+      "mtime_ns": 1791699944726856100,
+      "sha256": "f7d3aff5a53fa4a46c51e8a51e5d0f5267874751788a331a07c6857ce2612fa0"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt11000.pth",
+      "bytes": 266129638,
+      "mtime_ns": 1791700003375151200,
+      "sha256": "2e62f79da407fbb6d99e565512672365710125a5a123a70b929836fb7f8aafcc"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt12000.pth",
+      "bytes": 270537382,
+      "mtime_ns": 1791700062358534900,
+      "sha256": "c2a6f3e474772838b01824bbbaf6785e4efaf1223d28a22105536898090b0647"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt13000.pth",
+      "bytes": 258763942,
+      "mtime_ns": 1791700123301814500,
+      "sha256": "8f02f7c1e679d303a437e0b8da9e715289b2e7417ee46d308ce4b241ba19a7ff"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt14000.pth",
+      "bytes": 263691046,
+      "mtime_ns": 1791700183951103600,
+      "sha256": "92475bf371cdfad9a5e936e66b54445659d9ab482e97dc685b85ab16a10aed64"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt15000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700244733905000,
+      "sha256": "f70a355461da2ab8ff0b21134180be7bd7109a64f5f0f64804b73a75c599dbac"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt16000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700304485990400,
+      "sha256": "d54642ec30a28b7398de7842ba2a19f7cae603cbcf0ab97f196b6b89302f351d"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt17000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700365128210900,
+      "sha256": "92d920a5cf13401b962ec1f5f9ee42b8b855cfe1be720b00e0b7afe3503150ee"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt18000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700425457900700,
+      "sha256": "3d6f14e657afb72f9c778f3328a2d8fe842f3e44e2786fbd5934f6d952d74470"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt19000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700484736383200,
+      "sha256": "63cd59eb1a648beb12e9a35c0b5d5393e383de1a9e202d299fe81dc0538208e3"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt20000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700544549792100,
+      "sha256": "85f456d1694d7c45ccff14dea02ae60c132cb8ce0043388f3c9224b35b593571"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt21000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700605324940500,
+      "sha256": "364c04d3563209832a5dd5d2ba141ea4835f31ba1e5974fe4bee01443042700d"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt22000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700666612630200,
+      "sha256": "6fde440c7c4703663247696f832f4f00f648d867077ec5bbd8d0a4678b3db462"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt23000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700725546861800,
+      "sha256": "24478ee734444ce7e9c03827857ce46d2ab6053ceac14844e16e136330e439db"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt24000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700785202116300,
+      "sha256": "bcf0130d27592ce9a2dfbe96f4e3d023f7bd7db8b5429447277dfb01d02f55dd"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt25000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700843596112700,
+      "sha256": "0d93212e036ed3e0d04710220760403cbe390525112d70522abdfdad7c7e0ae3"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt26000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700902865649800,
+      "sha256": "23e4802bde8b0f44d1b21ab6cafe7388afe1dfbc93af0fc0b4a1f67c08d9c451"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt27000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791700962520086100,
+      "sha256": "7561f96b378f07f367dd5bbd7fe5737c00dcfcabe7e35fa749cf3c69ae28fc1a"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt28000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791701022810648700,
+      "sha256": "9c42f26ffdab633d9ba37a9624fbd255397a4088cf1859a7f14a7963fe5f3588"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt29000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791701082748150400,
+      "sha256": "7e4e8baa2dbead06580c51313fbada029e51910a3874918993c067046cffaeeb"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt10000.pth",
+      "bytes": 255887782,
+      "mtime_ns": 1791701458935844600,
+      "sha256": "c6763a65673f4b86709f157d3c9d2eefffd93ae5a77c66c426a61dd80b6ef4c8"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt11000.pth",
+      "bytes": 264927718,
+      "mtime_ns": 1791701515431071100,
+      "sha256": "cff9f64f6f656b9430ded5716da109e9d81c8610d4d4a2ea7b734671d9ee27a5"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt12000.pth",
+      "bytes": 271916902,
+      "mtime_ns": 1791701572463004000,
+      "sha256": "6f04cecc23a9ee5e9da3800a5fe253204b144b49e7b18e88c77563639afe522b"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt13000.pth",
+      "bytes": 258479782,
+      "mtime_ns": 1791701630864735800,
+      "sha256": "8610b1a7a9d1450dacb0e04809404542c1678d61420af87bad1c48685c6a819b"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt14000.pth",
+      "bytes": 266837158,
+      "mtime_ns": 1791701689250150500,
+      "sha256": "3ee0c9dab78abc42cdc6745d1519cb54dc0484e37005454bc17643b88d1f0726"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt15000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791701747402977900,
+      "sha256": "06949b937db9995debf3137bd878769784da4513303c164a6722e4d2e3b3c400"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt16000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791701804952335700,
+      "sha256": "188289d98018ad4e29fef91d057cd1c5923411c87edac94ccd61df4744e7393d"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt17000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791701862472852300,
+      "sha256": "1a9da77a8b8da55b190438580b60e71515b0b87d13d7c52197cffd5b4041911f"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt18000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791701919756630600,
+      "sha256": "c8712073933de4ab01b9ea220ae103ae0b43362ca02596ff115492d00d44b180"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt19000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791701977077321400,
+      "sha256": "92d9e79347641b625ff7d4f92e8fc273156aef4c9ecdd09b738466c6b57a0423"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt20000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791702034273169800,
+      "sha256": "662ea3a98fb10bbc98de722ab032fede73b9e277f8ea0a3b5410ca531bf1d409"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt21000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791702091263400700,
+      "sha256": "8237135ef9ecf6e0e87697165c777a1981948a05a0ead4011e6580c295c38c3e"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt22000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791702148420736500,
+      "sha256": "a7ddcf7f33f1bf28c11cbaf47178746ccc19c14d39be6c5c43d9064b82141100"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt23000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791702205594878100,
+      "sha256": "f907cde6e83bf269fba56938d8578c7b4d4f36c54c961ea7b2f020a2cebcc3d4"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt24000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791702262743540600,
+      "sha256": "fef43fa41f68122af189c1af0ee5b31eead2c7fb40533c1d4e96b40856963414"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt25000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791702320525279200,
+      "sha256": "43901784029bcd398db0c60a03bd6304e5733e03bcb9bebbb9a777d5aaf7251f"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt26000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791702379029412400,
+      "sha256": "125f3ca163380bb1c66d84ffdd23335d5b099af9cb4356aad8b70bc5ae12670f"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt27000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791702437369802400,
+      "sha256": "33be05fb9bf8c8b31eb199c8c1acfa4dd57739b7bea2e1c218f09d26dc70205e"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt28000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791702495827923700,
+      "sha256": "1824df72df47b2ea779e3b9b28cda33cb6387c00fb87f986f962a5d8533ead5c"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt29000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791702553952621200,
+      "sha256": "769598a871f5f50cebef7e798d32af5934289e66f0bddd2036346aba56b28f21"
+    }
+  ],
+  "candidate_count": 60,
+  "candidate_bytes": 15622688680,
+  "preserved_essential": [
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt30000.pth",
+      "bytes": 245161702,
+      "mtime_ns": 1791699633552364100,
+      "sha256": "ffdef164d31101bbb2c92f7e862c4c44e0e67309722a21a99c6ffe42506cd358"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/point_cloud/iteration_30000/point_cloud.ply",
+      "bytes": 85802516,
+      "mtime_ns": 1791699632815835100,
+      "sha256": "97df70f818692e67c2f98df0e7483f383326ea4bf8c7fb48d6eb51fa359767e1"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/point_cloud/iteration_7000/point_cloud.ply",
+      "bytes": 56265344,
+      "mtime_ns": 1791698376846306600,
+      "sha256": "fa8f0645f365f1cb98df0742479404e812f7f27bcd5f6af1ec2ab8f07697d71f"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/vis/results.json",
+      "bytes": 100,
+      "mtime_ns": 1791699698124145300,
+      "sha256": "a05eb6e7facf71ec11b1b723cfce35cec158ab58c00bccdbf9d88f9d42f47353"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/cfg_args",
+      "bytes": 417,
+      "mtime_ns": 1791698282598778400,
+      "sha256": "5ecb322225b643ed7a08ed0b4679fd50ddf8dba10b297fab48cf2c865085229c"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/cameras.json",
+      "bytes": 25032,
+      "mtime_ns": 1791698282872031800,
+      "sha256": "a1380aba48a2592aa57f919248c66070b123d4b254998d05b062a8554f31e5f2"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/input.ply",
+      "bytes": 1196792,
+      "mtime_ns": 1791698282867031800,
+      "sha256": "88a80fe86d3e6ccf12da92522adf6bee48ff5991b53088567cbd47217d6bea17"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/multi_view.json",
+      "bytes": 5924,
+      "mtime_ns": 1791699666057990300,
+      "sha256": "465dddd21330c8a952a6a0cf17e366715ff7c4cbd0ae0bf93b76e120b02a1f14"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/recon.ply",
+      "bytes": 32287624,
+      "mtime_ns": 1791699652727115500,
+      "sha256": "880a40d7cfe44fb401c14fe06bf7ec04cfc2f082972a8bdeb20bddb4d07f061a"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/recon_post.ply",
+      "bytes": 31799027,
+      "mtime_ns": 1791699654342650900,
+      "sha256": "699e87de9f99aff04c323cdde1ee253a97b16399d6087c1d99c83a4035a52f56"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/recon_aligned.ply",
+      "bytes": 17208483,
+      "mtime_ns": 1791699667169775000,
+      "sha256": "53ab280046f031fd42e7f06cedf142cf98f5e5fd10cb2d5f2358bb79fd0f35d8"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt30000.pth",
+      "bytes": 267160806,
+      "mtime_ns": 1791701145455263300,
+      "sha256": "c0c53790c49b360e709e1b785cb0622f476f7c27373de1aa44b9b8a33149b319"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/point_cloud/iteration_30000/point_cloud.ply",
+      "bytes": 93502376,
+      "mtime_ns": 1791701144562821900,
+      "sha256": "68410c365338a2777a63bcf2ce3fb6e8006b244538d38a6fa6596e002d015d70"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/point_cloud/iteration_7000/point_cloud.ply",
+      "bytes": 55335716,
+      "mtime_ns": 1791699789183674300,
+      "sha256": "f1d1eba3109b96592c2770f161a9e9c4633163513df6d409b1ce8df6e6908361"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/vis/results.json",
+      "bytes": 102,
+      "mtime_ns": 1791701211886658600,
+      "sha256": "7793e39aeb1ef878ecd849a0badefd4d80f7d20b2896730d940c9e915ec588fa"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/cfg_args",
+      "bytes": 417,
+      "mtime_ns": 1791699700071742900,
+      "sha256": "35c5a328416b4b54ab4304cffed5a9c019b2a0f035ec8d856c599f7157b6563d"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/cameras.json",
+      "bytes": 25032,
+      "mtime_ns": 1791699700244575100,
+      "sha256": "a1380aba48a2592aa57f919248c66070b123d4b254998d05b062a8554f31e5f2"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/input.ply",
+      "bytes": 1196792,
+      "mtime_ns": 1791699700241907800,
+      "sha256": "88a80fe86d3e6ccf12da92522adf6bee48ff5991b53088567cbd47217d6bea17"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/multi_view.json",
+      "bytes": 5924,
+      "mtime_ns": 1791701180798833900,
+      "sha256": "465dddd21330c8a952a6a0cf17e366715ff7c4cbd0ae0bf93b76e120b02a1f14"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/recon.ply",
+      "bytes": 32298173,
+      "mtime_ns": 1791701166608426300,
+      "sha256": "1b0a8ef767c18b7b5ccad7344c15f02b0837dbfd81c77b9e638fd23097cd0b62"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/recon_post.ply",
+      "bytes": 31846101,
+      "mtime_ns": 1791701168382901100,
+      "sha256": "f6e9c88006baee6ab994d5289e79a81d2177d3bea39d17b3cde04297bb483e46"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/recon_aligned.ply",
+      "bytes": 17233297,
+      "mtime_ns": 1791701182018935700,
+      "sha256": "4c67696510752811bd42f2b6d2ea7a5557e37451bf5996659a8ed2d043b2c439"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt30000.pth",
+      "bytes": 272900454,
+      "mtime_ns": 1791702613271860600,
+      "sha256": "40053f639f729e2c92ada7b7eb528b0bae60ad3c3aa960fb391c9275800277cf"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/point_cloud/iteration_30000/point_cloud.ply",
+      "bytes": 95511320,
+      "mtime_ns": 1791702612392334500,
+      "sha256": "83e4fef534ef2b4d1a139a1f8883ae90456fa1b760e416d5986973a1c9e41fba"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/point_cloud/iteration_7000/point_cloud.ply",
+      "bytes": 55677932,
+      "mtime_ns": 1791701305823164900,
+      "sha256": "6d4690c418d1129b01621ad60e58451c4e657fa7601b2076724495aa4694f73f"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/vis/results.json",
+      "bytes": 101,
+      "mtime_ns": 1791702675530456700,
+      "sha256": "8fa7a50562d61d3b11577e226ebaca1fa2e1438ba478e74a037492e59bacb9e4"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/cfg_args",
+      "bytes": 417,
+      "mtime_ns": 1791701213927630100,
+      "sha256": "e008ff592c3373da6e6cb5dd73a0e4633a1bf6cfd26e9627dd9ce3246de2e726"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/cameras.json",
+      "bytes": 25032,
+      "mtime_ns": 1791701214127744100,
+      "sha256": "a1380aba48a2592aa57f919248c66070b123d4b254998d05b062a8554f31e5f2"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/input.ply",
+      "bytes": 1196792,
+      "mtime_ns": 1791701214123365900,
+      "sha256": "88a80fe86d3e6ccf12da92522adf6bee48ff5991b53088567cbd47217d6bea17"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/multi_view.json",
+      "bytes": 5924,
+      "mtime_ns": 1791702644441969500,
+      "sha256": "465dddd21330c8a952a6a0cf17e366715ff7c4cbd0ae0bf93b76e120b02a1f14"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/recon.ply",
+      "bytes": 32323553,
+      "mtime_ns": 1791702631514944700,
+      "sha256": "0c0431228bd1180fac66c5e8989e077a308dcfd42b163d8919612f0f606ca57d"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/recon_post.ply",
+      "bytes": 31865096,
+      "mtime_ns": 1791702633100765800,
+      "sha256": "b868abcb04ffe674926279faa3f1f36d4514a2a8f2a57f1ecea35a17633fb274"
+    },
+    {
+      "path": "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/recon_aligned.ply",
+      "bytes": 17245992,
+      "mtime_ns": 1791702645559652100,
+      "sha256": "111da44a3aea2a7ee9964f27cd18beb98ad74c9255365d1d0bb7db182886cfbf"
+    }
+  ],
+  "reference_audit": {
+    "text_files_scanned": 6036,
+    "literal_candidate_hits": [],
+    "family_reference_files": [
+      "unified_geometry_gs/docs/RESEARCH_PROTOCOL.md",
+      "unified_geometry_gs/scripts/cleanup_outputs.sh",
+      "unified_geometry_gs/scripts/cleanup_repo_leftovers.sh",
+      "unified_geometry_gs/scripts/judge_g1.py",
+      "unified_geometry_gs/scripts/judge_g1_pilot.py",
+      "unified_geometry_gs/scripts/run_research_p3.sh",
+      "unified_geometry_gs/scripts/run_research_p4.sh",
+      "unified_geometry_gs/scripts/_check_p4_status.sh",
+      "unified_geometry_gs/scripts/_run_g1_pilot_now.sh"
+    ],
+    "errors": [],
+    "limitations": "Literal-path/hash scan only, not a proof about dynamic or external consumers. run_research_p3/p4 generate checkpoints; judge_g1 reads vis/results.json. No recovery copy is created for pruned intermediate optimizer states."
+  }
+}

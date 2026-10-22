@@ -1,0 +1,43 @@
+{
+  "baseline": {
+    "path": "./output_compare/ggs_baseline/scan105",
+    "image_metrics": {
+      "num_views": 16.0,
+      "l1": 0.02114988799439743,
+      "psnr": 31.599172115325928,
+      "ssim": 0.929865088313818
+    },
+    "mesh_metrics": {
+      "mean_d2s": 0.4679143255546782,
+      "mean_s2d": 0.5647561814883189,
+      "overall": 0.5163352535214986
+    }
+  },
+  "optimized": {
+    "path": "./output_compare/m2_wgeo/scan105",
+    "image_metrics": {
+      "num_views": 16.0,
+      "l1": 0.020596180576831102,
+      "psnr": 31.95025324821472,
+      "ssim": 0.9385457523167133
+    },
+    "mesh_metrics": {
+      "mean_d2s": 0.6212601674880098,
+      "mean_s2d": 0.6517113912005081,
+      "overall": 0.636485779344259
+    }
+  },
+  "delta_optimized_minus_baseline": {
+    "l1": -0.0005537074175663292,
+    "psnr": 0.35108113288879395,
+    "ssim": 0.008680664002895355,
+    "mean_d2s": 0.15334584193333162,
+    "mean_s2d": 0.08695520971218929,
+    "overall": 0.12015052582276042
+  },
+  "mesh_quality_compared": true,
+  "metrics_description": {
+    "image_metrics": "L1 (\u2193), PSNR (\u2191), SSIM (\u2191) on training views.",
+    "mesh_metrics": "mean_d2s, mean_s2d, overall (Chamfer to GT, \u2193 = better). \u7f51\u683c\u8d28\u91cf\u5bf9\u6bd4\u9700 DTU \u5b98\u65b9\u6570\u636e."
+  }
+}

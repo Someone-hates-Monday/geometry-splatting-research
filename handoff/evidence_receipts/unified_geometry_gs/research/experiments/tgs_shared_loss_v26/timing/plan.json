@@ -1,0 +1,259 @@
+{
+  "inputs": {
+    "benchmark_tgs_shared_loss_v26.py": "55d74dc4ffbb934e7a8b42dd1536ce0246cc449ad1585385558fd4e18846c1c2",
+    "TGS_SHARED_LOSS_PROTOCOL_V26.md": "725b2681952b6ba1ecf2132a80ba3c08fb12a6e3084c5ef1d4e8362b651b4883",
+    "benchmark_tgs_local_split_v19.py": "44de641135f719b2a460f3ad084667393dcd284955cae24f7da0cd7848cf5ff3",
+    "tgs_packed_query_common_v25.py": "f960ff467f31b80aa84f7086f8f39217d7ff3142b6ee837de0cec5f45a494957",
+    "tgs_shared_image_loss_common_v26.py": "aab9db7a3cfd6f5314cf4bd758c6e5c3a29aca25f71226e90f291a82e6cc9620",
+    "tgs_local_image_loss_common_v24.py": "1c616a801f53436f8c8ae6bc692e7c9d91b69141da493ae2800240f3cb512c7d",
+    "tgs_batch_score_common_v22.py": "47f9259d26b1cba7c1538ad8c124526348b32a37c0e615c4d99bbe602d1825f0",
+    "run_tgs_local_split_v19.py": "ee3b6f7ba4c421f609b792e623bfb44b842a9eba6f125ee680ee82c305689af7",
+    "trace_tgs_window_scene_v15.py": "8de149faf59ea884b741acde518129c0389f150bb0e9c2139f6d9a7580586a87",
+    "experiments/tgs_shared_loss_v26/plan.json": "1e5824dcdecac643af10bc5eb92002435d5b4876753a18981f0e7cbe9426ac52",
+    "experiments/tgs_shared_loss_v26/build_receipt.json": "545d4b08bc84540ffd3285a76a7d1440fce2c9fd15c9e92f1351db34ce150d6e",
+    "experiments/tgs_shared_loss_v26/results.json": "77b0338cd89c8de392bbe2ee2521214714b6254c3ec55b485aca250f776c0c03",
+    "experiments/tgs_packed_query_v25/plan.json": "6ca83f7d8917cdc5eabc797a74074399d47faf5274f0c0c3357719993b27bf46",
+    "experiments/tgs_packed_query_v25/runtime_dependency_addendum.json": "929c44d60bef660c876bc1228ab51e28ffd9842a969eadd3ebd91d7b18acdae9",
+    "experiments/tgs_packed_query_v25/build_receipt.json": "ca454bc0b985583d853a8e219d51b3facf8cd0c8a087fa25ebd33cc1c0bc995e",
+    "experiments/tgs_local_image_loss_v24/results.json": "631745d71c283f48c5827911c818384a5388d745f29c996ab1a1a69155bddc04"
+  },
+  "orders": {
+    "flowers_fresh": [
+      [
+        "B_cached_image",
+        "A_full_score",
+        "D_batch_packed",
+        "C_sequential_packed"
+      ],
+      [
+        "A_full_score",
+        "C_sequential_packed",
+        "B_cached_image",
+        "D_batch_packed"
+      ],
+      [
+        "C_sequential_packed",
+        "D_batch_packed",
+        "A_full_score",
+        "B_cached_image"
+      ],
+      [
+        "D_batch_packed",
+        "B_cached_image",
+        "C_sequential_packed",
+        "A_full_score"
+      ],
+      [
+        "D_batch_packed",
+        "B_cached_image",
+        "C_sequential_packed",
+        "A_full_score"
+      ],
+      [
+        "A_full_score",
+        "C_sequential_packed",
+        "B_cached_image",
+        "D_batch_packed"
+      ],
+      [
+        "B_cached_image",
+        "A_full_score",
+        "D_batch_packed",
+        "C_sequential_packed"
+      ],
+      [
+        "C_sequential_packed",
+        "D_batch_packed",
+        "A_full_score",
+        "B_cached_image"
+      ]
+    ],
+    "flowers_old_0": [
+      [
+        "A_full_score",
+        "B_cached_image",
+        "C_sequential_packed",
+        "D_batch_packed"
+      ],
+      [
+        "C_sequential_packed",
+        "A_full_score",
+        "D_batch_packed",
+        "B_cached_image"
+      ],
+      [
+        "C_sequential_packed",
+        "A_full_score",
+        "D_batch_packed",
+        "B_cached_image"
+      ],
+      [
+        "B_cached_image",
+        "D_batch_packed",
+        "A_full_score",
+        "C_sequential_packed"
+      ],
+      [
+        "D_batch_packed",
+        "C_sequential_packed",
+        "B_cached_image",
+        "A_full_score"
+      ],
+      [
+        "A_full_score",
+        "B_cached_image",
+        "C_sequential_packed",
+        "D_batch_packed"
+      ],
+      [
+        "B_cached_image",
+        "D_batch_packed",
+        "A_full_score",
+        "C_sequential_packed"
+      ],
+      [
+        "D_batch_packed",
+        "C_sequential_packed",
+        "B_cached_image",
+        "A_full_score"
+      ]
+    ],
+    "room_fresh": [
+      [
+        "D_batch_packed",
+        "A_full_score",
+        "B_cached_image",
+        "C_sequential_packed"
+      ],
+      [
+        "A_full_score",
+        "C_sequential_packed",
+        "D_batch_packed",
+        "B_cached_image"
+      ],
+      [
+        "B_cached_image",
+        "D_batch_packed",
+        "C_sequential_packed",
+        "A_full_score"
+      ],
+      [
+        "C_sequential_packed",
+        "B_cached_image",
+        "A_full_score",
+        "D_batch_packed"
+      ],
+      [
+        "A_full_score",
+        "C_sequential_packed",
+        "D_batch_packed",
+        "B_cached_image"
+      ],
+      [
+        "C_sequential_packed",
+        "B_cached_image",
+        "A_full_score",
+        "D_batch_packed"
+      ],
+      [
+        "D_batch_packed",
+        "A_full_score",
+        "B_cached_image",
+        "C_sequential_packed"
+      ],
+      [
+        "B_cached_image",
+        "D_batch_packed",
+        "C_sequential_packed",
+        "A_full_score"
+      ]
+    ],
+    "room_old_0": [
+      [
+        "A_full_score",
+        "C_sequential_packed",
+        "D_batch_packed",
+        "B_cached_image"
+      ],
+      [
+        "D_batch_packed",
+        "A_full_score",
+        "B_cached_image",
+        "C_sequential_packed"
+      ],
+      [
+        "B_cached_image",
+        "D_batch_packed",
+        "C_sequential_packed",
+        "A_full_score"
+      ],
+      [
+        "B_cached_image",
+        "D_batch_packed",
+        "C_sequential_packed",
+        "A_full_score"
+      ],
+      [
+        "A_full_score",
+        "C_sequential_packed",
+        "D_batch_packed",
+        "B_cached_image"
+      ],
+      [
+        "C_sequential_packed",
+        "B_cached_image",
+        "A_full_score",
+        "D_batch_packed"
+      ],
+      [
+        "D_batch_packed",
+        "A_full_score",
+        "B_cached_image",
+        "C_sequential_packed"
+      ],
+      [
+        "C_sequential_packed",
+        "B_cached_image",
+        "A_full_score",
+        "D_batch_packed"
+      ]
+    ]
+  },
+  "views": [
+    {
+      "scene": "flowers",
+      "view": "fresh",
+      "K": 8
+    },
+    {
+      "scene": "flowers",
+      "view": "old_0",
+      "K": 8
+    },
+    {
+      "scene": "room",
+      "view": "fresh",
+      "K": 8
+    },
+    {
+      "scene": "room",
+      "view": "old_0",
+      "K": 8
+    }
+  ],
+  "arms": [
+    "A_full_score",
+    "B_cached_image",
+    "C_sequential_packed",
+    "D_batch_packed"
+  ],
+  "warm_blocks": 2,
+  "measured_blocks": 8,
+  "derived_control_forward_cap": 1004,
+  "score_atol": 1e-13,
+  "score_rtol": 1e-09,
+  "training": false,
+  "torch": "2.12.0.dev20260314+cu128",
+  "cuda": "12.8",
+  "device": "NVIDIA GeForce RTX 5090 Laptop GPU"
+}

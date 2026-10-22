@@ -1,0 +1,197 @@
+{
+  "all_passed": true,
+  "rows": [
+    {
+      "scene": "flowers",
+      "view": "calibration_0",
+      "parent_id": 25166,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "10f1f7ed36515f2b80c8daad839b440aaca4ab279696892fc1ef85c9071dac54",
+      "patch_sha256": "832da04e3e8e9bab0ed7a1c86d540afb4f2f5015dc77e8927d1105a03f9967e0",
+      "ROI_outside_unchanged": true,
+      "origin": "preserved_original_passed_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_0",
+      "parent_id": 168865,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "babb5ad41b7b7824d888f10de7479282d7d00f9a7a5ad2c0673fb774e4a103ef",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "preserved_original_passed_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_0",
+      "parent_id": 320962,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "babb5ad41b7b7824d888f10de7479282d7d00f9a7a5ad2c0673fb774e4a103ef",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "preserved_original_passed_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_0",
+      "parent_id": 753152,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "a67b0e62fca7b76b134cc81e12cc42287bda2b20c7aed854c592fbd135f17f5b",
+      "patch_sha256": "22390e98679e24816a9616a8639d2a1e222946cb79af9ddf2eb1b0fd11d5d082",
+      "ROI_outside_unchanged": true,
+      "origin": "preserved_original_passed_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_0",
+      "parent_id": 837888,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "25185cfe90be717977fcba39ee5983c9d51be2273eb6bf534459e692e28a1b48",
+      "patch_sha256": "a4b5f5c8b7fbc41f80d01f7650f641285d3570b7c150a9198a0fd620f0ef421c",
+      "ROI_outside_unchanged": true,
+      "origin": "preserved_original_passed_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_1",
+      "parent_id": 25166,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "d9b460aef7ae90dcbdb362da250571241f2ad06842eb817c4f6a35c0d7ced9c7",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "preserved_original_passed_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_1",
+      "parent_id": 168865,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "d9b460aef7ae90dcbdb362da250571241f2ad06842eb817c4f6a35c0d7ced9c7",
+      "patch_sha256": "4bfa243026fbe6c776c78513a673d7fffbf2e53109f79cf3873383c615b0c33e",
+      "ROI_outside_unchanged": true,
+      "origin": "preserved_original_passed_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_1",
+      "parent_id": 320962,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "f19c222b0a890ddf698e6e303bc9b9aaf468f788de6bf771895b567f5973f62d",
+      "patch_sha256": "1bde7cd403740049286b10f9ef78efbe2bb227b2533918f601e3cf55291261f1",
+      "ROI_outside_unchanged": true,
+      "origin": "preserved_original_passed_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_1",
+      "parent_id": 753152,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "d9b460aef7ae90dcbdb362da250571241f2ad06842eb817c4f6a35c0d7ced9c7",
+      "patch_sha256": "5cfa524be5368c26b1d3ef6c51c204b02bcc69e8dfaa454e8056c563aa2a6f63",
+      "ROI_outside_unchanged": true,
+      "origin": "preserved_original_passed_reference"
+    },
+    {
+      "scene": "flowers",
+      "view": "calibration_1",
+      "parent_id": 837888,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "d9b460aef7ae90dcbdb362da250571241f2ad06842eb817c4f6a35c0d7ced9c7",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "preserved_original_passed_reference"
+    },
+    {
+      "scene": "room",
+      "view": "calibration_0",
+      "parent_id": 42674,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "a62fdb7c8281e3db57d04abb5134e845a603a02a9aefe06a633dc180258ea887",
+      "patch_sha256": "df58ffa381bb9f0aaa7e0191858c29c56aa6d73d7e19e8b08e2a526eecc26a44",
+      "ROI_outside_unchanged": true,
+      "origin": "saved_fixed_probe_full_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "calibration_0",
+      "parent_id": 605829,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "ec69b14b13aa2e9bf2064c557c941e3285fd37cb7e68bcc54b9043546834f842",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "calibration_0",
+      "parent_id": 642168,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "ce6975feaf03bcb039dc6464fb224d43840e324e6c8e0e222a067fdde80fa987",
+      "patch_sha256": "f0b0c01279853b3d2903a6dc0d14aa59cb29e60c290015ee18d6783b49995931",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "calibration_0",
+      "parent_id": 684536,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "71d7811d33dcca698648f4bdd7568bac2b6f39d3ed361a0297161efe34660eac",
+      "patch_sha256": "38c4cc2176980d2a77da5c2e5327725d1b4c4fff123601d7bc5c7ca9b86a1161",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "calibration_1",
+      "parent_id": 42674,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "de9f80188be30b96730831524f42ae4e1528c1155c29ead87cf526f5c3b9e803",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "calibration_1",
+      "parent_id": 605829,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "5f1523f59dc15ffd8236a4d846cecff1ba46694ff21445d4dd50558e8403287f",
+      "patch_sha256": "0c26020f85697d0d95e3a661c17057a2822fb8082302c39bdddb6b45e635e6a5",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "calibration_1",
+      "parent_id": 642168,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "de9f80188be30b96730831524f42ae4e1528c1155c29ead87cf526f5c3b9e803",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    },
+    {
+      "scene": "room",
+      "view": "calibration_1",
+      "parent_id": 684536,
+      "full_RGB_literal_cached": true,
+      "full_rgb_sha256": "de9f80188be30b96730831524f42ae4e1528c1155c29ead87cf526f5c3b9e803",
+      "patch_sha256": "23491fc03b60d40551fddd8d5fecfd43fbdcff5ce009a05c29187c73f4f8bd50",
+      "ROI_outside_unchanged": true,
+      "origin": "new_corrected_native_reference"
+    }
+  ],
+  "choices_sha256": "c596200ae0385310b7bc66890ae09a2895e635f209dc19780e3451bea7aad696",
+  "new_native_forwards": 22,
+  "new_r1_calls": 7,
+  "reused_full_native_references": 11,
+  "original_attempt_exit": 1,
+  "original_attempt_native_calls": 11,
+  "diagnostic_native_calls": 4,
+  "prior_failed_calls_counted": true,
+  "numerical_contract": "fixed_external_FP32_colors_child_only_SH",
+  "r1_plan_sha256": "757e6f11344f729de55f06492b59f2ed92c2b51670ac94fad547e961768f9c5e",
+  "training": false,
+  "model_inputs_unchanged": true
+}

@@ -1,0 +1,29 @@
+{
+  "baseline": {
+    "path": "./output/dtu/scan24",
+    "mesh_metrics": {
+      "mean_d2s": 0.33642339465740717,
+      "mean_s2d": 0.4139810845684097,
+      "overall": 0.37520223961290844
+    }
+  },
+  "optimized": {
+    "path": "./output/dtu/scan24_pm_edge_soft",
+    "mesh_metrics": {
+      "mean_d2s": 0.3380727398208886,
+      "mean_s2d": 0.4165639810449321,
+      "overall": 0.37731836043291034
+    }
+  },
+  "delta_optimized_minus_baseline": {
+    "mean_d2s": 0.0016493451634814194,
+    "mean_s2d": 0.0025828964765223783,
+    "overall": 0.002116120820001899
+  },
+  "image_metrics_note": "Skipped (--mesh_only).",
+  "mesh_quality_compared": true,
+  "metrics_description": {
+    "image_metrics": "L1 (\u2193), PSNR (\u2191), SSIM (\u2191) on training views.",
+    "mesh_metrics": "mean_d2s, mean_s2d, overall (Chamfer to GT, \u2193 = better). \u7f51\u683c\u8d28\u91cf\u5bf9\u6bd4\u9700 DTU \u5b98\u65b9\u6570\u636e."
+  }
+}

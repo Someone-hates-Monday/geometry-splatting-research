@@ -1,0 +1,14 @@
+const fs = require('fs');
+const path = require('path');
+const ts = require('C:/Users/Someone/AppData/Local/Programs/Microsoft VS Code/110a328ea5/resources/app/extensions/node_modules/typescript/lib/typescript.js');
+const crypto = require('crypto');
+const source = fs.readFileSync(path.join(__dirname,'canvas_coefficient_stage.tsx'),'utf8');
+const result = ts.transpileModule(source,{compilerOptions:{jsx:ts.JsxEmit.ReactJSX,target:ts.ScriptTarget.ES2020,module:ts.ModuleKind.ESNext},fileName:'GGGS-research-audit.canvas.tsx',reportDiagnostics:true});
+const diagnostics = (result.diagnostics||[]).map(d=>({category:d.category,code:d.code,message:ts.flattenDiagnosticMessageText(d.messageText,'\n')}));
+const errors = diagnostics.filter(d=>d.category===ts.DiagnosticCategory.Error);
+const record = {checked_utc:new Date().toISOString(),errors,diagnostics,staged_source_sha256:crypto.createHash('sha256').update(source).digest('hex'),scope:'TypeScript syntax only; SDK typing and app rendering are not confirmed.'};
+const out = path.join(__dirname,'results/canvas_coefficient_syntax_v1.json');
+if(fs.existsSync(out))throw new Error('Fresh output required');
+fs.writeFileSync(out,JSON.stringify(record,null,2)+'\n');
+console.log(JSON.stringify(record));
+if(errors.length)process.exitCode=1;

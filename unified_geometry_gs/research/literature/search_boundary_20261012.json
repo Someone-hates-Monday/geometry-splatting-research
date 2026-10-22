@@ -1,0 +1,184 @@
+{
+  "search_date_local": "2026-10-12",
+  "type": "targeted narrative scoping, not a systematic review",
+  "queries": [
+    {
+      "provider": "web search, primary-domain restricted",
+      "query": "Gaussian splatting median depth differentiability zero slope stochastic solids bracketing",
+      "domains": [
+        "arxiv.org"
+      ]
+    },
+    {
+      "provider": "web search, primary-domain restricted",
+      "query": "\"Gaussian Wrapping\" reciprocity surface erosion",
+      "domains": [
+        "arxiv.org",
+        "github.com"
+      ]
+    },
+    {
+      "provider": "web search, primary-domain restricted",
+      "query": "\"Triangle Splatting\" perspective barycentric",
+      "domains": [
+        "arxiv.org"
+      ]
+    },
+    {
+      "provider": "Consensus",
+      "query_requested": "Gaussian splatting stochastic solids median depth surface reconstruction year:2024-2026 domain:cs",
+      "query_returned": "Gaussian splatting stochastic solids median depth surface reconstruction",
+      "returned_results": 10
+    },
+    {
+      "provider": "Hugging Face connector",
+      "query": "Gaussian splatting median depth transmittance surface reconstruction",
+      "status": "UNAVAILABLE: paper_search not returned by tools/list"
+    }
+  ],
+  "records": [
+    {
+      "title": "PGSR: Planar-Based Gaussian Splatting for Efficient and High-Fidelity Surface Reconstruction",
+      "authors": [
+        "Danpeng Chen",
+        "Hai Li",
+        "Weicai Ye",
+        "Yifan Wang",
+        "Weijian Xie",
+        "Shangjin Zhai",
+        "Nan Wang",
+        "Hao-Min Liu",
+        "Hujun Bao",
+        "Guofeng Zhang"
+      ],
+      "year": 2024,
+      "journal": "IEEE Transactions on Visualization and Computer Graphics",
+      "url": "https://consensus.app/papers/details/dca0faae20d3591c8a7e224ed457bed4/?utm_source=chatgpt"
+    },
+    {
+      "title": "3DGSR: Implicit Surface Reconstruction with 3D Gaussian Splatting",
+      "authors": [
+        "Xiaoyang Lyu",
+        "Yang-Tian Sun",
+        "Yi-Hua Huang",
+        "Xiuzhe Wu",
+        "Ziyi Yang",
+        "Yi-Lun Chen",
+        "Jiang-Miao Pang",
+        "Xiaojuan Qi"
+      ],
+      "year": 2024,
+      "journal": "ACM Transactions on Graphics (TOG)",
+      "url": "https://consensus.app/papers/details/ef88b3e5fcf557ea934db9d25b93fe6c/?utm_source=chatgpt"
+    },
+    {
+      "title": "Gaussian Opacity Fields: Efficient Adaptive Surface Reconstruction in Unbounded Scenes",
+      "authors": [
+        "Zehao Yu",
+        "Torsten Sattler",
+        "Andreas Geiger"
+      ],
+      "year": 2024,
+      "journal": "ACM Transactions on Graphics (TOG)",
+      "url": "https://consensus.app/papers/details/6d2f902b087a598d94bd8559b20e63a1/?utm_source=chatgpt"
+    },
+    {
+      "title": "FatesGS: Fast and Accurate Sparse-View Surface Reconstruction using Gaussian Splatting with Depth-Feature Consistency",
+      "authors": [
+        "Han Huang",
+        "Yulun Wu",
+        "Chao Deng",
+        "G. Gao",
+        "M. Gu",
+        "Yu-Shen Liu"
+      ],
+      "year": 2025,
+      "journal": "Unknown Journal",
+      "url": "https://consensus.app/papers/details/e1368cac8e4f5786bc9d189247cf5a88/?utm_source=chatgpt"
+    },
+    {
+      "title": "Surface Reconstruction from Gaussian Splatting via Novel Stereo Views",
+      "authors": [
+        "Yaniv Wolf",
+        "Amit Bracha",
+        "R. Kimmel"
+      ],
+      "year": 2024,
+      "journal": "Unknown Journal",
+      "url": "https://consensus.app/papers/details/0e5bf5b23a40597a8d56998bde207dc4/?utm_source=chatgpt"
+    },
+    {
+      "title": "RaDe-GS: Rasterizing Depth in Gaussian Splatting",
+      "authors": [
+        "Baowen Zhang",
+        "Chuan Fang",
+        "Rakesh Shrestha",
+        "Yixun Liang",
+        "Xiaoxiao Long",
+        "Ping Tan"
+      ],
+      "year": 2024,
+      "journal": "ACM Transactions on Graphics",
+      "url": "https://consensus.app/papers/details/32c90e5b2be150d0a180d0db29cab4df/?utm_source=chatgpt"
+    },
+    {
+      "title": "DepthSplat: Connecting Gaussian Splatting and Depth",
+      "authors": [
+        "Haofei Xu",
+        "Songyou Peng",
+        "Fangjinhua Wang",
+        "Hermann Blum",
+        "Dániel Baráth",
+        "Andreas Geiger",
+        "Marc Pollefeys"
+      ],
+      "year": 2024,
+      "journal": "2025 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "url": "https://consensus.app/papers/details/111ca2d1d4005b17814eff93b6a3fd19/?utm_source=chatgpt"
+    },
+    {
+      "title": "Introducing Unbiased Depth into 2D Gaussian Splatting for High‐accuracy Surface Reconstruction",
+      "authors": [
+        "Yi-Xin Yang",
+        "Yang Zhou",
+        "Hui Huang"
+      ],
+      "year": 2025,
+      "journal": "Computer Graphics Forum",
+      "url": "https://consensus.app/papers/details/1dba735543cb5cae8802b0488815c15c/?utm_source=chatgpt"
+    },
+    {
+      "title": "Geometry-Grounded Gaussian Splatting",
+      "authors": [
+        "Baowen Zhang",
+        "Chenxing Jiang",
+        "Heng Li",
+        "Shao-Jie Shen",
+        "Ping Tan"
+      ],
+      "year": 2026,
+      "journal": "ArXiv",
+      "url": "https://consensus.app/papers/details/0b0d322238445c6bafaf896365631623/?utm_source=chatgpt"
+    },
+    {
+      "title": "VCR-GauS: View Consistent Depth-Normal Regularizer for Gaussian Surface Reconstruction",
+      "authors": [
+        "Hanlin Chen",
+        "Fangyin Wei",
+        "Chen Li",
+        "Tian-Xin Huang",
+        "Yunsong Wang",
+        "Gim Hee Lee"
+      ],
+      "year": 2024,
+      "journal": "ArXiv",
+      "url": "https://consensus.app/papers/details/3ee04dd39daa52d79e7752b50d29b1f4/?utm_source=chatgpt"
+    }
+  ],
+  "limitations": [
+    "Single reviewer; no exhaustive coverage or absence-of-prior-work claim.",
+    "Search coverage and source appraisal differ; a hit is not full-text assessment.",
+    "Consensus query response normalizes the query; filter application was not independently verified.",
+    "Hugging Face connector failure is a retrieval limitation, not zero eligible papers."
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "all_passed": true,
+  "new_native_forwards": 24,
+  "total_native_forwards": 52,
+  "choices_sha256": "e801090fca4e51a90cdafcd13f4776adc1f9688cf8e9ae66ca6fef382aaa0513",
+  "heldout_entry_addendum_sha256": "8f8c80a09bafa3d6a6c4d59de11c63777d84a5e83d8880115f121286e06255e1",
+  "model_inputs_unchanged": true,
+  "training": false
+}
