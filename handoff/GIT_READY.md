@@ -26,13 +26,15 @@ python handoff/audit_git_submission.py --staged
 
 该命令会更新审计 JSON；更新后需重新暂存报告。已提交的版本可用 `git status --short` 和 `git log -1 --oneline` 确认。本次准备不包含新研究实验、CUDA 编译、拟合或训练。
 
-## 上传时的最后一步
+## GitHub 仓库
 
-当前没有创建 GitHub 远端，也没有推送。团队先在目标账号／组织创建同名空仓库，再把其地址设置为 `origin` 并推送 `main`；避免让远端自动生成与本地冲突的 README／许可证。实际命令中的地址必须取自刚创建的团队仓库：
+2026-10-22 根据用户授权，在 `Someone-hates-Monday` 账号创建私有仓库：[geometry-splatting-research](https://github.com/Someone-hates-Monday/geometry-splatting-research)。本地 `origin` 使用 HTTPS，上传 `main`；作者信息与上文一致。组员需由仓库所有者授予访问权限，本轮未向其他人发送消息或邀请。
+
+接收组员可在获得访问权限后克隆：
 
 ```text
-git remote add origin <实际的GitHub仓库地址>
-git push -u origin main
+git clone https://github.com/Someone-hates-Monday/geometry-splatting-research.git
+cd geometry-splatting-research
 ```
 
-仓库可见性和团队归属尚未指定；本地准备不替用户决定公开发布范围。完整外部资产包及其获取地址仍待维护者安排，代码包无法独立重跑全部历史数字。
+仓库按组内交接用途先设为私有，没有公开发布研究资产。完整外部资产包及其获取地址仍待维护者安排，代码包无法独立重跑全部历史数字。历史准备记录中的“尚未上传”描述按当时状态理解；当前远端以此仓库为准。

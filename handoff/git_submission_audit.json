@@ -1,9 +1,9 @@
 {
-  "checked_utc": "2026-10-22T08:31:09.802977+00:00",
+  "checked_utc": "2026-10-22T08:36:20.775397+00:00",
   "mode": "staged",
   "file_count": 5288,
   "audited_file_count": 5287,
-  "audited_bytes": 98144071,
+  "audited_bytes": 98144663,
   "largest": {
     "path": "unified_geometry_gs/presentations/基于三维高斯泼溅的多视图重建几何优化研究(1).pptx",
     "bytes": 11013184,
@@ -34,8 +34,8 @@
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 4997,
-      "sha256": "d4b6a4b16907c9f6711d670b10cd174e4a47608bd407dfd3de01b64b5e056b1a"
+      "bytes": 5050,
+      "sha256": "5328ddf85b047520ac425c91704af1a4471766fb2f7e9766f12c14da3d7c8eeb"
     },
     {
       "path": "LICENSE.md",
@@ -124,8 +124,8 @@
     },
     {
       "path": "handoff/AGENT_START.md",
-      "bytes": 4645,
-      "sha256": "f8c34b0f1501dd207ddf024fbfd8dd3988ab3eeb473a86a7f4234cba7b5659b5"
+      "bytes": 4799,
+      "sha256": "5505428e6e35ccaddc943171af991794db43084854100a573f722fa8f4a33b77"
     },
     {
       "path": "handoff/CLEANUP.md",
@@ -134,8 +134,8 @@
     },
     {
       "path": "handoff/GIT_READY.md",
-      "bytes": 2776,
-      "sha256": "430553809b4ecf21716effb5fd52a88bfa5132fe45535a5f64836d39563365ca"
+      "bytes": 3003,
+      "sha256": "1bb56ebc9865855a9be5376e78f4ec55233e03a980979703bef84e9e3737c7b2"
     },
     {
       "path": "handoff/RECORDS_INDEX.md",
@@ -144,8 +144,8 @@
     },
     {
       "path": "handoff/REPRODUCTION_AND_GITHUB.md",
-      "bytes": 6136,
-      "sha256": "835e62ada18917f5f61a1cdd11336802fb139a3efbe01e5dc256ec26a0ba8e3a"
+      "bytes": 6294,
+      "sha256": "cc5172a22653c32e8064f20039809ca5ab79b6632445fc300df5904a07e43247"
     },
     {
       "path": "handoff/RESEARCH_MAP.md",

@@ -34,4 +34,4 @@
 
 原作者环境已有 SymPy、文献审查、假设生成、科学批判等 skills，以及研究连接器，但不属于仓库可移植依赖。接收 agent 应按自身工具可用性选择，不能复制个人认证、API key 或整个用户配置。记录中的工具名／安装状态只表示历史环境。
 
-本交接没有新建 Git 远端，没有发消息给其他组员，也没有修改原 LaTeX 笔记。新组员应以自己的任务和明确输出目录继续。
+本交接的代码与小证据仓库为 [geometry-splatting-research](https://github.com/Someone-hates-Monday/geometry-splatting-research)（私有，需所有者授予访问权限）。没有向其他组员发送消息，也没有修改原 LaTeX 笔记。新组员应以自己的任务和明确输出目录继续。

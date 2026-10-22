@@ -1,6 +1,6 @@
 # 科研项目交接入口
 
-交接日期：2026-10-22。面向接手组员及其 agent。**科研总目标尚未达成；本轮只做现有工作的收尾、证据整理与存储清理，没有启动新训练或新研究实验，也没有上传 GitHub。**
+交接日期：2026-10-22。面向接手组员及其 agent。**科研总目标尚未达成；本轮只做现有工作的收尾、证据整理、存储清理与 GitHub 交接，没有启动新训练或新研究实验。**
 
 ## 目标与当前边界
 
@@ -33,4 +33,4 @@
 
 小型交接证据放在 [evidence_receipts](handoff/evidence_receipts/)，逐文件原路径、复制路径、大小和 SHA256 见 [copied_receipts.json](handoff/copied_receipts.json)。包括近期 manifest／计时／失败回执、历史质量审计和 GGGS 指标；原始图像、模型、二进制、全部原始张量仍需另行移交。**仅拿到 GitHub 代码和这些回执，不足以重算全部历史数字。**
 
-后续本地 Git 准备见 [GIT_READY.md](handoff/GIT_READY.md)：仓库名 `geometry-splatting-research`，本地 `main` 分支；尚未建立 GitHub 远端或推送。原项目、G-GS 及其他第三方许可保留原样，不能把整个研究目录统一声明为 MIT。请按 [移交说明](handoff/REPRODUCTION_AND_GITHUB.md) 分开传输代码和研究资产。
+GitHub 私有仓库：[Someone-hates-Monday/geometry-splatting-research](https://github.com/Someone-hates-Monday/geometry-splatting-research)，分支 `main`。提交范围与接收步骤见 [GIT_READY.md](handoff/GIT_READY.md)。原项目、G-GS 及其他第三方许可保留原样，不能把整个研究目录统一声明为 MIT。请按 [移交说明](handoff/REPRODUCTION_AND_GITHUB.md) 分开传输代码和研究资产。
