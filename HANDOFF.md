@@ -12,6 +12,8 @@
 
 ## 接手阅读顺序
 
+需要恢复资产或配置新机器时，先看 [agent部署手册](handoff/DEPLOYMENT_FOR_AGENTS.md)；自动接收入口为 `handoff/deploy_assets.py`，默认不启动训练。
+
 1. [研究脉络与结果边界](handoff/RESEARCH_MAP.md)：原 GGGS、数学与渲染诊断、TGS 的主要证据和失败原因。
 2. [给组员和 agent 的启动说明](handoff/AGENT_START.md)：当前停止位置、约束、下一项尚未实现的工作。
 3. [环境、复现与 GitHub 移交](handoff/REPRODUCTION_AND_GITHUB.md)：代码与大文件分离、历史环境及迁移限制。

@@ -2,6 +2,8 @@
 
 这是交接说明，不会自动启动任务。请把下列工作边界与人类的新指示一起交给接收 agent；新的人类授权优先。先读 [HANDOFF.md](../HANDOFF.md)、[研究脉络](RESEARCH_MAP.md)、[迁移说明](REPRODUCTION_AND_GITHUB.md)、[清理记录](CLEANUP.md)。
 
+新机器的资产恢复和环境配置按 [DEPLOYMENT_FOR_AGENTS.md](DEPLOYMENT_FOR_AGENTS.md) 执行；自动接收脚本是 `deploy_assets.py`，支持等待最终清单、校验和恢复，不自动启动训练。
+
 ## 可直接使用的启动提示
 
 > 接手本项目，先恢复证据与环境状态，暂不训练或拟合。目标是基于 3DGS／GGGS／2DGS／Triangle Gaussian Splatting 获得有数学或实际质量／效率价值的成果；当前总目标没有完成，不能把数值验证成功写成新颖性或泛化成功。
