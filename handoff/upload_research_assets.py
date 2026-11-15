@@ -25,6 +25,8 @@ def upload(p):
             if not existing:
                 gh('release','upload',TAG,str(p),'--repo',REPO)
                 existing=remote().get(name)
+            if existing and existing.get('state')!='uploaded':
+                gh('release','upload',TAG,str(p),'--repo',REPO,'--clobber');existing=remote().get(name)
             assert existing and existing['size']==size,(name,'remote size mismatch')
             assert existing.get('digest')=='sha256:'+digest,(name,'remote SHA256 mismatch',existing.get('digest'))
             receipt=dict(name=name,bytes=size,sha256=digest,url=existing['browser_download_url'],asset_id=existing['id'])
