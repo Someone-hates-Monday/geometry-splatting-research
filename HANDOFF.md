@@ -29,6 +29,8 @@
 
 ## 目录与证据位置
 
+2026-11-15 补充：[数据与模型 Release 移交](handoff/ASSETS_ON_GITHUB.md)。先前仅在本地的大资产正在分卷补传；具体完成状态以 Release 的最终 `ASSET_MANIFEST.json` 和附件核验为准。
+
 仓库根目录是原 SuGaR 项目；`unified_geometry_gs/` 是基于 G-GS 的独立子项目，生产入口包括 `train.py`、`gaussian_renderer/`、`scene/`、`losses/`。`unified_geometry_gs/research/` 保存独立探针、协议、结果、理论笔记与封存实验。早期 README 中的“最新”仅指当时快照。
 
 小型交接证据放在 [evidence_receipts](handoff/evidence_receipts/)，逐文件原路径、复制路径、大小和 SHA256 见 [copied_receipts.json](handoff/copied_receipts.json)。包括近期 manifest／计时／失败回执、历史质量审计和 GGGS 指标；原始图像、模型、二进制、全部原始张量仍需另行移交。**仅拿到 GitHub 代码和这些回执，不足以重算全部历史数字。**

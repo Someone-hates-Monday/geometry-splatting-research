@@ -181,6 +181,7 @@ node_modules/
 !.env.example
 *.pem
 *.key
+/.asset-transfer/
 
 # Curated small evidence must survive the legacy output*/model ignore rules.
 !/handoff/evidence_receipts/**/
