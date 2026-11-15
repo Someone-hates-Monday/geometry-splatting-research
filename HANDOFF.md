@@ -17,6 +17,7 @@
 3. [环境、复现与 GitHub 移交](handoff/REPRODUCTION_AND_GITHUB.md)：代码与大文件分离、历史环境及迁移限制。
 4. [清理记录](handoff/CLEANUP.md)：删掉什么、保留什么、失去哪些历史恢复能力。
 5. [完整记录索引](handoff/RECORDS_INDEX.md)及[机器可读索引](handoff/research_records.json)：929 份顶层代码／研究笔记／子项目文档，以及 539 份选定的 manifest、plan、结果 JSON。索引不是逐项重新验证证明。
+6. [三人分工与结项推进计划](handoff/TEAM_PLAN_2026_10_23.md)：面向 12 月中旬结项的岗位分工、首周交付、SuGaR 展示与 M1 对照范围，以及论文／专利争取安排。具体执行规模仍按资产、算力与导师确认结果确定。
 
 ## 到目前为止最重要的结果
 
