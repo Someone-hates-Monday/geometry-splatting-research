@@ -4,6 +4,8 @@
 
 下载入口：[research-assets-2026-11-15](https://github.com/Someone-hates-Monday/geometry-splatting-research/releases/tag/research-assets-2026-11-15)。仓库仍为私有，组员需要仓库访问权限。
 
+公开数据自行获取的备用路线见 [DATA_SOURCES.md](DATA_SOURCES.md)。当前继续原90卷全量传输，没有改成仅上传生成物。
+
 本轮计划覆盖 17813 个文件、125745456224 字节，分为 90 个 ZIP 卷。包括 DTU、评估数据、output_compare、research 的 results／experiments／sources／snapshots，保留仓库相对路径。编译缓存、认证配置与无关工具未纳入。7 个不可访问链接列在计划中，不声称完成无损全盘备份。
 
 **传输中不能把计划视为已上传证明。** Release 中 `plan.json` 是传输计划；最终 `ASSET_MANIFEST.json` 才列出全部已传卷的大小、SHA256、下载地址和逐文件／分段映射。只有这个最终清单存在且列出的90卷均可下载，才表示本轮完成。原始资产保持不变，生成的本地 ZIP 在远端大小和 SHA256 匹配后删除以节省临时空间。
