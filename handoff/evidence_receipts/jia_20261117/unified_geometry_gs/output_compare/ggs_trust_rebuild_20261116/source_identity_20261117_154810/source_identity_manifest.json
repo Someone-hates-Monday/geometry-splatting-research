@@ -1,0 +1,79 @@
+{
+  "timestamp_utc": "2026-11-17T07:48:11.126819+00:00",
+  "git_head": "8387442ef901329fae0cfcd238561f23c2a540b3",
+  "uggs_root": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs",
+  "entries": [
+    {
+      "relpath": "utils/loss_utils.py",
+      "sha256": "39be74a64b7f954cdcfadf1aedccf5845c7512332eacb7a80a177a2c10455d2e",
+      "bytes": 19892,
+      "git_ignored": false,
+      "snapshot_relpath": "sources/utils/loss_utils.py"
+    },
+    {
+      "relpath": "utils/jia_io_guard.py",
+      "sha256": "e7105a25fa29ecd5087ff396a286ace6d77a862cb6b9e753a96eb8a72048847b",
+      "bytes": 2004,
+      "git_ignored": false,
+      "snapshot_relpath": "sources/utils/jia_io_guard.py"
+    },
+    {
+      "relpath": "mesh_extract.py",
+      "sha256": "4c1b996021ae9a661a0155d7b5c325f1fc339ec8eeaa4796771bb88c47dba033",
+      "bytes": 14411,
+      "git_ignored": false,
+      "snapshot_relpath": "sources/mesh_extract.py"
+    },
+    {
+      "relpath": "evaluate_dtu_mesh.py",
+      "sha256": "bf2de2a0501fc1e67d656c6effdb0687976afcd5829930699769e80db42b0f37",
+      "bytes": 14293,
+      "git_ignored": false,
+      "snapshot_relpath": "sources/evaluate_dtu_mesh.py"
+    },
+    {
+      "relpath": "dtu_eval/eval.py",
+      "sha256": "571d8401c0d31984c82b57cf51230102bfaccb29047f8d610f34e6437ff6cc44",
+      "bytes": 7969,
+      "git_ignored": true,
+      "snapshot_relpath": "sources/dtu_eval/eval.py"
+    },
+    {
+      "relpath": "scripts/compat_jia_patchmatch_grad.py",
+      "sha256": "ffb48fe51a32cb27fe365784ccbd7df5c01f8da0549ddf0bf8c42b6b96c9677b",
+      "bytes": 12944,
+      "git_ignored": false,
+      "snapshot_relpath": "sources/scripts/compat_jia_patchmatch_grad.py"
+    },
+    {
+      "relpath": "scripts/smoke_jia_trust_fuse_scan24.py",
+      "sha256": "b957644ac8660936ef9fe92323827f0267260360bc82ffd98b84a2a580696b1e",
+      "bytes": 7595,
+      "git_ignored": false,
+      "snapshot_relpath": "sources/scripts/smoke_jia_trust_fuse_scan24.py"
+    },
+    {
+      "relpath": "scripts/snapshot_jia_trust_source_identity.py",
+      "sha256": "57e40794b7bffd25b95d493366e22faa3ba86c423730ae8dd8adf2d39e7c2d74",
+      "bytes": 3377,
+      "git_ignored": false,
+      "snapshot_relpath": "sources/scripts/snapshot_jia_trust_source_identity.py"
+    },
+    {
+      "relpath": "scripts/selfcheck_jia_eval_seed_and_snapshot.py",
+      "sha256": "218f33d81a9bacc3578f08f646fdc679890947908f959fed338424a7bbef6ff2",
+      "bytes": 2979,
+      "git_ignored": false,
+      "snapshot_relpath": "sources/scripts/selfcheck_jia_eval_seed_and_snapshot.py"
+    },
+    {
+      "relpath": "scripts/run_jia_trust_full_extract.py",
+      "sha256": "7922fe849c945299e86c92af4720c918594faca25ec1bd2acdc49de68b0171be",
+      "bytes": 13020,
+      "git_ignored": false,
+      "snapshot_relpath": "sources/scripts/run_jia_trust_full_extract.py"
+    }
+  ],
+  "loss_utils_sha256": "39be74a64b7f954cdcfadf1aedccf5845c7512332eacb7a80a177a2c10455d2e",
+  "note": "Includes gitignored dtu_eval/eval.py and untracked helpers; not a substitute for git commit."
+}

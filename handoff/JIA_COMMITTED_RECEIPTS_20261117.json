@@ -1,0 +1,311 @@
+{
+  "entries": [
+    {
+      "original": "handoff/JIA_LOCAL_RECOVERY_AUDIT.md",
+      "copy": "handoff/evidence_receipts/jia_20261117/handoff/JIA_LOCAL_RECOVERY_AUDIT.md",
+      "bytes": 3127,
+      "sha256": "2e320d1785c6ef690220c10af21cb4971c4dda73e259e9515e3d43486f9e0d5b"
+    },
+    {
+      "original": "handoff/JIA_TRUST_FUSE_PHASE1_BLOCKED.md",
+      "copy": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_FUSE_PHASE1_BLOCKED.md",
+      "bytes": 9496,
+      "sha256": "a64868b81298f15e9578a8c77608e8ae3cdce7b00f6eadb5988cdc346e8ce5f2"
+    },
+    {
+      "original": "handoff/JIA_TRUST_REBUILD_CLOSEOUT_20261117.md",
+      "copy": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_CLOSEOUT_20261117.md",
+      "bytes": 2333,
+      "sha256": "572564df9d79ad2edc20cc093fa213bb134dae512dd7427a2718b565ca6e6272"
+    },
+    {
+      "original": "handoff/JIA_TRUST_REBUILD_FINAL_AUDIT_20261117.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_FINAL_AUDIT_20261117.json",
+      "bytes": 1408,
+      "sha256": "c75e5b46bafa7a9736a1e6750242da43e5fbdf143d338ebc7a59a5ddb8ab6a2e"
+    },
+    {
+      "original": "handoff/JIA_TRUST_REBUILD_FINAL_REVIEW_20261117.md",
+      "copy": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_FINAL_REVIEW_20261117.md",
+      "bytes": 4115,
+      "sha256": "cccb4192c316668eb45b8f0d367aefe4f684cb9b67220d38d399699df1a41fc8"
+    },
+    {
+      "original": "handoff/JIA_TRUST_REBUILD_FULL_RESULT_20261117.md",
+      "copy": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_FULL_RESULT_20261117.md",
+      "bytes": 2911,
+      "sha256": "588535326e67ae5c05417e07bd47d49f7e53307326c930f98476f07ce76f12d4"
+    },
+    {
+      "original": "handoff/JIA_TRUST_REBUILD_ORDER_DEVIATION.md",
+      "copy": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_ORDER_DEVIATION.md",
+      "bytes": 1585,
+      "sha256": "2418f6c6ddfdc559fd97087e173b2452650c2b508b6c0a36ef0917130a80b1b4"
+    },
+    {
+      "original": "handoff/JIA_TRUST_REBUILD_P1_RESUBMIT_20261117.md",
+      "copy": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_P1_RESUBMIT_20261117.md",
+      "bytes": 3593,
+      "sha256": "696e6a81a495964ce50cdcace060b13e92b082089dac06e4cd96c1ad90b042ce"
+    },
+    {
+      "original": "handoff/JIA_TRUST_REBUILD_P1_REVIEW_DECISION_20261117.md",
+      "copy": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_P1_REVIEW_DECISION_20261117.md",
+      "bytes": 4229,
+      "sha256": "a0aef6342371373f53ad5b64ee8bb7365ef5381c42233ad7106beb65c68b1d4a"
+    },
+    {
+      "original": "handoff/JIA_TRUST_REBUILD_PROTOCOL_20261116.md",
+      "copy": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_PROTOCOL_20261116.md",
+      "bytes": 4114,
+      "sha256": "e168465ab6b238d63721bf7af42b86cf3896d53253163c45b7c1a417aa4683d3"
+    },
+    {
+      "original": "handoff/PLAN_JIA_TRUST_FUSE.md",
+      "copy": "handoff/evidence_receipts/jia_20261117/handoff/PLAN_JIA_TRUST_FUSE.md",
+      "bytes": 12623,
+      "sha256": "c435c6e0d1c493a3ce400ac9f6d67bc7630aba524e33217230d1cf3aa22fe801"
+    },
+    {
+      "original": "handoff/TEAM_PLAN_2026_11_16.md",
+      "copy": "handoff/evidence_receipts/jia_20261117/handoff/TEAM_PLAN_2026_11_16.md",
+      "bytes": 11909,
+      "sha256": "187c988b4bf0c9aff9754eb967110133c12d46bb8d06463e2bee6a8d199b1482"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/full_extract_progress_20261117_154810.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/full_extract_progress_20261117_154810.json",
+      "bytes": 6254,
+      "sha256": "518013f42a389415d4d061e416a5adb26d2e95e77d88757bf41d49c26a435f2d"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/paired_results_20261117_154810.csv",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/paired_results_20261117_154810.csv",
+      "bytes": 679,
+      "sha256": "6ff61e1cff7e1900fa862a1076dfaa4c277637160021dd7030e8b2b75612459b"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1879,
+      "sha256": "47286f0fb39e22964eb9ac42164aad753b417aa13c09023504b775150bbf6a1f"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 119,
+      "sha256": "3eb61d96a68730c6760b2a335a607380a5b8a0d7b39107738e765ef6935e4810"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_preview_redmask_20261117_154810/smoke_receipt.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_preview_redmask_20261117_154810/smoke_receipt.json",
+      "bytes": 2676,
+      "sha256": "564d63c20e70bf2e191d177107140395ca11bd170195081cce91514e209b55f6"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_preview_redmask_20261117_154810/smoke_redmask.png",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_preview_redmask_20261117_154810/smoke_redmask.png",
+      "bytes": 561055,
+      "sha256": "831b606f36cb34ce97bb7922f4b620c4deeb72c84e4d67c19131fff3a4bf69b0"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_20261117_154810/per_view_metrics.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_20261117_154810/per_view_metrics.json",
+      "bytes": 42198,
+      "sha256": "e42a465689526b41a2294641c50aa53b70ab453c697688014dde1bfa2ddc85a1"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1865,
+      "sha256": "bab9eb43c5a5eab3762932764755086c9abf8a11e36b880404e3d44fad49f6fc"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 117,
+      "sha256": "d4a76346959a726c30ed4428a4d4f23304529ba8ed1bddac242b7a3c3a3bccd8"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/control_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/control_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1877,
+      "sha256": "2d58f07500176744030409621f7d097dfce7a91fae0161f53f02c0d956e23631"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/control_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/control_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 117,
+      "sha256": "37b792a358655682f65395f0de40d72fa780a661f957482382b8fc9a29a7d5f6"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_preview_redmask_20261117_154810/smoke_receipt.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_preview_redmask_20261117_154810/smoke_receipt.json",
+      "bytes": 2672,
+      "sha256": "0d64e719c6164d20d62c9574a486dddaf8b000812f599daad7a2a7350d6413a3"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_preview_redmask_20261117_154810/smoke_redmask.png",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_preview_redmask_20261117_154810/smoke_redmask.png",
+      "bytes": 481042,
+      "sha256": "865bbdef48150c24c0d1ba9f3c13b1556b4f3cf837ab69979174500b5fa6f8c3"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_20261117_154810/per_view_metrics.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_20261117_154810/per_view_metrics.json",
+      "bytes": 42130,
+      "sha256": "90dea0b62f30b72d7d8fc956559f97ad8da7838972d5abd8ea0c6216f28dee8f"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1866,
+      "sha256": "fcb1b7d0c81de07087e179621f7f13ab3c26a4120c36e5a63d20685259217a8e"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 118,
+      "sha256": "a7e1c29900632d55e5ec86032d34f2311421d712e840cb5c998417e306d8f0bc"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/compat_grad_20261117_145006/compat_receipt.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/compat_grad_20261117_145006/compat_receipt.json",
+      "bytes": 4866,
+      "sha256": "f509aa49fe13aecea8bde86e48706de30723ff879e12745f2defba8afd0a365e"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/control_trunc4_eval_seed0_run1_20261117_145006/eval_receipt.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/control_trunc4_eval_seed0_run1_20261117_145006/eval_receipt.json",
+      "bytes": 1881,
+      "sha256": "f658e08185ab8147144d645c209389f1ebe8dc7944aadb05d8fb23e87fd86cdf"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/control_trunc4_eval_seed0_run1_20261117_145006/vis/results.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/control_trunc4_eval_seed0_run1_20261117_145006/vis/results.json",
+      "bytes": 119,
+      "sha256": "52fe52f57374301e5fbc28b7c87193dcf938666dd6423e300eb48ad791a1eab0"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_preview_redmask_20261117_154810/smoke_receipt.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_preview_redmask_20261117_154810/smoke_receipt.json",
+      "bytes": 2675,
+      "sha256": "c58b60e74ae1f7eaf63afbc24bdd30b3351d9849698a285d56896694aa2251a1"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_preview_redmask_20261117_154810/smoke_redmask.png",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_preview_redmask_20261117_154810/smoke_redmask.png",
+      "bytes": 448181,
+      "sha256": "d60364ec0ba2609039507669c00cafecd9a6777444acdf8e5c0bff1682375dcc"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_20261117_154810/per_view_metrics.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_20261117_154810/per_view_metrics.json",
+      "bytes": 32427,
+      "sha256": "ac8529900e34e862d501461cb827e41ee0d4840ff9c979f58c2e6fd96f31631a"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1861,
+      "sha256": "1247e6a4f5cf5967fbccf4f2401045bd37ae8f01c5216db575d6d46c3473d67b"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 120,
+      "sha256": "7fd371b5f278f138656150392c5ea62cfaaf527affc9e860e19d76209cd5914c"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/seal_20261117_154810/SEAL_MANIFEST.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/seal_20261117_154810/SEAL_MANIFEST.json",
+      "bytes": 34093,
+      "sha256": "e1d4ab80df8eb16f26d7f888712528d87865fbf6e356dfc0d8a07ebcb97b6bcc"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/seal_delivery_amendment_20261117/DELIVERY_MANIFEST.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/seal_delivery_amendment_20261117/DELIVERY_MANIFEST.json",
+      "bytes": 18343,
+      "sha256": "701526a37dff65e1cf1a445a3c699426e14d0a30a843379e1de3980e24c98caa"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/seal_delivery_amendment_20261117/JIA_TRUST_REBUILD_STATUS.frozen.md",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/seal_delivery_amendment_20261117/JIA_TRUST_REBUILD_STATUS.frozen.md",
+      "bytes": 528,
+      "sha256": "750402f6d022ef37197ff3ef823650d556dd3ff5e64ca53060e291caa3731f41"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/source_identity_manifest.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/source_identity_manifest.json",
+      "bytes": 3043,
+      "sha256": "d69b430331ff1cf7753926c0e3910d013a5d0a8c26c6cccaabdbec441456a7d9"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/dtu_eval/eval.py",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/dtu_eval/eval.py",
+      "bytes": 7969,
+      "sha256": "571d8401c0d31984c82b57cf51230102bfaccb29047f8d610f34e6437ff6cc44"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/evaluate_dtu_mesh.py",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/evaluate_dtu_mesh.py",
+      "bytes": 14293,
+      "sha256": "bf2de2a0501fc1e67d656c6effdb0687976afcd5829930699769e80db42b0f37"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/mesh_extract.py",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/mesh_extract.py",
+      "bytes": 14411,
+      "sha256": "4c1b996021ae9a661a0155d7b5c325f1fc339ec8eeaa4796771bb88c47dba033"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/compat_jia_patchmatch_grad.py",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/compat_jia_patchmatch_grad.py",
+      "bytes": 12944,
+      "sha256": "ffb48fe51a32cb27fe365784ccbd7df5c01f8da0549ddf0bf8c42b6b96c9677b"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/run_jia_trust_full_extract.py",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/run_jia_trust_full_extract.py",
+      "bytes": 13020,
+      "sha256": "7922fe849c945299e86c92af4720c918594faca25ec1bd2acdc49de68b0171be"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/selfcheck_jia_eval_seed_and_snapshot.py",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/selfcheck_jia_eval_seed_and_snapshot.py",
+      "bytes": 2979,
+      "sha256": "218f33d81a9bacc3578f08f646fdc679890947908f959fed338424a7bbef6ff2"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/smoke_jia_trust_fuse_scan24.py",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/smoke_jia_trust_fuse_scan24.py",
+      "bytes": 7595,
+      "sha256": "b957644ac8660936ef9fe92323827f0267260360bc82ffd98b84a2a580696b1e"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/snapshot_jia_trust_source_identity.py",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/snapshot_jia_trust_source_identity.py",
+      "bytes": 3377,
+      "sha256": "57e40794b7bffd25b95d493366e22faa3ba86c423730ae8dd8adf2d39e7c2d74"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/jia_io_guard.py",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/jia_io_guard.py",
+      "bytes": 2004,
+      "sha256": "e7105a25fa29ecd5087ff396a286ace6d77a862cb6b9e753a96eb8a72048847b"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/loss_utils.py",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/loss_utils.py",
+      "bytes": 19892,
+      "sha256": "39be74a64b7f954cdcfadf1aedccf5845c7512332eacb7a80a177a2c10455d2e"
+    },
+    {
+      "original": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/verdict_20261117_154810.json",
+      "copy": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/verdict_20261117_154810.json",
+      "bytes": 6822,
+      "sha256": "17b22cdaf084f9c02f73cd737fe672430ead8cc7b0b0a3a74964843f6ec0a50a"
+    }
+  ],
+  "large_assets_separate_release": "jia-trust-rebuild-2026-11-17"
+}

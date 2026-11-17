@@ -1,9 +1,9 @@
 {
-  "checked_utc": "2026-10-22T08:36:20.775397+00:00",
+  "checked_utc": "2026-11-17T09:29:42.456846+00:00",
   "mode": "staged",
-  "file_count": 5288,
-  "audited_file_count": 5287,
-  "audited_bytes": 98144663,
+  "file_count": 5399,
+  "audited_file_count": 5398,
+  "audited_bytes": 100392034,
   "largest": {
     "path": "unified_geometry_gs/presentations/基于三维高斯泼溅的多视图重建几何优化研究(1).pptx",
     "bytes": 11013184,
@@ -29,13 +29,13 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 2900,
-      "sha256": "d76f1a14cd6668a48bcc4151ea2b00ab4d93b0e2d13277293ce85bcf5288e311"
+      "bytes": 3113,
+      "sha256": "11964d7a73c7cdfd85d1c7fbce3c322c7f00a0982fc7e919ec7f8b90004e02ff"
     },
     {
       "path": "HANDOFF.md",
-      "bytes": 5050,
-      "sha256": "5328ddf85b047520ac425c91704af1a4471766fb2f7e9766f12c14da3d7c8eeb"
+      "bytes": 5727,
+      "sha256": "0ee52c74c9b166c9474bdca7c1e1e3be44e9b2245bac1647604b58a3c1f851e2"
     },
     {
       "path": "LICENSE.md",
@@ -124,8 +124,13 @@
     },
     {
       "path": "handoff/AGENT_START.md",
-      "bytes": 4799,
-      "sha256": "5505428e6e35ccaddc943171af991794db43084854100a573f722fa8f4a33b77"
+      "bytes": 5018,
+      "sha256": "5c6359318e9b4ffeee5afdc0c52b3f996c0fcde85d90e40b2f0f2e2a9960db6b"
+    },
+    {
+      "path": "handoff/ASSETS_ON_GITHUB.md",
+      "bytes": 2085,
+      "sha256": "d091223df1e42f95c34a94e1987443d384bdbc872a1c4c326928e412323def41"
     },
     {
       "path": "handoff/CLEANUP.md",
@@ -133,14 +138,144 @@
       "sha256": "67db639d7aedb32afce1c3706d878d8d743d924a1617424a3a64795a42e5a177"
     },
     {
+      "path": "handoff/CURSOR_PROMPT_JIA_LOCAL_RECOVERY_REBUILD.md",
+      "bytes": 7755,
+      "sha256": "bcbbbc6444607b772a16c651771993f6857e96d2f99064e42e48bb5ed69c6c41"
+    },
+    {
+      "path": "handoff/CURSOR_PROMPT_JIA_TRUST_FUSE.md",
+      "bytes": 2003,
+      "sha256": "bf27d8d54489e8bf8ff021513d1970b8c14ffea51d83119d6154195bebd8faab"
+    },
+    {
+      "path": "handoff/DATA_SOURCES.md",
+      "bytes": 4545,
+      "sha256": "0216e248cc57e054effd9e7e781cf5950731d5bbf1cb5de32c3fb173fe378587"
+    },
+    {
+      "path": "handoff/DEPLOYMENT_FOR_AGENTS.md",
+      "bytes": 7109,
+      "sha256": "39eaa9dab8d8d59d55ae223a0e55a6447550381d2327f9f5b5870fefbc75bd6f"
+    },
+    {
       "path": "handoff/GIT_READY.md",
       "bytes": 3003,
       "sha256": "1bb56ebc9865855a9be5376e78f4ec55233e03a980979703bef84e9e3737c7b2"
     },
     {
+      "path": "handoff/JIA_COMMITTED_RECEIPTS_20261117.json",
+      "bytes": 21134,
+      "sha256": "ea38d135d3cd83aba23c4e1cc47c9acefcf01af2181fee910265b28406cf97b3"
+    },
+    {
+      "path": "handoff/JIA_LOCAL_RECOVERY_AUDIT.md",
+      "bytes": 3127,
+      "sha256": "2e320d1785c6ef690220c10af21cb4971c4dda73e259e9515e3d43486f9e0d5b"
+    },
+    {
+      "path": "handoff/JIA_SEAL_DELIVERY_AMENDMENT_20261117.json",
+      "bytes": 493,
+      "sha256": "7f50f12f45a5ad01af48f90866538c4b1ec2885eb7c24e6bf987afa54b17429b"
+    },
+    {
+      "path": "handoff/JIA_SEAL_DELIVERY_CHECK_20261117.json",
+      "bytes": 6959,
+      "sha256": "17431476ad5288abaa997dd97e2dbe3f65931fc8175a8ddcab5cd5725b446e34"
+    },
+    {
+      "path": "handoff/JIA_TRUST_FUSE_PHASE1_BLOCKED.md",
+      "bytes": 9496,
+      "sha256": "a64868b81298f15e9578a8c77608e8ae3cdce7b00f6eadb5988cdc346e8ce5f2"
+    },
+    {
+      "path": "handoff/JIA_TRUST_FUSE_REVIEW_DECISION.md",
+      "bytes": 3287,
+      "sha256": "6c5eaea2a4b400f61722fe0271f8037e7225433792a9056ab4dd2d58252a8599"
+    },
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_CLOSEOUT_20261117.md",
+      "bytes": 2333,
+      "sha256": "572564df9d79ad2edc20cc093fa213bb134dae512dd7427a2718b565ca6e6272"
+    },
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_FINAL_AUDIT_20261117.json",
+      "bytes": 1408,
+      "sha256": "c75e5b46bafa7a9736a1e6750242da43e5fbdf143d338ebc7a59a5ddb8ab6a2e"
+    },
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_FINAL_REVIEW_20261117.md",
+      "bytes": 4115,
+      "sha256": "cccb4192c316668eb45b8f0d367aefe4f684cb9b67220d38d399699df1a41fc8"
+    },
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_FULL_RESULT_20261117.md",
+      "bytes": 2911,
+      "sha256": "588535326e67ae5c05417e07bd47d49f7e53307326c930f98476f07ce76f12d4"
+    },
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_ORDER_DEVIATION.md",
+      "bytes": 1585,
+      "sha256": "2418f6c6ddfdc559fd97087e173b2452650c2b508b6c0a36ef0917130a80b1b4"
+    },
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_P1_RESUBMIT_20261117.md",
+      "bytes": 3593,
+      "sha256": "696e6a81a495964ce50cdcace060b13e92b082089dac06e4cd96c1ad90b042ce"
+    },
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_P1_REVIEW_DECISION_20261117.md",
+      "bytes": 4229,
+      "sha256": "a0aef6342371373f53ad5b64ee8bb7365ef5381c42233ad7106beb65c68b1d4a"
+    },
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_PROTOCOL_20261116.md",
+      "bytes": 4114,
+      "sha256": "e168465ab6b238d63721bf7af42b86cf3896d53253163c45b7c1a417aa4683d3"
+    },
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_REVIEW_20261117.md",
+      "bytes": 5691,
+      "sha256": "2330b70f6e39be00ccfaab49b991d8b7728f30b8c6c7aa0b655b70f4568105f6"
+    },
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_REVIEW_PACKAGE.md",
+      "bytes": 4451,
+      "sha256": "0ce08bacfd665cc57aa47cf60c2909310331e0d22a116b901772eed498397b48"
+    },
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_SEAL_INDEX_20261117.json",
+      "bytes": 823,
+      "sha256": "30c06e625c39b85183b128599b230d397225c6846d3d5fb1a204e9a3204ffad1"
+    },
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_STATUS.md",
+      "bytes": 528,
+      "sha256": "750402f6d022ef37197ff3ef823650d556dd3ff5e64ca53060e291caa3731f41"
+    },
+    {
+      "path": "handoff/JIA_UPLOAD_20261117.md",
+      "bytes": 1423,
+      "sha256": "e24007fc38a7991216de75b3001e247db88ce6369ca8c3aec87e3b411acd7b97"
+    },
+    {
+      "path": "handoff/NOTICE_BING_DING_CLOSEOUT_20261117.md",
+      "bytes": 3282,
+      "sha256": "604d56de22d732e42cfb694f1fa0bfa89dc4bc62343e505fb6ac367b74087449"
+    },
+    {
+      "path": "handoff/PLAN_JIA_TRUST_FUSE.md",
+      "bytes": 12623,
+      "sha256": "c435c6e0d1c493a3ce400ac9f6d67bc7630aba524e33217230d1cf3aa22fe801"
+    },
+    {
       "path": "handoff/RECORDS_INDEX.md",
       "bytes": 91114,
       "sha256": "dcc35bd78f364f387bc5379bec55717c6f3da157452c667fd4652e944d05a800"
+    },
+    {
+      "path": "handoff/REPORT_OUTLINE_AND_ACCEPTANCE_20261117.md",
+      "bytes": 5792,
+      "sha256": "e3891e55be74e5f6f93eecb06e2c204121b1ef9411e89ec12b2cd666445ab648"
     },
     {
       "path": "handoff/REPRODUCTION_AND_GITHUB.md",
@@ -153,9 +288,69 @@
       "sha256": "e1cf928169cc26d8225b0c1b0a194b9970d30be877147efb2ae10cd55aa4bfac"
     },
     {
+      "path": "handoff/TEAM_PLAN_2026_10_23.md",
+      "bytes": 14377,
+      "sha256": "ada54a6aad1f2474ac8aec8e1a94322053e85f65634bb34a09d43a509897f5cf"
+    },
+    {
+      "path": "handoff/TEAM_PLAN_2026_11_16.md",
+      "bytes": 11909,
+      "sha256": "187c988b4bf0c9aff9754eb967110133c12d46bb8d06463e2bee6a8d199b1482"
+    },
+    {
+      "path": "handoff/_jia_build_seal_manifest.py",
+      "bytes": 11799,
+      "sha256": "50e36e995787f6e97c029da604a2433f18795c762a30dfc3923b20be223986a4"
+    },
+    {
+      "path": "handoff/_jia_collect_review.sh",
+      "bytes": 1719,
+      "sha256": "ccba49afe16dbdbc22653c09261c5474b6b4248ee5cc9dff3b5620ca69ff8ba2"
+    },
+    {
+      "path": "handoff/_jia_full_extract.sh",
+      "bytes": 1252,
+      "sha256": "ffeda71bc5d7756a6bbc9cf8727f1e2b9f0feaea1c099a08bf660f6c98b47ab7"
+    },
+    {
+      "path": "handoff/_jia_hash_review_assets.py",
+      "bytes": 1048,
+      "sha256": "d6f6ecd0d64010d146a26c4f7fd8ce090cb9286e5bfc9328057e388649ece5c4"
+    },
+    {
+      "path": "handoff/_jia_log_snip.sh",
+      "bytes": 735,
+      "sha256": "37caf900f9a6d9fdc1b9f08ae8f0a3fcf86975b3b75bb883bcbd9e7af891b4a1"
+    },
+    {
+      "path": "handoff/_jia_p1_receipt_dump.py",
+      "bytes": 1794,
+      "sha256": "720bf950750b03600793b9bedf5ce57695c005e8468dd9e2154748c03e112c5d"
+    },
+    {
+      "path": "handoff/_jia_post_train_continue.sh",
+      "bytes": 2630,
+      "sha256": "460a093686666d66fbf77020611413f43935708bfa1c28f110d9778528c13841"
+    },
+    {
+      "path": "handoff/_jia_remediate_p1.sh",
+      "bytes": 3177,
+      "sha256": "4b4d1ebb1d86a1e6b0b099d14f1dd5266328217a1ea3411a9672e21219634565"
+    },
+    {
+      "path": "handoff/_jia_rerun_smoke.sh",
+      "bytes": 590,
+      "sha256": "b2ad862b37c06fd0ce9c3ab3338a4dcede38c69a28d1b9f0bba1a5f3779c8138"
+    },
+    {
+      "path": "handoff/_jia_train_status.sh",
+      "bytes": 987,
+      "sha256": "a35408d142be3454d3c00fb55095f67924f12826f28b3fe4f603b4ea5070f8cd"
+    },
+    {
       "path": "handoff/audit_git_submission.py",
-      "bytes": 4763,
-      "sha256": "e802758f63a73fe9dec3bb69c50d2896215713d1a73f25bf956757d63adf8978"
+      "bytes": 4812,
+      "sha256": "17b322296518ab995358bfa26a7c03b7d41aa1f44a917a29edf5178257087b83"
     },
     {
       "path": "handoff/build_handoff_index.py",
@@ -181,6 +376,266 @@
       "path": "handoff/copied_receipts.json",
       "bytes": 100529,
       "sha256": "08438b842c1065a6bcce545c09ad53a683e82f52816bab103e520be0a84f3d0f"
+    },
+    {
+      "path": "handoff/deploy_assets.py",
+      "bytes": 8187,
+      "sha256": "a67f65b98ffb86782df055e8bedb2d075b3fd3e81880d7d2f728705947dfa258"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/handoff/JIA_LOCAL_RECOVERY_AUDIT.md",
+      "bytes": 3127,
+      "sha256": "2e320d1785c6ef690220c10af21cb4971c4dda73e259e9515e3d43486f9e0d5b"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_FUSE_PHASE1_BLOCKED.md",
+      "bytes": 9496,
+      "sha256": "a64868b81298f15e9578a8c77608e8ae3cdce7b00f6eadb5988cdc346e8ce5f2"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_CLOSEOUT_20261117.md",
+      "bytes": 2333,
+      "sha256": "572564df9d79ad2edc20cc093fa213bb134dae512dd7427a2718b565ca6e6272"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_FINAL_AUDIT_20261117.json",
+      "bytes": 1408,
+      "sha256": "c75e5b46bafa7a9736a1e6750242da43e5fbdf143d338ebc7a59a5ddb8ab6a2e"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_FINAL_REVIEW_20261117.md",
+      "bytes": 4115,
+      "sha256": "cccb4192c316668eb45b8f0d367aefe4f684cb9b67220d38d399699df1a41fc8"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_FULL_RESULT_20261117.md",
+      "bytes": 2911,
+      "sha256": "588535326e67ae5c05417e07bd47d49f7e53307326c930f98476f07ce76f12d4"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_ORDER_DEVIATION.md",
+      "bytes": 1585,
+      "sha256": "2418f6c6ddfdc559fd97087e173b2452650c2b508b6c0a36ef0917130a80b1b4"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_P1_RESUBMIT_20261117.md",
+      "bytes": 3593,
+      "sha256": "696e6a81a495964ce50cdcace060b13e92b082089dac06e4cd96c1ad90b042ce"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_P1_REVIEW_DECISION_20261117.md",
+      "bytes": 4229,
+      "sha256": "a0aef6342371373f53ad5b64ee8bb7365ef5381c42233ad7106beb65c68b1d4a"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/handoff/JIA_TRUST_REBUILD_PROTOCOL_20261116.md",
+      "bytes": 4114,
+      "sha256": "e168465ab6b238d63721bf7af42b86cf3896d53253163c45b7c1a417aa4683d3"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/handoff/PLAN_JIA_TRUST_FUSE.md",
+      "bytes": 12623,
+      "sha256": "c435c6e0d1c493a3ce400ac9f6d67bc7630aba524e33217230d1cf3aa22fe801"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/handoff/TEAM_PLAN_2026_11_16.md",
+      "bytes": 11909,
+      "sha256": "187c988b4bf0c9aff9754eb967110133c12d46bb8d06463e2bee6a8d199b1482"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/full_extract_progress_20261117_154810.json",
+      "bytes": 6254,
+      "sha256": "518013f42a389415d4d061e416a5adb26d2e95e77d88757bf41d49c26a435f2d"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/paired_results_20261117_154810.csv",
+      "bytes": 679,
+      "sha256": "6ff61e1cff7e1900fa862a1076dfaa4c277637160021dd7030e8b2b75612459b"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1879,
+      "sha256": "47286f0fb39e22964eb9ac42164aad753b417aa13c09023504b775150bbf6a1f"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 119,
+      "sha256": "3eb61d96a68730c6760b2a335a607380a5b8a0d7b39107738e765ef6935e4810"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_preview_redmask_20261117_154810/smoke_receipt.json",
+      "bytes": 2676,
+      "sha256": "564d63c20e70bf2e191d177107140395ca11bd170195081cce91514e209b55f6"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_preview_redmask_20261117_154810/smoke_redmask.png",
+      "bytes": 561055,
+      "sha256": "831b606f36cb34ce97bb7922f4b620c4deeb72c84e4d67c19131fff3a4bf69b0"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_20261117_154810/per_view_metrics.json",
+      "bytes": 42198,
+      "sha256": "e42a465689526b41a2294641c50aa53b70ab453c697688014dde1bfa2ddc85a1"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1865,
+      "sha256": "bab9eb43c5a5eab3762932764755086c9abf8a11e36b880404e3d44fad49f6fc"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 117,
+      "sha256": "d4a76346959a726c30ed4428a4d4f23304529ba8ed1bddac242b7a3c3a3bccd8"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/control_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1877,
+      "sha256": "2d58f07500176744030409621f7d097dfce7a91fae0161f53f02c0d956e23631"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/control_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 117,
+      "sha256": "37b792a358655682f65395f0de40d72fa780a661f957482382b8fc9a29a7d5f6"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_preview_redmask_20261117_154810/smoke_receipt.json",
+      "bytes": 2672,
+      "sha256": "0d64e719c6164d20d62c9574a486dddaf8b000812f599daad7a2a7350d6413a3"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_preview_redmask_20261117_154810/smoke_redmask.png",
+      "bytes": 481042,
+      "sha256": "865bbdef48150c24c0d1ba9f3c13b1556b4f3cf837ab69979174500b5fa6f8c3"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_20261117_154810/per_view_metrics.json",
+      "bytes": 42130,
+      "sha256": "90dea0b62f30b72d7d8fc956559f97ad8da7838972d5abd8ea0c6216f28dee8f"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1866,
+      "sha256": "fcb1b7d0c81de07087e179621f7f13ab3c26a4120c36e5a63d20685259217a8e"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 118,
+      "sha256": "a7e1c29900632d55e5ec86032d34f2311421d712e840cb5c998417e306d8f0bc"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/compat_grad_20261117_145006/compat_receipt.json",
+      "bytes": 4866,
+      "sha256": "f509aa49fe13aecea8bde86e48706de30723ff879e12745f2defba8afd0a365e"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/control_trunc4_eval_seed0_run1_20261117_145006/eval_receipt.json",
+      "bytes": 1881,
+      "sha256": "f658e08185ab8147144d645c209389f1ebe8dc7944aadb05d8fb23e87fd86cdf"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/control_trunc4_eval_seed0_run1_20261117_145006/vis/results.json",
+      "bytes": 119,
+      "sha256": "52fe52f57374301e5fbc28b7c87193dcf938666dd6423e300eb48ad791a1eab0"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_preview_redmask_20261117_154810/smoke_receipt.json",
+      "bytes": 2675,
+      "sha256": "c58b60e74ae1f7eaf63afbc24bdd30b3351d9849698a285d56896694aa2251a1"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_preview_redmask_20261117_154810/smoke_redmask.png",
+      "bytes": 448181,
+      "sha256": "d60364ec0ba2609039507669c00cafecd9a6777444acdf8e5c0bff1682375dcc"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_20261117_154810/per_view_metrics.json",
+      "bytes": 32427,
+      "sha256": "ac8529900e34e862d501461cb827e41ee0d4840ff9c979f58c2e6fd96f31631a"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1861,
+      "sha256": "1247e6a4f5cf5967fbccf4f2401045bd37ae8f01c5216db575d6d46c3473d67b"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 120,
+      "sha256": "7fd371b5f278f138656150392c5ea62cfaaf527affc9e860e19d76209cd5914c"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/seal_20261117_154810/SEAL_MANIFEST.json",
+      "bytes": 34093,
+      "sha256": "e1d4ab80df8eb16f26d7f888712528d87865fbf6e356dfc0d8a07ebcb97b6bcc"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/seal_delivery_amendment_20261117/DELIVERY_MANIFEST.json",
+      "bytes": 18343,
+      "sha256": "701526a37dff65e1cf1a445a3c699426e14d0a30a843379e1de3980e24c98caa"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/seal_delivery_amendment_20261117/JIA_TRUST_REBUILD_STATUS.frozen.md",
+      "bytes": 528,
+      "sha256": "750402f6d022ef37197ff3ef823650d556dd3ff5e64ca53060e291caa3731f41"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/source_identity_manifest.json",
+      "bytes": 3043,
+      "sha256": "d69b430331ff1cf7753926c0e3910d013a5d0a8c26c6cccaabdbec441456a7d9"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/dtu_eval/eval.py",
+      "bytes": 7969,
+      "sha256": "571d8401c0d31984c82b57cf51230102bfaccb29047f8d610f34e6437ff6cc44"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/evaluate_dtu_mesh.py",
+      "bytes": 14293,
+      "sha256": "bf2de2a0501fc1e67d656c6effdb0687976afcd5829930699769e80db42b0f37"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/mesh_extract.py",
+      "bytes": 14411,
+      "sha256": "4c1b996021ae9a661a0155d7b5c325f1fc339ec8eeaa4796771bb88c47dba033"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/compat_jia_patchmatch_grad.py",
+      "bytes": 12944,
+      "sha256": "ffb48fe51a32cb27fe365784ccbd7df5c01f8da0549ddf0bf8c42b6b96c9677b"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/run_jia_trust_full_extract.py",
+      "bytes": 13020,
+      "sha256": "7922fe849c945299e86c92af4720c918594faca25ec1bd2acdc49de68b0171be"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/selfcheck_jia_eval_seed_and_snapshot.py",
+      "bytes": 2979,
+      "sha256": "218f33d81a9bacc3578f08f646fdc679890947908f959fed338424a7bbef6ff2"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/smoke_jia_trust_fuse_scan24.py",
+      "bytes": 7595,
+      "sha256": "b957644ac8660936ef9fe92323827f0267260360bc82ffd98b84a2a580696b1e"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/snapshot_jia_trust_source_identity.py",
+      "bytes": 3377,
+      "sha256": "57e40794b7bffd25b95d493366e22faa3ba86c423730ae8dd8adf2d39e7c2d74"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/jia_io_guard.py",
+      "bytes": 2004,
+      "sha256": "e7105a25fa29ecd5087ff396a286ace6d77a862cb6b9e753a96eb8a72048847b"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/loss_utils.py",
+      "bytes": 19892,
+      "sha256": "39be74a64b7f954cdcfadf1aedccf5845c7512332eacb7a80a177a2c10455d2e"
+    },
+    {
+      "path": "handoff/evidence_receipts/jia_20261117/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/verdict_20261117_154810.json",
+      "bytes": 6822,
+      "sha256": "17b22cdaf084f9c02f73cd737fe672430ead8cc7b0b0a3a74964843f6ec0a50a"
     },
     {
       "path": "handoff/evidence_receipts/unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/cfg_args",
@@ -1623,6 +2078,26 @@
       "sha256": "ffa4426ede159cf40a4cd4454d971c1125189f43929da0963c4f2b7acb16b6b5"
     },
     {
+      "path": "handoff/jia_local_extra_archive_hits.json",
+      "bytes": 26712,
+      "sha256": "2dd8e70bff074192819a5ca31b85093b9cd57f02e462666765f9913de32aef18"
+    },
+    {
+      "path": "handoff/jia_local_recovery_audit.json",
+      "bytes": 56062,
+      "sha256": "3197b12715e90b9aef6c26a2411953dbee09bcee0ea7949d8d93c0939624a39b"
+    },
+    {
+      "path": "handoff/jia_trust_fuse_asset_check.json",
+      "bytes": 12399,
+      "sha256": "116bbd83053d60efdba8462eba3d7c3a84426cc7820176a6ba639098ede5aa8a"
+    },
+    {
+      "path": "handoff/jia_trust_fuse_manifest_path_dedup.json",
+      "bytes": 12737,
+      "sha256": "b6dba422c578cd7bf45bd20429cdc04dbae3f45202b9740565dfb466727463a5"
+    },
+    {
       "path": "handoff/large_file_candidates.before_cleanup.csv",
       "bytes": 62924,
       "sha256": "e14281ebbf347aac3bc401ad0f23e7304e1a931d6d171c96ea2de29d097c3135"
@@ -1634,8 +2109,8 @@
     },
     {
       "path": "handoff/link_check.json",
-      "bytes": 54,
-      "sha256": "63e2deef3351cd552c8b5d562da0eaad2706def3be5088da6c0694eb76aa8373"
+      "bytes": 55,
+      "sha256": "b95724ba7596f52251cd4c98f4f644256e1ba378d5e86855d0d9ae5a029313db"
     },
     {
       "path": "handoff/plan_legacy_cleanup.py",
@@ -1646,6 +2121,26 @@
       "path": "handoff/research_records.json",
       "bytes": 331618,
       "sha256": "50f22561c78c0bdf7fd4db3ae946cf8b92ea8d04a7db53e38184d8aad980549a"
+    },
+    {
+      "path": "handoff/supervise_asset_transfer.py",
+      "bytes": 1766,
+      "sha256": "c12c8fe7ec97d320add5cac3db4c39541e793471e65e52b3a9de5da49a062802"
+    },
+    {
+      "path": "handoff/test_deploy_assets.py",
+      "bytes": 3340,
+      "sha256": "4c33056dc4ff06e986f745bf710ae06feb5f17e0280b5a14af0189e29c4b6966"
+    },
+    {
+      "path": "handoff/upload_jia_assets_20261117.py",
+      "bytes": 896,
+      "sha256": "bbc22c5409563710db0dfc33a5db74f997bd4ed1575e97c9a5960ac7c6c09bfa"
+    },
+    {
+      "path": "handoff/upload_research_assets.py",
+      "bytes": 7887,
+      "sha256": "0830c31fe6cd27bf5cbaf624e5036bcda519bd27c74f9f16493a52fb96bb6657"
     },
     {
       "path": "handoff/validation_receipt.json",
@@ -12818,6 +13313,11 @@
       "sha256": "991b609fbc74002b1726b7e8c8832c5c55244b0d0502836ab5da1fb28521c806"
     },
     {
+      "path": "unified_geometry_gs/dtu_eval/eval.py",
+      "bytes": 7969,
+      "sha256": "571d8401c0d31984c82b57cf51230102bfaccb29047f8d610f34e6437ff6cc44"
+    },
+    {
       "path": "unified_geometry_gs/environment_uggs.yml",
       "bytes": 853,
       "sha256": "4d314883a17012829b723f5e8b527f24eaf9532607a94cfd457d1ec35eacf7fd"
@@ -12889,8 +13389,8 @@
     },
     {
       "path": "unified_geometry_gs/evaluate_dtu_mesh.py",
-      "bytes": 8708,
-      "sha256": "67a451ffb10a6a9e5179662b2f63869ac360e7a77935fd938083e921815b370a"
+      "bytes": 14293,
+      "sha256": "bf2de2a0501fc1e67d656c6effdb0687976afcd5829930699769e80db42b0f37"
     },
     {
       "path": "unified_geometry_gs/evaluate_external_mesh_dtu.py",
@@ -12964,8 +13464,8 @@
     },
     {
       "path": "unified_geometry_gs/mesh_extract.py",
-      "bytes": 6463,
-      "sha256": "e6f9fb636c41652915138d8f6771299c599bd206e1c7d27880945582bc4c20da"
+      "bytes": 14411,
+      "sha256": "4c1b996021ae9a661a0155d7b5c325f1fc339ec8eeaa4796771bb88c47dba033"
     },
     {
       "path": "unified_geometry_gs/mesh_extract_tetrahedra.py",
@@ -18103,6 +18603,11 @@
       "sha256": "f0e74bdfc2557081f5bf53f50e932a5160da1252a6bb70a5c5eb70d4254d5fd7"
     },
     {
+      "path": "unified_geometry_gs/scripts/_jia_dump_opt_defaults.py",
+      "bytes": 708,
+      "sha256": "fa1b94c6564db74f3af9d2ceaeed71e5a8d193d576b3816d4bec9ab455dc8c61"
+    },
+    {
       "path": "unified_geometry_gs/scripts/_resume_field_occ.sh",
       "bytes": 731,
       "sha256": "077fc3fb46ba8382e856f84135978a07dcba5928a78ce28a9d11c9dd470065ec"
@@ -18171,6 +18676,11 @@
       "path": "unified_geometry_gs/scripts/compare_scan_methods.sh",
       "bytes": 1320,
       "sha256": "280613f02b4a36748e7d8a4b20be4161635d5f16f6dee258c86bbed5578d1874"
+    },
+    {
+      "path": "unified_geometry_gs/scripts/compat_jia_patchmatch_grad.py",
+      "bytes": 12944,
+      "sha256": "ffb48fe51a32cb27fe365784ccbd7df5c01f8da0549ddf0bf8c42b6b96c9677b"
     },
     {
       "path": "unified_geometry_gs/scripts/diagnose_d2s.py",
@@ -18286,6 +18796,31 @@
       "path": "unified_geometry_gs/scripts/run_ggs_phase2_ncc.sh",
       "bytes": 5764,
       "sha256": "314ac613fa140811179c3fd2f5ba73541431f216b613c3096ae9d70472f7503a"
+    },
+    {
+      "path": "unified_geometry_gs/scripts/run_jia_rebuild_queue_105_122.sh",
+      "bytes": 2691,
+      "sha256": "d83be1e1a9cbe4986861776e79f1a9dca31c4bceab9d850aa695d00b0f617dd8"
+    },
+    {
+      "path": "unified_geometry_gs/scripts/run_jia_rebuild_queue_105_122_resume.sh",
+      "bytes": 1676,
+      "sha256": "2513539b5be0fcbb5f03378d88fa4fec5aff9aa5f3145b5e51a86a705435d925"
+    },
+    {
+      "path": "unified_geometry_gs/scripts/run_jia_rebuild_scan24_train.sh",
+      "bytes": 2111,
+      "sha256": "0dee6a3884f31cee9e1c9b911c618e5433015d5e5c678d33b3afcb2b8d63a8c1"
+    },
+    {
+      "path": "unified_geometry_gs/scripts/run_jia_rebuild_train_one.sh",
+      "bytes": 2100,
+      "sha256": "c617202fcfa2793cdbc36e81642fb309e06985d3a077f96602a7fd4146c1d015"
+    },
+    {
+      "path": "unified_geometry_gs/scripts/run_jia_trust_full_extract.py",
+      "bytes": 13020,
+      "sha256": "7922fe849c945299e86c92af4720c918594faca25ec1bd2acdc49de68b0171be"
     },
     {
       "path": "unified_geometry_gs/scripts/run_m1.ps1",
@@ -18418,9 +18953,24 @@
       "sha256": "5bf0257da1356b72a06986a6b09096c286ab18cef3ab59099b889be4c579b95c"
     },
     {
+      "path": "unified_geometry_gs/scripts/selfcheck_jia_eval_seed_and_snapshot.py",
+      "bytes": 2979,
+      "sha256": "218f33d81a9bacc3578f08f646fdc679890947908f959fed338424a7bbef6ff2"
+    },
+    {
       "path": "unified_geometry_gs/scripts/setup_uggs_gpu.sh",
       "bytes": 1503,
       "sha256": "69d9aa3b4572301afc773104d2d90cc6169196c32dae0392b15cd686984d12a4"
+    },
+    {
+      "path": "unified_geometry_gs/scripts/smoke_jia_trust_fuse_scan24.py",
+      "bytes": 7595,
+      "sha256": "b957644ac8660936ef9fe92323827f0267260360bc82ffd98b84a2a580696b1e"
+    },
+    {
+      "path": "unified_geometry_gs/scripts/snapshot_jia_trust_source_identity.py",
+      "bytes": 3377,
+      "sha256": "57e40794b7bffd25b95d493366e22faa3ba86c423730ae8dd8adf2d39e7c2d74"
     },
     {
       "path": "unified_geometry_gs/scripts/stitch_snapshot_rows.py",
@@ -26418,9 +26968,14 @@
       "sha256": "7735247279a74c014b493731ecf42c2aef40fc7d61058654353e6bffd7b0b502"
     },
     {
+      "path": "unified_geometry_gs/utils/jia_io_guard.py",
+      "bytes": 2004,
+      "sha256": "e7105a25fa29ecd5087ff396a286ace6d77a862cb6b9e753a96eb8a72048847b"
+    },
+    {
       "path": "unified_geometry_gs/utils/loss_utils.py",
-      "bytes": 16834,
-      "sha256": "9d87cbc21d027d1883e14a322d5f682ed0e1b51cc1e3007d85c0238f129237eb"
+      "bytes": 19892,
+      "sha256": "39be74a64b7f954cdcfadf1aedccf5845c7512332eacb7a80a177a2c10455d2e"
     },
     {
       "path": "unified_geometry_gs/utils/pose_utils.py",

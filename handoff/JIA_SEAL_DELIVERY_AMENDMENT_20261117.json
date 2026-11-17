@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-17",
+  "delivery_manifest": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/seal_delivery_amendment_20261117/DELIVERY_MANIFEST.json",
+  "sha256": "701526a37dff65e1cf1a445a3c699426e14d0a30a843379e1de3980e24c98caa",
+  "entries": 62,
+  "accepted": true,
+  "original_seal_preserved": true,
+  "notifications_sent": false,
+  "notification_draft": "handoff/NOTICE_BING_DING_CLOSEOUT_20261117.md",
+  "missing": "Bing/Ding destination task identifiers"
+}

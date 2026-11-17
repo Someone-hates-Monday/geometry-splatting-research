@@ -5,12 +5,15 @@ ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'.asset-transfer';OUT.mkdir(exist_ok=True)
 REPO='Someone-hates-Monday/geometry-splatting-research';TAG='research-assets-2026-11-15'
 LIMIT=1500*1024**2
+GROUPS=['unified_geometry_gs/research/results','unified_geometry_gs/output_compare','dtu','unified_geometry_gs/dtu_eval','unified_geometry_gs/research/experiments','unified_geometry_gs/research/sources','unified_geometry_gs/research/snapshots']
+RELEASE_TITLE='Research data, trained models and raw evidence (2026-11-15)'
+RELEASE_NOTES='Research asset transfer. See ASSET_MANIFEST.json for paths, hashes, volumes and skipped links. Download all listed volumes before restoration. Original source assets remain unchanged.'
 def sha(p):
     h=hashlib.sha256()
     with p.open('rb') as f:
         for b in iter(lambda:f.read(8*1024**2),b''):h.update(b)
     return h.hexdigest()
-def gh(*args):return subprocess.check_output(['gh',*args],stderr=subprocess.STDOUT).decode('utf8',errors='replace')
+def gh(*args):return subprocess.check_output(['gh',*args],stderr=subprocess.STDOUT,timeout=1200 if args[:2]==('release','upload') else 120).decode('utf8',errors='replace')
 def save(p,x):
     t=p.with_suffix('.tmp');t.write_text(json.dumps(x,ensure_ascii=False,indent=2)+'\n',encoding='utf8');t.replace(p)
 def remote():
@@ -42,11 +45,11 @@ def main():
     gh('repo','view',REPO,'--json','visibility')
     try:gh('release','view',TAG,'--repo',REPO)
     except subprocess.CalledProcessError:
-        gh('release','create',TAG,'--repo',REPO,'--target','main','--title','Research data, trained models and raw evidence (2026-11-15)','--notes','Private research asset transfer. See ASSET_MANIFEST.json for paths, hashes, volumes and skipped links. Download all listed volumes before restoration. Original source assets remain unchanged.','--latest=false')
+        gh('release','create',TAG,'--repo',REPO,'--target','main','--title',RELEASE_TITLE,'--notes',RELEASE_NOTES,'--latest=false')
     planfile=OUT/'plan.json'
     if planfile.exists():plan=json.loads(planfile.read_text(encoding='utf8'))
     else:
-        groups=['unified_geometry_gs/research/results','unified_geometry_gs/output_compare','dtu','unified_geometry_gs/dtu_eval','unified_geometry_gs/research/experiments','unified_geometry_gs/research/sources','unified_geometry_gs/research/snapshots']
+        groups=GROUPS
         files=[];skipped=[]
         for base in groups:
             def err(e):skipped.append(dict(path=str(e.filename),reason=str(e)))

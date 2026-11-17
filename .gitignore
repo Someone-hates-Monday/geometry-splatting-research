@@ -182,6 +182,12 @@ node_modules/
 *.pem
 *.key
 /.asset-transfer/
+/.vscode/
+
+# Track the evaluator implementation, while keeping DTU reference data excluded.
+!/unified_geometry_gs/dtu_eval/
+/unified_geometry_gs/dtu_eval/*
+!/unified_geometry_gs/dtu_eval/eval.py
 
 # Curated small evidence must survive the legacy output*/model ignore rules.
 !/handoff/evidence_receipts/**/

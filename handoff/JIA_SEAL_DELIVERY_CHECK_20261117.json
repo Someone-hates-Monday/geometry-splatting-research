@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-17",
+  "scope": "Read-only final seal delivery integrity check; no GPU, code modification or upload.",
+  "seal_sha256": "e1d4ab80df8eb16f26d7f888712528d87865fbf6e356dfc0d8a07ebcb97b6bcc",
+  "expected": "e1d4ab80df8eb16f26d7f888712528d87865fbf6e356dfc0d8a07ebcb97b6bcc",
+  "entries": 62,
+  "errors": [
+    {
+      "path": "handoff/JIA_TRUST_REBUILD_STATUS.md",
+      "reason": "size/hash mismatch",
+      "expected_sha256": "274f3ff941c7b32cdff903f5a1df6bcdda3fc15dfcc9db49e090eb9cdbebc035",
+      "actual_sha256": "750402f6d022ef37197ff3ef823650d556dd3ff5e64ca53060e291caa3731f41",
+      "expected_bytes": 512,
+      "actual_bytes": 528
+    }
+  ],
+  "accepted": false,
+  "notification_delivery": "No identifiable Bing/Ding task found; prepared notices pending recipient identifiers.",
+  "verified_entries": 61,
+  "path_resolution": "Use recorded WSL abspath mapped to Windows C:; relpath field mixes repository and subproject roots.",
+  "mixed_root_mappings": [
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/source_identity_manifest.json",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/source_identity_manifest.json"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/loss_utils.py",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/loss_utils.py"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/jia_io_guard.py",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/jia_io_guard.py"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/mesh_extract.py",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/mesh_extract.py"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/evaluate_dtu_mesh.py",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/evaluate_dtu_mesh.py"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/dtu_eval/eval.py",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/dtu_eval/eval.py"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/compat_jia_patchmatch_grad.py",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/compat_jia_patchmatch_grad.py"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/smoke_jia_trust_fuse_scan24.py",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/smoke_jia_trust_fuse_scan24.py"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/snapshot_jia_trust_source_identity.py",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/snapshot_jia_trust_source_identity.py"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/selfcheck_jia_eval_seed_and_snapshot.py",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/selfcheck_jia_eval_seed_and_snapshot.py"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/run_jia_trust_full_extract.py",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/run_jia_trust_full_extract.py"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan24/model/point_cloud/iteration_30000/point_cloud.ply",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/model/point_cloud/iteration_30000/point_cloud.ply"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan24/model/cfg_args",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/model/cfg_args"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan105/model/point_cloud/iteration_30000/point_cloud.ply",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/model/point_cloud/iteration_30000/point_cloud.ply"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan105/model/cfg_args",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/model/cfg_args"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan122/model/point_cloud/iteration_30000/point_cloud.ply",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/model/point_cloud/iteration_30000/point_cloud.ply"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan122/model/cfg_args",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/model/cfg_args"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/verdict_20261117_154810.json",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/verdict_20261117_154810.json"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/paired_results_20261117_154810.csv",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/paired_results_20261117_154810.csv"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/full_extract_20261117_154810.log",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/full_extract_20261117_154810.log"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/full_extract_progress_20261117_154810.json",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/full_extract_progress_20261117_154810.json"
+    },
+    {
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan24/compat_grad_20261117_145006/compat_receipt.json",
+      "resolved": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/compat_grad_20261117_145006/compat_receipt.json"
+    }
+  ]
+}

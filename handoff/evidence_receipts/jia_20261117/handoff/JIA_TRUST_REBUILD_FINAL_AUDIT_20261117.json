@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-17",
+  "scope": "Independent read-only arithmetic, hash, snapshot, eval receipt and per-view-counter checks; no GPU rerun or full metric recomputation.",
+  "checked": 57,
+  "errors": [],
+  "scenes": [
+    {
+      "scan": "scan24",
+      "delta_overall": 0.0057196723244732905,
+      "delta_s2d": 0.019299073495948227,
+      "delta_d2s": -0.00785972884700159,
+      "views": 49,
+      "aggregate_keep_fraction": 0.8673103613759884
+    },
+    {
+      "scan": "scan105",
+      "delta_overall": -0.0032002798642043473,
+      "delta_s2d": 0.024561614794965436,
+      "delta_d2s": -0.03096217452337413,
+      "views": 64,
+      "aggregate_keep_fraction": 0.9025999541355249
+    },
+    {
+      "scan": "scan122",
+      "delta_overall": 0.011076474360725841,
+      "delta_s2d": 0.038685720646132404,
+      "delta_d2s": -0.016532771924680667,
+      "views": 64,
+      "aggregate_keep_fraction": 0.9104938298740579
+    }
+  ],
+  "mean_delta_overall": 0.004531955606998261,
+  "mean_delta_s2d": 0.027515469645682022,
+  "gates": [
+    false,
+    false,
+    false
+  ],
+  "classification": "VALID_SCIENTIFIC_FAIL",
+  "limitations": [
+    "Does not prove absence of all implementation bugs",
+    "Does not prove missing surface geometry causally from metrics alone",
+    "Renderer/environment/data full dependency identity not independently re-audited"
+  ]
+}

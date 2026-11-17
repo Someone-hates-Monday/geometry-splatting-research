@@ -1,0 +1,201 @@
+{
+  "ok": true,
+  "baseline": {
+    "git_head": "8387442ef901329fae0cfcd238561f23c2a540b3",
+    "baseline_path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/compat_grad_20261117_145006/loss_utils_HEAD_8387442ef901.py",
+    "baseline_sha256": "9d87cbc21d027d1883e14a322d5f682ed0e1b51cc1e3007d85c0238f129237eb",
+    "current_loss_utils_sha256": "39be74a64b7f954cdcfadf1aedccf5845c7512332eacb7a80a177a2c10455d2e"
+  },
+  "tolerance_policy": {
+    "declared_before_run": true,
+    "atol": 0.0,
+    "rtol": 0.0,
+    "note": "CUDA nondeterminism would require pre-declared nonzero tol + HEAD self-repeat; default is bit-eq."
+  },
+  "preview_image_name": "0000",
+  "nearest_image_name": "0001",
+  "extension": {
+    "warp_patch_ncc_file": "/home/someone/miniconda3/envs/uggs/lib/python3.12/site-packages/warp_patch_ncc/__init__.py"
+  },
+  "cases": [
+    {
+      "case": "no_nearest/default",
+      "ok": true,
+      "ncc": {
+        "ok": true,
+        "name": "ncc",
+        "bit_equal": true,
+        "max_abs": 0.0,
+        "max_rel": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0,
+        "a": 0.0,
+        "b": 0.0
+      },
+      "geo": {
+        "ok": true,
+        "name": "geo",
+        "bit_equal": true,
+        "max_abs": 0.0,
+        "max_rel": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0,
+        "a": 0.0,
+        "b": 0.0
+      },
+      "arity_h": 2,
+      "arity_c": 2
+    },
+    {
+      "case": "no_nearest/return_trust_maps_False",
+      "ok": true,
+      "ncc": {
+        "ok": true,
+        "name": "ncc",
+        "bit_equal": true,
+        "max_abs": 0.0,
+        "max_rel": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0,
+        "a": 0.0,
+        "b": 0.0
+      },
+      "geo": {
+        "ok": true,
+        "name": "geo",
+        "bit_equal": true,
+        "max_abs": 0.0,
+        "max_rel": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0,
+        "a": 0.0,
+        "b": 0.0
+      },
+      "arity_h": 2,
+      "arity_c": 2
+    },
+    {
+      "case": "empty_d_mask",
+      "ok": true,
+      "ncc": {
+        "ok": true,
+        "name": "ncc",
+        "bit_equal": true,
+        "max_abs": 0.0,
+        "max_rel": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0,
+        "a": 0.0,
+        "b": 0.0
+      },
+      "geo": {
+        "ok": true,
+        "name": "geo",
+        "bit_equal": true,
+        "max_abs": 0.0,
+        "max_rel": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0,
+        "a": 0.0,
+        "b": 0.0
+      }
+    },
+    {
+      "case": "normal_enable_grad",
+      "ok": true,
+      "comps": [
+        {
+          "ok": true,
+          "name": "ncc_loss",
+          "bit_equal": true,
+          "max_abs": 0.0,
+          "max_rel": 0.0,
+          "atol": 0.0,
+          "rtol": 0.0,
+          "a": 0.35094141960144043,
+          "b": 0.35094141960144043
+        },
+        {
+          "ok": true,
+          "name": "geo_loss",
+          "bit_equal": true,
+          "max_abs": 0.0,
+          "max_rel": 0.0,
+          "atol": 0.0,
+          "rtol": 0.0,
+          "a": 0.023555636405944824,
+          "b": 0.023555636405944824
+        },
+        {
+          "ok": true,
+          "name": "grad_median_depth",
+          "bit_equal": true,
+          "max_abs": 0.0,
+          "max_rel": 0.0,
+          "atol": 0.0,
+          "rtol": 0.0,
+          "a": -27.26900863647461,
+          "b": -27.26900863647461
+        },
+        {
+          "ok": true,
+          "name": "grad_normal",
+          "bit_equal": true,
+          "max_abs": 0.0,
+          "max_rel": 0.0,
+          "atol": 0.0,
+          "rtol": 0.0,
+          "a": -0.05239078402519226,
+          "b": -0.05239078402519226
+        }
+      ],
+      "requires_grad_h": true,
+      "requires_grad_c": true,
+      "grad_requested": true,
+      "ran_under_no_grad": false
+    },
+    {
+      "case": "single_positive_depth",
+      "ok": true,
+      "ncc": {
+        "ok": true,
+        "name": "ncc",
+        "bit_equal": true,
+        "max_abs": 0.0,
+        "max_rel": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0,
+        "a": 0.0,
+        "b": 0.0
+      },
+      "geo": {
+        "ok": true,
+        "name": "geo",
+        "bit_equal": true,
+        "max_abs": 0.0,
+        "max_rel": 0.0,
+        "atol": 0.0,
+        "rtol": 0.0,
+        "a": 0.0,
+        "b": 0.0
+      },
+      "keep_i": 0
+    },
+    {
+      "case": "current_trust_maps_no_nearest",
+      "ok": true,
+      "keys": [
+        "error",
+        "evaluated",
+        "geometry_valid",
+        "keep",
+        "warp_valid"
+      ],
+      "keep_any": false
+    }
+  ],
+  "model_path": "output_compare/ggs_trust_rebuild_20261116/scan24/model",
+  "iteration": 30000,
+  "render_depth_digest": "f6c92b75be35d56bcbc6c96b0cc9a2fe5d14480b494df33dedc3585a98c7635a",
+  "render_normal_digest": "36ffa502aa70319622365f6ad908336677f6efce7fe8ded87fe2db16f5918fee"
+}

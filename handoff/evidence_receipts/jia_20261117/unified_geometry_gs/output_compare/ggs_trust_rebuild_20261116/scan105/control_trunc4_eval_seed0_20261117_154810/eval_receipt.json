@@ -1,0 +1,34 @@
+{
+  "timestamp_utc": "2026-11-17T07:51:28.331117+00:00",
+  "cmd": [
+    "/home/someone/miniconda3/envs/uggs/bin/python",
+    "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/dtu_eval/eval.py",
+    "--data",
+    "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/recon_aligned.ply",
+    "--scan",
+    "105",
+    "--mode",
+    "mesh",
+    "--dataset_dir",
+    "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/dtu_eval/Offical_DTU_Dataset",
+    "--vis_out_dir",
+    "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/vis",
+    "--seed",
+    "0"
+  ],
+  "returncode": 0,
+  "eval_seed": 0,
+  "mesh_file": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_20261117_154810/recon_post.ply",
+  "aligned_mesh_file": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/recon_aligned.ply",
+  "vis_dir": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/vis",
+  "python": "/home/someone/miniconda3/envs/uggs/bin/python",
+  "eval_script": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/dtu_eval/eval.py",
+  "explicit_new_path": true,
+  "results": {
+    "mean_d2s": 0.40571941761513636,
+    "mean_s2d": 0.5356970736210007,
+    "overall": 0.47070824561806857,
+    "eval_seed": 0
+  },
+  "results_json": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/vis/results.json"
+}

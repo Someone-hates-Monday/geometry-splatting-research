@@ -1,0 +1,10 @@
+{
+  "seal_manifest": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/seal_20261117_154810/SEAL_MANIFEST.json",
+  "seal_manifest_sha256": "e1d4ab80df8eb16f26d7f888712528d87865fbf6e356dfc0d8a07ebcb97b6bcc",
+  "verdict": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/verdict_20261117_154810.json",
+  "csv": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/paired_results_20261117_154810.csv",
+  "source_identity": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810",
+  "n_entries": 62,
+  "jia_task_status": "\u5b8c\u6210\u9a8c\u8bc1\uff0c\u672a\u8fc7\u7ebf",
+  "pass": false
+}

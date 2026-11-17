@@ -1,0 +1,616 @@
+{
+  "date": "2026-11-17T08:03:42.103182+00:00",
+  "classification": "VALID_SCIENTIFIC_FAIL",
+  "jia_task_status": "完成验证，未过线",
+  "research_goal_complete": false,
+  "stamp": "20261117_154810",
+  "git_head": "8387442ef901329fae0cfcd238561f23c2a540b3",
+  "eval_seed": 0,
+  "tau": 0.9,
+  "views_per_scan": {
+    "scan24": 49,
+    "scan105": 64,
+    "scan122": 64
+  },
+  "aggregate_keep_fraction": {
+    "scan24": {
+      "n_views": 49,
+      "n_B_sum": 14769631,
+      "n_keep_sum": 12809854,
+      "aggregate_keep_fraction": 0.8673103613759884,
+      "note": "Weighted by positive-depth B pixels across all train views; not single-preview keep."
+    },
+    "scan105": {
+      "n_views": 64,
+      "n_B_sum": 10683650,
+      "n_keep_sum": 9643062,
+      "aggregate_keep_fraction": 0.9025999541355249,
+      "note": "Weighted by positive-depth B pixels across all train views; not single-preview keep."
+    },
+    "scan122": {
+      "n_views": 64,
+      "n_B_sum": 7961831,
+      "n_keep_sum": 7249198,
+      "aggregate_keep_fraction": 0.9104938298740579,
+      "note": "Weighted by positive-depth B pixels across all train views; not single-preview keep."
+    }
+  },
+  "preview_keep_fraction_scan24_not_scene_rate": 0.7476172565840542,
+  "mean_delta_overall": 0.004531955606998261,
+  "mean_delta_s2d": 0.027515469645682022,
+  "delta_overall_scan122": 0.011076474360725841,
+  "gates": {
+    "mean_delta_overall_le_-5e-4": false,
+    "mean_delta_s2d_le_0": false,
+    "scan122_delta_overall_le_+5e-4": false
+  },
+  "pass": false,
+  "csv_verdict_delta_checks": [
+    {
+      "scan": "scan24",
+      "field": "delta_overall",
+      "csv": 0.0057196723244732905,
+      "verdict": 0.0057196723244732905,
+      "equal": true
+    },
+    {
+      "scan": "scan24",
+      "field": "delta_s2d",
+      "csv": 0.019299073495948227,
+      "verdict": 0.019299073495948227,
+      "equal": true
+    },
+    {
+      "scan": "scan24",
+      "field": "delta_d2s",
+      "csv": -0.00785972884700159,
+      "verdict": -0.00785972884700159,
+      "equal": true
+    },
+    {
+      "scan": "scan105",
+      "field": "delta_overall",
+      "csv": -0.0032002798642043473,
+      "verdict": -0.0032002798642043473,
+      "equal": true
+    },
+    {
+      "scan": "scan105",
+      "field": "delta_s2d",
+      "csv": 0.024561614794965436,
+      "verdict": 0.024561614794965436,
+      "equal": true
+    },
+    {
+      "scan": "scan105",
+      "field": "delta_d2s",
+      "csv": -0.03096217452337413,
+      "verdict": -0.03096217452337413,
+      "equal": true
+    },
+    {
+      "scan": "scan122",
+      "field": "delta_overall",
+      "csv": 0.011076474360725841,
+      "verdict": 0.011076474360725841,
+      "equal": true
+    },
+    {
+      "scan": "scan122",
+      "field": "delta_s2d",
+      "csv": 0.038685720646132404,
+      "verdict": 0.038685720646132404,
+      "equal": true
+    },
+    {
+      "scan": "scan122",
+      "field": "delta_d2s",
+      "csv": -0.016532771924680667,
+      "verdict": -0.016532771924680667,
+      "equal": true
+    }
+  ],
+  "n_entries": 62,
+  "entries": [
+    {
+      "role": "protocol",
+      "relpath": "handoff/JIA_TRUST_REBUILD_PROTOCOL_20261116.md",
+      "bytes": 4114,
+      "sha256": "e168465ab6b238d63721bf7af42b86cf3896d53253163c45b7c1a417aa4683d3",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/JIA_TRUST_REBUILD_PROTOCOL_20261116.md"
+    },
+    {
+      "role": "order_deviation",
+      "relpath": "handoff/JIA_TRUST_REBUILD_ORDER_DEVIATION.md",
+      "bytes": 1585,
+      "sha256": "2418f6c6ddfdc559fd97087e173b2452650c2b508b6c0a36ef0917130a80b1b4",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/JIA_TRUST_REBUILD_ORDER_DEVIATION.md"
+    },
+    {
+      "role": "asset_missing_audit",
+      "relpath": "handoff/JIA_LOCAL_RECOVERY_AUDIT.md",
+      "bytes": 3127,
+      "sha256": "2e320d1785c6ef690220c10af21cb4971c4dda73e259e9515e3d43486f9e0d5b",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/JIA_LOCAL_RECOVERY_AUDIT.md"
+    },
+    {
+      "role": "p1_resubmit",
+      "relpath": "handoff/JIA_TRUST_REBUILD_P1_RESUBMIT_20261117.md",
+      "bytes": 3593,
+      "sha256": "696e6a81a495964ce50cdcace060b13e92b082089dac06e4cd96c1ad90b042ce",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/JIA_TRUST_REBUILD_P1_RESUBMIT_20261117.md"
+    },
+    {
+      "role": "p1_decision",
+      "relpath": "handoff/JIA_TRUST_REBUILD_P1_REVIEW_DECISION_20261117.md",
+      "bytes": 4229,
+      "sha256": "a0aef6342371373f53ad5b64ee8bb7365ef5381c42233ad7106beb65c68b1d4a",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/JIA_TRUST_REBUILD_P1_REVIEW_DECISION_20261117.md"
+    },
+    {
+      "role": "full_result_note",
+      "relpath": "handoff/JIA_TRUST_REBUILD_FULL_RESULT_20261117.md",
+      "bytes": 2911,
+      "sha256": "588535326e67ae5c05417e07bd47d49f7e53307326c930f98476f07ce76f12d4",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/JIA_TRUST_REBUILD_FULL_RESULT_20261117.md"
+    },
+    {
+      "role": "final_review",
+      "relpath": "handoff/JIA_TRUST_REBUILD_FINAL_REVIEW_20261117.md",
+      "bytes": 4115,
+      "sha256": "cccb4192c316668eb45b8f0d367aefe4f684cb9b67220d38d399699df1a41fc8",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/JIA_TRUST_REBUILD_FINAL_REVIEW_20261117.md"
+    },
+    {
+      "role": "final_audit",
+      "relpath": "handoff/JIA_TRUST_REBUILD_FINAL_AUDIT_20261117.json",
+      "bytes": 1408,
+      "sha256": "c75e5b46bafa7a9736a1e6750242da43e5fbdf143d338ebc7a59a5ddb8ab6a2e",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/JIA_TRUST_REBUILD_FINAL_AUDIT_20261117.json"
+    },
+    {
+      "role": "closeout",
+      "relpath": "handoff/JIA_TRUST_REBUILD_CLOSEOUT_20261117.md",
+      "bytes": 2333,
+      "sha256": "572564df9d79ad2edc20cc093fa213bb134dae512dd7427a2718b565ca6e6272",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/JIA_TRUST_REBUILD_CLOSEOUT_20261117.md"
+    },
+    {
+      "role": "status",
+      "relpath": "handoff/JIA_TRUST_REBUILD_STATUS.md",
+      "bytes": 512,
+      "sha256": "274f3ff941c7b32cdff903f5a1df6bcdda3fc15dfcc9db49e090eb9cdbebc035",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/JIA_TRUST_REBUILD_STATUS.md"
+    },
+    {
+      "role": "phase1_blocked",
+      "relpath": "handoff/JIA_TRUST_FUSE_PHASE1_BLOCKED.md",
+      "bytes": 9496,
+      "sha256": "a64868b81298f15e9578a8c77608e8ae3cdce7b00f6eadb5988cdc346e8ce5f2",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/JIA_TRUST_FUSE_PHASE1_BLOCKED.md"
+    },
+    {
+      "role": "plan",
+      "relpath": "handoff/PLAN_JIA_TRUST_FUSE.md",
+      "bytes": 12623,
+      "sha256": "c435c6e0d1c493a3ce400ac9f6d67bc7630aba524e33217230d1cf3aa22fe801",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/PLAN_JIA_TRUST_FUSE.md"
+    },
+    {
+      "role": "team_plan",
+      "relpath": "handoff/TEAM_PLAN_2026_11_16.md",
+      "bytes": 11909,
+      "sha256": "187c988b4bf0c9aff9754eb967110133c12d46bb8d06463e2bee6a8d199b1482",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/handoff/TEAM_PLAN_2026_11_16.md"
+    },
+    {
+      "role": "source_identity_manifest",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/source_identity_manifest.json",
+      "bytes": 3043,
+      "sha256": "d69b430331ff1cf7753926c0e3910d013a5d0a8c26c6cccaabdbec441456a7d9",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/source_identity_manifest.json"
+    },
+    {
+      "role": "source_snapshot:utils/loss_utils.py",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/loss_utils.py",
+      "bytes": 19892,
+      "sha256": "39be74a64b7f954cdcfadf1aedccf5845c7512332eacb7a80a177a2c10455d2e",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/loss_utils.py"
+    },
+    {
+      "role": "source_snapshot:utils/jia_io_guard.py",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/jia_io_guard.py",
+      "bytes": 2004,
+      "sha256": "e7105a25fa29ecd5087ff396a286ace6d77a862cb6b9e753a96eb8a72048847b",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/utils/jia_io_guard.py"
+    },
+    {
+      "role": "source_snapshot:mesh_extract.py",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/mesh_extract.py",
+      "bytes": 14411,
+      "sha256": "4c1b996021ae9a661a0155d7b5c325f1fc339ec8eeaa4796771bb88c47dba033",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/mesh_extract.py"
+    },
+    {
+      "role": "source_snapshot:evaluate_dtu_mesh.py",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/evaluate_dtu_mesh.py",
+      "bytes": 14293,
+      "sha256": "bf2de2a0501fc1e67d656c6effdb0687976afcd5829930699769e80db42b0f37",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/evaluate_dtu_mesh.py"
+    },
+    {
+      "role": "source_snapshot:dtu_eval/eval.py",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/dtu_eval/eval.py",
+      "bytes": 7969,
+      "sha256": "571d8401c0d31984c82b57cf51230102bfaccb29047f8d610f34e6437ff6cc44",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/dtu_eval/eval.py"
+    },
+    {
+      "role": "source_snapshot:scripts/compat_jia_patchmatch_grad.py",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/compat_jia_patchmatch_grad.py",
+      "bytes": 12944,
+      "sha256": "ffb48fe51a32cb27fe365784ccbd7df5c01f8da0549ddf0bf8c42b6b96c9677b",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/compat_jia_patchmatch_grad.py"
+    },
+    {
+      "role": "source_snapshot:scripts/smoke_jia_trust_fuse_scan24.py",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/smoke_jia_trust_fuse_scan24.py",
+      "bytes": 7595,
+      "sha256": "b957644ac8660936ef9fe92323827f0267260360bc82ffd98b84a2a580696b1e",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/smoke_jia_trust_fuse_scan24.py"
+    },
+    {
+      "role": "source_snapshot:scripts/snapshot_jia_trust_source_identity.py",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/snapshot_jia_trust_source_identity.py",
+      "bytes": 3377,
+      "sha256": "57e40794b7bffd25b95d493366e22faa3ba86c423730ae8dd8adf2d39e7c2d74",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/snapshot_jia_trust_source_identity.py"
+    },
+    {
+      "role": "source_snapshot:scripts/selfcheck_jia_eval_seed_and_snapshot.py",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/selfcheck_jia_eval_seed_and_snapshot.py",
+      "bytes": 2979,
+      "sha256": "218f33d81a9bacc3578f08f646fdc679890947908f959fed338424a7bbef6ff2",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/selfcheck_jia_eval_seed_and_snapshot.py"
+    },
+    {
+      "role": "source_snapshot:scripts/run_jia_trust_full_extract.py",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/run_jia_trust_full_extract.py",
+      "bytes": 13020,
+      "sha256": "7922fe849c945299e86c92af4720c918594faca25ec1bd2acdc49de68b0171be",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/source_identity_20261117_154810/sources/scripts/run_jia_trust_full_extract.py"
+    },
+    {
+      "role": "model_ply:scan24",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan24/model/point_cloud/iteration_30000/point_cloud.ply",
+      "bytes": 235676240,
+      "sha256": "e772631d0800f5b49ac32e3ecc5f7d608d733e9d5483851d2e2ea0831303625c",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/model/point_cloud/iteration_30000/point_cloud.ply"
+    },
+    {
+      "role": "model_cfg:scan24",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan24/model/cfg_args",
+      "bytes": 436,
+      "sha256": "b1d6c5abe7d80c69caf3c3c6f8bffd7ce8e0414493368da94714f030db519c45",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/model/cfg_args"
+    },
+    {
+      "role": "model_ply:scan105",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan105/model/point_cloud/iteration_30000/point_cloud.ply",
+      "bytes": 111001508,
+      "sha256": "75281dabb4b8327224b672f01a500013405c10e03ecafcda684f359a419acf0f",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/model/point_cloud/iteration_30000/point_cloud.ply"
+    },
+    {
+      "role": "model_cfg:scan105",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan105/model/cfg_args",
+      "bytes": 438,
+      "sha256": "3240294b9e32eb0d37e20438aabf92f16849b9daa2ac2e63124db9f8b1bd38a0",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/model/cfg_args"
+    },
+    {
+      "role": "model_ply:scan122",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan122/model/point_cloud/iteration_30000/point_cloud.ply",
+      "bytes": 121405328,
+      "sha256": "bd7239447fb43af4dbe50f910e426f59cb06b46628362226be2921576da0958d",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/model/point_cloud/iteration_30000/point_cloud.ply"
+    },
+    {
+      "role": "model_cfg:scan122",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan122/model/cfg_args",
+      "bytes": 438,
+      "sha256": "451b129a5c53b44dbbf792fe065df6ebc4ca34c7f3301ae6ed625ef11305cb52",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/model/cfg_args"
+    },
+    {
+      "role": "scan24:control_mesh",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/control_trunc4/recon_post.ply",
+      "bytes": 53969688,
+      "sha256": "81a0877ba9c27c5c6c6bcbfff1ac7a859640d4d521dc2148bb6e1b1d5bb082fd",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/control_trunc4/recon_post.ply"
+    },
+    {
+      "role": "scan24:control_results",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/control_trunc4_eval_seed0_run1_20261117_145006/vis/results.json",
+      "bytes": 119,
+      "sha256": "52fe52f57374301e5fbc28b7c87193dcf938666dd6423e300eb48ad791a1eab0",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/control_trunc4_eval_seed0_run1_20261117_145006/vis/results.json"
+    },
+    {
+      "role": "scan24:control_receipt",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/control_trunc4_eval_seed0_run1_20261117_145006/eval_receipt.json",
+      "bytes": 1881,
+      "sha256": "f658e08185ab8147144d645c209389f1ebe8dc7944aadb05d8fb23e87fd86cdf",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/control_trunc4_eval_seed0_run1_20261117_145006/eval_receipt.json"
+    },
+    {
+      "role": "scan24:trust_mesh",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_20261117_154810/recon_post.ply",
+      "bytes": 50476767,
+      "sha256": "756a03e06f3224a331ef24da0b3398b823de9db8c1d83fb552b77e7bcd63dbd3",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_20261117_154810/recon_post.ply"
+    },
+    {
+      "role": "scan24:trust_results",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 120,
+      "sha256": "7fd371b5f278f138656150392c5ea62cfaaf527affc9e860e19d76209cd5914c",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_eval_seed0_20261117_154810/vis/results.json"
+    },
+    {
+      "role": "scan24:trust_receipt",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1861,
+      "sha256": "1247e6a4f5cf5967fbccf4f2401045bd37ae8f01c5216db575d6d46c3473d67b",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json"
+    },
+    {
+      "role": "scan24:per_view",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_20261117_154810/per_view_metrics.json",
+      "bytes": 32427,
+      "sha256": "ac8529900e34e862d501461cb827e41ee0d4840ff9c979f58c2e6fd96f31631a",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_trunc4_20261117_154810/per_view_metrics.json"
+    },
+    {
+      "role": "scan24:redmask",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_preview_redmask_20261117_154810/smoke_redmask.png",
+      "bytes": 448181,
+      "sha256": "d60364ec0ba2609039507669c00cafecd9a6777444acdf8e5c0bff1682375dcc",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_preview_redmask_20261117_154810/smoke_redmask.png"
+    },
+    {
+      "role": "scan24:preview_receipt",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_preview_redmask_20261117_154810/smoke_receipt.json",
+      "bytes": 2675,
+      "sha256": "c58b60e74ae1f7eaf63afbc24bdd30b3351d9849698a285d56896694aa2251a1",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/trust_preview_redmask_20261117_154810/smoke_receipt.json"
+    },
+    {
+      "role": "scan105:control_mesh",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_20261117_154810/recon_post.ply",
+      "bytes": 31890151,
+      "sha256": "0f55ab48d572d4b464b41e7f944a63ec25075e4d8c3fdc58dec30c8aeec356d8",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_20261117_154810/recon_post.ply"
+    },
+    {
+      "role": "scan105:control_results",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 119,
+      "sha256": "3eb61d96a68730c6760b2a335a607380a5b8a0d7b39107738e765ef6935e4810",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/vis/results.json"
+    },
+    {
+      "role": "scan105:control_receipt",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1879,
+      "sha256": "47286f0fb39e22964eb9ac42164aad753b417aa13c09023504b775150bbf6a1f",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/control_trunc4_eval_seed0_20261117_154810/eval_receipt.json"
+    },
+    {
+      "role": "scan105:trust_mesh",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_20261117_154810/recon_post.ply",
+      "bytes": 29904649,
+      "sha256": "143f5d26385f1034ba4815464dd0d3ea27d924c81609017dfda44e8bc4195db0",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_20261117_154810/recon_post.ply"
+    },
+    {
+      "role": "scan105:trust_results",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 117,
+      "sha256": "d4a76346959a726c30ed4428a4d4f23304529ba8ed1bddac242b7a3c3a3bccd8",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_eval_seed0_20261117_154810/vis/results.json"
+    },
+    {
+      "role": "scan105:trust_receipt",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1865,
+      "sha256": "bab9eb43c5a5eab3762932764755086c9abf8a11e36b880404e3d44fad49f6fc",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json"
+    },
+    {
+      "role": "scan105:per_view",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_20261117_154810/per_view_metrics.json",
+      "bytes": 42198,
+      "sha256": "e42a465689526b41a2294641c50aa53b70ab453c697688014dde1bfa2ddc85a1",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_trunc4_20261117_154810/per_view_metrics.json"
+    },
+    {
+      "role": "scan105:redmask",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_preview_redmask_20261117_154810/smoke_redmask.png",
+      "bytes": 561055,
+      "sha256": "831b606f36cb34ce97bb7922f4b620c4deeb72c84e4d67c19131fff3a4bf69b0",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_preview_redmask_20261117_154810/smoke_redmask.png"
+    },
+    {
+      "role": "scan105:preview_receipt",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_preview_redmask_20261117_154810/smoke_receipt.json",
+      "bytes": 2676,
+      "sha256": "564d63c20e70bf2e191d177107140395ca11bd170195081cce91514e209b55f6",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan105/trust_preview_redmask_20261117_154810/smoke_receipt.json"
+    },
+    {
+      "role": "scan122:control_mesh",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/control_trunc4_20261117_154810/recon_post.ply",
+      "bytes": 29817743,
+      "sha256": "e2f750d4987d313c3508478f889a487e7a2ce379d13a99ffe0395227dbf3ae04",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/control_trunc4_20261117_154810/recon_post.ply"
+    },
+    {
+      "role": "scan122:control_results",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/control_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 117,
+      "sha256": "37b792a358655682f65395f0de40d72fa780a661f957482382b8fc9a29a7d5f6",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/control_trunc4_eval_seed0_20261117_154810/vis/results.json"
+    },
+    {
+      "role": "scan122:control_receipt",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/control_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1877,
+      "sha256": "2d58f07500176744030409621f7d097dfce7a91fae0161f53f02c0d956e23631",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/control_trunc4_eval_seed0_20261117_154810/eval_receipt.json"
+    },
+    {
+      "role": "scan122:trust_mesh",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_20261117_154810/recon_post.ply",
+      "bytes": 27701199,
+      "sha256": "63f5aeade907cae123bd7e6da963dc1109987e4f90242d53de23b506ff22fece",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_20261117_154810/recon_post.ply"
+    },
+    {
+      "role": "scan122:trust_results",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_eval_seed0_20261117_154810/vis/results.json",
+      "bytes": 118,
+      "sha256": "a7e1c29900632d55e5ec86032d34f2311421d712e840cb5c998417e306d8f0bc",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_eval_seed0_20261117_154810/vis/results.json"
+    },
+    {
+      "role": "scan122:trust_receipt",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json",
+      "bytes": 1866,
+      "sha256": "fcb1b7d0c81de07087e179621f7f13ab3c26a4120c36e5a63d20685259217a8e",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_eval_seed0_20261117_154810/eval_receipt.json"
+    },
+    {
+      "role": "scan122:per_view",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_20261117_154810/per_view_metrics.json",
+      "bytes": 42130,
+      "sha256": "90dea0b62f30b72d7d8fc956559f97ad8da7838972d5abd8ea0c6216f28dee8f",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_trunc4_20261117_154810/per_view_metrics.json"
+    },
+    {
+      "role": "scan122:redmask",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_preview_redmask_20261117_154810/smoke_redmask.png",
+      "bytes": 481042,
+      "sha256": "865bbdef48150c24c0d1ba9f3c13b1556b4f3cf837ab69979174500b5fa6f8c3",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_preview_redmask_20261117_154810/smoke_redmask.png"
+    },
+    {
+      "role": "scan122:preview_receipt",
+      "relpath": "unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_preview_redmask_20261117_154810/smoke_receipt.json",
+      "bytes": 2672,
+      "sha256": "0d64e719c6164d20d62c9574a486dddaf8b000812f599daad7a2a7350d6413a3",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan122/trust_preview_redmask_20261117_154810/smoke_receipt.json"
+    },
+    {
+      "role": "verdict",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/verdict_20261117_154810.json",
+      "bytes": 6822,
+      "sha256": "17b22cdaf084f9c02f73cd737fe672430ead8cc7b0b0a3a74964843f6ec0a50a",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/verdict_20261117_154810.json"
+    },
+    {
+      "role": "paired_csv",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/paired_results_20261117_154810.csv",
+      "bytes": 679,
+      "sha256": "6ff61e1cff7e1900fa862a1076dfaa4c277637160021dd7030e8b2b75612459b",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/paired_results_20261117_154810.csv"
+    },
+    {
+      "role": "full_extract_log",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/full_extract_20261117_154810.log",
+      "bytes": 9961,
+      "sha256": "36f78bfb02113ffc3e3af2b42ff20de82217dc0f4dbcf56f8f01037fe4741eeb",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/full_extract_20261117_154810.log"
+    },
+    {
+      "role": "progress",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/full_extract_progress_20261117_154810.json",
+      "bytes": 6254,
+      "sha256": "518013f42a389415d4d061e416a5adb26d2e95e77d88757bf41d49c26a435f2d",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/full_extract_progress_20261117_154810.json"
+    },
+    {
+      "role": "compat_receipt",
+      "relpath": "output_compare/ggs_trust_rebuild_20261116/scan24/compat_grad_20261117_145006/compat_receipt.json",
+      "bytes": 4866,
+      "sha256": "f509aa49fe13aecea8bde86e48706de30723ff879e12745f2defba8afd0a365e",
+      "abspath": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_trust_rebuild_20261116/scan24/compat_grad_20261117_145006/compat_receipt.json"
+    }
+  ],
+  "git_status_porcelain": [
+    " M unified_geometry_gs/evaluate_dtu_mesh.py",
+    " M unified_geometry_gs/mesh_extract.py",
+    " M unified_geometry_gs/utils/loss_utils.py",
+    "?? .vscode/",
+    "?? handoff/CURSOR_PROMPT_JIA_LOCAL_RECOVERY_REBUILD.md",
+    "?? handoff/CURSOR_PROMPT_JIA_TRUST_FUSE.md",
+    "?? handoff/JIA_LOCAL_RECOVERY_AUDIT.md",
+    "?? handoff/JIA_TRUST_FUSE_PHASE1_BLOCKED.md",
+    "?? handoff/JIA_TRUST_FUSE_REVIEW_DECISION.md",
+    "?? handoff/JIA_TRUST_REBUILD_CLOSEOUT_20261117.md",
+    "?? handoff/JIA_TRUST_REBUILD_FINAL_AUDIT_20261117.json",
+    "?? handoff/JIA_TRUST_REBUILD_FINAL_REVIEW_20261117.md",
+    "?? handoff/JIA_TRUST_REBUILD_FULL_RESULT_20261117.md",
+    "?? handoff/JIA_TRUST_REBUILD_ORDER_DEVIATION.md",
+    "?? handoff/JIA_TRUST_REBUILD_P1_RESUBMIT_20261117.md",
+    "?? handoff/JIA_TRUST_REBUILD_P1_REVIEW_DECISION_20261117.md",
+    "?? handoff/JIA_TRUST_REBUILD_PROTOCOL_20261116.md",
+    "?? handoff/JIA_TRUST_REBUILD_REVIEW_20261117.md",
+    "?? handoff/JIA_TRUST_REBUILD_REVIEW_PACKAGE.md",
+    "?? handoff/JIA_TRUST_REBUILD_SEAL_INDEX_20261117.json",
+    "?? handoff/JIA_TRUST_REBUILD_STATUS.md",
+    "?? handoff/PLAN_JIA_TRUST_FUSE.md",
+    "?? handoff/TEAM_PLAN_2026_11_16.md",
+    "?? handoff/_jia_build_seal_manifest.py",
+    "?? handoff/_jia_collect_review.sh",
+    "?? handoff/_jia_full_extract.sh",
+    "?? handoff/_jia_hash_review_assets.py",
+    "?? handoff/_jia_log_snip.sh",
+    "?? handoff/_jia_p1_receipt_dump.py",
+    "?? handoff/_jia_post_train_continue.sh",
+    "?? handoff/_jia_remediate_p1.sh",
+    "?? handoff/_jia_rerun_smoke.sh",
+    "?? handoff/_jia_train_status.sh",
+    "?? handoff/jia_local_extra_archive_hits.json",
+    "?? handoff/jia_local_recovery_audit.json",
+    "?? handoff/jia_trust_fuse_asset_check.json",
+    "?? handoff/jia_trust_fuse_manifest_path_dedup.json",
+    "?? unified_geometry_gs/scripts/_jia_dump_opt_defaults.py",
+    "?? unified_geometry_gs/scripts/compat_jia_patchmatch_grad.py",
+    "?? unified_geometry_gs/scripts/run_jia_rebuild_queue_105_122.sh",
+    "?? unified_geometry_gs/scripts/run_jia_rebuild_queue_105_122_resume.sh",
+    "?? unified_geometry_gs/scripts/run_jia_rebuild_scan24_train.sh",
+    "?? unified_geometry_gs/scripts/run_jia_rebuild_train_one.sh",
+    "?? unified_geometry_gs/scripts/run_jia_trust_full_extract.py",
+    "?? unified_geometry_gs/scripts/selfcheck_jia_eval_seed_and_snapshot.py",
+    "?? unified_geometry_gs/scripts/smoke_jia_trust_fuse_scan24.py",
+    "?? unified_geometry_gs/scripts/snapshot_jia_trust_source_identity.py",
+    "?? unified_geometry_gs/utils/jia_io_guard.py"
+  ],
+  "tracked_code_diff_stat": "unified_geometry_gs/evaluate_dtu_mesh.py | 208 +++++++++++++++++++++++++-----\n unified_geometry_gs/mesh_extract.py      | 215 ++++++++++++++++++++++++++++---\n unified_geometry_gs/utils/loss_utils.py  |  65 +++++++++-\n 3 files changed, 439 insertions(+), 49 deletions(-)",
+  "limitations": [
+    "CUDA exactly-one-valid-candidate not proven by single-positive-depth case alone",
+    "gt_mask boundary pixel exhaustive cases not separately instrumented",
+    "full CUDA-all-invalid injection path not separately forced",
+    "No GPU/Chamfer recompute in seal step; relies on prior run evidence + independent audit JSON"
+  ],
+  "allowed_conclusion_zh": "在重新构建并冻结的scan24、105、122模型上，我们将固定最近候选近邻、tau=0.9的强可信掩码用于trunc4融合。相对同模型无掩码对照，平均overall增加0.004532 mm，平均s2d增加0.027515 mm，未达到三条预设门槛，因此不采用此改动。",
+  "not_authorized": [
+    "no local truncation second cut",
+    "no tau/neighbor retune",
+    "no scene expansion",
+    "no retrain",
+    "no auto-upload",
+    "do not modify original 90-volume Release COMPLETE receipt"
+  ]
+}

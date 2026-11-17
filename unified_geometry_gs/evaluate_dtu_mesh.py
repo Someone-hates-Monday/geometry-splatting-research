@@ -1,7 +1,12 @@
 # The evalution code is fork from GOF https://github.com/autonomousvision/gaussian-opacity-fields/blob/main/evaluate_dtu_mesh.py
+import json
+import math
 import os
 import random
+import subprocess
+import sys
 from argparse import ArgumentParser
+from datetime import datetime, timezone
 
 import cv2
 import numpy as np
@@ -13,6 +18,7 @@ from skimage.morphology import binary_dilation, disk
 from arguments import ModelParams, PipelineParams, get_combined_args
 from gaussian_renderer import GaussianModel
 from scene import Scene
+from utils.jia_io_guard import DEFAULT_EVAL_ARTIFACTS, assert_fresh_output_dir
 
 def best_fit_transform(A, B):
     '''
@@ -106,7 +112,6 @@ def load_dtu_camera(DTU):
         camtoworlds.append(pose)
     return camtoworlds
 
-import math
 def fov2focal(fov, pixels):
     return pixels / (2 * math.tan(fov / 2))
 
@@ -167,15 +172,47 @@ def cull_mesh(cameras, mesh):
     return mesh
 
 
-def evaluate_mesh(dataset : ModelParams, iteration : int, DTU_PATH : str):
-    
+def assert_results_eval_seed(results: dict, eval_seed: int | None) -> None:
+    """When a seed was requested, results.json must explicitly record the same int.
+
+    Missing key, JSON null, or any other value is an error. Do not default-fill
+    from the parent command line (that would hide an old/wrong child script).
+    """
+    if eval_seed is None:
+        return
+    if "eval_seed" not in results:
+        raise RuntimeError(
+            "results.json missing required field 'eval_seed' "
+            f"(expected explicit integer {int(eval_seed)})"
+        )
+    child_seed = results["eval_seed"]
+    if child_seed is None:
+        raise RuntimeError(
+            f"results.json eval_seed is null; expected explicit integer {int(eval_seed)}"
+        )
+    try:
+        child_int = int(child_seed)
+    except (TypeError, ValueError) as exc:
+        raise RuntimeError(f"results.json eval_seed not an int: {child_seed!r}") from exc
+    if child_int != int(eval_seed):
+        raise RuntimeError(f"results.json eval_seed mismatch: {child_int} vs {int(eval_seed)}")
+
+
+def evaluate_mesh(
+    dataset: ModelParams,
+    iteration: int,
+    DTU_PATH: str,
+    mesh_path: str | None = None,
+    out_dir: str | None = None,
+    eval_seed: int | None = None,
+    forbid_roots: list[str] | None = None,
+):
     gaussians = GaussianModel(dataset.sh_degree, dataset.sg_degree)
     scene = Scene(dataset, gaussians, load_iteration=iteration, shuffle=False)
-    
+
     train_cameras = scene.getTrainCameras()
-    test_cameras = scene.getTestCameras()
-    dtu_cameras = load_dtu_camera(args.DTU)
-    
+    dtu_cameras = load_dtu_camera(DTU_PATH)
+
     gt_points = np.array([cam[:, 3] for cam in dtu_cameras])
 
     points = []
@@ -183,31 +220,52 @@ def evaluate_mesh(dataset : ModelParams, iteration : int, DTU_PATH : str):
         c2w = (cam.world_view_transform.T).inverse()
         points.append(c2w[:3, 3].cpu().numpy())
     points = np.array(points)
-    gt_points = gt_points[:points.shape[0]]
-    
+    gt_points = gt_points[: points.shape[0]]
+
     # align the scale of two point clouds
     scale_points = np.linalg.norm(points - points.mean(axis=0), axis=1).mean()
     scale_gt_points = np.linalg.norm(gt_points - gt_points.mean(axis=0), axis=1).mean()
-    
+
     points = points * scale_gt_points / scale_points
     _, r, t = best_fit_transform(points, gt_points)
-    
 
-    # load mesh
-    mesh_file = os.path.join(dataset.model_path, "recon_post.ply")
-    print("load")
+    # load mesh (cameras/model still from dataset.model_path)
+    mesh_file = mesh_path if mesh_path else os.path.join(dataset.model_path, "recon_post.ply")
+    print("load", mesh_file)
     mesh = trimesh.load(mesh_file)
-    
+
     # align the mesh
     mesh.vertices = mesh.vertices * scale_gt_points / scale_points
     mesh.vertices = mesh.vertices @ r.T + t
-    
-    aligned_mesh_file = os.path.join(dataset.model_path, "recon_aligned.ply")
+
+    write_root = out_dir if out_dir else dataset.model_path
+    explicit_new_path = bool(out_dir)
+    if explicit_new_path:
+        roots = list(forbid_roots or [])
+        roots.append(dataset.model_path)
+        write_root = assert_fresh_output_dir(
+            write_root,
+            artifacts=DEFAULT_EVAL_ARTIFACTS,
+            forbidden_roots=roots,
+            label="evaluate_dtu_mesh",
+        )
+    else:
+        os.makedirs(write_root, exist_ok=True)
+
+    aligned_mesh_file = os.path.join(write_root, "recon_aligned.ply")
+    if explicit_new_path and os.path.exists(aligned_mesh_file):
+        raise RuntimeError(f"evaluate_dtu_mesh: refuse overwrite {aligned_mesh_file}")
     mesh.export(aligned_mesh_file)
-        
+
     # evaluate
-    out_dir = os.path.join(dataset.model_path, "vis")
-    os.makedirs(out_dir,exist_ok=True)
+    vis_dir = os.path.join(write_root, "vis")
+    if explicit_new_path:
+        os.makedirs(vis_dir, exist_ok=True)
+        results_probe = os.path.join(vis_dir, "results.json")
+        if os.path.exists(results_probe):
+            raise RuntimeError(f"evaluate_dtu_mesh: refuse overwrite {results_probe}")
+    else:
+        os.makedirs(vis_dir, exist_ok=True)
     # Parse scan id from source_path (e.g. .../scan105 or ...\scan105)
     src_name = os.path.basename(os.path.normpath(dataset.source_path))
     if src_name.lower().startswith("scan"):
@@ -216,10 +274,64 @@ def evaluate_mesh(dataset : ModelParams, iteration : int, DTU_PATH : str):
         raise ValueError(
             f"Cannot get DTU scan id from source_path '{dataset.source_path}'. Expected path ending with 'scan105' etc."
         )
-    
-    cmd = f"python dtu_eval/eval.py --data {aligned_mesh_file} --scan {scan} --mode mesh --dataset_dir {DTU_PATH} --vis_out_dir {out_dir}"
-    print(cmd)
-    os.system(cmd)
+
+    eval_script = os.path.abspath(os.path.join(os.path.dirname(__file__), "dtu_eval", "eval.py"))
+    if not os.path.isfile(eval_script):
+        raise FileNotFoundError(f"missing eval script: {eval_script}")
+
+    cmd = [
+        sys.executable,
+        eval_script,
+        "--data",
+        os.path.abspath(aligned_mesh_file),
+        "--scan",
+        str(scan),
+        "--mode",
+        "mesh",
+        "--dataset_dir",
+        os.path.abspath(DTU_PATH),
+        "--vis_out_dir",
+        os.path.abspath(vis_dir),
+    ]
+    if eval_seed is not None:
+        cmd.extend(["--seed", str(int(eval_seed))])
+    print(" ".join(cmd))
+    completed = subprocess.run(cmd, check=False)
+    receipt = {
+        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+        "cmd": cmd,
+        "returncode": int(completed.returncode),
+        "eval_seed": None if eval_seed is None else int(eval_seed),
+        "mesh_file": os.path.abspath(mesh_file),
+        "aligned_mesh_file": os.path.abspath(aligned_mesh_file),
+        "vis_dir": os.path.abspath(vis_dir),
+        "python": sys.executable,
+        "eval_script": eval_script,
+        "explicit_new_path": explicit_new_path,
+    }
+    if completed.returncode != 0:
+        receipt_path = os.path.join(write_root, "eval_receipt.json")
+        with open(receipt_path, "w", encoding="utf-8") as f:
+            json.dump(receipt, f, indent=2)
+        raise RuntimeError(f"dtu_eval/eval.py failed with exit code {completed.returncode}")
+
+    results_json = os.path.join(vis_dir, "results.json")
+    if not os.path.isfile(results_json):
+        raise RuntimeError(f"missing results.json after eval: {results_json}")
+    with open(results_json, encoding="utf-8") as f:
+        results = json.load(f)
+    for key in ("mean_d2s", "mean_s2d", "overall"):
+        if key not in results or not math.isfinite(float(results[key])):
+            raise RuntimeError(f"invalid results.json field {key}: {results.get(key)!r}")
+    assert_results_eval_seed(results, eval_seed)
+    receipt["results"] = results
+    receipt["results_json"] = os.path.abspath(results_json)
+    receipt_path = os.path.join(write_root, "eval_receipt.json")
+    if explicit_new_path and os.path.exists(receipt_path):
+        raise RuntimeError(f"evaluate_dtu_mesh: refuse overwrite {receipt_path}")
+    with open(receipt_path, "w", encoding="utf-8") as f:
+        json.dump(receipt, f, indent=2)
+    print(f"[evaluate_dtu_mesh] wrote {receipt_path}")
 
 
 if __name__ == "__main__":
@@ -231,9 +343,39 @@ if __name__ == "__main__":
     parser.add_argument("--skip_train", action="store_true")
     parser.add_argument("--skip_test", action="store_true")
     parser.add_argument("--quiet", action="store_true")
-    parser.add_argument('--scan_id', type=str,  help='scan id of the input mesh')
-    parser.add_argument('--DTU', type=str,  default='dtu_eval/Offical_DTU_Dataset', help='path to the GT DTU point clouds')
-    
+    parser.add_argument("--scan_id", type=str, help="scan id of the input mesh")
+    parser.add_argument(
+        "--DTU",
+        type=str,
+        default="dtu_eval/Offical_DTU_Dataset",
+        help="path to the GT DTU point clouds",
+    )
+    parser.add_argument(
+        "--mesh_path",
+        type=str,
+        default="",
+        help="Optional explicit recon_post.ply path; cameras still load from -m.",
+    )
+    parser.add_argument(
+        "--out_dir",
+        type=str,
+        default="",
+        help="Write recon_aligned.ply and vis/ here (default: model_path).",
+    )
+    parser.add_argument(
+        "--eval_seed",
+        type=int,
+        default=None,
+        help="Optional seed forwarded to dtu_eval/eval.py --seed. "
+        "Omit to preserve historical unseeded child RNG. Rebuild protocol uses 0.",
+    )
+    parser.add_argument(
+        "--forbid_root",
+        action="append",
+        default=[],
+        help="Extra roots that out_dir must not equal/nest (repeatable). model_path always forbidden when --out_dir set.",
+    )
+
     args = get_combined_args(parser)
     print("evaluating " + args.model_path)
 
@@ -241,5 +383,13 @@ if __name__ == "__main__":
     np.random.seed(0)
     torch.manual_seed(0)
     torch.cuda.set_device(torch.device("cuda:0"))
-    
-    evaluate_mesh(model.extract(args), args.iteration, args.DTU)
+
+    evaluate_mesh(
+        model.extract(args),
+        args.iteration,
+        args.DTU,
+        mesh_path=(args.mesh_path or None),
+        out_dir=(args.out_dir or None),
+        eval_seed=args.eval_seed,
+        forbid_roots=list(args.forbid_root or []),
+    )

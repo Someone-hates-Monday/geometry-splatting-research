@@ -34,7 +34,7 @@ def main():
         if a.staged and hashlib.new(object_format,b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()!=staged_blobs[path]:mismatched.append(path)
         n=len(data);entries.append(dict(path=path,bytes=n,sha256=sha(data)))
         if n>=50*1024*1024:oversized.append(dict(path=path,bytes=n))
-        if re.match(r'^(?:dtu/|unified_geometry_gs/(?:dtu_eval|output[^/]*|research/(?:experiments|sources|snapshots|results))/|tools/guizang-ppt-skill/)',path):forbidden.append(path)
+        if path!='unified_geometry_gs/dtu_eval/eval.py' and re.match(r'^(?:dtu/|unified_geometry_gs/(?:dtu_eval|output[^/]*|research/(?:experiments|sources|snapshots|results))/|tools/guizang-ppt-skill/)',path):forbidden.append(path)
         if p.suffix.lower() in {'.pth','.pt','.ply','.so','.pyd','.exe','.dll','.key','.pem'} or p.name in {'.env','credentials.json','token.json'}:forbidden.append(path)
         if (p.suffix.lower() in TEXT or p.name.startswith('.git')) and b'\0' not in data[:8192]:
             for label,pattern in PATTERNS.items():

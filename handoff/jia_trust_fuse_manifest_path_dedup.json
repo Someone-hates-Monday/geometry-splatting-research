@@ -1,0 +1,190 @@
+{
+  "manifest_sha256_from_COMPLETE": "bee212084985fe1892984bb38da9ed88383c97d4bd635c350eee70b5b4e7baf5",
+  "entries_rows": 17820,
+  "unique_paths": 17813,
+  "paths_with_duplicate_rows": 7,
+  "historical_raw_row_hits_same_needles": {
+    "ggs_ex_trunc4/scan24": 8,
+    "ggs_ablate_no_dn/scan24": 10,
+    "point_cloud/iteration_30000": 26
+  },
+  "corrected_unique_path_hits_same_needles": {
+    "ggs_ex_trunc4/scan24": 8,
+    "ggs_ablate_no_dn/scan24": 10,
+    "point_cloud/iteration_30000": 26
+  },
+  "note_on_phase1_needle_counts": "Phase-1 jia_trust_fuse_asset_check.json needle_counts counted string occurrences during a tree walk (path + archive_path style duplication). Use unique_paths here.",
+  "pilot_no_dn_unique_paths": {
+    "scan24": [
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan24/cameras.json",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan24/cfg_args",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan24/input.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan24/multi_view.json",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan24/recon.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan24/recon_aligned.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan24/recon_post.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan24/vis/results.json",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan24/vis/vis_024_d2s.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan24/vis/vis_024_s2d.ply"
+    ],
+    "scan105": [
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan105/cameras.json",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan105/cfg_args",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan105/input.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan105/multi_view.json",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan105/recon.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan105/recon_aligned.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan105/recon_post.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan105/vis/results.json",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan105/vis/vis_105_d2s.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan105/vis/vis_105_s2d.ply"
+    ],
+    "scan122": [
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan122/cameras.json",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan122/cfg_args",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan122/input.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan122/multi_view.json",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan122/recon.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan122/recon_aligned.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan122/recon_post.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan122/vis/results.json",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan122/vis/vis_122_d2s.ply",
+      "unified_geometry_gs/output_compare/ggs_ablate_no_dn/scan122/vis/vis_122_s2d.ply"
+    ]
+  },
+  "pilot_trunc4_unique_paths": {
+    "scan24": [
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan24/cfg_args",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan24/multi_view.json",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan24/recon.ply",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan24/recon_aligned.ply",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan24/recon_post.ply",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan24/vis/results.json",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan24/vis/vis_024_d2s.ply",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan24/vis/vis_024_s2d.ply"
+    ],
+    "scan105": [
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan105/cfg_args",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan105/multi_view.json",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan105/recon.ply",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan105/recon_aligned.ply",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan105/recon_post.ply",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan105/vis/results.json",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan105/vis/vis_105_d2s.ply",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan105/vis/vis_105_s2d.ply"
+    ],
+    "scan122": [
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan122/cfg_args",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan122/multi_view.json",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan122/recon.ply",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan122/recon_aligned.ply",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan122/recon_post.ply",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan122/vis/results.json",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan122/vis/vis_122_d2s.ply",
+      "unified_geometry_gs/output_compare/ggs_ex_trunc4/scan122/vis/vis_122_s2d.ply"
+    ]
+  },
+  "pilot_no_dn_or_trunc4_point_or_ckpt": {
+    "scan24": [],
+    "scan105": [],
+    "scan122": []
+  },
+  "unique_point_cloud_iteration_30000_ply": [
+    "unified_geometry_gs/output_compare/ggs_pipeline/scan106/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_pipeline/scan110/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_pipeline/scan114/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_pipeline/scan118/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_pipeline/scan37/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_pipeline/scan40/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_pipeline/scan55/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_pipeline/scan63/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_pipeline/scan65/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_pipeline/scan69/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_pipeline/scan83/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_pipeline/scan97/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/research/experiments/adjquad55_control_repeat_v1/control_repeat/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/research/experiments/adjquad55_v1/adjquad4/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/research/experiments/adjquad55_v1/control/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/research/experiments/corrected_quality55_v1/legacy64/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/research/experiments/exact37_v1/exact/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/research/experiments/exact37_v1/legacy/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/research/experiments/factor_holdout55_v2/factor64/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/research/experiments/factor_holdout55_v2/legacy64/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/research/experiments/factor_quality55_v1/factor64/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/research/experiments/history_gap_pilot_v1/control/point_cloud/iteration_30000/point_cloud.ply",
+    "unified_geometry_gs/research/experiments/history_gap_pilot_v1/history_gap/point_cloud/iteration_30000/point_cloud.ply"
+  ],
+  "unique_asset_part_paths": 0,
+  "snapshot_zip_member_scan": {
+    "dir_exists": true,
+    "zip_count": 39,
+    "zip_names": [
+      "unified_geometry_gs/research/snapshots/after_adjoint_development_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_clipped_packet_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_coherent_factor_v2.zip",
+      "unified_geometry_gs/research/snapshots/after_csr_capture_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_csr_decode_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_device_root_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_directional_field_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_dynamic_root_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_exact_coefficients_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_exact_outlier_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_factor_holdout_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_factor_sharpness_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_factor_stress_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_float_product_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_frozen_certified_mesh_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_frozen_exact_render_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_full_topology_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_gram_forward_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_guarded_precision_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_ncc_pilot_and_solver_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_packet_precision_cuda_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_perspective_packet_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_preprocess_audit_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_reciprocal_root_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_shared_cache_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_short_certificate_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_strict_interval_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_thin_quantile_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_world_precision_v1.zip",
+      "unified_geometry_gs/research/snapshots/after_world_precision_v2.zip",
+      "unified_geometry_gs/research/snapshots/after_world_root_vjp_v1.zip",
+      "unified_geometry_gs/research/snapshots/history_gap_adapter_checkpoint_v1.zip",
+      "unified_geometry_gs/research/snapshots/history_gap_full_smoke_checkpoint_v1.zip",
+      "unified_geometry_gs/research/snapshots/history_gap_gpu_checkpoint_v1.zip",
+      "unified_geometry_gs/research/snapshots/history_gap_math_checkpoint_v1.zip",
+      "unified_geometry_gs/research/snapshots/history_gap_pilot_checkpoint_v1.zip",
+      "unified_geometry_gs/research/snapshots/history_gap_raw_checkpoint_v1.zip",
+      "unified_geometry_gs/research/snapshots/history_gap_warp_checkpoint_v1.zip",
+      "unified_geometry_gs/research/snapshots/methods_before_exact37_result.zip"
+    ],
+    "member_scan_errors": [],
+    "hit_members": [],
+    "limitation": "Only ZIP member names under unified_geometry_gs/research/snapshots were checked. Does not cover other archives, renamed trees, external disks, or teammate backups."
+  },
+  "request_from_original_operator": {
+    "scans": [
+      "scan24",
+      "scan105",
+      "scan122"
+    ],
+    "required_files_per_scan": [
+      "point_cloud/iteration_30000/point_cloud.ply (or equivalent final Gaussian ply)",
+      "any sidecar required to load (e.g. exposure/appearance if used)",
+      "cfg_args or full train command / OptimizationParams dump",
+      "cameras.json or proof cameras match multi_view.json index space",
+      "multi_view.json",
+      "provenance: which machine/path produced the matching ggs_ex_trunc4 mesh/JSON"
+    ],
+    "identity_checks_before_unblock": [
+      "absolute path + SHA256 of every model file",
+      "loadable by current Scene/GaussianModel without retrain",
+      "correspondence to archived ggs_ex_trunc4 vis/results.json and recon_post.ply era",
+      "do not treat load-success alone as identity proof"
+    ]
+  }
+}

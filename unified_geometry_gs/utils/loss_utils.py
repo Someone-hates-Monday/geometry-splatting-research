@@ -160,6 +160,7 @@ class PatchMatch:
         return_stats: bool = False,
         return_corr_map: bool = False,
         return_fail_cover: bool = False,
+        return_trust_maps: bool = False,
         edge_boost: float = 0.0,
         edge_q_low: float = 0.05,
         edge_q_high: float = 0.95,
@@ -171,7 +172,22 @@ class PatchMatch:
         H = int(viewpoint_cam.image_height)
         W = int(viewpoint_cam.image_width)
 
-        def _pack(ncc_l, geo_l, valid_ratio=None, corr_hw=None, fail_l=None):
+        def _empty_trust_maps(device="cuda"):
+            # Full-reject HxW diagnostics. Detached; never enters training graph.
+            evaluated = torch.zeros((H, W), dtype=torch.bool, device=device)
+            geometry_valid = torch.zeros((H, W), dtype=torch.bool, device=device)
+            warp_valid = torch.zeros((H, W), dtype=torch.bool, device=device)
+            error = torch.full((H, W), float("nan"), dtype=torch.float32, device=device)
+            keep = torch.zeros((H, W), dtype=torch.bool, device=device)
+            return {
+                "evaluated": evaluated,
+                "geometry_valid": geometry_valid,
+                "warp_valid": warp_valid,
+                "error": error,
+                "keep": keep,
+            }
+
+        def _pack(ncc_l, geo_l, valid_ratio=None, corr_hw=None, fail_l=None, trust_maps=None):
             out = [ncc_l, geo_l]
             if return_stats:
                 if valid_ratio is None:
@@ -185,11 +201,15 @@ class PatchMatch:
                 if fail_l is None:
                     fail_l = torch.tensor([0], dtype=torch.float32, device="cuda")
                 out.append(fail_l)
-            return tuple(out) if len(out) > 2 else (ncc_l, geo_l)
+            if return_trust_maps:
+                out.append(trust_maps if trust_maps is not None else _empty_trust_maps())
+            if len(out) == 2:
+                return (ncc_l, geo_l)
+            return tuple(out)
 
         if nearest_cam is None:
             z = torch.tensor([0], dtype=torch.float32, device="cuda")
-            return _pack(z, z)
+            return _pack(z, z, trust_maps=_empty_trust_maps() if return_trust_maps else None)
         ## compute geometry consistency mask
         with torch.no_grad():
             ix = (torch.arange(W, device="cuda", dtype=torch.float32) - viewpoint_cam.Cx) / viewpoint_cam.Fx
@@ -271,7 +291,11 @@ class PatchMatch:
         ################## Compute NCC for warped patches ##################
         if not d_mask.any():
             z = torch.tensor([0], dtype=torch.float32, device="cuda")
-            return _pack(z, z)
+            trust_maps = None
+            if return_trust_maps:
+                trust_maps = _empty_trust_maps()
+                # geometry_valid stays false: no d_mask pixels
+            return _pack(z, z, trust_maps=trust_maps)
 
         edge_w_hw: torch.Tensor | None = None
         if edge_boost > 0.0:
@@ -390,10 +414,43 @@ class PatchMatch:
                 fail_cover_loss = torch.tensor([0], dtype=torch.float32, device=cc.device)
 
         valid_ratio = ncc_mask.float().mean() if return_stats else None
+
+        trust_maps = None
+        if return_trust_maps:
+            # Scatter CUDA outputs from valid_indices back to HxW.
+            # Detach so diagnostics cannot alter training graphs when enabled.
+            with torch.no_grad():
+                trust_maps = _empty_trust_maps(device=ncc.device)
+                geom_flat = torch.zeros(H * W, dtype=torch.bool, device=ncc.device)
+                geom_flat[valid_indices] = True
+                trust_maps["geometry_valid"] = geom_flat.view(H, W)
+
+                eval_flat = torch.zeros(H * W, dtype=torch.bool, device=ncc.device)
+                warp_flat = torch.zeros(H * W, dtype=torch.bool, device=ncc.device)
+                err_flat = torch.full((H * W,), float("nan"), dtype=torch.float32, device=ncc.device)
+                keep_flat = torch.zeros(H * W, dtype=torch.bool, device=ncc.device)
+
+                # Every index passed to CUDA is "evaluated" (even if warp_valid is false).
+                # Use reshape(-1), not squeeze, so a single valid point keeps shape [1].
+                eval_flat[valid_indices] = True
+                vm = valid_mask.reshape(-1)
+                ncc_det = ncc.reshape(-1).detach()
+                # Explicit: keep requires finite error (not only e<tau & warp_valid).
+                keep_1d = ncc_mask.reshape(-1) & torch.isfinite(ncc_det)
+                assert vm.numel() == valid_indices.numel()
+                warp_flat[valid_indices] = vm
+                err_flat[valid_indices] = ncc_det
+                keep_flat[valid_indices] = keep_1d
+                trust_maps["evaluated"] = eval_flat.view(H, W)
+                trust_maps["warp_valid"] = warp_flat.view(H, W)
+                trust_maps["error"] = err_flat.view(H, W)
+                trust_maps["keep"] = keep_flat.view(H, W)
+
         return _pack(
             ncc_loss,
             geo_loss,
             valid_ratio=valid_ratio,
             corr_hw=corr_hw,
             fail_l=fail_cover_loss,
+            trust_maps=trust_maps,
         )

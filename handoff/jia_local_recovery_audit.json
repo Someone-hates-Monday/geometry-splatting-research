@@ -1,0 +1,1594 @@
+{
+  "created_utc": "2026-11-16T15:36:05.549910+00:00",
+  "host": "LAPTOP-5U1LV2QL",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "git_head": "8387442ef901329fae0cfcd238561f23c2a540b3",
+  "search_roots_documented": [
+    "/mnt/c/Users/Someone/Desktop",
+    "/mnt/c/Users/Someone/Documents",
+    "/mnt/c/Users/Someone/Downloads",
+    "/mnt/c/Users/Someone/Desktop/SuGaR-main",
+    "/home/someone",
+    "/mnt/d (maxdepth 3 name filter + candidate subtree)",
+    "/mnt/e (missing)",
+    "/mnt/f (missing)"
+  ],
+  "tools": [
+    "find (name point_cloud.ply / chkpnt30000.pth)",
+    "find archives by sugar/ggs/uggs name",
+    "zipfile member listing for WeChat uggs-m1-guizang*.zip",
+    "df -h / ls home",
+    "prior snapshot ZIP member scan (39 under research/snapshots)"
+  ],
+  "limits": [
+    "no bulk archive extract",
+    "recycle bin not fully enumerable / not restored",
+    "D: not full recursive file walk (size/time bound); maxdepth-3 name filter + candidate subtrees",
+    "inaccessible locations not counted as absence",
+    "did not re-download 90 release volumes"
+  ],
+  "find_commands_out_bytes": 20995,
+  "evidence_trunc4_json": {
+    "scan24": {
+      "results_json": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_ex_trunc4/scan24/vis/results.json",
+      "sha256": "23965a2f732becba0f5c991772cec28a940b048646bcb5aaf9810f82273a3461",
+      "matches_known": true,
+      "data": {
+        "mean_d2s": 0.3040602600370223,
+        "mean_s2d": 0.4058725244185667,
+        "overall": 0.35496639222779447
+      },
+      "point_cloud_exists": false,
+      "no_dn_point_cloud_exists": false
+    },
+    "scan105": {
+      "results_json": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_ex_trunc4/scan105/vis/results.json",
+      "sha256": "df81244cbbe91468da85297846db87bd300ee8aa9dd442328f0a679a4b449260",
+      "matches_known": true,
+      "data": {
+        "mean_d2s": 0.40596672034836795,
+        "mean_s2d": 0.5350099784218154,
+        "overall": 0.47048834938509165
+      },
+      "point_cloud_exists": false,
+      "no_dn_point_cloud_exists": false
+    },
+    "scan122": {
+      "results_json": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_ex_trunc4/scan122/vis/results.json",
+      "sha256": "70039e504a7d566f8ff5ff7a52d3246cb3c16d772c8124591de0284186071386",
+      "matches_known": true,
+      "data": {
+        "mean_d2s": 0.26597839692922526,
+        "mean_s2d": 0.38257657096883446,
+        "overall": 0.3242774839490299
+      },
+      "point_cloud_exists": false,
+      "no_dn_point_cloud_exists": false
+    }
+  },
+  "wechat_archives": [
+    {
+      "path": "/mnt/c/Users/Someone/Documents/xwechat_files/wxid_felf1lyud2ms22_ca91/msg/file/2026-05/uggs-m1-guizang.zip",
+      "exists": true,
+      "size": 5543715,
+      "member_count": 18,
+      "hit_count": 0,
+      "hits": [],
+      "top_members": [
+        "uggs-m1-guizang/",
+        "uggs-m1-guizang/apply_deck_slides.py",
+        "uggs-m1-guizang/build_deck.py",
+        "uggs-m1-guizang/export_swiss_deck_to_pptx.py",
+        "uggs-m1-guizang/images/",
+        "uggs-m1-guizang/images/deck_effect_hole_patch_triptych.png",
+        "uggs-m1-guizang/images/deck_flow_models_triptych.png",
+        "uggs-m1-guizang/images/deck_no_effect_scan65_teddy_twin.png",
+        "uggs-m1-guizang/images/deck_pipeline_reference.png",
+        "uggs-m1-guizang/index.html",
+        "uggs-m1-guizang/pptx_extracted.txt",
+        "uggs-m1-guizang/README.md",
+        "uggs-m1-guizang/render_deck_flow_figures.py",
+        "uggs-m1-guizang/requirements-deck-export.txt",
+        "uggs-m1-guizang/_deck_slides_body.txt",
+        "uggs-m1-guizang/__pycache__/",
+        "uggs-m1-guizang/__pycache__/export_swiss_deck_to_pptx.cpython-311.pyc",
+        "uggs-m1-guizang/__pycache__/inject_edge_note.cpython-311.pyc"
+      ]
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Documents/xwechat_files/wxid_felf1lyud2ms22_ca91/msg/file/2026-05/uggs-m1-guizang(1).zip",
+      "exists": true,
+      "size": 12512121,
+      "member_count": 19,
+      "hit_count": 0,
+      "hits": [],
+      "top_members": [
+        "uggs-m1-guizang/",
+        "uggs-m1-guizang/apply_deck_slides.py",
+        "uggs-m1-guizang/build_deck.py",
+        "uggs-m1-guizang/deck_full.webm",
+        "uggs-m1-guizang/export_swiss_deck_to_pptx.py",
+        "uggs-m1-guizang/images/",
+        "uggs-m1-guizang/images/deck_effect_hole_patch_triptych.png",
+        "uggs-m1-guizang/images/deck_flow_models_triptych.png",
+        "uggs-m1-guizang/images/deck_no_effect_scan65_teddy_twin.png",
+        "uggs-m1-guizang/images/deck_pipeline_reference.png",
+        "uggs-m1-guizang/index.html",
+        "uggs-m1-guizang/pptx_extracted.txt",
+        "uggs-m1-guizang/README.md",
+        "uggs-m1-guizang/render_deck_flow_figures.py",
+        "uggs-m1-guizang/requirements-deck-export.txt",
+        "uggs-m1-guizang/_deck_slides_body.txt",
+        "uggs-m1-guizang/__pycache__/",
+        "uggs-m1-guizang/__pycache__/export_swiss_deck_to_pptx.cpython-311.pyc",
+        "uggs-m1-guizang/__pycache__/inject_edge_note.cpython-311.pyc"
+      ]
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Documents/xwechat_files/wxid_felf1lyud2ms22_ca91/msg/file/2026-05/uggs-m1-guizang(2).zip",
+      "exists": true,
+      "size": 12512121,
+      "member_count": 19,
+      "hit_count": 0,
+      "hits": [],
+      "top_members": [
+        "uggs-m1-guizang/",
+        "uggs-m1-guizang/apply_deck_slides.py",
+        "uggs-m1-guizang/build_deck.py",
+        "uggs-m1-guizang/deck_full.webm",
+        "uggs-m1-guizang/export_swiss_deck_to_pptx.py",
+        "uggs-m1-guizang/images/",
+        "uggs-m1-guizang/images/deck_effect_hole_patch_triptych.png",
+        "uggs-m1-guizang/images/deck_flow_models_triptych.png",
+        "uggs-m1-guizang/images/deck_no_effect_scan65_teddy_twin.png",
+        "uggs-m1-guizang/images/deck_pipeline_reference.png",
+        "uggs-m1-guizang/index.html",
+        "uggs-m1-guizang/pptx_extracted.txt",
+        "uggs-m1-guizang/README.md",
+        "uggs-m1-guizang/render_deck_flow_figures.py",
+        "uggs-m1-guizang/requirements-deck-export.txt",
+        "uggs-m1-guizang/_deck_slides_body.txt",
+        "uggs-m1-guizang/__pycache__/",
+        "uggs-m1-guizang/__pycache__/export_swiss_deck_to_pptx.cpython-311.pyc",
+        "uggs-m1-guizang/__pycache__/inject_edge_note.cpython-311.pyc"
+      ]
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Documents/xwechat_files/wxid_felf1lyud2ms22_ca91/msg/file/2026-05/uggs-m1-guizang(3).zip",
+      "exists": true,
+      "size": 12512121,
+      "member_count": 19,
+      "hit_count": 0,
+      "hits": [],
+      "top_members": [
+        "uggs-m1-guizang/",
+        "uggs-m1-guizang/apply_deck_slides.py",
+        "uggs-m1-guizang/build_deck.py",
+        "uggs-m1-guizang/deck_full.webm",
+        "uggs-m1-guizang/export_swiss_deck_to_pptx.py",
+        "uggs-m1-guizang/images/",
+        "uggs-m1-guizang/images/deck_effect_hole_patch_triptych.png",
+        "uggs-m1-guizang/images/deck_flow_models_triptych.png",
+        "uggs-m1-guizang/images/deck_no_effect_scan65_teddy_twin.png",
+        "uggs-m1-guizang/images/deck_pipeline_reference.png",
+        "uggs-m1-guizang/index.html",
+        "uggs-m1-guizang/pptx_extracted.txt",
+        "uggs-m1-guizang/README.md",
+        "uggs-m1-guizang/render_deck_flow_figures.py",
+        "uggs-m1-guizang/requirements-deck-export.txt",
+        "uggs-m1-guizang/_deck_slides_body.txt",
+        "uggs-m1-guizang/__pycache__/",
+        "uggs-m1-guizang/__pycache__/export_swiss_deck_to_pptx.cpython-311.pyc",
+        "uggs-m1-guizang/__pycache__/inject_edge_note.cpython-311.pyc"
+      ]
+    }
+  ],
+  "wechat_has_pilot_gaussian_members": false,
+  "sugar_data_files": [
+    {
+      "path": "/home/someone/sugar_data/tandt_db.zip",
+      "size": 682628995
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05709.jpg",
+      "size": 662506
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05590.jpg",
+      "size": 559434
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05657.jpg",
+      "size": 575534
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05588.jpg",
+      "size": 735651
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05719.jpg",
+      "size": 491919
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05805.jpg",
+      "size": 639621
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05669.jpg",
+      "size": 658930
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05582.jpg",
+      "size": 583630
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05754.jpg",
+      "size": 541153
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05612.jpg",
+      "size": 556116
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05654.jpg",
+      "size": 555466
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05755.jpg",
+      "size": 542415
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05615.jpg",
+      "size": 509699
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05696.jpg",
+      "size": 588009
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05660.jpg",
+      "size": 662963
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05801.jpg",
+      "size": 588538
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05740.jpg",
+      "size": 628111
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05641.jpg",
+      "size": 621800
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05659.jpg",
+      "size": 620672
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05803.jpg",
+      "size": 574463
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05743.jpg",
+      "size": 657421
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05701.jpg",
+      "size": 614804
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05683.jpg",
+      "size": 616158
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05636.jpg",
+      "size": 744290
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05622.jpg",
+      "size": 574805
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05703.jpg",
+      "size": 625532
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05614.jpg",
+      "size": 716352
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05674.jpg",
+      "size": 631434
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05610.jpg",
+      "size": 703388
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05664.jpg",
+      "size": 599463
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05751.jpg",
+      "size": 526286
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05777.jpg",
+      "size": 655443
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05650.jpg",
+      "size": 602508
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05760.jpg",
+      "size": 657154
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05632.jpg",
+      "size": 661130
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05765.jpg",
+      "size": 701383
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05668.jpg",
+      "size": 639754
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05691.jpg",
+      "size": 615396
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05716.jpg",
+      "size": 510044
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05591.jpg",
+      "size": 627114
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05630.jpg",
+      "size": 500725
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05769.jpg",
+      "size": 667311
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05775.jpg",
+      "size": 723353
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05653.jpg",
+      "size": 557702
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05584.jpg",
+      "size": 626965
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05672.jpg",
+      "size": 690591
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05646.jpg",
+      "size": 484596
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05583.jpg",
+      "size": 681533
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05594.jpg",
+      "size": 622436
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05675.jpg",
+      "size": 719241
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05621.jpg",
+      "size": 501894
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05738.jpg",
+      "size": 593691
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05640.jpg",
+      "size": 590749
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05767.jpg",
+      "size": 702594
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05759.jpg",
+      "size": 717710
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05756.jpg",
+      "size": 644764
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05797.jpg",
+      "size": 639112
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05707.jpg",
+      "size": 613022
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05679.jpg",
+      "size": 543332
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05742.jpg",
+      "size": 655889
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05744.jpg",
+      "size": 606128
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05601.jpg",
+      "size": 538508
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05576.jpg",
+      "size": 648653
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05656.jpg",
+      "size": 514677
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05761.jpg",
+      "size": 658613
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05648.jpg",
+      "size": 516769
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05661.jpg",
+      "size": 630915
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05732.jpg",
+      "size": 660827
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05618.jpg",
+      "size": 696731
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05684.jpg",
+      "size": 614966
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05666.jpg",
+      "size": 714369
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05697.jpg",
+      "size": 577116
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05783.jpg",
+      "size": 707947
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05794.jpg",
+      "size": 466354
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05592.jpg",
+      "size": 482531
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05771.jpg",
+      "size": 724450
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05724.jpg",
+      "size": 657165
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05651.jpg",
+      "size": 447350
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05639.jpg",
+      "size": 637770
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05580.jpg",
+      "size": 653784
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05702.jpg",
+      "size": 559833
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05704.jpg",
+      "size": 603840
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05708.jpg",
+      "size": 643709
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05581.jpg",
+      "size": 556671
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05710.jpg",
+      "size": 628781
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05731.jpg",
+      "size": 492557
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05781.jpg",
+      "size": 754074
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05788.jpg",
+      "size": 590370
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05706.jpg",
+      "size": 591462
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05607.jpg",
+      "size": 492405
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05573.jpg",
+      "size": 617733
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05578.jpg",
+      "size": 646237
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05686.jpg",
+      "size": 678117
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05600.jpg",
+      "size": 489620
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05658.jpg",
+      "size": 506017
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05695.jpg",
+      "size": 530532
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05619.jpg",
+      "size": 661801
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05608.jpg",
+      "size": 572472
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05587.jpg",
+      "size": 675747
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05768.jpg",
+      "size": 575654
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05752.jpg",
+      "size": 592474
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05747.jpg",
+      "size": 606751
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05624.jpg",
+      "size": 681526
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05644.jpg",
+      "size": 626509
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05689.jpg",
+      "size": 611822
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05791.jpg",
+      "size": 526256
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05800.jpg",
+      "size": 587156
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05605.jpg",
+      "size": 612152
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05726.jpg",
+      "size": 607349
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05606.jpg",
+      "size": 692799
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05694.jpg",
+      "size": 489589
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05687.jpg",
+      "size": 612831
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05798.jpg",
+      "size": 622261
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05774.jpg",
+      "size": 630951
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05613.jpg",
+      "size": 569029
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05699.jpg",
+      "size": 536392
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05735.jpg",
+      "size": 595477
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05620.jpg",
+      "size": 603484
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05611.jpg",
+      "size": 493280
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05770.jpg",
+      "size": 623165
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05693.jpg",
+      "size": 580914
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05663.jpg",
+      "size": 643527
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05649.jpg",
+      "size": 590904
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05793.jpg",
+      "size": 469313
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05603.jpg",
+      "size": 495193
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05602.jpg",
+      "size": 693449
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05575.jpg",
+      "size": 568488
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05637.jpg",
+      "size": 608698
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05776.jpg",
+      "size": 606339
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05700.jpg",
+      "size": 609413
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05749.jpg",
+      "size": 500010
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05627.jpg",
+      "size": 626400
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05746.jpg",
+      "size": 657987
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05802.jpg",
+      "size": 600891
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05729.jpg",
+      "size": 625331
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05626.jpg",
+      "size": 572238
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05574.jpg",
+      "size": 672665
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05604.jpg",
+      "size": 571839
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05645.jpg",
+      "size": 642249
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05804.jpg",
+      "size": 590279
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05753.jpg",
+      "size": 487549
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05779.jpg",
+      "size": 667167
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05647.jpg",
+      "size": 471688
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05595.jpg",
+      "size": 692988
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05745.jpg",
+      "size": 671122
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05773.jpg",
+      "size": 643216
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05725.jpg",
+      "size": 629420
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05681.jpg",
+      "size": 639054
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05589.jpg",
+      "size": 530840
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05718.jpg",
+      "size": 500293
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05766.jpg",
+      "size": 605709
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05616.jpg",
+      "size": 563746
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05715.jpg",
+      "size": 547453
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05799.jpg",
+      "size": 555343
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05662.jpg",
+      "size": 518807
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05782.jpg",
+      "size": 688200
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05673.jpg",
+      "size": 654756
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05670.jpg",
+      "size": 693507
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05623.jpg",
+      "size": 655997
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05780.jpg",
+      "size": 662778
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05572.jpg",
+      "size": 563323
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05762.jpg",
+      "size": 645269
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05678.jpg",
+      "size": 576555
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05737.jpg",
+      "size": 583783
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05690.jpg",
+      "size": 486860
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05786.jpg",
+      "size": 653077
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05757.jpg",
+      "size": 689788
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05778.jpg",
+      "size": 659446
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05723.jpg",
+      "size": 637219
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05758.jpg",
+      "size": 714209
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05598.jpg",
+      "size": 671664
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05717.jpg",
+      "size": 609813
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05631.jpg",
+      "size": 609326
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05750.jpg",
+      "size": 509158
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05714.jpg",
+      "size": 628076
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05764.jpg",
+      "size": 586532
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05785.jpg",
+      "size": 543397
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05721.jpg",
+      "size": 515825
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05692.jpg",
+      "size": 600564
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05577.jpg",
+      "size": 674909
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05586.jpg",
+      "size": 596485
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05722.jpg",
+      "size": 562135
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05635.jpg",
+      "size": 630207
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05667.jpg",
+      "size": 675246
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05638.jpg",
+      "size": 698830
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05784.jpg",
+      "size": 643798
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05711.jpg",
+      "size": 603585
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05748.jpg",
+      "size": 501164
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05712.jpg",
+      "size": 556430
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05705.jpg",
+      "size": 588212
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05642.jpg",
+      "size": 665354
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05628.jpg",
+      "size": 642243
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05676.jpg",
+      "size": 674686
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05789.jpg",
+      "size": 552087
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05629.jpg",
+      "size": 483333
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05727.jpg",
+      "size": 584160
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05790.jpg",
+      "size": 604652
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05787.jpg",
+      "size": 653814
+    },
+    {
+      "path": "/home/someone/sugar_data/db/playroom/images/DSC05685.jpg",
+      "size": 661020
+    }
+  ],
+  "d_drive_top_matches": [],
+  "candidates": [
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan106/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 137385152,
+      "mtime_utc": "2026-10-11T12:15:36.349469+00:00",
+      "sha256": "a65061ae7b3e26490d826d430676b79a909b4108cd032d985fadd756ef1a5626"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan106/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 71629280,
+      "mtime_utc": "2026-10-11T11:49:50.371389+00:00",
+      "sha256": "45aab381b7b93fd21bf9f4e39e256b324512530cd62137c17955585cecc666f8"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan110/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 102790844,
+      "mtime_utc": "2026-10-11T15:02:03.887174+00:00",
+      "sha256": "c028a4544da4e2c8229ee7d5f3d50c5d40f631294685dc49e69a826bcc13ace4"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan110/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 36126008,
+      "mtime_utc": "2026-10-11T14:39:46.397669+00:00",
+      "sha256": "7d56efe81bf95028750e3a8479b6ab5a4cfa9595d91c4315252fdaf19d600688"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan114/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 124724168,
+      "mtime_utc": "2026-10-11T15:27:43.520241+00:00",
+      "sha256": "a058cc5d33703559f0310fec0e23136da39903c368fdaf8e9a2bf6afaf5b9d00"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan114/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 72022400,
+      "mtime_utc": "2026-10-11T15:04:45.207963+00:00",
+      "sha256": "47d5caaa464077d6ab0d0b43dd7a00d0865352318ffa955216023d998bbf2c28"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan118/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 102700376,
+      "mtime_utc": "2026-10-11T15:54:19.627542+00:00",
+      "sha256": "ebacd4e78808d1c79b0d9611fdddc69e5802c013773f64c85cbdd83818474131"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan118/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 40974488,
+      "mtime_utc": "2026-10-11T15:30:14.245490+00:00",
+      "sha256": "736b5fc30006e4671949e093cc4dc808c885b5f4b4d6a6d19f09a1aea57c6d9f"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan37/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 254578509,
+      "mtime_utc": "2026-10-11T08:17:14.589945+00:00",
+      "sha256": "f31ab24cc972fb1a68197db6b8aec0bb45099982f3482c4016a11289daad62ae"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan37/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 155213900,
+      "mtime_utc": "2026-10-11T07:40:22.980887+00:00",
+      "sha256": "cd8e948d1c673ab8f103088ac6cb22891aa3a0a94273e363db3c7cf7fdcf163c"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan40/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 277193997,
+      "mtime_utc": "2026-10-11T08:52:11.101351+00:00",
+      "sha256": "1a355963f6aba525b1c7cbfd2b126de484176d25dd23c710a39c39c56ebc9bd6"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan40/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 217985588,
+      "mtime_utc": "2026-10-11T08:20:48.333990+00:00",
+      "sha256": "e503888e3c0073140d7b147c193149b9d0d04a37b3f87e65d53c50a850faa1d9"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan55/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 265202577,
+      "mtime_utc": "2026-10-11T09:25:28.377158+00:00",
+      "sha256": "d0aa1b29e18cfd4f0052c61af6330af9491770b174d88fb8ac56391d085641ac"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan55/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 196516700,
+      "mtime_utc": "2026-10-11T08:55:41.874831+00:00",
+      "sha256": "1e0440e10ea43296cd8cf2e9130549736e80f4fd31471e87b35699593502e70d"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan63/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 128687876,
+      "mtime_utc": "2026-10-11T09:54:22.909816+00:00",
+      "sha256": "acb1b60a1182c486f70e1a7ba87b2f131a472890a36f31d4b21ec393f933abc2"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan63/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 57822704,
+      "mtime_utc": "2026-10-11T09:27:56.019630+00:00",
+      "sha256": "b094a2bb1b7a0de53bd22691390511142d5306145a57a13a5edd2cdeab08ebd9"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan65/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 156999572,
+      "mtime_utc": "2026-10-11T10:24:30.948422+00:00",
+      "sha256": "85e5e276552e2d24201bce5903500ffc1f1fa498c3ce196c3788c8e07f8c0200"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan65/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 71445068,
+      "mtime_utc": "2026-10-11T09:56:55.769562+00:00",
+      "sha256": "9e021021e8442e6cfa0a154023142e026fe6a165cf4bb821eeccd5c5cbdb6a98"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan69/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 144367316,
+      "mtime_utc": "2026-10-11T10:50:42.029598+00:00",
+      "sha256": "f3dabe889d1ec0bfff52cd875ad9c8f8e7d35fd685d96bd05c432ee4111e91c8"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan69/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 74661848,
+      "mtime_utc": "2026-10-11T10:27:02.832770+00:00",
+      "sha256": "006f59a28724cdf31d1478dfacdee9217f9b005d21d97995c12e414bb25a14dc"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan83/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 115654688,
+      "mtime_utc": "2026-10-11T11:14:21.041151+00:00",
+      "sha256": "eeda155e8a62021f8e0bf6348b4801184c0c046469a453ca8b9b211aa5107a59"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan83/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 45025136,
+      "mtime_utc": "2026-10-11T10:53:10.729974+00:00",
+      "sha256": "391835127c8dc1224211a51367c64b2ff9fe25e3b0f3897c98ece8aa7c662806"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan97/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 169407800,
+      "mtime_utc": "2026-10-11T11:47:10.896988+00:00",
+      "sha256": "fd1675923a574ec6e0cee4be3a929c6bb73ef4e168a4854fc1437ef3bfac18ac"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_pipeline/scan97/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "non_pilot_pipeline_not_original_trunc4_source"
+      ],
+      "size": 94407056,
+      "mtime_utc": "2026-10-11T11:17:05.414231+00:00",
+      "sha256": "11048276c29336a72a8cb4c5106fd835927de464060c1fdd04e2eaa6d426c072"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "tau_recipe"
+      ],
+      "size": 85802516,
+      "mtime_utc": "2026-10-11T06:20:32.815835+00:00",
+      "sha256": "97df70f818692e67c2f98df0e7483f383326ea4bf8c7fb48d6eb51fa359767e1"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "tau_recipe"
+      ],
+      "size": 56265344,
+      "mtime_utc": "2026-10-11T05:59:36.846307+00:00",
+      "sha256": "fa8f0645f365f1cb98df0742479404e812f7f27bcd5f6af1ec2ab8f07697d71f"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "tau_recipe"
+      ],
+      "size": 93502376,
+      "mtime_utc": "2026-10-11T06:45:44.562822+00:00",
+      "sha256": "68410c365338a2777a63bcf2ce3fb6e8006b244538d38a6fa6596e002d015d70"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "tau_recipe"
+      ],
+      "size": 55335716,
+      "mtime_utc": "2026-10-11T06:23:09.183674+00:00",
+      "sha256": "f1d1eba3109b96592c2770f161a9e9c4633163513df6d409b1ce8df6e6908361"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "tau_recipe"
+      ],
+      "size": 95511320,
+      "mtime_utc": "2026-10-11T07:10:12.392334+00:00",
+      "sha256": "83e4fef534ef2b4d1a139a1f8883ae90456fa1b760e416d5986973a1c9e41fba"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/point_cloud/iteration_7000/point_cloud.ply",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "tau_recipe"
+      ],
+      "size": 55677932,
+      "mtime_utc": "2026-10-11T06:48:25.823165+00:00",
+      "sha256": "6d4690c418d1129b01621ad60e58451c4e657fa7601b2076724495aa4694f73f"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/adjquad55_control_repeat_v1/control_repeat/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 237508784,
+      "mtime_utc": "2026-10-12T06:29:58.748888+00:00",
+      "sha256": "9ed67d5a4f2ba944114fe5228258b984d923afc058dacdc69282d8709e3cb454"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/adjquad55_v1/adjquad4/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 239393744,
+      "mtime_utc": "2026-10-12T03:39:03.976510+00:00",
+      "sha256": "c61c9fdd42dc7b0fa68634bf72fb978360bdddb824a5ce0fbe9a40d1ba2b51d0"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/adjquad55_v1/control/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 237833360,
+      "mtime_utc": "2026-10-12T03:06:32.822031+00:00",
+      "sha256": "f8830dfe3540ff3c635b6b348a7c441d6f4b7d906a38195cac9202885f66b9eb"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/adjquad_smoke55_v1/adjquad4/point_cloud/iteration_32/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 11788603,
+      "mtime_utc": "2026-10-12T02:27:40.011807+00:00",
+      "sha256": "aed487ab7f13342542f821d13effb97c48cbde5a3488d9c9744c5a96eebe2760"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/adjquad_smoke55_v1/control/point_cloud/iteration_32/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 11788603,
+      "mtime_utc": "2026-10-12T02:27:27.000465+00:00",
+      "sha256": "f8fd5c478f38475925beb862a56d3eb524658682b48162f29bc798ce087e75e9"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/corrected_quality55_v1/legacy64/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 237799088,
+      "mtime_utc": "2026-10-12T12:36:18.849389+00:00",
+      "sha256": "e528c2345388211e70c1ac343a0f2bb4c4c85b858d45f1392d6bcbcaa9f68914"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/exact37_v1/exact/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 263645973,
+      "mtime_utc": "2026-10-11T19:32:50.053694+00:00",
+      "sha256": "41b6914c0c8e6fb6e20e9d523ed944c53b7769d4b4df1e48e5da02f0a2a873c8"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/exact37_v1/legacy/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 261096237,
+      "mtime_utc": "2026-10-11T19:00:53.059966+00:00",
+      "sha256": "d89228d5a18237e1619832aadb6804c3c45be497921a708021359c8b7132f7b1"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/factor_holdout55_v2/factor64/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 241355312,
+      "mtime_utc": "2026-10-12T15:29:20.794348+00:00",
+      "sha256": "f5b9fc6ac36b759f5bf3e46336b3632c53acab24316a5a4c7bae0b315df6d2dd"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/factor_holdout55_v2/legacy64/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 234154664,
+      "mtime_utc": "2026-10-12T14:50:49.110743+00:00",
+      "sha256": "c06ceef4dd01a04d31dc1d561d30df0ff9a49135f6e04d04b797004b9b41cdaf"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/factor_quality55_v1/factor64/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 243759140,
+      "mtime_utc": "2026-10-12T13:33:30.037661+00:00",
+      "sha256": "f925b28b3321ab4a4d303fbe2a39cb846b459aa954b95eeca1646c43201d298c"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/history_gap_pilot_v1/control/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 234103256,
+      "mtime_utc": "2026-10-15T14:00:44.838700+00:00",
+      "sha256": "e76ccd87df17300b508d5400885c20c196a7bea669c1c4d165c9074c2f1f43ae"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/history_gap_pilot_v1/history_gap/point_cloud/iteration_30000/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 234648836,
+      "mtime_utc": "2026-10-15T14:53:20.325403+00:00",
+      "sha256": "41ea33ad284c939814bc0f8e751c72b64eac0784c12434e7393bb354fa27ac96"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/smoke37_v1/exact/point_cloud/iteration_50/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 12804919,
+      "mtime_utc": "2026-10-11T18:20:53.746062+00:00",
+      "sha256": "8a2abbb43b6a35475db2dda67f4107a8ad84d11315687dc6606cfab831cb4ee9"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/smoke37_v1/legacy/point_cloud/iteration_50/point_cloud.ply",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 12804919,
+      "mtime_utc": "2026-10-11T18:20:30.045660+00:00",
+      "sha256": "357e14221b946c6223525e02bfbb2f517c2bec7a2fa29badf2d886af2cda422b"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_tau_0.3/scan105/chkpnt30000.pth",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "tau_recipe"
+      ],
+      "size": 245161702,
+      "mtime_utc": "2026-10-11T06:20:33.552364+00:00",
+      "sha256": "ffdef164d31101bbb2c92f7e862c4c44e0e67309722a21a99c6ffe42506cd358"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_tau_0.5/scan105/chkpnt30000.pth",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "tau_recipe"
+      ],
+      "size": 267160806,
+      "mtime_utc": "2026-10-11T06:45:45.455263+00:00",
+      "sha256": "c0c53790c49b360e709e1b785cb0622f476f7c27373de1aa44b9b8a33149b319"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/output_compare/ggs_tau_1.2/scan105/chkpnt30000.pth",
+      "decision": "exclude_as_original",
+      "reasons": [
+        "tau_recipe"
+      ],
+      "size": 272900454,
+      "mtime_utc": "2026-10-11T07:10:13.271861+00:00",
+      "sha256": "40053f639f729e2c92ada7b7eb528b0bae60ad3c3aa960fb391c9275800277cf"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/adjquad55_control_repeat_v1/control_repeat/chkpnt30000.pth",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 678607206,
+      "mtime_utc": "2026-10-12T06:30:01.253941+00:00",
+      "sha256": "2b289794e0564c021641da3d9f8bda5084081409f196f86ab2b94f99a723ce12"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/adjquad55_v1/adjquad4/chkpnt30000.pth",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 683993190,
+      "mtime_utc": "2026-10-12T03:39:06.216262+00:00",
+      "sha256": "b6f326ba527a8b59a4842e91d09ce914ffd0d95dda01480489070a07cd210d55"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/adjquad55_v1/control/chkpnt30000.pth",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 679534950,
+      "mtime_utc": "2026-10-12T03:06:35.155946+00:00",
+      "sha256": "794d8f96f10056651c68644c106ee8d47b5417346937d39fb2359d8287fda55d"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/corrected_quality55_v1/legacy64/chkpnt30000.pth",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 679436646,
+      "mtime_utc": "2026-10-12T12:36:21.247602+00:00",
+      "sha256": "a11142b1a21b0d8e810aae799f1263492c359db9174af82b671c36076ab85932"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/exact37_v1/exact/chkpnt30000.pth",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 753285478,
+      "mtime_utc": "2026-10-11T19:32:52.615519+00:00",
+      "sha256": "3153d63effcab72d07219b12330a2120cb74ba255b705cf64ca096fa2e7ed75d"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/exact37_v1/legacy/chkpnt30000.pth",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 745999654,
+      "mtime_utc": "2026-10-11T19:00:55.546425+00:00",
+      "sha256": "653589695b587f9d3a53b0ab59f663a4f5261ad29047de5610345091c390d1cb"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/factor_holdout55_v2/factor64/chkpnt30000.pth",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 689597094,
+      "mtime_utc": "2026-10-12T15:29:23.079715+00:00",
+      "sha256": "03e1960cf84ea171966f9887d0556d36d78d3e9a58dabb7c96ad5b61645a6e58"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/factor_holdout55_v2/legacy64/chkpnt30000.pth",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 669024038,
+      "mtime_utc": "2026-10-12T14:50:51.065728+00:00",
+      "sha256": "1949c99057ccf84b3a95c9005b33deb3ccdc07b7cad4b9fb52c4c098655b35ca"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/factor_quality55_v1/factor64/chkpnt30000.pth",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 696465510,
+      "mtime_utc": "2026-10-12T13:33:32.247698+00:00",
+      "sha256": "8394d90e4ef4db1dd53366a7547792f3f0e1a957d1d6052e01a623bf237b7bb1"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/history_gap_pilot_v1/control/chkpnt30000.pth",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 668876966,
+      "mtime_utc": "2026-10-15T14:00:47.113074+00:00",
+      "sha256": "cdc459da4c909aab4a3106e35567ff6e7470d7794c8a5f908b36e594e8aad546"
+    },
+    {
+      "path": "/mnt/c/Users/Someone/Desktop/SuGaR-main/unified_geometry_gs/research/experiments/history_gap_pilot_v1/history_gap/chkpnt30000.pth",
+      "decision": "research_experiment_not_original_no_dn",
+      "reasons": [
+        "research_fork"
+      ],
+      "size": 670435878,
+      "mtime_utc": "2026-10-15T14:53:22.617553+00:00",
+      "sha256": "413582b5aa2b4a200067007a94fbbe135d419c8a487ed3ff953197f34a29d62c"
+    }
+  ],
+  "strong_original_candidates": [],
+  "counts": {
+    "ply_listed": 45,
+    "ckpt_listed": 14,
+    "strong_original": 0
+  },
+  "conclusion": {
+    "status": "NO_TRUSTED_ORIGINAL_GAUSSIAN_FOUND_IN_BOUNDED_LOCAL_SEARCH",
+    "next": "write rebuild protocol; new paired experiment; do not use old trunc4 JSON as control",
+    "old_results_still_present": true,
+    "original_model_recoverable": false
+  }
+}
