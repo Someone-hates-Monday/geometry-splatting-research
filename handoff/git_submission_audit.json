@@ -1,9 +1,9 @@
 {
-  "checked_utc": "2026-11-17T09:29:42.456846+00:00",
+  "checked_utc": "2026-11-17T09:31:41.829482+00:00",
   "mode": "staged",
   "file_count": 5399,
   "audited_file_count": 5398,
-  "audited_bytes": 100392034,
+  "audited_bytes": 100392090,
   "largest": {
     "path": "unified_geometry_gs/presentations/基于三维高斯泼溅的多视图重建几何优化研究(1).pptx",
     "bytes": 11013184,
@@ -2110,7 +2110,7 @@
     {
       "path": "handoff/link_check.json",
       "bytes": 55,
-      "sha256": "b95724ba7596f52251cd4c98f4f644256e1ba378d5e86855d0d9ae5a029313db"
+      "sha256": "250dd27da6b577665acbf6f6955a227fc7667d0f3e79cb4ad198b7efd60d7322"
     },
     {
       "path": "handoff/plan_legacy_cleanup.py",
@@ -2139,8 +2139,8 @@
     },
     {
       "path": "handoff/upload_research_assets.py",
-      "bytes": 7887,
-      "sha256": "0830c31fe6cd27bf5cbaf624e5036bcda519bd27c74f9f16493a52fb96bb6657"
+      "bytes": 7943,
+      "sha256": "fe752e178fc5d3c9c0c07123e0a30e2f3f812abb3f734d6895f1e3410cb81139"
     },
     {
       "path": "handoff/validation_receipt.json",
