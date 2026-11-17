@@ -1,5 +1,7 @@
 # 科研项目交接入口
 
+> **最新交付（2026-11-17）**：甲的三场景重建配对实验已完成验证、三条门槛未过并封存，不进入第二刀。先读[本轮代码与资产交付](handoff/JIA_UPLOAD_20261117.md)、[最终审查](handoff/JIA_TRUST_REBUILD_FINAL_REVIEW_20261117.md)、[封存补充索引](handoff/JIA_SEAL_DELIVERY_AMENDMENT_20261117.json)和[汇报骨架](handoff/REPORT_OUTLINE_AND_ACCEPTANCE_20261117.md)。下文10月交接与TGS状态按历史快照理解，结项后续以11月分工与审查为准。
+
 交接日期：2026-10-22。面向接手组员及其 agent。**科研总目标尚未达成；本轮只做现有工作的收尾、证据整理、存储清理与 GitHub 交接，没有启动新训练或新研究实验。**
 
 ## 目标与当前边界
