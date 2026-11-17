@@ -1,0 +1,464 @@
+{
+  "release": {
+    "repo": "Someone-hates-Monday/geometry-splatting-research",
+    "tag": "research-assets-2026-11-15"
+  },
+  "records": [
+    {
+      "scan": 83,
+      "comparison_image": "scan83_same_view.png",
+      "caption": "scan83：相同相机与渲染条件下，Pipeline 相对 G-GS Baseline 的历史 overall 变化为 -0.0848401088 mm（改善）。",
+      "source_image": {
+        "asset_relative_path": "dtu/DTU/scan83/images/0000.png",
+        "local_wsl_path": "/opt/geometry-compare-assets/dtu/DTU/scan83/images/0000.png",
+        "sha256": "8107cd73bf44fe8a76ed5b5bdd5094df61d1b80665fd2a56111b8abb76bd4fae"
+      },
+      "files": {
+        "ggs_baseline": {
+          "mesh": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_baseline/scan83/recon_post.ply",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_baseline/scan83/recon_post.ply",
+            "sha256": "a7e662f75dc6323ee44768dd4b9ec46b2a05a7d655d3f857d26b01e80bec8169"
+          },
+          "camera_file": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_baseline/scan83/cameras.json",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_baseline/scan83/cameras.json",
+            "sha256": "491e0af19b6e68b277ddcb2c4a4b5b9c7eea8e78b636ef995d2197f7e25f677e"
+          },
+          "input_point_cloud": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_baseline/scan83/input.ply",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_baseline/scan83/input.ply",
+            "sha256": "86d543c66a3811f0a7400071e77ba939a031ec6949e7d14ab0d696449fde6540"
+          },
+          "metric_json": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_baseline/scan83/vis/results.json",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_baseline/scan83/vis/results.json",
+            "sha256": "9656dcb01e95434876c0c8e047b62d3487171c1da0e953cf36c3ce1aacc67f3c"
+          }
+        },
+        "ggs_pipeline": {
+          "mesh": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_pipeline/scan83/recon_post.ply",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_pipeline/scan83/recon_post.ply",
+            "sha256": "289237b937ecf5a3b8e04ef89a776e8e30158d3a9f18ddf655bd94aa54509719"
+          },
+          "camera_file": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_pipeline/scan83/cameras.json",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_pipeline/scan83/cameras.json",
+            "sha256": "491e0af19b6e68b277ddcb2c4a4b5b9c7eea8e78b636ef995d2197f7e25f677e"
+          },
+          "input_point_cloud": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_pipeline/scan83/input.ply",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_pipeline/scan83/input.ply",
+            "sha256": "86d543c66a3811f0a7400071e77ba939a031ec6949e7d14ab0d696449fde6540"
+          },
+          "metric_json": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_pipeline/scan83/vis/results.json",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_pipeline/scan83/vis/results.json",
+            "sha256": "4acc7735553608093cf7d32700799bda2ce9fc209050d2a42d82eeee1224f528"
+          }
+        }
+      },
+      "camera": {
+        "source_camera_entry_0000": {
+          "id": 0,
+          "img_name": "0000",
+          "width": 1554,
+          "height": 1162,
+          "position": [
+            1.0131969402490617,
+            0.10651464312422126,
+            -2.659245777975003
+          ],
+          "rotation": [
+            [
+              0.9702626861989674,
+              -0.014742871084591701,
+              -0.24160498240340025
+            ],
+            [
+              0.007479912024525137,
+              0.9994929147093162,
+              -0.030950999369660767
+            ],
+            [
+              0.2419387746643138,
+              0.028223415775885215,
+              0.9698809556413983
+            ]
+          ],
+          "fy": 2883.17529296875,
+          "fx": 2892.33056640625
+        },
+        "render_extrinsic_world_to_camera": [
+          [
+            0.9702626861989673,
+            0.00747991202452514,
+            0.2419387746643138,
+            -0.34048923999999997
+          ],
+          [
+            -0.014742871084591705,
+            0.9994929147093164,
+            0.02822341577588523,
+            -0.016470199999999994
+          ],
+          [
+            -0.24160498240340028,
+            -0.030950999369660767,
+            0.9698809556413983,
+            2.8272420000000005
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "baseline_and_pipeline_entries_equal": true,
+        "interpretation": "rotation/position are camera-to-world; render extrinsic is inverse(camera-to-world)"
+      },
+      "render": {
+        "camera_id": 0,
+        "image_name": "0000",
+        "panel_width_px": 1000,
+        "panel_height_px": 748,
+        "fov_scale": 1.45,
+        "render_fx": 1283.5976418613811,
+        "render_fy": 1279.9662408099146,
+        "render_cx": 500,
+        "render_cy": 374,
+        "intrinsic_note": "cameras.json does not store cx/cy; image center assumed. fx/fy scaled to output size, then divided by 1.45 for wider framing.",
+        "crop": "none",
+        "coordinate_scale": "original source mesh coordinates; no transforms or normalization",
+        "material": "Open3D defaultLit, white base color, source mesh vertex colors and computed vertex normals",
+        "background_rgba": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "renderer": "Open3D OffscreenRenderer / Filament Vulkan software llvmpipe",
+        "same_settings_for_both_panels": true
+      },
+      "historical_metric_mm": {
+        "baseline": {
+          "mean_d2s": 0.7514312011332712,
+          "mean_s2d": 1.332684185692244,
+          "overall": 1.0420576934127577
+        },
+        "pipeline": {
+          "mean_d2s": 0.662921008813336,
+          "mean_s2d": 1.251514160392611,
+          "overall": 0.9572175846029736
+        },
+        "overall_delta_pipeline_minus_baseline": -0.0848401088097841
+      }
+    },
+    {
+      "scan": 63,
+      "comparison_image": "scan63_same_view.png",
+      "caption": "scan63：相同相机与渲染条件下，Pipeline 相对 G-GS Baseline 的历史 overall 变化为 -0.0685502445 mm（改善）。",
+      "source_image": {
+        "asset_relative_path": "dtu/DTU/scan63/images/0000.png",
+        "local_wsl_path": "/opt/geometry-compare-assets/dtu/DTU/scan63/images/0000.png",
+        "sha256": "2bc407632a91e98c0617460d9661e669b8ef8621d9a606ef7689bc46b542a8a3"
+      },
+      "files": {
+        "ggs_baseline": {
+          "mesh": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_baseline/scan63/recon_post.ply",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_baseline/scan63/recon_post.ply",
+            "sha256": "a972e98bf5884c21f06a32c2066ebc6325e07acb735fdc5b2b734b502d13ecde"
+          },
+          "camera_file": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_baseline/scan63/cameras.json",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_baseline/scan63/cameras.json",
+            "sha256": "4413ca6dadcb1b7c190c706b81770d7c45fd64c921ce29c119486429253325fc"
+          },
+          "input_point_cloud": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_baseline/scan63/input.ply",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_baseline/scan63/input.ply",
+            "sha256": "68c083a7c1005b124b21a1a5f99551193bf54c4cf0e6c8565e713791fb51878a"
+          },
+          "metric_json": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_baseline/scan63/vis/results.json",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_baseline/scan63/vis/results.json",
+            "sha256": "20f2447be42e949a9509c1226fa2d47a90df3833b0859ed97ae13c5c275d0cde"
+          }
+        },
+        "ggs_pipeline": {
+          "mesh": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_pipeline/scan63/recon_post.ply",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_pipeline/scan63/recon_post.ply",
+            "sha256": "c5479b425e991f8a9907278fdc6bc40aa2caa413677aaa047733bbf99ba5c592"
+          },
+          "camera_file": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_pipeline/scan63/cameras.json",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_pipeline/scan63/cameras.json",
+            "sha256": "4413ca6dadcb1b7c190c706b81770d7c45fd64c921ce29c119486429253325fc"
+          },
+          "input_point_cloud": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_pipeline/scan63/input.ply",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_pipeline/scan63/input.ply",
+            "sha256": "68c083a7c1005b124b21a1a5f99551193bf54c4cf0e6c8565e713791fb51878a"
+          },
+          "metric_json": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_pipeline/scan63/vis/results.json",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_pipeline/scan63/vis/results.json",
+            "sha256": "46e207a6ee27362a23b6417fc2dbe1d7078e846a18fca66ead73169dc0ac14a3"
+          }
+        }
+      },
+      "camera": {
+        "source_camera_entry_0000": {
+          "id": 0,
+          "img_name": "0000",
+          "width": 1554,
+          "height": 1162,
+          "position": [
+            1.2325440363703102,
+            0.176332125407398,
+            -3.041973602147901
+          ],
+          "rotation": [
+            [
+              0.9702626862455451,
+              -0.01474286689398862,
+              -0.24160498247206116
+            ],
+            [
+              0.0074799078337503535,
+              0.9994929147565852,
+              -0.030950998856002755
+            ],
+            [
+              0.24193877460708413,
+              0.028223416290942147,
+              0.9698809556406862
+            ]
+          ],
+          "fy": 2883.17529296875,
+          "fx": 2892.3303222656255
+        },
+        "render_extrinsic_world_to_camera": [
+          [
+            0.9702626862455451,
+            0.007479907833750357,
+            0.24193877460708413,
+            -0.46123907
+          ],
+          [
+            -0.014742866893988618,
+            0.9994929147565852,
+            0.028223416290942143,
+            -0.07221658999999996
+          ],
+          [
+            -0.2416049824720612,
+            -0.030950998856002762,
+            0.9698809556406862,
+            3.2535987
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "baseline_and_pipeline_entries_equal": true,
+        "interpretation": "rotation/position are camera-to-world; render extrinsic is inverse(camera-to-world)"
+      },
+      "render": {
+        "camera_id": 0,
+        "image_name": "0000",
+        "panel_width_px": 1000,
+        "panel_height_px": 748,
+        "fov_scale": 1.45,
+        "render_fx": 1283.5975335133473,
+        "render_fy": 1279.9662408099146,
+        "render_cx": 500,
+        "render_cy": 374,
+        "intrinsic_note": "cameras.json does not store cx/cy; image center assumed. fx/fy scaled to output size, then divided by 1.45 for wider framing.",
+        "crop": "none",
+        "coordinate_scale": "original source mesh coordinates; no transforms or normalization",
+        "material": "Open3D defaultLit, white base color, source mesh vertex colors and computed vertex normals",
+        "background_rgba": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "renderer": "Open3D OffscreenRenderer / Filament Vulkan software llvmpipe",
+        "same_settings_for_both_panels": true
+      },
+      "historical_metric_mm": {
+        "baseline": {
+          "mean_d2s": 1.2414647311617963,
+          "mean_s2d": 0.36939690468354075,
+          "overall": 0.8054308179226686
+        },
+        "pipeline": {
+          "mean_d2s": 1.098656728830995,
+          "mean_s2d": 0.3751044180224472,
+          "overall": 0.7368805734267211
+        },
+        "overall_delta_pipeline_minus_baseline": -0.06855024449594749
+      }
+    },
+    {
+      "scan": 55,
+      "comparison_image": "scan55_same_view.png",
+      "caption": "scan55：相同相机与渲染条件下，Pipeline 相对 G-GS Baseline 的历史 overall 变化为 +0.0035933051 mm（退化案例）。",
+      "source_image": {
+        "asset_relative_path": "dtu/DTU/scan55/images/0000.png",
+        "local_wsl_path": "/opt/geometry-compare-assets/dtu/DTU/scan55/images/0000.png",
+        "sha256": "575336adbf617f2d08933f74ceb53ff4b0f10c552cc613e7381a33c553ac4836"
+      },
+      "files": {
+        "ggs_baseline": {
+          "mesh": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_baseline/scan55/recon_post.ply",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_baseline/scan55/recon_post.ply",
+            "sha256": "1e011704d7214db1731c5360ec58b936c545a44582acad41ee5f03a082a01170"
+          },
+          "camera_file": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_baseline/scan55/cameras.json",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_baseline/scan55/cameras.json",
+            "sha256": "63f346b3882c150da05b724fd4d2e74f0cad94428b71d19f2d2b5286a11ec64b"
+          },
+          "input_point_cloud": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_baseline/scan55/input.ply",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_baseline/scan55/input.ply",
+            "sha256": "de69fcac3cd00ecab55a5e5a5c83afee351ceb776bae06f210e1399dbfebd962"
+          },
+          "metric_json": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_baseline/scan55/vis/results.json",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_baseline/scan55/vis/results.json",
+            "sha256": "ad2b1c0baf8cf82bbe954d9929812c1092fe832ec884c190e851b6a5e827d3d5"
+          }
+        },
+        "ggs_pipeline": {
+          "mesh": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_pipeline/scan55/recon_post.ply",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_pipeline/scan55/recon_post.ply",
+            "sha256": "5e3904cdfc41a77b7ee2612d33611295633f81cc2d7dc0cd96a488e97fdb3a5b"
+          },
+          "camera_file": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_pipeline/scan55/cameras.json",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_pipeline/scan55/cameras.json",
+            "sha256": "63f346b3882c150da05b724fd4d2e74f0cad94428b71d19f2d2b5286a11ec64b"
+          },
+          "input_point_cloud": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_pipeline/scan55/input.ply",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_pipeline/scan55/input.ply",
+            "sha256": "de69fcac3cd00ecab55a5e5a5c83afee351ceb776bae06f210e1399dbfebd962"
+          },
+          "metric_json": {
+            "asset_relative_path": "unified_geometry_gs/output_compare/ggs_pipeline/scan55/vis/results.json",
+            "local_wsl_path": "/opt/geometry-compare-assets/unified_geometry_gs/output_compare/ggs_pipeline/scan55/vis/results.json",
+            "sha256": "d04e43957a67ec59c14c86168190c422916e8bc3b0cc41bd5246f83f29ea2fe9"
+          }
+        }
+      },
+      "camera": {
+        "source_camera_entry_0000": {
+          "id": 0,
+          "img_name": "0000",
+          "width": 1554,
+          "height": 1162,
+          "position": [
+            0.7719184104961941,
+            0.032220167396365046,
+            -2.3674600539421724
+          ],
+          "rotation": [
+            [
+              0.9702626861851971,
+              -0.014742872020442938,
+              -0.2416049824015941
+            ],
+            [
+              0.007479913417456165,
+              0.9994929147521268,
+              -0.03095099765056431
+            ],
+            [
+              0.24193877467647287,
+              0.028223413770958307,
+              0.9698809556967082
+            ]
+          ],
+          "fy": 2883.17529296875,
+          "fx": 2892.33056640625
+        },
+        "render_extrinsic_world_to_camera": [
+          [
+            0.970262686185197,
+            0.007479913417456167,
+            0.2419387746764729,
+            -0.17642425000000006
+          ],
+          [
+            -0.014742872020442936,
+            0.9994929147521268,
+            0.028223413770958314,
+            0.04599427
+          ],
+          [
+            -0.24160498240159411,
+            -0.03095099765056431,
+            0.9698809556967084,
+            2.483651
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "baseline_and_pipeline_entries_equal": true,
+        "interpretation": "rotation/position are camera-to-world; render extrinsic is inverse(camera-to-world)"
+      },
+      "render": {
+        "camera_id": 0,
+        "image_name": "0000",
+        "panel_width_px": 1000,
+        "panel_height_px": 748,
+        "fov_scale": 1.45,
+        "render_fx": 1283.5976418613811,
+        "render_fy": 1279.9662408099146,
+        "render_cx": 500,
+        "render_cy": 374,
+        "intrinsic_note": "cameras.json does not store cx/cy; image center assumed. fx/fy scaled to output size, then divided by 1.45 for wider framing.",
+        "crop": "none",
+        "coordinate_scale": "original source mesh coordinates; no transforms or normalization",
+        "material": "Open3D defaultLit, white base color, source mesh vertex colors and computed vertex normals",
+        "background_rgba": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "renderer": "Open3D OffscreenRenderer / Filament Vulkan software llvmpipe",
+        "same_settings_for_both_panels": true
+      },
+      "historical_metric_mm": {
+        "baseline": {
+          "mean_d2s": 0.23175067493834992,
+          "mean_s2d": 0.3887753192997066,
+          "overall": 0.31026299711902827
+        },
+        "pipeline": {
+          "mean_d2s": 0.22773267338624456,
+          "mean_s2d": 0.3999799311261138,
+          "overall": 0.31385630225617916
+        },
+        "overall_delta_pipeline_minus_baseline": 0.003593305137150893
+      }
+    }
+  ]
+}
