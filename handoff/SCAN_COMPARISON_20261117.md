@@ -1,5 +1,7 @@
 # scan83 / scan63 / scan55 同视角网格对照交接
 
+六份原始相机文件、Open3D 版本与逐像素重渲染回执，见 [2026-11-19 结项答辩补充](defense_support_20261119/README.md)。
+
 2026-11-17。此包用于组内汇报：比较**原始 G-GS 基线**（`ggs_baseline`）与**已有 Pipeline 最终配方**（`ggs_pipeline`）。Pipeline 指去掉 depth-normal、采用既定可信几何监督，并以 voxel=0.002、`trunc4` 提取网格的历史组合。它不是甲本轮的新强掩码结果；甲本轮的独立审查仍以 [最终审查](JIA_TRUST_REBUILD_FINAL_REVIEW_20261117.md) 为准。
 
 | 场景 | 同视角图 | Baseline overall | Pipeline overall | Pipeline − Baseline | 判读 |

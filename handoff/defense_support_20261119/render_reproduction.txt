@@ -1,0 +1,51 @@
+Using 'soft' CircularBuffer (12288 KiB)
+FEngine (64 bits) created at 0x3bbec4b0 (threading is enabled)
+FEngine resolved backend: Vulkan
+Vulkan device driver: llvmpipe Mesa 25.2.8-0ubuntu0.24.04.2 (LLVM 20.1.2)
+Selected physical device 'llvmpipe (LLVM 20.1.2, 256 bits)' from 1 physical devices. (vendor 0x10005, device 0x0, driver 0x6402008, api 1.4)
+Backend feature level: 3
+FEngine feature level: 1
+Using 'soft' CircularBuffer (12288 KiB)
+FEngine (64 bits) created at 0x3e23a690 (threading is enabled)
+FEngine resolved backend: Vulkan
+Vulkan device driver: llvmpipe Mesa 25.2.8-0ubuntu0.24.04.2 (LLVM 20.1.2)
+Selected physical device 'llvmpipe (LLVM 20.1.2, 256 bits)' from 1 physical devices. (vendor 0x10005, device 0x0, driver 0x6402008, api 1.4)
+Backend feature level: 3
+FEngine feature level: 1
+Using 'soft' CircularBuffer (12288 KiB)
+FEngine (64 bits) created at 0x3f0311c0 (threading is enabled)
+FEngine resolved backend: Vulkan
+Vulkan device driver: llvmpipe Mesa 25.2.8-0ubuntu0.24.04.2 (LLVM 20.1.2)
+Selected physical device 'llvmpipe (LLVM 20.1.2, 256 bits)' from 1 physical devices. (vendor 0x10005, device 0x0, driver 0x6402008, api 1.4)
+Backend feature level: 3
+FEngine feature level: 1
+Using 'soft' CircularBuffer (12288 KiB)
+FEngine (64 bits) created at 0x3c07eb80 (threading is enabled)
+FEngine resolved backend: Vulkan
+Vulkan device driver: llvmpipe Mesa 25.2.8-0ubuntu0.24.04.2 (LLVM 20.1.2)
+Selected physical device 'llvmpipe (LLVM 20.1.2, 256 bits)' from 1 physical devices. (vendor 0x10005, device 0x0, driver 0x6402008, api 1.4)
+Backend feature level: 3
+FEngine feature level: 1
+Using 'soft' CircularBuffer (12288 KiB)
+FEngine (64 bits) created at 0x3e225740 (threading is enabled)
+FEngine resolved backend: Vulkan
+Vulkan device driver: llvmpipe Mesa 25.2.8-0ubuntu0.24.04.2 (LLVM 20.1.2)
+Selected physical device 'llvmpipe (LLVM 20.1.2, 256 bits)' from 1 physical devices. (vendor 0x10005, device 0x0, driver 0x6402008, api 1.4)
+Backend feature level: 3
+FEngine feature level: 1
+Using 'soft' CircularBuffer (12288 KiB)
+FEn[Open3D INFO] EngineInstance: Vulkan software device detected; using Filament's Vulkan backend
+[Open3D INFO] EngineInstance: Vulkan software device detected; using Filament's Vulkan backend
+{"scan": 83, "out": "/opt/geometry-compare-repro-20261119/scan83_same_view.png", "settings": {"width": 1000, "height": 748, "fx": 1283.5976418613811, "fy": 1279.9662408099146, "cx": 500.0, "cy": 374.0, "extrinsic_world_to_camera": [[0.9702626861989673, 0.00747991202452514, 0.2419387746643138, -0.34048923999999997], [-0.014742871084591705, 0.9994929147093164, 0.02822341577588523, -0.016470199999999994], [-0.24160498240340028, -0.030950999369660767, 0.9698809556413983, 2.8272420000000005], [0.0, 0.0, 0.0, 1.0]], "triangles": 824981, "vertices": 420483}, "fov_scale": 1.45, "mesh_sha256": ["a7e662f75dc6323ee44768dd4b9ec46b2a05a7d655d3f857d26b01e80bec8169", "289237b937ecf5a3b8e04ef89a776e8e30158d3a9f18ddf655bd94aa54509719"]}
+[Open3D INFO] EngineInstance: Vulkan software device detected; using Filament's Vulkan backend
+[Open3D INFO] EngineInstance: Vulkan software device detected; using Filament's Vulkan backend
+{"scan": 63, "out": "/opt/geometry-compare-repro-20261119/scan63_same_view.png", "settings": {"width": 1000, "height": 748, "fx": 1283.5975335133473, "fy": 1279.9662408099146, "cx": 500.0, "cy": 374.0, "extrinsic_world_to_camera": [[0.9702626862455451, 0.007479907833750357, 0.24193877460708413, -0.46123907], [-0.014742866893988618, 0.9994929147565852, 0.028223416290942143, -0.07221658999999996], [-0.2416049824720612, -0.030950998856002762, 0.9698809556406862, 3.2535987], [0.0, 0.0, 0.0, 1.0]], "triangles": 1509906, "vertices": 770796}, "fov_scale": 1.45, "mesh_sha256": ["a972e98bf5884c21f06a32c2066ebc6325e07acb735fdc5b2b734b502d13ecde", "c5479b425e991f8a9907278fdc6bc40aa2caa413677aaa047733bbf99ba5c592"]}
+[Open3D INFO] EngineInstance: Vulkan software device detected; using Filament's Vulkan backend
+[Open3D INFO] EngineInstance: Vulkan software device detected; using Filament's Vulkan backend
+{"scan": 55, "out": "/opt/geometry-compare-repro-20261119/scan55_same_view.png", "settings": {"width": 1000, "height": 748, "fx": 1283.5976418613811, "fy": 1279.9662408099146, "cx": 500.0, "cy": 374.0, "extrinsic_world_to_camera": [[0.970262686185197, 0.007479913417456167, 0.2419387746764729, -0.17642425000000006], [-0.014742872020442936, 0.9994929147521268, 0.028223413770958314, 0.04599427], [-0.24160498240159411, -0.03095099765056431, 0.9698809556967084, 2.483651], [0.0, 0.0, 0.0, 1.0]], "triangles": 926463, "vertices": 468692}, "fov_scale": 1.45, "mesh_sha256": ["1e011704d7214db1731c5360ec58b936c545a44582acad41ee5f03a082a01170", "5e3904cdfc41a77b7ee2612d33611295633f81cc2d7dc0cd96a488e97fdb3a5b"]}
+gine (64 bits) created at 0x3e226de0 (threading is enabled)
+FEngine resolved backend: Vulkan
+Vulkan device driver: llvmpipe Mesa 25.2.8-0ubuntu0.24.04.2 (LLVM 20.1.2)
+Selected physical device 'llvmpipe (LLVM 20.1.2, 256 bits)' from 1 physical devices. (vendor 0x10005, device 0x0, driver 0x6402008, api 1.4)
+Backend feature level: 3
+FEngine feature level: 1

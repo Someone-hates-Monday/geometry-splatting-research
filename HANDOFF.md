@@ -4,6 +4,8 @@
 
 > **同日补充**：[scan83、scan63、scan55 历史 Baseline / Pipeline 同视角对照](handoff/SCAN_COMPARISON_20261117.md)已附三张图、六份原始指标 JSON、输入哈希、相机参数和复现脚本。scan55 是退化案例；该对照与甲的新强掩码实验分开解读。
 
+> **结项答辩补充（2026-11-19）**：[乙的十一场景评价口径与丙的相机、出图回执](handoff/defense_support_20261119/README.md)附 15 场景可查到的 26 份原始评价 JSON、三组左右共六份 `cameras.json`、来源哈希和逐像素一致的重渲染日志。三个试点的 Pipeline\* 来源为 `ggs_ex_trunc4`，其他场景才使用 `ggs_pipeline`。
+
 交接日期：2026-10-22。面向接手组员及其 agent。**科研总目标尚未达成；本轮只做现有工作的收尾、证据整理、存储清理与 GitHub 交接，没有启动新训练或新研究实验。**
 
 ## 目标与当前边界
